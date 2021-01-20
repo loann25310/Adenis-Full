@@ -5,7 +5,6 @@ class ADENIS_VEHICLES_INFO
 	garage_percentage=0.01;
 	steal_percentage=0.4;
 	sell_percentage=0.4;
-	impound_percentage=0.4;
 	transfert_percentage=0.15;
 	// based on vehicle's buyPrice
 };
