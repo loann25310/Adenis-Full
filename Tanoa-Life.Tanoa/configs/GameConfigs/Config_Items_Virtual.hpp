@@ -91,7 +91,7 @@ class ADENIS_ITEMS
         class remove {};
         class use
         {
-            action="[false] spawn AlysiaClient_fnc_item_fauxPapiers;";
+            action="[false] spawn AdenisClient_fnc_item_fauxPapiers;";
         };
     };
 
@@ -193,7 +193,7 @@ class ADENIS_ITEMS
         price_buy=350;
         class use
         {
-            action="['brancard'] spawn AlysiaClient_fnc_dynamicObject_deploy;";
+            action="['brancard'] spawn AdenisClient_fnc_dynamicObject_deploy;";
         };
         class remove {};
     };
@@ -206,7 +206,7 @@ class ADENIS_ITEMS
         image="Alysia_Client\Textures\Items_virtual\nitroboost.paa";
         class use
         {
-            action="[cursorObject] spawn AlysiaClient_fnc_item_nitro;";
+            action="[cursorObject] spawn AdenisClient_fnc_item_nitro;";
         };
         class remove {};
     };
@@ -220,7 +220,7 @@ class ADENIS_ITEMS
         buy_license_CIV="company_garagist";
         class use
         {
-            action="['barriere'] spawn AlysiaClient_fnc_dynamicObject_deploy;";
+            action="['barriere'] spawn AdenisClient_fnc_dynamicObject_deploy;";
         };
         class remove {};
     };
@@ -233,7 +233,7 @@ class ADENIS_ITEMS
         buy_license_CIV="company_garagist";
         class use
         {
-            action="['barriere3'] spawn AlysiaClient_fnc_dynamicObject_deploy;";
+            action="['barriere3'] spawn AdenisClient_fnc_dynamicObject_deploy;";
         };
         class remove {};
     };
@@ -246,7 +246,7 @@ class ADENIS_ITEMS
         image="Alysia_Client\Textures\Items_virtual\cone.paa";
         class use
         {
-            action="['cone'] spawn AlysiaClient_fnc_dynamicObject_deploy;";
+            action="['cone'] spawn AdenisClient_fnc_dynamicObject_deploy;";
         };
         class remove {};
     };
@@ -259,7 +259,7 @@ class ADENIS_ITEMS
         image="Alysia_Client\Textures\Items_virtual\cone.paa";
         class use
         {
-            action="['coneflash'] spawn AlysiaClient_fnc_dynamicObject_deploy;";
+            action="['coneflash'] spawn AdenisClient_fnc_dynamicObject_deploy;";
         };
         class remove {};
     };
@@ -272,7 +272,7 @@ class ADENIS_ITEMS
         image="Alysia_Client\Textures\Items_virtual\cone.paa";
         class use
         {
-            action="['tmpgauche'] spawn AlysiaClient_fnc_dynamicObject_deploy;";
+            action="['tmpgauche'] spawn AdenisClient_fnc_dynamicObject_deploy;";
         };
         class remove {};
     };
@@ -285,7 +285,7 @@ class ADENIS_ITEMS
         image="Alysia_Client\Textures\Items_virtual\cone.paa";
         class use
         {
-            action="['tmpdroite'] spawn AlysiaClient_fnc_dynamicObject_deploy;";
+            action="['tmpdroite'] spawn AdenisClient_fnc_dynamicObject_deploy;";
         };
         class remove {};
     };
@@ -298,7 +298,7 @@ class ADENIS_ITEMS
         image="Alysia_Client\Textures\Items_virtual\cone.paa";
         class use
         {
-            action="['p50temp'] spawn AlysiaClient_fnc_dynamicObject_deploy;";
+            action="['p50temp'] spawn AdenisClient_fnc_dynamicObject_deploy;";
         };
         class remove {};
     };
@@ -311,7 +311,7 @@ class ADENIS_ITEMS
         image="Alysia_Client\Textures\Items_virtual\cone.paa";
         class use
         {
-            action="['p30temp'] spawn AlysiaClient_fnc_dynamicObject_deploy;";
+            action="['p30temp'] spawn AdenisClient_fnc_dynamicObject_deploy;";
         };
         class remove {};
     };
@@ -324,7 +324,7 @@ class ADENIS_ITEMS
         image="Alysia_Client\Textures\Items_virtual\bargate.paa";
         class use
         {
-            action="['bargate'] spawn AlysiaClient_fnc_dynamicObject_deploy;";
+            action="['bargate'] spawn AdenisClient_fnc_dynamicObject_deploy;";
         };
         class remove {};
     };
@@ -335,7 +335,7 @@ class ADENIS_ITEMS
         image="Alysia_Client\Textures\Items_virtual\table_wood.paa";
         class use
         {
-            action="['table_wood'] spawn AlysiaClient_fnc_dynamicObject_deploy;";
+            action="['table_wood'] spawn AdenisClient_fnc_dynamicObject_deploy;";
         };
         class remove {};
     };
@@ -346,7 +346,7 @@ class ADENIS_ITEMS
         image="Alysia_Client\Textures\Items_virtual\chair_wood.paa";
         class use
         {
-            action="['chair_wood'] spawn AlysiaClient_fnc_dynamicObject_deploy;";
+            action="['chair_wood'] spawn AdenisClient_fnc_dynamicObject_deploy;";
         };
         class remove {};
     };
@@ -357,7 +357,7 @@ class ADENIS_ITEMS
         image="";
         class use
         {
-            action="['light_double'] spawn AlysiaClient_fnc_dynamicObject_deploy;";
+            action="['light_double'] spawn AdenisClient_fnc_dynamicObject_deploy;";
         };
         class remove {};
     };
@@ -368,7 +368,7 @@ class ADENIS_ITEMS
         image="";
         class use
         {
-            action="['bagfence_01'] spawn AlysiaClient_fnc_dynamicObject_deploy;";
+            action="['bagfence_01'] spawn AdenisClient_fnc_dynamicObject_deploy;";
         };
         class remove {};
     };
@@ -378,7 +378,7 @@ class ADENIS_ITEMS
         image="";
         class use
         {
-            action="['bagfence_02'] spawn AlysiaClient_fnc_dynamicObject_deploy;";
+            action="['bagfence_02'] spawn AdenisClient_fnc_dynamicObject_deploy;";
         };
         class remove {};
     };
@@ -390,7 +390,7 @@ class ADENIS_ITEMS
         image="Alysia_Client\Textures\Items_virtual\herse.paa";
         class use
         {
-            action="['spikeStrip'] spawn AlysiaClient_fnc_dynamicObject_deploy;";
+            action="['spikeStrip'] spawn AdenisClient_fnc_dynamicObject_deploy;";
         };
         class remove {};
     };
@@ -400,7 +400,7 @@ class ADENIS_ITEMS
         weight=6;
         class use
         {
-            action="['hedgehog'] spawn AlysiaClient_fnc_dynamicObject_deploy;";
+            action="['hedgehog'] spawn AdenisClient_fnc_dynamicObject_deploy;";
         };
         class remove {};
     };
@@ -410,7 +410,7 @@ class ADENIS_ITEMS
         weight=20;
         class use
         {
-            action="['watchtower_wood'] spawn AlysiaClient_fnc_dynamicObject_deploy;";
+            action="['watchtower_wood'] spawn AdenisClient_fnc_dynamicObject_deploy;";
         };
         class remove {};
     };
@@ -420,7 +420,7 @@ class ADENIS_ITEMS
         weight=30;
         class use
         {
-            action="['watchpost_tall'] spawn AlysiaClient_fnc_dynamicObject_deploy;";
+            action="['watchpost_tall'] spawn AdenisClient_fnc_dynamicObject_deploy;";
         };
         class remove {};
     };
@@ -430,7 +430,7 @@ class ADENIS_ITEMS
         weight=22;
         class use
         {
-            action="['watchpost_small'] spawn AlysiaClient_fnc_dynamicObject_deploy;";
+            action="['watchpost_small'] spawn AdenisClient_fnc_dynamicObject_deploy;";
         };
         class remove {};
     };
@@ -440,7 +440,7 @@ class ADENIS_ITEMS
         weight=10;
         class use
         {
-            action="['camoNet'] spawn AlysiaClient_fnc_dynamicObject_deploy;";
+            action="['camoNet'] spawn AdenisClient_fnc_dynamicObject_deploy;";
         };
         class remove {};
     };
@@ -1506,7 +1506,7 @@ class ADENIS_ITEMS
         buy_license_CIV="rebelle_1";
         class use
         {
-            action="['lab_marijuana'] spawn AlysiaClient_fnc_labo_deploy;";
+            action="['lab_marijuana'] spawn AdenisClient_fnc_labo_deploy;";
         };
         class remove {};
     };
@@ -1520,7 +1520,7 @@ class ADENIS_ITEMS
         buy_license_CIV="rebelle_1";
         class use
         {
-            action="['lab_mushroom'] spawn AlysiaClient_fnc_labo_deploy;";
+            action="['lab_mushroom'] spawn AdenisClient_fnc_labo_deploy;";
         };
         class remove {};
     };
@@ -1531,7 +1531,7 @@ class ADENIS_ITEMS
         image="Alysia_Client\Textures\Items_virtual\drogue.paa";
         class use
         {
-            action="['lab_meth'] spawn AlysiaClient_fnc_labo_deploy;";
+            action="['lab_meth'] spawn AdenisClient_fnc_labo_deploy;";
         };
         class remove {};
     };
@@ -1542,7 +1542,7 @@ class ADENIS_ITEMS
         image="Alysia_Client\Textures\Items_virtual\drogue.paa";
         class use
         {
-            action="['lab_cocaine'] spawn AlysiaClient_fnc_labo_deploy;";
+            action="['lab_cocaine'] spawn AdenisClient_fnc_labo_deploy;";
         };
         class remove {};
     };
@@ -1553,7 +1553,7 @@ class ADENIS_ITEMS
         image="Alysia_Client\Textures\Items_virtual\drogue.paa";
         class use
         {
-            action="['lab_heroin'] spawn AlysiaClient_fnc_labo_deploy;";
+            action="['lab_heroin'] spawn AdenisClient_fnc_labo_deploy;";
         };
         class remove {};
     };
@@ -1564,7 +1564,7 @@ class ADENIS_ITEMS
         image="Alysia_Client\Textures\Items_virtual\lab_cigare.paa";
         class use
         {
-            action="['lab_cigare'] spawn AlysiaClient_fnc_labo_deploy;";
+            action="['lab_cigare'] spawn AdenisClient_fnc_labo_deploy;";
         };
         class remove {};
     };
@@ -1575,7 +1575,7 @@ class ADENIS_ITEMS
         image="Alysia_Client\Textures\Items_virtual\lab_heal.paa";
         class use
         {
-            action="['lab_heal'] spawn AlysiaClient_fnc_labo_deploy;";
+            action="['lab_heal'] spawn AdenisClient_fnc_labo_deploy;";
         };
         class remove {};
     };
@@ -1586,7 +1586,7 @@ class ADENIS_ITEMS
         image="";
         class use
         {
-            action="['lab_gun'] spawn AlysiaClient_fnc_labo_deploy;";
+            action="['lab_gun'] spawn AdenisClient_fnc_labo_deploy;";
         };
         class remove {};
     };
@@ -1597,7 +1597,7 @@ class ADENIS_ITEMS
         image="Alysia_Client\Textures\Items_virtual\construction.paa";
         class use
         {
-            action="['lab_construction'] spawn AlysiaClient_fnc_labo_deploy;";
+            action="['lab_construction'] spawn AdenisClient_fnc_labo_deploy;";
         };
         class remove {};
     };
@@ -1628,7 +1628,7 @@ class ADENIS_ITEMS
         buy_license_CIV="east_dog";
         class use
         {
-            action="[] spawn AlysiaClient_fnc_dog_get;";
+            action="[] spawn AdenisClient_fnc_dog_get;";
         };
     };
 
@@ -1641,7 +1641,7 @@ class ADENIS_ITEMS
         buy_license_CIV="company_construction";
         class use
         {
-            action="[] spawn AlysiaClient_fnc_item_serrure;";
+            action="[] spawn AdenisClient_fnc_item_serrure;";
         };
         class remove {};
     };
@@ -2602,7 +2602,7 @@ class ADENIS_ITEMS
         class remove {};
         class use
         {
-            action="[] call AlysiaClient_fnc_item_firework;";
+            action="[] call AdenisClient_fnc_item_firework;";
         };
     };
 

@@ -1,0 +1,15 @@
+/*
+	Tanoa-Life RPG
+	Code written by Lyeed
+*/
+private["_res"];
+_res = [];
+
+{
+	_license = configName _x;
+	if ([_license] call AdenisClient_fnc_hasLicense) then {
+		_res pushBack _license;
+	};
+} foreach ("true" configClasses (missionConfigFile >> "ADENIS_LICENSES"));
+
+_res;
