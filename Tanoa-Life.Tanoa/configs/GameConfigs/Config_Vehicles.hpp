@@ -1,4 +1,4 @@
-class ALYSIA_VEHICLES_INFO
+class ADENIS_VEHICLES_INFO
 {
 	/* MASTER VEHICLES CONFIG */
 	insurance_percentage=0.3;
@@ -9,7 +9,7 @@ class ALYSIA_VEHICLES_INFO
 	// based on vehicle's buyPrice
 };
 
-class ALYSIA_VEHICLES
+class ADENIS_VEHICLES
 {
 	/*
 	class master_vehicleClassname

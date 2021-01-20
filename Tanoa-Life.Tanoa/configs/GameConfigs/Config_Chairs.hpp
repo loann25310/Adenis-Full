@@ -1,4 +1,4 @@
-class ALYSIA_CHAIRS
+class ADENIS_CHAIRS
 {
 	class Land_Chair_EP1
 	{

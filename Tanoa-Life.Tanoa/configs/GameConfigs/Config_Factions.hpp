@@ -1,4 +1,4 @@
-class ALYSIA_FACTIONS
+class ADENIS_FACTIONS
 {
 	class EAST
 	{

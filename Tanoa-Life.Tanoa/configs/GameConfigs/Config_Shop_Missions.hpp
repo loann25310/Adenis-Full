@@ -1,4 +1,4 @@
-class ALYSIA_MISSIONS
+class ADENIS_MISSIONS
 {
 	class reb_1
 	{

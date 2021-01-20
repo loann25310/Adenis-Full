@@ -1,4 +1,4 @@
-class ALYSIA_MEDICAL
+class ADENIS_MEDICAL
 {
 	class stabilize
 	{
@@ -37,7 +37,7 @@ class ALYSIA_MEDICAL
 	};
 };
 
-class ALYSIA_DESEASES
+class ADENIS_DESEASES
 {
 	class rhume
 	{
@@ -70,7 +70,7 @@ class ALYSIA_DESEASES
 	};
 };
 
-class ALYSIA_MEDECINE
+class ADENIS_MEDECINE
 {
 	class medoc_rhume
 	{
@@ -110,7 +110,7 @@ class ALYSIA_MEDECINE
 	};
 };
 
-class ALYSIA_VACCINS
+class ADENIS_VACCINS
 {
 	class Alysia_Vaccin_Rhume
 	{

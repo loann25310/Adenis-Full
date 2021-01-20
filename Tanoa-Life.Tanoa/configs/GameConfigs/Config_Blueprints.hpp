@@ -1,4 +1,4 @@
-class ALYSIA_BLUEPRINTS
+class ADENIS_BLUEPRINTS
 {
 
 	class blueprint_uniformeMIT

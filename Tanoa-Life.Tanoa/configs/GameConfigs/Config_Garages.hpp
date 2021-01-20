@@ -1,4 +1,4 @@
-class ALYSIA_GARAGES
+class ADENIS_GARAGES
 {
 	class airfield_1
 	{

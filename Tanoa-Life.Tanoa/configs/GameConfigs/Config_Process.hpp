@@ -1,4 +1,4 @@
-class ALYSIA_PROCESS
+class ADENIS_PROCESS
 {
 	// Sons disponibles : "cement_mix" | "collectoil" | "cooking" | "drug_process" | "salt_process" | "smelting"
 	/* ====================================== SAMU ===================================== */

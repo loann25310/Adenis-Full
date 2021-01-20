@@ -1,4 +1,4 @@
-class ALYSIA_SHOPS_ARMA
+class ADENIS_SHOPS_ARMA
 {
 	class WEST_gun
 	{

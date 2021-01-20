@@ -1,4 +1,4 @@
-class ALYSIA_SHOPS_VEHICLES
+class ADENIS_SHOPS_VEHICLES
 {
 	
 	class CIV_air

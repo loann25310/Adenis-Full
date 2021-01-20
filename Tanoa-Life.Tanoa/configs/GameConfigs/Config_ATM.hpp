@@ -1,4 +1,4 @@
-class ALYSIA_ATM
+class ADENIS_ATM
 {
 	class Land_Atm_01_F
 	{

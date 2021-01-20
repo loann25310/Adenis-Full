@@ -1,4 +1,4 @@
-class ALYSIA_FARMING_PLANT_OBJETCS
+class ADENIS_FARMING_PLANT_OBJETCS
 {
 	/*
 	class X
@@ -260,7 +260,7 @@ class ALYSIA_FARMING_PLANT_OBJETCS
 	};
 };
 
-class ALYSIA_FARMING_PLANT_MARKERS
+class ADENIS_FARMING_PLANT_MARKERS
 {
 	class corn_field_marker_1
 	{

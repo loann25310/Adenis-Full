@@ -1,4 +1,4 @@
-class ALYSIA_HOUSES
+class ADENIS_HOUSES
 {
 	class Land_Offices_01_V1_F
 	{
