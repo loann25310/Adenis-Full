@@ -2,7 +2,7 @@ class CfgFunctions
 {
 	class Events
 	{
-		tag="AdenisEvent";
+		tag="AlysiaEvent";
 		class Events_functions
 		{
 			file="core\EventHandlers";
@@ -21,7 +21,7 @@ class CfgFunctions
 
 	class MySQL
 	{
-		tag="AdenisDB";
+		tag="AlysiaDB";
 		class Functions
 		{
 			file="core\MySQL";
@@ -34,7 +34,7 @@ class CfgFunctions
 
 	class Public
 	{
-		tag="AdenisClient";
+		tag="AlysiaClient";
 
 		class Init
 		{
@@ -604,7 +604,6 @@ class CfgFunctions
 			class interactionMenu_action_license_give_action {};
 			class action_feed_open {};
 			class action_feed_execute {};
-			class acceptCall {};
 		};
 
 		class Welcome

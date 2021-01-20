@@ -109,7 +109,7 @@ class ADENIS_STAFF
 			class god_on
 			{
 				name="Dieu ON";
-				statement="[] spawn AdenisClient_fnc_APP_staff_god;";
+				statement="[] spawn AlysiaClient_fnc_APP_staff_god;";
 				condition="!g_staff_on";
 				allow[]=ADMIN_AND_MODO;
 			};
@@ -196,7 +196,7 @@ class ADENIS_STAFF
 			class remove_desaeses
 			{
 				name="Supp maladie";
-				statement="g_deseases=[];g_medecine=[];['Merci de deco reco'] call AdenisClient_fnc_info;";
+				statement="g_deseases=[];g_medecine=[];['Merci de deco reco'] call AlysiaClient_fnc_info;";
 				condition="count(g_deseases) > 0";
 				allow[]=ADMIN_AND_MODO;
 			};
@@ -219,13 +219,13 @@ class ADENIS_STAFF
 			class snake: rabbit
 			{
 				name="Serpent";
-				statement="[] spawn AdenisClient_fnc_APP_staff_snake;";
+				statement="[] spawn AlysiaClient_fnc_APP_staff_snake;";
 			};
 
 			class seize
 			{
 				name="Saisir";
-				statement="[] call AdenisClient_fnc_seizeObjects;";
+				statement="[] call AlysiaClient_fnc_seizeObjects;";
 				condition="(count(nearestObjects [player, ['WeaponHolder','GroundWeaponHolder','WeaponHolderSimulated','Skyline_Alysia_Boite_01_F'], 3]) > 0)";
 				allow[]=ADMIN_AND_MODO;
 			};
@@ -233,7 +233,7 @@ class ADENIS_STAFF
 			class esp_on
 			{
 				name="ESP ON";
-				statement="[] spawn AdenisClient_fnc_APP_staff_esp;";
+				statement="[] spawn AlysiaClient_fnc_APP_staff_esp;";
 				condition="!g_staff_esp";
 				allow[]=
 				{
@@ -274,14 +274,14 @@ class ADENIS_STAFF
 			class spec: tpto
 			 {
 			 	name="Spec";
-			 	statement="[] spawn AdenisClient_fnc_APP_staff_spec_ON;";
+			 	statement="[] spawn AlysiaClient_fnc_APP_staff_spec_ON;";
 			 	condition="g_staff_god";
 			 };
 
 			class data
 			{
 				name="Informations";
-				statement="[player] remoteExecCall ['AdenisClient_fnc_APP_staff_players_getData',(lbData[9000,lbCurSel 9000])];";
+				statement="[player] remoteExecCall ['AlysiaClient_fnc_APP_staff_players_getData',(lbData[9000,lbCurSel 9000])];";
 				condition="(true)";
 				allow[]=ADMIN_AND_MODO;
 			};
@@ -289,7 +289,7 @@ class ADENIS_STAFF
 			class heal: tpto
 			{
 				name="Soin";
-				statement="[3999] remoteExecCall ['AdenisClient_fnc_handleBlood',(call compile (lbData[9000,lbCurSel 9000]))]; (call compile (lbData[9000,lbCurSel 9000])) setVariable ['is_bleeding', false, true];";
+				statement="[3999] remoteExecCall ['AlysiaClient_fnc_handleBlood',(call compile (lbData[9000,lbCurSel 9000]))]; (call compile (lbData[9000,lbCurSel 9000])) setVariable ['is_bleeding', false, true];";
 			};
 			class res: tpto
 			{
@@ -338,14 +338,14 @@ class ADENIS_STAFF
 							'0123456789', \
 							7, \
 							1 \
-						] call AdenisClient_fnc_edit_create; \
+						] call AlysiaClient_fnc_edit_create; \
 						if (_amount != '') then \
 						{ \
 							_amount = parseNumber(_amount); \
 							_target = call compile (lbData[9000,lbCurSel 9000]); \
-							[format['Vous avez envoyé <t color=''#8cff9b''>%1</t>$ à <t color=''#FF8000''>%2</t>', [_amount] call AdenisClient_fnc_numberText, _target getVariable 'realname']] call AdenisClient_fnc_info; \
-							[format['<t color=''#cc4747''>Adenis</t> vous a remboursé de <t color=''#8cff9b''>%1</t>$ sur votre compte en banque.', [_amount] call AdenisClient_fnc_numberText]] remoteExecCall ['AdenisClient_fnc_info', _target]; \
-							[true, _amount] remoteExecCall ['AdenisClient_fnc_handleATM', _target]; \
+							[format['Vous avez envoyé <t color=''#8cff9b''>%1</t>$ à <t color=''#FF8000''>%2</t>', [_amount] call AlysiaClient_fnc_numberText, _target getVariable 'realname']] call AlysiaClient_fnc_info; \
+							[format['<t color=''#cc4747''>Adenis</t> vous a remboursé de <t color=''#8cff9b''>%1</t>$ sur votre compte en banque.', [_amount] call AlysiaClient_fnc_numberText]] remoteExecCall ['AlysiaClient_fnc_info', _target]; \
+							[true, _amount] remoteExecCall ['AlysiaClient_fnc_handleATM', _target]; \
 							[player, _target, _amount] remoteExecCall ['AlysiaServer_fnc_logRefund', 2]; \
 						}; \
 					}; \
