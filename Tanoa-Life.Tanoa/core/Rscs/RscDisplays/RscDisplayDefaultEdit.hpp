@@ -117,7 +117,7 @@ class RscDisplayDefaultEdit: RscDisplayDefaultInteraction
 		class ACTION_BUTTON: RscButtonSilent
 		{
 			idc=101009;
-			action="[] call AdenisClient_fnc_edit_action;";
+			action="[] call AlysiaClient_fnc_edit_action;";
 
 			x=0.448438 * safezoneW + safezoneX;
 			y=0.621 * safezoneH + safezoneY;

@@ -135,7 +135,7 @@ class FACTION_OFFICE_BUTTON: RscButtonMenu
 	idc=FACTION_OFFICE_BUTTON_IDC;
 	text="Bureau";
 	colorBackground[]={0,0,0,0.8};
-	action="ctrlEnable[8710, false];[] call AdenisClient_fnc_APP_faction_leader_office;";
+	action="ctrlEnable[8710, false];[] call AlysiaClient_fnc_APP_faction_leader_office;";
 	tooltip="Réservé aux hauts gradés";
 
 	x=0.530937 * safezoneW + safezoneX;
@@ -209,7 +209,7 @@ class FACTION_LEADER_OFFICE_CIVILIAN_INVITE: RscButtonMenu
 {
 	idc=FACTION_LEADER_OFFICE_CIVILIAN_INVITE_IDC;
 	text="Recruter";
-	onButtonClick="[] call AdenisClient_fnc_APP_faction_leader_office_invite;";
+	onButtonClick="[] call AlysiaClient_fnc_APP_faction_leader_office_invite;";
 	
 	x=0.371094 * safezoneW + safezoneX;
 	y=0.643 * safezoneH + safezoneY;
@@ -261,7 +261,7 @@ class FACTION_LEADER_OFFICE_FACTION_ACTION: RscButtonMenu
 {
 	idc=FACTION_LEADER_OFFICE_FACTION_ACTION_IDC;
 	text="Appliquer";
-	onButtonClick="[] call AdenisClient_fnc_APP_faction_leader_office_edit;";
+	onButtonClick="[] call AlysiaClient_fnc_APP_faction_leader_office_edit;";
 	
 	x=0.613437 * safezoneW + safezoneX;
 	y=0.643 * safezoneH + safezoneY;
@@ -273,7 +273,7 @@ class FACTION_LEADER_OFFICE_FACTION_HISTORY: RscButtonMenu
 {
 	idc=FACTION_LEADER_OFFICE_FACTION_HISTORY_IDC;
 	text="Historique d'achat";
-	onButtonClick="ctrlEnable[8739, false];[player] remoteExecCall [""AdenisServer_fnc_factionHistoryGet"", 2];";
+	onButtonClick="ctrlEnable[8739, false];[player] remoteExecCall [""AlysiaServer_fnc_factionHistoryGet"", 2];";
 
 	x=0.551562 * safezoneW + safezoneX;
 	y=0.357 * safezoneH + safezoneY;
@@ -294,7 +294,7 @@ class FACTION_LEADER_OFFICE_BACK_IMAGE: RscPicture
 class FACTION_LEADER_OFFICE_BACK_BUTTON: RscButtonSilent
 {
 	idc=FACTION_LEADER_OFFICE_BACK_BUTTON_IDC;
-	action="[""faction""] spawn AdenisClient_fnc_tabletApp;";
+	action="[""faction""] spawn AlysiaClient_fnc_tabletApp;";
 	tooltip="Retour";
 
 	x=0.321927 * safezoneW + safezoneX;
@@ -356,7 +356,7 @@ class FACTION_LEADER_HISTORY_DELETEALL: RscButtonMenu
 {
 	idc=FACTION_LEADER_HISTORY_DELETEALL_IDC;
 	text="Tout supprimer";
-	onButtonClick="[""FACTION""] spawn AdenisClient_fnc_tabletApp;[player] remoteExecCall [""AdenisServer_fnc_factionHistoryClean"", 2];";
+	onButtonClick="[""FACTION""] spawn AlysiaClient_fnc_tabletApp;[player] remoteExecCall [""AlysiaServer_fnc_factionHistoryClean"", 2];";
 	
 	x=0.463906 * safezoneW + safezoneX;
 	y=0.643 * safezoneH + safezoneY;
@@ -377,7 +377,7 @@ class FACTION_LEADER_HISTORY_BACK_IMAGE: RscPicture
 class FACTION_LEADER_HISTORY_BACK_BUTTON: RscButtonSilent
 {
 	idc=FACTION_LEADER_HISTORY_BACK_BUTTON_IDC;
-	action="ctrlEnable[8755, false];[] call AdenisClient_fnc_APP_faction_leader_office;";
+	action="ctrlEnable[8755, false];[] call AlysiaClient_fnc_APP_faction_leader_office;";
 	tooltip="Retour";
 
 	x=0.323124 * safezoneW + safezoneX;

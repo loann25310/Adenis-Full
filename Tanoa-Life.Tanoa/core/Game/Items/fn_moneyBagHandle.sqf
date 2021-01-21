@@ -6,11 +6,11 @@ private["_obj", "_action_1"];
 _obj = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
 
 if (!(isNull _obj) && !(isNull(attachedTo _obj))) exitWith {
-	["Quelqu'un porte déjà ce sac."] call AdenisClient_fnc_error;
+	["Quelqu'un porte déjà ce sac."] call AlysiaClient_fnc_error;
 };
 
 if ((currentWeapon player) != "") exitWith {
-	["Vous ne devez pas avoir d'arme en main pour pouvoir récupérer la valise."] call AdenisClient_fnc_error;
+	["Vous ne devez pas avoir d'arme en main pour pouvoir récupérer la valise."] call AlysiaClient_fnc_error;
 };
 
 if (isNull _obj) then {
@@ -21,7 +21,7 @@ _obj attachTo [player, [-0.03, -0.05, -0.25], "rightHandMiddle1"];
 _obj setDir 90;
 player setVariable ["wallet_obj", _obj];
 
-_action_1 = player addAction [format["Déposer <t color='#FFFF33'>%1</t>", ["money_transfer"] call AdenisClient_fnc_itemGetName],
+_action_1 = player addAction [format["Déposer <t color='#FFFF33'>%1</t>", ["money_transfer"] call AlysiaClient_fnc_itemGetName],
 {
 	if (!g_action_inUse && !(isNull (player getVariable ["wallet_obj", objNull]))) then
 	{

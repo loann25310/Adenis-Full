@@ -13,4 +13,4 @@ if (_uid isEqualTo "") exitWith {};
 
 {
 	_x setVariable ["house_tenants", (_x getVariable ["house_tenants", []]) - [_uid]];
-} forEach ([_uid] call AdenisServer_fnc_house_fetch);
+} forEach ([_uid] call AlysiaServer_fnc_house_fetch);

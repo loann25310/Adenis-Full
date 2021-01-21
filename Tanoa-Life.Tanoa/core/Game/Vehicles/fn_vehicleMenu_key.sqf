@@ -7,7 +7,7 @@ _target = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
 _lock = [_this, 1, false, [false]] call BIS_fnc_param;
 
 if (isNull _target) exitWith {
-	["Cible invalide."] call AdenisClient_fnc_error;
+	["Cible invalide."] call AlysiaClient_fnc_error;
 };
 
 if (_lock) then
@@ -35,8 +35,8 @@ if (_lock) then
 			[_target, 2] remoteExecCall ["lock", _target, false];
 		};
 
-		[_target, "car_lock", 50] call AdenisClient_fnc_globalSay3d;
-		[] call AdenisClient_fnc_interactions_recall;
+		[_target, "car_lock", 50] call AlysiaClient_fnc_globalSay3d;
+		[] call AlysiaClient_fnc_interactions_recall;
 	} else {
 		systemChat "<MENU VEHICULE> Véhicule déjà verrouillé";
 	};
@@ -60,8 +60,8 @@ if (_lock) then
 			[_target, 0] remoteExecCall ["lock", _target, false];
 		};
 
-		[_target, "car_open", 50] call AdenisClient_fnc_globalSay3d;
-		[] call AdenisClient_fnc_interactions_recall;
+		[_target, "car_open", 50] call AlysiaClient_fnc_globalSay3d;
+		[] call AlysiaClient_fnc_interactions_recall;
 	} else {
 		systemChat "<MENU VEHICULE> Véhicule déjà déverrouillé";
 	};

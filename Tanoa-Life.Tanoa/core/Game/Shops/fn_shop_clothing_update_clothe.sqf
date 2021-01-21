@@ -55,7 +55,7 @@ if (g_cash >= _price) then {
 	_price_condition = false;
 };
 
-_rank = getNumber(missionConfigFile >> "ADENIS_ITEMS_ARMA" >> _item >> format["buy_condition_%1", playerSide]);
+_rank = getNumber(missionConfigFile >> "ALYSIA_ITEMS_ARMA" >> _item >> format["buy_condition_%1", playerSide]);
 if ((_rank isEqualTo 0) || ((_rank > 0) && ((player getVariable ["rank", 0]) >= _rank))) then {
 	_rank_condition = true;
 } else {
@@ -63,17 +63,17 @@ if ((_rank isEqualTo 0) || ((_rank > 0) && ((player getVariable ["rank", 0]) >= 
 };
 
 
-_licenses = getArray(missionConfigFile >> "ADENIS_ITEMS_ARMA" >> _item >> format["buy_license_%1", playerSide]);
+_licenses = getArray(missionConfigFile >> "ALYSIA_ITEMS_ARMA" >> _item >> format["buy_license_%1", playerSide]);
 if (count(_licenses) > 0) then
 {
 	_licenses_text = "";
 	_licenses_condition = true;
 
 	{
-		if ([_x] call AdenisClient_fnc_hasLicense) then {
-			_licenses_text = _licenses_text + format["<t color='#31B404'>%1</t><br/>", [_x] call AdenisClient_fnc_licenseGetName];
+		if ([_x] call AlysiaClient_fnc_hasLicense) then {
+			_licenses_text = _licenses_text + format["<t color='#31B404'>%1</t><br/>", [_x] call AlysiaClient_fnc_licenseGetName];
 		} else {
-			_licenses_text = _licenses_text + format["<t color='#DF0101'>%1</t><br/>", [_x] call AdenisClient_fnc_licenseGetName];
+			_licenses_text = _licenses_text + format["<t color='#DF0101'>%1</t><br/>", [_x] call AlysiaClient_fnc_licenseGetName];
 			_licenses_condition = false;
 		};
 	} forEach _licenses;
@@ -96,10 +96,10 @@ if (count(_licenses) > 0) then
 	+	"<t align='left'>Prix</t><t align='right' color='%4'>%5$</t><br/>"
 	+	"</t>",
 	if (_rank_condition) then {"#31B404"} else {"#DF0101"},
-	([playerSide, _rank] call AdenisClient_fnc_rankToStr),
+	([playerSide, _rank] call AlysiaClient_fnc_rankToStr),
 	_licenses_text,
 	if (_price_condition) then {"#31B404"} else {"#DF0101"},
-	[_price] call AdenisClient_fnc_numberText
+	[_price] call AlysiaClient_fnc_numberText
 ];
 
 if (_price_condition && _rank_condition && _licenses_condition) then {

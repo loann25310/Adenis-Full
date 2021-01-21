@@ -40,7 +40,7 @@ if (g_alcool isEqualTo 0) then
 						_animated = true;
 					};
 					if (random(100) <= 50) then {
-						[player, "vomit", 20] call AdenisClient_fnc_globalSay3d;
+						[player, "vomit", 20] call AlysiaClient_fnc_globalSay3d;
 					};
 				} else {
 					if (((animationState player) == "incapacitated") && _animated) then {

@@ -24,7 +24,7 @@ if (g_blood >= 4000) then
 
 	if ((_value < 0) && !(isNull _from)) then
 	{
-		_index = [(getPlayerUID _from), g_damage_history] call AdenisClient_fnc_index;
+		_index = [(getPlayerUID _from), g_damage_history] call AlysiaClient_fnc_index;
 		if (_index isEqualTo -1) then {
 			g_damage_history pushBack [(getPlayerUID _from), _value];
 		} else {
@@ -35,14 +35,14 @@ if (g_blood >= 4000) then
 	if (g_blood <= 1) then
 	{
 		g_blood = 1;
-		[_from] spawn AdenisClient_fnc_handleComa;
+		[_from] spawn AlysiaClient_fnc_handleComa;
 	} else {
 		if (!g_regen_active) then {
-			[] spawn AdenisClient_fnc_handleRegen;
+			[] spawn AlysiaClient_fnc_handleRegen;
 		};
 		if (_value < 0) then
 		{
-			[] call AdenisEvent_fnc_onPlayerFireNear;
+			[] call AlysiaEvent_fnc_onPlayerFireNear;
 			[10] spawn BIS_fnc_BloodEffect;
 			if (((vehicle player) != player) && ([_this, 2, true, [true]] call BIS_fnc_param)) then {
 				addCamShake [random(15) + 1, 1, random(5) + 1];

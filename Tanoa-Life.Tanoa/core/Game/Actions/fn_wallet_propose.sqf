@@ -12,7 +12,7 @@ _action = switch (true) do
 	case (player getVariable ["is_coma", false]): {true};
 	case ((player getVariable ["surrender", false]) || (player getVariable ["restrained", false])):
 	{
-		["Quelqu'un cherche votre porte-feuille dans vos affaires."] call AdenisClient_fnc_info;
+		["Quelqu'un cherche votre porte-feuille dans vos affaires."] call AlysiaClient_fnc_info;
 		true;
 	};
 	default
@@ -35,29 +35,29 @@ _action = switch (true) do
 
 if (_action) then
 {
-	_item = getText(missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "identity_item");
+	_item = getText(missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "identity_item");
 	if ((_item isEqualTo "") || (_item in (magazines player))) then
 	{
 		_licenses = [];
 
 		{
-			if (str(side _from) in getArray(missionConfigFile >> "ADENIS_LICENSES" >> _x >> "factions" >> str(playerSide) >> "search_shown")) then {
+			if (str(side _from) in getArray(missionConfigFile >> "ALYSIA_LICENSES" >> _x >> "factions" >> str(playerSide) >> "search_shown")) then {
 				_licenses pushBack _x;
 			};
-		} forEach ([] call AdenisClient_fnc_getLicenses);
+		} forEach ([] call AlysiaClient_fnc_getLicenses);
 
 		if (g_fakeIdentity && random 1 <= 0.14) exitWith {
-			[player, _licenses, ["Numéro de passeport", "# Incorrect #", g_birth, g_nationality, g_sexe]] remoteExec ["AdenisClient_fnc_wallet_return", _from];
+			[player, _licenses, ["Numéro de passeport", "# Incorrect #", g_birth, g_nationality, g_sexe]] remoteExec ["AlysiaClient_fnc_wallet_return", _from];
 		};
 
-		[player, _licenses, [g_firstName, g_lastName, g_birth, g_nationality, g_sexe]] remoteExec ["AdenisClient_fnc_wallet_return", _from];
+		[player, _licenses, [g_firstName, g_lastName, g_birth, g_nationality, g_sexe]] remoteExec ["AlysiaClient_fnc_wallet_return", _from];
 	} else {
 		[format[
 			"Vous n'avez pas l'objet nécessaire pour prouver <t color='#FF8000'>votre identité</t>.<br/><br/>Requis : %1<br/><br/>La demande a été <t color='#DF0101'>refusée</t>.",
-			(([_item] call AdenisClient_fnc_fetchCfgDetails) select 1)
-		]] call AdenisClient_fnc_error;
-		["Votre demande a été <t color='#DF0101'>refusée</t>."] remoteExecCall ["AdenisClient_fnc_info", _from];
+			(([_item] call AlysiaClient_fnc_fetchCfgDetails) select 1)
+		]] call AlysiaClient_fnc_error;
+		["Votre demande a été <t color='#DF0101'>refusée</t>."] remoteExecCall ["AlysiaClient_fnc_info", _from];
 	};
 } else {
-	["Votre demande a été <t color='#DF0101'>refusée</t>."] remoteExecCall ["AdenisClient_fnc_info", _from];
+	["Votre demande a été <t color='#DF0101'>refusée</t>."] remoteExecCall ["AlysiaClient_fnc_info", _from];
 };

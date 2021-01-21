@@ -5,22 +5,22 @@
 private["_handle", "_display", "_targetPos", "_cameraPos", "_camera", "_action", "_bad"];
 
 if (playerSide != civilian) exitWith {
-	["Vous devez être connecté en civil pour votre première connexion"] spawn AdenisClient_fnc_errorExit;
+	["Vous devez être connecté en civil pour votre première connexion"] spawn AlysiaClient_fnc_errorExit;
 };
 
-_bad = [profileName, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz- "] call AdenisClient_fnc_TextAllowed;
+_bad = [profileName, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz- "] call AlysiaClient_fnc_TextAllowed;
 if (_bad != "") exitWith {
-	["Vous utilisez un caractère interdit dans votre pseudo (%1)", _bad] call AdenisClient_fnc_errorExit;
+	["Vous utilisez un caractère interdit dans votre pseudo (%1)", _bad] call AlysiaClient_fnc_errorExit;
 };
 
 if (([profileName] call CBA_fnc_leftTrim) != profileName) exitWith {
-	["Vous avez un ou plusieurs espaces au début de votre pseudo. Veuillez les retirer pour vous connecter."] spawn AdenisClient_fnc_errorExit;
+	["Vous avez un ou plusieurs espaces au début de votre pseudo. Veuillez les retirer pour vous connecter."] spawn AlysiaClient_fnc_errorExit;
 };
 if (([profileName] call CBA_fnc_rightTrim) != profileName) exitWith {
-	["Vous avez un ou plusieurs espaces à la fin de votre pseudo. Veuillez les retirer pour vous connecter."] spawn AdenisClient_fnc_errorExit;
+	["Vous avez un ou plusieurs espaces à la fin de votre pseudo. Veuillez les retirer pour vous connecter."] spawn AlysiaClient_fnc_errorExit;
 };
 if (count([profileName, " "] call CBA_fnc_split) < 2) exitWith {
-	["Votre pseudo doit être composé d'un prénom et d'un nom. Exemple: Jean Robert."] spawn AdenisClient_fnc_errorExit;
+	["Votre pseudo doit être composé d'un prénom et d'un nom. Exemple: Jean Robert."] spawn AlysiaClient_fnc_errorExit;
 };
 
 playMusic "Chica_Chica";
@@ -34,10 +34,10 @@ _camera camCommit 0;
 ("initLayer" call BIS_fnc_rscLayer) cutText ["", "BLACK IN", 4, false];
 4 fadeSound 1;
 
-profileNamespace setVariable ["ADENIS_phone_sms_ring", ""];
-profileNamespace setVariable ["ADENIS_phone_call_ring", ""];
-profileNamespace setVariable ["ADENIS_tablet_animation", false];
-profileNamespace setVariable ["ADENIS_house_spawn_info", nil];
+profileNamespace setVariable ["ALYSIA_phone_sms_ring", ""];
+profileNamespace setVariable ["ALYSIA_phone_call_ring", ""];
+profileNamespace setVariable ["ALYSIA_tablet_animation", false];
+profileNamespace setVariable ["ALYSIA_house_spawn_info", nil];
 saveProfileNamespace;
 
 _action =
@@ -65,10 +65,10 @@ if (_action) then
 	waitUntil {camCommitted _camera};
 	uiSleep 1;
 
-	_handle = [] spawn AdenisClient_fnc_welcomeMenu_Open;
+	_handle = [] spawn AlysiaClient_fnc_welcomeMenu_Open;
 	waitUntil {scriptDone _handle};
 
-	[player, profileName, g_firstName, g_lastName, g_birth, g_nationality, g_sexe] remoteExec ["AdenisServer_fnc_query_insert_inscription", 2];
+	[player, profileName, g_firstName, g_lastName, g_birth, g_nationality, g_sexe] remoteExec ["AlysiaServer_fnc_query_insert_inscription", 2];
 	_camera cameraEffect ["terminate", "back"];
 	camDestroy _camera;
 
@@ -76,6 +76,6 @@ if (_action) then
 	("initLayer" call BIS_fnc_rscLayer) cutText ["Envoie de vos données au serveur", "BLACK FADED", 999999, true];
 	0 fadeSound 0;
 } else {
-	["Annulation de la création de profil."] spawn AdenisClient_fnc_errorExit;
+	["Annulation de la création de profil."] spawn AlysiaClient_fnc_errorExit;
 	sleep 99999;
 };

@@ -7,7 +7,7 @@ _item = [_this, 0, "", [""]] call BIS_fnc_param;
 
 if (_item isEqualTo "") exitWith {};
 
-_config = missionConfigFile >> "ADENIS_ITEMS" >> _item >> "food";
+_config = missionConfigFile >> "ALYSIA_ITEMS" >> _item >> "food";
 if (isClass(_config)) then
 {
 	_sound = getText(_config >> "sound");
@@ -15,18 +15,18 @@ if (isClass(_config)) then
 	{
 		if ((missionNamespace getVariable ["last_sound_time", 0]) < time) then
 		{
-			[player, _sound, 10] call AdenisClient_fnc_globalSay3d;
+			[player, _sound, 10] call AlysiaClient_fnc_globalSay3d;
 			missionNamespace setVariable ["last_sound_time", (time + 2)];
 		};
 	};
-	[getNumber(_config >> "thirst")] call AdenisClient_fnc_handleThirst;
-	[getNumber(_config >> "hunger")] call AdenisClient_fnc_handleHunger;
-	[getNumber(_config >> "alcool")] call AdenisClient_fnc_handleAlcool;
-	if (isClass(missionConfigFile >> "ADENIS_MEDECINE" >> _item)) then {
-		[_item] spawn AdenisClient_fnc_handleMedecine;
+	[getNumber(_config >> "thirst")] call AlysiaClient_fnc_handleThirst;
+	[getNumber(_config >> "hunger")] call AlysiaClient_fnc_handleHunger;
+	[getNumber(_config >> "alcool")] call AlysiaClient_fnc_handleAlcool;
+	if (isClass(missionConfigFile >> "ALYSIA_MEDECINE" >> _item)) then {
+		[_item] spawn AlysiaClient_fnc_handleMedecine;
 	};
-	if (isClass(missionConfigFile >> "ADENIS_DRUGS" >> _item)) then {
-		[_item] spawn AdenisClient_fnc_handleDrug;
+	if (isClass(missionConfigFile >> "ALYSIA_DRUGS" >> _item)) then {
+		[_item] spawn AlysiaClient_fnc_handleDrug;
 	};
 
 	_unlimitedRun = getNumber(_config >> "unlimitedRun");

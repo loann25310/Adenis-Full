@@ -6,7 +6,7 @@ private["_display","_info","_index","_control"];
 
 if (!(isNil "gServer_soonReboot")) exitWith
 {
-	["<t align='center'>Veuillez attendre le <t color='#B40404'>redémarrage</t> du serveur pour échanger un véhicule."] call AdenisClient_fnc_error;
+	["<t align='center'>Veuillez attendre le <t color='#B40404'>redémarrage</t> du serveur pour échanger un véhicule."] call AlysiaClient_fnc_error;
 	closeDialog 0;
 };
 
@@ -29,7 +29,7 @@ _vehicle = objNull;
 } forEach vehicles;
 
 if (!_finded) exitWith {
-	["<t color='#FF0000'>ERREUR</t>"] call AdenisClient_fnc_error;
+	["<t color='#FF0000'>ERREUR</t>"] call AlysiaClient_fnc_error;
 	closeDialog 0;
 };
 closeDialog 0;
@@ -40,6 +40,6 @@ _vehicle setVariable ["info", [(getPlayerUID g_interaction_target), (g_interacti
 _index = g_vehicles find _vehicle;
 g_vehicles deleteAt _index;
 
-[_vehicle] remoteExecCall ["AdenisClient_fnc_changeKey_recive", g_interaction_target];
-["Vous avez légué vos clefs"] call AdenisClient_fnc_info;
-[_plate, (getPlayerUID g_interaction_target), str (side g_interaction_target)] remoteExecCall ["AdenisServer_fnc_vehicle_update_owner", 2];
+[_vehicle] remoteExecCall ["AlysiaClient_fnc_changeKey_recive", g_interaction_target];
+["Vous avez légué vos clefs"] call AlysiaClient_fnc_info;
+[_plate, (getPlayerUID g_interaction_target), str (side g_interaction_target)] remoteExecCall ["AlysiaServer_fnc_vehicle_update_owner", 2];

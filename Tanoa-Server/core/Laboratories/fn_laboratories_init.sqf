@@ -14,9 +14,9 @@ gServer_laboratories = [];
 {
 
 	if ((_x select 8) isEqualTo 1) then {
-		_object = [(_x select 1), (_x select 2), (_x select 0), [(_x select 3), (_x select 4), (_x select 5)], (_x select 6), ([_x select 7] call AdenisServer_fnc_mresToArray), ([_x select 10] call AdenisServer_fnc_mresToArray)] call AdenisServer_fnc_laboratory_init;
+		_object = [(_x select 1), (_x select 2), (_x select 0), [(_x select 3), (_x select 4), (_x select 5)], (_x select 6), ([_x select 7] call AlysiaServer_fnc_mresToArray), ([_x select 10] call AlysiaServer_fnc_mresToArray)] call AlysiaServer_fnc_laboratory_init;
 	} else {
-		_object = [(_x select 1), (_x select 2), (_x select 0), [(_x select 3), (_x select 4), (_x select 5)], (_x select 6), ([_x select 9] call AdenisServer_fnc_mresToArray)] call AdenisServer_fnc_laboratory_init_construction;
+		_object = [(_x select 1), (_x select 2), (_x select 0), [(_x select 3), (_x select 4), (_x select 5)], (_x select 6), ([_x select 9] call AlysiaServer_fnc_mresToArray)] call AlysiaServer_fnc_laboratory_init_construction;
 	};
 
 	diag_log format["Loading laboratory [%1] owner [%2] plate [%3]", (_x select 2), (_x select 1), (_x select 0)];

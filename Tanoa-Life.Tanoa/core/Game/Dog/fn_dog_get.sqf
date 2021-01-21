@@ -5,7 +5,7 @@
 private["_sit", "_actual"];
 
 if (!isNull(g_dog)) exitWith {
-	["Vous avez déjà un chien."] call AdenisClient_fnc_error;
+	["Vous avez déjà un chien."] call AlysiaClient_fnc_error;
 };
 
 (["Alsatian_Sand_F", "Alsatian_Black_F", "Alsatian_Sandblack_F"] call BIS_fnc_selectRandom) createUnit [(position player), (group player), format["this setVariable ['owner', '%1'];", (getPlayerUID player)], 0.5, "PRIVATE"];
@@ -14,7 +14,7 @@ if (!isNull(g_dog)) exitWith {
 	if ((_x getVariable ["owner", ""]) isEqualTo (getPlayerUID player)) exitWith {g_dog = _x};
 } forEach (nearestObjects [player, ["Alsatian_Sand_F", "Alsatian_Black_F", "Alsatian_Sandblack_F"], 20]);
 if (isNull g_dog) exitWith {
-	["Impossible de trouver l'animal."] call AdenisClient_fnc_error;
+	["Impossible de trouver l'animal."] call AlysiaClient_fnc_error;
 };
 
 g_dog setVariable ["BIS_fnc_animalBehaviour_disable", true];
@@ -55,7 +55,7 @@ while {(!(isNull g_dog) && (alive g_dog))} do
 		if (g_dog getVariable ["search", false]) then
 		{
 			if ((random(100) < 10) && ((g_dog getVariable ["search_target", objNull]) isKindOf "Man")) then {
-				[g_dog, "dog_one", 30] call AdenisClient_fnc_globalSay3d;
+				[g_dog, "dog_one", 30] call AlysiaClient_fnc_globalSay3d;
 			};
 		};
 

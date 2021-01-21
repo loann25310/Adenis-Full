@@ -8,7 +8,7 @@ if ((animationState player) != "incapacitated") then
 	if (!g_staff_god) then
 	{
 		cutText ["", "BLACK IN", 5, true];
-		[] call AdenisEvent_fnc_onPlayerFireNear;
+		[] call AlysiaEvent_fnc_onPlayerFireNear;
 		if (!(player getVariable ["restrained", false]) && !(player getVariable ["surrender", false])) then
 		{
 			private "_inUse";

@@ -25,6 +25,7 @@ class Header
 	minPlayers=1;//min # of players the mission supports
 	maxPlayers=200;//max # of players the mission supports
 };
+allowedVoteCmds[] = {};
 //---------------------------------
 
 /**********************************
@@ -126,7 +127,7 @@ disabledAI=1;// When 1, removes all playable units which do not have a human pla
 /**********************************
 *************** Misc **************
 ***********************************/
-onPauseScript[]={AdenisEvent_fnc_onPlayerESC};
+onPauseScript[]={AlysiaEvent_fnc_onPlayerESC};
 saving=0;// disable saving
 enableItemsDropping=0;// Disable dropping items while swimming. Introduced in BETA 1.60.93965.
 weaponPool=0;// Allows equipment transferred from one campaign mission to the next to be available during the briefing in the gear menu.

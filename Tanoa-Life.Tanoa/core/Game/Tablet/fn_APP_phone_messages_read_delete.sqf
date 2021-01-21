@@ -13,4 +13,4 @@ if (_type isEqualTo 0) then {
 	g_phone_messages = [];
 };
 
-["phone_messages_read"] spawn AdenisClient_fnc_tabletApp;
+["phone_messages_read"] spawn AlysiaClient_fnc_tabletApp;

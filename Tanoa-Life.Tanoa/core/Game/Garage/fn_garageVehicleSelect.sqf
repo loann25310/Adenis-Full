@@ -46,8 +46,8 @@ _ctrl_trunk = _display displayCtrl 2804;
 lbClear _ctrl_trunk;
 
 {
-    _index = _ctrl_trunk lbAdd format["%1x %2", [(_x select 1)] call AdenisClient_fnc_numberText, [(_x select 0)] call AdenisClient_fnc_itemGetName];
-    _ctrl_trunk lbSetPicture [_index, ([(_x select 0)] call AdenisClient_fnc_itemGetImage)];
+    _index = _ctrl_trunk lbAdd format["%1x %2", [(_x select 1)] call AlysiaClient_fnc_numberText, [(_x select 0)] call AlysiaClient_fnc_itemGetName];
+    _ctrl_trunk lbSetPicture [_index, ([(_x select 0)] call AlysiaClient_fnc_itemGetImage)];
 } forEach (_data select 4);
 if ((lbSize _ctrl_trunk) isEqualTo 0) then {
     _ctrl_trunk lbAdd "Vide";
@@ -56,7 +56,7 @@ if ((lbSize _ctrl_trunk) isEqualTo 0) then {
 _ctrl_trunk lbSetCurSel -1;
 
 _fuel = _data select 3;
-_vehicleInfo = [_className] call AdenisClient_fnc_fetchVehInfo;
+_vehicleInfo = [_className] call AlysiaClient_fnc_fetchVehInfo;
 _storePos = [_data select 6, _data select 7, _data select 8];
 
 _price = _vehicleInfo select 17;
@@ -80,10 +80,10 @@ if (count(_licenses) > 0) then
     _license_condition = true;
 
     {
-        if ([_x] call AdenisClient_fnc_hasLicense) then {
-            _licenses_text = _licenses_text + format["<t color='#31B404'>%1</t><br/>", [_x] call AdenisClient_fnc_licenseGetName];
+        if ([_x] call AlysiaClient_fnc_hasLicense) then {
+            _licenses_text = _licenses_text + format["<t color='#31B404'>%1</t><br/>", [_x] call AlysiaClient_fnc_licenseGetName];
         } else {
-            _licenses_text = _licenses_text + format["<t color='#DF0101'>%1</t><br/>", [_x] call AdenisClient_fnc_licenseGetName];
+            _licenses_text = _licenses_text + format["<t color='#DF0101'>%1</t><br/>", [_x] call AlysiaClient_fnc_licenseGetName];
             _license_condition = false;
         };
     } forEach _licenses;
@@ -123,24 +123,24 @@ if (((_vehicleInfo select 11) isEqualTo str(playerSide)) || ((_vehicleInfo selec
     "</t>",
     if ((_vehicleInfo select 22) isEqualTo 0) then {(_data select 1)} else {"Inconnue"},
     if ((_data select 2) isEqualTo 1) then {"<t color='#8cff9b'>Oui</t>"} else {"<t color='#ff8c8c'>Non</t>"},
-    [_vehicleInfo select 18] call AdenisClient_fnc_numberText,
-    [_price] call AdenisClient_fnc_numberText,
-  	[_vehicleInfo select 19] call AdenisClient_fnc_numberText,
+    [_vehicleInfo select 18] call AlysiaClient_fnc_numberText,
+    [_price] call AlysiaClient_fnc_numberText,
+  	[_vehicleInfo select 19] call AlysiaClient_fnc_numberText,
   	_vehicleInfo select 3,
   	_vehicleInfo select 6,
   	_vehicleInfo select 5,
   	_vehicleInfo select 10,
     round((_fuel * (_vehicleInfo select 7)) / 100),
   	round(_vehicleInfo select 7),
-    getText(missionConfigFile >> "ADENIS_FUEL" >> (_vehicleInfo select 14) >> "name"),
+    getText(missionConfigFile >> "ALYSIA_FUEL" >> (_vehicleInfo select 14) >> "name"),
     if (_price_condition) then {"#31B404"} else {"#DF0101"},
     if (_rank_condition) then {"#31B404"} else {"#DF0101"},
-    [[_vehicleInfo select 11] call AdenisClient_fnc_strToSide, _rank] call AdenisClient_fnc_rankToStr,
+    [[_vehicleInfo select 11] call AlysiaClient_fnc_strToSide, _rank] call AlysiaClient_fnc_rankToStr,
     _licenses_text,
     _fuel,
     "%",
     if (_faction_condition) then {"#31B404"} else {"#DF0101"},
-    getText(missionConfigFile >> "ADENIS_FACTIONS" >> (_vehicleInfo select 11) >> "name_full"),
+    getText(missionConfigFile >> "ALYSIA_FACTIONS" >> (_vehicleInfo select 11) >> "name_full"),
     getNumber(configFile >> "CfgVehicles" >> _className >> "maximumload"),
     if (_className isKindOf "Car") then {"Oui"} else {"Non"},
     if ((_vehicleInfo select 23) isEqualTo 1) then {"Non"} else {"Oui"}
@@ -168,7 +168,7 @@ _idc = 2810;
 ([
     [
         "Récupérer",
-        "[] spawn AdenisClient_fnc_garageVehicleGet;",
+        "[] spawn AlysiaClient_fnc_garageVehicleGet;",
         "Alysia_Client_Texture\Data\garage\action_get.paa",
         "Alysia_Client_Texture\Data\garage\action_get_select.paa",
         "
@@ -188,37 +188,37 @@ _idc = 2810;
         "
     ],[
         "Localiser",
-        "[] spawn AdenisClient_fnc_garageVehicleFind;",
+        "[] spawn AlysiaClient_fnc_garageVehicleFind;",
         "Alysia_Client_Texture\Data\garage\action_localize.paa",
         "Alysia_Client_Texture\Data\garage\action_localize_select.paa",
         "!(_storePos isEqualTo [0,0,0]) && ((player distance _storePos) > 20)"
     ],[
         "Assurer",
-        "[] spawn AdenisClient_fnc_garageVehicleAssure;",
+        "[] spawn AlysiaClient_fnc_garageVehicleAssure;",
         "Alysia_Client_Texture\Data\garage\action_insurrance.paa",
         "Alysia_Client_Texture\Data\garage\action_insurrance_select.paa",
         "((_data select 2) isEqualTo 0)"
     ],[
         "Importer",
-        "[] spawn AdenisClient_fnc_garageVehicleImport;",
+        "[] spawn AlysiaClient_fnc_garageVehicleImport;",
         "Alysia_Client_Texture\Data\garage\action_import.paa",
         "Alysia_Client_Texture\Data\garage\action_import_select.paa",
         "
             !(_storePos isEqualTo [0,0,0]) &&
             ((player distance _storePos) > 20) &&
-            !([_storePos] call AdenisClient_fnc_nearFourriere) &&
-            !([getPos player] call AdenisClient_fnc_nearFourriere) &&
+            !([_storePos] call AlysiaClient_fnc_nearFourriere) &&
+            !([getPos player] call AlysiaClient_fnc_nearFourriere) &&
             ((_data select 4) isEqualTo [])
         "
     ],[
         "Renommer",
-        "[] spawn AdenisClient_fnc_garageVehicleRename;",
+        "[] spawn AlysiaClient_fnc_garageVehicleRename;",
         "Alysia_Client_Texture\Data\garage\action_rename.paa",
         "Alysia_Client_Texture\Data\garage\action_rename_select.paa",
         "true"
     ],[
         "Vendre",
-        "[] spawn AdenisClient_fnc_garageVehicleSell;",
+        "[] spawn AlysiaClient_fnc_garageVehicleSell;",
         "Alysia_Client_Texture\Data\garage\action_sell.paa",
         "Alysia_Client_Texture\Data\garage\action_sell_select.paa",
         "true"

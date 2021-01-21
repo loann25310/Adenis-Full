@@ -16,7 +16,7 @@ lbClear _list;
 
 {
 	_part = configName _x;
-	_config = missionConfigFile >> "ADENIS_REPAIR" >> _part;
+	_config = missionConfigFile >> "ALYSIA_REPAIR" >> _part;
 	if (isClass(_config)) then
 	{
 		_value = floor((1 - (g_interaction_target getHitPointDamage _part)) * 100);
@@ -27,11 +27,11 @@ lbClear _list;
 			_list lbSetData [_index, _part];
 			_list lbSetValue [_index, _value];
 			_list lbSetPicture [_index, getText(_config >> "picture")];
-			_list lbSetPictureColor [_index, ([_value] call AdenisClient_fnc_vehicleMenu_repair_getColor) select 0];
+			_list lbSetPictureColor [_index, ([_value] call AlysiaClient_fnc_vehicleMenu_repair_getColor) select 0];
 			_list lbSetTooltip [_index, format["Santé : %1%2", _value, "%"]];
 		};
 	} else {
-		diag_log format["[ERROR] %1 is not defined in ADENIS_REPAIR", _part];
+		diag_log format["[ERROR] %1 is not defined in ALYSIA_REPAIR", _part];
 	};
 } foreach ("true" configClasses (configFile >> "CfgVehicles" >> typeOf(g_interaction_target) >> "HitPoints"));
 

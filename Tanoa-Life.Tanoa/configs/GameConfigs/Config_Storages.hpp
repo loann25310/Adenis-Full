@@ -1,4 +1,4 @@
-class ADENIS_STORAGES
+class ALYSIA_STORAGES
 {
 	class Skyline_Coffre_Small
 	{

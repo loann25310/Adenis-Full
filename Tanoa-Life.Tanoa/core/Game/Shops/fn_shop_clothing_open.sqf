@@ -6,19 +6,19 @@ private["_list", "_filter", "_type", "_light_1", "_light_2"];
 _type = [_this, 3, "", [""]] call BIS_fnc_param;
 
 if (_type isEqualTo "") exitWith {};
-if (!isClass(missionConfigFile >> "ADENIS_SHOPS_CLOTHING" >> _type)) exitWith
+if (!isClass(missionConfigFile >> "ALYSIA_SHOPS_CLOTHING" >> _type)) exitWith
 {
-	[format["Impossible de trouver les informations concernant le magasin<br/><t align='center' color='#FF8000'>%1</t>", _type]] call AdenisClient_fnc_error;
-	diag_log format["[ALYSIA:ERROR] Weapon shop %1 not defined in ADENIS_SHOPS_CLOTHING (class not found)", _type];
+	[format["Impossible de trouver les informations concernant le magasin<br/><t align='center' color='#FF8000'>%1</t>", _type]] call AlysiaClient_fnc_error;
+	diag_log format["[ALYSIA:ERROR] Weapon shop %1 not defined in ALYSIA_SHOPS_CLOTHING (class not found)", _type];
 };
 
-_side = getText(missionConfigFile >> "ADENIS_SHOPS_CLOTHING" >> _type >> "side");
+_side = getText(missionConfigFile >> "ALYSIA_SHOPS_CLOTHING" >> _type >> "side");
 if ((_side != "") && (str(playerSide) != _side)) exitWith {
 	[format[
 		"Votre faction <t color='#04B404'>%1</t> n'est pas autorisé à acheter ici.<br/>Ce magasin <t color='#2EFE9A'>%2</t> est <t color='#FF0000'>réservé</t>.",
-		([playerSide] call AdenisClient_fnc_sideToStr),
-		getText(missionConfigFile >> "ADENIS_SHOPS_CLOTHING" >> _type >> "name")
-	]] call AdenisClient_fnc_error;
+		([playerSide] call AlysiaClient_fnc_sideToStr),
+		getText(missionConfigFile >> "ALYSIA_SHOPS_CLOTHING" >> _type >> "name")
+	]] call AlysiaClient_fnc_error;
 };
 
 if (!(createDialog "RscDisplayShopClothing")) exitWith {};
@@ -30,14 +30,14 @@ if (isNull _display) exitWith {};
 (_display displayCtrl 3101) ctrlSetStructuredText parseText format
 [
 	"<t align='center' size='1.5'>%1</t>",
-	getText(missionConfigFile >> "ADENIS_SHOPS_CLOTHING" >> _type >> "name")
+	getText(missionConfigFile >> "ALYSIA_SHOPS_CLOTHING" >> _type >> "name")
 ];
 
 _list = _display displayCtrl 3102;
 lbClear _list;
 
 if ((currentWeapon player) != "") then {
-	[] call AdenisClient_fnc_holdsterSwitch;
+	[] call AlysiaClient_fnc_holdsterSwitch;
 };
 
 titleText["", "BLACK IN"];
@@ -162,7 +162,7 @@ if (!(g_shop_clothing_oldList isEqualTo [])) then
 	_txt = "";
 	{
 		if (player canAdd _x) then {
-			_txt = format["%1%2<br/>", _txt, ([_x] call AdenisClient_fnc_fetchCfgDetails) select 1];
+			_txt = format["%1%2<br/>", _txt, ([_x] call AlysiaClient_fnc_fetchCfgDetails) select 1];
 		} else {
 			g_shop_clothing_oldList = g_shop_clothing_oldList - [_x];
 		};

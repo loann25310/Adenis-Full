@@ -9,7 +9,7 @@ _engrais = [_this, 2, false, [false]] call BIS_fnc_param;
 
 if ((_type isEqualTo "") || (_pos isEqualTo [])) exitWith {objNull};
 
-_config = missionConfigFile >> "ADENIS_FARMING_PLANT_OBJETCS" >> _plant;
+_config = missionConfigFile >> "ALYSIA_FARMING_PLANT_OBJETCS" >> _plant;
 if (!isClass(_config)) exitWith {objNull};
 
 _plantGrowingtime = getNumber(_config >> "growingTime") + round(random(getNumber(_config >> "extraGrow")));
@@ -18,5 +18,5 @@ if (_engrais) then {
 };
 
 _object = createVehicle [_type, [(_pos select 0), (_pos select 1), ((_pos select 2) - getNumber(_config >> "groundLevel"))], [], 0, "CAN_COLLIDE"];
-[(_plantGrowingtime / 10), (getNumber(_config >> "upLevel") / 10), _object] spawn AdenisClient_fnc_plantGrow;
+[(_plantGrowingtime / 10), (getNumber(_config >> "upLevel") / 10), _object] spawn AlysiaClient_fnc_plantGrow;
 _object;

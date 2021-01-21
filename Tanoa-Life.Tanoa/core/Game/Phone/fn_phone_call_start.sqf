@@ -6,16 +6,16 @@ private["_number", "_handle", "_phone", "_c_channel"];
 _number = [_this, 0, "", [""]] call BIS_fnc_param;
 
 if (([_number] call CBA_fnc_strLen) != 6) exitWith {
-	["Le numéro doit être composé de six chiffres."] call AdenisClient_fnc_error;
+	["Le numéro doit être composé de six chiffres."] call AlysiaClient_fnc_error;
 };
 if (!(_number in (missionNamespace getVariable ["gServer_phone_numbers", []]))) exitWith {
-	["Le numéro demandé n'est pas attribué."] call AdenisClient_fnc_error;
+	["Le numéro demandé n'est pas attribué."] call AlysiaClient_fnc_error;
 };
 if (_number in g_phone_blacklist) exitWith {
-	["Vous ne pouvez pas appeler un numéro que vous avez blacklisté."] call AdenisClient_fnc_error;
+	["Vous ne pouvez pas appeler un numéro que vous avez blacklisté."] call AlysiaClient_fnc_error;
 };
 if (_number isEqualTo (player getVariable ["number", ""])) exitWith {
-	["Vous ne pouvez pas vous appeler vous même."] call AdenisClient_fnc_error;
+	["Vous ne pouvez pas vous appeler vous même."] call AlysiaClient_fnc_error;
 };
 
 _phone = call TFAR_fnc_activeSwRadio;
@@ -40,7 +40,7 @@ if (TF_tangent_sw_pressed) then {
 	call TFAR_fnc_onSwTangentReleased;
 };
 
-_handle = ["PHONE_CALLING"] spawn AdenisClient_fnc_tabletApp;
+_handle = ["PHONE_CALLING"] spawn AlysiaClient_fnc_tabletApp;
 waitUntil {scriptDone _handle};
 
-[] spawn AdenisClient_fnc_phone_call_loop;
+[] spawn AlysiaClient_fnc_phone_call_loop;

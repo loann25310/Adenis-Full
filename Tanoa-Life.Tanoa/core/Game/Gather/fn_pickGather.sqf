@@ -9,11 +9,11 @@ if (_marker isEqualTo "") exitWith {};
 if (g_action_inUse) exitWith {};
 if ((vehicle player) != player) exitWith {};
 
-_config = missionConfigFile >> "ADENIS_FARMING_GATHER" >> _marker;
+_config = missionConfigFile >> "ALYSIA_FARMING_GATHER" >> _marker;
 if (!isClass(_config)) exitWith
 {
-	[format["Impossible de trouver les informations concernant la zone <t align='center' color='#FF8000'>%1</t>", _marker]] call AdenisClient_fnc_error;
-	diag_log format["[ALYSIA:ERROR] Marker %1 not defined in ADENIS_FARMING_GATHER (class not found)", _marker];
+	[format["Impossible de trouver les informations concernant la zone <t align='center' color='#FF8000'>%1</t>", _marker]] call AlysiaClient_fnc_error;
+	diag_log format["[ALYSIA:ERROR] Marker %1 not defined in ALYSIA_FARMING_GATHER (class not found)", _marker];
 };
 
 _tool = getText(_config >> "tool");
@@ -36,14 +36,14 @@ if ((_tool != "") && ((currentWeapon player) != _tool)) exitWith
 			getText(configFile >> "CfgWeapons" >> _tool >> "displayName"),
 			markerText _marker
 		]
-	] call AdenisClient_fnc_error;
+	] call AlysiaClient_fnc_error;
 };
 if ((_tool isEqualTo "") && ((currentWeapon player) != "")) exitWith {
-	["Vous devez avoir les mains vides pour commencer la récolte."] call AdenisClient_fnc_error;
+	["Vous devez avoir les mains vides pour commencer la récolte."] call AlysiaClient_fnc_error;
 };
 
 if ((_water isEqualTo 1) && !(surfaceIsWater (getPos player))) exitWith {
-	["Vous devez être <t color='#FFFF00'>sous l'eau</t> pour commencer la récolte."] call AdenisClient_fnc_error;
+	["Vous devez être <t color='#FFFF00'>sous l'eau</t> pour commencer la récolte."] call AlysiaClient_fnc_error;
 };
 if ((_water isEqualTo 1) && (((getPosASLW player) select 2) > (_water_depth * -1))) exitWith
 {
@@ -54,20 +54,20 @@ if ((_water isEqualTo 1) && (((getPosASLW player) select 2) > (_water_depth * -1
 			_water_depth,
 			(((getPosASLW player) select 2) * -1)
 		]
-	] call AdenisClient_fnc_error;
+	] call AlysiaClient_fnc_error;
 };
 if (_water isEqualTo 1) then {_area = _area + _water_depth};
 
-if ((_license != "") && {!([_license] call AdenisClient_fnc_hasLicense)}) then
+if ((_license != "") && {!([_license] call AlysiaClient_fnc_hasLicense)}) then
 {
 	[
 		format
 		[
 			"Vous ne possédez pas <t color='#FF8000'>%1</t>.<br/>" +
 			"La récolte reste possible mais vous êtes dans l'<t color='#FF0000'>illégalité</t>.",
-			[_license] call AdenisClient_fnc_licenseGetName
+			[_license] call AlysiaClient_fnc_licenseGetName
 		]
-	] call AdenisClient_fnc_info;
+	] call AlysiaClient_fnc_info;
 };
 
 titleText["Déplacez-vous pour annuler la récolte", "PLAIN DOWN"];
@@ -109,19 +109,19 @@ while {(g_action_inUse && !g_interrupted)} do
 
 		if (g_interrupted) exitWith {};
 		if ((_x select 2) isEqualTo 1) then {
-			_amount = [(_x select 0), round(random(_x select 1)) + 1, g_carryWeight, g_maxWeight] call AdenisClient_fnc_calWeightDiff;
+			_amount = [(_x select 0), round(random(_x select 1)) + 1, g_carryWeight, g_maxWeight] call AlysiaClient_fnc_calWeightDiff;
 		} else {
-			_amount = [(_x select 0), (_x select 1), g_carryWeight, g_maxWeight] call AdenisClient_fnc_calWeightDiff;
+			_amount = [(_x select 0), (_x select 1), g_carryWeight, g_maxWeight] call AlysiaClient_fnc_calWeightDiff;
 		};
 
 		if ((_amount isEqualTo 0) && (_forEachIndex isEqualTo 0)) exitWith {
 			_space = false;
 		};
 
-		[true, (_x select 0), _amount] call AdenisClient_fnc_handleInv;
+		[true, (_x select 0), _amount] call AlysiaClient_fnc_handleInv;
 	} forEach _receive;
 	if (!_space) exitWith {
-		["Votre inventaire est plein."] call AdenisClient_fnc_info;
+		["Votre inventaire est plein."] call AlysiaClient_fnc_info;
 	};
 
 	if (!g_interrupted) then
@@ -132,13 +132,13 @@ while {(g_action_inUse && !g_interrupted)} do
 			{
 				{
 					if (random(100) <= (_x select 1)) then {
-						[true, (_x select 0), 1] call AdenisClient_fnc_handleInv;
+						[true, (_x select 0), 1] call AlysiaClient_fnc_handleInv;
 					};
 				} forEach _extra;
 			} else {
 				_rand = _extra call BIS_fnc_selectRandom;
 				if (random(100) <= (_rand select 1)) then {
-					[true, (_rand select 0), 1] call AdenisClient_fnc_handleInv;
+					[true, (_rand select 0), 1] call AlysiaClient_fnc_handleInv;
 				};
 			};
 		};

@@ -25,8 +25,8 @@ if ((binocular player) != "") then {_inv_arma pushBack (binocular player);};
 
 [
 	player,
-	([] call AdenisClient_fnc_getInv),
+	([] call AlysiaClient_fnc_getInv),
 	_inv_arma,
 	g_cash,
 	g_atm
-] remoteExec ["AdenisClient_fnc_APP_staff_players_returnData", _from];
+] remoteExec ["AlysiaClient_fnc_APP_staff_players_returnData", _from];

@@ -10,17 +10,17 @@ if (isNull _vehicle) exitWith {};
 if (_vehicle getVariable ["farm_gather", false]) exitWith
 {
 	_vehicle setVariable ["farm_gather", false];
-	["Récolte terminé"] call AdenisClient_fnc_info;
+	["Récolte terminé"] call AlysiaClient_fnc_info;
 };
 
 if ((_vehicle getVariable ["trunk_in_use_ID", ""]) != "") exitWith {
-	["Vous ne pouvez pas commencer la récolte alors que le coffre est en cours d'utilisation"] call AdenisClient_fnc_error;
+	["Vous ne pouvez pas commencer la récolte alors que le coffre est en cours d'utilisation"] call AlysiaClient_fnc_error;
 };
 if (!(isEngineOn _vehicle)) exitWith {
-	["Vous devez avoir le moteur démarré pour débuter la procédure de récolte"] call AdenisClient_fnc_error;
+	["Vous devez avoir le moteur démarré pour débuter la procédure de récolte"] call AlysiaClient_fnc_error;
 };
 if ((driver _vehicle) != player) exitWith {
-	["Seul le conducteur peut débuter la procédure de récolte"] call AdenisClient_fnc_error;
+	["Seul le conducteur peut débuter la procédure de récolte"] call AlysiaClient_fnc_error;
 };
 
 closeDialog 0;
@@ -28,26 +28,26 @@ closeDialog 0;
 _vehicle setVariable ["farm_gather", true];
 _vehicle setVariable ["trunk_in_use_ID", "FARMING", true];
 
-["Début de la procédure de récolte dans deux secondes..."] call AdenisClient_fnc_info;
+["Début de la procédure de récolte dans deux secondes..."] call AlysiaClient_fnc_info;
 uiSleep 2;
 
 _plants = [];
 {
 	_plants pushBack (configName _x);
-} forEach ("true" configClasses (missionConfigFile >> "ADENIS_FARMING_PLANT_OBJETCS"));
+} forEach ("true" configClasses (missionConfigFile >> "ALYSIA_FARMING_PLANT_OBJETCS"));
 
 while {(_vehicle getVariable ["farm_gather", false])} do
 {
 	scopeName "loop";
 
 	if ((driver _vehicle) != player) exitWith {
-		["Récolte terminée<br/>Vous devez rester à la place de conducteur"] call AdenisClient_fnc_error;
+		["Récolte terminée<br/>Vous devez rester à la place de conducteur"] call AlysiaClient_fnc_error;
 	};
 	if (!(isEngineOn _vehicle)) exitWith {
-		["Récolte terminée<br/>Le moteur doit rester allumé"] call AdenisClient_fnc_error;
+		["Récolte terminée<br/>Le moteur doit rester allumé"] call AlysiaClient_fnc_error;
 	};
 	if ((_vehicle getVariable ["trunk_in_use_ID", ""]) != "FARMING") exitWith {
-		["Récolte terminée<br/>Quelqu'un fouille le coffre"] call AdenisClient_fnc_error;
+		["Récolte terminée<br/>Quelqu'un fouille le coffre"] call AlysiaClient_fnc_error;
 	};
 
 	_plant = (nearestObjects [player, _plants, 2]) select 0;
@@ -66,12 +66,12 @@ while {(_vehicle getVariable ["farm_gather", false])} do
 					_amount = _x select 1;
 				};
 
-				if (!([true, _vehicle, "Trunk", _item, _amount, false] call AdenisClient_fnc_handleTrunk)) then
+				if (!([true, _vehicle, "Trunk", _item, _amount, false] call AlysiaClient_fnc_handleTrunk)) then
 				{
-					["Récolte terminé<br/>L'inventaire du véhicule est plein"] call AdenisClient_fnc_error;
+					["Récolte terminé<br/>L'inventaire du véhicule est plein"] call AlysiaClient_fnc_error;
 					breakOut "loop";
 				};
-			} forEach getArray(missionConfigFile >> "ADENIS_FARMING_PLANT_OBJETCS" >> typeOf(_plant) >> "receive");
+			} forEach getArray(missionConfigFile >> "ALYSIA_FARMING_PLANT_OBJETCS" >> typeOf(_plant) >> "receive");
 			deleteVehicle _plant;
 	 	};
 	};

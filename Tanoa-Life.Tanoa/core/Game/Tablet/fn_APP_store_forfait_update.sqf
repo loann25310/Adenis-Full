@@ -17,7 +17,7 @@ if (isNull _display) exitWith {};
 _forfait = _list lbData _index;
 if (_forfait isEqualTo "") exitWith {};
 
-_config = missionConfigFile >> "ADENIS_PHONE" >> "FORFAITS" >> _forfait;
+_config = missionConfigFile >> "ALYSIA_PHONE" >> "FORFAITS" >> _forfait;
 if (!isClass(_config)) exitWith {};
 
 (_display displayCtrl 8111) ctrlSetStructuredText parseText format
@@ -33,21 +33,21 @@ if (!isClass(_config)) exitWith {};
 	+	"<t align='left'>Blacklist(s)</t><t align='right'>%6</t><br/>"
 	+	"</t>",
 	getText(_config >> "name"),
-	[getNumber(_config >> "bill")] call AdenisClient_fnc_numberText,
-	[getNumber(_config >> "sms_price")] call AdenisClient_fnc_numberText,
+	[getNumber(_config >> "bill")] call AlysiaClient_fnc_numberText,
+	[getNumber(_config >> "sms_price")] call AlysiaClient_fnc_numberText,
 	getNumber(_config >> "sms_max"),
 	getNumber(_config >> "contacts_max"),
 	getNumber(_config >> "backlist_max"),
 	if (getNumber(_config >> "hide_number") isEqualTo 1) then {"Oui"} else {"Non"}
 ];
 
-[8111, true] call AdenisClient_fnc_tabletShow;
+[8111, true] call AlysiaClient_fnc_tabletShow;
 
-if ((g_atm < getNumber(missionConfigFile >> "ADENIS_PHONE" >> "FORFAITS" >> _forfait >> "bill")) || (_forfait isEqualTo g_phone_forfait)) then
+if ((g_atm < getNumber(missionConfigFile >> "ALYSIA_PHONE" >> "FORFAITS" >> _forfait >> "bill")) || (_forfait isEqualTo g_phone_forfait)) then
 {
-	[8108, false] call AdenisClient_fnc_tabletShow;
-	[8109, false] call AdenisClient_fnc_tabletShow;
+	[8108, false] call AlysiaClient_fnc_tabletShow;
+	[8109, false] call AlysiaClient_fnc_tabletShow;
 } else {
-	[8108, true] call AdenisClient_fnc_tabletShow;
-	[8109, true] call AdenisClient_fnc_tabletShow;
+	[8108, true] call AlysiaClient_fnc_tabletShow;
+	[8109, true] call AlysiaClient_fnc_tabletShow;
 };

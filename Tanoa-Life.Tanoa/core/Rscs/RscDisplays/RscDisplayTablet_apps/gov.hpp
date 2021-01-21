@@ -46,7 +46,7 @@ class GOV_ACTION_TAXES: RscButtonMenu
 {
 	idc=GOV_ACTION_TAXES_IDC;
 	text="Gestions des taxes";
-	action="['gov_taxes'] spawn AdenisClient_fnc_tabletApp;";
+	action="['gov_taxes'] spawn AlysiaClient_fnc_tabletApp;";
 
 	x=0.319531 * safezoneW + safezoneX;
 	y=0.665 * safezoneH + safezoneY;
@@ -84,7 +84,7 @@ class GOV_TAXES_LIST: RscListbox
 {
 	idc=GOV_TAXES_LIST_IDC;
 	colorBackground[]={0,0,0,0};
-	onLBSelChanged="_this call AdenisClient_fnc_APP_gov_taxes_update;";
+	onLBSelChanged="_this call AlysiaClient_fnc_APP_gov_taxes_update;";
 
 	x=0.324687 * safezoneW + safezoneX;
 	y=0.423 * safezoneH + safezoneY;
@@ -114,7 +114,7 @@ class GOV_TAXES_BUTTON: RscButtonMenu
 {
 	idc=GOV_TAXES_BUTTON_IDC;
 	text="Sauvegarder";
-	action="[] call AdenisClient_fnc_APP_gov_taxes_modify;";
+	action="[] call AlysiaClient_fnc_APP_gov_taxes_modify;";
 
 	x=0.561874 * safezoneW + safezoneX;
 	y=0.588 * safezoneH + safezoneY;

@@ -4,7 +4,7 @@
 */
 
 if (isNull g_dog) exitWith {
-	["Impossible de trouver votre chien."] call AdenisClient_fnc_error;
+	["Impossible de trouver votre chien."] call AlysiaClient_fnc_error;
 };
 
 if (g_dog getVariable ["follow", false]) then {
@@ -17,5 +17,5 @@ if (g_dog getVariable ["search", false]) then
 	g_dog setVariable ["search_target", objNull];
 };
 
-[player, "whistle", 15] call AdenisClient_fnc_globalSay3d;
-[g_dog, "dog_one", 30] call AdenisClient_fnc_globalSay3d;
+[player, "whistle", 15] call AlysiaClient_fnc_globalSay3d;
+[g_dog, "dog_one", 30] call AlysiaClient_fnc_globalSay3d;

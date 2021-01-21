@@ -6,12 +6,12 @@ private["_info", "_display", "_target"];
 _target = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
 
 if (isNull _target) exitWith {
-	["Cible invalide."] call AdenisClient_fnc_error;
+	["Cible invalide."] call AlysiaClient_fnc_error;
 };
 
 _info = g_interaction_target getVariable "company_info";
 if (isNil "_info") exitWith {
-	["Impossible de trouver les informations de l'entreprise."] call AdenisClient_fnc_error;
+	["Impossible de trouver les informations de l'entreprise."] call AlysiaClient_fnc_error;
 };
 
 createDialog "RscDisplayDefaultText";
@@ -32,6 +32,6 @@ if (isNull _display) exitWith {};
 	+	"DG<br/>"
 	+	"%3",
 	(_info select 0),
-	getText(missionConfigFile >> "ADENIS_COMPANIES_TYPES" >> (_info select 2) >> "name"),
+	getText(missionConfigFile >> "ALYSIA_COMPANIES_TYPES" >> (_info select 2) >> "name"),
 	(_info select 4)
 ];

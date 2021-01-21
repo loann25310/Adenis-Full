@@ -29,7 +29,7 @@ lbClear _list;
 		if (_types select 2) then {
 			_txt = _txt + "ALT + ";
 		};
-		_txt = _txt + ((cba_keybinding_dikDecToStringTable select ([str((_info select 5) select 0), cba_keybinding_dikDecToStringTable] call AdenisClient_fnc_index)) select 1);
+		_txt = _txt + ((cba_keybinding_dikDecToStringTable select ([str((_info select 5) select 0), cba_keybinding_dikDecToStringTable] call AlysiaClient_fnc_index)) select 1);
 		_list lbSetData [_index, _txt];
 	};
 } forEach g_keybinds;

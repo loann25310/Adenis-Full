@@ -1,4 +1,4 @@
-class ADENIS_COMPANIES_BUILDINGS
+class ALYSIA_COMPANIES_BUILDINGS
 {
 	class Land_i_Windmill01_F
 	{
@@ -152,13 +152,13 @@ class ADENIS_COMPANIES_BUILDINGS
 	};
 };
 
-class ADENIS_COMMPAGNIES_INFO
+class ALYSIA_COMMPAGNIES_INFO
 {
 	name_allowed="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-éè?!,.ù_à ";
 	name_max=30;
 };
 
-class ADENIS_COMPANIES_TYPES
+class ALYSIA_COMPANIES_TYPES
 {
 	class farming
 	{

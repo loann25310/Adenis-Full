@@ -13,5 +13,5 @@ _ret = [format["SELECT STOCK_virtual,STOCK_arma FROM houses WHERE plate='%1'", (
 if (count(_ret) > 0) then
 {
 	_ret = _ret select 0;
-	[_house, ([(_ret select 0)] call AdenisServer_fnc_mresToArray), ([(_ret select 1)] call AdenisServer_fnc_mresToArray)] remoteExec ["AdenisClient_fnc_house_storage_create", _from];
+	[_house, ([(_ret select 0)] call AlysiaServer_fnc_mresToArray), ([(_ret select 1)] call AlysiaServer_fnc_mresToArray)] remoteExec ["AlysiaClient_fnc_house_storage_create", _from];
 };

@@ -7,15 +7,15 @@ _type = [_this, 0, "", [""]] call BIS_fnc_param;
 
 if (_type isEqualTo "") exitWith {};
 
-_config = missionConfigFile >> "ADENIS_DESEASES" >> _type;
+_config = missionConfigFile >> "ALYSIA_DESEASES" >> _type;
 if (!isClass(_config)) exitWith {};
 
 if (missionNamespace getVariable [format["deases_%1_active", _type], false]) exitWith {};
 if (g_staff_god) exitWith {};
 
-if (([_type, g_vaccins] call AdenisClient_fnc_index) != -1) exitWith {};
+if (([_type, g_vaccins] call AlysiaClient_fnc_index) != -1) exitWith {};
 
-_index = [_type, g_deseases] call AdenisClient_fnc_index;
+_index = [_type, g_deseases] call AlysiaClient_fnc_index;
 if (_index isEqualTo -1) then
 {
 	_medecine = [];
@@ -26,7 +26,7 @@ if (_index isEqualTo -1) then
 			configName _x,
 			round(random(getNumber(_x >> "heal" >> _type >> "max") - getNumber(_x >> "heal" >> _type >> "min"))) + getNumber(_x >> "heal" >> _type >> "min")
 		];
-	} forEach ((format["_x >> 'heal' >> '%1'", _type]) configClasses (missionConfigFile >> "ADENIS_MEDECINE"));
+	} forEach ((format["_x >> 'heal' >> '%1'", _type]) configClasses (missionConfigFile >> "ALYSIA_MEDECINE"));
 	g_deseases pushBack [_type, _medecine];
 } else {
 	_medecine = (g_deseases select _index) select 1;
@@ -44,21 +44,21 @@ while {count(_medecine) > 0} do
 	{
 		if (count(_event_sounds) > 0) then
 		{
-			[player, (_event_sounds call BIS_fnc_selectRandom), 15] call AdenisClient_fnc_globalSay3d;
+			[player, (_event_sounds call BIS_fnc_selectRandom), 15] call AlysiaClient_fnc_globalSay3d;
 		};
 
 		if (_contagion_chance > 0) then
 		{
-			if ((getNumber(missionConfigFile >> "ADENIS_ITEMS_ARMA" >> (goggles player) >> "protect_contamination_air") isEqualTo 0) &&
-				(getNumber(missionConfigFile >> "ADENIS_ITEMS_ARMA" >> (headgear player) >> "protect_contamination_air") isEqualTo 0)) then {
+			if ((getNumber(missionConfigFile >> "ALYSIA_ITEMS_ARMA" >> (goggles player) >> "protect_contamination_air") isEqualTo 0) &&
+				(getNumber(missionConfigFile >> "ALYSIA_ITEMS_ARMA" >> (headgear player) >> "protect_contamination_air") isEqualTo 0)) then {
 				{
 					if ((alive _x) && (_x != player) && !(_x getVariable ["is_coma", false])) then
 					{
-						if ((getNumber(missionConfigFile >> "ADENIS_ITEMS_ARMA" >> (goggles _x) >> "protect_contamination_air") isEqualTo 0) &&
-							(getNumber(missionConfigFile >> "ADENIS_ITEMS_ARMA" >> (headgear _x) >> "protect_contamination_air") isEqualTo 0)) then {
+						if ((getNumber(missionConfigFile >> "ALYSIA_ITEMS_ARMA" >> (goggles _x) >> "protect_contamination_air") isEqualTo 0) &&
+							(getNumber(missionConfigFile >> "ALYSIA_ITEMS_ARMA" >> (headgear _x) >> "protect_contamination_air") isEqualTo 0)) then {
 							if (random(100) <= _contagion_chance) then
 							{
-								[_type] remoteExec ["AdenisClient_fnc_handleDesease", _x];
+								[_type] remoteExec ["AlysiaClient_fnc_handleDesease", _x];
 							};
 						};
 					};
@@ -81,5 +81,5 @@ while {count(_medecine) > 0} do
 	};
 };
 
-g_deseases deleteAt ([_type, g_deseases] call AdenisClient_fnc_index);
+g_deseases deleteAt ([_type, g_deseases] call AlysiaClient_fnc_index);
 missionNamespace setVariable [format["deases_%1_active", _type], false];

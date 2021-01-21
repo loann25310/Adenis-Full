@@ -25,9 +25,9 @@ gServer_houses = [];
 			diag_log format["[ERROR] Can't load house [%1] owner [%2] (already in gServer_houses)", (_x select 7), (_x select 1)];
 		} else {
 			_house setVariable ["house_owner", [(_x select 1), (_x select 5), (_x select 0)], true];
-			_house setVariable ["house_tenants", ([(_x select 6)] call AdenisServer_fnc_mresToArray), false];
+			_house setVariable ["house_tenants", ([(_x select 6)] call AlysiaServer_fnc_mresToArray), false];
 
-			if (getNumber(missionConfigFile >> "ADENIS_HOUSES" >> typeOf(_house) >> "disableLockDoorOnStartup") isEqualTo 0) then
+			if (getNumber(missionConfigFile >> "ALYSIA_HOUSES" >> typeOf(_house) >> "disableLockDoorOnStartup") isEqualTo 0) then
 			{
 				for "_i" from 1 to getNumber(configFile >> "CfgVehicles" >> (typeOf _house) >> "numberOfDoors") do
 				{

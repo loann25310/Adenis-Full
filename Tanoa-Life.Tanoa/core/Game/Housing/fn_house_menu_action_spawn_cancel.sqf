@@ -4,7 +4,7 @@
 */
 
 g_respawn_point = objNull;
-profileNamespace setVariable ["ADENIS_house_spawn_info", nil];
+profileNamespace setVariable ["ALYSIA_house_spawn_info", nil];
 if ([_this, 0, false, [false]] call BIS_fnc_param) then {
-	["Vous réapparaitrez à l'hôpital de <t color='#3ADF00'>Malieuville</t>."] call AdenisClient_fnc_info;
+	["Vous réapparaitrez à l'hôpital de <t color='#3ADF00'>Georgetown</t>."] call AlysiaClient_fnc_info;
 };

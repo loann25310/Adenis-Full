@@ -55,12 +55,12 @@ if ("VEHICLES" in g_apps) then
 		if ((lbSize _list) isEqualTo 0) then
 		{
 			_list lbAdd "Aucune";
-			[7706, false] call AdenisClient_fnc_tabletShow;
-			[7707, false] call AdenisClient_fnc_tabletShow;
-			[7708, false] call AdenisClient_fnc_tabletShow;
-			[7702, false] call AdenisClient_fnc_tabletShow;
-			[7700, false] call AdenisClient_fnc_tabletShow;
-			[7701, false] call AdenisClient_fnc_tabletShow;
+			[7706, false] call AlysiaClient_fnc_tabletShow;
+			[7707, false] call AlysiaClient_fnc_tabletShow;
+			[7708, false] call AlysiaClient_fnc_tabletShow;
+			[7702, false] call AlysiaClient_fnc_tabletShow;
+			[7700, false] call AlysiaClient_fnc_tabletShow;
+			[7701, false] call AlysiaClient_fnc_tabletShow;
 		};
 		_list lbSetCurSel 0;
 	};

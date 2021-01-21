@@ -10,7 +10,7 @@ if (isNull _from) exitWith {};
 if ((player getVariable ["restrained", false]) || (player getVariable ["surrender", false])) then
 {
 	_action = true;
-	["Vous avez <t color='#3ADF00'>accepté</t> l'examen médical car vous êtes menotté ou avez les mains sur la tête."] remoteExecCall ["AdenisClient_fnc_info", _from];
+	["Vous avez <t color='#3ADF00'>accepté</t> l'examen médical car vous êtes menotté ou avez les mains sur la tête."] remoteExecCall ["AlysiaClient_fnc_info", _from];
 } else {
 	_action =
 	[
@@ -22,7 +22,7 @@ if ((player getVariable ["restrained", false]) || (player getVariable ["surrende
 };
 
 if (_action) then {
-	[g_medecine, g_deseases, player] remoteExec ["AdenisClient_fnc_doctor_return", _from];
+	[g_medecine, g_deseases, player] remoteExec ["AlysiaClient_fnc_doctor_return", _from];
 } else {
-	["La cible a <t color='#FF0000'>refusé</t> de se laisser examiner."] remoteExecCall ["AdenisClient_fnc_info", _from];
+	["La cible a <t color='#FF0000'>refusé</t> de se laisser examiner."] remoteExecCall ["AlysiaClient_fnc_info", _from];
 };

@@ -98,7 +98,7 @@ class RscDisplayChangeKey
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "[] spawn AdenisClient_fnc_changeKey_action;";
+			onButtonClick = "[] spawn AlysiaClient_fnc_changeKey_action;";
 			
 		};
 		class CANCEL_BTN

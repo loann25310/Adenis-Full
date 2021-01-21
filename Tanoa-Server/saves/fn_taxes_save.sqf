@@ -14,6 +14,6 @@ diag_log "[TAXES] Saving...";
 			(call compile (configName _x))
 		], 1
 	] call ExtDB3_fnc_async;
-} forEach ("true" configClasses (missionConfigFile >> "ADENIS_TAXES"));
+} forEach ("true" configClasses (missionConfigFile >> "ALYSIA_TAXES"));
 
 diag_log "[TAXES] Saved";

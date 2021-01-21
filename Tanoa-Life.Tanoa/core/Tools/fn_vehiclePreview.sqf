@@ -6,10 +6,10 @@ private["_type", "_pos", "_logic", "_floor", "_veh", "_light", "_cam", "_distanc
 _type = [_this, 0, "", [""]] call BIS_fnc_param;
 
 if (_type isEqualTo "") exitWith {
-	["Vous n'avez pas précisé de classname à prévisualiser."] call AdenisClient_fnc_error;
+	["Vous n'avez pas précisé de classname à prévisualiser."] call AlysiaClient_fnc_error;
 };
 if (g_vehicle_preview) exitWith {
-	["Vous êtes déjà en mode prévisualisation."] call AdenisClient_fnc_error;
+	["Vous êtes déjà en mode prévisualisation."] call AlysiaClient_fnc_error;
 };
 
 createDialog "RscDisplayPreview";

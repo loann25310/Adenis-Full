@@ -7,7 +7,7 @@ _number = [_this, 0, "", [""]] call BIS_fnc_param;
 
 _ret = _number;
 if (_number in ["GUER", "WEST", "EAST", "CIV"]) then {
-	_ret = getText(missionConfigFile >> "ADENIS_FACTIONS" >> _number >> "name");
+	_ret = getText(missionConfigFile >> "ALYSIA_FACTIONS" >> _number >> "name");
 } else {
 	{
 		if ((_x select 1) isEqualTo _number) exitWith {

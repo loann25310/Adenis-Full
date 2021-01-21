@@ -76,7 +76,7 @@ class RscDisplayShopClothing: RscDisplayDefaultInteraction
 		class TYPE_LIST: RscCombo
 		{
 			idc=3102;
-			onLBSelChanged="_this call AdenisClient_fnc_shop_clothing_update_list;";
+			onLBSelChanged="_this call AlysiaClient_fnc_shop_clothing_update_list;";
 			colorBackground[]={0,0,0,1};
 
 			x=0.12875 * safezoneW + safezoneX;
@@ -105,7 +105,7 @@ class RscDisplayShopClothing: RscDisplayDefaultInteraction
 		class STOCK_LIST: RscListbox
 		{
 			idc=3103;
-			onLBSelChanged="_this call AdenisClient_fnc_shop_clothing_update_clothe;";
+			onLBSelChanged="_this call AlysiaClient_fnc_shop_clothing_update_clothe;";
 			rowHeight=0.05;
 
 			x=0.102969 * safezoneW + safezoneX;
@@ -186,7 +186,7 @@ class RscDisplayShopClothing: RscDisplayDefaultInteraction
 		class ACTION_BUY_BUTTON: RscButtonSilent
 		{
 			idc=3112;
-			action="[] call AdenisClient_fnc_shop_clothing_buy;";
+			action="[] call AlysiaClient_fnc_shop_clothing_buy;";
 			onMouseEnter="ctrlSetText[3111,""Alysia_Client_Texture\Data\global\action_buy_select.paa""];ctrlShow[3109, false];((findDisplay 3100) displayCtrl 3108) ctrlSetBackgroundColor [1,1,1,1];((findDisplay 3100) displayCtrl 3110) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#000000'>Acheter</t>"";";
 			onMouseExit="ctrlSetText[3111,""Alysia_Client_Texture\Data\global\action_buy.paa""];if (ctrlVisible 3111) then {ctrlShow[3109, true];};((findDisplay 3100) displayCtrl 3108) ctrlSetBackgroundColor [0,0,0,0.6];((findDisplay 3100) displayCtrl 3110) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#FFFFFF'>Acheter</t>"";";
 

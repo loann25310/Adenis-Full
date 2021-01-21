@@ -117,8 +117,8 @@ if (isNull (uiNameSpace getVariable ["RscTitlePlayer", displayNull])) then
 				["Alysia_Client_Texture\Data\player_hud\alcohol.paa", "(g_alcool > 0)"],
 				["Alysia_Client_Texture\Data\player_hud\fatigue.paa", "((missionNamespace getVariable ['unlimitedRun', 0]) > 0)"],
 				["Alysia_Client_Texture\Data\player_hud\bullet_touched.paa", "(player getVariable ['bullet_check', false])"],
-				["Alysia_Client_Texture\Data\phone\main\sms.paa", "([] call AdenisClient_fnc_hasPhone) && ((count ([] call AdenisClient_fnc_phone_get_messages_new)) > 0)"],
-				["Alysia_Client_Texture\Data\tablet\app_main\bonus_call.paa", "(call AdenisClient_fnc_hasPhone) && ((missionNamespace getVariable ['calling', false]) || (!(missionNamespace getVariable ['calling', false]) && ((missionNamespace getVariable ['calling_number', '']) != '')))"]
+				["Alysia_Client_Texture\Data\phone\main\sms.paa", "([] call AlysiaClient_fnc_hasPhone) && ((count ([] call AlysiaClient_fnc_phone_get_messages_new)) > 0)"],
+				["Alysia_Client_Texture\Data\tablet\app_main\bonus_call.paa", "(call AlysiaClient_fnc_hasPhone) && ((missionNamespace getVariable ['calling', false]) || (!(missionNamespace getVariable ['calling', false]) && ((missionNamespace getVariable ['calling_number', '']) != '')))"]
 			]);
 
 			for "_i" from _idc to 23516 do

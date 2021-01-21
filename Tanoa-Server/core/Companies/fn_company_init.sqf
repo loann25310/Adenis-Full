@@ -17,7 +17,7 @@ _inventory_arma = [_this, 10, [[],[],[],[]], [[]]] call BIS_fnc_param;
 _bank_history = [_this, 11, [], [[]]] call BIS_fnc_param;
 _link_percentage = [_this, 12, 0, [0]] call BIS_fnc_param;
 
-_object = getText(missionConfigFile >> "ADENIS_COMPANIES_TYPES" >> _type >> "building") createVehicle _position;
+_object = getText(missionConfigFile >> "ALYSIA_COMPANIES_TYPES" >> _type >> "building") createVehicle _position;
 _object setDir _direction;
 
 if (_cash > 0) then {
@@ -43,7 +43,7 @@ _object setVariable ["company_info", [_name, _owner, _type, _plate, _owner_name]
 	4 - owner name
 */
 
-if (count(getArray(missionConfigFile >> "ADENIS_COMPANIES_TYPES" >> _type >> "ressources_link")) > 0) then {
+if (count(getArray(missionConfigFile >> "ALYSIA_COMPANIES_TYPES" >> _type >> "ressources_link")) > 0) then {
 	_object setVariable ["company_link_percentage", _link_percentage, true];
 };
 

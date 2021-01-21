@@ -19,12 +19,12 @@ _missing = [];
 		diag_log format["Cannot create dynamic marker %1", _name];
 	} else {
 		_result = _result select 0;
-		_marker = [_name, [(_result select 0), (_result select 1), (_result select 2)]] call AdenisServer_fnc_dynamicMarkers_create;
+		_marker = [_name, [(_result select 0), (_result select 1), (_result select 2)]] call AlysiaServer_fnc_dynamicMarkers_create;
 	};
-} forEach ("true" configClasses (missionConfigFile >> "ADENIS_DYN_MARKERS"));
+} forEach ("true" configClasses (missionConfigFile >> "ALYSIA_DYN_MARKERS"));
 
 {
-	_pos = [_x] call AdenisServer_fnc_dynamicMarkers_getPos;
+	_pos = [_x] call AlysiaServer_fnc_dynamicMarkers_getPos;
 	if (_pos isEqualTo [0,0,0]) then {
 		diag_log format["[ERROR] Dynamic marker %1 has no possible positions", _x];
 	} else {
@@ -39,7 +39,7 @@ _missing = [];
 			], 1
 		] call ExtDB3_fnc_async;
 		diag_log format["[ERROR] Dynamic marker %1 was not saved into DB. Fixed", _x];
-		_marker = [_x, _pos] call AdenisServer_fnc_dynamicMarkers_create;
+		_marker = [_x, _pos] call AlysiaServer_fnc_dynamicMarkers_create;
 	};
 } forEach _missing;
 

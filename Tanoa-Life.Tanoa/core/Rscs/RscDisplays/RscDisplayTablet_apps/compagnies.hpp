@@ -21,7 +21,7 @@ COMPAGNIES_IDCS[]=
 class COMPAGNIES_LIST: RscCombo
 {
 	idc=COMPAGNIES_LIST_IDC;
-	onLBSelChanged="_this spawn AdenisClient_fnc_APP_compagnies_update;";
+	onLBSelChanged="_this spawn AlysiaClient_fnc_APP_compagnies_update;";
 	colorBackground[]={0,0,0,1};
 
 	x=0.324687 * safezoneW + safezoneX;
@@ -94,7 +94,7 @@ class COMPAGNIES_MYCOMPANY: RscButtonMenu
 {
 	idc=COMPAGNIES_MYCOMPANY_IDC;
 	text="Mon entreprise";
-	action="['COMPANY'] spawn AdenisClient_fnc_tabletApp;";
+	action="['COMPANY'] spawn AlysiaClient_fnc_tabletApp;";
 
 	x=0.515469 * safezoneW + safezoneX;
 	y=0.654 * safezoneH + safezoneY;
@@ -105,7 +105,7 @@ class COMPAGNIES_INFORMATIONS: RscButtonMenu
 {
 	idc=COMPAGNIES_INFORMATIONS_IDC;
 	text="Informations";
-	action="['COMPAGNIES_INFOLIST'] spawn AdenisClient_fnc_tabletApp;";
+	action="['COMPAGNIES_INFOLIST'] spawn AlysiaClient_fnc_tabletApp;";
 
 	x=0.608281 * safezoneW + safezoneX;
 	y=0.654 * safezoneH + safezoneY;
@@ -126,7 +126,7 @@ class COMPAGNIES_SELECT_MEMBERS_HEADER: RscStructuredText
 class COMPAGNIES_SELECT_MEMBERS_LIST: RscListbox
 {
 	idc=COMPAGNIES_SELECT_MEMBERS_LIST_IDC;
-	onLBDblClick="[] spawn AdenisClient_fnc_APP_compagnies_call;";
+	onLBDblClick="[] spawn AlysiaClient_fnc_APP_compagnies_call;";
 
 	x=0.515469 * safezoneW + safezoneX;
 	y=0.544 * safezoneH + safezoneY;
@@ -250,7 +250,7 @@ class COMPANY_ACTION_HIRE_IMAGE: RscPicture
 class COMPANY_ACTION_HIRE_BUTTON: RscButtonSilent
 {
 	idc=COMPANY_ACTION_HIRE_BUTTON_IDC;
-	action="ctrlShow[9607,false];ctrlShow[9608,false];[g_company, lbData[9606, lbCurSel 9606]] call AdenisClient_fnc_company_member_kick;['COMPANY'] spawn AdenisClient_fnc_tabletApp;";
+	action="ctrlShow[9607,false];ctrlShow[9608,false];[g_company, lbData[9606, lbCurSel 9606]] call AlysiaClient_fnc_company_member_kick;['COMPANY'] spawn AlysiaClient_fnc_tabletApp;";
 	onMouseEnter="ctrlSetText[9607,'Alysia_Client_Texture\Data\tablet\company\action_company_hire_select.paa'];";
 	onMouseExit="ctrlSetText[9607,'Alysia_Client_Texture\Data\tablet\company\action_company_hire.paa'];";
 	tooltip="Renvoyer";
@@ -274,7 +274,7 @@ class COMPANY_ACTION_LICENSE_IMAGE: RscPicture
 class COMPANY_ACTION_LICENSE_BUTTON: RscButtonSilent
 {
 	idc=COMPANY_ACTION_LICENSE_BUTTON_IDC;
-	action="ctrlShow[9609,false];ctrlShow[9610,false];[g_company, lbData[9606, lbCurSel 9606]] spawn AdenisClient_fnc_company_member_license_give;['COMPANY'] spawn AdenisClient_fnc_tabletApp;";
+	action="ctrlShow[9609,false];ctrlShow[9610,false];[g_company, lbData[9606, lbCurSel 9606]] spawn AlysiaClient_fnc_company_member_license_give;['COMPANY'] spawn AlysiaClient_fnc_tabletApp;";
 	onMouseEnter="ctrlSetText[9609,'Alysia_Client_Texture\Data\tablet\company\action_license_select.paa'];";
 	onMouseExit="ctrlSetText[9609,'Alysia_Client_Texture\Data\tablet\company\action_license.paa'];";
 	tooltip="Payer la license d'entreprise";
@@ -298,7 +298,7 @@ class COMPANY_ACTION_PROMOTE_IMAGE: RscPicture
 class COMPANY_ACTION_PROMOTE_BUTTON: RscButtonSilent
 {
 	idc=COMPANY_ACTION_PROMOTE_BUTTON_IDC;
-	action="ctrlShow[9611,false];ctrlShow[9612,false];[g_company, lbData[9606, lbCurSel 9606]] call AdenisClient_fnc_company_member_promote;['COMPANY'] spawn AdenisClient_fnc_tabletApp;";
+	action="ctrlShow[9611,false];ctrlShow[9612,false];[g_company, lbData[9606, lbCurSel 9606]] call AlysiaClient_fnc_company_member_promote;['COMPANY'] spawn AlysiaClient_fnc_tabletApp;";
 	onMouseEnter="ctrlSetText[9611,'Alysia_Client_Texture\Data\tablet\company\action_promote_select.paa'];";
 	onMouseExit="ctrlSetText[9611,'Alysia_Client_Texture\Data\tablet\company\action_promote.paa'];";
 	tooltip="Nommer DG de l'entreprise";
@@ -363,7 +363,7 @@ class COMPANY_LEAVE_IMAGE: RscPicture
 class COMPANY_LEAVE_BUTTON: RscButtonSilent
 {
 	idc=COMPANY_LEAVE_BUTTON_IDC;
-	action="[] spawn AdenisClient_fnc_APP_company_leave;";
+	action="[] spawn AlysiaClient_fnc_APP_company_leave;";
 	onMouseEnter="ctrlSetText[9617,'Alysia_Client_Texture\Data\global\option_exit_select.paa'];";
 	onMouseExit="ctrlSetText[9617,'Alysia_Client_Texture\Data\global\option_exit.paa'];";
 
@@ -407,7 +407,7 @@ class COMPANY_SELLPERCENTAGE_BUTTON: RscButtonMenu
 {
 	idc=COMPANY_SELLPERCENTAGE_BUTTON_IDC;
 	text="Appliquer";
-	action="[parseNumber(ctrlText 9619)] call AdenisClient_fnc_company_link_percentage_change;";
+	action="[parseNumber(ctrlText 9619)] call AlysiaClient_fnc_company_link_percentage_change;";
 
 	x=0.592812 * safezoneW + safezoneX;
 	y=0.544 * safezoneH + safezoneY;

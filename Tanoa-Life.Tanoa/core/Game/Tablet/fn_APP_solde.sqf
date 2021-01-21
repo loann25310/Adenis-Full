@@ -8,7 +8,7 @@ disableSerialization;
 _display = uiNamespace getVariable ["tablet", displayNull];
 if (isNull _display) exitWith {};
 
-_config = missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "salary";
+_config = missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "salary";
 
 _salary = getNumber(_config >> "amount");
 if (getNumber(_config >> "apply_rank") isEqualTo 1) then
@@ -20,15 +20,15 @@ if (getNumber(_config >> "apply_rank") isEqualTo 1) then
 [
 		"Vous avez <t color='#d10000'>%1</t>$ en banque.<br/><br/>"
 	+	"Vous recevrez <t color='#d10000'>%2</t>$ de <t color='#FF8000'>%3</t> dans %4 minute(s).",
-	[g_atm] call AdenisClient_fnc_numberText,
-	[_salary] call AdenisClient_fnc_numberText,
+	[g_atm] call AlysiaClient_fnc_numberText,
+	[_salary] call AlysiaClient_fnc_numberText,
 	getText(_config >> "name"),
 	round((g_nextPay - time) / 60)
 ];
 
 if ((player getVariable ["number", ""]) != "") then
 {
-	[7602, true] call AdenisClient_fnc_tabletShow;
-	[7603, true] call AdenisClient_fnc_tabletShow;
-	(_display displayCtrl 7602) cbSetChecked (profileNamespace getVariable ["ADENIS_phone_salary", true]);
+	[7602, true] call AlysiaClient_fnc_tabletShow;
+	[7603, true] call AlysiaClient_fnc_tabletShow;
+	(_display displayCtrl 7602) cbSetChecked (profileNamespace getVariable ["ALYSIA_phone_salary", true]);
 };

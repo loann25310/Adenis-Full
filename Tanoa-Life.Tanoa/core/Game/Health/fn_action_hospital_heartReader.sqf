@@ -17,9 +17,9 @@ while {((attachedTo player) isEqualTo _bed)} do
 		};
 
 		if (player getVariable ["heart_attack", false]) then {
-			[_reader, "heart_alert", 20] call AdenisClient_fnc_globalSay3d;
+			[_reader, "heart_alert", 20] call AlysiaClient_fnc_globalSay3d;
 		} else {
-			[_reader, "heart_rate", 7] call AdenisClient_fnc_globalSay3d;
+			[_reader, "heart_rate", 7] call AlysiaClient_fnc_globalSay3d;
 		};
 	} else {
 		if ((_reader animationPhase "Panel_Hide") != 0) then {

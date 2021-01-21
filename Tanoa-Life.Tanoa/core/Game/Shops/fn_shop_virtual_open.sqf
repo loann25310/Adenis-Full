@@ -7,15 +7,15 @@ _target = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
 _type = [_this, 3, "", [""]] call BIS_fnc_param;
 
 if (_type isEqualTo "") exitWith {
-	["Aucun type précisé."] call AdenisClient_fnc_error;
+	["Aucun type précisé."] call AlysiaClient_fnc_error;
 };
 if (isNull _target) exitWith {
-	["Cible invalide."] call AdenisClient_fnc_error;
+	["Cible invalide."] call AlysiaClient_fnc_error;
 };
 
-_config = missionConfigFile >> "ADENIS_SHOPS_VIRTUAL" >> _type;
+_config = missionConfigFile >> "ALYSIA_SHOPS_VIRTUAL" >> _type;
 if (!isClass(_config)) exitWith {
-	[format["Impossible de trouver les informations concernant le magasin<br/><t align='center' color='#FF8000'>%1</t>", _type]] call AdenisClient_fnc_error;
+	[format["Impossible de trouver les informations concernant le magasin<br/><t align='center' color='#FF8000'>%1</t>", _type]] call AlysiaClient_fnc_error;
 };
 
 _side = getText(_config >> "side");
@@ -23,9 +23,9 @@ _side = getText(_config >> "side");
 {
 	[format[
 		"Votre faction <t color='#04B404'>%1</t> n'est pas autorisé à acheter ici.<br/>Ce magasin <t color='#2EFE9A'>%2</t> est <t color='#FF0000'>réservé</t>.",
-		([playerSide] call AdenisClient_fnc_sideToStr),
+		([playerSide] call AlysiaClient_fnc_sideToStr),
 		getText(_config >> "name")
-	]] call AdenisClient_fnc_error;
+	]] call AlysiaClient_fnc_error;
 }; */
 
 createDialog "RscDisplayShopVirtual";
@@ -50,17 +50,17 @@ g_shop_type = _type;
 g_shop_tmp_buy = [];
 g_shop_tmp_sell = [];
 if (count(getArray(_config >> "buy")) >= count(getArray(_config >> "sell"))) then {
-	[0] call AdenisClient_fnc_shop_virtual_update_mod;
+	[0] call AlysiaClient_fnc_shop_virtual_update_mod;
 } else {
-	[1] call AdenisClient_fnc_shop_virtual_update_mod;
+	[1] call AlysiaClient_fnc_shop_virtual_update_mod;
 	g_shop_active = false;
 	for "_i" from 0 to (lbsize 2405) do {
-		[1, true, _i] call AdenisClient_fnc_shop_virtual_add;
+		[1, true, _i] call AlysiaClient_fnc_shop_virtual_add;
 	};
 	g_shop_active = true;
 };
 
-[] call AdenisClient_fnc_shop_virtual_update_basket;
+[] call AlysiaClient_fnc_shop_virtual_update_basket;
 
 g_shop_active = false;
 
@@ -70,5 +70,5 @@ waitUntil {
 };
 
 {
-	[true, (_x select 0), (_x select 1)] call AdenisClient_fnc_handleInv;
+	[true, (_x select 0), (_x select 1)] call AlysiaClient_fnc_handleInv;
 } forEach g_shop_tmp_sell;

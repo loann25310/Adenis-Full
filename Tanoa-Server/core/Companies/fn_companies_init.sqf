@@ -20,8 +20,8 @@ gServer_companies = [];
 			(_x select 11),
 			[(_x select 5), (_x select 6), (_x select 7)],
 			(_x select 8),
-			[(_x select 10)] call AdenisServer_fnc_mresToArray
-		] call AdenisServer_fnc_construction_init;
+			[(_x select 10)] call AlysiaServer_fnc_mresToArray
+		] call AlysiaServer_fnc_construction_init;
 	} else {
 		_object =
 		[
@@ -32,13 +32,13 @@ gServer_companies = [];
 			(_x select 11),
 			[(_x select 5), (_x select 6), (_x select 7)],
 			(_x select 8),
-			[(_x select 12)] call AdenisServer_fnc_mresToArray,
+			[(_x select 12)] call AlysiaServer_fnc_mresToArray,
 			(_x select 3),
-			[(_x select 13)] call AdenisServer_fnc_mresToArray,
-			[(_x select 14)] call AdenisServer_fnc_mresToArray,
+			[(_x select 13)] call AlysiaServer_fnc_mresToArray,
+			[(_x select 14)] call AlysiaServer_fnc_mresToArray,
 			[format["SELECT TRANS_from,TRANS_date,TRANS_type,TRANS_value,TRANS_reason FROM companies_bank_transactions WHERE COMPANY_plate='%1'", (_x select 4)], 2] call ExtDB3_fnc_async,
 			(_x select 15)
-		] call AdenisServer_fnc_company_init;
+		] call AlysiaServer_fnc_company_init;
 	};
 
 	gServer_companies pushBack _object;

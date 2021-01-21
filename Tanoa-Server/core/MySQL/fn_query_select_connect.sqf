@@ -91,25 +91,25 @@ _queryResult = switch (_side) do
 };
 
 if (_queryResult isEqualTo []) exitWith {
-	[] remoteExec ["AdenisClient_fnc_welcomeInit", (owner _player)];
+	[] remoteExec ["AlysiaClient_fnc_welcomeInit", (owner _player)];
 };
 
 _queryResult = _queryResult select 0;
-_queryResult set [4, ([(_queryResult select 4)] call AdenisServer_fnc_mresToArray)];//birth
-_queryResult set [7, ([(_queryResult select 7)] call AdenisServer_fnc_mresToArray)];//dynamic markers
-_queryResult set [11, ([(_queryResult select 11), 1] call AdenisServer_fnc_bool)];//coma
-_queryResult set [15, ([(_queryResult select 15), 1] call AdenisServer_fnc_bool)];//alive
-_queryResult set [16, ([(_queryResult select 16)] call AdenisServer_fnc_mresToArray)];//deseases
-_queryResult set [28, ([(_queryResult select 28), 1] call AdenisServer_fnc_bool)];//escape
-_queryResult set [29, ([(_queryResult select 29)] call AdenisServer_fnc_mresToArray)];//prison gear
-_queryResult set [31, ([(_queryResult select 31)] call AdenisServer_fnc_mresToArray)];//phone_contacts
-_queryResult set [32, ([(_queryResult select 32)] call AdenisServer_fnc_mresToArray)];//phone_messages
-_queryResult set [34, ([(_queryResult select 34)] call AdenisServer_fnc_mresToArray)];//phone_blacklist
-_queryResult set [35, ([(_queryResult select 35)] call AdenisServer_fnc_mresToArray)];//apps
-_queryResult set [40, ([(_queryResult select 40), 1] call AdenisServer_fnc_bool)];//annuaire
-_queryResult set [41, ([(_queryResult select 41)] call AdenisServer_fnc_mresToArray)];//licenses
-_queryResult set [44, ([(_queryResult select 44)] call AdenisServer_fnc_mresToArray)];//inventory
-_queryResult set [45, ([(_queryResult select 45)] call AdenisServer_fnc_mresToArray)];//gear
+_queryResult set [4, ([(_queryResult select 4)] call AlysiaServer_fnc_mresToArray)];//birth
+_queryResult set [7, ([(_queryResult select 7)] call AlysiaServer_fnc_mresToArray)];//dynamic markers
+_queryResult set [11, ([(_queryResult select 11), 1] call AlysiaServer_fnc_bool)];//coma
+_queryResult set [15, ([(_queryResult select 15), 1] call AlysiaServer_fnc_bool)];//alive
+_queryResult set [16, ([(_queryResult select 16)] call AlysiaServer_fnc_mresToArray)];//deseases
+_queryResult set [28, ([(_queryResult select 28), 1] call AlysiaServer_fnc_bool)];//escape
+_queryResult set [29, ([(_queryResult select 29)] call AlysiaServer_fnc_mresToArray)];//prison gear
+_queryResult set [31, ([(_queryResult select 31)] call AlysiaServer_fnc_mresToArray)];//phone_contacts
+_queryResult set [32, ([(_queryResult select 32)] call AlysiaServer_fnc_mresToArray)];//phone_messages
+_queryResult set [34, ([(_queryResult select 34)] call AlysiaServer_fnc_mresToArray)];//phone_blacklist
+_queryResult set [35, ([(_queryResult select 35)] call AlysiaServer_fnc_mresToArray)];//apps
+_queryResult set [40, ([(_queryResult select 40), 1] call AlysiaServer_fnc_bool)];//annuaire
+_queryResult set [41, ([(_queryResult select 41)] call AlysiaServer_fnc_mresToArray)];//licenses
+_queryResult set [44, ([(_queryResult select 44)] call AlysiaServer_fnc_mresToArray)];//inventory
+_queryResult set [45, ([(_queryResult select 45)] call AlysiaServer_fnc_mresToArray)];//gear
 
 // buffer messages handler
 _messages = missionNamespace getVariable [format["SERVER_MESSAGES_%1", (_queryResult select 30)], []];
@@ -121,9 +121,9 @@ if (count(_messages) > 0) then
 
 [
 	_queryResult,
-	([_uid] call AdenisServer_fnc_house_fetch),
+	([_uid] call AlysiaServer_fnc_house_fetch),
 	(missionNamespace getVariable [format["%1_KEYS_%2", _uid, _side], []]),
 	_messages,
-	([_uid] call AdenisServer_fnc_company_fetch),
-	([_uid] call AdenisServer_fnc_laboratory_fetch)
-] remoteExecCall ["AdenisDB_fnc_query_select_receive", (owner _player)];
+	([_uid] call AlysiaServer_fnc_company_fetch),
+	([_uid] call AlysiaServer_fnc_laboratory_fetch)
+] remoteExecCall ["AlysiaDB_fnc_query_select_receive", (owner _player)];

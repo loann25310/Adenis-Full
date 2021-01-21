@@ -6,18 +6,18 @@ private["_vehicle", "_bomb", "_config"];
 _vehicle = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
 
 if (isNull _vehicle) exitWith {
-	["Cible invalide."] call AdenisClient_fnc_error;
+	["Cible invalide."] call AlysiaClient_fnc_error;
 };
 if (!("Bank_Bomb" in (magazines player))) exitWith {
-	["Vous n'avez pas de c4."] call AdenisClient_fnc_error;
+	["Vous n'avez pas de c4."] call AlysiaClient_fnc_error;
 };
 if (g_action_inUse) exitWith {
-	["Vous êtes déjà en train d'effectuer une action."] call AdenisClient_fnc_error;
+	["Vous êtes déjà en train d'effectuer une action."] call AlysiaClient_fnc_error;
 };
 
-_config = missionConfigFile >> "ADENIS_VEHICLES" >> typeOf(_vehicle) >> "c4_bomb";
+_config = missionConfigFile >> "ALYSIA_VEHICLES" >> typeOf(_vehicle) >> "c4_bomb";
 if (!isClass(_config)) exitWith {
-	["Impossible de placer du c4 sur ce véhicule."] call AdenisClient_fnc_error;
+	["Impossible de placer du c4 sur ce véhicule."] call AlysiaClient_fnc_error;
 };
 
 g_action_inUse = true;

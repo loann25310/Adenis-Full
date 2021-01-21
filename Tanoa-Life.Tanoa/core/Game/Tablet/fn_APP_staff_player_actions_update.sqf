@@ -31,9 +31,9 @@ _idc = 9020;
 						if (_action) then
 						{
 							%1
-							[] call AdenisClient_fnc_APP_staff_player_actions_update;
+							[] call AlysiaClient_fnc_APP_staff_player_actions_update;
 						} else {
-							[""Action annulée""] call AdenisClient_fnc_info;
+							[""Action annulée""] call AlysiaClient_fnc_info;
 						};
 					};
 				",
@@ -45,23 +45,23 @@ _idc = 9020;
 			[
 				"
 					%1
-					[] call AdenisClient_fnc_APP_staff_player_actions_update;
+					[] call AlysiaClient_fnc_APP_staff_player_actions_update;
 				",
 				getText(_x >> "statement")
 			];
 		};
 
-		[_idc, true] call AdenisClient_fnc_tabletShow;
+		[_idc, true] call AlysiaClient_fnc_tabletShow;
 		_idc = _idc + 1;
 	};
-} forEach ("(getPlayerUID player) in getArray(_x >> 'allow')" configClasses (missionConfigFile >> "ADENIS_STAFF" >> "commands" >> "buttons"));
+} forEach ("(getPlayerUID player) in getArray(_x >> 'allow')" configClasses (missionConfigFile >> "ALYSIA_STAFF" >> "commands" >> "buttons"));
 
 for "_i" from 9020 to 9028 do {
-	[_idc, false] call AdenisClient_fnc_tabletShow;
+	[_idc, false] call AlysiaClient_fnc_tabletShow;
 };
 
 if (_idc > 9020) then
 {
-	[9008, true] call AdenisClient_fnc_tabletShow;
-	[9009, true] call AdenisClient_fnc_tabletShow;
+	[9008, true] call AlysiaClient_fnc_tabletShow;
+	[9009, true] call AlysiaClient_fnc_tabletShow;
 };

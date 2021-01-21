@@ -13,5 +13,5 @@ if (isNil "_info") exitWith {};
 
 _company setVariable ["company_bank_history", []];
 if (!(isNull _from)) then {
-	[format["Le livre des comptes de l'entreprise %1 a été vidé.", (_info select 0)]] remoteExecCall ["AdenisClient_fnc_info", (owner _from)];
+	[format["Le livre des comptes de l'entreprise %1 a été vidé.", (_info select 0)]] remoteExecCall ["AlysiaClient_fnc_info", (owner _from)];
 };

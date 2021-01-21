@@ -8,4 +8,4 @@ if (!(_vehicle in g_vehicles)) then {
 	g_vehicles pushBack _vehicle;
 };
 
-["Quelqu'un vous a légué ses clefs"] call AdenisClient_fnc_info;
+["Quelqu'un vous a légué ses clefs"] call AlysiaClient_fnc_info;

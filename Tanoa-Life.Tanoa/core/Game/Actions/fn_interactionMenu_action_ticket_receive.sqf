@@ -24,12 +24,12 @@ _action =
 		"<t align='center'>-----------------------</t><br/>" +
 		"<t align='center' font='PuristaMedium'>Description</t><br/>" +
 		"%5",
-		if (_side isEqualTo civilian) then {(_company getVariable "company_info") select 0} else {getText(missionConfigFile >> "ADENIS_FACTIONS" >> str(_side) >> "name_full")},
-		if (_side isEqualTo civilian) then {""} else {[_side, _from getVariable ["rank", 0]] call AdenisClient_fnc_rankToStr},
+		if (_side isEqualTo civilian) then {(_company getVariable "company_info") select 0} else {getText(missionConfigFile >> "ALYSIA_FACTIONS" >> str(_side) >> "name_full")},
+		if (_side isEqualTo civilian) then {""} else {[_side, _from getVariable ["rank", 0]] call AlysiaClient_fnc_rankToStr},
 		_from getVariable "realname",
-		[_price] call AdenisClient_fnc_numberText,
+		[_price] call AlysiaClient_fnc_numberText,
 		_desc,
-		getText(missionConfigFile >> "ADENIS_FACTIONS" >> str(_side) >> "icon")
+		getText(missionConfigFile >> "ALYSIA_FACTIONS" >> str(_side) >> "icon")
 	],
 	"Paiement",
 	"Accepter",
@@ -37,16 +37,16 @@ _action =
 ] call BIS_fnc_guiMessage;
 if (_action && (g_atm >= _price)) then
 {
-	[false, _price, "Paiement"] call AdenisClient_fnc_handleATM;
+	[false, _price, "Paiement"] call AlysiaClient_fnc_handleATM;
 	playSound "buy";
-	["Votre paiement a été <t color='#01DF01'>accepté</t>.", "buy"] remoteExecCall ["AdenisClient_fnc_info", _from];
+	["Votre paiement a été <t color='#01DF01'>accepté</t>.", "buy"] remoteExecCall ["AlysiaClient_fnc_info", _from];
 	switch _side do
 	{
-		case west: {[west, true, _price] remoteExecCall ["AdenisServer_fnc_factionBankHandle", 2]};
-		case east: {[east, true, _price] remoteExecCall ["AdenisServer_fnc_factionBankHandle", 2]};
-		case independent: {[independent, true, _price] remoteExecCall ["AdenisServer_fnc_factionBankHandle", 2]};
-		case civilian: {[_company, true, _price, (_from getVariable "realname"), "Demande de paiement"] remoteExec ["AdenisServer_fnc_company_bank_handle", 2]};
+		case west: {[west, true, _price] remoteExecCall ["AlysiaServer_fnc_factionBankHandle", 2]};
+		case east: {[east, true, _price] remoteExecCall ["AlysiaServer_fnc_factionBankHandle", 2]};
+		case independent: {[independent, true, _price] remoteExecCall ["AlysiaServer_fnc_factionBankHandle", 2]};
+		case civilian: {[_company, true, _price, (_from getVariable "realname"), "Demande de paiement"] remoteExec ["AlysiaServer_fnc_company_bank_handle", 2]};
 	};
 } else {
-	["Votre paiement a été <t color='#FF4000'>refusé</t>."] remoteExecCall ["AdenisClient_fnc_info", _from];
+	["Votre paiement a été <t color='#FF4000'>refusé</t>."] remoteExecCall ["AlysiaClient_fnc_info", _from];
 };

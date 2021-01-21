@@ -39,7 +39,7 @@ class ANNOUNCES_CATEGORY_SHOW_IMAGE: RscPicture
 class ANNOUNCES_CATEGORY_SHOW_BUTTON: RscButtonSilent
 {
 	idc=ANNOUNCES_CATEGORY_SHOW_BUTTON_IDC;
-	action="['ANNOUNCES_SHOW'] spawn AdenisClient_fnc_tabletApp;";
+	action="['ANNOUNCES_SHOW'] spawn AlysiaClient_fnc_tabletApp;";
 	onMouseEnter="ctrlSetText[9501,""Alysia_Client_Texture\Data\tablet\announces\action_announces_show_select.paa""];";
 	onMouseExit="ctrlSetText[9501,""Alysia_Client_Texture\Data\tablet\announces\action_announces_show.paa""];";
 
@@ -72,7 +72,7 @@ class ANNOUNCES_CATEGORY_WRITE_IMAGE: RscPicture
 class ANNOUNCES_CATEGORY_WRITE_BUTTON: RscButtonSilent
 {
 	idc=ANNOUNCES_CATEGORY_WRITE_BUTTON_IDC;
-	action="['ANNOUNCES_WRITE'] spawn AdenisClient_fnc_tabletApp;";
+	action="['ANNOUNCES_WRITE'] spawn AlysiaClient_fnc_tabletApp;";
 	onMouseEnter="ctrlSetText[9504,""Alysia_Client_Texture\Data\tablet\announces\action_announces_write_select.paa""];";
 	onMouseExit="ctrlSetText[9504,""Alysia_Client_Texture\Data\tablet\announces\action_announces_write.paa""];";
 
@@ -98,7 +98,7 @@ class ANNOUNCES_BACK_IMAGE: RscPicture
 class ANNOUNCES_BACK_BUTTON: RscButtonSilent
 {
 	idc=ANNOUNCES_BACK_BUTTON_IDC;
-	action="['ANNOUNCES'] spawn AdenisClient_fnc_tabletApp;";
+	action="['ANNOUNCES'] spawn AlysiaClient_fnc_tabletApp;";
 	onMouseEnter="ctrlSetText[(ctrlIDC (_this select 0)) - 1,""Alysia_Client_Texture\Data\global\option_back_select.paa""];";
 	onMouseExit="ctrlSetText[(ctrlIDC (_this select 0)) - 1,""Alysia_Client_Texture\Data\global\option_back.paa""];";
 	tooltip="Retour";
@@ -240,7 +240,7 @@ class ANNOUNCES_WRITE_ACTION_IMAGE: RscPicture
 class ANNOUNCES_WRITE_ACTION_BUTTON: RscButtonSilent
 {
 	idc=ANNOUNCES_WRITE_ACTION_BUTTON_IDC;
-	action="[] call AdenisClient_fnc_APP_announces_write_action;";
+	action="[] call AlysiaClient_fnc_APP_announces_write_action;";
 	onMouseEnter="ctrlSetText[(ctrlIDC (_this select 0)) - 1,""Alysia_Client_Texture\Data\tablet\announces\action_announces_write_select.paa""];";
 	onMouseExit="ctrlSetText[(ctrlIDC (_this select 0)) - 1,""Alysia_Client_Texture\Data\tablet\announces\action_announces_write.paa""];";
 
@@ -276,7 +276,7 @@ class ANNOUNCES_SHOW_TITLE: RscStructuredText
 class ANNOUNCES_SHOW_LIST: RscListbox
 {
 	idc=ANNOUNCES_SHOW_LIST_IDC;
-	onLBSelChanged="_this call AdenisClient_fnc_APP_announces_show_update;";
+	onLBSelChanged="_this call AlysiaClient_fnc_APP_announces_show_update;";
 
 	x=0.324687 * safezoneW + safezoneX;
 	y=0.412 * safezoneH + safezoneY;

@@ -90,6 +90,6 @@ with missionNamespace do
 	g_plants = [];
 	{
 		g_plants pushBack (configName _x);
-	} forEach ("true" configClasses (missionConfigFile >> "ADENIS_FARMING_PLANT_OBJETCS"));
+	} forEach ("true" configClasses (missionConfigFile >> "ALYSIA_FARMING_PLANT_OBJETCS"));
 	g_plants = compileFinal str(g_plants);
 };

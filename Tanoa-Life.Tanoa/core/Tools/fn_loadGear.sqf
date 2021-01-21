@@ -5,14 +5,14 @@
 private["_gear", "_uniformGear", "_vestGear", "_backpackGear", "_goggles", "_headgear", "_primaryWeaponGear", "_secondaryWeaponGear", "_handgunWeaponGear", "_oldVersion"];
 _gear = [_this, 0, [], [[]]] call BIS_fnc_param;
 
-[] call AdenisClient_fnc_stripDownPlayer;
+[] call AlysiaClient_fnc_stripDownPlayer;
 
 if (_gear isEqualTo []) then
 {
-    [] call AdenisClient_fnc_init_loadout;
+    [] call AlysiaClient_fnc_init_loadout;
     player addItem "ItemGPS";
     player assignItem "ItemGPS";
-    [getText(missionConfigFile >> "ADENIS_FACTIONS" >> "CIV" >> "identity_item"), true] call AdenisClient_fnc_handleItem;
+    [getText(missionConfigFile >> "ALYSIA_FACTIONS" >> "CIV" >> "identity_item"), true] call AlysiaClient_fnc_handleItem;
 } else {
 
     _primaryWeaponGear = [_gear, 6, ["", [], [], 0], [[]]] call BIS_fnc_param;

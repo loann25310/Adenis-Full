@@ -5,7 +5,7 @@
 private "_action";
 
 if (!(isNil "gServer_soonReboot")) exitWith {
-	["Veuillez attendre le <t color='#B40404'>redémarrage</t> du serveur pour changer de personnage."] call AdenisClient_fnc_error;
+	["Veuillez attendre le <t color='#B40404'>redémarrage</t> du serveur pour changer de personnage."] call AlysiaClient_fnc_error;
 };
 
 _action =
@@ -24,7 +24,7 @@ if (_action) then
 	if (isNull g_company) then
 	{
 		disableUserInput true;
-		["Action en cours. Veuillez patienter..."] call AdenisClient_fnc_info;
+		["Action en cours. Veuillez patienter..."] call AlysiaClient_fnc_info;
 
 		if (!isNull(g_laboratory)) then {
 			deleteVehicle g_laboratory;
@@ -32,19 +32,19 @@ if (_action) then
 
 		{
 			if (((_x getVariable ["house_owner", ["", ""]]) select 0) isEqualTo (getPlayerUID player)) then {
-				[_x] remoteExec ["AdenisServer_fnc_house_sell", 2];
+				[_x] remoteExec ["AlysiaServer_fnc_house_sell", 2];
 			};
 		} forEach g_houses;
 
-		[getPlayerUID player] remoteExec ["AdenisServer_fnc_query_delete_wipe", 2];
+		[getPlayerUID player] remoteExec ["AlysiaServer_fnc_query_delete_wipe", 2];
 
 		player setVariable ["realname", nil];
 		uiSleep 4;
 
 		disableUserInput false;
 
-		["Votre compte a été supprimé. Veuillez vous reconnectez-vous avec votre nouvelle identité."] spawn AdenisClient_fnc_errorExit;
+		["Votre compte a été supprimé. Veuillez vous reconnectez-vous avec votre nouvelle identité."] spawn AlysiaClient_fnc_errorExit;
 	} else {
-		["Vous devez quitter votre entreprise avant de pouvoir changer de personnage."] call AdenisClient_fnc_error;
+		["Vous devez quitter votre entreprise avant de pouvoir changer de personnage."] call AlysiaClient_fnc_error;
 	};
 };

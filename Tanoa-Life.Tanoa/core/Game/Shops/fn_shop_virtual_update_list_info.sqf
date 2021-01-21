@@ -21,7 +21,7 @@ if (_sel isEqualTo -1) exitWith
 };
 
 _item = _list lbData _sel;
-_config = missionConfigFile >> "ADENIS_ITEMS" >> _item;
+_config = missionConfigFile >> "ALYSIA_ITEMS" >> _item;
 if ((_item isEqualTo "") || !(isClass(_config))) exitWith
 {
 	ctrlShow[2407, false];
@@ -42,11 +42,11 @@ if (g_shop_mod isEqualTo 0) then
 {
 	_rank = getNumber(_config >> format["buy_rank_%1", playerSide]);
 	_license = getText(_config >> format["buy_license_%1", playerSide]);
-	_price = [_item] call AdenisClient_fnc_itemGetBuyPrice;
+	_price = [_item] call AlysiaClient_fnc_itemGetBuyPrice;
 } else {
 	_rank = getNumber(_config >> format["sell_rank_%1", playerSide]);
 	_license = getText(_config >> format["sell_license_%1", playerSide]);
-	_price = [_item] call AdenisClient_fnc_itemGetSellPrice;
+	_price = [_item] call AlysiaClient_fnc_itemGetSellPrice;
 };
 
 if ((_rank isEqualTo 0) || ((_rank > 0) && ((player getVariable ["rank", 0]) >= _rank))) then {
@@ -55,7 +55,7 @@ if ((_rank isEqualTo 0) || ((_rank > 0) && ((player getVariable ["rank", 0]) >= 
 	_rank_condition = false;
 };
 
-if ((_license isEqualTo "") || ([_license] call AdenisClient_fnc_hasLicense)) then {
+if ((_license isEqualTo "") || ([_license] call AlysiaClient_fnc_hasLicense)) then {
 	_license_condition = true;
 } else {
 	_license_condition = false;
@@ -71,17 +71,17 @@ if ((_license isEqualTo "") || ([_license] call AdenisClient_fnc_hasLicense)) th
 	"<t align='left'>Prix par unité</t><t align='right' color='#8cff9b'>%5$</t><br/>" +
 	"</t>",
 	if (_rank_condition) then {"#31B404"} else {"#DF0101"},
-	[playerSide, _rank] call AdenisClient_fnc_rankToStr,
+	[playerSide, _rank] call AlysiaClient_fnc_rankToStr,
 	if (_license_condition) then {"#31B404"} else {"#DF0101"},
-	if (_license isEqualTo "") then {"Aucune"} else {[_license] call AdenisClient_fnc_licenseGetName},
-	[_price] call AdenisClient_fnc_numberText
+	if (_license isEqualTo "") then {"Aucune"} else {[_license] call AlysiaClient_fnc_licenseGetName},
+	[_price] call AlysiaClient_fnc_numberText
 ];
 
 if (_rank_condition && _license_condition) then
 {
 	if (g_shop_mod isEqualTo 0) then
 	{
-		if (([_item, 1, g_shop_weight_actual, g_maxWeight] call AdenisClient_fnc_calWeightDiff) isEqualTo 1) then
+		if (([_item, 1, g_shop_weight_actual, g_maxWeight] call AlysiaClient_fnc_calWeightDiff) isEqualTo 1) then
 		{
 			ctrlShow[2407, true];
 			ctrlShow[2408, true];
@@ -90,7 +90,7 @@ if (_rank_condition && _license_condition) then
 			ctrlShow[2408, false];
 		};
 
-		if (([_item, 2, g_shop_weight_actual, g_maxWeight] call AdenisClient_fnc_calWeightDiff) isEqualTo 2) then
+		if (([_item, 2, g_shop_weight_actual, g_maxWeight] call AlysiaClient_fnc_calWeightDiff) isEqualTo 2) then
 		{
 			ctrlShow[2409, true];
 			ctrlShow[2410, true];

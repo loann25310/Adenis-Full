@@ -14,7 +14,7 @@ if ((isNull _from) || (_txt isEqualTo "") || (_className isEqualTo "") || (_type
 
 if (_type isEqualTo "ARMA") then
 {
-	if ([_className, false] call AdenisClient_fnc_handleItem) then
+	if ([_className, false] call AlysiaClient_fnc_handleItem) then
 	{
 		_holder = nearestObjects [player, ["groundweaponholder"], 4];
 		if (_holder isEqualTo []) then
@@ -33,39 +33,39 @@ if (_type isEqualTo "ARMA") then
 			default {_holder addItemCargoGlobal [_className, 1]};
 		};
 
-		[format["Vous avez retiré <t color='#FF8000'>%1</t>.", _txt]] remoteExecCall ["AdenisClient_fnc_info", _from];
+		[format["Vous avez retiré <t color='#FF8000'>%1</t>.", _txt]] remoteExecCall ["AlysiaClient_fnc_info", _from];
 	} else {
-		["Impossible de trouver l'objet dans l'inventaire de la cible."] remoteExecCall ["AdenisClient_fnc_error", _from];
+		["Impossible de trouver l'objet dans l'inventaire de la cible."] remoteExecCall ["AlysiaClient_fnc_error", _from];
 	};
 } else {
-	_amount = [_className] call AdenisClient_fnc_itemCount;
+	_amount = [_className] call AlysiaClient_fnc_itemCount;
 
 	_suit = (nearestObjects [player, ["Skyline_Alysia_Boite_01_F"], 3.2]) select 0;
 	if (isNil "_suit") then
 	{
-		if ([false, _className, _amount] call AdenisClient_fnc_handleInv) then
+		if ([false, _className, _amount] call AlysiaClient_fnc_handleInv) then
 		{
 			_suit = createVehicle ["Skyline_Alysia_Boite_01_F", (player modelToWorld [0, 2, 0]), [], 0, "CAN_COLLIDE"];
 			_suit setVariable ["items", [[_className, _amount]], true];
 		} else {
-			["Impossible de trouver l'objet dans l'inventaire de la cible."] remoteExecCall ["AdenisClient_fnc_error", _from];
+			["Impossible de trouver l'objet dans l'inventaire de la cible."] remoteExecCall ["AlysiaClient_fnc_error", _from];
 		};
 	} else {
 		if ((_suit getVariable ["trunk_in_use_ID", ""]) isEqualTo "") then
 		{
-			if ([true, _suit, "items", _className, _amount, true] call AdenisClient_fnc_handleTrunk) then
+			if ([true, _suit, "items", _className, _amount, true] call AlysiaClient_fnc_handleTrunk) then
 			{
-				if ([false, _className, _amount] call AdenisClient_fnc_handleInv) then {
-					[format["Vous avez retiré <t color='#FF8000'>%1</t>.", _txt]] remoteExecCall ["AdenisClient_fnc_info", _from];
+				if ([false, _className, _amount] call AlysiaClient_fnc_handleInv) then {
+					[format["Vous avez retiré <t color='#FF8000'>%1</t>.", _txt]] remoteExecCall ["AlysiaClient_fnc_info", _from];
 				} else {
-					["<t color='#0080FF'>Impossible</t> de retirer l'objet à la cible.<br/>La caisse n'a plus de place."] remoteExecCall ["AdenisClient_fnc_error", _from];
-					[false, _suit, "items", _className, _amount, true] call AdenisClient_fnc_handleTrunk;
+					["<t color='#0080FF'>Impossible</t> de retirer l'objet à la cible.<br/>La caisse n'a plus de place."] remoteExecCall ["AlysiaClient_fnc_error", _from];
+					[false, _suit, "items", _className, _amount, true] call AlysiaClient_fnc_handleTrunk;
 				};
 			};
 		} else {
-			["<t color='#0080FF'>Impossible</t> de retirer l'objet à la cible.<br/>La caisse la plus proche est en train d'être fouillée."] remoteExecCall ["AdenisClient_fnc_error", _from];
+			["<t color='#0080FF'>Impossible</t> de retirer l'objet à la cible.<br/>La caisse la plus proche est en train d'être fouillée."] remoteExecCall ["AlysiaClient_fnc_error", _from];
 		};
 	};
 };
 
-[_from] call AdenisClient_fnc_search_get;
+[_from] call AlysiaClient_fnc_search_get;

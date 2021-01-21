@@ -33,7 +33,7 @@ uiSleep 1;
 		_vehicle setFuel ((_x select 11) / 100);
 		_vehicle lock 2;
 
-		_hitpoints = ([_vehicle] call AdenisClient_fnc_getAllHitPointsDamage) select 0;
+		_hitpoints = ([_vehicle] call AlysiaClient_fnc_getAllHitPointsDamage) select 0;
 
 		{
 			if ((_x > 0) && !(isNil {(_hitpoints select _forEachIndex)}) && {(_hitpoints select _forEachIndex) != ""}) then
@@ -44,10 +44,10 @@ uiSleep 1;
 					[_vehicle, [_forEachIndex, _x]] remoteExecCall ["setHitIndex", _vehicle];
 				};
 			};
-		} forEach ([_x select 0] call AdenisServer_fnc_mresToArray);
+		} forEach ([_x select 0] call AlysiaServer_fnc_mresToArray);
 
-		[(_x select 3), ([(_x select 1)] call AdenisClient_fnc_strToSide), _vehicle] call AdenisServer_fnc_keyManagement;
-		[_vehicle] call AdenisClient_fnc_clearVehicleAmmo;
+		[(_x select 3), ([(_x select 1)] call AlysiaClient_fnc_strToSide), _vehicle] call AlysiaServer_fnc_keyManagement;
+		[_vehicle] call AlysiaClient_fnc_clearVehicleAmmo;
 
 		/*
 		0 - pid
@@ -57,7 +57,7 @@ uiSleep 1;
 		*/
 		_vehicle setVariable ["info", [(_x select 3), (_x select 9), (_x select 4), (_x select 10)], true];
 
-		_trunk = [(_x select 12)] call AdenisServer_fnc_mresToArray;
+		_trunk = [(_x select 12)] call AlysiaServer_fnc_mresToArray;
 		if (!(_trunk isEqualTo [])) then {
 			_vehicle setVariable ["Trunk", _trunk, true];
 		};

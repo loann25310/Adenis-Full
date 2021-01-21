@@ -7,7 +7,7 @@ _target = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
 
 if (isNull _target) exitWith {};
 
-_config = missionConfigFile >> "ADENIS_FARMING_OBJECT" >> typeOf(_target);
+_config = missionConfigFile >> "ALYSIA_FARMING_OBJECT" >> typeOf(_target);
 if (!(isClass _config)) exitWith {};
 
 _tool = getText(_config >> "tool");
@@ -19,20 +19,20 @@ if ((_tool != "") && ((currentWeapon player) != _tool)) exitWith
 			"Vous n'avez pas le bon outil.<br/>Vous avez besoin de <t color='#FF8000'>%1</t> pour commencer la récolte.",
 			getText(configFile >> "CfgWeapons" >> getText(_config >> "tool") >> "displayName")
 		]
-	] call AdenisClient_fnc_error;
+	] call AlysiaClient_fnc_error;
 };
 
 _license = getText(_config >> "license");
-if ((_license != "") && {!([_license] call AdenisClient_fnc_hasLicense)}) then
+if ((_license != "") && {!([_license] call AlysiaClient_fnc_hasLicense)}) then
 {
 	[
 		format
 		[
 			"Vous ne possédez pas <t color='#FF8000'>%1</t>.<br/>" +
 			"La récolte reste possible mais vous êtes dans l'<t color='#FF0000'>illégalité</t>.",
-			[_license] call AdenisClient_fnc_licenseGetName
+			[_license] call AlysiaClient_fnc_licenseGetName
 		]
-	] call AdenisClient_fnc_info;
+	] call AlysiaClient_fnc_info;
 };
 
 if (g_action_inUse) exitWith {};
@@ -79,20 +79,20 @@ while {(g_action_inUse && !g_interrupted)} do
 			_amount = 0;
 
 			if ((_x select 2) isEqualTo 1) then {
-				_amount = [(_x select 0), round(random(_x select 1)) + 1, g_carryWeight, g_maxWeight] call AdenisClient_fnc_calWeightDiff;
+				_amount = [(_x select 0), round(random(_x select 1)) + 1, g_carryWeight, g_maxWeight] call AlysiaClient_fnc_calWeightDiff;
 			} else {
-				_amount = [(_x select 0), (_x select 1), g_carryWeight, g_maxWeight] call AdenisClient_fnc_calWeightDiff;
+				_amount = [(_x select 0), (_x select 1), g_carryWeight, g_maxWeight] call AlysiaClient_fnc_calWeightDiff;
 			};
 
 			if ((_amount isEqualTo 0) && (_forEachIndex isEqualTo 0)) exitWith {_space = false};
-			[true, (_x select 0), _amount] call AdenisClient_fnc_handleInv;
+			[true, (_x select 0), _amount] call AlysiaClient_fnc_handleInv;
 		} forEach getArray(_config >> "receive");
 		_target setVariable ["farming", 0];
 	} else {
 		_target setVariable ["farming", _times];
 	};
 
-	if (!_space) exitWith {["Votre inventaire est plein"] call AdenisClient_fnc_info};
+	if (!_space) exitWith {["Votre inventaire est plein"] call AlysiaClient_fnc_info};
 	uiSleep 1.3;
 };
 

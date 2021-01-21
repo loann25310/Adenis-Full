@@ -1,4 +1,4 @@
-class ADENIS_LABORATORIES
+class ALYSIA_LABORATORIES
 {
 	class lab_marijuana
 	{

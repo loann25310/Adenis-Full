@@ -1,4 +1,4 @@
-class ADENIS_VEHICLES_INFO
+class ALYSIA_VEHICLES_INFO
 {
 	/* MASTER VEHICLES CONFIG */
 	insurance_percentage=0.3;
@@ -9,7 +9,7 @@ class ADENIS_VEHICLES_INFO
 	// based on vehicle's buyPrice
 };
 
-class ADENIS_VEHICLES
+class ALYSIA_VEHICLES
 {
 	/*
 	class master_vehicleClassname
@@ -6000,7 +6000,7 @@ class ADENIS_VEHICLES
 			{"Musique (Sonate Pour L'ANT En FA Mineur)", "fouine_ANT_2"}
 		};
 	};
-	class Adenis_GMC_Fiestanoa : Maels_Vandura_GMC_special
+	class ALYSIA_GMC_Fiestanoa : Maels_Vandura_GMC_special
 	{
 		realname="GMC Fiestanoa";
 	};

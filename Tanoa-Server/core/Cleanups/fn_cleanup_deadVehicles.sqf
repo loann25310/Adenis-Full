@@ -11,8 +11,8 @@
 			_info = _x getVariable "info";
 			if (!(isNil "_info")) then
 			{
-				[_x] call AdenisServer_fnc_logDeadVehicles;
-				[_info, true] call AdenisServer_fnc_vehicleDelete;
+				[_x] call AlysiaServer_fnc_logDeadVehicles;
+				[_info, true] call AlysiaServer_fnc_vehicleDelete;
 			};
 
 			deleteVehicle _x;

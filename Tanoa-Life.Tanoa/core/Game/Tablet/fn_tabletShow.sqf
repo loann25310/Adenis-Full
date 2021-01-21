@@ -10,7 +10,7 @@ if ((typeName _idc) isEqualTo "ARRAY") then
 {
 	if ((count _idc) != 2) exitWith {};
 	for "_i" from (_idc select 0) to (_idc select 1) do {
-		[_i, _show] call AdenisClient_fnc_tabletShow;
+		[_i, _show] call AlysiaClient_fnc_tabletShow;
 	};
 } else {
 	if (_idc isEqualTo -1) exitWith {};

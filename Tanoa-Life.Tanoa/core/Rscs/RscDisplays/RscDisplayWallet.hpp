@@ -170,7 +170,7 @@ class RscDisplayWallet: RscDisplayDefaultInteraction
 		class ACTION_BUTTON: RscButtonSilent
 		{
 			idc=58008;
-			action="[(lbData[58001, (lbCurSel 58001)]), player] remoteExecCall [""AdenisClient_fnc_license_revoke"", g_interaction_target];closeDialog 0;";
+			action="[(lbData[58001, (lbCurSel 58001)]), player] remoteExecCall [""AlysiaClient_fnc_license_revoke"", g_interaction_target];closeDialog 0;";
 			onMouseEnter="ctrlSetText[58007,""Alysia_Client_Texture\Data\skull\take_select.paa""];ctrlShow[58005, false];((findDisplay 58000) displayCtrl 58004) ctrlSetBackgroundColor [1,1,1,1];((findDisplay 58000) displayCtrl 58006) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#000000'>Retirer</t>"";";
 			onMouseExit="ctrlSetText[58007,""Alysia_Client_Texture\Data\skull\take.paa""];ctrlShow[58005, true];((findDisplay 58000) displayCtrl 58004) ctrlSetBackgroundColor [0,0,0,0.6];((findDisplay 58000) displayCtrl 58006) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#FFFFFF'>Retirer</t>"";";
 

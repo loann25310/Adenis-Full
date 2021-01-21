@@ -24,7 +24,7 @@ if ((vehicle player) isEqualTo player) then
 			};
 		};
 	} else {
-		["Vous ne pouvez pas mettre les mains sur la tête alors que vous trainez quelqu'un."] call AdenisClient_fnc_info;
+		["Vous ne pouvez pas mettre les mains sur la tête alors que vous trainez quelqu'un."] call AlysiaClient_fnc_info;
 	};
 };
 

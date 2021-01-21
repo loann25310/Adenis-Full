@@ -17,7 +17,7 @@ diag_log "[HOUSE] Saving ...";
 				format
 				[
 					"UPDATE houses SET tenants='%1' WHERE plate='%2'",
-					[(_x getVariable ["house_tenants", []])] call AdenisServer_fnc_mresArray,
+					[(_x getVariable ["house_tenants", []])] call AlysiaServer_fnc_mresArray,
 					_id
 				], 1
 			] call ExtDB3_fnc_async;

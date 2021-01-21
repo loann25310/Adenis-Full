@@ -132,7 +132,7 @@ class RscDisplayPlayerTrade: RscDisplayDefaultInteraction
 		class PLAYER_INVENTORY_ACTION_ADD_SINGLE_BUTTON: RscButtonSilent
 		{
 			idc=10002;
-			action="[false] call AdenisClient_fnc_interactionMenu_action_trade_add_inventory;";
+			action="[false] call AlysiaClient_fnc_interactionMenu_action_trade_add_inventory;";
 			onMouseEnter="ctrlSetText[10001,""Alysia_Client_Texture\Data\trade\inventory_add_single_select.paa""];";
 			onMouseExit="ctrlSetText[10001,""Alysia_Client_Texture\Data\trade\inventory_add_single.paa""];";
 
@@ -154,7 +154,7 @@ class RscDisplayPlayerTrade: RscDisplayDefaultInteraction
 		class PLAYER_INVENTORY_ACTION_ADD_DOUBLE_BUTTON: RscButtonSilent
 		{
 			idc=10004;
-			action="[true] call AdenisClient_fnc_interactionMenu_action_trade_add_inventory;";
+			action="[true] call AlysiaClient_fnc_interactionMenu_action_trade_add_inventory;";
 			onMouseEnter="ctrlSetText[10003,""Alysia_Client_Texture\Data\trade\inventory_add_double_select.paa""];";
 			onMouseExit="ctrlSetText[10003,""Alysia_Client_Texture\Data\trade\inventory_add_double.paa""];";
 
@@ -203,7 +203,7 @@ class RscDisplayPlayerTrade: RscDisplayDefaultInteraction
 		class PLAYER_KEY_BUILDING_ACTION_ADD_BUTTON: RscButtonSilent
 		{
 			idc=10022;
-			action="[] call AdenisClient_fnc_interactionMenu_action_trade_add_key_buildings;";
+			action="[] call AlysiaClient_fnc_interactionMenu_action_trade_add_key_buildings;";
 			onMouseEnter="ctrlSetText[10022,'Alysia_Client_Texture\Data\trade\add_select.paa'];";
 			onMouseExit="ctrlSetText[10022,'Alysia_Client_Texture\Data\trade\add.paa'];";
 
@@ -252,7 +252,7 @@ class RscDisplayPlayerTrade: RscDisplayDefaultInteraction
 		class PLAYER_KEY_VEHICLES_ACTION_ADD_BUTTON: RscButtonSilent
 		{
 			idc=10007;
-			action="[] call AdenisClient_fnc_interactionMenu_action_trade_add_key_vehicles;";
+			action="[] call AlysiaClient_fnc_interactionMenu_action_trade_add_key_vehicles;";
 			onMouseEnter="ctrlSetText[10006,'Alysia_Client_Texture\Data\trade\add_select.paa'];";
 			onMouseExit="ctrlSetText[10006,'Alysia_Client_Texture\Data\trade\add.paa'];";
 
@@ -302,7 +302,7 @@ class RscDisplayPlayerTrade: RscDisplayDefaultInteraction
 		class PLAYER_MONEY_ACTION_ADD_BUTTON: RscButtonSilent
 		{
 			idc=10010;
-			action="[] call AdenisClient_fnc_interactionMenu_action_trade_add_money;";
+			action="[] call AlysiaClient_fnc_interactionMenu_action_trade_add_money;";
 			onMouseEnter="ctrlSetText[10009,""Alysia_Client_Texture\Data\trade\add_select.paa""];";
 			onMouseExit="ctrlSetText[10009,""Alysia_Client_Texture\Data\trade\add.paa""];";
 
@@ -369,7 +369,7 @@ class RscDisplayPlayerTrade: RscDisplayDefaultInteraction
 		class TRADE_LIST_ACTION_REMOVE_BUTTON: RscButtonSilent
 		{
 			idc=10013;
-			action="[] call AdenisClient_fnc_interactionMenu_action_trade_remove;";
+			action="[] call AlysiaClient_fnc_interactionMenu_action_trade_remove;";
 			onMouseEnter="ctrlSetText[10012,""Alysia_Client_Texture\Data\trade\delete_select.paa""];";
 			onMouseExit="ctrlSetText[10012,""Alysia_Client_Texture\Data\trade\delete.paa""];";
 
@@ -421,7 +421,7 @@ class RscDisplayPlayerTrade: RscDisplayDefaultInteraction
 		class ACTION_BUTTON: RscButtonSilent
 		{
 			idc=10018;
-			action="[] call AdenisClient_fnc_interactionMenu_action_trade_propose;";
+			action="[] call AlysiaClient_fnc_interactionMenu_action_trade_propose;";
 			onMouseEnter="ctrlSetText[10016,""Alysia_Client_Texture\Data\interactions\player_to_player_basics\action_trade_select.paa""];ctrlShow[10014, false];((findDisplay 10000) displayCtrl 10015) ctrlSetBackgroundColor [1,1,1,1];((findDisplay 10000) displayCtrl 10017) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#000000'>Echanger</t>"";";
 			onMouseExit="ctrlSetText[10016,""Alysia_Client_Texture\Data\interactions\player_to_player_basics\action_trade.paa""];ctrlShow[10014, true];((findDisplay 10000) displayCtrl 10015) ctrlSetBackgroundColor [0,0,0,0.6];((findDisplay 10000) displayCtrl 10017) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#FFFFFF'>Echanger</t>"";";
 

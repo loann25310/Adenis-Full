@@ -13,14 +13,14 @@ switch (_side) do
 {
 	case east:
 	{
-		gServer_faction_EAST_history pushBack [_name, _item, format["%1 %2", ([] call AdenisClient_fnc_strDate), ([] call AdenisClient_fnc_strTime)]];
+		gServer_faction_EAST_history pushBack [_name, _item, format["%1 %2", ([] call AlysiaClient_fnc_strDate), ([] call AlysiaClient_fnc_strTime)]];
 	};
 	case west:
 	{
-		gServer_faction_WEST_history pushBack [_name, _item, format["%1 %2", ([] call AdenisClient_fnc_strDate), ([] call AdenisClient_fnc_strTime)]];
+		gServer_faction_WEST_history pushBack [_name, _item, format["%1 %2", ([] call AlysiaClient_fnc_strDate), ([] call AlysiaClient_fnc_strTime)]];
 	};
 	case independent:
 	{
-		gServer_faction_GUER_history pushBack [_name, _item, format["%1 %2", ([] call AdenisClient_fnc_strDate), ([] call AdenisClient_fnc_strTime)]];
+		gServer_faction_GUER_history pushBack [_name, _item, format["%1 %2", ([] call AlysiaClient_fnc_strDate), ([] call AlysiaClient_fnc_strTime)]];
 	};
 };

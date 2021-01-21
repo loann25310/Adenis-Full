@@ -6,16 +6,16 @@ private "_target";
 _target = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
 
 if (!(isNull (player getVariable ["escorting", objNull]))) exitWith {
-	["Vous escortez déjà quelqu'un"] call AdenisClient_fnc_error;
+	["Vous escortez déjà quelqu'un"] call AlysiaClient_fnc_error;
 };
 if (!(isNull (_target getVariable ["escorted", objNull]))) exitWith {
-	["Quelqu'un escorte déjà la cible"] call AdenisClient_fnc_error;
+	["Quelqu'un escorte déjà la cible"] call AlysiaClient_fnc_error;
 };
 if (!(_target getVariable ["restrained", false])) exitWith {
-	["La cible doit être menottée"] call AdenisClient_fnc_error;
+	["La cible doit être menottée"] call AlysiaClient_fnc_error;
 };
 if (isNull _target) exitWith {
-	["Cible invalide"] call AdenisClient_fnc_error;
+	["Cible invalide"] call AlysiaClient_fnc_error;
 };
 
 g_action_inUse = true;
@@ -26,13 +26,13 @@ waitUntil {((animationState player) isEqualTo "ainvpercmstpsnonwnondnon_putdown_
 g_action_inUse = false;
 
 if (!(isNull (player getVariable ["escorting", objNull]))) exitWith {
-	["Vous escortez déjà quelqu'un"] call AdenisClient_fnc_error;
+	["Vous escortez déjà quelqu'un"] call AlysiaClient_fnc_error;
 };
 if (!(isNull (_target getVariable ["escorted", objNull]))) exitWith {
-	["Quelqu'un escorte déjà la cible"] call AdenisClient_fnc_error;
+	["Quelqu'un escorte déjà la cible"] call AlysiaClient_fnc_error;
 };
 if (!(_target getVariable ["restrained", false])) exitWith {
-	["La cible doit être menottée"] call AdenisClient_fnc_error;
+	["La cible doit être menottée"] call AlysiaClient_fnc_error;
 };
 
 _target attachTo [player, [0, 0.8, 0]];

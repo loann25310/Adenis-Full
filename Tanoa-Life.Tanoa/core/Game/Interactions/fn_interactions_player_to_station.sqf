@@ -5,13 +5,13 @@
 
 if ((player getVariable ["refuel_type", ""]) != "") exitWith
 {
-	["Plein annulé."] call AdenisClient_fnc_info;
+	["Plein annulé."] call AlysiaClient_fnc_info;
 	player setVariable ["refuel_type", ""];
 };
 
 if ((player getVariable ["stock_station_type", ""]) != "") exitWith
 {
-	["Plein annulé."] call AdenisClient_fnc_info;
+	["Plein annulé."] call AlysiaClient_fnc_info;
 	player setVariable ["stock_station_type", ""];
 };
 
@@ -22,19 +22,19 @@ if ((player getVariable ["stock_station_type", ""]) != "") exitWith
 		[
 			"refuel_veh",
 			"Véhicule",
-			"[g_interaction_target,0] call AdenisClient_fnc_fuelStation_refuel_open;",
+			"[g_interaction_target,0] call AlysiaClient_fnc_fuelStation_refuel_open;",
 			"true"
 		],
 		[
 			"stock_refuel",
 			"Stock",
-			"[g_interaction_target,1] call AdenisClient_fnc_fuelStation_refuel_open;",
-			"(['company_fuel'] call AdenisClient_fnc_hasLicense)"
+			"[g_interaction_target,1] call AlysiaClient_fnc_fuelStation_refuel_open;",
+			"(['company_fuel'] call AlysiaClient_fnc_hasLicense)"
 		],
 		[
 			"refuel_jerry",
 			"Jerrycan",
-			"[g_interaction_target] spawn AdenisClient_fnc_fuelStation_jerrycan_open;",
+			"[g_interaction_target] spawn AlysiaClient_fnc_fuelStation_jerrycan_open;",
 			"('Alysia_jerrycan_empty' in (magazines player))"
 		]
 	],
@@ -42,4 +42,4 @@ if ((player getVariable ["stock_station_type", ""]) != "") exitWith
 	"Alysia_Client_Texture\Data\vehicle\background.jpg",
 	false,
 	false
-] spawn AdenisClient_fnc_interactions_create;
+] spawn AlysiaClient_fnc_interactions_create;

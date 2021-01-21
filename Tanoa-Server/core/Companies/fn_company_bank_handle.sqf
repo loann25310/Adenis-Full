@@ -26,5 +26,5 @@ if (_type) then {
 };
 
 _company setVariable ["company_bank", _amount, true];
-_company setVariable ["company_bank_history", (_company getVariable ["company_bank_history", []]) + [[_from, (call AdenisClient_fnc_strDate), ([_type, 0] call AdenisServer_fnc_bool), _value, _reason]]];
+_company setVariable ["company_bank_history", (_company getVariable ["company_bank_history", []]) + [[_from, (call AlysiaClient_fnc_strDate), ([_type, 0] call AlysiaServer_fnc_bool), _value, _reason]]];
 _company setVariable ["company_bank_active", false];

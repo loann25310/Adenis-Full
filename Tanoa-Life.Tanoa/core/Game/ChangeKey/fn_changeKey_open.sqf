@@ -6,13 +6,13 @@ private["_display","_info","_index","_control"];
 
 if (!(isNil "gServer_soonReboot")) exitWith
 {
-	["<t align='center'>Veuillez attendre le <t color='#B40404'>redémarrage</t> du serveur pour échanger un véhicule."] call AdenisClient_fnc_error;
+	["<t align='center'>Veuillez attendre le <t color='#B40404'>redémarrage</t> du serveur pour échanger un véhicule."] call AlysiaClient_fnc_error;
 	closeDialog 0;
 };
 
 if (count g_vehicles == 0) exitWith
 {
-	["Vous n'avez aucun véhicule de sorti."] call AdenisClient_fnc_error;
+	["Vous n'avez aucun véhicule de sorti."] call AlysiaClient_fnc_error;
 	closeDialog 0;
 };
 

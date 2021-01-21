@@ -22,29 +22,29 @@ g_shop_lock_str = "";
 {
 	_item = _x select 0;
 	_amount = _x select 1;
-	_index = _list lbAdd format["+ %1x %2", [_amount] call AdenisClient_fnc_numberText, [_item] call AdenisClient_fnc_itemGetName];
+	_index = _list lbAdd format["+ %1x %2", [_amount] call AlysiaClient_fnc_numberText, [_item] call AlysiaClient_fnc_itemGetName];
 	_list lbSetTooltip [_index, _list lbText _index];
 	_list lbSetData [_index, "BUY"];
 	_list lbSetValue [_index, _forEachIndex];
-	g_shop_bill_dollar = g_shop_bill_dollar + (([_item] call AdenisClient_fnc_itemGetBuyPrice) * _amount);
-	g_shop_weight_actual = g_shop_weight_actual + (([_item] call AdenisClient_fnc_itemGetWeight) * _amount);
+	g_shop_bill_dollar = g_shop_bill_dollar + (([_item] call AlysiaClient_fnc_itemGetBuyPrice) * _amount);
+	g_shop_weight_actual = g_shop_weight_actual + (([_item] call AlysiaClient_fnc_itemGetWeight) * _amount);
 } forEach g_shop_tmp_buy;
 
 {
 	_item = _x select 0;
 	_amount = _x select 1;
-	_index = _list lbAdd format["- %1x %2", [_amount] call AdenisClient_fnc_numberText, [_item] call AdenisClient_fnc_itemGetName];
+	_index = _list lbAdd format["- %1x %2", [_amount] call AlysiaClient_fnc_numberText, [_item] call AlysiaClient_fnc_itemGetName];
 	_list lbSetData [_index, "SELL"];
 	_list lbSetValue [_index, _forEachIndex];
-	if (getNumber(missionConfigFile >> "ADENIS_ITEMS" >> _item >> "illegal") isEqualTo 1) then {
-		g_shop_receive_illegal = g_shop_receive_illegal + (([_item] call AdenisClient_fnc_itemGetSellPrice) * _amount);
+	if (getNumber(missionConfigFile >> "ALYSIA_ITEMS" >> _item >> "illegal") isEqualTo 1) then {
+		g_shop_receive_illegal = g_shop_receive_illegal + (([_item] call AlysiaClient_fnc_itemGetSellPrice) * _amount);
 	} else {
-		g_shop_receive_dollar = g_shop_receive_dollar + (([_item] call AdenisClient_fnc_itemGetSellPrice) * _amount);
+		g_shop_receive_dollar = g_shop_receive_dollar + (([_item] call AlysiaClient_fnc_itemGetSellPrice) * _amount);
 	};
-	if (getNumber(missionConfigFile >> "ADENIS_ITEMS" >> _item >> "lockShop") isEqualTo 1) then
+	if (getNumber(missionConfigFile >> "ALYSIA_ITEMS" >> _item >> "lockShop") isEqualTo 1) then
 	{
 		g_shop_lock_bool = true;
-		g_shop_lock_str = g_shop_lock_str + format["%1<br/>", [_item] call AdenisClient_fnc_itemGetName];
+		g_shop_lock_str = g_shop_lock_str + format["%1<br/>", [_item] call AlysiaClient_fnc_itemGetName];
 	};
 } forEach g_shop_tmp_sell;
 
@@ -55,9 +55,9 @@ if ((lbSize _list) isEqualTo 0) then {
 (_display displayCtrl 2411) ctrlSetStructuredText parseText format
 [
 	"<t align='center' color='#8cff9b'>%1$<br/>%2$<br/>%3$</t>",
-	[(g_shop_receive_dollar + g_shop_receive_illegal) - g_shop_bill_dollar] call AdenisClient_fnc_numberText,
-	[g_shop_receive_dollar + g_shop_receive_illegal] call AdenisClient_fnc_numberText,
-	[g_shop_bill_dollar] call AdenisClient_fnc_numberText
+	[(g_shop_receive_dollar + g_shop_receive_illegal) - g_shop_bill_dollar] call AlysiaClient_fnc_numberText,
+	[g_shop_receive_dollar + g_shop_receive_illegal] call AlysiaClient_fnc_numberText,
+	[g_shop_bill_dollar] call AlysiaClient_fnc_numberText
 ];
 
 (_display displayCtrl 2419) ctrlSetStructuredText parseText format

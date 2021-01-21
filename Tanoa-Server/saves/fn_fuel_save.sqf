@@ -21,12 +21,12 @@ if (count(gServer_fuelStations) > 0) then
 				(getPos _x) select 0,
 				(getPos _x) select 1,
 				(getPos _x) select 2,
-				[_x, "Diesel"] call AdenisClient_fnc_fuelStation_fuel_getStock,
-				[_x, "SP95"] call AdenisClient_fnc_fuelStation_fuel_getStock,
-				[_x, "SP98"] call AdenisClient_fnc_fuelStation_fuel_getStock,
-				[_x, "Kerosene"] call AdenisClient_fnc_fuelStation_fuel_getStock,
-				[_x, "GPL"] call AdenisClient_fnc_fuelStation_fuel_getStock,
-				[_x, "Bio"] call AdenisClient_fnc_fuelStation_fuel_getStock
+				[_x, "Diesel"] call AlysiaClient_fnc_fuelStation_fuel_getStock,
+				[_x, "SP95"] call AlysiaClient_fnc_fuelStation_fuel_getStock,
+				[_x, "SP98"] call AlysiaClient_fnc_fuelStation_fuel_getStock,
+				[_x, "Kerosene"] call AlysiaClient_fnc_fuelStation_fuel_getStock,
+				[_x, "GPL"] call AlysiaClient_fnc_fuelStation_fuel_getStock,
+				[_x, "Bio"] call AlysiaClient_fnc_fuelStation_fuel_getStock
 			], 1
 		] call ExtDB3_fnc_async;
 	} forEach gServer_fuelStations;

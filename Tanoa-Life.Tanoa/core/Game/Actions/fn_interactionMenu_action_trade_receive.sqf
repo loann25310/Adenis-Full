@@ -14,11 +14,11 @@ if (isNull _from) exitWith {};
 _text = "";
 
 if (_money > 0) then {
-	_text = _text + format["- %1$<br/>", ([_money] call AdenisClient_fnc_numberText)];
+	_text = _text + format["- %1$<br/>", ([_money] call AlysiaClient_fnc_numberText)];
 };
 
 {
-	_text = _text + format["- %1x %2<br/>", ([(_x select 1)] call AdenisClient_fnc_numberText), ([(_x select 0)] call AdenisClient_fnc_itemGetName)];
+	_text = _text + format["- %1x %2<br/>", ([(_x select 1)] call AlysiaClient_fnc_numberText), ([(_x select 0)] call AlysiaClient_fnc_itemGetName)];
 } forEach _inv;
 
 {
@@ -52,17 +52,17 @@ if (_action) then
 
 	if ((_money > 0) || !(_inv isEqualTo [])) then
 	{
-		[true, _money] call AdenisClient_fnc_handleCash;
-		[player, _from, _money, _inv] remoteExecCall ["AdenisServer_fnc_logTrade", 2];
+		[true, _money] call AlysiaClient_fnc_handleCash;
+		[player, _from, _money, _inv] remoteExecCall ["AlysiaServer_fnc_logTrade", 2];
 
 		{
-			_amount = [(_x select 0), (_x select 1), g_carryWeight, g_maxWeight] call AdenisClient_fnc_calWeightDiff;
+			_amount = [(_x select 0), (_x select 1), g_carryWeight, g_maxWeight] call AlysiaClient_fnc_calWeightDiff;
 			if (_amount != (_x select 1)) then
 			{
 				_return_array pushBack [(_x select 0), (_x select 1) - _amount];
-				_return_txt = _return_txt + format["- %1x %2<br/>", ([(_x select 1)] call AdenisClient_fnc_numberText), ([(_x select 0)] call AdenisClient_fnc_itemGetName)];
+				_return_txt = _return_txt + format["- %1x %2<br/>", ([(_x select 1)] call AlysiaClient_fnc_numberText), ([(_x select 0)] call AlysiaClient_fnc_itemGetName)];
 			};
-			[true, (_x select 0), _amount] call AdenisClient_fnc_handleInv;
+			[true, (_x select 0), _amount] call AlysiaClient_fnc_handleInv;
 		} forEach _inv;
 	};
 
@@ -79,23 +79,23 @@ if (_action) then
 				g_houses pushBack _x;
 			};
 		} forEach _keys_buildings;
-		[_keys_buildings, (getPlayerUID player), playerSide] remoteExecCall ["AdenisServer_fnc_house_tenants_add", 2];
+		[_keys_buildings, (getPlayerUID player), playerSide] remoteExecCall ["AlysiaServer_fnc_house_tenants_add", 2];
 	};
 
 	{
 		if ((alive _x) && !(_x in g_vehicles)) then
 		{
 			g_vehicles pushBack _x;
-			[(getPlayerUID player), playerSide, _x] remoteExecCall ["AdenisServer_fnc_keyManagement", 2];
+			[(getPlayerUID player), playerSide, _x] remoteExecCall ["AlysiaServer_fnc_keyManagement", 2];
 		};
 	} forEach _keys_vehicles;
 
 	if (_return_array isEqualTo []) then {
-		["L'échange a été <t color='#74DF00'>accepté</t>."] remoteExecCall ["AdenisClient_fnc_info", _from];
+		["L'échange a été <t color='#74DF00'>accepté</t>."] remoteExecCall ["AlysiaClient_fnc_info", _from];
 	} else {
-		[format["Vous avez <t color='#74DF00'>accepté</t> l'échange cependant vous n'avez pas assez de place pour récupérer :<br/>%1", _return_txt]] call AdenisClient_fnc_info;
-		[_return_array, _return_txt] remoteExecCall ["AdenisClient_fnc_interactionMenu_action_trade_space", _from];
+		[format["Vous avez <t color='#74DF00'>accepté</t> l'échange cependant vous n'avez pas assez de place pour récupérer :<br/>%1", _return_txt]] call AlysiaClient_fnc_info;
+		[_return_array, _return_txt] remoteExecCall ["AlysiaClient_fnc_interactionMenu_action_trade_space", _from];
 	};
 } else {
-	[_inv, _money] remoteExecCall ["AdenisClient_fnc_interactionMenu_action_trade_refuse", _from];
+	[_inv, _money] remoteExecCall ["AlysiaClient_fnc_interactionMenu_action_trade_refuse", _from];
 };

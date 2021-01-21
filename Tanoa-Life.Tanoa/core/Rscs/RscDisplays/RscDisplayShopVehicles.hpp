@@ -76,7 +76,7 @@ class RscDisplayShopVehicles: RscDisplayDefaultInteraction
 		class VEHICLES_LIST: RscListbox
 		{
 			idc=2302;
-			onLBSelChanged="_this call AdenisClient_fnc_shop_vehicles_update;";
+			onLBSelChanged="_this call AlysiaClient_fnc_shop_vehicles_update;";
 			rowHeight=0.05;
 
 			x=0.329844 * safezoneW + safezoneX;
@@ -180,7 +180,7 @@ class RscDisplayShopVehicles: RscDisplayDefaultInteraction
 		class ACTION_BUY_BUTTON: RscButtonSilent
 		{
 			idc=2315;
-			action="[] spawn AdenisClient_fnc_shop_vehicles_buy;";
+			action="[] spawn AlysiaClient_fnc_shop_vehicles_buy;";
 			onMouseEnter="ctrlSetText[2314,""Alysia_Client_Texture\Data\global\action_buy_select.paa""];ctrlShow[2312, false];((findDisplay 2300) displayCtrl 2311) ctrlSetBackgroundColor [1,1,1,1];((findDisplay 2300) displayCtrl 2313) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#000000'>Acheter</t>"";";
 			onMouseExit="ctrlSetText[2314,""Alysia_Client_Texture\Data\global\action_buy.paa""];if (ctrlVisible 2314) then {ctrlShow[2312, true];};((findDisplay 2300) displayCtrl 2311) ctrlSetBackgroundColor [0,0,0,0.6];((findDisplay 2300) displayCtrl 2313) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#FFFFFF'>Acheter</t>"";";
 
@@ -232,7 +232,7 @@ class RscDisplayShopVehicles: RscDisplayDefaultInteraction
 		class ACTION_PREVIEW_BUTTON: RscButtonSilent
 		{
 			idc=2320;
-			action="[] spawn AdenisClient_fnc_shop_vehicles_preview;";
+			action="[] spawn AlysiaClient_fnc_shop_vehicles_preview;";
 			onMouseEnter="ctrlSetText[2319,""Alysia_Client_Texture\Data\global\action_preview_select.paa""];ctrlShow[2317, false];((findDisplay 2300) displayCtrl 2316) ctrlSetBackgroundColor [1,1,1,1];((findDisplay 2300) displayCtrl 2318) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#000000'>Visuel</t>"";";
 			onMouseExit="ctrlSetText[2319,""Alysia_Client_Texture\Data\global\action_preview.paa""];if (ctrlVisible 2319) then {ctrlShow[2317, true];};((findDisplay 2300) displayCtrl 2316) ctrlSetBackgroundColor [0,0,0,0.6];((findDisplay 2300) displayCtrl 2318) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#FFFFFF'>Visuel</t>"";";
 

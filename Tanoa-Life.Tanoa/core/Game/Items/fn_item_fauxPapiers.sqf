@@ -40,7 +40,7 @@ if(!_type) exitWith {
 		_list_origin lbSetPicture [_index, getText(_x >> "flag")];
 		_list_origin lbSetPictureColor [_index, [1, 1, 1, 1]];
 		_list_origin lbSetData [_index, (configName _x)];
-	} forEach ("true" configClasses (missionConfigFile >> "ADENIS_NATIONALITIES"));
+	} forEach ("true" configClasses (missionConfigFile >> "ALYSIA_NATIONALITIES"));
 	_list_origin lbSetCurSel 0;
 };
 
@@ -49,22 +49,22 @@ if(!_type) exitWith {
 
 _firstname = ctrlText 759003;
 if (_firstname isEqualTo "") exitWith {
-	"Vous n'avez pas entré de prénom pour votre personnage" call AdenisClient_fnc_error;
+	"Vous n'avez pas entré de prénom pour votre personnage" call AlysiaClient_fnc_error;
 };
 
-_bad = [_firstname, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzéè-à "] call AdenisClient_fnc_TextAllowed;
+_bad = [_firstname, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzéè-à "] call AlysiaClient_fnc_TextAllowed;
 if (_bad != "") exitWith {
-	[format ["Vous utilisez un caractère interdit dans le prénom (%1)", _bad]] call AdenisClient_fnc_error;
+	[format ["Vous utilisez un caractère interdit dans le prénom (%1)", _bad]] call AlysiaClient_fnc_error;
 };
 
 _lastName = ctrlText 759005;
 if (_lastName isEqualTo "") exitWith {
-	["Vous n'avez pas entré de nom de famille pour votre personnage"] call AdenisClient_fnc_error;
+	["Vous n'avez pas entré de nom de famille pour votre personnage"] call AlysiaClient_fnc_error;
 };
 
-_bad = [_lastName, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzéè- "] call AdenisClient_fnc_TextAllowed;
+_bad = [_lastName, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzéè- "] call AlysiaClient_fnc_TextAllowed;
 if (_bad != "") exitWith {
-	[format["Vous utilisez un caractère interdit dans le nom de famille (%1)", _bad]] call AdenisClient_fnc_error;
+	[format["Vous utilisez un caractère interdit dans le nom de famille (%1)", _bad]] call AlysiaClient_fnc_error;
 };
 
 _birth = [lbValue[759009, (lbCurSel 759009)], lbValue[759008, (lbCurSel 759008)], lbValue[759007, (lbCurSel 759007)]];
@@ -76,7 +76,7 @@ _action =
 		"Êtes-vous sûr des informations entrées ?<br/><br/><t align='left'>Sexe</t><t align='right'>%5</t><br/><t align='left'>Prénom</t><t align='right'>%1</t><br/><t align='left'>Nom</t><t align='right'>%2</t><br/><t align='left'>Âge</t><t align='right'>%3</t><br/><t align='left'>Origine</t><t align='right'>%4</t>",
 		_firstname,
 		_lastName,
-		(_birth call AdenisClient_fnc_age),
+		(_birth call AlysiaClient_fnc_age),
 		(lbText[759011, (lbCurSel 759011)]),
 		g_sexe
 	],
@@ -92,8 +92,8 @@ if (_action) then
 	g_birth = _birth;
 	g_nationality = lbData[759011, (lbCurSel 759011)];
 	closeDialog 0;
-	[false, "fauxpapiers", 1] call AdenisClient_fnc_handleInv;
+	[false, "fauxpapiers", 1] call AlysiaClient_fnc_handleInv;
 	player addItem "Alysia_Identity_Civ";
 	g_fakeIdentity = true;
-	[format ["Vous êtes désormais connu en tant que : %1 %2", g_firstName, g_lastName]] call AdenisClient_fnc_info;
+	[format ["Vous êtes désormais connu en tant que : %1 %2", g_firstName, g_lastName]] call AlysiaClient_fnc_info;
 };

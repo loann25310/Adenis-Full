@@ -9,15 +9,15 @@ if (_sel isEqualTo -1) exitWith {};
 
 _forfait = lbData[8110, _sel];
 if (_forfait isEqualTo g_phone_forfait) exitWith {
-	["Vous possedez déjà ce forfait."] call AdenisClient_fnc_error;
+	["Vous possedez déjà ce forfait."] call AlysiaClient_fnc_error;
 };
 
-_price = getNumber(missionConfigFile >> "ADENIS_PHONE" >> "FORFAITS" >> _forfait >> "bill");
+_price = getNumber(missionConfigFile >> "ALYSIA_PHONE" >> "FORFAITS" >> _forfait >> "bill");
 if (g_atm < _price) exitWith {
-	["Vous n'avez pas assez d'argent."] call AdenisClient_fnc_error;
+	["Vous n'avez pas assez d'argent."] call AlysiaClient_fnc_error;
 };
 
-[_forfait] call AdenisClient_fnc_phone_forfait_change;
-[false, _price, "Forfait téléphonique"] call AdenisClient_fnc_handleATM;
+[_forfait] call AlysiaClient_fnc_phone_forfait_change;
+[false, _price, "Forfait téléphonique"] call AlysiaClient_fnc_handleATM;
 playSound "buy";
-["STORE_FORFAIT"] spawn AdenisClient_fnc_tabletApp;
+["STORE_FORFAIT"] spawn AlysiaClient_fnc_tabletApp;

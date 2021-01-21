@@ -6,7 +6,7 @@ private["_info", "_display", "_immatriculation", "_target"];
 _target = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
 
 if (isNull _target) exitWith {
-	["Cible invalide."] call AdenisClient_fnc_error;
+	["Cible invalide."] call AlysiaClient_fnc_error;
 };
 
 _info = _target getVariable "info";
@@ -19,7 +19,7 @@ _display = findDisplay 68000;
 (_display displayCtrl 68002) ctrlSetText "Alysia_Client_Texture\Data\vehicle\background.jpg";
 (_display displayCtrl 68003) ctrlSetStructuredText parseText "<t size='1.5' align='center'>Immatriculation</t>";
 
-if ((getNumber(missionConfigFile >> "ADENIS_VEHICLES" >> typeof(_target) >> "disableOwnerInfos") isEqualTo 0) && !(isNil "_info")) then {
+if ((getNumber(missionConfigFile >> "ALYSIA_VEHICLES" >> typeof(_target) >> "disableOwnerInfos") isEqualTo 0) && !(isNil "_info")) then {
     _immatriculation = _info select 2;
 } else {
 	_immatriculation = "Inconnu";

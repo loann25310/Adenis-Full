@@ -9,14 +9,14 @@ disableSerialization;
 _display = uiNamespace getVariable ["tablet", displayNull];
 if (isNull _display) exitWith {};
 
-_handle = ["FACTION_LEADER_OFFICE"] spawn AdenisClient_fnc_tabletApp;
+_handle = ["FACTION_LEADER_OFFICE"] spawn AlysiaClient_fnc_tabletApp;
 waitUntil {scriptDone _handle};
 
 _list_faction = _display displayCtrl 8736;
 lbClear _list_faction;
 
 {
-	_index = _list_faction lbAdd format["%1. %2", [playerSide, _x select 0, true] call AdenisClient_fnc_rankToStr, _x select 1];
+	_index = _list_faction lbAdd format["%1. %2", [playerSide, _x select 0, true] call AlysiaClient_fnc_rankToStr, _x select 1];
 	_list_faction lbSetdata [_index, _x select 2];
 	_list_faction lbSetValue [_index, _x select 0];
 } forEach _members;
@@ -41,10 +41,10 @@ if ((lbSize _list_civ) isEqualTo 0) then {
 lbSort [_list_civ, "ASC"];
 _list_civ lbSetCurSel -1;
 
-_config = missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide);
+_config = missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide);
 
 if (count(getArray(_config >> "board" >> "history_items")) isEqualTo 0) then {
-	[8739, false] call AdenisClient_fnc_tabletShow;
+	[8739, false] call AlysiaClient_fnc_tabletShow;
 } else {
 	ctrlEnable[8739, true];
 };

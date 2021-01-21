@@ -3,4 +3,4 @@
 	Code written by Lyeed
 */
 
-(uiNamespace getVariable ["interaction_save", []]) spawn AdenisClient_fnc_interactions_create;
+(uiNamespace getVariable ["interaction_save", []]) spawn AlysiaClient_fnc_interactions_create;

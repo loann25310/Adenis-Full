@@ -8,10 +8,10 @@ _dir = [_this, 1, 0, [0]] call BIS_fnc_param;
 _target = [_this, 2, objNull, [objNull]] call BIS_fnc_param;
 
 if (isNull _target) exitWith {
-	["Cible invalide."] call AdenisClient_fnc_error;
+	["Cible invalide."] call AlysiaClient_fnc_error;
 };
 if (!("Bank_Drill" in (magazines player))) exitWith {
-	["Vous n'avez pas de foreuse."] call AdenisClient_fnc_error;
+	["Vous n'avez pas de foreuse."] call AlysiaClient_fnc_error;
 };
 
 player removeItem "Bank_Drill";

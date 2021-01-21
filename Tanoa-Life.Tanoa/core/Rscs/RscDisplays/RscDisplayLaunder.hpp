@@ -96,7 +96,7 @@ class RscDisplayBasicLaunder: RscDisplayDefaultInteraction
 			idc=72206;
 			onMouseEnter="ctrlSetText[72004,""Alysia_Client_Texture\Data\global\validate_select.paa""];ctrlShow[72002, false];((findDisplay 72000) displayCtrl 72003) ctrlSetBackgroundColor [1,1,1,1];((findDisplay 72000) displayCtrl 70005) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#000000'>Blanchir</t>"";";
 			onMouseExit="ctrlSetText[72004,""Alysia_Client_Texture\Data\global\validate.paa""];ctrlShow[72002, true];((findDisplay 72000) displayCtrl 72003) ctrlSetBackgroundColor [0,0,0,0.6];((findDisplay 72000) displayCtrl 70005) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#FFFFFF'>Blanchir</t>"";";
-			action="[g_interaction_target] spawn AdenisClient_fnc_launder_action;";
+			action="[g_interaction_target] spawn AlysiaClient_fnc_launder_action;";
 
 			x=0.448438 * safezoneW + safezoneX;
 			y=0.566 * safezoneH + safezoneY;

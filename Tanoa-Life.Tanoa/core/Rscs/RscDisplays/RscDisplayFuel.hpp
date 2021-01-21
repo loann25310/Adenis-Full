@@ -48,7 +48,7 @@ class RscDisplayFuelStation: RscDisplayDefaultInteraction
 		class FUEL_LIST: RscCombo
 		{
 			idc=16004;
-			onLBSelChanged="_this call AdenisClient_fnc_fuelStation_refuel_update;";
+			onLBSelChanged="_this call AlysiaClient_fnc_fuelStation_refuel_update;";
 			colorBackground[]={0,0,0,1};
 
 			x=0.391718 * safezoneW + safezoneX;
@@ -155,7 +155,7 @@ class RscDisplayFuelStation: RscDisplayDefaultInteraction
 		class VALIDATE_BUTTON: RscButtonSilent
 		{
 			idc=16017;
-			action="[] spawn AdenisClient_fnc_fuelStation_refuel_action_vehicle;";
+			action="[] spawn AlysiaClient_fnc_fuelStation_refuel_action_vehicle;";
 			onMouseEnter="ctrlShow[16014, false];ctrlSetText[16015, ""Alysia_Client_Texture\Data\global\validate_select.paa""];((findDisplay 16000) displayCtrl 16013) ctrlSetBackgroundColor [1,1,1,1];((findDisplay 16000) displayCtrl 16016) ctrlSetStructuredText parseText ""<t align='center' size='1.5' color='#000000'>Remplir</t>"";";
 			onMouseExit="ctrlShow[16014, true];ctrlSetText[16015, ""Alysia_Client_Texture\Data\global\validate.paa""];((findDisplay 16000) displayCtrl 16013) ctrlSetBackgroundColor [0,0,0,0.6];((findDisplay 16000) displayCtrl 16016) ctrlSetStructuredText parseText ""<t align='center' size='1.5' color='#FFFFFF'>Remplir</t>"";";
 

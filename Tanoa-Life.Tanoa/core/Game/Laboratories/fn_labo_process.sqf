@@ -18,20 +18,20 @@ if ((_target getVariable ["sabotage", 0]) > serverTime) exitWith
 			"Ce laboratoire a été récemment saboté et ne peut être utilisé que dans %1 minutes",
 			[((_target getVariable ["sabotage", 0]) - serverTime), "M:SS"] call CBA_fnc_formatElapsedTime
 		]
-	] call AdenisClient_fnc_error;
+	] call AlysiaClient_fnc_error;
 };
 
-_process = getArray(missionConfigFile >> "ADENIS_LABORATORIES" >> (_info select 2) >> "process") + (_target getVariable ["extra_process", []]);
+_process = getArray(missionConfigFile >> "ALYSIA_LABORATORIES" >> (_info select 2) >> "process") + (_target getVariable ["extra_process", []]);
 
 {
 	_config = _x;
-	if (([configName _config] call AdenisClient_fnc_itemCount) > 0) then
+	if (([configName _config] call AlysiaClient_fnc_itemCount) > 0) then
 	{
 		{
 			_proc = _x;
 			if (!(_proc in _process)) then {_process pushBack _proc};
 		} forEach getArray(_config >> "process");
 	};
-} forEach ((format["'%1' in getArray(_x >> 'labos')", (_info select 2)]) configClasses (missionConfigFile >> "ADENIS_BLUEPRINTS"));
+} forEach ((format["'%1' in getArray(_x >> 'labos')", (_info select 2)]) configClasses (missionConfigFile >> "ALYSIA_BLUEPRINTS"));
 
-[_target, _process] call AdenisClient_fnc_process_choice_open;
+[_target, _process] call AlysiaClient_fnc_process_choice_open;

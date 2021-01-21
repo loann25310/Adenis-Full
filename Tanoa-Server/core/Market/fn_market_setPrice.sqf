@@ -7,7 +7,7 @@ _item = [_this, 0, "", [""]] call BIS_fnc_param;
 
 if (_item isEqualTo "") exitWith {};
 
-_config = missionConfigFile >> "ADENIS_ITEMS" >> _item;
+_config = missionConfigFile >> "ALYSIA_ITEMS" >> _item;
 if (!isClass(_config)) exitWith {};
 
 _price = round([_this, 1, 1, [0]] call BIS_fnc_param);

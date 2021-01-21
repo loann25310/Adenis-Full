@@ -14,19 +14,19 @@ if (isNull _target) exitWith {};
 		[
 			"power",
 			"Allumer",
-			"[g_interaction_target] spawn AdenisClient_fnc_drill_activate;",
+			"[g_interaction_target] spawn AlysiaClient_fnc_drill_activate;",
 			"!(g_interaction_target getVariable ['active',false])"
 		],
 		[
 			"power",
 			"Eteindre",
-			"[g_interaction_target] call AdenisClient_fnc_drill_desactivate;",
+			"[g_interaction_target] call AlysiaClient_fnc_drill_desactivate;",
 			"(g_interaction_target getVariable ['active',false])"
 		],
 		[
 			"take",
 			"Récupérer",
-			"[g_interaction_target] spawn AdenisClient_fnc_drill_take;",
+			"[g_interaction_target] spawn AlysiaClient_fnc_drill_take;",
 			"!(g_interaction_target getVariable ['active',false])"
 		]
 	],
@@ -34,4 +34,4 @@ if (isNull _target) exitWith {};
 	"Alysia_Client_Texture\Data\interactions\background.jpg",
 	true,
 	false
-] spawn AdenisClient_fnc_interactions_create;
+] spawn AlysiaClient_fnc_interactions_create;

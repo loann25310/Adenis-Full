@@ -20,7 +20,7 @@ if (_data isEqualTo "") exitWith
 
 _data = call compile format["%1", _data];
 _className = _data select 0;
-_vehicleInfo = [_className] call AdenisClient_fnc_fetchVehInfo;
+_vehicleInfo = [_className] call AlysiaClient_fnc_fetchVehInfo;
 if (_vehicleInfo isEqualTo []) exitWith
 {
 	{
@@ -56,10 +56,10 @@ if (count(_licenses) > 0) then
 	_license_condition = true;
 
 	{
-		if ([_x] call AdenisClient_fnc_hasLicense) then {
-			_licenses_text = _licenses_text + format["<t color='#31B404'>%1</t><br/>", [_x] call AdenisClient_fnc_licenseGetName];
+		if ([_x] call AlysiaClient_fnc_hasLicense) then {
+			_licenses_text = _licenses_text + format["<t color='#31B404'>%1</t><br/>", [_x] call AlysiaClient_fnc_licenseGetName];
 		} else {
-			_licenses_text = _licenses_text + format["<t color='#DF0101'>%1</t><br/>", [_x] call AdenisClient_fnc_licenseGetName];
+			_licenses_text = _licenses_text + format["<t color='#DF0101'>%1</t><br/>", [_x] call AlysiaClient_fnc_licenseGetName];
 			_license_condition = false;
 		};
 	} forEach _licenses;
@@ -95,28 +95,28 @@ _display = findDisplay 2300;
 	+	"<t align='left'>Capacité du réservoir</t><t align='right'>%8L</t><br/>"
 	+   "<t align='left'>Carburant</t><t align='right'>%9</t>"
 	+	"</t>",
-	[_vehicleInfo select 17] call AdenisClient_fnc_numberText,
-	[_vehicleInfo select 18] call AdenisClient_fnc_numberText,
-	[_vehicleInfo select 19] call AdenisClient_fnc_numberText,
+	[_vehicleInfo select 17] call AlysiaClient_fnc_numberText,
+	[_vehicleInfo select 18] call AlysiaClient_fnc_numberText,
+	[_vehicleInfo select 19] call AlysiaClient_fnc_numberText,
 	_vehicleInfo select 3,
 	_vehicleInfo select 6,
 	_vehicleInfo select 5,
 	_vehicleInfo select 10,
 	round(_vehicleInfo select 7),
-	getText(missionConfigFile >> "ADENIS_FUEL" >> (_vehicleInfo select 14) >> "name"),
+	getText(missionConfigFile >> "ALYSIA_FUEL" >> (_vehicleInfo select 14) >> "name"),
 	if (_price_condition) then {"#31B404"} else {"#DF0101"},
-	[_price] call AdenisClient_fnc_numberText,
+	[_price] call AlysiaClient_fnc_numberText,
 	_licenses_text,
-	([([_side] call AdenisClient_fnc_strToSide), _rank] call AdenisClient_fnc_rankToStr),
+	([([_side] call AlysiaClient_fnc_strToSide), _rank] call AlysiaClient_fnc_rankToStr),
 	if (_rank_condition) then {"#31B404"} else {"#DF0101"},
 	if (_side_condition) then {"#31B404"} else {"#DF0101"},
-	getText(missionConfigFile >> "ADENIS_FACTIONS" >> _side >> "name")
+	getText(missionConfigFile >> "ALYSIA_FACTIONS" >> _side >> "name")
 ];
 
 _list_colors = _display displayCtrl 2303;
 lbClear _list_colors;
 {
-	if (isClass(missionConfigFile >> "ADENIS_VEHICLES" >> _x)) then
+	if (isClass(missionConfigFile >> "ALYSIA_VEHICLES" >> _x)) then
 	{
 		if (isClass(configFile >> "CfgVehicles" >> _x)) then
 		{
@@ -127,8 +127,8 @@ lbClear _list_colors;
 			systemChat format["ERROR: %1 not defined in CfgVehicles", _x];
 		};
 	} else {
-		diag_log format["ERROR: %1 not defined in ADENIS_VEHICLES", _x];
-		systemChat format["ERROR: %1 not defined in ADENIS_VEHICLES", _x];
+		diag_log format["ERROR: %1 not defined in ALYSIA_VEHICLES", _x];
+		systemChat format["ERROR: %1 not defined in ALYSIA_VEHICLES", _x];
 	};
 } forEach _data;
 _list_colors lbSetCurSel 0;

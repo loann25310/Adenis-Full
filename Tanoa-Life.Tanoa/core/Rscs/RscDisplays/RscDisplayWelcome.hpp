@@ -169,7 +169,7 @@ class RscDisplayWelcomeCharacter: RscDisplayDefault
 		class VALIDATE_BUTTON: RscButtonMenu
 		{
 			text="VALIDER";
-			onButtonClick="[] spawn AdenisClient_fnc_welcomeMenu_Proceed;";
+			onButtonClick="[] spawn AlysiaClient_fnc_welcomeMenu_Proceed;";
 			colorBackground[]=HEADER_COLOR;
 
 			x=0.536094 * safezoneW + safezoneX;
@@ -180,7 +180,7 @@ class RscDisplayWelcomeCharacter: RscDisplayDefault
 		class EXIT_BUTTON: RscButtonMenu
 		{
 			text="QUITTER";
-			onButtonClick="['Annulation de la création de profil.'] spawn AdenisClient_fnc_errorExit;";
+			onButtonClick="['Annulation de la création de profil.'] spawn AlysiaClient_fnc_errorExit;";
 			colorBackground[]=HEADER_COLOR;
 
 			x=0.536094 * safezoneW + safezoneX;

@@ -53,7 +53,7 @@ class RscDisplayTablet: RscDisplayDefault
 		};
 		class MAIN_BUTTON_BUTTON: RscButtonSilent
 		{
-			action="uiNamespace setVariable['main_status', 0];['MAIN'] spawn AdenisClient_fnc_tabletApp;if (!(player getVariable ['tablet_on', false])) then {player setVariable ['tablet_on', true]};";
+			action="uiNamespace setVariable['main_status', 0];['MAIN'] spawn AlysiaClient_fnc_tabletApp;if (!(player getVariable ['tablet_on', false])) then {player setVariable ['tablet_on', true]};";
 			onMouseEnter="ctrlSetText[7507,""Alysia_Client_Texture\Data\tablet\home_select.paa""];";
 			onMouseExit="ctrlSetText[7507,""Alysia_Client_Texture\Data\tablet\home_basic.paa""];";
 			tooltip="Menu principal";

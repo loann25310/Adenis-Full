@@ -10,9 +10,9 @@ if (isNull _skull) exitWith {};
 _info = _skull getVariable "info";
 if (isNil "_info") exitWith {};
 
-if (["Analyse", 10, _skull, "", "AinvPknlMstpsnonWnonDnon_medic_1"] call AdenisClient_fnc_showProgress) then
+if (["Analyse", 10, _skull, "", "AinvPknlMstpsnonWnonDnon_medic_1"] call AlysiaClient_fnc_showProgress) then
 {
-	if ([false, "adn", 1] call AdenisClient_fnc_handleInv) then
+	if ([false, "adn", 1] call AlysiaClient_fnc_handleInv) then
 	{
 		createDialog "RscDisplayDefaultText";
 
@@ -31,12 +31,12 @@ if (["Analyse", 10, _skull, "", "AinvPknlMstpsnonWnonDnon_medic_1"] call AdenisC
 			+	"<t align='left'>ADN Tueur</t><t align='right'>%6</t>",
 			(_info select 0),
 			(_info select 1),
-			[(_info select 2)] call AdenisClient_fnc_adn_get,
+			[(_info select 2)] call AlysiaClient_fnc_adn_get,
 			(_info select 3),
 			(_info select 4),
-			[(_info select 5)] call AdenisClient_fnc_adn_get
+			[(_info select 5)] call AlysiaClient_fnc_adn_get
 		];
 	} else {
-		["Vous n'avez pas de test ADN."] call AdenisClient_fnc_error;
+		["Vous n'avez pas de test ADN."] call AlysiaClient_fnc_error;
 	};
 };

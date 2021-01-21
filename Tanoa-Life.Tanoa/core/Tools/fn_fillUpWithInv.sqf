@@ -15,11 +15,11 @@ lbClear _list;
 _isEmpty = false;
 
 {
-	_index = _list lbAdd format["%1x %2", ([_x select 1] call AdenisClient_fnc_numberText), ([_x select 0] call AdenisClient_fnc_itemGetName)];
+	_index = _list lbAdd format["%1x %2", ([_x select 1] call AlysiaClient_fnc_numberText), ([_x select 0] call AlysiaClient_fnc_itemGetName)];
 	_list lbSetData [_index, _x select 0];
-	_list lbSetPicture [_index, ([_x select 0] call AdenisClient_fnc_itemGetImage)];
-	_list lbSetTooltip [_index, ([_x select 0] call AdenisClient_fnc_itemGetName)];
-} forEach ([] call AdenisClient_fnc_getInv);
+	_list lbSetPicture [_index, ([_x select 0] call AlysiaClient_fnc_itemGetImage)];
+	_list lbSetTooltip [_index, ([_x select 0] call AlysiaClient_fnc_itemGetName)];
+} forEach ([] call AlysiaClient_fnc_getInv);
 
 if ((lbSize _list) isEqualTo 0) then
 {

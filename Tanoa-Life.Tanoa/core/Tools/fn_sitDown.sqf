@@ -16,11 +16,11 @@ _players = false;
 if (_players) exitWith
 {
 	if (_showError) then {
-		["Quelqu'un est déjà installé ici."] call AdenisClient_fnc_error;
+		["Quelqu'un est déjà installé ici."] call AlysiaClient_fnc_error;
 	};
 };
 
-_config = missionConfigFile >> "ADENIS_CHAIRS" >> typeOf(_chair);
+_config = missionConfigFile >> "ALYSIA_CHAIRS" >> typeOf(_chair);
 
 [player, getText(_config >> "anim")] remoteExecCall ["switchMove", -2];
 player setPosATL [(getPosATL _chair) select 0, (getPosATL _chair) select 1, ((getPosATL _chair) select 2) + getNumber(_config >> "height")];

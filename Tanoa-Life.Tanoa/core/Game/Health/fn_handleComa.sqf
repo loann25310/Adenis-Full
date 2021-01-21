@@ -36,7 +36,7 @@ if (dialog) then {
 	closeDialog 0;
 };
 
-[player, g_damage_history, _direct_killer] remoteExecCall ["AdenisServer_fnc_logComa", 2];
+[player, g_damage_history, _direct_killer] remoteExecCall ["AlysiaServer_fnc_logComa", 2];
 g_damage_history = [];
 
 if (player getVariable ["surrender", false]) then {
@@ -50,12 +50,12 @@ if (player getVariable ["restrained", false]) then {
 	if (isPlayer _x) then
 	{
 		if (_x getVariable ["is_coma", false]) then {
-			[_x, false] spawn AdenisClient_fnc_action_body_drop;
+			[_x, false] spawn AlysiaClient_fnc_action_body_drop;
 		} else {
-			[_x, false] spawn AdenisClient_fnc_stopescort;
+			[_x, false] spawn AlysiaClient_fnc_stopescort;
 		};
 	} else {
-		if (isClass(missionConfigFile >> "ADENIS_DYN_OBJECTS" >> typeOf(_x))) then {
+		if (isClass(missionConfigFile >> "ALYSIA_DYN_OBJECTS" >> typeOf(_x))) then {
 			detach _x;
 		};
 	};
@@ -63,7 +63,7 @@ if (player getVariable ["restrained", false]) then {
 
 if (missionNamespace getVariable ["calling", false]) then
 {
-	[true, false] call AdenisClient_fnc_APP_phone_call_hangup;
+	[true, false] call AlysiaClient_fnc_APP_phone_call_hangup;
 };
 
 createDialog "RscDisplayComa";
@@ -84,8 +84,8 @@ _ctrl_suicide_frame = _display displayCtrl 360;
 _ctrl_near = _display displayCtrl 359;
 _ctrl_samu = _display displayCtrl 358;
 
-_time_before_suicide = getNumber(missionConfigFile >> "ADENIS_MEDICAL" >> "coma" >> "wait_before_suicide");
-_death_timer = getNumber(missionConfigFile >> "ADENIS_MEDICAL" >> "coma" >> "death_timer");
+_time_before_suicide = getNumber(missionConfigFile >> "ALYSIA_MEDICAL" >> "coma" >> "wait_before_suicide");
+_death_timer = getNumber(missionConfigFile >> "ALYSIA_MEDICAL" >> "coma" >> "death_timer");
 _counter_max = _death_timer;
 
 g_blood = 10;
@@ -243,14 +243,14 @@ if (player getVariable ["bed_awake", false]) then {player setVariable ["bed_awak
 if (!g_coma_dead) then
 {
 	player switchCamera "Internal";
-	player setFatigue getNumber(missionConfigFile >> "ADENIS_MEDICAL" >> "coma" >> "setFatigue_when_stabilize");
+	player setFatigue getNumber(missionConfigFile >> "ALYSIA_MEDICAL" >> "coma" >> "setFatigue_when_stabilize");
 	cutText ["", "BLACK IN", 20, true];
-	getNumber(missionConfigFile >> "ADENIS_MEDICAL" >> "coma" >> "time_fade_sound_when_stabilize") fadeSound 1;
+	getNumber(missionConfigFile >> "ALYSIA_MEDICAL" >> "coma" >> "time_fade_sound_when_stabilize") fadeSound 1;
 	missionNamespace setVariable ["silence", false];
-	[getNumber(missionConfigFile >> "ADENIS_MEDICAL" >> "coma" >> "blood_receive_when_stabilize")] call AdenisClient_fnc_handleBlood;
+	[getNumber(missionConfigFile >> "ALYSIA_MEDICAL" >> "coma" >> "blood_receive_when_stabilize")] call AlysiaClient_fnc_handleBlood;
 
-	if (g_thirst < 10) then {[15] call AdenisClient_fnc_handleThirst};
-	if (g_hunger < 10) then {[15] call AdenisClient_fnc_handleHunger};
+	if (g_thirst < 10) then {[15] call AlysiaClient_fnc_handleThirst};
+	if (g_hunger < 10) then {[15] call AlysiaClient_fnc_handleHunger};
 	if ((player getVariable ["tf_voiceVolume", 0]) isEqualTo 0) then {player setVariable ["tf_voiceVolume", 1, true]};
 	if ((player getVariable ["tf_globalVolume", 0]) isEqualTo 0) then {player setVariable ["tf_globalVolume", 1]};
 
@@ -263,10 +263,10 @@ if (!g_coma_dead) then
 		};
 	} else {
 		detach player;
-		if (isClass(missionConfigFile >> "ADENIS_CHAIRS" >> typeof(_attachedTo))) then
+		if (isClass(missionConfigFile >> "ALYSIA_CHAIRS" >> typeof(_attachedTo))) then
 		{
 			waitUntil {isNull (attachedTo player)};
-			if(!([_attachedTo] call AdenisClient_fnc_sitDown)) then {
+			if(!([_attachedTo] call AlysiaClient_fnc_sitDown)) then {
 				[player, ""] remoteExecCall ["switchMove", 0];
 			};
 		};

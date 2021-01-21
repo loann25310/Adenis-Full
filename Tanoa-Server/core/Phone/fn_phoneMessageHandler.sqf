@@ -11,7 +11,7 @@ _hide = [_this, 3, false, [false]] call BIS_fnc_param;
 if ((_msg isEqualTo "") || (_from isEqualTo "") || (_to isEqualTo "")) exitWith {};
 
 _messages = missionNamespace getVariable [format["SERVER_MESSAGES_%1", _to], []];
-_messages pushBack [[_from, (format["Le %1 à %2", ([] call AdenisClient_fnc_strDate), ([] call AdenisClient_fnc_strTime)]), 0, _msg], _hide];
+_messages pushBack [[_from, (format["Le %1 à %2", ([] call AlysiaClient_fnc_strDate), ([] call AlysiaClient_fnc_strTime)]), 0, _msg], _hide];
 missionNamespace setVariable [format["SERVER_MESSAGES_%1", _to], _messages];
 
 if ((gServer_phone_messages_buffer find _to) isEqualTo -1) then {

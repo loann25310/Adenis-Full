@@ -24,10 +24,10 @@ lbClear _list;
 if ((lbSize _list) isEqualTo 0) then {
 	_list lbAdd "Aucune";
 } else {
-	[13005, true] call AdenisClient_fnc_tabletShow;
-	[13006, true] call AdenisClient_fnc_tabletShow;
-	[13008, true] call AdenisClient_fnc_tabletShow;
-	[13009, true] call AdenisClient_fnc_tabletShow;
+	[13005, true] call AlysiaClient_fnc_tabletShow;
+	[13006, true] call AlysiaClient_fnc_tabletShow;
+	[13008, true] call AlysiaClient_fnc_tabletShow;
+	[13009, true] call AlysiaClient_fnc_tabletShow;
 	lbSortByValue _list;
 };
 
@@ -35,11 +35,11 @@ _list lbSetCurSel 0;
 
 if (!(isNull g_company)) then
 {
-	[13007, true] call AdenisClient_fnc_tabletShow;
+	[13007, true] call AlysiaClient_fnc_tabletShow;
 };
 
-[] call AdenisClient_fnc_hideAllMarkers;
+[] call AlysiaClient_fnc_hideAllMarkers;
 
 waitUntil {(g_app != "COMPAGNIES")};
 
-[] call AdenisClient_fnc_showAllMarkers;
+[] call AlysiaClient_fnc_showAllMarkers;

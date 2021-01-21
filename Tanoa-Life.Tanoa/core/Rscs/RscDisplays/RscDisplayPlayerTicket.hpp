@@ -122,7 +122,7 @@ class RscDisplayPlayerTicket: RscDisplayDefaultInteraction
 		};
 		class ACTION_VALIDATE_BUTTON: RscButtonSilent
 		{
-			action="[] call AdenisClient_fnc_interactionMenu_action_ticket_send;";
+			action="[] call AlysiaClient_fnc_interactionMenu_action_ticket_send;";
 			onMouseEnter="ctrlSetText[17005,""Alysia_Client_Texture\Data\interactions\player_to_player_basics\action_ticket_select.paa""];ctrlShow[17003, false];((findDisplay 17000) displayCtrl 17004) ctrlSetBackgroundColor [1,1,1,1];((findDisplay 17000) displayCtrl 17006) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#000000'>Valider</t>"";";
 			onMouseExit="ctrlSetText[17005,""Alysia_Client_Texture\Data\interactions\player_to_player_basics\action_ticket.paa""];ctrlShow[17003, true];((findDisplay 17000) displayCtrl 17004) ctrlSetBackgroundColor [0,0,0,0.6];((findDisplay 17000) displayCtrl 17006) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#FFFFFF'>Valider</t>"";";
 

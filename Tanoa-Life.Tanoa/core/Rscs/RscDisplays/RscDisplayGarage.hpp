@@ -76,7 +76,7 @@ class RscDisplayGarageAlysia: RscDisplayDefaultInteraction
 		class TYPE_LIST: RscCombo
 		{
 			idc=2826;
-			onLBSelChanged="_this call AdenisClient_fnc_garageTypeSelect;";
+			onLBSelChanged="_this call AlysiaClient_fnc_garageTypeSelect;";
 			colorBackground[]={0,0,0,1};
 
 			x=0.298906 * safezoneW + safezoneX;
@@ -107,7 +107,7 @@ class RscDisplayGarageAlysia: RscDisplayDefaultInteraction
 		class VEHICLES_LIST: RscListBox
 		{
 			idc=2802;
-			onLBSelChanged="_this call AdenisClient_fnc_garageVehicleSelect;";
+			onLBSelChanged="_this call AlysiaClient_fnc_garageVehicleSelect;";
 			colorBackground[]={0,0,0,0.8};
 			rowHeight=0.05;
 
@@ -357,7 +357,7 @@ class RscDisplayGarageStore: RscDisplayDefaultInteraction
 		class VEHICLES_LIST: RscCombo
 		{
 			idc=35003;
-			onLBSelChanged="[] call AdenisClient_fnc_garageStoreUpdate;";
+			onLBSelChanged="[] call AlysiaClient_fnc_garageStoreUpdate;";
 
 			x = 0.381406 * safezoneW + safezoneX;
 			y = 0.423 * safezoneH + safezoneY;
@@ -389,7 +389,7 @@ class RscDisplayGarageStore: RscDisplayDefaultInteraction
 		class INVENTORY_CHECKBOX: RscCheckbox
 		{
 			idc=35006;
-			onCheckedChanged="[] call AdenisClient_fnc_garageStoreUpdate;";
+			onCheckedChanged="[] call AlysiaClient_fnc_garageStoreUpdate;";
 
 			x = 0.489687 * safezoneW + safezoneX;
 			y = 0.489 * safezoneH + safezoneY;
@@ -462,7 +462,7 @@ class RscDisplayGarageStore: RscDisplayDefaultInteraction
 		class ACTION_STORE_BUTTON: RscButtonSilent
 		{
 			idc=35014;
-			action="[] spawn AdenisClient_fnc_garageStoreAction;";
+			action="[] spawn AlysiaClient_fnc_garageStoreAction;";
 			onMouseEnter="ctrlSetText[35013,""Alysia_Client_Texture\Data\garage\store\action_store_select.paa""];ctrlShow[35010, false];((findDisplay 35000) displayCtrl 35011) ctrlSetBackgroundColor [1,1,1,1];((findDisplay 35000) displayCtrl 35012) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#000000'>Ranger</t>"";";
 			onMouseExit="ctrlSetText[35013,""Alysia_Client_Texture\Data\garage\store\action_store.paa""];ctrlShow[35010, true];((findDisplay 35000) displayCtrl 35011) ctrlSetBackgroundColor [0,0,0,0.6];((findDisplay 35000) displayCtrl 35012) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#FFFFFF'>Ranger</t>"";";
 

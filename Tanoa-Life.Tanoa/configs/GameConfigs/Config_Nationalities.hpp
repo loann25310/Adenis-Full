@@ -1,4 +1,4 @@
-class ADENIS_NATIONALITIES
+class ALYSIA_NATIONALITIES
 {
 	class Tanocien
 	{

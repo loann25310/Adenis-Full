@@ -12,8 +12,8 @@ if ((isNull _storage) || (isNull _target)) exitWith {};
 	format
 	[
 		"UPDATE houses SET STOCK_virtual='%1',STOCK_arma='%2' WHERE plate='%3'",
-		[(_storage getVariable ["Trunk", []])] call AdenisServer_fnc_mresArray,
-		[([getWeaponCargo _storage, getMagazineCargo _storage, getItemCargo _storage, getBackpackCargo _storage])] call AdenisServer_fnc_mresArray,
+		[(_storage getVariable ["Trunk", []])] call AlysiaServer_fnc_mresArray,
+		[([getWeaponCargo _storage, getMagazineCargo _storage, getItemCargo _storage, getBackpackCargo _storage])] call AlysiaServer_fnc_mresArray,
 		(_target getVariable "house_owner") select 2
 	], 1
 ] call ExtDB3_fnc_async;

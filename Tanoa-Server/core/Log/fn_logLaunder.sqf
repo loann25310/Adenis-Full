@@ -13,7 +13,7 @@ _type = [_this, 3, "", [""]] call BIS_fnc_param;
 	"1:SERVER_LAUNDER_LOG:Player %1 [%2] launder %3$ and received %4$ (type : %5)",
 	_player getVariable "realname",
 	getPlayerUID _player,
-	[_illegal_money] call AdenisClient_fnc_numberText,
-	[_dollars_amount] call AdenisClient_fnc_numberText,
+	[_illegal_money] call AlysiaClient_fnc_numberText,
+	[_dollars_amount] call AlysiaClient_fnc_numberText,
 	_type
 ];

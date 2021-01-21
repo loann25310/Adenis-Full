@@ -18,12 +18,12 @@ if (isNil "_info") exitWith {};
 _uids = _members select 0;
 _names = _members select 1;
 
-(_display displayCtrl 9602) ctrlSetText getText(missionConfigFile >> "ADENIS_COMPANIES_TYPES" >> (_info select 2) >> "image");
+(_display displayCtrl 9602) ctrlSetText getText(missionConfigFile >> "ALYSIA_COMPANIES_TYPES" >> (_info select 2) >> "image");
 
 (_display displayCtrl 9603) ctrlSetStructuredText parseText format
 [
 	"<t align='center' size='1.1'>%1 : %2</t>",
-	getText(missionConfigFile >> "ADENIS_COMPANIES_TYPES" >> (_info select 2) >> "name"),
+	getText(missionConfigFile >> "ALYSIA_COMPANIES_TYPES" >> (_info select 2) >> "name"),
 	(_info select 0)
 ];
 
@@ -31,7 +31,7 @@ _names = _members select 1;
 [
 	"<t align='left'>Membres</t><t align='right'>%1/%2</t>",
 	count(_uids),
-	getNumber(missionConfigFile >> "ADENIS_COMPANIES_TYPES" >> (_info select 2) >> "members_max")
+	getNumber(missionConfigFile >> "ALYSIA_COMPANIES_TYPES" >> (_info select 2) >> "members_max")
 ];
 
 _list = _display displayCtrl 9606;
@@ -49,37 +49,37 @@ lbClear _list;
 
 if ((_info select 1) isEqualTo (getPlayerUID player)) then
 {
-	[9607, true] call AdenisClient_fnc_tabletShow;
-	[9608, true] call AdenisClient_fnc_tabletShow;
-	[9609, true] call AdenisClient_fnc_tabletShow;
-	[9610, true] call AdenisClient_fnc_tabletShow;
-	[9611, true] call AdenisClient_fnc_tabletShow;
-	[9612, true] call AdenisClient_fnc_tabletShow;
-	[9613, true] call AdenisClient_fnc_tabletShow;
-	[9614, true] call AdenisClient_fnc_tabletShow;
-	[9615, true] call AdenisClient_fnc_tabletShow;
+	[9607, true] call AlysiaClient_fnc_tabletShow;
+	[9608, true] call AlysiaClient_fnc_tabletShow;
+	[9609, true] call AlysiaClient_fnc_tabletShow;
+	[9610, true] call AlysiaClient_fnc_tabletShow;
+	[9611, true] call AlysiaClient_fnc_tabletShow;
+	[9612, true] call AlysiaClient_fnc_tabletShow;
+	[9613, true] call AlysiaClient_fnc_tabletShow;
+	[9614, true] call AlysiaClient_fnc_tabletShow;
+	[9615, true] call AlysiaClient_fnc_tabletShow;
 
 	(_display displayCtrl 9615) ctrlSetStructuredText parseText format
 	[
 		"<t align='center' color='#8cff9b'>%1</t><t align='right'>$</t>",
-		[(_company getVariable ["company_bank", 0])] call AdenisClient_fnc_numberText
+		[(_company getVariable ["company_bank", 0])] call AlysiaClient_fnc_numberText
 	];
 
-	if (count(getArray(missionConfigFile >> "ADENIS_COMPANIES_TYPES" >> (_info select 2) >> "ressources_link")) > 0) then
+	if (count(getArray(missionConfigFile >> "ALYSIA_COMPANIES_TYPES" >> (_info select 2) >> "ressources_link")) > 0) then
 	{
 		ctrlSetText [9619, str(g_company getVariable "company_link_percentage")];
-		[9619, true] call AdenisClient_fnc_tabletShow;
-		[9620, true] call AdenisClient_fnc_tabletShow;
-		[9621, true] call AdenisClient_fnc_tabletShow;
-		[9622, true] call AdenisClient_fnc_tabletShow;
+		[9619, true] call AlysiaClient_fnc_tabletShow;
+		[9620, true] call AlysiaClient_fnc_tabletShow;
+		[9621, true] call AlysiaClient_fnc_tabletShow;
+		[9622, true] call AlysiaClient_fnc_tabletShow;
 	};
 
-	_list ctrlSetEventHandler ["LBSelChanged", "_this spawn AdenisClient_fnc_APP_company_update;"];
+	_list ctrlSetEventHandler ["LBSelChanged", "_this spawn AlysiaClient_fnc_APP_company_update;"];
 } else {
 	_list ctrlRemoveAllEventHandlers "LBSelChanged";
-	[9616, true] call AdenisClient_fnc_tabletShow;
-	[9617, true] call AdenisClient_fnc_tabletShow;
-	[9618, true] call AdenisClient_fnc_tabletShow;
+	[9616, true] call AlysiaClient_fnc_tabletShow;
+	[9617, true] call AlysiaClient_fnc_tabletShow;
+	[9618, true] call AlysiaClient_fnc_tabletShow;
 };
 
 _list lbSetCurSel 0;

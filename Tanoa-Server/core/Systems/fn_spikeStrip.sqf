@@ -18,8 +18,8 @@ if (isNull _spikeStrip) exitWith {};
 _vehicle = _nearVehicles select 0;
 if (isNil "_vehicle") exitWith {};
 
-[_vehicle, "HitLFWheel", 1] call AdenisClient_fnc_setHitPointDamage;
-[_vehicle, "HitLF2Wheel", 1] call AdenisClient_fnc_setHitPointDamage;
-[_vehicle, "HitRFWheel", 1] call AdenisClient_fnc_setHitPointDamage;
-[_vehicle, "HitRF2Wheel", 1] call AdenisClient_fnc_setHitPointDamage;
+[_vehicle, "HitLFWheel", 1] call AlysiaClient_fnc_setHitPointDamage;
+[_vehicle, "HitLF2Wheel", 1] call AlysiaClient_fnc_setHitPointDamage;
+[_vehicle, "HitRFWheel", 1] call AlysiaClient_fnc_setHitPointDamage;
+[_vehicle, "HitRF2Wheel", 1] call AlysiaClient_fnc_setHitPointDamage;
 deleteVehicle _spikeStrip;

@@ -20,7 +20,7 @@ DAB_IDCS[]=
 class DAB_LIST: RscCombo
 {
 	idc=DAB_LIST_IDC;
-	onLBSelChanged="_this spawn AdenisClient_fnc_APP_dab_update;";
+	onLBSelChanged="_this spawn AlysiaClient_fnc_APP_dab_update;";
 
 	x=0.324687 * safezoneW + safezoneX;
 	y=0.379 * safezoneH + safezoneY;

@@ -22,11 +22,11 @@ if (isNull _display) exitWith {};
 _list = _display displayCtrl 69002;
 lbClear _list;
 
-_list ctrlSetEventHandler ["LBSelChanged", "_this call AdenisClient_fnc_search_update;"];
+_list ctrlSetEventHandler ["LBSelChanged", "_this call AlysiaClient_fnc_search_update;"];
 
 if (_money > 0) then
 {
-	_index = _list lbAdd format["%1$", [_money] call AdenisClient_fnc_numberText];
+	_index = _list lbAdd format["%1$", [_money] call AlysiaClient_fnc_numberText];
 	_list lbSetPicture [_index, "Alysia_Client\Textures\Items_virtual\money.paa"];
 	_list lbSetValue [_index, 0];
 };
@@ -37,15 +37,15 @@ _array = [];
 	private "_delete";
 
 	_className = _x select 0;
-	if (isClass(missionConfigFile >> "ADENIS_ITEMS" >> _className >> "remove")) then {
+	if (isClass(missionConfigFile >> "ALYSIA_ITEMS" >> _className >> "remove")) then {
 		_delete = 1;
 	} else {
 		_delete = 0;
 	};
 
 	_array pushBack [
-		format["%1x %2", ([(_x select 1)] call AdenisClient_fnc_numberText), ([_className] call AdenisClient_fnc_itemGetName)],
-		[_className] call AdenisClient_fnc_itemGetImage,
+		format["%1x %2", ([(_x select 1)] call AlysiaClient_fnc_numberText), ([_className] call AlysiaClient_fnc_itemGetName)],
+		[_className] call AlysiaClient_fnc_itemGetImage,
 		_className,
 		_delete,
 		"VIRTUAL"
@@ -53,7 +53,7 @@ _array = [];
 } forEach _inv_virtual;
 
 {
-	_info = [(_x select 0)] call AdenisClient_fnc_fetchCfgDetails;
+	_info = [(_x select 0)] call AlysiaClient_fnc_fetchCfgDetails;
 	_array pushBack [
 		_info select 1,
 		_info select 2,
@@ -65,7 +65,7 @@ _array = [];
 
 _ctrl_btn = _display displayCtrl 69007;
 
-_ctrl_btn buttonSetAction "[] spawn AdenisClient_fnc_search_seize_player;";
+_ctrl_btn buttonSetAction "[] spawn AlysiaClient_fnc_search_seize_player;";
 _ctrl_btn ctrlSetEventHandler["MouseEnter","
 	((findDisplay 69000) displayCtrl 69006) ctrlSetStructuredText parseText ""<t align='center' size='1.3' color='#000000'>Saisir</t>"";
 	((findDisplay 69000) displayCtrl 69004) ctrlSetBackgroundColor [1,1,1,1];
@@ -99,37 +99,37 @@ while {!(isNull _display)} do
 {
 	if (isNull g_interaction_target) exitWith
 	{
-		["Fouille <t color='#FFBF00'>interrompu</t>.<br/>Cible invalide."] call AdenisClient_fnc_info;
+		["Fouille <t color='#FFBF00'>interrompu</t>.<br/>Cible invalide."] call AlysiaClient_fnc_info;
 		closeDialog 0;
 	};
 	if (!(g_interaction_target getVariable ["restrained", false]) && !(g_interaction_target getVariable ["surrender", false])) exitWith
 	{
-		["Fouille <t color='#FFBF00'>interrompu</t>.<br/>La cible ne peut plus être fouillée."] call AdenisClient_fnc_info;
+		["Fouille <t color='#FFBF00'>interrompu</t>.<br/>La cible ne peut plus être fouillée."] call AlysiaClient_fnc_info;
 		closeDialog 0;
 	};
 	if (g_interaction_target getVariable ["is_coma", false]) exitWith
 	{
-		["Fouille <t color='#FFBF00'>interrompu</t>.<br/>La cible est dans le coma."] call AdenisClient_fnc_info;
+		["Fouille <t color='#FFBF00'>interrompu</t>.<br/>La cible est dans le coma."] call AlysiaClient_fnc_info;
 		closeDialog 0;
 	};
 	if ((player distance g_interaction_target) > ((((boundingBox g_interaction_target) select 1) select 0) + 2.5)) exitWith
 	{
-		["Fouille <t color='#FFBF00'>interrompu</t>.<br/>Vous êtes trop loin de la cible."] call AdenisClient_fnc_info;
+		["Fouille <t color='#FFBF00'>interrompu</t>.<br/>Vous êtes trop loin de la cible."] call AlysiaClient_fnc_info;
 		closeDialog 0;
 	};
 	if (player getVariable ["is_coma", false]) exitWith
 	{
-		["Fouille <t color='#FFBF00'>interrompu</t>.<br/>Vous êtes dans le coma."] call AdenisClient_fnc_info;
+		["Fouille <t color='#FFBF00'>interrompu</t>.<br/>Vous êtes dans le coma."] call AlysiaClient_fnc_info;
 		closeDialog 0;
 	};
 	if (player getVariable ["restrained", false]) exitWith
 	{
-		["Fouille <t color='#FFBF00'>interrompu</t>.<br/>Vous êtes menotté."] call AdenisClient_fnc_info;
+		["Fouille <t color='#FFBF00'>interrompu</t>.<br/>Vous êtes menotté."] call AlysiaClient_fnc_info;
 		closeDialog 0;
 	};
 	if (player getVariable ["surrender", false]) exitWith
 	{
-		["Fouille <t color='#FFBF00'>interrompu</t>.<br/>Vous avez les mains sur la tête."] call AdenisClient_fnc_info;
+		["Fouille <t color='#FFBF00'>interrompu</t>.<br/>Vous avez les mains sur la tête."] call AlysiaClient_fnc_info;
 		closeDialog 0;
 	};
 

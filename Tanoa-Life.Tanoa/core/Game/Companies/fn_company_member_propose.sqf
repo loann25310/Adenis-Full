@@ -13,14 +13,14 @@ if (isNil "_info") exitWith {};
 
 if (!(isNull g_company)) exitWith
 {
-	[format["<t color='#FFBF00'>%1</t> est déjà membre d'une entreprise.", (player getVariable "realname")]] remoteExecCall ["AdenisClient_fnc_info", _from];
-	[format["<t color='#FFBF00'>%1</t> a essayé de vous embaucher dans son entreprise mais vous avez refusé automatiquement car vous travaillez déjà pour le compte d'une entreprise.", (_from getVariable "realname")]] call AdenisClient_fnc_info;
+	[format["<t color='#FFBF00'>%1</t> est déjà membre d'une entreprise.", (player getVariable "realname")]] remoteExecCall ["AlysiaClient_fnc_info", _from];
+	[format["<t color='#FFBF00'>%1</t> a essayé de vous embaucher dans son entreprise mais vous avez refusé automatiquement car vous travaillez déjà pour le compte d'une entreprise.", (_from getVariable "realname")]] call AlysiaClient_fnc_info;
 };
 
-if (!(['medical'] call AdenisClient_fnc_hasLicense)) exitWith
+if (!(['medical'] call AlysiaClient_fnc_hasLicense)) exitWith
 {
-	[format["<t color='#FFBF00'>%1</t> ne possède pas de certificat médical.", (player getVariable "realname")]] remoteExecCall ["AdenisClient_fnc_info", _from];
-	[format["<t color='#FFBF00'>%1</t> a essayé de vous embaucher dans son entreprise mais vous avez refusé automatiquement car vous n'avez pas de certificat médical.", (_from getVariable "realname")]] call AdenisClient_fnc_info;
+	[format["<t color='#FFBF00'>%1</t> ne possède pas de certificat médical.", (player getVariable "realname")]] remoteExecCall ["AlysiaClient_fnc_info", _from];
+	[format["<t color='#FFBF00'>%1</t> a essayé de vous embaucher dans son entreprise mais vous avez refusé automatiquement car vous n'avez pas de certificat médical.", (_from getVariable "realname")]] call AlysiaClient_fnc_info;
 };
 
 _action =
@@ -32,8 +32,8 @@ _action =
 ] call BIS_fnc_guiMessage;
 if (_action) then
 {
-	[_company] call AdenisClient_fnc_company_member_join;
-	["Votre offre d'embauche a été <t color='#3ADF00'>acceptée</t>."] remoteExecCall ["AdenisClient_fnc_info", _from];
+	[_company] call AlysiaClient_fnc_company_member_join;
+	["Votre offre d'embauche a été <t color='#3ADF00'>acceptée</t>."] remoteExecCall ["AlysiaClient_fnc_info", _from];
 } else {
-	["Votre offre d'embauche a été <t color='#DF0101'>refusée</t>."] remoteExecCall ["AdenisClient_fnc_info", _from];
+	["Votre offre d'embauche a été <t color='#DF0101'>refusée</t>."] remoteExecCall ["AlysiaClient_fnc_info", _from];
 };

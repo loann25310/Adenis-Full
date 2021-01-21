@@ -12,7 +12,7 @@ _list = _display displayCtrl 9400;
 lbClear _list;
 
 {
-	if (isClass(missionConfigFile >> "ADENIS_FUEL_STATION" >> typeof(_x))) then
+	if (isClass(missionConfigFile >> "ALYSIA_FUEL_STATION" >> typeof(_x))) then
 	{
 		_index = _list lbAdd format["Station service - %1", (mapGridPosition _x)];
 		_list lbSetData [_index, str([typeOf(_x), (getPos _x)])];
@@ -23,21 +23,21 @@ lbClear _list;
 if ((lbSize _list) isEqualTo 0) then {
 	_list lbAdd "Aucune";
 } else {
-	[9402, true] call AdenisClient_fnc_tabletShow;
-	[9403, true] call AdenisClient_fnc_tabletShow;
-	[9404, true] call AdenisClient_fnc_tabletShow;
-	[9405, true] call AdenisClient_fnc_tabletShow;
-	[9406, true] call AdenisClient_fnc_tabletShow;
-	[9407, true] call AdenisClient_fnc_tabletShow;
-	[9408, true] call AdenisClient_fnc_tabletShow;
-	[9411, true] call AdenisClient_fnc_tabletShow;
+	[9402, true] call AlysiaClient_fnc_tabletShow;
+	[9403, true] call AlysiaClient_fnc_tabletShow;
+	[9404, true] call AlysiaClient_fnc_tabletShow;
+	[9405, true] call AlysiaClient_fnc_tabletShow;
+	[9406, true] call AlysiaClient_fnc_tabletShow;
+	[9407, true] call AlysiaClient_fnc_tabletShow;
+	[9408, true] call AlysiaClient_fnc_tabletShow;
+	[9411, true] call AlysiaClient_fnc_tabletShow;
 	lbSortByValue _list;
 };
 
 _list lbSetCurSel 0;
 
-[] call AdenisClient_fnc_hideAllMarkers;
+[] call AlysiaClient_fnc_hideAllMarkers;
 
 waitUntil {(g_app != "FUEL")};
 
-[] call AdenisClient_fnc_showAllMarkers;
+[] call AlysiaClient_fnc_showAllMarkers;

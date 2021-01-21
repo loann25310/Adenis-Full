@@ -10,7 +10,7 @@ _className = [_this, 2, "", [""]] call BIS_fnc_param;
 if ((isNull _player) || (_className isEqualTo "")) exitWith {};
 
 _plate = round(random(999999));
-_insurance = getNumber(missionConfigFile >> "ADENIS_VEHICLES" >> _className >> "insurance");
+_insurance = getNumber(missionConfigFile >> "ALYSIA_VEHICLES" >> _className >> "insurance");
 
 if (isNull _vehicle) then
 {
@@ -25,7 +25,7 @@ if (isNull _vehicle) then
 } else {
 	_active = 1;
 	_vehicle setVariable ["info", [(getPlayerUID _player), (_player getVariable "realname"), _plate, _insurance], true];
-	[(getPlayerUID _player), (side _player), _vehicle] call AdenisServer_fnc_keyManagement;
+	[(getPlayerUID _player), (side _player), _vehicle] call AlysiaServer_fnc_keyManagement;
 	_type = switch (true) do
 	{
 		case (_vehicle isKindOf "Tank"): {"Tank"};
@@ -44,7 +44,7 @@ if (isNull _vehicle) then
 		_type,
 		(getPlayerUID _player),
 		_plate,
-		[getText(configFile >> "CfgVehicles" >> _className >> "displayName")] call AdenisServer_fnc_mresString,
+		[getText(configFile >> "CfgVehicles" >> _className >> "displayName")] call AlysiaServer_fnc_mresString,
 		_active,
 		_insurance
 	], 1

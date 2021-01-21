@@ -44,7 +44,7 @@ class RscDisplayStealVehicle: RscDisplayDefaultInteraction
 		class STOCK_LIST: RscCombo
 		{
 			idc=99001;
-			onLBSelChanged="_this call AdenisClient_fnc_steal_vehicle_update;";
+			onLBSelChanged="_this call AlysiaClient_fnc_steal_vehicle_update;";
 			colorBackground[]={0, 0, 0, 1};
 			
 			x=0.438125 * safezoneW + safezoneX;
@@ -127,7 +127,7 @@ class RscDisplayStealVehicle: RscDisplayDefaultInteraction
 		class ACTION_BUTTON: RscButtonSilent
 		{
 			idc=99009;
-			action="[] spawn AdenisClient_fnc_steal_vehicle_action;";
+			action="[] spawn AlysiaClient_fnc_steal_vehicle_action;";
 			onMouseEnter="ctrlSetText[99008,""Alysia_Client_Texture\Data\global\action_buy_select.paa""];ctrlShow[99006, false];((findDisplay 99000) displayCtrl 99005) ctrlSetBackgroundColor [1,1,1,1];((findDisplay 99000) displayCtrl 99007) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#000000'>Vendre</t>"";";
 			onMouseExit="ctrlSetText[99008,""Alysia_Client_Texture\Data\global\action_buy.paa""];if (ctrlVisible 99008) then {ctrlShow[99006, true];};((findDisplay 99000) displayCtrl 99005) ctrlSetBackgroundColor [0,0,0,0.6];((findDisplay 99000) displayCtrl 99007) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#FFFFFF'>Vendre</t>"";";
 

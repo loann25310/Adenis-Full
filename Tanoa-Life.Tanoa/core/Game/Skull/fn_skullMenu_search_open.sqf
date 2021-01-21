@@ -6,7 +6,7 @@ private["_display", "_button"];
 
 if (isNull g_interaction_target) exitWith {};
 if ((g_interaction_target getVariable ["inventory_in_use_UID", ""]) != "") exitWith {
-	["Quelqu'un est déjà en train de fouiller ce corps"] call AdenisClient_fnc_error;
+	["Quelqu'un est déjà en train de fouiller ce corps"] call AlysiaClient_fnc_error;
 };
 
 if (dialog) then
@@ -27,7 +27,7 @@ if (isNull _display) exitWith {};
 (_display displayCtrl 69006) ctrlSetStructuredText parseText "<t align='left' size='1.3'>Prendre</t>";
 
 _button = _display displayCtrl 69007;
-_button buttonSetAction "[] call AdenisClient_fnc_skullMenu_search_take;";
+_button buttonSetAction "[] call AlysiaClient_fnc_skullMenu_search_take;";
 
 _button ctrlSetEventHandler["MouseEnter",
 	"((findDisplay 69000) displayCtrl 69006) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#000000'>Prendre</t>"";
@@ -49,7 +49,7 @@ g_interaction_target setVariable ["inventory_in_use_UID", (getPlayerUID player),
 g_interaction_target_inv = g_interaction_target getVariable ["inv", []];
 g_interaction_target_inv_active = false;
 
-[] call AdenisClient_fnc_skullMenu_search_update;
+[] call AlysiaClient_fnc_skullMenu_search_update;
 
 while {!(isNull _display)} do
 {

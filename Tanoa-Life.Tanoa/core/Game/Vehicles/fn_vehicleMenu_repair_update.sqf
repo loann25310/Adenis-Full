@@ -14,8 +14,8 @@ if ((_sel isEqualTo -1) || (isNull _list) || ((_list lbText _sel) isEqualTo "Auc
 
 _health = _list lbValue _sel;
 _part = _list lbData _sel;
-_item = getText(missionConfigFile >> "ADENIS_REPAIR" >> _part >> "item");
-_tool = getText(missionConfigFile >> "ADENIS_REPAIR" >> _part >> "tool");
+_item = getText(missionConfigFile >> "ALYSIA_REPAIR" >> _part >> "item");
+_tool = getText(missionConfigFile >> "ALYSIA_REPAIR" >> _part >> "tool");
 
 if ((_tool isEqualTo "") || ((_tool != "") && (_tool in (magazines player)))) then
 {
@@ -37,7 +37,7 @@ if ((_tool isEqualTo "") || ((_tool != "") && (_tool in (magazines player)))) th
 (_display displayCtrl 2916) ctrlSetStructuredText parseText format
 [
 	"<t align='left'><img image='%1'/></t><t align='center'>Informations</t>",
-	getText(missionConfigFile >> "ADENIS_REPAIR" >> _part >> "picture")
+	getText(missionConfigFile >> "ALYSIA_REPAIR" >> _part >> "picture")
 ];
 
 (_display displayCtrl 2909) ctrlSetStructuredText parseText format
@@ -50,10 +50,10 @@ if ((_tool isEqualTo "") || ((_tool != "") && (_tool in (magazines player)))) th
     "%",
 	if (_tool isEqualTo "") then {"Aucun"} else {getText(configFile >> "CfgMagazines" >> _tool >> "displayName")},
 	if (_item isEqualTo "") then {"Aucune"} else {getText(configFile >> "CfgMagazines" >> _item >> "displayName")},
-	([_health] call AdenisClient_fnc_vehicleMenu_repair_getColor) select 1,
+	([_health] call AlysiaClient_fnc_vehicleMenu_repair_getColor) select 1,
 	if (_hasTool) then {"#8cff9b"} else {"#ff8c8c"},
 	if (_hasItem) then {"#8cff9b"} else {"#ff8c8c"},
-	([_repair] call AdenisClient_fnc_vehicleMenu_repair_getColor) select 1,
+	([_repair] call AlysiaClient_fnc_vehicleMenu_repair_getColor) select 1,
 	_repair
 ];
 

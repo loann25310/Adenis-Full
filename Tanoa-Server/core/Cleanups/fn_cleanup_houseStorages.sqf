@@ -17,7 +17,7 @@ if (_targets isEqualTo []) then
 		_storage = missionNamespace getVariable [format["house_storage_out_%1", _id], objNull];
 		if (!(isNull _storage)) then
 		{
-			[_x, _storage] call AdenisServer_fnc_house_save_storage;
+			[_x, _storage] call AlysiaServer_fnc_house_save_storage;
 		};
 	};
 } forEach _targets;

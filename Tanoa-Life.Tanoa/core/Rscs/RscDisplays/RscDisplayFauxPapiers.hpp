@@ -307,7 +307,7 @@ class RscDisplayFauxPapiers
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "[true] spawn AdenisClient_fnc_item_fauxPapiers;";
+			onButtonClick = "[true] spawn AlysiaClient_fnc_item_fauxPapiers;";
 			
 		};
 		class Cancel_Btn

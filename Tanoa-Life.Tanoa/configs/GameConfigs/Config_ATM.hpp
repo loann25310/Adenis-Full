@@ -1,8 +1,8 @@
-class ADENIS_ATM
+class ALYSIA_ATM
 {
 	class Land_Atm_01_F
 	{
-		money_stock=200000;
+		money_stock=2000000;
 		money_faction=0;
 		company_money_transfert=1;
 		company_money_get=0;
@@ -19,7 +19,7 @@ class ADENIS_ATM
 		{
 		 	ShapeLocal="ICON";
 			TypeLocal="Maels_dab";
-			ColorLocal="ColorBlack";
+			ColorLocal="ColorWhite";
 			SizeLocal[]={0.55, 0.55};
 		};
 	};

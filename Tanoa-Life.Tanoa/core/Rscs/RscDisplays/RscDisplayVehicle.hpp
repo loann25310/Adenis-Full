@@ -48,7 +48,7 @@ class RscDisplayVehicleRepair: RscDisplayDefaultInteraction
 		class REPAIR_LIST: RscListBox
 		{
 			idc=2907;
-			onLBSelChanged="_this call AdenisClient_fnc_vehicleMenu_repair_update;";
+			onLBSelChanged="_this call AlysiaClient_fnc_vehicleMenu_repair_update;";
 
 			x=0.381406 * safezoneW + safezoneX;
 			y=0.423 * safezoneH + safezoneY;
@@ -59,7 +59,7 @@ class RscDisplayVehicleRepair: RscDisplayDefaultInteraction
 		class REPAIR_CHECKBOX: RscCheckBox
 		{
 			idc=2908;
-			onCheckedChanged="[] call AdenisClient_fnc_vehicleMenu_repair_fill;";
+			onCheckedChanged="[] call AlysiaClient_fnc_vehicleMenu_repair_fill;";
 
 			x=0.38285 * safezoneW + safezoneX;
 			y=0.64432 * safezoneH + safezoneY;
@@ -176,7 +176,7 @@ class RscDisplayVehicleRepair: RscDisplayDefaultInteraction
 		class ACTION_REPAIR_BUTTON: RscButtonSilent
 		{
 			idc=2915;
-			action="[] spawn AdenisClient_fnc_vehicleMenu_repair_action";
+			action="[] spawn AlysiaClient_fnc_vehicleMenu_repair_action";
 			onMouseEnter="ctrlSetText[2913,""Alysia_Client_Texture\Data\vehicle\action_repair_select.paa""];ctrlShow[2911, false];((findDisplay 2900) displayCtrl 2912) ctrlSetBackgroundColor [1,1,1,1];((findDisplay 2900) displayCtrl 2914) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#000000'>Réparer</t>"";";
 			onMouseExit="ctrlSetText[2913,""Alysia_Client_Texture\Data\vehicle\action_repair.paa""];ctrlShow[2911, true];((findDisplay 2900) displayCtrl 2912) ctrlSetBackgroundColor [0,0,0,0.6];((findDisplay 2900) displayCtrl 2914) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#FFFFFF'>Réparer</t>"";";
 

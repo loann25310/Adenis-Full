@@ -12,7 +12,7 @@ if ((player getVariable ["tf_voiceVolume", 0]) isEqualTo 0) exitWith
 		[] spawn
 		{
 			g_yielding = true;
-			[player, (["part1", "part2", "part3", "part4"] call BIS_fnc_selectRandom), 25] call AdenisClient_fnc_globalSay3d;
+			[player, (["part1", "part2", "part3", "part4"] call BIS_fnc_selectRandom), 25] call AlysiaClient_fnc_globalSay3d;
 			uiSleep 5;
 			g_yielding = false;
 		};

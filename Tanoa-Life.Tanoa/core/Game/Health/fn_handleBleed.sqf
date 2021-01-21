@@ -20,8 +20,8 @@ if (g_bleed isEqualTo 0) then
 			{
 				player setBleedingRemaining 2;
 			};
-			[(g_bleed * -1), objNull, false] call AdenisClient_fnc_handleBlood;
-			[] call AdenisEvent_fnc_onPlayerFireNear;
+			[(g_bleed * -1), objNull, false] call AlysiaClient_fnc_handleBlood;
+			[] call AlysiaEvent_fnc_onPlayerFireNear;
 			sleep 2;
 		};
 		g_bleed = 0;

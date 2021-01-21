@@ -18,7 +18,7 @@ _ctrl_licenses = _display displayCtrl 58001;
 lbClear _ctrl_licenses;
 
 {
-	_index = _ctrl_licenses lbAdd ([_x] call AdenisClient_fnc_licenseGetName);
+	_index = _ctrl_licenses lbAdd ([_x] call AlysiaClient_fnc_licenseGetName);
 	_ctrl_licenses lbSetData [_index, _x];
 } forEach _licenses;
 if ((lbSize _ctrl_licenses) isEqualTo 0) then
@@ -52,12 +52,12 @@ if ((lbSize _ctrl_licenses) isEqualTo 0) then
 	(_indentityInfo select 2) select 0,
 	(_indentityInfo select 2) select 1,
 	(_indentityInfo select 2) select 2,
-	getText(missionConfigFile >> "ADENIS_NATIONALITIES" >> (_indentityInfo select 3) >> "name"),
-	[side _from] call AdenisClient_fnc_sideToStr,
-	[side _from, (_from getVariable ["rank", 0])] call AdenisClient_fnc_rankToStr
+	getText(missionConfigFile >> "ALYSIA_NATIONALITIES" >> (_indentityInfo select 3) >> "name"),
+	[side _from] call AlysiaClient_fnc_sideToStr,
+	[side _from, (_from getVariable ["rank", 0])] call AlysiaClient_fnc_rankToStr
 ];
 
-_config = missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "licenses_seize";
+_config = missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "licenses_seize";
 if (!(isClass(_config)) || ((player getVariable ["rank", 0]) < getNumber(_config >> "rank"))) then
 {
 	ctrlShow[58004, false];
@@ -71,27 +71,27 @@ while {!(isNull _display)} do
 {
 	if (isNull _from) exitWith
 	{
-		["Passeport <t color='#FFBF00'>interrompu</t>.<br/>Cible invalide."] call AdenisClient_fnc_info;
+		["Passeport <t color='#FFBF00'>interrompu</t>.<br/>Cible invalide."] call AlysiaClient_fnc_info;
 		closeDialog 0;
 	};
 	if (player getVariable ["is_coma", false]) exitWith
 	{
-		["Passeport <t color='#FFBF00'>interrompu</t>.<br/>Vous êtes dans le coma."] call AdenisClient_fnc_info;
+		["Passeport <t color='#FFBF00'>interrompu</t>.<br/>Vous êtes dans le coma."] call AlysiaClient_fnc_info;
 		closeDialog 0;
 	};
 	if ((player distance _from) > ((((boundingBox _from) select 1) select 0) + 2.5)) exitWith
 	{
-		["Passeport <t color='#FFBF00'>interrompu</t>.<br/>Vous êtes trop loin de la cible."] call AdenisClient_fnc_info;
+		["Passeport <t color='#FFBF00'>interrompu</t>.<br/>Vous êtes trop loin de la cible."] call AlysiaClient_fnc_info;
 		closeDialog 0;
 	};
 	if (player getVariable ["restrained", false]) exitWith
 	{
-		["Passeport <t color='#FFBF00'>interrompu</t>.<br/>Vous êtes menotté."] call AdenisClient_fnc_info;
+		["Passeport <t color='#FFBF00'>interrompu</t>.<br/>Vous êtes menotté."] call AlysiaClient_fnc_info;
 		closeDialog 0;
 	};
 	if (player getVariable ["surrender", false]) exitWith
 	{
-		["Passeport <t color='#FFBF00'>interrompu</t>.<br/>Vous avez les mains sur la tête."] call AdenisClient_fnc_info;
+		["Passeport <t color='#FFBF00'>interrompu</t>.<br/>Vous avez les mains sur la tête."] call AlysiaClient_fnc_info;
 		closeDialog 0;
 	};
 

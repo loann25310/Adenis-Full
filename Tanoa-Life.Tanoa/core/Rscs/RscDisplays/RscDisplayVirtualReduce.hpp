@@ -123,7 +123,7 @@ class RscDisplayVirtualReduce: RscDisplayDefaultInteraction
 		class ACTION_BUTTON: RscButtonSilent
 		{
 			idc=91004;
-			action="[] call AdenisClient_fnc_virtual_menu_reduce_action;";
+			action="[] call AlysiaClient_fnc_virtual_menu_reduce_action;";
 			onMouseEnter="ctrlSetText[91003,""Alysia_Client_Texture\Data\virtual_reduce\arrow_left_select.paa""];";
 			onMouseExit="ctrlSetText[91003,""Alysia_Client_Texture\Data\virtual_reduce\arrow_left.paa""];";
 

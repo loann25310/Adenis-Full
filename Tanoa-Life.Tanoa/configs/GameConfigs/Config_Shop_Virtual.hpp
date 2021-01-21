@@ -1,4 +1,4 @@
-class ADENIS_SHOPS_VIRTUAL
+class ALYSIA_SHOPS_VIRTUAL
 {
 	/* GLOBAL MARKET */
 	class fishmarket

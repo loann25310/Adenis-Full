@@ -7,19 +7,19 @@ _target = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
 _type = [_this, 1, "", [""]] call BIS_fnc_param;
 
 if (isNull _target) exitWith {
-	["Cible invalide."] call AdenisClient_fnc_error;
+	["Cible invalide."] call AlysiaClient_fnc_error;
 };
-if (getNumber(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'housing' >> 'search') isEqualTo 0) exitWith {
-	["Vous n'êtes pas autorisé à utiliser cet objet."] call AdenisClient_fnc_error;
+if (getNumber(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'housing' >> 'search') isEqualTo 0) exitWith {
+	["Vous n'êtes pas autorisé à utiliser cet objet."] call AlysiaClient_fnc_error;
 };
 if (_target getVariable ["perquisition", false]) exitWith {
-	["Ce bâtiment est déja en train d'être perquisitionné."] call AdenisClient_fnc_error;
+	["Ce bâtiment est déja en train d'être perquisitionné."] call AlysiaClient_fnc_error;
 };
 
 _function = switch (_type) do
 {
-	case "house": {"AdenisServer_fnc_house_perquisition"};
-	case "company": {"AdenisServer_fnc_company_perquisition"};
+	case "house": {"AlysiaServer_fnc_house_perquisition"};
+	case "company": {"AlysiaServer_fnc_company_perquisition"};
 	default {""};
 };
 if (_function isEqualTo "") exitWith {};
@@ -33,11 +33,11 @@ _action =
 ] call BIS_fnc_guiMessage;
 if (_action) then
 {
-	if ([false, "perqui", 1] call AdenisClient_fnc_handleInv) then
+	if ([false, "perqui", 1] call AlysiaClient_fnc_handleInv) then
 	{
-		["Perquisition <t color='#3ADF00'>débuté</t>."] call AdenisClient_fnc_info;
+		["Perquisition <t color='#3ADF00'>débuté</t>."] call AlysiaClient_fnc_info;
 		[_target, player] remoteExec [_function, 2];
 	} else {
-		["Impossible de trouver l'objet dans votre inventaire."] call AdenisClient_fnc_error;
+		["Impossible de trouver l'objet dans votre inventaire."] call AlysiaClient_fnc_error;
 	};
 };

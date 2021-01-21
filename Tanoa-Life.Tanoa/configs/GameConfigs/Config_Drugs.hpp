@@ -1,4 +1,4 @@
-class ADENIS_DRUGS
+class ALYSIA_DRUGS
 {
 	class marijuana
 	{

@@ -217,7 +217,7 @@ class RscDisplayVirtualExhange: RscDisplayDefaultInteraction
 		{
 			idc=503;
 			colorBackground[]={0,0,0,0.6};
-			onLBSelChanged="_this call AdenisClient_fnc_virtual_menu_exhange_update_target;";
+			onLBSelChanged="_this call AlysiaClient_fnc_virtual_menu_exhange_update_target;";
 			
 			x=0.329844 * safezoneW + safezoneX;
 			y=0.467 * safezoneH + safezoneY;
@@ -328,7 +328,7 @@ class RscDisplayVirtualExhange: RscDisplayDefaultInteraction
 		class PLAYER_INVENTORY_LIST: RscListbox
 		{
 			idc=505;
-			onLBSelChanged="_this call AdenisClient_fnc_virtual_menu_exhange_update_player;";
+			onLBSelChanged="_this call AlysiaClient_fnc_virtual_menu_exhange_update_player;";
 			
 			x=0.494844 * safezoneW + safezoneX;
 			y=0.467 * safezoneH + safezoneY;
@@ -349,7 +349,7 @@ class RscDisplayVirtualExhange: RscDisplayDefaultInteraction
 		class ACTION_GET_SINGLE_BUTTON: RscButtonSilent
 		{
 			idc=507;
-			action="[false] call AdenisClient_fnc_virtual_menu_exhange_take;";
+			action="[false] call AlysiaClient_fnc_virtual_menu_exhange_take;";
 			tooltip="Récupérer la quantité minimum";
 			onMouseEnter="ctrlSetText[506,""Alysia_Client_Texture\Data\vehicle\trunk\right_arrow_single_select.paa""];";
 			onMouseExit="ctrlSetText[506,""Alysia_Client_Texture\Data\vehicle\trunk\right_arrow_single.paa""];";
@@ -373,7 +373,7 @@ class RscDisplayVirtualExhange: RscDisplayDefaultInteraction
 		class ACTION_GET_DOUBLE_BUTTON: RscButtonSilent
 		{
 			idc=509;
-			action="[true] call AdenisClient_fnc_virtual_menu_exhange_take;";
+			action="[true] call AlysiaClient_fnc_virtual_menu_exhange_take;";
 			tooltip="Récupérer la quantité maximum";
 			onMouseEnter="ctrlSetText[508,""Alysia_Client_Texture\Data\vehicle\trunk\right_arrow_double_select.paa""];";
 			onMouseExit="ctrlSetText[508,""Alysia_Client_Texture\Data\vehicle\trunk\right_arrow_double.paa""];";
@@ -397,7 +397,7 @@ class RscDisplayVirtualExhange: RscDisplayDefaultInteraction
 		class ACTION_PUT_SINGLE_BUTTON: RscButtonSilent
 		{
 			idc=511;
-			action="[false] call AdenisClient_fnc_virtual_menu_exhange_store;";
+			action="[false] call AlysiaClient_fnc_virtual_menu_exhange_store;";
 			tooltip="Déposer la quantité minimum";
 			onMouseEnter="ctrlSetText[510,""Alysia_Client_Texture\Data\vehicle\trunk\left_arrow_single_select.paa""];";
 			onMouseExit="ctrlSetText[510,""Alysia_Client_Texture\Data\vehicle\trunk\left_arrow_single.paa""];";
@@ -421,7 +421,7 @@ class RscDisplayVirtualExhange: RscDisplayDefaultInteraction
 		class ACTION_PUT_DOUBLE_BUTTON: RscButtonSilent
 		{
 			idc=513;
-			action="[true] call AdenisClient_fnc_virtual_menu_exhange_store;";
+			action="[true] call AlysiaClient_fnc_virtual_menu_exhange_store;";
 			tooltip="Déposer la quantité maximum";
 			onMouseEnter="ctrlSetText[512,""Alysia_Client_Texture\Data\vehicle\trunk\left_arrow_double_select.paa""];";
 			onMouseExit="ctrlSetText[512,""Alysia_Client_Texture\Data\vehicle\trunk\left_arrow_double.paa""];";

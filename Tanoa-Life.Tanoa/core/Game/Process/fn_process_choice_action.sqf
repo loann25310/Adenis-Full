@@ -10,4 +10,4 @@ if (_sel isEqualTo -1) exitWith {};
 _process = lbData[53101, _sel];
 if (_process isEqualTo "") exitWith {};
 
-[g_interaction_target, nil, nil, _process] call AdenisClient_fnc_process_open;
+[g_interaction_target, nil, nil, _process] call AlysiaClient_fnc_process_open;

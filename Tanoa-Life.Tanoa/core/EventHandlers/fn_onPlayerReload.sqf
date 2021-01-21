@@ -23,6 +23,6 @@ if ((count(_oldMagazine) > 0) && (_weapon != "")) then
 {
 	if ((_oldMagazine select 1) isEqualTo 0) then
 	{
-		[true, "magazine", 1] call AdenisClient_fnc_handleInv;
+		[true, "magazine", 1] call AlysiaClient_fnc_handleInv;
 	};
 };
