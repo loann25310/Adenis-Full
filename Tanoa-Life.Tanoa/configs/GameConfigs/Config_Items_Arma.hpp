@@ -1098,12 +1098,6 @@ class ALYSIA_ITEMS_ARMA
 		buyprice=100;
 		buy_licence_CIV="company_service";
 	};
-	class H_mas_itr_hatnavy_f
-	{
-		name="Casquette pilote";
-		buyprice=100;
-		buy_licence_CIV="company_service";
-	};
 
 	// PTI
 	class U_B_mas_itr_dress_cc
@@ -1178,7 +1172,6 @@ class ALYSIA_ITEMS_ARMA
 		buy_condition_GUER=1;
 		buy_price=20;
 	};
-
 	class combi_plonge_samu
 	{
 		buy_price=200;
@@ -1235,6 +1228,267 @@ class ALYSIA_ITEMS_ARMA
 	{
 		buy_price=1100;
 	};
+
+	//////////////////////////////////////////////////////////VDF///////////////////////////////////////////////////////////////////////////
+	class vdf_inter1
+	{
+		name="Tenue invervention Matelot";
+		buy_condition_GUER=2;
+		buy_price=20;
+	};
+	class vdf_inter2
+	{
+		name="Tenue invervention Quartier Maitre 2nde classe";
+		buy_condition_GUER=3;
+		buy_price=20;
+	};
+	class vdf_inter3
+	{
+		name="Tenue invervention Quartier Maitre 1ère classe";
+		buy_condition_GUER=4;
+		buy_price=20;
+	};
+	class vdf_inter4
+	{
+		name="Tenue invervention Second Maitre";
+		buy_condition_GUER=5;
+		buy_price=20;
+	};
+	class vdf_inter5
+	{
+		name="Tenue invervention Maitre";
+		buy_condition_GUER=6;
+		buy_price=20;
+	};
+	class vdf_inter6
+	{
+		name="Tenue invervention Premier Maitre";
+		buy_condition_GUER=7;
+		buy_price=20;
+	};
+	class vdf_inter7
+	{
+		name="Tenue invervention Maitre Principal";
+		buy_condition_GUER=8;
+		buy_price=20;
+	};
+	class vdf_inter8
+	{
+		name="Tenue invervention Major";
+		buy_condition_GUER=9;
+		buy_price=20;
+	};
+	class vdf_inter9
+	{
+		name="Tenue invervention Aspirant";
+		buy_condition_GUER=10;
+		buy_price=20;
+	};
+	class vdf_inter10
+	{
+		name="Tenue invervention Enseigne de Vaisseau";
+		buy_condition_GUER=11;
+		buy_price=20;
+	};
+	class vdf_inter11
+	{
+		name="Tenue invervention Lieutenant de Vaisseau";
+		buy_condition_GUER=12;
+		buy_price=20;
+	};
+	class vdf_inter12
+	{
+		name="Tenue invervention Capitaine de Corvette";
+		buy_condition_GUER=13;
+		buy_price=20;
+	};
+	class ceremonie_mtl
+	{
+		name="Tenue Ceremonie Matelot";
+		buy_condition_GUER=2;
+		buy_price=20;
+	};
+	class ceremonie_qm2
+	{
+		name="Tenue Ceremonie Quartier Maitre 2CL";
+		buy_condition_GUER=3;
+		buy_price=20;
+	};
+	class ceremonie_qm1
+	{
+		name="Tenue Ceremonie Quartier Maitre 1CL";
+		buy_condition_GUER=4;
+		buy_price=20;
+	};
+	class ceremonie_sm
+	{
+		name="Tenue Ceremonie Second Maitre";
+		buy_condition_GUER=5;
+		buy_price=20;
+	};
+	class ceremonie_mt
+	{
+		name="Tenue Ceremonie Maitre";
+		buy_condition_GUER=6;
+		buy_price=20;
+	};
+	class ceremonie_pm
+	{
+		name="Tenue Ceremonie Premier Maitre";
+		buy_condition_GUER=7;
+		buy_price=20;
+	};
+	class ceremonie_mp
+	{
+		name="Tenue Ceremonie Maitre Principal";
+		buy_condition_GUER=8;
+		buy_price=20;
+	};
+	class ceremonie_mjr
+	{
+		name="Tenue Ceremonie Major";
+		buy_condition_GUER=9;
+		buy_price=20;
+	};
+	class ceremonie_asp
+	{
+		name="Tenue Ceremonie Aspirant";
+		buy_condition_GUER=10;
+		buy_price=20;
+	};
+	class ceremonie_ev
+	{
+		name="Tenue Ceremonie Enseigne de Vaisseau";
+		buy_condition_GUER=11;
+		buy_price=20;
+	};
+	class ceremonie_lv
+	{
+		name="Tenue Ceremonie Lieutenant de Vaisseau";
+		buy_condition_GUER=12;
+		buy_price=20;
+	};
+	class ceremonie_cc
+	{
+		name="Tenue Ceremonie Capitaine de Covertte";
+		buy_condition_GUER=13;
+		buy_price=20;
+	};
+	class vdf_feu
+	{
+		name="Tenue F1";
+		buy_condition_GUER=1;
+		buy_price=20;
+	};
+	class vdf_pilota
+	{
+		name="Tenue Pilote";
+		buy_condition_GUER=1;
+		buy_price=20;
+	};
+	class vdf_copilota
+	{
+		name="Tenue Co-Pilote";
+		buy_condition_GUER=1;
+		buy_price=20;
+	};
+	class ari_vdf
+	{
+		name="Sac ARI";
+		buy_condition_GUER=1;
+		buy_price=20;
+	};
+	class sac_sp
+	{
+		name="Sac premier secours";
+		buy_condition_GUER=1;
+		buy_price=20;
+	};
+	class casquef1_b
+	{
+		name="Casque F1 blanc (équipier feu)";
+		buy_condition_GUER=1;
+		buy_price=20;
+	};
+	class casquef1_j
+	{
+		name="Casque F1 jaune (Chef d'agrès)";
+		buy_condition_GUER=1;
+		buy_price=20;
+	};
+	class casquetteequipage
+	{
+		name="Casquette Équipage";
+		buy_condition_GUER=1;
+		buy_price=20;
+	};
+	class casquettesm
+	{
+		name="Casquette Second Maitre";
+		buy_condition_GUER=5;
+		buy_price=20;
+	};
+	class casquettemt
+	{
+		name="Casquette Maitre";
+		buy_condition_GUER=6;
+		buy_price=20;
+	};
+	class casquetteev
+	{
+		name="Casquette Enseigne de Vaisseau";
+		buy_condition_GUER=11;
+		buy_price=20;
+	};
+	class casquettelv
+	{
+		name="Casquette Lieutenant de Vaisseau";
+		buy_condition_GUER=12;
+		buy_price=20;
+	};
+	class casquettecc
+	{
+		name="Casquette Capitaine de Corvette";
+		buy_condition_GUER=13;
+		buy_price=20;
+	};
+	class cagoule_feu
+	{
+		name="Cagoule de feu";
+		buy_condition_GUER=1;
+		buy_price=20;
+	};
+	class masque_ari
+	{
+		name="Masque ARI";
+		buy_condition_GUER=1;
+		buy_price=20;
+	};
+	class tenue_samu
+	{
+		name="Uniforme SAMU";
+		buy_condition_GUER=1;
+		buy_price=20;
+	};
+	class samu_inf
+	{
+		name="Gilet Infirmier";
+		buy_condition_GUER=1;
+		buy_price=20;
+	};
+	class samu_med
+	{
+		name="Gilet Médecin";
+		buy_condition_GUER=1;
+		buy_price=20;
+	};
+	class sac_samu
+	{
+		name="Sac SAMU";
+		buy_condition_GUER=1;
+		buy_price=20;
+	};
+
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	///////////////////////////////////////////////////     Garde de Malieu     ////////////////////////////////////////////////////////////
@@ -1657,12 +1911,6 @@ class ALYSIA_ITEMS_ARMA
 		buy_price=50;
 	};
 
-    class Alysia_Radio_LR_East
-    {
-    	buy_price=7985;
-    	buy_condition_EAST=2;
-    	buy_license_EAST[]={"east_ope_radio"};
-    };
     class TRYK_B_tube_od
     {
     	buy_price=1372;

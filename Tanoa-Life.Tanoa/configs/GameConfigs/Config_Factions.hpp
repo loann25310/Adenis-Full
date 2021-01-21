@@ -503,23 +503,35 @@ class ALYSIA_FACTIONS
 			ranks_complet[]=
 			{
 				"Civil",
-				"Stagiaire",
-				"Infirmier",
-				"Médecin Externe",
-				"Médecin Interne",
-				"Médecin Titulaire",
-				"Médecin Chef"
+				"Matelot",
+				"Quartier Maitre 2nde classe",
+				"Quartier Maitre 1ère classe",
+				"Second Maitre",
+				"Maitre",
+				"Premier Maitre"
+				"Maitre Principal",
+				"Major",
+				"Aspirant",
+				"Enseigne de Vaisseau",
+				"Lieutenant de Vaisseau",
+				"Capitaine de Corvette"
 			};
 
 			ranks_short[]=
 			{
 				"Civ",
-				"Stg",
-				"Inf",
-				"Ext",
-				"Int",
-				"Tit",
-				"Chef"
+				"MTL",
+				"QM2",
+				"QM1",
+				"SM",
+				"MT",
+				"PM",
+				"MP",
+				"MJR",
+				"ASP",
+				"EV",
+				"LV",
+				"CC"
 			};
 		};
 	};

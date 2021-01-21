@@ -3010,6 +3010,7 @@ class ALYSIA_VEHICLES
 		fuelCapacity=84;
 		rank=2;
 	};
+
 	class Skyline_VW_TouaregR50_Samu_02_F : Skyline_VW_TouaregR50_Samu_01_F
 	{
 		realname="VW Touareg R50 (Signalisation)";
@@ -3023,6 +3024,168 @@ class ALYSIA_VEHICLES
 		inventory=100;
 		fuelCapacity=210;
 		rank=3;
+	};
+
+	class FPTL_BSPP: Alysia_GUER_base
+	{
+		realname="Fptl";
+		buyPrice=96150;
+		inventory=100;
+		fuelCapacity=210;
+		rank=2;
+	};
+
+	class RealMan_FPTScaniaBSPSG: Alysia_GUER_base
+	{
+		realname="Fpt";
+		buyPrice=96150;
+		inventory=100;
+		fuelCapacity=210;
+		rank=2;
+	};
+
+	class CCRM_BSPP: Alysia_GUER_base
+	{
+		realname="Ccrm";
+		buyPrice=96150;
+		inventory=100;
+		fuelCapacity=210;
+		rank=2;
+	};
+
+	class chepa_Scania_124L: Alysia_GUER_base
+	{
+		realname="Epan";
+		buyPrice=96150;
+		inventory=100;
+		fuelCapacity=210;
+		rank=2;
+	};
+
+	class Iveco_Daily_VPC_BSPP: Alysia_GUER_base
+	{
+		realname="Véhicule poste de commandemant";
+		buyPrice=96150;
+		inventory=100;
+		fuelCapacity=210;
+		rank=2;
+	};
+
+	class chOshkosh_striker_3000: Alysia_GUER_base
+	{
+		realname="Striker 3000";
+		buyPrice=96150;
+		inventory=100;
+		fuelCapacity=210;
+		rank=2;
+	};
+
+	class RealMan_X3VL: Alysia_GUER_base
+	{
+		realname="Vlcg BMW X3";
+		buyPrice=96150;
+		inventory=100;
+		fuelCapacity=210;
+		rank=2;
+	};
+
+	class RealMan_Megane4VL: Alysia_GUER_base
+	{
+		realname="Vlcg Megane 4";
+		buyPrice=96150;
+		inventory=100;
+		fuelCapacity=210;
+		rank=2;
+	};
+
+	class RealMan_SprinterG3: Alysia_GUER_base
+	{
+		realname="VSAV Mercedes";
+		buyPrice=96150;
+		inventory=100;
+		fuelCapacity=210;
+		rank=2;
+	};
+
+	class RealMan_Master3VSAVBSPSG: Alysia_GUER_base
+	{
+		realname="Vsav Renault";
+		buyPrice=96150;
+		inventory=100;
+		fuelCapacity=210;
+		rank=2;
+	};
+
+	class RealMan_Trafic3VBECL: Alysia_GUER_base
+	{
+		realname="Vbecl";
+		buyPrice=96150;
+		inventory=100;
+		fuelCapacity=210;
+		rank=2;
+	};
+
+	class devidoirch: Alysia_GUER_base
+	{
+		realname="Devidoir";
+		buyPrice=96150;
+		inventory=100;
+		fuelCapacity=210;
+		rank=2;
+	};
+
+	class brancardch: Alysia_GUER_base
+	{
+		realname="Brancard";
+		buyPrice=96150;
+		inventory=100;
+		fuelCapacity=210;
+		rank=2;
+	};
+
+	class CSP_BSPP: Alysia_GUER_base
+	{
+		realname="Véhicule plongeur";
+		buyPrice=96150;
+		inventory=100;
+		fuelCapacity=210;
+		rank=2;
+	};
+
+	class umh_down: Alysia_GUER_base
+	{
+		realname="UMH Samu";
+		buyPrice=96150;
+		inventory=100;
+		fuelCapacity=210;
+		rank=2;
+	};
+
+	class trafic3_ml: Alysia_GUER_base
+	{
+		realname="Medcin legiste";
+		buyPrice=96150;
+		inventory=100;
+		fuelCapacity=210;
+		rank=2;
+	};
+
+		class Realman_X3VLI: Alysia_GUER_base
+	{
+		realname="VLI Bmw X3 SAMU";
+		buyPrice=96150;
+		inventory=100;
+		fuelCapacity=210;
+		rank=2;
+	};
+
+		class RealMan_Megane4SAMU: Alysia_GUER_base
+	{
+		realname="VlI Megane 4 SAMU";
+		buyPrice=96150;
+		inventory=100;
+		fuelCapacity=210;
+		rank=2;
 	};
 
 	class Mrshounka_corbillard_base_p: Alysia_GUER_base

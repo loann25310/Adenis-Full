@@ -666,7 +666,7 @@ class ALYSIA_SHOPS_CLOTHING
 
 	class GUER_clothing
 	{
-		name="Friperie Samu";
+		name="Friperie Vigili Del Fuoco";
 		side="GUER";
 		uniforms[]=
 		{
@@ -683,23 +683,65 @@ class ALYSIA_SHOPS_CLOTHING
 			"Skyline_Character_U_Infirmier_01_F",
 			"Skyline_Character_U_Infirmier_02_F",
 			"Skyline_Character_U_Infirmier_03_F",
-			"Skyline_Character_U_CivilD_01_F"
+			"Skyline_Character_U_CivilD_01_F",
+			"vdf_inter1",
+			"vdf_inter2",
+			"vdf_inter3",
+			"vdf_inter4",
+			"vdf_inter5",
+			"vdf_inter6",
+			"vdf_inter7",
+			"vdf_inter8",
+			"vdf_inter9",
+			"vdf_inter10",
+			"vdf_inter11",
+			"vdf_inter12",
+			"ceremonie_mtl",
+			"ceremonie_qm2",
+			"ceremonie_qm1",
+			"ceremonie_sm",
+			"ceremonie_mt",
+			"ceremonie_pm",
+			"ceremonie_mp",			
+			"ceremonie_mjr",
+			"ceremonie_asp",
+			"ceremonie_ev",
+			"ceremonie_lv",
+			"ceremonie_cc",
+			"vdf_feu",
+			"vdf_pilota",
+			"vdf_copilota",
+			"tenue_samu"
+
 		};
 		goggles[]=
 		{
 			"Skyline_NioshFace",
 			"Masque_Chirurgical",
 			"Skyline_Glasses_Masque_Chirurgical_01_F",
-			"Skyline_Glasses_Masque_GP5_01_F"
+			"Skyline_Glasses_Masque_GP5_01_F",
+			"cagoule_feu",
+			"masque_ari"
 		};
 		headgear[]=
 		{
 			"Skyline_Casque_Pilote_Secouriste_01_F",
-			"Skyline_HeadGear_NBC_Hazmat_01_F"
+			"Skyline_HeadGear_NBC_Hazmat_01_F",
+			"casquef1_b",
+			"casquef1_j",
+			"casquetteequipage",
+			"casquettesm",
+			"casquettemt",
+			"casquetteev",
+			"casquettelv",
+			"casquettecc"
 		};
 		vests[]=
 		{
-			"Respirateur_samu"
+			"Respirateur_samu",
+			"samu_inf",
+			"samu_med"
+
 		};
 		backpacks[]=
 		{
@@ -707,7 +749,11 @@ class ALYSIA_SHOPS_CLOTHING
 			"Skyline_Sac_Secouriste_01_F",
 			"Skyline_Sac_Secouriste_02_F",
 			"TRYK_B_Medbag",
-			"TRYK_B_Medbag_BK"
+			"TRYK_B_Medbag_BK",
+			"ari_vdf",
+			"sac_sp",
+			"sac_samu"
+
 		};
 	};
 
