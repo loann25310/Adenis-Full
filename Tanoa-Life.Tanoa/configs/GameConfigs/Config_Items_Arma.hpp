@@ -924,17 +924,26 @@ class ALYSIA_ITEMS_ARMA
 	////////////////////////////////////////////  RESERVE ENTREPRISE   ///////////////////////////////////////////////////
 	class Skyline_Uniforme_Securite_01_F
 	{
-		buy_price=150;
-		buy_license_CIV[]={"company_security"};
+		buy_price=10000;
+		buy_license_CIV[]={"company_money_tranfer"};
 	};
 	class Skyline_Uniforme_Securite_02_F: Skyline_Uniforme_Securite_01_F {};
 	class Skyline_Uniforme_Securite_03_F: Skyline_Uniforme_Securite_01_F {};
+	class TRYK_U_B_BLK3CD: Skyline_Uniforme_Securite_01_F {};
 
-	class Skyline_Veste_Securite_01_F
+	class Skyline_Veste_Securite_01_F : Skyline_Uniforme_Securite_01_F
 	{
-		buy_price=2250;
-		buy_license_CIV[]={"company_security"};
+		buy_price=90000;
 	};
+	class Skyline_UMP45_01_F: Skyline_Uniforme_Securite_01_F
+	{
+		buy_price=40000;
+	};
+	class 25Rnd_45ACP_Mag: Skyline_Uniforme_Securite_01_F
+	{
+		buy_price=1000;
+	};
+	
 	class Press_vest
 	{
 		name="Gilet de presse";
@@ -1033,17 +1042,6 @@ class ALYSIA_ITEMS_ARMA
 
 
 	// Airwan
-    class TRYK_U_B_BLK3CD
-    {
-    	name="Tenue Convoyeur";
-    	buy_price=250;
-    	buy_license_CIV[]={"company_money_tranfer"};
-    };
-    class TRYK_kio_balaclava_BLK: TRYK_U_B_BLK3CD
-    {
-    	name="Masque Convoyeur et securité";
-    	buy_price=90;
-    };
 	class ML_Uniform_captainpilot
 	{
 		name="Uniforme pilote";
@@ -1606,6 +1604,7 @@ class ALYSIA_ITEMS_ARMA
 	class G_Balaclava_TI_blk_F
 	{
 		buy_price=1950;
+		buy_license_CIV[]={"company_money_tranfer"};
 		buy_condition_WEST=1;
 	};
 

@@ -763,12 +763,8 @@ class ALYSIA_SHOPS_CLOTHING
 		side="CIV";
 		uniforms[]=
 		{
-			"TRYK_U_B_BLK3CD",
 			"Skyline_Uniforme_Depanneur_01_F",
 			"U_C_WorkerCoveralls",
-			"Skyline_Uniforme_Securite_01_F",
-			"Skyline_Uniforme_Securite_02_F",
-			"Skyline_Uniforme_Securite_03_F",
 			"U_fast_repair",
 			"salopette_glr",
 			"tshirt_glr",
@@ -778,9 +774,15 @@ class ALYSIA_SHOPS_CLOTHING
 			"ML_uniform_captainpilot_vest",
 			"ML_Uniform_copilot",
 			"ML_Uniform_copilotlan",
-			"ML_uniform_copilot_vest"
+			"ML_uniform_copilot_vest",
+			"Skyline_Uniforme_Securite_01_F",
+			"Skyline_Uniforme_Securite_02_F",
+			"Skyline_Uniforme_Securite_03_F",
+			"TRYK_U_B_BLK3CD"
 		};
-		goggles[]={"TRYK_kio_balaclava_BLK"};
+		goggles[]={
+			"G_Balaclava_TI_blk_F"
+		};
 		headgear[]=
 		{
 			"casquette_glr",
