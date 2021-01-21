@@ -11,7 +11,7 @@ if (
 };
 
 if (missionNamespace getVariable ["calling", false]) then {
-	["Vous avez racroché votre téléphone"] call AlysiaClient_fnc_info;
+	["Vous avez raccroché votre téléphone"] call AlysiaClient_fnc_info;
 	[false, true] call AlysiaClient_fnc_APP_phone_call_hangup;
 } else {
 	["Vous avez décroché votre téléphone"] call AlysiaClient_fnc_info;
