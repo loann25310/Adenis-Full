@@ -274,4 +274,9 @@ class ALYSIA_GARAGES
 		name="Hôpital de La Rochelle";
 		spawns[]={"guer_2_spawn_1","guer_2_spawn_2"};
 	};
+	class guer_3: guer_1
+	{
+		name="Caserne Vigil del fuoco";
+		spawns[]={"guer_3_spawn_1"};
+	};
 };

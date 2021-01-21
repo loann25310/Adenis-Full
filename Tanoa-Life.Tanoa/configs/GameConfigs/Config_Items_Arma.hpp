@@ -1231,145 +1231,145 @@ class ALYSIA_ITEMS_ARMA
 	class vdf_inter1
 	{
 		name="Tenue invervention Matelot";
-		buy_condition_GUER=2;
+		buy_condition_GUER=1;
 		buy_price=20;
 	};
 	class vdf_inter2
 	{
 		name="Tenue invervention Quartier Maitre 2nde classe";
-		buy_condition_GUER=3;
+		buy_condition_GUER=2;
 		buy_price=20;
 	};
 	class vdf_inter3
 	{
 		name="Tenue invervention Quartier Maitre 1ère classe";
-		buy_condition_GUER=4;
+		buy_condition_GUER=3;
 		buy_price=20;
 	};
 	class vdf_inter4
 	{
 		name="Tenue invervention Second Maitre";
-		buy_condition_GUER=5;
+		buy_condition_GUER=4;
 		buy_price=20;
 	};
 	class vdf_inter5
 	{
 		name="Tenue invervention Maitre";
-		buy_condition_GUER=6;
+		buy_condition_GUER=5;
 		buy_price=20;
 	};
 	class vdf_inter6
 	{
 		name="Tenue invervention Premier Maitre";
-		buy_condition_GUER=7;
+		buy_condition_GUER=6;
 		buy_price=20;
 	};
 	class vdf_inter7
 	{
 		name="Tenue invervention Maitre Principal";
-		buy_condition_GUER=8;
+		buy_condition_GUER=7;
 		buy_price=20;
 	};
 	class vdf_inter8
 	{
 		name="Tenue invervention Major";
-		buy_condition_GUER=9;
+		buy_condition_GUER=8;
 		buy_price=20;
 	};
 	class vdf_inter9
 	{
 		name="Tenue invervention Aspirant";
-		buy_condition_GUER=10;
+		buy_condition_GUER=9;
 		buy_price=20;
 	};
 	class vdf_inter10
 	{
 		name="Tenue invervention Enseigne de Vaisseau";
-		buy_condition_GUER=11;
+		buy_condition_GUER=10;
 		buy_price=20;
 	};
 	class vdf_inter11
 	{
 		name="Tenue invervention Lieutenant de Vaisseau";
-		buy_condition_GUER=12;
+		buy_condition_GUER=11;
 		buy_price=20;
 	};
 	class vdf_inter12
 	{
 		name="Tenue invervention Capitaine de Corvette";
-		buy_condition_GUER=13;
+		buy_condition_GUER=12;
 		buy_price=20;
 	};
 	class ceremonie_mtl
 	{
 		name="Tenue Ceremonie Matelot";
-		buy_condition_GUER=2;
+		buy_condition_GUER=1;
 		buy_price=20;
 	};
 	class ceremonie_qm2
 	{
 		name="Tenue Ceremonie Quartier Maitre 2CL";
-		buy_condition_GUER=3;
+		buy_condition_GUER=2;
 		buy_price=20;
 	};
 	class ceremonie_qm1
 	{
 		name="Tenue Ceremonie Quartier Maitre 1CL";
-		buy_condition_GUER=4;
+		buy_condition_GUER=3;
 		buy_price=20;
 	};
 	class ceremonie_sm
 	{
 		name="Tenue Ceremonie Second Maitre";
-		buy_condition_GUER=5;
+		buy_condition_GUER=4;
 		buy_price=20;
 	};
 	class ceremonie_mt
 	{
 		name="Tenue Ceremonie Maitre";
-		buy_condition_GUER=6;
+		buy_condition_GUER=5;
 		buy_price=20;
 	};
 	class ceremonie_pm
 	{
 		name="Tenue Ceremonie Premier Maitre";
-		buy_condition_GUER=7;
+		buy_condition_GUER=6;
 		buy_price=20;
 	};
 	class ceremonie_mp
 	{
 		name="Tenue Ceremonie Maitre Principal";
-		buy_condition_GUER=8;
+		buy_condition_GUER=7;
 		buy_price=20;
 	};
 	class ceremonie_mjr
 	{
 		name="Tenue Ceremonie Major";
-		buy_condition_GUER=9;
+		buy_condition_GUER=8;
 		buy_price=20;
 	};
 	class ceremonie_asp
 	{
 		name="Tenue Ceremonie Aspirant";
-		buy_condition_GUER=10;
+		buy_condition_GUER=9;
 		buy_price=20;
 	};
 	class ceremonie_ev
 	{
 		name="Tenue Ceremonie Enseigne de Vaisseau";
-		buy_condition_GUER=11;
+		buy_condition_GUER=10;
 		buy_price=20;
 	};
 	class ceremonie_lv
 	{
 		name="Tenue Ceremonie Lieutenant de Vaisseau";
-		buy_condition_GUER=12;
+		buy_condition_GUER=11;
 		buy_price=20;
 	};
 	class ceremonie_cc
 	{
 		name="Tenue Ceremonie Capitaine de Covertte";
-		buy_condition_GUER=13;
+		buy_condition_GUER=12;
 		buy_price=20;
 	};
 	class vdf_feu
@@ -1423,31 +1423,31 @@ class ALYSIA_ITEMS_ARMA
 	class casquettesm
 	{
 		name="Casquette Second Maitre";
-		buy_condition_GUER=5;
+		buy_condition_GUER=4;
 		buy_price=20;
 	};
 	class casquettemt
 	{
 		name="Casquette Maitre";
-		buy_condition_GUER=6;
+		buy_condition_GUER=5;
 		buy_price=20;
 	};
 	class casquetteev
 	{
 		name="Casquette Enseigne de Vaisseau";
-		buy_condition_GUER=11;
+		buy_condition_GUER=10;
 		buy_price=20;
 	};
 	class casquettelv
 	{
 		name="Casquette Lieutenant de Vaisseau";
-		buy_condition_GUER=12;
+		buy_condition_GUER=11;
 		buy_price=20;
 	};
 	class casquettecc
 	{
 		name="Casquette Capitaine de Corvette";
-		buy_condition_GUER=13;
+		buy_condition_GUER=12;
 		buy_price=20;
 	};
 	class cagoule_feu

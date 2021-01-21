@@ -1777,6 +1777,26 @@ class ALYSIA_ITEMS
         class remove {};
     };
 
+    class bounty
+    {
+        name="Bounty";
+        weight=1;
+        image="Adenis_Textures\bounty.paa";
+        class food
+        {
+            hunger=2;
+            thirst=0;
+            sound="eat_biscuit";
+            unlimitedRun=120;
+        };
+        class market
+        {
+            max=2200;
+            min=800;
+        };
+        class remove {};
+    };
+
     class sugar_cane
     {
         name="Canne à sucre";

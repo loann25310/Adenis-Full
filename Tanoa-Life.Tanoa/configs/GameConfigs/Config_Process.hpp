@@ -4288,6 +4288,37 @@ class ALYSIA_PROCESS
 		};
 	};
 
+	class bounty
+	{
+		name="Fabrication des Bountys";
+		sound="smelting";
+		class require
+		{
+			items_virtual[]={{"coconut",1},{"cacaop",2}};
+		};
+		class receive
+		{
+			items_virtual[]={{"bounty",1}};
+		};
+		time_per_item=1;
+		time_default=5;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"traitement_barrecereales"};
+			};
+			class WEST
+			{
+				licenses[]={"traitement_barrecereales"};
+			};
+			class GUER
+			{
+				licenses[]={"traitement_barrecereales"};
+			};
+		};
+	};
+
 	class barrecereales
 	{
 		name="Fabrication des barres de céréales";

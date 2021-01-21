@@ -70,7 +70,8 @@ class ALYSIA_SHOPS_VIRTUAL
 		name="Commerçant de barre de céréales";
 		sell[]=
 		{
-			"barrecereales"
+			"barrecereales",
+			"bounty"
 		};
 	};
 
