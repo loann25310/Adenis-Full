@@ -29,7 +29,7 @@ if (!("Alysia_Lockpick" in (magazines player))) exitWith {
 
 player removeMagazine "Alysia_Lockpick";
 [_target, "lockpick", 100] call AlysiaClient_fnc_globalSay3d;
-if ((random(100)) < 25) then
+if ((random(100)) < 25 || ["company_garagist"] call AlysiaClient_fnc_hasLicense) then
 {
 	g_vehicles pushBack _target;
 	[(getPlayerUID player), playerSide, _target] remoteExecCall ["AlysiaServer_fnc_keyManagement", 2];
