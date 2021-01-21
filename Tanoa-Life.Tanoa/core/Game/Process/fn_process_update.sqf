@@ -8,7 +8,7 @@ disableSerialization;
 _display = findDisplay 53000;
 if (isNull _display) exitWith {};
 
-_config = missionConfigFile >> "ADENIS_PROCESS" >> g_interaction_process_type;
+_config = missionConfigFile >> "ALYSIA_PROCESS" >> g_interaction_process_type;
 
 _maxAmount = round(parseNumber(ctrlText 53006));
 if (_maxAmount < 1) then
@@ -29,15 +29,15 @@ _list_require = _display displayCtrl 53005;
 lbClear _list_require;
 _require_weight = 0;
 {
-	_index = _list_require lbAdd format["%1x %2", (_maxAmount * (_x select 1)), [(_x select 0)] call AdenisClient_fnc_itemGetName];
-	if ([(_x select 0)] call AdenisClient_fnc_itemCount >= (_maxAmount * (_x select 1))) then {
+	_index = _list_require lbAdd format["%1x %2", (_maxAmount * (_x select 1)), [(_x select 0)] call AlysiaClient_fnc_itemGetName];
+	if ([(_x select 0)] call AlysiaClient_fnc_itemCount >= (_maxAmount * (_x select 1))) then {
 		_list_require lbSetPicture [_index, "Alysia_Client_Texture\Data\process\items_ok.paa"];
 	} else {
 		_list_require lbSetPicture [_index, "Alysia_Client_Texture\Data\process\items_missing.paa"];
 		_can = false;
 	};
 
-	_require_weight = _require_weight + ((([(_x select 0)] call AdenisClient_fnc_itemGetWeight) * (_x select 1)) * _maxAmount);
+	_require_weight = _require_weight + ((([(_x select 0)] call AlysiaClient_fnc_itemGetWeight) * (_x select 1)) * _maxAmount);
 } forEach getArray(_config >> "require" >> "items_virtual");
 
 _list_receive = _display displayCtrl 53014;
@@ -45,14 +45,14 @@ lbClear _list_receive;
 
 _receive_weight = 0;
 {
-	_index = _list_receive lbAdd format["%1x %2", (_maxAmount * (_x select 1)), [(_x select 0)] call AdenisClient_fnc_itemGetName];
-	_list_receive lbSetPicture [_index, [(_x select 0)] call AdenisClient_fnc_itemGetImage];
+	_index = _list_receive lbAdd format["%1x %2", (_maxAmount * (_x select 1)), [(_x select 0)] call AlysiaClient_fnc_itemGetName];
+	_list_receive lbSetPicture [_index, [(_x select 0)] call AlysiaClient_fnc_itemGetImage];
 
-	_receive_weight = _receive_weight + ((([(_x select 0)] call AdenisClient_fnc_itemGetWeight) * (_x select 1)) * _maxAmount);
+	_receive_weight = _receive_weight + ((([(_x select 0)] call AlysiaClient_fnc_itemGetWeight) * (_x select 1)) * _maxAmount);
 } forEach getArray(_config >> "receive" >> "items_virtual");
 
 {
-	_info = [_x] call AdenisClient_fnc_fetchcfgDetails;
+	_info = [_x] call AlysiaClient_fnc_fetchcfgDetails;
 	for "_i" from 1 to _maxAmount do
 	{
 		_index = _list_receive lbAdd (_info select 1);
@@ -62,7 +62,7 @@ _receive_weight = 0;
 
 if (getNumber(_config >> "receive" >> "money") > 0) then
 {
-	_index = _list_receive lbAdd format["%1$", [(getNumber(_config >> "receive" >> "money") * _maxAmount)] call AdenisClient_fnc_numberText];
+	_index = _list_receive lbAdd format["%1$", [(getNumber(_config >> "receive" >> "money") * _maxAmount)] call AlysiaClient_fnc_numberText];
 	_list_receive lbSetPicture [_index, "Alysia_Client\Textures\Items_virtual\money.paa"];
 };
 

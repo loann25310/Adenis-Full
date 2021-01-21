@@ -32,11 +32,11 @@ if (
 		_profileName,
 		_firstName,
 		_lastName,
-		[_birth] call AdenisServer_fnc_mresArray,
+		[_birth] call AlysiaServer_fnc_mresArray,
 		_nationality,
 		_sexe,
 		(face _player)
 	], 1
 ] call ExtDB3_fnc_async;
 
-[_player] call AdenisServer_fnc_query_select_connect;
+[_player] call AlysiaServer_fnc_query_select_connect;

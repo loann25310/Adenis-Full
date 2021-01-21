@@ -27,20 +27,20 @@ if (_item isEqualTo "") exitWith
 	_button_2 ctrlShow false;
 };
 
-_config = missionConfigFile >> "ADENIS_ITEMS" >> _item;
+_config = missionConfigFile >> "ALYSIA_ITEMS" >> _item;
 
 switch (true) do
 {
 	case (isClass(_config >> "food")):
 	{
 		_button_1 ctrlSetText "Consommer";
-		_button_1 buttonSetAction format["if ([false, '%1', 1] call AdenisClient_fnc_handleInv) then {['%1'] call AdenisClient_fnc_eatFood};", _item];
+		_button_1 buttonSetAction format["if ([false, '%1', 1] call AlysiaClient_fnc_handleInv) then {['%1'] call AlysiaClient_fnc_eatFood};", _item];
 		_button_1 ctrlShow true;
 	};
 	case (isClass(_config >> "use")):
 	{
 		_button_1 ctrlSetText "Utiliser";
-		_button_1 buttonSetAction format["['%1'] call AdenisClient_fnc_useItem;", _item];
+		_button_1 buttonSetAction format["['%1'] call AlysiaClient_fnc_useItem;", _item];
 		_button_1 ctrlShow true;
 	};
 	default
@@ -52,7 +52,7 @@ switch (true) do
 if (isClass(_config >> "remove")) then
 {
 	_button_2 ctrlSetText "Supprimer";
-	_button_2 buttonSetAction format["['%1'] call AdenisClient_fnc_removeItem;", _item];
+	_button_2 buttonSetAction format["['%1'] call AlysiaClient_fnc_removeItem;", _item];
 	_button_2 ctrlShow true;
 } else {
 	_button_2 ctrlShow false;

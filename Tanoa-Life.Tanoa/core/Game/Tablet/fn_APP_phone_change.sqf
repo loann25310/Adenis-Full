@@ -6,9 +6,9 @@ private["_action", "_price"];
 
 if ((player getVariable ["number", ""]) isEqualTo "") exitWith {};
 
-_price = getNumber(missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "phone" >> "change_number_price");
+_price = getNumber(missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "phone" >> "change_number_price");
 if (g_atm < _price) exitWith {
-	[format["Vous n'avez pas assez d'argent<br/>Prix : <t color='#8cff9b'>%1</t>$", [_price] call AdenisClient_fnc_numberText]] call AdenisClient_fnc_error;
+	[format["Vous n'avez pas assez d'argent<br/>Prix : <t color='#8cff9b'>%1</t>$", [_price] call AlysiaClient_fnc_numberText]] call AlysiaClient_fnc_error;
 };
 
 _action =
@@ -20,10 +20,10 @@ _action =
 ] call BIS_fnc_guiMessage;
 if (_action) then
 {
-	[] call AdenisClient_fnc_phone_number_change;
-	[format["Vous avez changé de numéro<br/>Nouveau : <t color='#FF4000'>%1</t>", (player getVariable ["number", ""])]] call AdenisClient_fnc_info;
+	[] call AlysiaClient_fnc_phone_number_change;
+	[format["Vous avez changé de numéro<br/>Nouveau : <t color='#FF4000'>%1</t>", (player getVariable ["number", ""])]] call AlysiaClient_fnc_info;
 	playSound "buy";
-	[false, 10000, "Changement numéro"] call AdenisClient_fnc_handleATM;
+	[false, 10000, "Changement numéro"] call AlysiaClient_fnc_handleATM;
 };
 
-["PHONE_CATEGORY"] spawn AdenisClient_fnc_tabletApp;
+["PHONE_CATEGORY"] spawn AlysiaClient_fnc_tabletApp;

@@ -1,4 +1,4 @@
-class ADENIS_ITEMS_ARMA
+class ALYSIA_ITEMS_ARMA
 {
 	/*==================
 	**      HOW TO

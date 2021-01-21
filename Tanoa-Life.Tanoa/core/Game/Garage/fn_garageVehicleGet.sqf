@@ -6,13 +6,13 @@ private["_index", "_data", "_vehicleClassname", "_vehicleGaragePosition", "_pric
 
 if (!(isNil "gServer_soonReboot")) exitWith
 {
-	["<t align='center'>Veuillez attendre le <t color='#B40404'>redémarrage</t> du serveur pour sortir un véhicule."] call AdenisClient_fnc_error;
+	["<t align='center'>Veuillez attendre le <t color='#B40404'>redémarrage</t> du serveur pour sortir un véhicule."] call AlysiaClient_fnc_error;
 	closeDialog 0;
 };
 
 _index = lbValue[2802, (lbCurSel 2802)];
 if (_index isEqualTo -1) exitWith {
-	["Vous n'avez pas sélectionné de véhicule."] call AdenisClient_fnc_error;
+	["Vous n'avez pas sélectionné de véhicule."] call AlysiaClient_fnc_error;
 };
 
 _data = g_garage_vehicles select _index;
@@ -24,8 +24,8 @@ if ((g_garage_info select 3) isEqualTo 0) then
 	_price = 0;
 	_action = true;
 } else {
-	_price = ([_vehicleClassname] call AdenisClient_fnc_fetchVehInfo) select 17;
-	if ([_vehicleGaragePosition] call AdenisClient_fnc_nearFourriere) then
+	_price = ([_vehicleClassname] call AlysiaClient_fnc_fetchVehInfo) select 17;
+	if ([_vehicleGaragePosition] call AlysiaClient_fnc_nearFourriere) then
 	{
 		private "_price_fourriere";
 		_price_fourriere = _price * 2.5;
@@ -38,9 +38,9 @@ if ((g_garage_info select 3) isEqualTo 0) then
 				"Details :<br/>" +
 				"Prix de garage initial - <t color='#8cff9b'>%2</t>$<br/>" +
 				"Supplément de la fourrière - <t color='#8cff9b'>%3</t>$",
-				[_price + _price_fourriere] call AdenisClient_fnc_numberText,
-				[_price] call AdenisClient_fnc_numberText,
-				[_price_fourriere] call AdenisClient_fnc_numberText
+				[_price + _price_fourriere] call AlysiaClient_fnc_numberText,
+				[_price] call AlysiaClient_fnc_numberText,
+				[_price_fourriere] call AlysiaClient_fnc_numberText
 			],
 			"Fourrière",
 			"Payer",
@@ -57,7 +57,7 @@ if (!_action) exitWith {};
 uiSleep(random(1) + 0.1);
 
 if ((time - g_action_delay) < 2) exitWith {
-	["Veuillez ralentir dans vos actions."] call AdenisClient_fnc_error;
+	["Veuillez ralentir dans vos actions."] call AlysiaClient_fnc_error;
 };
 g_action_delay = time;
 
@@ -69,10 +69,10 @@ if (g_atm < _price) exitWith
 				"Vous n'avez pas assez d'argent dans votre compte en banque<br/>"
 			+	"Prix : <t color='#ff8c8c'>%1</t>$"
 			+	"Manquant : <t color='#ff8c8c'>%2</t>$",
-			[_price] call AdenisClient_fnc_numberText,
-			[_price - g_atm] call AdenisClient_fnc_numberText
+			[_price] call AlysiaClient_fnc_numberText,
+			[_price - g_atm] call AlysiaClient_fnc_numberText
 		]
-	] call AdenisClient_fnc_error;
+	] call AlysiaClient_fnc_error;
 };
 
 if ((g_garage_info select 2) isEqualTo []) then
@@ -100,10 +100,10 @@ if ((g_garage_info select 2) isEqualTo []) then
 };
 
 if ((isNil "_spawnPos") || (isNil "_spawnDir")) exitWith {
-	["Aucun emplacement de sortie de véhicule n'est libre."] call AdenisClient_fnc_error;
+	["Aucun emplacement de sortie de véhicule n'est libre."] call AlysiaClient_fnc_error;
 };
 
-[false, _price, format["Sortie véhicule (%1)", (_data select 5)]] call AdenisClient_fnc_handleATM;
+[false, _price, format["Sortie véhicule (%1)", (_data select 5)]] call AlysiaClient_fnc_handleATM;
 
 _vehicle = createVehicle [_vehicleClassname, _spawnPos, [], 0, "NONE"];
 
@@ -113,9 +113,9 @@ _vehicle setDir _spawnDir;
 _vehicle lock 2;
 _vehicle setVariable ["tf_side", "west", true];
 
-[_vehicle] call AdenisClient_fnc_clearVehicleAmmo;
+[_vehicle] call AlysiaClient_fnc_clearVehicleAmmo;
 
-_hitpoints = ([_vehicle] call AdenisClient_fnc_getAllHitPointsDamage) select 0;
+_hitpoints = ([_vehicle] call AlysiaClient_fnc_getAllHitPointsDamage) select 0;
 
 {
 	if (_x > 0) then
@@ -141,11 +141,11 @@ _hitpoints = ([_vehicle] call AdenisClient_fnc_getAllHitPointsDamage) select 0;
 		"Vous avez récupéré <t color='#FF8000'>%1</t> de <t color='#2E9AFE'>%2</t> pour <t color='#8cff9b'>%3</t>$.",
 		lbText[2802, (lbCurSel 2802)],
 		(g_garage_info select 0),
-		[_price] call AdenisClient_fnc_numberText
+		[_price] call AlysiaClient_fnc_numberText
 	], "buy"
-] call AdenisClient_fnc_info;
+] call AlysiaClient_fnc_info;
 
-[(_data select 1), _vehicle, player] remoteExec ["AdenisServer_fnc_garageVehicleSpawn", 2];
+[(_data select 1), _vehicle, player] remoteExec ["AlysiaServer_fnc_garageVehicleSpawn", 2];
 
 if (!((_data select 4) isEqualTo [])) then {_vehicle setVariable ["Trunk", (_data select 4), true]};
 if ((_data select 11) != "") then {_vehicle setVariable ["refuel_type", (_data select 11), true]};

@@ -7,7 +7,7 @@ private "_config";
 if (g_regen_active) exitWith {};
 
 g_regen_active = true;
-_config = missionConfigFile >> "ADENIS_MEDICAL" >> "regen";
+_config = missionConfigFile >> "ALYSIA_MEDICAL" >> "regen";
 
 while {(g_blood < 4000)} do
 {
@@ -29,7 +29,7 @@ while {(g_blood < 4000)} do
 		};
 
 		if (_regen > 0) then {
-			[_regen] call AdenisClient_fnc_handleBlood;
+			[_regen] call AlysiaClient_fnc_handleBlood;
 		};
 	};
 

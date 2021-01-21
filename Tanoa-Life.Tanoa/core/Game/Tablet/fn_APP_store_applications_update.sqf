@@ -18,18 +18,18 @@ _price = _list lbValue _index;
 (_display displayCtrl 8111) ctrlSetStructuredText parseText format
 [
 	"<br/><t align='center' font='PuristaBold'><t size='1'>%3</t><br/><br/><t size='2.1'>Prix</t><br/><t size='1.8'><t color='#%2'>%1</t>$</t></t>",
-	([_price] call AdenisClient_fnc_numberText),
+	([_price] call AlysiaClient_fnc_numberText),
 	if (g_atm >= _price) then {"8cff9b"} else {"ff8c8c"},
 	(call compile format["%1", (_list lbData _index)]) select 1
 ];
 
-[8111, true] call AdenisClient_fnc_tabletShow;
+[8111, true] call AlysiaClient_fnc_tabletShow;
 
 if (g_atm < _price) then
 {
-	[8108, false] call AdenisClient_fnc_tabletShow;
-	[8109, false] call AdenisClient_fnc_tabletShow;
+	[8108, false] call AlysiaClient_fnc_tabletShow;
+	[8109, false] call AlysiaClient_fnc_tabletShow;
 } else {
-	[8108, true] call AdenisClient_fnc_tabletShow;
-	[8109, true] call AdenisClient_fnc_tabletShow;
+	[8108, true] call AlysiaClient_fnc_tabletShow;
+	[8109, true] call AlysiaClient_fnc_tabletShow;
 };

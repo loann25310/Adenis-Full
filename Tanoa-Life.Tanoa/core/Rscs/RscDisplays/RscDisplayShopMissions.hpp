@@ -44,7 +44,7 @@ class RscDisplayShopMissions: RscDisplayDefaultInteraction
 		class STOCK_LIST: RscCombo
 		{
 			idc=97001;
-			onLBSelChanged="_this call AdenisClient_fnc_shop_mission_update;";
+			onLBSelChanged="_this call AlysiaClient_fnc_shop_mission_update;";
 			colorBackground[]={0,0,0,1};
 			
 			x=0.438125 * safezoneW + safezoneX;
@@ -127,7 +127,7 @@ class RscDisplayShopMissions: RscDisplayDefaultInteraction
 		class ACTION_BUY_BUTTON: RscButtonSilent
 		{
 			idc=97009;
-			action="[] spawn AdenisClient_fnc_shop_mission_buy;";
+			action="[] spawn AlysiaClient_fnc_shop_mission_buy;";
 			onMouseEnter="ctrlSetText[97008,""Alysia_Client_Texture\Data\global\action_buy_select.paa""];ctrlShow[97006,false];((findDisplay 97000) displayCtrl 97005) ctrlSetBackgroundColor [1,1,1,1];((findDisplay 97000) displayCtrl 97007) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#000000'>Acheter</t>"";";
 			onMouseExit="ctrlSetText[97008,""Alysia_Client_Texture\Data\global\action_buy.paa""];if (ctrlVisible 97008) then {ctrlShow[97006,true];};((findDisplay 97000) displayCtrl 97005) ctrlSetBackgroundColor [0,0,0,0.6];((findDisplay 97000) displayCtrl 97007) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#FFFFFF'>Acheter</t>"";";
 

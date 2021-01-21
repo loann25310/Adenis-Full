@@ -8,7 +8,7 @@ _marker = [_this, 0, "", [""]] call BIS_fnc_param;
 if (_marker isEqualTo "") exitWith {};
 
 _marker setMarkerAlpha 0;
-_new = [_marker] call AdenisServer_fnc_dynamicMarkers_getPos;
+_new = [_marker] call AlysiaServer_fnc_dynamicMarkers_getPos;
 if (_new isEqualTo [0,0,0]) exitWith
 {
 	diag_log format["[ERROR] Dynamic marker %1 has no possible positions", _marker];
@@ -36,4 +36,4 @@ if (!(isNull _object)) then {_object setPosATL _new};
 	], 1
 ] call ExtDB3_fnc_async;
 
-[_marker] remoteExecCall ["AdenisClient_fnc_dynamicMarkers_update", -2];
+[_marker] remoteExecCall ["AlysiaClient_fnc_dynamicMarkers_update", -2];

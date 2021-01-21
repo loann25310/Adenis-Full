@@ -9,14 +9,14 @@ _display = uiNamespace getVariable ["tablet", displayNull];
 if (isNull _display) exitWith {};
 
 (_display displayCtrl 8107) ctrlSetStructuredText parseText "<t align='center' font='PuristaBold' size='2.7' color='#FF8000'>Applications</t>";
-(_display displayCtrl 8109) buttonSetAction "[] call AdenisClient_fnc_APP_store_applications_buy;";
+(_display displayCtrl 8109) buttonSetAction "[] call AlysiaClient_fnc_APP_store_applications_buy;";
 
-[8107, true] call AdenisClient_fnc_tabletShow;
+[8107, true] call AlysiaClient_fnc_tabletShow;
 
 _list = _display displayCtrl 8110;
 lbClear _list;
 
-_list ctrlSetEventHandler ["LBSelChanged", "_this call AdenisClient_fnc_APP_store_applications_update;"];
+_list ctrlSetEventHandler ["LBSelChanged", "_this call AlysiaClient_fnc_APP_store_applications_update;"];
 
 {
 	_app = configName _x;
@@ -26,7 +26,7 @@ _list ctrlSetEventHandler ["LBSelChanged", "_this call AdenisClient_fnc_APP_stor
 		_list lbSetValue [_index, getNumber(_x >> "price")];
 		_list lbSetData [_index, str([_app, getText(_x >> "description")])];
 	};
-} forEach ("str(playerSide) in getArray(_x >> 'sides')" configClasses (missionConfigFile >> "ADENIS_SHOP_APPLICATIONS"));
+} forEach ("str(playerSide) in getArray(_x >> 'sides')" configClasses (missionConfigFile >> "ALYSIA_SHOP_APPLICATIONS"));
 
 if ((lbSize _list) isEqualTo 0) then {
 	_list lbAdd "Aucune";

@@ -100,7 +100,7 @@ class RscDisplayShopVirtual: RscDisplayDefaultInteraction
 		class BUYSELL_LIST: RscListBox
 		{
 			idc=2405;
-			onLBSelChanged="_this call AdenisClient_fnc_shop_virtual_update_list_info;";
+			onLBSelChanged="_this call AlysiaClient_fnc_shop_virtual_update_list_info;";
 
 			x=0.2525 * safezoneW + safezoneX;
 			y=0.39 * safezoneH + safezoneY;
@@ -130,7 +130,7 @@ class RscDisplayShopVirtual: RscDisplayDefaultInteraction
 		class TMP_LIST: RscListBox
 		{
 			idc=2406;
-			onLBDblClick="_this spawn AdenisClient_fnc_shop_virtual_remove;";
+			onLBDblClick="_this spawn AlysiaClient_fnc_shop_virtual_remove;";
 
 			x=0.469062 * safezoneW + safezoneX;
 			y=0.39 * safezoneH + safezoneY;
@@ -151,7 +151,7 @@ class RscDisplayShopVirtual: RscDisplayDefaultInteraction
 		class TARGET_ADD_SINGLE_BUTTON: RscButtonSilent
 		{
 			idc=2408;
-			action="[g_shop_mod,false,lbCurSel 2405] call AdenisClient_fnc_shop_virtual_add;";
+			action="[g_shop_mod,false,lbCurSel 2405] call AlysiaClient_fnc_shop_virtual_add;";
 			onMouseEnter="ctrlSetText[2407,""Alysia_Client_Texture\Data\shops\actions\action_target_single_select.paa""];";
 			onMouseExit="ctrlSetText[2407,""Alysia_Client_Texture\Data\shops\actions\action_target_single.paa""];";
 
@@ -173,7 +173,7 @@ class RscDisplayShopVirtual: RscDisplayDefaultInteraction
 		class TARGET_ADD_DOUBLE_BUTTON: RscButtonSilent
 		{
 			idc=2410;
-			action="[g_shop_mod,true,lbCurSel 2405] call AdenisClient_fnc_shop_virtual_add;";
+			action="[g_shop_mod,true,lbCurSel 2405] call AlysiaClient_fnc_shop_virtual_add;";
 			onMouseEnter="ctrlSetText[2409,""Alysia_Client_Texture\Data\shops\actions\action_target_double_select.paa""];";
 			onMouseExit="ctrlSetText[2409,""Alysia_Client_Texture\Data\shops\actions\action_target_double.paa""];";
 
@@ -268,7 +268,7 @@ class RscDisplayShopVirtual: RscDisplayDefaultInteraction
 		};
 		class CATEGORY_BUY_BUTTON: RscButtonSilent
 		{
-			action="if (g_shop_active) exitWith {}; [0] call AdenisClient_fnc_shop_virtual_update_mod;";
+			action="if (g_shop_active) exitWith {}; [0] call AlysiaClient_fnc_shop_virtual_update_mod;";
 			onMouseEnter="((findDisplay 2400) displayCtrl 2412) ctrlSetBackgroundColor [1,1,1,1];((findDisplay 2400) displayCtrl 2412) ctrlSetStructuredText parseText ""<t align='center' size='2' color='#000000'>Acheter</t>"";";
 			onMouseExit="if (g_shop_mod != 0) then {((findDisplay 2400) displayCtrl 2412) ctrlSetBackgroundColor [0,0,0,1];((findDisplay 2400) displayCtrl 2412) ctrlSetStructuredText parseText ""<t align='center' size='2' color='#FFFFFF'>Acheter</t>"";}";
 
@@ -291,7 +291,7 @@ class RscDisplayShopVirtual: RscDisplayDefaultInteraction
 		};
 		class CATEGORY_SELL_BUTTON: RscButtonSilent
 		{
-			action="if (g_shop_active) exitWith {}; [1] call AdenisClient_fnc_shop_virtual_update_mod;";
+			action="if (g_shop_active) exitWith {}; [1] call AlysiaClient_fnc_shop_virtual_update_mod;";
 			onMouseEnter="((findDisplay 2400) displayCtrl 2413) ctrlSetBackgroundColor [1,1,1,1];((findDisplay 2400) displayCtrl 2413) ctrlSetStructuredText parseText ""<t align='center' size='2' color='#000000'>Vendre</t>"";";
 			onMouseExit="if (g_shop_mod != 1) then {((findDisplay 2400) displayCtrl 2413) ctrlSetBackgroundColor [0,0,0,1];((findDisplay 2400) displayCtrl 2413) ctrlSetStructuredText parseText ""<t align='center' size='2' color='#FFFFFF'>Vendre</t>"";}";
 
@@ -343,7 +343,7 @@ class RscDisplayShopVirtual: RscDisplayDefaultInteraction
 		class ACTION_VALIDATE_BUTTON: RscButtonSilent
 		{
 			idc=2418;
-			action="[] spawn AdenisClient_fnc_shop_virtual_buysell;";
+			action="[] spawn AlysiaClient_fnc_shop_virtual_buysell;";
 			onMouseEnter="ctrlSetText[2417,""Alysia_Client_Texture\Data\global\action_buy_select.paa""];ctrlShow[2415,false];((findDisplay 2400) displayCtrl 2414) ctrlSetBackgroundColor [1,1,1,1];((findDisplay 2400) displayCtrl 2416) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#000000'>Valider</t>"";";
 			onMouseExit="ctrlSetText[2417,""Alysia_Client_Texture\Data\global\action_buy.paa""];if (ctrlVisible 2417) then {ctrlShow[2415,true];};((findDisplay 2400) displayCtrl 2414) ctrlSetBackgroundColor [0,0,0,0.6];((findDisplay 2400) displayCtrl 2416) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#FFFFFF'>Valider</t>"";";
 

@@ -19,7 +19,7 @@ lbClear _list;
 		_index = _list lbAdd getText(_x >> "name");
 		_list lbSetData [_index, configName _x];
 	};
-} forEach ("str(playerSide) in getArray(_x >> 'sides')" configClasses (missionConfigFile >> "ADENIS_MISSIONS"));
+} forEach ("str(playerSide) in getArray(_x >> 'sides')" configClasses (missionConfigFile >> "ALYSIA_MISSIONS"));
 
 if ((lbSize _list) isEqualTo 0) then
 {

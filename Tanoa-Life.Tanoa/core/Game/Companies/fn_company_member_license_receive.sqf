@@ -9,18 +9,18 @@ _company = [_this, 2, objNull, [objNull]] call BIS_fnc_param;
 
 if ((isNull _from) || (_license isEqualTo "") || (isNull _company)) exitWith {};
 
-if ([_license] call AdenisClient_fnc_hasLicense) exitWith {
-	[format["Cette personne possède déjà la license : <t color='#DF3A01'>%1</t>.", [_license] call AdenisClient_fnc_licenseGetName]] remoteExecCall ["AdenisClient_fnc_info", _from];
+if ([_license] call AlysiaClient_fnc_hasLicense) exitWith {
+	[format["Cette personne possède déjà la license : <t color='#DF3A01'>%1</t>.", [_license] call AlysiaClient_fnc_licenseGetName]] remoteExecCall ["AlysiaClient_fnc_info", _from];
 };
 
-_config = missionConfigFile >> "ADENIS_LICENSES" >> _license >> "factions" >> str(playerSide);
+_config = missionConfigFile >> "ALYSIA_LICENSES" >> _license >> "factions" >> str(playerSide);
 if (!isClass(_config)) exitWith {
-	[format["Cette personne n'est pas autorisé à recevoir la license : <t color='#DF3A01'>%1</t>.", [_license] call AdenisClient_fnc_licenseGetName]] remoteExecCall ["AdenisClient_fnc_info", _from];
+	[format["Cette personne n'est pas autorisé à recevoir la license : <t color='#DF3A01'>%1</t>.", [_license] call AlysiaClient_fnc_licenseGetName]] remoteExecCall ["AlysiaClient_fnc_info", _from];
 };
 
 if ((_company getVariable ["company_bank", 0]) >= getNumber(_config >> "price")) then
 {
-	[g_company, false, getNumber(_config >> "price"), (_from getVariable "realname"), "Licence"] remoteExec ["AdenisServer_fnc_company_bank_handle", 2];
+	[g_company, false, getNumber(_config >> "price"), (_from getVariable "realname"), "Licence"] remoteExec ["AlysiaServer_fnc_company_bank_handle", 2];
 	missionNamespace setVariable [format["license_%1", _license], true];
 
 	[
@@ -28,9 +28,9 @@ if ((_company getVariable ["company_bank", 0]) >= getNumber(_config >> "price"))
 		[
 			"<t color='#045FB4'>%1</t> vous à payé la license : <t color='#DF3A01'>%2</t>.",
 			_from getVariable "realname",
-			[_license] call AdenisClient_fnc_licenseGetName
+			[_license] call AlysiaClient_fnc_licenseGetName
 		]
-	] call AdenisClient_fnc_info;
+	] call AlysiaClient_fnc_info;
 } else {
-	[format["Vous n'avez pas assez d'argent dans le compte de votre entreprise pour payer la license : <t color='#DF3A01'>%1</t>.", [_license] call AdenisClient_fnc_licenseGetName]] remoteExecCall ["AdenisClient_fnc_info", _from];
+	[format["Vous n'avez pas assez d'argent dans le compte de votre entreprise pour payer la license : <t color='#DF3A01'>%1</t>.", [_license] call AlysiaClient_fnc_licenseGetName]] remoteExecCall ["AlysiaClient_fnc_info", _from];
 };

@@ -6,15 +6,15 @@ private["_prison","_list", "_target", "_display"];
 _target = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
 
 if (isNull _target) exitWith {
-	["Cible invalide."] call AdenisClient_fnc_error;
+	["Cible invalide."] call AlysiaClient_fnc_error;
 };
 if (_target getVariable ["arrested", false]) exitWith {
-	["Cette personne est déjà en train de purger une peine."] call AdenisClient_fnc_error;
+	["Cette personne est déjà en train de purger une peine."] call AlysiaClient_fnc_error;
 };
 
-_prison = [_target] call AdenisClient_fnc_prison_near;
+_prison = [_target] call AlysiaClient_fnc_prison_near;
 if (isNull _prison) exitWith {
-	["Vous n'êtes près d'aucun lieu permettant l'arrestation."] call AdenisClient_fnc_error;
+	["Vous n'êtes près d'aucun lieu permettant l'arrestation."] call AlysiaClient_fnc_error;
 };
 
 g_interaction_target = _target;
@@ -25,7 +25,7 @@ createDialog "RscDisplayArrest";
 disableSerialization;
 _display = findDisplay 20000;
 
-_config = missionConfigFile >> "ADENIS_PRISONS" >> typeOf(_prison);
+_config = missionConfigFile >> "ALYSIA_PRISONS" >> typeOf(_prison);
 
 _list = _display displayCtrl 20006;
 lbClear _list;

@@ -18,4 +18,4 @@ if ((goggles player) != "") then
 };
 
 player addGoggles "G_Bandanna_blk";
-["Quelqu'un vous à mis une <t color='#FF8000'>baillon</t>."] call AdenisClient_fnc_info;
+["Quelqu'un vous à mis une <t color='#FF8000'>baillon</t>."] call AlysiaClient_fnc_info;

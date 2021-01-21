@@ -15,7 +15,7 @@ if ((isNull _player) || (isNull _from)) exitWith {};
 	"1:SERVER_PLAYER_TRADE_LOG:%1 [%2] received %3$ and %4 from %5 [%6]",
 	_player getVariable "realname",
 	getPlayerUID _player,
-	[_money] call AdenisClient_fnc_numberText,
+	[_money] call AlysiaClient_fnc_numberText,
 	_inventory,
 	_from getVariable "realname",
 	getPlayerUID _from

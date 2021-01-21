@@ -14,5 +14,5 @@ if (_vehicle in g_interaction_trade_keys_buildings) exitWith {};
 
 g_interaction_trade_active = true;
 g_interaction_trade_keys_buildings pushBack _vehicle;
-[] call AdenisClient_fnc_interactionMenu_action_trade_update;
+[] call AlysiaClient_fnc_interactionMenu_action_trade_update;
 g_interaction_trade_active = false;

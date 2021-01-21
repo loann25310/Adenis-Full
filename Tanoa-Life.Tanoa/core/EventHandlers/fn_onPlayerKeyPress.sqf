@@ -9,7 +9,7 @@ if (
 		((vehicle player) isKindOf "Man")
 	) || (
 		!((vehicle player) isKindOf "Man") &&
-		(getNumber(missionConfigFile >> "ADENIS_VEHICLES" >> typeOf(vehicle player) >> "forceFirstPersonView") isEqualTo 1)
+		(getNumber(missionConfigFile >> "ALYSIA_VEHICLES" >> typeOf(vehicle player) >> "forceFirstPersonView") isEqualTo 1)
 	))
 ) exitWith {true};
 
@@ -72,10 +72,10 @@ if (g_action_inUse) exitWith
 
 if (g_staff_spec && (_this isEqualTo 1)) exitWith
 {
-	[] call AdenisClient_fnc_APP_staff_spec_OFF;
+	[] call AlysiaClient_fnc_APP_staff_spec_OFF;
 	true;
 };
 
-if (_this in (actionKeys "ShowMap")) then {[] spawn AdenisEvent_fnc_onPlayerMapOpen};
+if (_this in (actionKeys "ShowMap")) then {[] spawn AlysiaEvent_fnc_onPlayerMapOpen};
 
 false;

@@ -6,7 +6,7 @@ private["_display", "_list", "_target"];
 _target = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
 
 if (isNull _target) exitWith {
-	["Cible invalide."] call AdenisClient_fnc_error;
+	["Cible invalide."] call AlysiaClient_fnc_error;
 };
 
 if (!(createDialog "RscDisplayCompanyCreate")) exitWith {};
@@ -24,7 +24,7 @@ lbClear _list;
 	_index = _list lbAdd getText(_x >> "name");
 	_list lbSetData [_index, (configName _x)];
 	_list lbSetPicture [_index, getText(_x >> "image")];
-} forEach ("true" configClasses (missionConfigFile >> "ADENIS_COMPANIES_TYPES"));
+} forEach ("true" configClasses (missionConfigFile >> "ALYSIA_COMPANIES_TYPES"));
 if ((lbSize _list) isEqualTo 0) then
 {
 	_list lbAdd "Aucun";

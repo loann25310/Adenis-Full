@@ -15,4 +15,4 @@ _history = switch (side _player) do
 };
 if (isNil "_history") exitWith {};
 
-[_history] remoteExec ["AdenisClient_fnc_APP_faction_leader_history", (owner _player), false];
+[_history] remoteExec ["AlysiaClient_fnc_APP_faction_leader_history", (owner _player), false];

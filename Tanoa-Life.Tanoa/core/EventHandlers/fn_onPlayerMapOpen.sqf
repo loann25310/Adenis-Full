@@ -52,7 +52,7 @@ if (g_staff_markers) then
 		} forEach _markers;
 	};
 } else {
-	_factionMarkers = missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "map_factions_markers";
+	_factionMarkers = missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "map_factions_markers";
 	if (isClass _factionMarkers) then
 	{
 		[getArray(_factionMarkers >> "shown")] spawn
@@ -62,7 +62,7 @@ if (g_staff_markers) then
 
 			_factions = [];
 			{
-				_factions pushBackUnique ([_x] call AdenisClient_fnc_strToSide);
+				_factions pushBackUnique ([_x] call AlysiaClient_fnc_strToSide);
 			} forEach ([_this, 0, [], [[]]] call BIS_fnc_param);
 
 			while {visibleMap} do
@@ -79,7 +79,7 @@ if (g_staff_markers) then
 							_new setMarkerColorLocal ([side _x, true] call BIS_fnc_sideColor);
 							_new setMarkerShapeLocal "ICON";
 							_new setMarkerTypeLocal "Mil_dot";
-							_new setMarkerTextLocal format["%1. %2", [side _x, (_x getVariable ["rank", 0]), true] call AdenisClient_fnc_rankToStr, _name];
+							_new setMarkerTextLocal format["%1. %2", [side _x, (_x getVariable ["rank", 0]), true] call AlysiaClient_fnc_rankToStr, _name];
 							_markers pushBack _new;
 						};
 					} else {
@@ -100,7 +100,7 @@ if (g_staff_markers) then
 		};
 	};
 
-	if (isClass(missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "map_coma_markers")) then
+	if (isClass(missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "map_coma_markers")) then
 	{
 		[] spawn
 		{

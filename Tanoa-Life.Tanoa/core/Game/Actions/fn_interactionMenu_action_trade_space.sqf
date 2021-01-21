@@ -4,7 +4,7 @@
 */
 
 {
-	[true, (_x select 0), (_x select 1)] call AdenisClient_fnc_handleInv;
+	[true, (_x select 0), (_x select 1)] call AlysiaClient_fnc_handleInv;
 } forEach ([_this, 0, [], [[]]] call BIS_fnc_param);
 
 [
@@ -15,4 +15,4 @@
 		+	"Vous avez reçu :<br/>%1",
 		[_this, 1, "", [""]] call BIS_fnc_param
 	]
-] call AdenisClient_fnc_info;
+] call AlysiaClient_fnc_info;

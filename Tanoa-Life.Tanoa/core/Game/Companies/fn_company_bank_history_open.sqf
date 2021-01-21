@@ -7,7 +7,7 @@ _history = [_this, 0, [], [[]]] call BIS_fnc_param;
 _company = [_this, 1, objNull, [objNull]] call BIS_fnc_param;
 
 if (isNull _company) exitWith {
-	["Cible invalide."] call AdenisClient_fnc_error;
+	["Cible invalide."] call AlysiaClient_fnc_error;
 };
 
 g_interaction_target = _company;
@@ -23,11 +23,11 @@ _display = findDisplay 69000;
 _list = _display displayCtrl 69002;
 lbClear _list;
 
-_list lbAdd format["Actuel : %1$", [(_company getVariable ["company_bank", 0])] call AdenisClient_fnc_numberText];
+_list lbAdd format["Actuel : %1$", [(_company getVariable ["company_bank", 0])] call AlysiaClient_fnc_numberText];
 _list lbSetPicture [0, "Alysia_Client_Texture\Data\interactions\player_to_company\action_book.paa"];
 
 {
-	_index = _list lbAdd format["%1$ le %2 de %3 (%4)", ([_x select 3] call AdenisClient_fnc_numberText), _x select 1, _x select 0, _x select 4];
+	_index = _list lbAdd format["%1$ le %2 de %3 (%4)", ([_x select 3] call AlysiaClient_fnc_numberText), _x select 1, _x select 0, _x select 4];
 	if ((_x select 2) isEqualTo 1) then {
 		_list lbSetPicture [_index, "Alysia_Client_Texture\Data\global\ope_plus.paa"];
 		_list lbSetColor [_index, [0,1,0,1]];
@@ -42,14 +42,14 @@ if ((lbSize _list) isEqualTo 1) then {
 	_list lbAdd "Historique vide";
 };
 
-_config_history = missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "companies" >> "history" >> "clean";
+_config_history = missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "companies" >> "history" >> "clean";
 if (isClass(_config_history)) then
 {
 	if (
 			(getNumber(_config_history >> "rank") <= (player getVariable ["rank",0])) &&
 			(
 				(getText(_config_history >> "license") isEqualTo "") ||
-				([getText(_config_history >> "license")] call AdenisClient_fnc_hasLicense)
+				([getText(_config_history >> "license")] call AlysiaClient_fnc_hasLicense)
 			)
 		) then {
 
@@ -58,7 +58,7 @@ if (isClass(_config_history)) then
 		_button = _display displayCtrl 69007;
 		_button buttonSetAction
 		"
-			[g_interaction_target, player] remoteExec ['AdenisServer_fnc_company_history_clear', 2];
+			[g_interaction_target, player] remoteExec ['AlysiaServer_fnc_company_history_clear', 2];
 			closeDialog 0;
 		";
 

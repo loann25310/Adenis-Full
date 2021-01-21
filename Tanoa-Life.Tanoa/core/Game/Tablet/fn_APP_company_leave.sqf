@@ -5,16 +5,16 @@
 private["_action", "_info"];
 
 if (isNull g_company) exitWith {
-	["Vous n'avez pas d'entreprise."] call AdenisClient_fnc_error;
+	["Vous n'avez pas d'entreprise."] call AlysiaClient_fnc_error;
 };
 
 _info = g_company getVariable "company_info";
 if (isNil "_info") exitWith {
-	["Impossible de récupérer les informations de l'entreprise."] call AdenisClient_fnc_error;
+	["Impossible de récupérer les informations de l'entreprise."] call AlysiaClient_fnc_error;
 };
 
 if ((_info select 1) isEqualTo (getPlayerUID player)) exitWith {
-	["Vous devez donner le DG de l'entreprise avant de pouvoir la quitter."] call AdenisClient_fnc_error;
+	["Vous devez donner le DG de l'entreprise avant de pouvoir la quitter."] call AlysiaClient_fnc_error;
 };
 
 _action =
@@ -30,11 +30,11 @@ _action =
 ] call BIS_fnc_guiMessage;
 if (_action) then
 {
-	if ([g_company, false, (getPlayerUID player)] call AdenisClient_fnc_company_member_handle) then
+	if ([g_company, false, (getPlayerUID player)] call AlysiaClient_fnc_company_member_handle) then
 	{
-		[] call AdenisClient_fnc_company_member_leave;
-		["MAIN"] spawn AdenisClient_fnc_tabletApp;
+		[] call AlysiaClient_fnc_company_member_leave;
+		["MAIN"] spawn AlysiaClient_fnc_tabletApp;
 	} else {
-		["Impossible de quitter l'entreprise.<br/>Vous n'en faites pas parti."] call AdenisClient_fnc_info;
+		["Impossible de quitter l'entreprise.<br/>Vous n'en faites pas parti."] call AlysiaClient_fnc_info;
 	};
 };

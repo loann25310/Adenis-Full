@@ -21,7 +21,7 @@
 						default {getMarkerPos "fourriere_marker_1"};
 					};
 
-					[_x, _storePos, false] call AdenisServer_fnc_garageVehicleStore;
+					[_x, _storePos, false] call AlysiaServer_fnc_garageVehicleStore;
 					diag_log "[CLEANUP] Vehicule";
 				} else {
 					if (_count isEqualTo -1) then
@@ -29,7 +29,7 @@
 						_info = _x getVariable "info";
 						if (!(isNil "_info")) then
 						{
-							_owner = [_info select 0] call AdenisClient_fnc_getPlayerFromUID;
+							_owner = [_info select 0] call AlysiaClient_fnc_getPlayerFromUID;
 							if (!(isNull _owner)) then
 							{
 								[
@@ -41,7 +41,7 @@
 										getText(configFile >> "CfgVehicles" >> typeof(_x) >> "displayName"),
 										mapGridPosition _x
 									]
-								] remoteExecCall ["AdenisClient_fnc_info", (owner _owner)];
+								] remoteExecCall ["AlysiaClient_fnc_info", (owner _owner)];
 							};
 						};
 					};

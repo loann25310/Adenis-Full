@@ -7,7 +7,7 @@ _marker = [_this, 0, "", [""]] call BIS_fnc_param;
 
 if (_marker isEqualTo "") exitWith {};
 
-_index = [_marker, g_dynamic_markers] call AdenisClient_fnc_index;
+_index = [_marker, g_dynamic_markers] call AlysiaClient_fnc_index;
 if (_index isEqualTo -1) then {
 	g_dynamic_markers pushBack [_marker, getMarkerPos _marker];
 } else {

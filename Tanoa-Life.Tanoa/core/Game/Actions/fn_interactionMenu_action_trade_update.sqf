@@ -8,10 +8,10 @@ disableSerialization;
 _display = findDisplay 10000;
 if (isNull _display) exitWith {};
 
-ctrlSetText[10008, ([g_cash] call AdenisClient_fnc_powerRemove)];
+ctrlSetText[10008, ([g_cash] call AlysiaClient_fnc_powerRemove)];
 
 _ctrl_list_inventory = _display displayCtrl 10019;
-if ([_ctrl_list_inventory, true, true] call AdenisClient_fnc_fillUpWithInv) then
+if ([_ctrl_list_inventory, true, true] call AlysiaClient_fnc_fillUpWithInv) then
 {
 	ctrlShow[10001, false];
 	ctrlShow[10002, false];
@@ -66,7 +66,7 @@ lbClear _ctrl_list_keys_buildings;
 	{
 		if (((_x getVariable ['house_owner', ['', '']]) select 0) isEqualTo (getPlayerUID player)) then
 		{
-			if (isClass(missionConfigFile >> "ADENIS_HOUSES" >> typeOf(_x) >> "factions" >> str(side g_interaction_target))) then
+			if (isClass(missionConfigFile >> "ALYSIA_HOUSES" >> typeOf(_x) >> "factions" >> str(side g_interaction_target))) then
 			{
 				_index = _ctrl_list_keys_buildings lbAdd getText(configFile >> "CfgVehicles" >> typeOf(_x) >> "displayName");
 				_ctrl_list_keys_buildings lbSetPicture [_index, getText(configFile >> "CfgVehicles" >> (typeOf _x) >> "picture")];
@@ -108,15 +108,15 @@ lbClear _ctrl_list_trade;
 
 if (g_interaction_trade_money > 0) then
 {
-	_index = _ctrl_list_trade lbAdd format["%1$", [g_interaction_trade_money] call AdenisClient_fnc_numberText];
+	_index = _ctrl_list_trade lbAdd format["%1$", [g_interaction_trade_money] call AlysiaClient_fnc_numberText];
 	_ctrl_list_trade lbSetPicture [_index, "Alysia_Client\Textures\Items_virtual\money.paa"];
 	_ctrl_list_trade lbSetData [_index, "money"];
 	_ctrl_list_trade lbSetTooltip [_index, _ctrl_list_trade lbText _index];
 };
 
 {
-	_index = _ctrl_list_trade lbAdd format["%1x %2", ([(_x select 1)] call AdenisClient_fnc_numberText), ([(_x select 0)] call AdenisClient_fnc_itemGetName)];
-	_ctrl_list_trade lbSetPicture [_index, ([(_x select 0)] call AdenisClient_fnc_itemGetImage)];
+	_index = _ctrl_list_trade lbAdd format["%1x %2", ([(_x select 1)] call AlysiaClient_fnc_numberText), ([(_x select 0)] call AlysiaClient_fnc_itemGetName)];
+	_ctrl_list_trade lbSetPicture [_index, ([(_x select 0)] call AlysiaClient_fnc_itemGetImage)];
 	_ctrl_list_trade lbSetData [_index, "inventory"];
 	_ctrl_list_trade lbSetValue [_index, _forEachIndex];
 	_ctrl_list_trade lbSetTooltip [_index, _ctrl_list_trade lbText _index];

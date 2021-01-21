@@ -228,7 +228,7 @@ class RscDisplayProcess: RscDisplayDefaultInteraction
 		class ACTION_BUTTON: RscButtonSilent
 		{
 			idc=53012;
-			action="closedialog 0;[g_interaction_process_type,parseNumber(ctrlText 53006),g_interaction_target] spawn AdenisClient_fnc_process_action;";
+			action="closedialog 0;[g_interaction_process_type,parseNumber(ctrlText 53006),g_interaction_target] spawn AlysiaClient_fnc_process_action;";
 			onMouseEnter="ctrlSetText[53011,""Alysia_Client_Texture\Data\process\action_process_select.paa""];ctrlShow[53008, false];((findDisplay 53000) displayCtrl 53009) ctrlSetBackgroundColor [1,1,1,1];((findDisplay 53000) displayCtrl 53010) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#000000'>Traiter</t>"";";
 			onMouseExit="ctrlSetText[53011,""Alysia_Client_Texture\Data\process\action_process.paa""];ctrlShow[53008, true];((findDisplay 53000) displayCtrl 53009) ctrlSetBackgroundColor [0,0,0,0.6];((findDisplay 53000) displayCtrl 53010) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#FFFFFF'>Traiter</t>"";";
 
@@ -357,7 +357,7 @@ class RscDisplayProcessMultiple: RscDisplayDefaultInteraction
 		class ACTION_BUTTON: RscButtonSilent
 		{
 			idc=53106;
-			action="[] call AdenisClient_fnc_process_choice_action;";
+			action="[] call AlysiaClient_fnc_process_choice_action;";
 			onMouseEnter="ctrlSetText[53105,""Alysia_Client_Texture\Data\process\action_process_select.paa""];ctrlShow[53103, false];((findDisplay 53100) displayCtrl 53102) ctrlSetBackgroundColor [1,1,1,1];((findDisplay 53100) displayCtrl 53104) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#000000'>Accéder</t>"";";
 			onMouseExit="ctrlSetText[53105,""Alysia_Client_Texture\Data\process\action_process.paa""];if (ctrlVisible 53105) then {ctrlShow[53103, true];};((findDisplay 53100) displayCtrl 53102) ctrlSetBackgroundColor [0,0,0,0.6];((findDisplay 53100) displayCtrl 53104) ctrlSetStructuredText parseText ""<t align='left' size='1.3' color='#FFFFFF'>Accéder</t>"";";
 

@@ -6,10 +6,10 @@ private["_item"];
 _item = [_this, 0, "", [""]] call BIS_fnc_param;
 
 if (_item isEqualTo "") exitWith {"UnknownItem"};
-if (!(isClass(missionConfigFile >> "ADENIS_ITEMS" >> _item))) exitWith
+if (!(isClass(missionConfigFile >> "ALYSIA_ITEMS" >> _item))) exitWith
 {
 	diag_log format["[ALYSIA:ERROR] Item [%1] not defined", _item];
 	"UnknownItem";
 };
 
-getText(missionConfigFile >> "ADENIS_ITEMS" >> _item >> "image");
+getText(missionConfigFile >> "ALYSIA_ITEMS" >> _item >> "image");

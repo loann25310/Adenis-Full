@@ -10,22 +10,22 @@
 		[
 			"search",
 			"Fouiller",
-			"[] spawn AdenisClient_fnc_skullMenu_search_open;",
+			"[] spawn AlysiaClient_fnc_skullMenu_search_open;",
 			"true"
 		],
 		[
 			"take",
 			"Récupérer le corps",
-			"[g_interaction_target] spawn AdenisClient_fnc_skullMenu_take;",
-			"(getNumber(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'skull_take') isEqualTo 1)"
+			"[g_interaction_target] spawn AlysiaClient_fnc_skullMenu_take;",
+			"(getNumber(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'skull_take') isEqualTo 1)"
 		],
 		[
 			"who",
 			"Identité",
-			"[g_interaction_target] spawn AdenisClient_fnc_skullMenu_who;",
+			"[g_interaction_target] spawn AlysiaClient_fnc_skullMenu_who;",
 			"
-				(getNumber(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'skull_who') isEqualTo 1) &&
-				((['adn'] call AdenisClient_fnc_itemCount) > 0)
+				(getNumber(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'skull_who') isEqualTo 1) &&
+				((['adn'] call AlysiaClient_fnc_itemCount) > 0)
 			"
 		]
 	],
@@ -33,4 +33,4 @@
 	"Alysia_Client_Texture\Data\skull\background.jpg",
 	true,
 	false
-] spawn AdenisClient_fnc_interactions_create;
+] spawn AlysiaClient_fnc_interactions_create;

@@ -1,4 +1,4 @@
-class ADENIS_MISSIONS
+class ALYSIA_MISSIONS
 {
 	class reb_1
 	{
@@ -217,7 +217,7 @@ class ADENIS_MISSIONS
 
 	class west_1
 	{
-		name="Convoi Garde de Malieu";
+		name="Convoi Guardia di Monti";
 		sides[]={"WEST"};
 		condition="((player getVariable ['rank',0]) >= 4)";
 		price=0;

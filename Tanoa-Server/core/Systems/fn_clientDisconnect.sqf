@@ -14,14 +14,14 @@ _name = _unit getVariable "realname";
 if (!(isNil "_name")) then
 {
 	private["_gear", "_pos", "_query"];
-	_gear = [_unit] call AdenisClient_fnc_getGear;
+	_gear = [_unit] call AlysiaClient_fnc_getGear;
 
 	_query = switch (side _unit) do
 	{
-		case west: {format["WEST_gear='%1',", ([_gear] call AdenisServer_fnc_mresArray)]};
-		case east: {format["EAST_gear='%1',", ([_gear] call AdenisServer_fnc_mresArray)]};
-		case independent: {format["GUER_gear='%1',", ([_gear] call AdenisServer_fnc_mresArray)]};
-		default {format["CIV_gear='%1',", ([_gear] call AdenisServer_fnc_mresArray)]};
+		case west: {format["WEST_gear='%1',", ([_gear] call AlysiaServer_fnc_mresArray)]};
+		case east: {format["EAST_gear='%1',", ([_gear] call AlysiaServer_fnc_mresArray)]};
+		case independent: {format["GUER_gear='%1',", ([_gear] call AlysiaServer_fnc_mresArray)]};
+		default {format["CIV_gear='%1',", ([_gear] call AlysiaServer_fnc_mresArray)]};
 	};
 
 	_pos = getPosATL _unit;
@@ -37,8 +37,8 @@ if (!(isNil "_name")) then
 			(getDir _unit),
 			(getFatigue _unit),
 			(_unit getVariable ["number", ""]),
-			([(_unit getVariable ["is_coma", false])] call AdenisServer_fnc_bool),
-			([(_unit getVariable ["bullet_check", false])] call AdenisServer_fnc_bool)
+			([(_unit getVariable ["is_coma", false])] call AlysiaServer_fnc_bool),
+			([(_unit getVariable ["bullet_check", false])] call AlysiaServer_fnc_bool)
 		], 1
 	] call ExtDB3_fnc_async;
 
@@ -58,7 +58,7 @@ if (!(isNil "_name")) then
 	} forEach (units (group _unit));
 
 	if (_unit getVariable ["is_coma", false]) then {
-		[_unit, _uid] call AdenisServer_fnc_logDeathDisconnect;
+		[_unit, _uid] call AlysiaServer_fnc_logDeathDisconnect;
 	};
 };
 

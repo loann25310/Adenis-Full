@@ -6,7 +6,7 @@ private["_bill", "_action"];
 
 _bill = missionNamespace getVariable "refuel_bill";
 if (isNil "_bill") exitWith {
-	["Vous n'avez pas de facture d'essence à regler."] call AdenisClient_fnc_error;
+	["Vous n'avez pas de facture d'essence à regler."] call AlysiaClient_fnc_error;
 };
 
 _action =
@@ -14,7 +14,7 @@ _action =
 	format
 	[
 		"Votre facture d'essence s'élève à <t color='#8cff9b'>%1</t>$.<br/><br/>Désirez-vous payer maintenant ?",
-		[_bill] call AdenisClient_fnc_numberText
+		[_bill] call AlysiaClient_fnc_numberText
 	],
 	"Station service",
 	"Oui",
@@ -34,18 +34,18 @@ if (_action) then
 	{
 		if (_bill > g_atm) exitWith
 		{
-			["Vous n'avez pas assez d'argent dans votre compte en banque pour payer votre plein."] call AdenisClient_fnc_error;
+			["Vous n'avez pas assez d'argent dans votre compte en banque pour payer votre plein."] call AlysiaClient_fnc_error;
 			_paid = false;
 		};
-		[false, _bill] call AdenisClient_fnc_handleATM;
+		[false, _bill] call AlysiaClient_fnc_handleATM;
 		_paid = true;
 	} else {
 		if (_bill > g_cash) exitWith
 		{
-			["Vous n'avez pas assez d'argent sur vous pour payer votre plein."] call AdenisClient_fnc_error;
+			["Vous n'avez pas assez d'argent sur vous pour payer votre plein."] call AlysiaClient_fnc_error;
 			_paid = false;
 		};
-		[false, _bill] call AdenisClient_fnc_handleCash;
+		[false, _bill] call AlysiaClient_fnc_handleCash;
 		_paid = true;
 	};
 
@@ -66,8 +66,8 @@ if (_action) then
 						_bill,
 						(_veh getVariable "info") select 2
 					], "GOUV", false
-				] remoteExecCall ["AdenisClient_fnc_phone_message_receive", [configName _x] call AdenisClient_fnc_strToSide];
-			} forEach ("getNumber(_x >> 'phone' >> 'receive_fuel_alert') isEqualTo 1" configClasses (missionConfigFile >> "ADENIS_FACTIONS"));
+				] remoteExecCall ["AlysiaClient_fnc_phone_message_receive", [configName _x] call AlysiaClient_fnc_strToSide];
+			} forEach ("getNumber(_x >> 'phone' >> 'receive_fuel_alert') isEqualTo 1" configClasses (missionConfigFile >> "ALYSIA_FACTIONS"));
 			missionNamespace setVariable ["refuel_prevent", false];
 		};
 	};

@@ -4,17 +4,17 @@
 */
 private["_display", "_list"];
 
-if (!([] call AdenisClient_fnc_hasPhone)) exitWith
+if (!([] call AlysiaClient_fnc_hasPhone)) exitWith
 {
-	["Vous n'avez pas de téléphone."] call AdenisClient_fnc_error;
+	["Vous n'avez pas de téléphone."] call AlysiaClient_fnc_error;
 	closeDialog 0;
 };
 
 if (missionNamespace getVariable ["calling", false]) exitWith {
-	["PHONE_CALLING"] spawn AdenisClient_fnc_tabletApp
+	["PHONE_CALLING"] spawn AlysiaClient_fnc_tabletApp
 };
 if ((missionNamespace getVariable ["calling_number", ""]) != "") exitWith {
-	['PHONE_CALLRECEIVING'] spawn AdenisClient_fnc_tabletApp;
+	['PHONE_CALLRECEIVING'] spawn AlysiaClient_fnc_tabletApp;
 };
 
 disableSerialization;

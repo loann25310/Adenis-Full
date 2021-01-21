@@ -156,7 +156,7 @@ class SETTINGS_FIX_CLOTHING: RscButtonMenu
 {
 	idc=SETTINGS_FIX_CLOTHING_IDC;
 	text="Fix tenue";
-	action="[] spawn AdenisClient_fnc_fixClothing;";
+	action="[] spawn AlysiaClient_fnc_fixClothing;";
 
 	x=0.324687 * safezoneW + safezoneX;
 	y=0.522 * safezoneH + safezoneY;

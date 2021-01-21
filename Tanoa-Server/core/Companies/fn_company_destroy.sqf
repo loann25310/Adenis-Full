@@ -18,7 +18,7 @@ deleteVehicle _object;
 
 [format["DELETE FROM companies WHERE plate='%1'", (_info select 3)], 1] call ExtDB3_fnc_async;
 
-_owner = [(_info select 1)] call AdenisClient_fnc_getPlayerFromUID;
+_owner = [(_info select 1)] call AlysiaClient_fnc_getPlayerFromUID;
 if (!(isNull _owner)) then {
-	["Votre entreprise a été <t color='#FF8000'>supprimée</t>."] remoteExecCall ["AdenisClient_fnc_info", _owner];
+	["Votre entreprise a été <t color='#FF8000'>supprimée</t>."] remoteExecCall ["AlysiaClient_fnc_info", _owner];
 };

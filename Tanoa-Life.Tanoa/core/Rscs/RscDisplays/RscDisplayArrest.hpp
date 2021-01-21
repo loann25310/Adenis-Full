@@ -246,7 +246,7 @@ class RscDisplayArrest: RscDisplayDefaultInteraction
 		class VALIDATE_BUTTON: RscButtonSilent
 		{
 			idc=20020;
-			action="[] call AdenisClient_fnc_prison_arrest_action;";
+			action="[] call AlysiaClient_fnc_prison_arrest_action;";
 			onMouseEnter="ctrlShow[20017, false];ctrlSetText[20018,""Alysia_Client_Texture\Data\interactions\player_to_player_basics\action_arrest_select.paa""];((findDisplay 20000) displayCtrl 20016) ctrlSetBackgroundColor [1,1,1,1];((findDisplay 20000) displayCtrl 20019) ctrlSetStructuredText parseText ""<t align='center' size='1.5' color='#000000'>Arrêter</t>"";";
 			onMouseExit="ctrlShow[20017, true];ctrlSetText[20018,""Alysia_Client_Texture\Data\interactions\player_to_player_basics\action_arrest.paa""];((findDisplay 20000) displayCtrl 20016) ctrlSetBackgroundColor [0,0,0,0.6];((findDisplay 20000) displayCtrl 20019) ctrlSetStructuredText parseText ""<t align='center' size='1.5' color='#FFFFFF'>Arrêter</t>"";";
 

@@ -25,7 +25,7 @@ if (g_connected && !g_staff_god && (_damage > 0)) then
 	{
 		if ((_source != player) && (_projectile != "") && ((currentWeapon _source) != "")) then
 		{
-			if (getNumber(missionConfigFile >> "ADENIS_ITEMS_ARMA" >> (currentWeapon _source) >> "disableDamage") isEqualTo 1) then {
+			if (getNumber(missionConfigFile >> "ALYSIA_ITEMS_ARMA" >> (currentWeapon _source) >> "disableDamage") isEqualTo 1) then {
 				_damage = 0;
 			} else {
 				if (!(player getVariable ["bullet_check", false])) then
@@ -33,13 +33,13 @@ if (g_connected && !g_staff_god && (_damage > 0)) then
 					player setVariable ["bullet_check", true, true];
 				};
 			};
-			if (((player distance _source) < 70) && (getNumber(missionConfigFile >> "ADENIS_ITEMS_ARMA" >> (currentWeapon _source) >> "knockOut") isEqualTo 1)) then {
-				[] spawn AdenisClient_fnc_knockedOut;
+			if (((player distance _source) < 70) && (getNumber(missionConfigFile >> "ALYSIA_ITEMS_ARMA" >> (currentWeapon _source) >> "knockOut") isEqualTo 1)) then {
+				[] spawn AlysiaClient_fnc_knockedOut;
 			};
-			if (((player distance _source) < 50) && (getNumber(missionConfigFile >> "ADENIS_ITEMS_ARMA" >> (currentWeapon _source) >> "paintball") isEqualTo 1)) then
+			if (((player distance _source) < 50) && (getNumber(missionConfigFile >> "ALYSIA_ITEMS_ARMA" >> (currentWeapon _source) >> "paintball") isEqualTo 1)) then
 			{
 				if ((player distance [5313.110352,11281.470703,0]) < 100) then {
-					[] spawn AdenisClient_fnc_knockedOut;
+					[] spawn AlysiaClient_fnc_knockedOut;
 				};
 			};
 		};
@@ -50,17 +50,17 @@ if (g_connected && !g_staff_god && (_damage > 0)) then
 		{
 			if (_x getVariable ["is_coma", false]) then
 			{
-				[_x, false] spawn AdenisClient_fnc_action_body_drop;
+				[_x, false] spawn AlysiaClient_fnc_action_body_drop;
 				true breakOut "main";
 			} else {
-				[_x] spawn AdenisClient_fnc_stopescort;
+				[_x] spawn AlysiaClient_fnc_stopescort;
 				true breakOut "main";
 			};
 		};
 	} forEach attachedObjects player;
 
-	[(_damage * -1), _source] call AdenisClient_fnc_handleBlood;
-	[(_damage / 10)] call AdenisClient_fnc_handleBleed;
+	[(_damage * -1), _source] call AlysiaClient_fnc_handleBlood;
+	[(_damage / 10)] call AlysiaClient_fnc_handleBleed;
 };
 
 0;

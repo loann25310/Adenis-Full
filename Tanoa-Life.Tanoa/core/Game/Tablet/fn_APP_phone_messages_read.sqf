@@ -12,7 +12,7 @@ if (isNull _display) exitWith {};
 [
 	"<t align='left'>Vos messages</t><t align='right'>%1/%2</t>",
 	count g_phone_messages,
-	getNumber(missionConfigFile >> "ADENIS_PHONE" >> "FORFAITS" >> g_phone_forfait >> "sms_max")
+	getNumber(missionConfigFile >> "ALYSIA_PHONE" >> "FORFAITS" >> g_phone_forfait >> "sms_max")
 ];
 
 _list = _display displayCtrl 8320;
@@ -21,7 +21,7 @@ lbClear _list;
 if (!(g_phone_messages isEqualTo [])) then
 {
 	{
-		_index = _list lbAdd format["%1 - %2", [(_x select 0)] call AdenisClient_fnc_phone_number_to_name, (_x select 1)];
+		_index = _list lbAdd format["%1 - %2", [(_x select 0)] call AlysiaClient_fnc_phone_number_to_name, (_x select 1)];
 		if ((_x select 2) isEqualTo 1) then {
 			_list lbSetPicture [_index, "Alysia_Client_Texture\Data\phone\read\sms_old.paa"];
 		} else {
@@ -31,6 +31,6 @@ if (!(g_phone_messages isEqualTo [])) then
 	} forEach (g_phone_messages);
 	_list lbSetCurSel -1;
 
-	[8325, true] call AdenisClient_fnc_tabletShow;
-	[8326, true] call AdenisClient_fnc_tabletShow;
+	[8325, true] call AlysiaClient_fnc_tabletShow;
+	[8326, true] call AlysiaClient_fnc_tabletShow;
 };

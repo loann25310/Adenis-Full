@@ -26,7 +26,7 @@ class STORE_CATEGORY_INFO: RscListbox
 {
 	idc=STORE_CATEGORY_INFO_IDC;
 	colorPictureRightSelected[]={0, 0, 0, 1};
-	onLBSelChanged="[(_this select 0) lbData (_this select 1)] spawn AdenisClient_fnc_tabletApp;";
+	onLBSelChanged="[(_this select 0) lbData (_this select 1)] spawn AlysiaClient_fnc_tabletApp;";
 	rowHeight=0.1;
 
 	x=0.412344 * safezoneW + safezoneX;
@@ -66,7 +66,7 @@ class STORE_BACK_IMAGE: RscPicture
 class STORE_BACK_BUTTON: RscButtonSilent
 {
 	idc=STORE_BACK_BUTTON_IDC;
-	action="[""STORE""] spawn AdenisClient_fnc_tabletApp;";
+	action="[""STORE""] spawn AlysiaClient_fnc_tabletApp;";
 	onMouseEnter="ctrlSetText[(ctrlIDC (_this select 0)) - 1,""Alysia_Client_Texture\Data\global\option_back_select.paa""];";
 	onMouseExit="ctrlSetText[(ctrlIDC (_this select 0)) - 1,""Alysia_Client_Texture\Data\global\option_back.paa""];";
 	tooltip="Retour";

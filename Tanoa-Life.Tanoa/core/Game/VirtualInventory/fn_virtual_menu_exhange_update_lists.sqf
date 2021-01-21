@@ -24,10 +24,10 @@ if (isNull _display) exitWith {};
 (_display displayCtrl 518) progressSetPosition (g_carryWeight / g_maxWeight);
 
 _ctrl_player = _display displayCtrl 505;
-[_ctrl_player, true, true] call AdenisClient_fnc_fillUpWithInv;
+[_ctrl_player, true, true] call AlysiaClient_fnc_fillUpWithInv;
 
 _trunk = g_interaction_target getVariable [g_interaction_target_trunk_type, []];
-_weight = [_trunk] call AdenisClient_fnc_weightGenerate;
+_weight = [_trunk] call AlysiaClient_fnc_weightGenerate;
 
 (_display displayCtrl 502) ctrlSetStructuredText parseText format
 [
@@ -51,9 +51,9 @@ lbClear _ctrl_vehicle;
 	_item = _x select 0;
 	_amount = _x select 1;
 
-	_index = _ctrl_vehicle lbAdd format["%1x %2", ([_amount] call AdenisClient_fnc_numberText), ([_item] call AdenisClient_fnc_itemGetName)];
+	_index = _ctrl_vehicle lbAdd format["%1x %2", ([_amount] call AlysiaClient_fnc_numberText), ([_item] call AlysiaClient_fnc_itemGetName)];
 	_ctrl_vehicle lbSetData [_index, _item];
-	_ctrl_vehicle lbSetPicture [_index, ([_item] call AdenisClient_fnc_itemGetImage)];
+	_ctrl_vehicle lbSetPicture [_index, ([_item] call AlysiaClient_fnc_itemGetImage)];
 } forEach _trunk;
 
 if ((lbSize _ctrl_vehicle) isEqualTo 0) then {

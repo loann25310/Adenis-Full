@@ -12,28 +12,28 @@ if (_sel isEqualTo -1) exitWith {};
 if (!g_interaction_target_trunk_store) exitWith {};
 
 _item = lbData[505, _sel];
-_storeType = getArray(missionConfigFile >> "ADENIS_ITEMS" >> _item >> "store");
+_storeType = getArray(missionConfigFile >> "ALYSIA_ITEMS" >> _item >> "store");
 if (!(_storeType isEqualTo []) && !(typeOf(g_interaction_target) in _storeType)) exitWith
 {
 	[
 		format
 		[
 			"<t color='#FF8000'>%1</t> ne peut pas être entreposer ici.",
-			[_item] call AdenisClient_fnc_itemGetName
+			[_item] call AlysiaClient_fnc_itemGetName
 		]
-	] call AdenisClient_fnc_error;
+	] call AlysiaClient_fnc_error;
 };
 
 if (g_interaction_target_trunk_transfer) exitWith {};
 g_interaction_target_trunk_transfer = true;
 
 if (_type) then {
-	_amount = [_item, ([_item] call AdenisClient_fnc_itemCount), ([(g_interaction_target getVariable [g_interaction_target_trunk_type, []])] call AdenisClient_fnc_weightGenerate), g_interaction_target_trunk_weight_max] call AdenisClient_fnc_calWeightDiff;
+	_amount = [_item, ([_item] call AlysiaClient_fnc_itemCount), ([(g_interaction_target getVariable [g_interaction_target_trunk_type, []])] call AlysiaClient_fnc_weightGenerate), g_interaction_target_trunk_weight_max] call AlysiaClient_fnc_calWeightDiff;
 } else {
 	_amount = 1;
 };
 
-[player, g_interaction_target, g_interaction_target_trunk_type, _item, _amount, false] call AdenisClient_fnc_transfertVirtualItem;
-[] call AdenisClient_fnc_virtual_menu_exhange_update_lists;
+[player, g_interaction_target, g_interaction_target_trunk_type, _item, _amount, false] call AlysiaClient_fnc_transfertVirtualItem;
+[] call AlysiaClient_fnc_virtual_menu_exhange_update_lists;
 
 g_interaction_target_trunk_transfer = false;

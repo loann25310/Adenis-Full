@@ -6,18 +6,18 @@ private["_handle", "_number", "_index"];
 
 _index = lbCurSel 8374;
 if (_index isEqualTo -1) exitWith {
-	["Vous n'avez pas sélectionné de contact."] call AdenisClient_fnc_error;
+	["Vous n'avez pas sélectionné de contact."] call AlysiaClient_fnc_error;
 };
 
 _number = lbData[8374, _index];
 if (_number isEqualTo "") exitWith
 {
-	["Ce contact n'a pas de numéro."] call AdenisClient_fnc_error;
+	["Ce contact n'a pas de numéro."] call AlysiaClient_fnc_error;
 	g_phone_contacts deleteAt _index;
-	["PHONE_CONTACTS"] spawn AdenisClient_fnc_tabletApp;
+	["PHONE_CONTACTS"] spawn AlysiaClient_fnc_tabletApp;
 };
 
-_handle = ['PHONE_CALL'] spawn AdenisClient_fnc_tabletApp;
+_handle = ['PHONE_CALL'] spawn AlysiaClient_fnc_tabletApp;
 waitUntil {(scriptDone _handle)};
 
 uiNamespace setVariable ["phone_call_number", _number];

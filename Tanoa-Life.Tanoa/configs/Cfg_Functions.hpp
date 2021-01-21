@@ -604,6 +604,7 @@ class CfgFunctions
 			class interactionMenu_action_license_give_action {};
 			class action_feed_open {};
 			class action_feed_execute {};
+			class acceptCall {};
 		};
 
 		class Welcome

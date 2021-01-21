@@ -16,16 +16,16 @@ if (isNull _display) exitWith {};
 _ressource = _list lbData _sel;
 if (_ressource isEqualTo "") exitWith {};
 
-_config = missionConfigFile >> "ADENIS_ITEMS" >> _ressource;
+_config = missionConfigFile >> "ALYSIA_ITEMS" >> _ressource;
 
-_price = [_ressource] call AdenisClient_fnc_market_getPrice;
+_price = [_ressource] call AlysiaClient_fnc_market_getPrice;
 _sync = missionNamespace getVariable [format["market_sync_%1", _ressource], _price];
 _diff = _price - _sync;
 
 (_display displayCtrl 8805) ctrlSetStructuredText parseText format
 [
 	"<t font='EtelkaMonospacePro' align='center' size='1.3' color='#00BFFF'>%1</t>",
-	([_ressource] call AdenisClient_fnc_itemGetName)
+	([_ressource] call AlysiaClient_fnc_itemGetName)
 ];
 
 (_display displayCtrl 8806) ctrlSetStructuredText parseText format
@@ -39,13 +39,13 @@ _diff = _price - _sync;
 	+	"<t align='center' color='#086A87'>- Informations - </t><br/>"
 	+	"<t align='left'>Légal</t><t align='right'>%4</t><br/>"
 	+	"</t>",
-	[_price] call AdenisClient_fnc_numberText,
-	[getNumber(_config >> "market" >> "max")] call AdenisClient_fnc_numberText,
-	[getNumber(_config >> "market" >> "min")] call AdenisClient_fnc_numberText,
+	[_price] call AlysiaClient_fnc_numberText,
+	[getNumber(_config >> "market" >> "max")] call AlysiaClient_fnc_numberText,
+	[getNumber(_config >> "market" >> "min")] call AlysiaClient_fnc_numberText,
 	if (getNumber(_config >> "illegal") isEqualTo 1) then {"Non"} else {"Oui"},
 	if (_diff >= 0) then {"+"} else {"-"},
 	if (_diff >= 0) then {"#3ADF00"} else {"#DF0101"},
-	[abs _diff] call AdenisClient_fnc_numberText
+	[abs _diff] call AlysiaClient_fnc_numberText
 ];
 
 missionNamespace setVariable ["market_sync_id", _sel];

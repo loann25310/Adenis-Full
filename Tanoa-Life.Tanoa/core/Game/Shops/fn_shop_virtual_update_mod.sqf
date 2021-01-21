@@ -28,4 +28,4 @@ if (_type isEqualTo 0) then
 
 g_shop_mod = _type;
 
-[] call AdenisClient_fnc_shop_virtual_update_list;
+[] call AlysiaClient_fnc_shop_virtual_update_list;

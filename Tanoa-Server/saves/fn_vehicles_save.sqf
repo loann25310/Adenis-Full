@@ -21,11 +21,11 @@ diag_log "[VEHICLES] Saving...";
 					(getPosATL _x) select 1,
 					(getPosATL _x) select 2,
 					(getDir _x),
-					([(_x getVariable ["Trunk", []])] call AdenisServer_fnc_mresArray),
+					([(_x getVariable ["Trunk", []])] call AlysiaServer_fnc_mresArray),
 					(_info select 0),
 					(_info select 2),
 					((fuel _x) * 100),
-					([([_x] call AdenisClient_fnc_getAllHitPointsDamage) select 2] call AdenisServer_fnc_mresArray),
+					([([_x] call AlysiaClient_fnc_getAllHitPointsDamage) select 2] call AlysiaServer_fnc_mresArray),
 					(_x getVariable ["refuel_type", ""])
 				], 1
 			] call ExtDB3_fnc_async;

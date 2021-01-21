@@ -12,7 +12,7 @@ if ((_type isEqualTo "") || (isNull _object) || (isNull _owner) || (_name isEqua
 
 _position = getPos _object;
 _dir = getDir _object;
-_require = getArray(missionConfigFile >> "ADENIS_COMPANIES_BUILDINGS" >> typeOf(_object) >> "construction");
+_require = getArray(missionConfigFile >> "ALYSIA_COMPANIES_BUILDINGS" >> typeOf(_object) >> "construction");
 _plate = str(round(random(999999)));
 
 [
@@ -27,9 +27,9 @@ _plate = str(round(random(999999)));
 		_position select 1,
 		_position select 2,
 		_dir,
-		[_require] call AdenisServer_fnc_mresArray
+		[_require] call AlysiaServer_fnc_mresArray
 	], 1
 ] call ExtDB3_fnc_async;
 
-gServer_companies pushBack ([_name, (getPlayerUID _owner), _type, _plate, (_owner getVariable ["realname", (name _owner)]), _position, _dir, _require] call AdenisServer_fnc_construction_init);
+gServer_companies pushBack ([_name, (getPlayerUID _owner), _type, _plate, (_owner getVariable ["realname", (name _owner)]), _position, _dir, _require] call AlysiaServer_fnc_construction_init);
 deleteVehicle _object;

@@ -8,7 +8,7 @@ disableSerialization;
 _display = uiNamespace getVariable ["tablet", displayNull];
 if (isNull _display) exitWith {};
 
-_max = getNumber(missionConfigFile >> "ADENIS_PHONE" >> "FORFAITS" >> g_phone_forfait >> "contacts_max");
+_max = getNumber(missionConfigFile >> "ALYSIA_PHONE" >> "FORFAITS" >> g_phone_forfait >> "contacts_max");
 
 (_display displayCtrl 8373) ctrlSetStructuredText parseText format
 [
@@ -29,11 +29,11 @@ if (count(g_phone_contacts) > 0) then
 	} forEach g_phone_contacts;
 	_list lbSetCurSel 0;
 
-	[[8375, 8378], true] call AdenisClient_fnc_tabletShow;
-	[8387, true] call AdenisClient_fnc_tabletShow;
-	[8388, true] call AdenisClient_fnc_tabletShow;
+	[[8375, 8378], true] call AlysiaClient_fnc_tabletShow;
+	[8387, true] call AlysiaClient_fnc_tabletShow;
+	[8388, true] call AlysiaClient_fnc_tabletShow;
 };
 
 if ((count g_phone_contacts) < _max) then {
-	[[8379, 8386], true] call AdenisClient_fnc_tabletShow;
+	[[8379, 8386], true] call AlysiaClient_fnc_tabletShow;
 };

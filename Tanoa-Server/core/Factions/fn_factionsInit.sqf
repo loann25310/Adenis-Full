@@ -11,7 +11,7 @@ diag_log "[FACTION] Setup";
 		case "WEST":
 		{
 			gServer_faction_WEST_bank = _x select 1;
-			gServer_faction_WEST_history = [(_x select 2)] call AdenisServer_fnc_mresToArray;
+			gServer_faction_WEST_history = [(_x select 2)] call AlysiaServer_fnc_mresToArray;
 			gServer_faction_WEST_bank_HISTORY = gServer_faction_WEST_bank;
 			publicVariable "gServer_faction_WEST_bank";
 			true;
@@ -19,7 +19,7 @@ diag_log "[FACTION] Setup";
 		case "GUER":
 		{
 			gServer_faction_GUER_bank = _x select 1;
-			gServer_faction_GUER_history = [(_x select 2)] call AdenisServer_fnc_mresToArray;
+			gServer_faction_GUER_history = [(_x select 2)] call AlysiaServer_fnc_mresToArray;
 			gServer_faction_GUER_bank_HISTORY = gServer_faction_GUER_bank;
 			publicVariable "gServer_faction_GUER_bank";
 			true;
@@ -27,7 +27,7 @@ diag_log "[FACTION] Setup";
 		case "EAST":
 		{
 			gServer_faction_EAST_bank = _x select 1;
-			gServer_faction_EAST_history = [(_x select 2)] call AdenisServer_fnc_mresToArray;
+			gServer_faction_EAST_history = [(_x select 2)] call AlysiaServer_fnc_mresToArray;
 			gServer_faction_EAST_bank_HISTORY = gServer_faction_EAST_bank;
 			publicVariable "gServer_faction_EAST_bank";
 			true;
@@ -35,7 +35,7 @@ diag_log "[FACTION] Setup";
 		case "CIV":
 		{
 			gServer_faction_CIV_bank = _x select 1;
-			gServer_faction_CIV_history = [(_x select 2)] call AdenisServer_fnc_mresToArray;
+			gServer_faction_CIV_history = [(_x select 2)] call AlysiaServer_fnc_mresToArray;
 			gServer_faction_CIV_bank_HISTORY = gServer_faction_CIV_bank;
 			publicVariable "gServer_faction_CIV_bank";
 			true;

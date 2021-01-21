@@ -9,13 +9,13 @@ _num = floor([_this, 2, 0, [0]] call BIS_fnc_param);
 
 if ((_item isEqualTo "") || (_num isEqualTo 0)) exitWith {false};
 
-_config = missionConfigFile >> "ADENIS_ITEMS" >> _item;
+_config = missionConfigFile >> "ALYSIA_ITEMS" >> _item;
 if (!isClass(_config)) exitWith {false};
 
 _return = false;
 if (_type) then
 {
-	_num = [_item, _num, g_carryWeight, g_maxWeight] call AdenisClient_fnc_calWeightDiff;
+	_num = [_item, _num, g_carryWeight, g_maxWeight] call AlysiaClient_fnc_calWeightDiff;
 	if (_num > 0) then
 	{
 		missionNamespace setVariable [format["inv_%1", _item], ((missionNamespace getVariable [format["inv_%1", _item], 0]) + _num)];
@@ -50,8 +50,8 @@ if (_return) then
 
 	_list = _display displayCtrl 900;
 
-	_index = _list lbAdd format["%1 %2 x %3", if (_type) then {"+"} else {"-"}, ([_num] call AdenisClient_fnc_numberText), ([_item] call AdenisClient_fnc_itemGetName)];
-	_list lbSetPicture [_index, ([_item] call AdenisClient_fnc_itemGetImage)];
+	_index = _list lbAdd format["%1 %2 x %3", if (_type) then {"+"} else {"-"}, ([_num] call AlysiaClient_fnc_numberText), ([_item] call AlysiaClient_fnc_itemGetName)];
+	_list lbSetPicture [_index, ([_item] call AlysiaClient_fnc_itemGetImage)];
 	_list lbSetValue [_index, (time + 4)];
 
 	if (_loop) then

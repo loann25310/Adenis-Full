@@ -824,9 +824,9 @@ _colonelLaptop = ["Land_Laptop_unfolded_scripted_F","[7358.354004,8533.303711,4.
 
 //ATM
 {
-	if (isClass(missionConfigFile >> "ADENIS_ATM" >> typeOf(_x))) then
+	if (isClass(missionConfigFile >> "ALYSIA_ATM" >> typeOf(_x))) then
 	{
-		_config_ATM = missionConfigFile >> "ADENIS_ATM" >> typeOf(_x);
+		_config_ATM = missionConfigFile >> "ALYSIA_ATM" >> typeOf(_x);
 		if (isClass(_config_ATM >> "marker") && (_x getVariable ["alysia_marker", true])) then
 		{
 			_marker = createMarkerLocal [format["atm_marker_%1", _forEachIndex], (getPos _x)];
@@ -891,9 +891,9 @@ if (playerSide isEqualTo civilian) then
 			format
 			[
 				"<img image='Alysia_Client_Texture\Data\actions_menu\license.paa'/> Acheter <t color='#FF0000'>%1</t> (<t color='#8cff9b'>%2</t>$)",
-				['rebelle_1'] call AdenisClient_fnc_licenseGetName,
-				[['rebelle_1'] call AdenisClient_fnc_licenseGetPrice] call AdenisClient_fnc_numberText
-			],AdenisClient_fnc_buyLicense,"rebelle_1",0,false,false,"",'vehicle player == player && player distance _target < 4 && !(["rebelle_1"] call AdenisClient_fnc_hasLicense)'
+				['rebelle_1'] call AlysiaClient_fnc_licenseGetName,
+				[['rebelle_1'] call AlysiaClient_fnc_licenseGetPrice] call AlysiaClient_fnc_numberText
+			],AlysiaClient_fnc_buyLicense,"rebelle_1",0,false,false,"",'vehicle player == player && player distance _target < 4 && !(["rebelle_1"] call AlysiaClient_fnc_hasLicense)'
 		];
 	} forEach ([rebel_stand_1, rebel_stand_2]);
 } else {
@@ -993,7 +993,7 @@ _colonelScreen_3 setVariable ["cam_data", [["colonel_military_cam_3", [7363.9,84
 	_x addAction ["<img image='lyeed_IMG\data\actions_menu\camera.paa'/> <t color='#01DF01'>Allumer</t>",
 	{
 		if (!isPipEnabled) exitWith {
-			["Vous devez activer le Picture to Picture (PIP) dans vos options Arma 3 pour pouvoir accéder à la retransmission des écrans."] call AdenisClient_fnc_error;
+			["Vous devez activer le Picture to Picture (PIP) dans vos options Arma 3 pour pouvoir accéder à la retransmission des écrans."] call AlysiaClient_fnc_error;
 		};
 		(_this select 0) say3D "tv_bip";
 		{

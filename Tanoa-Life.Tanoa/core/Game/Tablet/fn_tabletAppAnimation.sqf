@@ -34,7 +34,7 @@ if (_old_app isEqualTo "") exitWith
 	} forEach _new_idcs;
 };
 
-if ((_old_app isEqualTo _new_app) || !(profileNamespace getVariable ["ADENIS_tablet_animation", true])) exitWith
+if ((_old_app isEqualTo _new_app) || !(profileNamespace getVariable ["ALYSIA_tablet_animation", true])) exitWith
 {
 	{
 		ctrlShow[_x, false];

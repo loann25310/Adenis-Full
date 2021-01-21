@@ -7,32 +7,32 @@ _veh = [_this, 0, ObjNull, [ObjNull]] call BIS_fnc_param;
 _station = [_this, 1, ObjNull, [ObjNull]] call BIS_fnc_param;
 
 _type = player getVariable ["refuel_type", ""];
-if ((isNull _station) || (isNull _veh)) exitWith {["Plein impossible.<br/>Cible invalide"] call AdenisClient_fnc_error};
-if (_type isEqualTo "") exitWith {["Plein impossible.<br/>Impossible de trouver l'essence que vous avez selectionné."] call AdenisClient_fnc_error};
-if ((fuel _veh) isEqualTo 1) exitWith {["Plein impossible.<br/>Le réservoir du véhicule est déjà plein."] call AdenisClient_fnc_error};
-if (isEngineOn _veh) exitWith {["Plein impossible.<br/>Le véhicule doit avoir le moteur éteint pour effectuer un plein."] call AdenisClient_fnc_error};
-if (((locked _veh) isEqualTo 2)) exitWith {["Plein impossible.<br/>Le véhicule doit être ouvert pour effectuer un plein."] call AdenisClient_fnc_error};
-if (_veh getVariable ["refuel_inUse", false]) exitWith {["Plein impossible.<br/>Une autre personne effectue actuellement le plein du véhicule."] call AdenisClient_fnc_error};
+if ((isNull _station) || (isNull _veh)) exitWith {["Plein impossible.<br/>Cible invalide"] call AlysiaClient_fnc_error};
+if (_type isEqualTo "") exitWith {["Plein impossible.<br/>Impossible de trouver l'essence que vous avez selectionné."] call AlysiaClient_fnc_error};
+if ((fuel _veh) isEqualTo 1) exitWith {["Plein impossible.<br/>Le réservoir du véhicule est déjà plein."] call AlysiaClient_fnc_error};
+if (isEngineOn _veh) exitWith {["Plein impossible.<br/>Le véhicule doit avoir le moteur éteint pour effectuer un plein."] call AlysiaClient_fnc_error};
+if (((locked _veh) isEqualTo 2)) exitWith {["Plein impossible.<br/>Le véhicule doit être ouvert pour effectuer un plein."] call AlysiaClient_fnc_error};
+if (_veh getVariable ["refuel_inUse", false]) exitWith {["Plein impossible.<br/>Une autre personne effectue actuellement le plein du véhicule."] call AlysiaClient_fnc_error};
 
-_maxDistance = getNumber(missionConfigFile >> "ADENIS_FUEL_STATION" >> typeOf(_station) >> "max_distance_allowed");
+_maxDistance = getNumber(missionConfigFile >> "ALYSIA_FUEL_STATION" >> typeOf(_station) >> "max_distance_allowed");
 if ((player distance _station) > _maxDistance) exitWith {
-	["Plein impossible.<br/>Vous êtes trop loin de la station."] call AdenisClient_fnc_error;
+	["Plein impossible.<br/>Vous êtes trop loin de la station."] call AlysiaClient_fnc_error;
 };
 
-_currentLiters = [_station, _type] call AdenisClient_fnc_fuelStation_fuel_getStock;
+_currentLiters = [_station, _type] call AlysiaClient_fnc_fuelStation_fuel_getStock;
 if (_currentLiters < 1) exitWith
 {
 	[
 		format
 		[
 			"Cette station ne possède pas assez de <t color='#3ADF00'>%1</t> pour commencer un plein.<br/>Il faut au minimum 1 litre et il en reste <t color='#FF8000'>%2</t>.",
-			getText(missionConfigFile >> "ADENIS_FUEL" >> _type >> "name"),
+			getText(missionConfigFile >> "ALYSIA_FUEL" >> _type >> "name"),
 			_currentLiters
 		]
-	] call AdenisClient_fnc_error;
+	] call AlysiaClient_fnc_error;
 };
 
-if (_station getVariable ["refuel_inUse", false]) exitWith {["Plein impossible.<br/>Quelqu'un est déjà en train d'utiliser la pompe."] call AdenisClient_fnc_error};
+if (_station getVariable ["refuel_inUse", false]) exitWith {["Plein impossible.<br/>Quelqu'un est déjà en train d'utiliser la pompe."] call AlysiaClient_fnc_error};
 _station setVariable ["refuel_inUse", true, true];
 
 if (!(createDialog "RscDisplayFuelRefuel")) exitWith {};
@@ -41,12 +41,12 @@ disableSerialization;
 _display = findDisplay 17000;
 if (isNull _display) exitWith {};
 
-(_display displayCtrl 17006) ctrlSetStructuredText parseText getText(missionConfigFile >> "ADENIS_FUEL" >> _type >> "name");
+(_display displayCtrl 17006) ctrlSetStructuredText parseText getText(missionConfigFile >> "ALYSIA_FUEL" >> _type >> "name");
 _veh setVariable ["refuel_inUse", true, true];
 
 _bill = 0;
 _liters = 0;
-_fuelmax = getNumber(missionConfigFile >> "ADENIS_VEHICLES" >> (typeOf _veh) >> "fuelCapacity");
+_fuelmax = getNumber(missionConfigFile >> "ALYSIA_VEHICLES" >> (typeOf _veh) >> "fuelCapacity");
 _fill = false;
 _distanceBegin = (player distance _veh) + 2;
 
@@ -59,16 +59,16 @@ _progressLiters = switch (true) do
 while {true} do
 {
 	if ((player distance _station) > _maxDistance) exitWith {
-		["Plein interrompu.<br/>Vous êtes trop loin de la station."] call AdenisClient_fnc_error;
+		["Plein interrompu.<br/>Vous êtes trop loin de la station."] call AlysiaClient_fnc_error;
 	};
 	if ((player distance _veh) > _distanceBegin) exitWith {
-		["Plein interrompu.<br/>Vous êtes trop loin du véhicule."] call AdenisClient_fnc_error;
+		["Plein interrompu.<br/>Vous êtes trop loin du véhicule."] call AlysiaClient_fnc_error;
 	};
 	if ((locked _veh) isEqualTo 2) exitWith {
-		["Plein interrompu.<br/>Le véhicule doit rester dévérrouillé pendant le plein."] call AdenisClient_fnc_error;
+		["Plein interrompu.<br/>Le véhicule doit rester dévérrouillé pendant le plein."] call AlysiaClient_fnc_error;
 	};
 	if (isEngineOn _veh) exitWith {
-		["Plein interrompu.<br/>Le véhicule doit garder le moteur éteint pendant le plein."] call AdenisClient_fnc_error;
+		["Plein interrompu.<br/>Le véhicule doit garder le moteur éteint pendant le plein."] call AlysiaClient_fnc_error;
 	};
 
 	if (((fuel _veh) + (_liters / _fuelmax)) >= 1) exitWith {_fill = true};
@@ -76,17 +76,17 @@ while {true} do
 	if ((isNull _display) && (_liters > 0)) exitWith {_fill = true};
 
 	if (isNull _display) exitWith {
-		["Plein interrompu.<br/>Fenêtre d'intéraction fermée."] call AdenisClient_fnc_error;
+		["Plein interrompu.<br/>Fenêtre d'intéraction fermée."] call AlysiaClient_fnc_error;
 	};
 
 	_liters = _liters + _progressLiters;
 	_station setVariable [_type, (_currentLiters - _liters)];
-	_bill = _bill + (([_station, _type] call AdenisClient_fnc_fuelStation_fuel_getPrice) * _progressLiters);
+	_bill = _bill + (([_station, _type] call AlysiaClient_fnc_fuelStation_fuel_getPrice) * _progressLiters);
 
 	(_display displayCtrl 17008) ctrlSetStructuredText parseText format
 	[
 		"<t align='center' size='2'>%1</t>",
-		[_bill] call AdenisClient_fnc_numberText
+		[_bill] call AlysiaClient_fnc_numberText
 	];
 
 	(_display displayCtrl 17010) ctrlSetStructuredText parseText format
@@ -111,35 +111,35 @@ if (dialog) then {closeDialog 0};
 if (_fill) then
 {
 	private "_can_pay";
-	_config_bank = missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "bank_faction";
+	_config_bank = missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "bank_faction";
 	if (isClass(_config_bank) && (getNumber(_config_bank >> "payFuel") isEqualTo 1)) then
 	{
-		if ([false, _bill] call AdenisClient_fnc_atmFactionHandle) then
+		if ([false, _bill] call AlysiaClient_fnc_atmFactionHandle) then
 		{
-			[format["<t color='#8cff9b'>%1</t>$ ont été prélevés du compte en banque de votre faction pour payer la facture.", [_bill] call AdenisClient_fnc_numberText], "buy"] call AdenisClient_fnc_info;
+			[format["<t color='#8cff9b'>%1</t>$ ont été prélevés du compte en banque de votre faction pour payer la facture.", [_bill] call AlysiaClient_fnc_numberText], "buy"] call AlysiaClient_fnc_info;
 			_can_pay = true;
 		} else {
-			["Vous n'avez pas assez d'argent dans le compte en banque de votre faction pour payer la facture.<br/>Le plein de votre véhicule n'a pas été fait."] call AdenisClient_fnc_error;
+			["Vous n'avez pas assez d'argent dans le compte en banque de votre faction pour payer la facture.<br/>Le plein de votre véhicule n'a pas été fait."] call AlysiaClient_fnc_error;
 			_can_pay = false;
 		};
 	} else {
-		if (getNumber(missionConfigFile >> "ADENIS_FUEL_STATION" >> typeOf(_station) >> "payDirect") isEqualTo 1) then
+		if (getNumber(missionConfigFile >> "ALYSIA_FUEL_STATION" >> typeOf(_station) >> "payDirect") isEqualTo 1) then
 		{
 			if (_bill <= g_atm) then
 			{
-				[false, _bill, "Station Essence"] call AdenisClient_fnc_handleATM;
-				[format["<t color='#8cff9b'>%1</t>$ ont été prélevés de votre compte en banque.", [_bill] call AdenisClient_fnc_numberText], "buy"] call AdenisClient_fnc_info;
+				[false, _bill, "Station Essence"] call AlysiaClient_fnc_handleATM;
+				[format["<t color='#8cff9b'>%1</t>$ ont été prélevés de votre compte en banque.", [_bill] call AlysiaClient_fnc_numberText], "buy"] call AlysiaClient_fnc_info;
 				_can_pay = true;
 			} else {
 				_can_pay = false;
-				["Vous n'avez pas assez d'argent dans votre compte en banque pour payer la facture.<br/>Le plein de votre véhicule n'a pas été fait."] call AdenisClient_fnc_error;
+				["Vous n'avez pas assez d'argent dans votre compte en banque pour payer la facture.<br/>Le plein de votre véhicule n'a pas été fait."] call AlysiaClient_fnc_error;
 			};
 		} else {
 			missionNamespace setVariable ["refuel_bill", (missionNamespace getVariable ["refuel_bill", 0]) + _bill];
 			missionNamespace setVariable ["refuel_vehicle", _veh];
 			missionNamespace setVariable ["refuel_prevent", false];
-			[format["Votre facture s'élève à <t color='#8cff9b'>%1</t>$.<br/>Allez dans la station service pour payer.", [_bill] call AdenisClient_fnc_numberText]] call AdenisClient_fnc_info;
-			[_veh, _station, _maxDistance] spawn AdenisClient_fnc_fuelStation_refuel_payment_track;
+			[format["Votre facture s'élève à <t color='#8cff9b'>%1</t>$.<br/>Allez dans la station service pour payer.", [_bill] call AlysiaClient_fnc_numberText]] call AlysiaClient_fnc_info;
+			[_veh, _station, _maxDistance] spawn AlysiaClient_fnc_fuelStation_refuel_payment_track;
 			_can_pay = true;
 		};
 	};
@@ -147,7 +147,7 @@ if (_fill) then
 	if (_can_pay) then
 	{
 		_station setVariable [_type, (_currentLiters - _liters), true];
-		[true, _veh, _liters, _type] call AdenisClient_fnc_handleFuel;
+		[true, _veh, _liters, _type] call AlysiaClient_fnc_handleFuel;
 	} else {
 		_station setVariable [_type, _currentLiters];
 	};

@@ -11,12 +11,12 @@ if (!(isNull _apply_target)) then
 {
 	if (_apply_busy_to_target) then
 	{
-		[] remoteExecCall ["AdenisClient_fnc_phone_call_busy", _apply_target];
+		[] remoteExecCall ["AlysiaClient_fnc_phone_call_busy", _apply_target];
 	};
 
 	if (_apply_end_to_target) then
 	{
-		[false, false] remoteExecCall ["AdenisClient_fnc_APP_phone_call_hangup", _apply_target];
+		[false, false] remoteExecCall ["AlysiaClient_fnc_APP_phone_call_hangup", _apply_target];
 	};
 };
 
@@ -29,5 +29,5 @@ if ((missionNamespace getVariable ["calling_number", ""]) != "") then {
 };
 
 if (g_app isEqualTo "MAIN") then {
-	["MAIN"] spawn AdenisClient_fnc_tabletApp;
+	["MAIN"] spawn AlysiaClient_fnc_tabletApp;
 };

@@ -146,7 +146,7 @@ class RscDisplayInteraction: RscDisplayDefaultInteraction
 		class OPTION_REFRESH_BUTTON: RscButtonSilent
 		{
 			idc=OPTION_REFRESH_BUTTON_IDC;
-			action="[] call AdenisClient_fnc_interactions_recall;";
+			action="[] call AlysiaClient_fnc_interactions_recall;";
 			tooltip="Rafraichir";
 			onMouseEnter="((findDisplay 5000) displayCtrl 5004) ctrlSetBackgroundColor [1,1,1,1];ctrlSetText[5005,""Alysia_Client_Texture\Data\global\option_refresh_select.paa""];ctrlShow[5003, false];";
 			onMouseExit="((findDisplay 5000) displayCtrl 5004) ctrlSetBackgroundColor [0,0,0,0.6];ctrlSetText[5005,""Alysia_Client_Texture\Data\global\option_refresh.paa""];ctrlShow[5003, true];";

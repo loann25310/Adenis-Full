@@ -21,7 +21,7 @@ _data = call compile _data;
 
 _object = nearestObject [(_data select 1), (_data select 0)];
 _info = _object getVariable "company_info";
-_config = missionConfigFile >> "ADENIS_COMPANIES_TYPES" >> (_info select 2);
+_config = missionConfigFile >> "ALYSIA_COMPANIES_TYPES" >> (_info select 2);
 
 (_display displayCtrl 13005) ctrlSetStructuredText parseText format["<t align='center'>%1</t>", (_info select 0)];
 
@@ -44,7 +44,7 @@ lbClear _list;
 
 {
 	private "_number";
-	_res = [_x, gServer_phone_annuaire] call AdenisClient_fnc_index;
+	_res = [_x, gServer_phone_annuaire] call AlysiaClient_fnc_index;
 	if (_res isEqualTo -1) then {
 		_number = "Inconnu";
 	} else {
@@ -82,13 +82,13 @@ if ("ItemGPS" in (assignedItems player)) then
 	_ctrl_map ctrlMapAnimAdd [0, 0.09, _object];
 	ctrlMapAnimCommit _ctrl_map;
 
-	[13004, true] call AdenisClient_fnc_tabletShow;
-	[13002, false] call AdenisClient_fnc_tabletShow;
+	[13004, true] call AlysiaClient_fnc_tabletShow;
+	[13002, false] call AlysiaClient_fnc_tabletShow;
 
 	waitUntil {((isNull _display) || (g_app != "COMPAGNIES") || ((lbCurSel _list) != _sel))};
 
 	deleteMarkerLocal _marker;
 } else {
-	[13002, true] call AdenisClient_fnc_tabletShow;
-	[13004, false] call AdenisClient_fnc_tabletShow;
+	[13002, true] call AlysiaClient_fnc_tabletShow;
+	[13004, false] call AlysiaClient_fnc_tabletShow;
 };

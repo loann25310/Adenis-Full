@@ -33,6 +33,6 @@ setDate [(_queryResult select 0), (_queryResult select 1), (_queryResult select 
 gServer_year = _queryResult select 0;
 publicVariable "gServer_year";
 
-diag_log format["Date : %1", [] call AdenisClient_fnc_strDate];
+diag_log format["Date : %1", [] call AlysiaClient_fnc_strDate];
 
 diag_log "[TIME] Ready";

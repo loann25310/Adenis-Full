@@ -14,4 +14,4 @@ _target setVariable ["launder", true, true];
 uiSleep(round(random(20) * 60) + (4 * 60));
 _target setVariable ["launder", false, true];
 
-[_target, true, _amount, _from, _reason] call AdenisServer_fnc_company_bank_handle;
+[_target, true, _amount, _from, _reason] call AlysiaServer_fnc_company_bank_handle;

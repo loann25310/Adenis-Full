@@ -9,9 +9,9 @@ if (_classname isEqualTo "") exitWith {
 	0;
 };
 
-if (!(isClass(missionConfigFile >> "ADENIS_VEHICLES" >> _classname))) exitWith {
+if (!(isClass(missionConfigFile >> "ALYSIA_VEHICLES" >> _classname))) exitWith {
 	diag_log format["[ALYSIA:ERROR] Vehicle with classname %1 does not declare in Vehicle config", _classname];
 	0;
 };
 
-getNumber(missionConfigFile >> "ADENIS_VEHICLES" >> _classname >> "inventory");
+getNumber(missionConfigFile >> "ALYSIA_VEHICLES" >> _classname >> "inventory");

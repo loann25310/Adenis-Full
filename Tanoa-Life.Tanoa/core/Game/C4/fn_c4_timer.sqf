@@ -24,8 +24,8 @@ if (_type) then
 	};
 };
 
-[g_interaction_target, "c4_bip", 3] call AdenisClient_fnc_globalSay3d;
+[g_interaction_target, "c4_bip", 3] call AlysiaClient_fnc_globalSay3d;
 
-[] call AdenisClient_fnc_c4_update;
+[] call AlysiaClient_fnc_c4_update;
 
 g_action_inUse = false;

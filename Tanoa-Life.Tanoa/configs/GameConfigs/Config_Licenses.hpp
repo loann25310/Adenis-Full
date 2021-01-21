@@ -1,4 +1,4 @@
-class ADENIS_LICENSES
+class ALYSIA_LICENSES
 {
 	class rebelle_1
 	{

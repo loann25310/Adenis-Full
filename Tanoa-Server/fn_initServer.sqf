@@ -52,25 +52,25 @@ independent setFriend [west, 1];
 
 if (!(["tanoa", "SQL", "TEXT2"] call ExtDB3_fnc_init)) exitWith {};
 
-addMissionEventHandler ["HandleDisconnect", {_this call AdenisServer_fnc_clientDisconnect}];
+addMissionEventHandler ["HandleDisconnect", {_this call AlysiaServer_fnc_clientDisconnect}];
 
-[] call AdenisServer_fnc_dynamicMarkers_init;
-[] call AdenisServer_fnc_phoneInit;
-[] call AdenisServer_fnc_laboratories_init;
-[] call AdenisServer_fnc_vehicles_init;
-[] call AdenisServer_fnc_market_init;
-[] call AdenisServer_fnc_house_init;
-[] call AdenisServer_fnc_factionsInit;
-[] call AdenisServer_fnc_buildings_init;
-[] call AdenisServer_fnc_companies_init;
-[] call AdenisServer_fnc_atm_init;
-[] call AdenisServer_fnc_taxes_init;
-[] call AdenisServer_fnc_fuel_init;
-[] call AdenisServer_fnc_time_init;
-[] call AdenisServer_fnc_cleanup_init;
+[] call AlysiaServer_fnc_dynamicMarkers_init;
+[] call AlysiaServer_fnc_phoneInit;
+[] call AlysiaServer_fnc_laboratories_init;
+[] call AlysiaServer_fnc_vehicles_init;
+[] call AlysiaServer_fnc_market_init;
+[] call AlysiaServer_fnc_house_init;
+[] call AlysiaServer_fnc_factionsInit;
+[] call AlysiaServer_fnc_buildings_init;
+[] call AlysiaServer_fnc_companies_init;
+[] call AlysiaServer_fnc_atm_init;
+[] call AlysiaServer_fnc_taxes_init;
+[] call AlysiaServer_fnc_fuel_init;
+[] call AlysiaServer_fnc_time_init;
+[] call AlysiaServer_fnc_cleanup_init;
 
 private["_hour", "_min", "_time", "_calc", "_best", "_bestTime"];
-_time = call AdenisServer_fnc_getRealTime;
+_time = call AlysiaServer_fnc_getRealTime;
 _hour = _time select 0;
 _min = _time select 1;
 gServer_rebootHour_txt = "";
@@ -162,13 +162,13 @@ while {true} do
 	if (((_hour + 1) isEqualTo _best) && (_min >= 55)) exitWith
 	{
 		"#lock" call RCON_fnc_sendCommand;
-		[] spawn AdenisServer_fnc_serverSave;
+		[] spawn AlysiaServer_fnc_serverSave;
 	};
 
 	_min = _min + 1;
 	if (_min > 59) then
 	{
-		_time = call AdenisServer_fnc_getRealTime;
+		_time = call AlysiaServer_fnc_getRealTime;
 		_hour = _time select 0;
 		_min = _time select 1;
 	};
@@ -186,6 +186,6 @@ while {true} do
 				"rejoindre_PTI",
 				"volcan"
 			] call BIS_fnc_selectRandom)
-		] remoteExecCall ["AdenisClient_fnc_border_south_sounds", -2];
+		] remoteExecCall ["AlysiaClient_fnc_border_south_sounds", -2];
 	};
 };

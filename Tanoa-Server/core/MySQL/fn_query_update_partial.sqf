@@ -28,10 +28,10 @@ _query = switch (_mode) do
 	{
 		switch (_side) do
 		{
-			case civilian: {format["CIV_inventory='%1',CIV_gear='%2'", [(_value select 0)] call AdenisServer_fnc_mresArray, [(_value select 1)] call AdenisServer_fnc_mresArray]};
-			case west: {format["WEST_inventory='%1',WEST_gear='%2'", [(_value select 0)] call AdenisServer_fnc_mresArray, [(_value select 1)] call AdenisServer_fnc_mresArray]};
-			case east: {format["EAST_inventory='%1',EAST_gear='%2'", [(_value select 0)] call AdenisServer_fnc_mresArray, [(_value select 1)] call AdenisServer_fnc_mresArray]};
-			case independent: {format["GUER_inventory='%1',GUER_gear='%2'", [(_value select 0)] call AdenisServer_fnc_mresArray, [(_value select 1)] call AdenisServer_fnc_mresArray]};
+			case civilian: {format["CIV_inventory='%1',CIV_gear='%2'", [(_value select 0)] call AlysiaServer_fnc_mresArray, [(_value select 1)] call AlysiaServer_fnc_mresArray]};
+			case west: {format["WEST_inventory='%1',WEST_gear='%2'", [(_value select 0)] call AlysiaServer_fnc_mresArray, [(_value select 1)] call AlysiaServer_fnc_mresArray]};
+			case east: {format["EAST_inventory='%1',EAST_gear='%2'", [(_value select 0)] call AlysiaServer_fnc_mresArray, [(_value select 1)] call AlysiaServer_fnc_mresArray]};
+			case independent: {format["GUER_inventory='%1',GUER_gear='%2'", [(_value select 0)] call AlysiaServer_fnc_mresArray, [(_value select 1)] call AlysiaServer_fnc_mresArray]};
 		};
 	};
 
@@ -44,9 +44,9 @@ _query = switch (_mode) do
 			(_value select 1),
 			(_value select 2),
 			(_value select 3),
-			([_value select 4] call AdenisServer_fnc_mresArray),
+			([_value select 4] call AlysiaServer_fnc_mresArray),
 			(_value select 5),
-			([_value select 6] call AdenisServer_fnc_bool)
+			([_value select 6] call AlysiaServer_fnc_bool)
 		]
 	};
 	default {""};

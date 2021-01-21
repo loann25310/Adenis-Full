@@ -6,12 +6,12 @@ private["_index", "_vehicleGaragePosition", "_data", "_sel"];
 
 _sel = lbCurSel 2802;
 if (_sel isEqualTo -1) exitWith {
-	["Vous n'avez pas sélectionné de véhicule."] call AdenisClient_fnc_error;
+	["Vous n'avez pas sélectionné de véhicule."] call AlysiaClient_fnc_error;
 };
 
 _index = lbValue[2802, _sel];
 if (_index isEqualTo -1) exitWith {
-	["Vous n'avez pas sélectionné de véhicule."] call AdenisClient_fnc_error;
+	["Vous n'avez pas sélectionné de véhicule."] call AlysiaClient_fnc_error;
 };
 
 _data = g_garage_vehicles select _index;
@@ -24,7 +24,7 @@ waitUntil
 	!dialog
 };
 
-[] call AdenisClient_fnc_hideAllMarkers;
+[] call AlysiaClient_fnc_hideAllMarkers;
 
 createMarkerLocal ["myCar", _vehicleGaragePosition];
 "myCar" setMarkerShapeLocal "ICON";
@@ -46,6 +46,6 @@ forceMap false;
 
 deleteMarkerLocal "MyCar";
 
-[] call AdenisClient_fnc_showAllMarkers;
+[] call AlysiaClient_fnc_showAllMarkers;
 
-[g_garage_vehicles] call AdenisClient_fnc_garageOpen;
+[g_garage_vehicles] call AlysiaClient_fnc_garageOpen;

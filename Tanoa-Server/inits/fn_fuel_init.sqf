@@ -10,7 +10,7 @@ _classes = [];
 
 {
 	_classes pushBack (configName _x);
-} forEach ("true" configClasses (missionConfigFile >> "ADENIS_FUEL_STATION"));
+} forEach ("true" configClasses (missionConfigFile >> "ALYSIA_FUEL_STATION"));
 
 gServer_fuelStations = [];
 
@@ -24,7 +24,7 @@ gServer_fuelStations = [];
 	_fuel = nearestObject [[(_x select 1), (_x select 2), (_x select 3)], (_x select 0)];
 	if (!(isNull _fuel)) then
 	{
-		_config = missionConfigFile >> "ADENIS_FUEL_STATION" >> typeOf(_fuel);
+		_config = missionConfigFile >> "ALYSIA_FUEL_STATION" >> typeOf(_fuel);
 		if (isClass _config) then
 		{
 			if (isClass(_config >> "stock" >> "Diesel")) then

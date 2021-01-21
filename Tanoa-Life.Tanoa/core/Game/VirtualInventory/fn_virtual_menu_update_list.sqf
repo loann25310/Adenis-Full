@@ -19,15 +19,15 @@ if (isNull _display) exitWith {};
 (_display displayCtrl 85004) ctrlSetStructuredText parseText format
 [
 	"<t align='left'>Porte-feuille</t><t align='right'><t color='#8cff9b'>%1</t>$</t>",
-	[g_cash] call AdenisClient_fnc_numberText
+	[g_cash] call AlysiaClient_fnc_numberText
 ];
 
 (_display displayCtrl 85005) progressSetPosition (g_carryWeight / g_maxWeight);
 
 _inv =  uiNamespace getVariable "last_inv";
-_actual = [] call AdenisClient_fnc_getInv;
+_actual = [] call AlysiaClient_fnc_getInv;
 if ((isNil "_inv") || {!(_inv isEqualTo _actual)}) then
 {
 	uiNamespace setVariable ["last_inv", _actual];
-	[(_display displayCtrl 85001), true, true] call AdenisClient_fnc_fillUpWithinv;
+	[(_display displayCtrl 85001), true, true] call AlysiaClient_fnc_fillUpWithinv;
 };

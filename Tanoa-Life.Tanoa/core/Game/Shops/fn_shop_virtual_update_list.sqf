@@ -8,7 +8,7 @@ disableSerialization;
 _display = findDisplay 2400;
 if (isNull _display) exitWith {};
 
-_config = missionConfigFile >> "ADENIS_SHOPS_VIRTUAL" >> g_shop_type;
+_config = missionConfigFile >> "ALYSIA_SHOPS_VIRTUAL" >> g_shop_type;
 if (!isClass(_config)) exitWith {};
 
 _list = _display displayCtrl 2405;
@@ -17,10 +17,10 @@ lbClear _list;
 if (g_shop_mod isEqualTo 0) then
 {
 	{
-		_index = _list lbAdd ([_x] call AdenisClient_fnc_itemGetName);
+		_index = _list lbAdd ([_x] call AlysiaClient_fnc_itemGetName);
 		_list lbSetTooltip [_index, _list lbText _index];
 		_list lbSetData [_index, _x];
-		_list lbSetPicture [_index, [_x] call AdenisClient_fnc_itemGetImage];
+		_list lbSetPicture [_index, [_x] call AlysiaClient_fnc_itemGetImage];
 	} forEach getArray(_config >> "buy");
 
 	if ((lbSize _list) isEqualTo 0) then {
@@ -30,14 +30,14 @@ if (g_shop_mod isEqualTo 0) then
 	};
 } else {
 	{
-		_amount = [_x] call AdenisClient_fnc_itemCount;
+		_amount = [_x] call AlysiaClient_fnc_itemCount;
 		if (_amount > 0) then
 		{
-			_index = _list lbAdd format["%1x %2", [_amount] call AdenisClient_fnc_numberText, [_x] call AdenisClient_fnc_itemGetName];
+			_index = _list lbAdd format["%1x %2", [_amount] call AlysiaClient_fnc_numberText, [_x] call AlysiaClient_fnc_itemGetName];
 			_list lbSetTooltip [_index, _list lbText _index];
 			_list lbSetData [_index, _x];
 			_list lbSetValue [_index, _amount];
-			_list lbSetPicture [_index, [_x] call AdenisClient_fnc_itemGetImage];
+			_list lbSetPicture [_index, [_x] call AlysiaClient_fnc_itemGetImage];
 		};
 	} forEach getArray(_config >> "sell");
 

@@ -19,7 +19,7 @@ lbClear _list;
 		_list lbSetData [_index, _marker];
 		_list lbSetValue [_index, getNumber(_x >> "shop" >> "price")];
 	};
-} forEach ("isClass(_x >> 'shop')" configClasses (missionConfigFile >> "ADENIS_DYN_MARKERS"));
+} forEach ("isClass(_x >> 'shop')" configClasses (missionConfigFile >> "ALYSIA_DYN_MARKERS"));
 
 if ((lbSize _list) isEqualTo 0) then
 {

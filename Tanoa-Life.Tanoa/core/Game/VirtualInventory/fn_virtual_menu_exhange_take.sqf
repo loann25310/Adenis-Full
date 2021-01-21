@@ -18,12 +18,12 @@ if (g_interaction_target_trunk_transfer) exitWith {};
 g_interaction_target_trunk_transfer = true;
 
 if (_type) then {
-	_amount = [_item, ([(g_interaction_target getVariable [g_interaction_target_trunk_type, []]), _item] call AdenisClient_fnc_itemTrunk), g_carryWeight, g_maxWeight] call AdenisClient_fnc_calWeightDiff;
+	_amount = [_item, ([(g_interaction_target getVariable [g_interaction_target_trunk_type, []]), _item] call AlysiaClient_fnc_itemTrunk), g_carryWeight, g_maxWeight] call AlysiaClient_fnc_calWeightDiff;
 } else {
 	_amount = 1;
 };
 
-[g_interaction_target, player, g_interaction_target_trunk_type, _item, _amount, false] call AdenisClient_fnc_transfertVirtualItem;
-[] call AdenisClient_fnc_virtual_menu_exhange_update_lists;
+[g_interaction_target, player, g_interaction_target_trunk_type, _item, _amount, false] call AlysiaClient_fnc_transfertVirtualItem;
+[] call AlysiaClient_fnc_virtual_menu_exhange_update_lists;
 
 g_interaction_target_trunk_transfer = false;

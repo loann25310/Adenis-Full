@@ -15,17 +15,17 @@ disableSerialization;
 _display = findDisplay 97000;
 if (isNull _display) exitWith {};
 
-_config = missionConfigFile >> "ADENIS_MISSIONS" >> (_list lbData _sel);
+_config = missionConfigFile >> "ALYSIA_MISSIONS" >> (_list lbData _sel);
 _price = getNumber(_config >> "price");
 
 (_display displayCtrl 97004) ctrlSetStructuredText parseText format
 [
 	"<t align='center' color='#%2'>%1</t><t align='right'>$</t>",
-	([_price] call AdenisClient_fnc_numberText),
-	if ((g_cash >= _price) || ((["illegal_money"] call AdenisClient_fnc_itemCount) >= _price)) then {"8cff9b"} else {"ff8c8c"}
+	([_price] call AlysiaClient_fnc_numberText),
+	if ((g_cash >= _price) || ((["illegal_money"] call AlysiaClient_fnc_itemCount) >= _price)) then {"8cff9b"} else {"ff8c8c"}
 ];
 
-if ((g_cash < _price) && ((["illegal_money"] call AdenisClient_fnc_itemCount) < _price)) then
+if ((g_cash < _price) && ((["illegal_money"] call AlysiaClient_fnc_itemCount) < _price)) then
 {
 	ctrlShow[21005, false];
 	ctrlShow[21006, false];

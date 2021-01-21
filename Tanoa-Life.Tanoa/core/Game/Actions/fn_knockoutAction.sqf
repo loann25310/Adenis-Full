@@ -24,7 +24,7 @@ if (isNil "_anims") exitWith {false};
 if ((animationState player) in _anims) exitWith {false};
 
 _anim = _anims call BIS_fnc_selectRandom;
-_config = missionConfigFile >> "ADENIS_MELEE" >> _anim;
+_config = missionConfigFile >> "ALYSIA_MELEE" >> _anim;
 if (!isClass(_config)) exitWith {false};
 
 _fatigue = (getFatigue player) + (getNumber(_config >> "fatigue") + ((speed player) / 150));
@@ -43,9 +43,9 @@ if (!(isNull _target) && (_target isKindOf "Man") && (isPlayer _target) && ((pla
 {
 	if (!(_target getVariable ["is_coma", false])) then
 	{
-		[_target, "punch", 15] call AdenisClient_fnc_globalSay3d;
-		[getNumber(_config >> "damage") * -1, player] remoteExecCall ["AdenisClient_fnc_handleBlood", _target];
-		[] call AdenisEvent_fnc_onPlayerFireNear;
+		[_target, "punch", 15] call AlysiaClient_fnc_globalSay3d;
+		[getNumber(_config >> "damage") * -1, player] remoteExecCall ["AlysiaClient_fnc_handleBlood", _target];
+		[] call AlysiaEvent_fnc_onPlayerFireNear;
 	};
 };
 

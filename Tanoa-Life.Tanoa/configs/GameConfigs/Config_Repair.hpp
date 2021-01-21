@@ -1,4 +1,4 @@
-class ADENIS_REPAIR
+class ALYSIA_REPAIR
 {
 	class HitFuel
 	{

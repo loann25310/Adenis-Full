@@ -8,9 +8,9 @@ _player = [_this, 1, objNull, [objNull]] call BIS_fnc_param;
 
 if ((isNull _house) || (isNull _player)) exitWith {};
 
-_this call AdenisServer_fnc_logHouseSell;
-[[_house]] call AdenisServer_fnc_cleanup_houseStorages;
-[_house] remoteExecCall ["AdenisClient_fnc_house_menu_action_keys_change_update", -2];
+_this call AlysiaServer_fnc_logHouseSell;
+[[_house]] call AlysiaServer_fnc_cleanup_houseStorages;
+[_house] remoteExecCall ["AlysiaClient_fnc_house_menu_action_keys_change_update", -2];
 [format["DELETE FROM houses WHERE plate='%1'", (_house getVariable "house_owner") select 2], 1] call ExtDB3_fnc_async;
 
 gServer_houses deleteAt (gServer_houses find _house);

@@ -51,7 +51,7 @@ class STAFF_PLAYERS_HEADER: RscStructuredText
 class STAFF_PLAYERS_LIST: RscCombo
 {
 	idc=STAFF_PLAYERS_LIST_IDC;
-	onLBSelChanged="_this call AdenisClient_fnc_APP_staff_players_actions_update;";
+	onLBSelChanged="_this call AlysiaClient_fnc_APP_staff_players_actions_update;";
 	colorBackground[]={0, 0, 0, 1};
 
 	x=0.335 * safezoneW + safezoneX;
@@ -73,7 +73,7 @@ class STAFF_PLAYERS_ACTION_BUTTON: RscButtonMenu
 {
 	idc=STAFF_PLAYERS_ACTION_BUTTON_IDC;
 	text="Executer";
-	action="_this ctrlEnable false;call compile lbData[9001, (lbCurSel 9001)];[(uiNamespace getVariable ['tablet', displayNull]) displayCtrl 9000, (lbCurSel 9000)] call AdenisClient_fnc_APP_staff_players_actions_update;";
+	action="_this ctrlEnable false;call compile lbData[9001, (lbCurSel 9001)];[(uiNamespace getVariable ['tablet', displayNull]) displayCtrl 9000, (lbCurSel 9000)] call AlysiaClient_fnc_APP_staff_players_actions_update;";
 
 	x=0.608281 * safezoneW + safezoneX;
 	y=0.401 * safezoneH + safezoneY;
@@ -245,7 +245,7 @@ class STAFF_DATA_RETURN_IMAGE: RscPicture
 class STAFF_DATA_RETURN_BUTTON: RscButtonSilent
 {
 	idc=STAFF_DATA_RETURN_BUTTON_IDC;
-	action="[""STAFF""] spawn AdenisClient_fnc_tabletApp;";
+	action="[""STAFF""] spawn AlysiaClient_fnc_tabletApp;";
 	onMouseEnter="ctrlSetText[(ctrlIDC (_this select 0)) - 1,""Alysia_Client_Texture\Data\global\option_back_select.paa""];";
 	onMouseExit="ctrlSetText[(ctrlIDC (_this select 0)) - 1,""Alysia_Client_Texture\Data\global\option_back.paa""];";
 	tooltip="Retour";

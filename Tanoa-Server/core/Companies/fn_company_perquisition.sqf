@@ -8,7 +8,7 @@ _from = [_this, 1, objNull, [objNull]] call BIS_fnc_param;
 
 if ((isNull _company) || (isNull _from)) exitWith {};
 
-_this call AdenisServer_fnc_logPerquisition;
+_this call AlysiaServer_fnc_logPerquisition;
 _company setVariable ["perquisition", true, true];
 
 uiSleep(60 * 10);
@@ -20,5 +20,5 @@ if ((_company getVariable ["trunk_in_use_ID", ""]) != "") then {
 };
 
 if (!(isNull _from)) then {
-	["Perquisition <t color='#FF8000'>terminé</t>."] remoteExecCall ["AdenisClient_fnc_info", (owner _from)];
+	["Perquisition <t color='#FF8000'>terminé</t>."] remoteExecCall ["AlysiaClient_fnc_info", (owner _from)];
 };

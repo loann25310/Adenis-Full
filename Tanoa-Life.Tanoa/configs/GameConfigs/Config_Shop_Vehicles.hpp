@@ -1,4 +1,4 @@
-class ADENIS_SHOPS_VEHICLES
+class ALYSIA_SHOPS_VEHICLES
 {
 	
 	class CIV_air
@@ -237,7 +237,7 @@ class ADENIS_SHOPS_VEHICLES
 			"R_HotairBalloon",
 			/* company_music_label */
 			"Maels_Vandura_GMC_special",
-			"Adenis_GMC_Fiestanoa",
+			"ALYSIA_GMC_Fiestanoa",
 			"depanren",
 			"chdepanpl",
 			"plateau",

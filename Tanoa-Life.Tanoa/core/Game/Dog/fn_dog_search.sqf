@@ -5,10 +5,10 @@
 private["_target_distance", "_target"];
 
 if (isNull g_dog) exitWith {
-	["Impossible de trouver votre chien."] call AdenisClient_fnc_error;
+	["Impossible de trouver votre chien."] call AlysiaClient_fnc_error;
 };
 
-[player, "whistle", 15] call AdenisClient_fnc_globalSay3d;
+[player, "whistle", 15] call AlysiaClient_fnc_globalSay3d;
 
 uiSleep 2;
 
@@ -27,7 +27,7 @@ _target = objNull;
 	};
 } forEach allPlayers;
 if (isNull _target) exitWith {
-	[g_dog, "dog_one", 80] call AdenisClient_fnc_globalSay3d;
+	[g_dog, "dog_one", 80] call AlysiaClient_fnc_globalSay3d;
 };
 
 g_dog setVariable ["follow", true, true];

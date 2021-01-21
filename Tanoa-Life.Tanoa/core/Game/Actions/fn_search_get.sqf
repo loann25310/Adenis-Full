@@ -22,4 +22,4 @@ if ((headgear player) != "") then {_inv_arma pushBack [(headgear player), 1]};
 	if (_x != "") then {_inv_arma pushBack [_x, 1]};
 } forEach ((primaryWeaponItems player) + (assignedItems player) + (uniformItems player) + (vestItems player) + (backpackItems player));
 
-[([] call AdenisClient_fnc_getInv), _inv_arma, g_cash] remoteExec ["AdenisClient_fnc_search_open", _from];
+[([] call AlysiaClient_fnc_getInv), _inv_arma, g_cash] remoteExec ["AlysiaClient_fnc_search_open", _from];

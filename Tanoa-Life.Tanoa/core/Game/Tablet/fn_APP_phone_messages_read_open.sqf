@@ -16,34 +16,34 @@ if (isNull _display) exitWith {};
 _number = (g_phone_messages select _sel) select 0;
 if (_number in ["GUER", "WEST", "EAST", "Numéro Masqué", (player getVariable ["number", ""])]) then
 {
-	[8328, false] call AdenisClient_fnc_tabletShow;
-	[8327, false] call AdenisClient_fnc_tabletShow;
+	[8328, false] call AlysiaClient_fnc_tabletShow;
+	[8327, false] call AlysiaClient_fnc_tabletShow;
 	if (_number in ["Numéro Masqué", (player getVariable ["number", ""])]) then
 	{
-		[8315, false] call AdenisClient_fnc_tabletShow;
-		[8316, false] call AdenisClient_fnc_tabletShow;
+		[8315, false] call AlysiaClient_fnc_tabletShow;
+		[8316, false] call AlysiaClient_fnc_tabletShow;
 	} else {
-		[8315, true] call AdenisClient_fnc_tabletShow;
-		[8316, true] call AdenisClient_fnc_tabletShow;
+		[8315, true] call AlysiaClient_fnc_tabletShow;
+		[8316, true] call AlysiaClient_fnc_tabletShow;
 	};
 } else {
-	[8315, true] call AdenisClient_fnc_tabletShow;
-	[8316, true] call AdenisClient_fnc_tabletShow;
-	if (([_number, g_phone_contacts] call AdenisClient_fnc_index) isEqualTo -1) then
+	[8315, true] call AlysiaClient_fnc_tabletShow;
+	[8316, true] call AlysiaClient_fnc_tabletShow;
+	if (([_number, g_phone_contacts] call AlysiaClient_fnc_index) isEqualTo -1) then
 	{
-		[8328, true] call AdenisClient_fnc_tabletShow;
-		[8327, true] call AdenisClient_fnc_tabletShow;
+		[8328, true] call AlysiaClient_fnc_tabletShow;
+		[8327, true] call AlysiaClient_fnc_tabletShow;
 	} else {
-		[8328, false] call AdenisClient_fnc_tabletShow;
-		[8327, false] call AdenisClient_fnc_tabletShow;
+		[8328, false] call AlysiaClient_fnc_tabletShow;
+		[8327, false] call AlysiaClient_fnc_tabletShow;
 	};
 };
 
-[8312, true] call AdenisClient_fnc_tabletShow;
-[8321, true] call AdenisClient_fnc_tabletShow;
-[8322, true] call AdenisClient_fnc_tabletShow;
-[8323, true] call AdenisClient_fnc_tabletShow;
-[8324, true] call AdenisClient_fnc_tabletShow;
+[8312, true] call AlysiaClient_fnc_tabletShow;
+[8321, true] call AlysiaClient_fnc_tabletShow;
+[8322, true] call AlysiaClient_fnc_tabletShow;
+[8323, true] call AlysiaClient_fnc_tabletShow;
+[8324, true] call AlysiaClient_fnc_tabletShow;
 
 (_display displayCtrl 8321) ctrlSetStructuredText parseText format["<t align='left'>Numéro :</t><t align='right'>%1</t>", _number];
 (_display displayCtrl 8322) ctrlSetStructuredText parseText format["<t align='left'>%1</t>", (g_phone_messages select _sel) select 3];

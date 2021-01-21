@@ -7,7 +7,7 @@ _target = [_this, 0, ObjNull, [ObjNull]] call BIS_fnc_param;
 _type = [_this, 1, false, [false]] call BIS_fnc_param;
 
 if (isNull _target) exitWith {
-	["Cible invalide."] call AdenisClient_fnc_error;
+	["Cible invalide."] call AlysiaClient_fnc_error;
 };
 
 if (_type) then

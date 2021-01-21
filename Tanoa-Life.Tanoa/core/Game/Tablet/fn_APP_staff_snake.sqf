@@ -4,7 +4,7 @@
 */
 private["_player", "_config", "_actions"];
 
-_config = ("getText(_x >> 'uid') isEqualTo (getPlayerUID player)" configClasses (missionConfigFile >> "ADENIS_STAFF" >> "members")) select 0;
+_config = ("getText(_x >> 'uid') isEqualTo (getPlayerUID player)" configClasses (missionConfigFile >> "ALYSIA_STAFF" >> "members")) select 0;
 if (isNil "_config") exitWith {};
 
 _player = player;
@@ -24,11 +24,11 @@ _actions = (findDisplay 46) displayAddEventHandler [
 		{
 			_target = (nearestObjects[g_snake_unit, ['Man'], 3]) select 1;
 			if (isNil '_target') then {
-				['Aucune personne proche.'] call AdenisClient_fnc_error;
+				['Aucune personne proche.'] call AlysiaClient_fnc_error;
 			} else {
-				['Saignement appliqué !'] call AdenisClient_fnc_info;
-				[75] remoteExecCall ['AdenisClient_fnc_handleBleed', _target];
-				[] remoteExec ['AdenisClient_fnc_handleSnakeVenom', _target];
+				['Saignement appliqué !'] call AlysiaClient_fnc_info;
+				[75] remoteExecCall ['AlysiaClient_fnc_handleBleed', _target];
+				[] remoteExec ['AlysiaClient_fnc_handleSnakeVenom', _target];
 			};
 		};
 
@@ -38,27 +38,27 @@ _actions = (findDisplay 46) displayAddEventHandler [
 			{
 				_target = (nearestObjects[g_snake_unit, ['Man'], 4]) select 1;
 				if (isNil '_target') then {
-					['Aucune personne proche.'] call AdenisClient_fnc_error;
+					['Aucune personne proche.'] call AlysiaClient_fnc_error;
 				} else {
 					if (_target getVariable ['is_coma', false]) then
 					{
 						_target attachTo [g_snake_unit, [0, 1, 0]];
-						['Début escorte.'] call AdenisClient_fnc_info;
+						['Début escorte.'] call AlysiaClient_fnc_info;
 					} else {
-						['Personne proche dans le coma.'] call AdenisClient_fnc_error;
+						['Personne proche dans le coma.'] call AlysiaClient_fnc_error;
 					};
 				};
 			} else {
 				{
 					detach _x;
 				} forEach (attachedObjects g_snake_unit);
-				['Escorte arrêté !'] call AdenisClient_fnc_info;
+				['Escorte arrêté !'] call AlysiaClient_fnc_info;
 			};
 		};
 
 		if ((_this select 1) isEqualTo 1) then
 		{
-			['Fin du mode serpent'] call AdenisClient_fnc_info;
+			['Fin du mode serpent'] call AlysiaClient_fnc_info;
 			g_snake_on = false;
 		};
 	"
@@ -98,7 +98,7 @@ if (!(alive g_snake_unit)) then
 	} forEach (allMissionObjects "All");
 };
 
-[] call AdenisClient_fnc_init_hud;
+[] call AlysiaClient_fnc_init_hud;
 
 g_snake_unit = nil;
 g_snake_on = nil;

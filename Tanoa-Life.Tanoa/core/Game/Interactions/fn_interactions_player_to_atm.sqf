@@ -10,27 +10,27 @@
 		[
 			"take",
 			"Accéder",
-			"['home', g_interaction_target] call AdenisClient_fnc_atmScreen;",
+			"['home', g_interaction_target] call AlysiaClient_fnc_atmScreen;",
 			"
 				(true)
 			"
 		],[
 			"money_transfer",
 			"Remplir",
-			"[g_interaction_target] spawn AdenisClient_fnc_atm_bag_deposit;",
+			"[g_interaction_target] spawn AlysiaClient_fnc_atm_bag_deposit;",
 			"
-				(getNumber(missionConfigFile >> 'ADENIS_ATM' >> typeOf(g_interaction_target) >> 'company_money_transfert') isEqualTo 1) &&
+				(getNumber(missionConfigFile >> 'ALYSIA_ATM' >> typeOf(g_interaction_target) >> 'company_money_transfert') isEqualTo 1) &&
 				!(isNull(player getVariable ['wallet_obj', objNull])) &&
-				(['company_money_tranfer'] call AdenisClient_fnc_hasLicense)
+				(['company_money_tranfer'] call AlysiaClient_fnc_hasLicense)
 			"
 		],[
 			"money_transfer",
 			"Investir",
-			"[g_interaction_target] spawn AdenisClient_fnc_atm_bag_get;",
+			"[g_interaction_target] spawn AlysiaClient_fnc_atm_bag_get;",
 			"
-				(getNumber(missionConfigFile >> 'ADENIS_ATM' >> typeOf(g_interaction_target) >> 'company_money_get') isEqualTo 1) &&
+				(getNumber(missionConfigFile >> 'ALYSIA_ATM' >> typeOf(g_interaction_target) >> 'company_money_get') isEqualTo 1) &&
 				(isNull(player getVariable ['wallet_obj', objNull])) &&
-				(['company_money_tranfer'] call AdenisClient_fnc_hasLicense)
+				(['company_money_tranfer'] call AlysiaClient_fnc_hasLicense)
 			"
 		]
 	],
@@ -38,4 +38,4 @@
 	"Alysia_Client_Texture\Data\interactions\background.jpg",
 	true,
 	false
-] spawn AdenisClient_fnc_interactions_create;
+] spawn AlysiaClient_fnc_interactions_create;

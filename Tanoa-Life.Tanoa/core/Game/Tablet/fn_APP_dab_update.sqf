@@ -25,12 +25,12 @@ _dab = (nearestObjects [_data select 1, [_data select 0], 15]) select 0;
 		"<t font='EtelkaMonospacePro' size='1'>"
 	+	"<t align='left'>Liquidité</t><t align='right'><t color='#8cff9b'>%1</t>$</t><br/>"
 	+	"</t>",
-	[_dab getVariable ["money", getNumber(missionConfigFile >> "ADENIS_ATM" >> typeOf(_dab) >> "money_stock")]] call AdenisClient_fnc_numberText
+	[_dab getVariable ["money", getNumber(missionConfigFile >> "ALYSIA_ATM" >> typeOf(_dab) >> "money_stock")]] call AlysiaClient_fnc_numberText
 ];
 
 if ("ItemGPS" in (assignedItems player)) then
 {
-	_config = missionConfigFile >> "ADENIS_ATM" >> typeOf(_dab);
+	_config = missionConfigFile >> "ALYSIA_ATM" >> typeOf(_dab);
 	_marker = createMarkerLocal [format["dab_tablet_%1", _sel], (getPos _dab)];
 	_marker setMarkerShapeLocal getText(_config >> "marker" >> "ShapeLocal");
 	_marker setMarkerTypeLocal getText(_config >> "marker" >> "TypeLocal");
@@ -49,14 +49,14 @@ if ("ItemGPS" in (assignedItems player)) then
 		if (_distance > 1) then {"s"} else {""}
 	];
 
-	[9904, true] call AdenisClient_fnc_tabletShow;
-	[9902, false] call AdenisClient_fnc_tabletShow;
+	[9904, true] call AlysiaClient_fnc_tabletShow;
+	[9902, false] call AlysiaClient_fnc_tabletShow;
 
 	waitUntil {((isNull _display) || (g_app != "DAB") || ((lbCurSel _list) != _sel))};
 
 	deleteMarkerLocal _marker;
 } else {
 	(_display displayCtrl 9910) ctrlSetStructuredText parseText "<t align='center'>Inconnu</t>";
-	[9902, true] call AdenisClient_fnc_tabletShow;
-	[9904, false] call AdenisClient_fnc_tabletShow;
+	[9902, true] call AlysiaClient_fnc_tabletShow;
+	[9904, false] call AlysiaClient_fnc_tabletShow;
 };

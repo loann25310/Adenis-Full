@@ -88,7 +88,7 @@ class RscDisplayComa: RscDisplayDefault
 		class MEDIC_BUTTON: RscButtonSilent
 		{
 			idc=357;
-			action="[] call AdenisClient_fnc_action_medic_request;";
+			action="[] call AlysiaClient_fnc_action_medic_request;";
 			onMouseEnter="ctrlSetText[356,'Alysia_Client_Texture\Data\death\samu_select.paa'];";
 			onMouseExit="ctrlSetText[356,'Alysia_Client_Texture\Data\death\samu.paa'];";
 
@@ -131,7 +131,7 @@ class RscDisplayComa: RscDisplayDefault
 		class SUICIDE_BUTTON: RscButtonSilent
 		{
 			idc=354;
-			action="[] call AdenisClient_fnc_action_suicide;";
+			action="[] call AlysiaClient_fnc_action_suicide;";
 			onMouseEnter="ctrlSetText[352,'Alysia_Client_Texture\Data\death\suicide_select.paa'];";
 			onMouseExit="ctrlSetText[352,'Alysia_Client_Texture\Data\death\suicide.paa'];";
 

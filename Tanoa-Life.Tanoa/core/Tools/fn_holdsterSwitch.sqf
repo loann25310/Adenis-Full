@@ -6,7 +6,7 @@
 if ((vehicle player) isKindOf "Man") then
 {
 	if (((getPosASLW player) select 2) < 0) then {
-		["Vous ne pouvez pas utiliser votre holdster sous l'eau."] call AdenisClient_fnc_error;
+		["Vous ne pouvez pas utiliser votre holdster sous l'eau."] call AlysiaClient_fnc_error;
 	} else {
 		if ((currentWeapon player) isEqualTo "") then
 		{
@@ -21,7 +21,7 @@ if ((vehicle player) isKindOf "Man") then
 		};
 	};
 } else {
-	["Vous ne pouvez pas utiliser votre holdster en véhicule."] call AdenisClient_fnc_error;
+	["Vous ne pouvez pas utiliser votre holdster en véhicule."] call AlysiaClient_fnc_error;
 };
 
 true;

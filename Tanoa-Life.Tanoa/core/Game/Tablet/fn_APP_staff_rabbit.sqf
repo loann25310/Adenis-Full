@@ -4,7 +4,7 @@
 */
 private["_player", "_config", "_actions"];
 
-_config = ("getText(_x >> 'uid') isEqualTo (getPlayerUID player)" configClasses (missionConfigFile >> "ADENIS_STAFF" >> "members")) select 0;
+_config = ("getText(_x >> 'uid') isEqualTo (getPlayerUID player)" configClasses (missionConfigFile >> "ALYSIA_STAFF" >> "members")) select 0;
 if (isNil "_config") exitWith {};
 
 _player = player;
@@ -24,10 +24,10 @@ _actions = (findDisplay 46) displayAddEventHandler [
 		{
 			_target = (nearestObjects[g_rabbit_unit, ['Man'], 3]) select 1;
 			if (isNil '_target') then {
-				['Aucune personne proche.'] call AdenisClient_fnc_error;
+				['Aucune personne proche.'] call AlysiaClient_fnc_error;
 			} else {
-				['Saignement appliqué !'] call AdenisClient_fnc_info;
-				[125] remoteExecCall ['AdenisClient_fnc_handleBleed', _target];
+				['Saignement appliqué !'] call AlysiaClient_fnc_info;
+				[125] remoteExecCall ['AlysiaClient_fnc_handleBleed', _target];
 			};
 		};
 
@@ -35,10 +35,10 @@ _actions = (findDisplay 46) displayAddEventHandler [
 		{
 			_target = (nearestObjects[g_rabbit_unit, ['Car','Air','Tank'], 6]) select 0;
 			if (isNil '_target') then {
-				['Aucun véhicule proche.'] call AdenisClient_fnc_error;
+				['Aucun véhicule proche.'] call AlysiaClient_fnc_error;
 			} else {
-				['Roue crevée !'] call AdenisClient_fnc_info;
-				[_target, (['HitRF2Wheel','HitRFWheel','HitLFWheel','HitLF2Wheel'] call BIS_fnc_selectRandom), 1] call AdenisClient_fnc_setHitPointDamage;
+				['Roue crevée !'] call AlysiaClient_fnc_info;
+				[_target, (['HitRF2Wheel','HitRFWheel','HitLFWheel','HitLF2Wheel'] call BIS_fnc_selectRandom), 1] call AlysiaClient_fnc_setHitPointDamage;
 			};
 		};
 
@@ -46,9 +46,9 @@ _actions = (findDisplay 46) displayAddEventHandler [
 		{
 			_target = (nearestObjects[g_rabbit_unit, ['Car','Air','Tank'], 6]) select 0;
 			if (isNil '_target') then {
-				['Aucun véhicule proche.'] call AdenisClient_fnc_error;
+				['Aucun véhicule proche.'] call AlysiaClient_fnc_error;
 			} else {
-				['Réservoir vidé !'] call AdenisClient_fnc_info;
+				['Réservoir vidé !'] call AlysiaClient_fnc_info;
 				[_target, 0] remoteExecCall ['setFuel', _target];
 			};
 		};
@@ -59,27 +59,27 @@ _actions = (findDisplay 46) displayAddEventHandler [
 			{
 				_target = (nearestObjects[g_rabbit_unit, ['Man'], 4]) select 1;
 				if (isNil '_target') then {
-					['Aucune personne proche.'] call AdenisClient_fnc_error;
+					['Aucune personne proche.'] call AlysiaClient_fnc_error;
 				} else {
 					if (_target getVariable ['is_coma', false]) then
 					{
 						_target attachTo [g_rabbit_unit, [0, 1, 0]];
-						['Début escorte.'] call AdenisClient_fnc_info;
+						['Début escorte.'] call AlysiaClient_fnc_info;
 					} else {
-						['Personne proche dans le coma.'] call AdenisClient_fnc_error;
+						['Personne proche dans le coma.'] call AlysiaClient_fnc_error;
 					};
 				};
 			} else {
 				{
 					detach _x;
 				} forEach (attachedObjects g_rabbit_unit);
-				['Escorte arrêté !'] call AdenisClient_fnc_info;
+				['Escorte arrêté !'] call AlysiaClient_fnc_info;
 			};
 		};
 
 		if ((_this select 1) isEqualTo 1) then
 		{
-			['Fin du mode lapin'] call AdenisClient_fnc_info;
+			['Fin du mode lapin'] call AlysiaClient_fnc_info;
 			g_rabbit_on = false;
 		};
 	"
@@ -118,7 +118,7 @@ if (alive g_rabbit_unit) then {
 	} forEach (allMissionObjects "All");
 };
 
-[] call AdenisClient_fnc_init_hud;
+[] call AlysiaClient_fnc_init_hud;
 
 g_rabbit_unit = nil;
 g_rabbit_on = nil;

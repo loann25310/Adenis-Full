@@ -23,5 +23,5 @@ if (_type) then
 	};
 };
 
-g_atm_from pushBack format["(%1%2) %3/%6/7 à %4 - %5", if (_type) then {"+"} else {"-"}, _value, (date select 2), (call AdenisClient_fnc_strTime), _from, (date select 1), (date select 0)];
+g_atm_from pushBack format["(%1%2) %3/%6/7 à %4 - %5", if (_type) then {"+"} else {"-"}, _value, (date select 2), (call AlysiaClient_fnc_strTime), _from, (date select 1), (date select 0)];
 _ret;

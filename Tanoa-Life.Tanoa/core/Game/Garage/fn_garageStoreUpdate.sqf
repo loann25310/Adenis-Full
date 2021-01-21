@@ -26,10 +26,10 @@ if ((cbChecked (_display displayCtrl 35006)) && g_garage_pay) then
 	_weight = 0;
 
 	{
-		if (getNumber(missionConfigFile >> "ADENIS_ITEMS" >> (_x select 0) >> "illegal") isEqualTo 1) then {
+		if (getNumber(missionConfigFile >> "ALYSIA_ITEMS" >> (_x select 0) >> "illegal") isEqualTo 1) then {
 			_hasIllegal = true;
 		};
-		_weight = _weight + ([_x select 0] call AdenisClient_fnc_itemGetWeight);
+		_weight = _weight + ([_x select 0] call AlysiaClient_fnc_itemGetWeight);
 	} forEach (_vehicle getVariable ["Trunk", []]);
 	_price = round((_weight + 4) * 75);
 };
@@ -37,7 +37,7 @@ if ((cbChecked (_display displayCtrl 35006)) && g_garage_pay) then
 (_display displayCtrl 35008) ctrlSetStructuredText parseText format
 [
 	"<t align='center' color='%2'>%1</t><t align='right'>$</t>",
-	[_price] call AdenisClient_fnc_numberText,
+	[_price] call AlysiaClient_fnc_numberText,
 	if (g_atm < _price) then {"#ff8c8c"} else {"#8cff9b"}
 ];
 

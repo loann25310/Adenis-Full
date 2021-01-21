@@ -7,9 +7,9 @@ _res = [];
 
 {
 	_license = configName _x;
-	if ([_license] call AdenisClient_fnc_hasLicense) then {
+	if ([_license] call AlysiaClient_fnc_hasLicense) then {
 		_res pushBack _license;
 	};
-} foreach ("true" configClasses (missionConfigFile >> "ADENIS_LICENSES"));
+} foreach ("true" configClasses (missionConfigFile >> "ALYSIA_LICENSES"));
 
 _res;

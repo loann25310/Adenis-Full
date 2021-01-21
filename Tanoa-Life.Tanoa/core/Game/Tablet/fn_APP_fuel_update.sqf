@@ -25,14 +25,14 @@ lbClear _ctrl_fuels;
 
 {
 	_fuel = configName _x;
-	_config = missionConfigFile >> "ADENIS_FUEL" >> _fuel;
+	_config = missionConfigFile >> "ALYSIA_FUEL" >> _fuel;
 	if (isClass(_config)) then
 	{
 		_index = _ctrl_fuels lbAdd getText(_config >> "name");
 		_ctrl_fuels lbSetPicture [_index, getText(_config >> "picture")];
 		_ctrl_fuels lbSetData [_index, _fuel];
 	};
-} forEach ("true" configClasses (missionConfigFile >> "ADENIS_FUEL_STATION" >> typeOf(_station) >> "stock"));
+} forEach ("true" configClasses (missionConfigFile >> "ALYSIA_FUEL_STATION" >> typeOf(_station) >> "stock"));
 if ((lbSize _ctrl_fuels) isEqualTo 0) then {
 	_ctrl_fuels lbAdd "Aucune";
 };
@@ -60,14 +60,14 @@ if ("ItemGPS" in (assignedItems player)) then
 		if (_distance > 1) then {"s"} else {""}
 	];
 
-	[9409, true] call AdenisClient_fnc_tabletShow;
-	[9410, false] call AdenisClient_fnc_tabletShow;
+	[9409, true] call AlysiaClient_fnc_tabletShow;
+	[9410, false] call AlysiaClient_fnc_tabletShow;
 
 	waitUntil {((isNull _display) || (g_app != "FUEL") || ((lbCurSel _list) != _sel))};
 
 	deleteMarkerLocal _marker;
 } else {
 	(_display displayCtrl 9408) ctrlSetStructuredText parseText "<t align='center'>Inconnu</t>";
-	[9410, true] call AdenisClient_fnc_tabletShow;
-	[9409, false] call AdenisClient_fnc_tabletShow;
+	[9410, true] call AlysiaClient_fnc_tabletShow;
+	[9409, false] call AlysiaClient_fnc_tabletShow;
 };

@@ -22,13 +22,13 @@ _company = [
 	[],
 	[[],[],[],[]],
 	[]
-] call AdenisServer_fnc_company_init;
+] call AlysiaServer_fnc_company_init;
 
 gServer_companies set [(gServer_companies find _object), _company];
 
 deleteVehicle _object;
 
-_owner = [(_info select 1)] call AdenisClient_fnc_getPlayerFromUID;
+_owner = [(_info select 1)] call AlysiaClient_fnc_getPlayerFromUID;
 if (!(isNull _owner)) then {
-	[_company, true] remoteExecCall ["AdenisClient_fnc_company_member_join", _owner];
+	[_company, true] remoteExecCall ["AlysiaClient_fnc_company_member_join", _owner];
 };

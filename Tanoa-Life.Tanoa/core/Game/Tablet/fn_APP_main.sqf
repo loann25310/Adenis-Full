@@ -17,7 +17,7 @@ if (isNull _display) exitWith {};
 	"</t>",
 	g_firstName,
 	g_lastName,
-	g_birth call AdenisClient_fnc_age
+	g_birth call AlysiaClient_fnc_age
 ];
 
 _status = uiNamespace getVariable ["main_status", 0];
@@ -30,76 +30,76 @@ _global_apps =
 	[
 		"Alysia_Client_Texture\Data\tablet\applications\app_staff.paa",
 		"Alysia_Client_Texture\Data\tablet\applications\app_staff_select.paa",
-		"['staff'] spawn AdenisClient_fnc_tabletApp;",
+		"['staff'] spawn AlysiaClient_fnc_tabletApp;",
 		"Staff",
-		"count(""getText(_x >> 'uid') isEqualTo (getPlayerUID player)"" configClasses (missionConfigFile >> 'ADENIS_STAFF' >> 'members')) != 0"
+		"count(""getText(_x >> 'uid') isEqualTo (getPlayerUID player)"" configClasses (missionConfigFile >> 'ALYSIA_STAFF' >> 'members')) != 0"
 	],[
 		"Alysia_Client_Texture\Data\tablet\applications\app_gov.paa",
 		"Alysia_Client_Texture\Data\tablet\applications\app_gov_select.paa",
-		"['gov'] spawn AdenisClient_fnc_tabletApp;",
+		"['gov'] spawn AlysiaClient_fnc_tabletApp;",
 		"Gouv",
 		"
-			isClass(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'taxes_app') &&
-			{(player getVariable ['rank', 0]) >= getNumber(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'taxes_app' >> 'rank')}
+			isClass(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'taxes_app') &&
+			{(player getVariable ['rank', 0]) >= getNumber(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'taxes_app' >> 'rank')}
 		"
 	],[
 		"Alysia_Client_Texture\Data\tablet\applications\app_bank.paa",
 		"Alysia_Client_Texture\Data\tablet\applications\app_bank_select.paa",
-		"['solde'] spawn AdenisClient_fnc_tabletApp;",
+		"['solde'] spawn AlysiaClient_fnc_tabletApp;",
 		"Solde",
 		"true"
 	],[
 		"Alysia_Client_Texture\Data\tablet\applications\app_gps.paa",
 		"Alysia_Client_Texture\Data\tablet\applications\app_gps_select.paa",
-		"['vehicles'] spawn AdenisClient_fnc_tabletApp;",
+		"['vehicles'] spawn AlysiaClient_fnc_tabletApp;",
 		"Véhicules",
 		"true"
 	],[
 		"Alysia_Client_Texture\Data\tablet\applications\app_setting.paa",
 		"Alysia_Client_Texture\Data\tablet\applications\app_setting_select.paa",
-		"['settings'] spawn AdenisClient_fnc_tabletApp;",
+		"['settings'] spawn AlysiaClient_fnc_tabletApp;",
 		"Réglages",
 		"true"
 	],[
 		"Alysia_Client_Texture\Data\tablet\applications\app_server.paa",
 		"Alysia_Client_Texture\Data\tablet\applications\app_server_select.paa",
-		"['server'] spawn AdenisClient_fnc_tabletApp;",
+		"['server'] spawn AlysiaClient_fnc_tabletApp;",
 		"Serveur",
 		"true"
 	],[
 		"Alysia_Client_Texture\Data\tablet\applications\app_store.paa",
 		"Alysia_Client_Texture\Data\tablet\applications\app_store_select.paa",
-		"['store'] spawn AdenisClient_fnc_tabletApp;",
+		"['store'] spawn AlysiaClient_fnc_tabletApp;",
 		"Boutique",
 		"true"
 	],[
 		"Alysia_Client_Texture\Data\tablet\applications\app_help.paa",
 		"Alysia_Client_Texture\Data\tablet\applications\app_help_select.paa",
-		"['help'] spawn AdenisClient_fnc_tabletApp;",
+		"['help'] spawn AlysiaClient_fnc_tabletApp;",
 		"Aide",
 		"true"
 	],[
 		"Alysia_Client_Texture\Data\tablet\applications\app_phone.paa",
 		"Alysia_Client_Texture\Data\tablet\applications\app_phone_select.paa",
-		"['PHONE_CATEGORY'] spawn AdenisClient_fnc_tabletApp;",
+		"['PHONE_CATEGORY'] spawn AlysiaClient_fnc_tabletApp;",
 		"Téléphone",
-		"(((player getVariable ['number','']) != '') && ([] call AdenisClient_fnc_hasPhone))"
+		"(((player getVariable ['number','']) != '') && ([] call AlysiaClient_fnc_hasPhone))"
 	],[
 		"Alysia_Client_Texture\Data\tablet\applications\app_faction.paa",
 		"Alysia_Client_Texture\Data\tablet\applications\app_faction_select.paa",
-		"['faction'] spawn AdenisClient_fnc_tabletApp;",
+		"['faction'] spawn AlysiaClient_fnc_tabletApp;",
 		"Faction",
-		"isClass(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'board')"
+		"isClass(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'board')"
 	],[
 		"Alysia_Client_Texture\Data\tablet\applications\app_licences.paa",
 		"Alysia_Client_Texture\Data\tablet\applications\app_licences_select.paa",
-		"['LICENSES'] spawn AdenisClient_fnc_tabletApp;",
+		"['LICENSES'] spawn AlysiaClient_fnc_tabletApp;",
 		"Licenses",
 		"true"
 	],[
 		"Alysia_Client_Texture\Data\tablet\applications\app_market.paa",
 		"Alysia_Client_Texture\Data\tablet\applications\app_market_select.paa",
-		"['MARKET'] spawn AdenisClient_fnc_tabletApp;",
+		"['MARKET'] spawn AlysiaClient_fnc_tabletApp;",
 		"Bourse",
 		"
 			('MARKET' in g_apps) ||
@@ -109,31 +109,31 @@ _global_apps =
 	],[
 		"Alysia_Client_Texture\Data\tablet\applications\app_fuel.paa",
 		"Alysia_Client_Texture\Data\tablet\applications\app_fuel_select.paa",
-		"['FUEL'] spawn AdenisClient_fnc_tabletApp;",
+		"['FUEL'] spawn AlysiaClient_fnc_tabletApp;",
 		"Stations service",
 		"'FUEL' in g_apps"
 	],[
 		"Alysia_Client_Texture\Data\tablet\applications\app_announces.paa",
 		"Alysia_Client_Texture\Data\tablet\applications\app_announces_select.paa",
-		"['ANNOUNCES'] spawn AdenisClient_fnc_tabletApp;",
+		"['ANNOUNCES'] spawn AlysiaClient_fnc_tabletApp;",
 		"Annonces",
 		"'ANNOUNCES' in g_apps"
 	],[
 		"Alysia_Client_Texture\Data\tablet\applications\app_company.paa",
 		"Alysia_Client_Texture\Data\tablet\applications\app_company_select.paa",
-		"['COMPAGNIES'] spawn AdenisClient_fnc_tabletApp;",
+		"['COMPAGNIES'] spawn AlysiaClient_fnc_tabletApp;",
 		"Entreprises",
 		"true"
 	],[
 		"Alysia_Client_Texture\Data\tablet\applications\app_dab.paa",
 		"Alysia_Client_Texture\Data\tablet\applications\app_dab_select.paa",
-		"['DAB'] spawn AdenisClient_fnc_tabletApp;",
+		"['DAB'] spawn AlysiaClient_fnc_tabletApp;",
 		"DAB",
 		"'DAB' in g_apps"
 	],[
 		"Alysia_Client_Texture\Data\tablet\applications\app_annuaire.paa",
 		"Alysia_Client_Texture\Data\tablet\applications\app_annuaire_select.paa",
-		"['ANNUAIRE'] spawn AdenisClient_fnc_tabletApp;",
+		"['ANNUAIRE'] spawn AlysiaClient_fnc_tabletApp;",
 		"Annuaire",
 		"'ANNUAIRE' in g_apps"
 	]
@@ -167,9 +167,9 @@ _global_apps =
 			_button ctrlSetEventHandler ["MouseExit", format["((uiNamespace getVariable 'tablet') displayCtrl %1) ctrlSetText '%2';", _actual_idc, (_x select 0)]];
 		};
 
-		[_actual_idc, true] call AdenisClient_fnc_tabletShow;
-		[(_actual_idc + 1), true] call AdenisClient_fnc_tabletShow;
-		[(_actual_idc + 2), true] call AdenisClient_fnc_tabletShow;
+		[_actual_idc, true] call AlysiaClient_fnc_tabletShow;
+		[(_actual_idc + 1), true] call AlysiaClient_fnc_tabletShow;
+		[(_actual_idc + 2), true] call AlysiaClient_fnc_tabletShow;
 		_actual_idc = _actual_idc + 3;
 	} else {
 		_apps_done = _apps_done + 1;
@@ -180,14 +180,14 @@ if (_apps_more || (_status > 0)) then
 {
 	if (_apps_more) then
 	{
-		[7540, true] call AdenisClient_fnc_tabletShow;
-		[7541, true] call AdenisClient_fnc_tabletShow;
+		[7540, true] call AlysiaClient_fnc_tabletShow;
+		[7541, true] call AlysiaClient_fnc_tabletShow;
 	};
 
 	if (_status > 0) then
 	{
-		[7542, true] call AdenisClient_fnc_tabletShow;
-		[7543, true] call AdenisClient_fnc_tabletShow;
+		[7542, true] call AlysiaClient_fnc_tabletShow;
+		[7543, true] call AlysiaClient_fnc_tabletShow;
 	};
 };
 
@@ -202,27 +202,27 @@ _actual_idc = 7560;
 		_button buttonSetAction (_x select 1);
 		_button ctrlSetTooltip (_x select 3);
 
-		[_actual_idc, true] call AdenisClient_fnc_tabletShow;
-		[_actual_idc + 1, true] call AdenisClient_fnc_tabletShow;
-		[_actual_idc + 2, true] call AdenisClient_fnc_tabletShow;
+		[_actual_idc, true] call AlysiaClient_fnc_tabletShow;
+		[_actual_idc + 1, true] call AlysiaClient_fnc_tabletShow;
+		[_actual_idc + 2, true] call AlysiaClient_fnc_tabletShow;
 		_actual_idc = _actual_idc + 3;
 	};
 } forEach
 ([
 	[
 		"Alysia_Client_Texture\Data\tablet\app_main\bonus_call.paa",
-		"['PHONE_CALLING'] spawn AdenisClient_fnc_tabletApp;",
-		"(call AdenisClient_fnc_hasPhone) && (missionNamespace getVariable ['calling', false])",
+		"['PHONE_CALLING'] spawn AlysiaClient_fnc_tabletApp;",
+		"(call AlysiaClient_fnc_hasPhone) && (missionNamespace getVariable ['calling', false])",
 		"Appel en cours"
 	],[
 		"Alysia_Client_Texture\Data\tablet\app_main\bonus_call.paa",
-		"['PHONE_CALLRECEIVING'] spawn AdenisClient_fnc_tabletApp;",
-		"(call AdenisClient_fnc_hasPhone) && !(missionNamespace getVariable ['calling', false]) && ((missionNamespace getVariable ['calling_number', '']) != '')",
+		"['PHONE_CALLRECEIVING'] spawn AlysiaClient_fnc_tabletApp;",
+		"(call AlysiaClient_fnc_hasPhone) && !(missionNamespace getVariable ['calling', false]) && ((missionNamespace getVariable ['calling_number', '']) != '')",
 		"Vous recevez un appel"
 	],[
 		"Alysia_Client_Texture\Data\tablet\app_main\bonus_sms.paa",
-		"[""phone_messages_read""] spawn AdenisClient_fnc_tabletApp;",
-		"(call AdenisClient_fnc_hasPhone) && ((count ([] call AdenisClient_fnc_phone_get_messages_new)) > 0)",
+		"[""phone_messages_read""] spawn AlysiaClient_fnc_tabletApp;",
+		"(call AlysiaClient_fnc_hasPhone) && ((count ([] call AlysiaClient_fnc_phone_get_messages_new)) > 0)",
 		"Vous avez des nouveaux messages"
 	],[
 		"Alysia_Client_Texture\Data\tablet\app_main\bonus_rain.paa",

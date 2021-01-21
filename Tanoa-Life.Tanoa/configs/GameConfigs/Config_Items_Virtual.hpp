@@ -1,4 +1,4 @@
-class ADENIS_ITEMS
+class ALYSIA_ITEMS
 {
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //                                                     EXEMPLE
@@ -1761,7 +1761,7 @@ class ADENIS_ITEMS
     {
         name="Barre de céréales";
         weight=1;
-        image="Adenis_Textures\barrecereales.paa";
+        image="ALYSIA_Textures\barrecereales.paa";
         class food
         {
             hunger=2;

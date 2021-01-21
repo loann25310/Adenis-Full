@@ -9,7 +9,7 @@ if (missionNamespace getVariable ["SnakeVenom", false]) exitWith {};
 [
 	"Vous avez été mordu par un <t color='#FACC2E'>Tanocien Royal</t>.<br/>" +
 	"A moins de vous reposer dans un lit hospitalier vous risquez d'avoir des <t color='#FE2E2E'>problèmes de santé</t>."
-] call AdenisClient_fnc_info;
+] call AlysiaClient_fnc_info;
 missionNamespace setVariable ["SnakeVenom", true];
 
 _handle = ppEffectCreate ["ColorInversion", 8000];
@@ -31,4 +31,4 @@ while {(_effect >= 0)} do
 };
 
 ppEffectDestroy _handle;
-["Vous ne subissez plus les effets du venin."] call AdenisClient_fnc_info;
+["Vous ne subissez plus les effets du venin."] call AlysiaClient_fnc_info;

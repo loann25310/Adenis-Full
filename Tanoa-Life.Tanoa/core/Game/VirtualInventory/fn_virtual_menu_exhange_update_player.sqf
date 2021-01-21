@@ -20,10 +20,10 @@ if (_item isEqualTo "") exitWith {};
 
 if (g_interaction_target_trunk_store) then
 {
-	_count = [_item, 2, ([(g_interaction_target getVariable [g_interaction_target_trunk_type, []])] call AdenisClient_fnc_weightGenerate), g_interaction_target_trunk_weight_max] call AdenisClient_fnc_calWeightDiff;
+	_count = [_item, 2, ([(g_interaction_target getVariable [g_interaction_target_trunk_type, []])] call AlysiaClient_fnc_weightGenerate), g_interaction_target_trunk_weight_max] call AlysiaClient_fnc_calWeightDiff;
 	if (_count > 0) then
 	{
-		if ((_count >= 2) && (([_item] call AdenisClient_fnc_itemCount) > 1)) then
+		if ((_count >= 2) && (([_item] call AlysiaClient_fnc_itemCount) > 1)) then
 		{
 			ctrlShow[510, true];
 			ctrlShow[511, true];

@@ -16,13 +16,13 @@ _list = _display displayCtrl 53101;
 lbClear _list;
 
 {
-	if (isClass(missionConfigFile >> "ADENIS_PROCESS" >> _x)) then
+	if (isClass(missionConfigFile >> "ALYSIA_PROCESS" >> _x)) then
 	{
-		_index = _list lbAdd getText(missionConfigFile >> "ADENIS_PROCESS" >> _x >> "name");
+		_index = _list lbAdd getText(missionConfigFile >> "ALYSIA_PROCESS" >> _x >> "name");
 		_list lbSetData [_index, _x];
 	} else {
-		systemChat format["%1 is not defined in ADENIS_PROCESS", _x];
-		diag_log format["%1 is not defined in ADENIS_PROCESS", _x];
+		systemChat format["%1 is not defined in ALYSIA_PROCESS", _x];
+		diag_log format["%1 is not defined in ALYSIA_PROCESS", _x];
 	};
 } forEach _process;
 if ((lbSize _list) isEqualTo 0) then

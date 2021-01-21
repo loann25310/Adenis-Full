@@ -17,10 +17,10 @@ if (isNull _target) then {
 					!(_target in g_vehicles) &&
 					!(
 						(playerSide != civilian) &&
-						(str(playerSide) isEqualTo getText(missionConfigFile >> 'ADENIS_VEHICLES' >> typeOf(_target) >> 'side'))
+						(str(playerSide) isEqualTo getText(missionConfigFile >> 'ALYSIA_VEHICLES' >> typeOf(_target) >> 'side'))
 					)
 				) then {
-				["Vous ne pouvez pas fouiller un <t color='#FF8000'>véhicule vérrouillé</t>."] call AdenisClient_fnc_error;
+				["Vous ne pouvez pas fouiller un <t color='#FF8000'>véhicule vérrouillé</t>."] call AlysiaClient_fnc_error;
 				true;
 			} else {
 				false;
@@ -28,12 +28,12 @@ if (isNull _target) then {
 		};
 		case (getNumber(configFile >> "CfgVehicles" >> typeOf(_target) >> "isBackpack") isEqualTo 1):
 		{
-			["Vous ne pouvez pas fouiller dans les <t color='#FF8000'>sacs</t>."] call AdenisClient_fnc_error;
+			["Vous ne pouvez pas fouiller dans les <t color='#FF8000'>sacs</t>."] call AlysiaClient_fnc_error;
 			true
 		};
 		case (_target isKindOf "Man"):
 		{
-			["Vous ne pouvez pas fouiller les <t color='#FF8000'>cadavres</t>."] call AdenisClient_fnc_error;
+			["Vous ne pouvez pas fouiller les <t color='#FF8000'>cadavres</t>."] call AlysiaClient_fnc_error;
 			true
 		};
 		default {false};
@@ -55,7 +55,7 @@ ctrlShow[85002, false];
 
 while {!(isNull (uinamespace getvariable ["RscDisplayInventory", displayNull]))} do
 {
-	[] call AdenisClient_fnc_virtual_menu_update_list;
+	[] call AlysiaClient_fnc_virtual_menu_update_list;
 
 	if (
 			(player getVariable ["is_coma", false]) ||

@@ -16,7 +16,7 @@ if (_type isEqualTo "") exitWith {};
 _display = findDisplay 90000;
 if (isNull _display) exitWith {};
 
-_config = missionConfigFile >> "ADENIS_COMPANIES_TYPES" >> _type;
+_config = missionConfigFile >> "ALYSIA_COMPANIES_TYPES" >> _type;
 if (!isClass(_config)) exitWith {};
 
 (_display displayCtrl 90008) ctrlSetStructuredText parseText format["<t align='center'>%1</t>", _list lbText _sel];
@@ -39,8 +39,8 @@ if (g_atm >= _price) then {
 	"<t align='left'>Licence</t><t align='right'>%3</t><br/>" +
 	"</t>",
 	if (_price_condition) then {"#31B404"} else {"#DF0101"},
-	[_price] call AdenisClient_fnc_numberText,
-	if (_license isEqualTo "") then {"Aucune"} else {getText(missionConfigFile >> "ADENIS_LICENSES" >> _license >> "name")}
+	[_price] call AlysiaClient_fnc_numberText,
+	if (_license isEqualTo "") then {"Aucune"} else {getText(missionConfigFile >> "ALYSIA_LICENSES" >> _license >> "name")}
 ];
 
 if (_price_condition) then

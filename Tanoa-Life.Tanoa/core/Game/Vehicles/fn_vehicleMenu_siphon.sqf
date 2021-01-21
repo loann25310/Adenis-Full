@@ -6,19 +6,19 @@ private["_target", "_type", "_item", "_count"];
 _target = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
 
 if (isNull _target) exitWith {
-	["Cible invalide."] call AdenisClient_fnc_error;
+	["Cible invalide."] call AlysiaClient_fnc_error;
 };
 if ((speed _target) > 0) exitWith {
-	["Vous ne pouvez pas faire le plein d'un véhicule qui se déplace."] call AdenisClient_fnc_error;
+	["Vous ne pouvez pas faire le plein d'un véhicule qui se déplace."] call AlysiaClient_fnc_error;
 };
 if (isEngineOn _target) exitWith {
-	["Vous ne pouvez pas faire le plein d'un véhicule ayant le moteur allumé."] call AdenisClient_fnc_error;
+	["Vous ne pouvez pas faire le plein d'un véhicule ayant le moteur allumé."] call AlysiaClient_fnc_error;
 };
 
-if (!(["Siphonnage", 10, _target, "", "AinvPknlMstpsnonWnonDnon_medic_1"] call AdenisClient_fnc_showProgress)) exitWith {};
+if (!(["Siphonnage", 10, _target, "", "AinvPknlMstpsnonWnonDnon_medic_1"] call AlysiaClient_fnc_showProgress)) exitWith {};
 
 _type = _target getVariable ["refuel_type", ""];
-if (_type isEqualTo "") then {_type = getText(missionConfigFile >> "ADENIS_VEHICLES" >> typeOf(_target) >> "fuel")};
+if (_type isEqualTo "") then {_type = getText(missionConfigFile >> "ALYSIA_VEHICLES" >> typeOf(_target) >> "fuel")};
 
 if ("Alysia_jerrycan_empty" in (magazines player)) then
 {
@@ -31,13 +31,13 @@ if ("Alysia_jerrycan_empty" in (magazines player)) then
 		case "GPL": {"Alysia_jerrycan_gpl"};
 	};
 
-	_count = floor(((fuel _target) * getNumber(missionConfigFile >> "ADENIS_VEHICLES" >> typeof(_target) >> "fuelCapacity")) / 20);
+	_count = floor(((fuel _target) * getNumber(missionConfigFile >> "ALYSIA_VEHICLES" >> typeof(_target) >> "fuelCapacity")) / 20);
 	if (_count >= 1) then
 	{
 		for "_i" from 1 to _count do
 		{
 			player removeMagazine "Alysia_jerrycan_empty";
-			[_item, true] call AdenisClient_fnc_handleItem;
+			[_item, true] call AlysiaClient_fnc_handleItem;
 		};
 	};
 };

@@ -5,7 +5,7 @@
 private["_sel", "_app", "_price"];
 
 if ((time - g_action_delay) < 1) exitWith {
-	["Veuillez ralentir dans vos actions"] call AdenisClient_fnc_error;
+	["Veuillez ralentir dans vos actions"] call AlysiaClient_fnc_error;
 };
 
 _sel = lbCurSel 8110;
@@ -21,5 +21,5 @@ g_action_delay = time;
 
 g_apps pushBack _app;
 playSound "buy";
-[false, _price, "Application"] call AdenisClient_fnc_handleATM;
-["STORE_APPLICATIONS"] spawn AdenisClient_fnc_tabletApp;
+[false, _price, "Application"] call AlysiaClient_fnc_handleATM;
+["STORE_APPLICATIONS"] spawn AlysiaClient_fnc_tabletApp;

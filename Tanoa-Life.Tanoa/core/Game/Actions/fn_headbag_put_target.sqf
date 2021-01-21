@@ -18,4 +18,4 @@ if ((headgear player) != "") then
 };
 
 player addHeadgear "mgsr_headbag";
-["Quelqu'un vous à mis une <t color='#FF8000'>cagoule</t>."] call AdenisClient_fnc_info;
+["Quelqu'un vous à mis une <t color='#FF8000'>cagoule</t>."] call AlysiaClient_fnc_info;

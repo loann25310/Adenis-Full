@@ -8,7 +8,7 @@ _object = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
 if (isNull _object) exitWith {};
 
 if (_object getVariable ["inUse", false]) exitWith {
-	["Quelqu'un intéragit déjà avec cet objet"] call AdenisClient_fnc_error;
+	["Quelqu'un intéragit déjà avec cet objet"] call AlysiaClient_fnc_error;
 };
 
 if (!(createDialog "RscDisplayC4")) exitWith {};
@@ -25,7 +25,7 @@ if (_object getVariable ["bomb_activate", false]) then {
 
 g_interaction_target = _object;
 
-[] call AdenisClient_fnc_c4_update;
+[] call AlysiaClient_fnc_c4_update;
 
 _middle = _display displayCtrl 12005;
 while {!(isNull _display)} do
@@ -47,7 +47,7 @@ while {!(isNull _display)} do
 			_object setVariable ["bomb_timer", _timer];
 		};
 
-		[] call AdenisClient_fnc_c4_update;
+		[] call AlysiaClient_fnc_c4_update;
 	};
 };
 

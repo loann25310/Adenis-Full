@@ -6,16 +6,16 @@ private "_anim";
 _anim = [_this, 0, "", [""]] call BIS_fnc_param;
 
 if (_anim isEqualTo "") exitWith {
-	["Aucune animation à lancer."] call AdenisClient_fnc_error;
+	["Aucune animation à lancer."] call AlysiaClient_fnc_error;
 };
 if (g_action_inUse) exitWith {
-	["Vous êtes déjà en train d'effectuer une action."] call AdenisClient_fnc_error;
+	["Vous êtes déjà en train d'effectuer une action."] call AlysiaClient_fnc_error;
 };
 if (player getVariable ["surrender", false]) exitWith {
-	["Vous ne pouvez pas effectuer une animation alors que vous avez les mains sur la tête."] call AdenisClient_fnc_error;
+	["Vous ne pouvez pas effectuer une animation alors que vous avez les mains sur la tête."] call AlysiaClient_fnc_error;
 };
 if (player getVariable ["restrained", false]) exitWith {
-	["Vous ne pouvez pas effectuer une animation alors que vous êtes menotté."] call AdenisClient_fnc_error;
+	["Vous ne pouvez pas effectuer une animation alors que vous êtes menotté."] call AlysiaClient_fnc_error;
 };
 if (!((vehicle player) isKindOf "Man"))  exitWith {};
 

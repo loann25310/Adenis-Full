@@ -12,7 +12,7 @@ if ((_uid isEqualTo "") || (isNull _object) || (_type isEqualTo "")) exitWith {}
 uiSleep 3;
 
 _plate = round(random(999999));
-_require = getArray(missionConfigFile >> "ADENIS_LABORATORIES" >> _type >> "construction" >> "require");
+_require = getArray(missionConfigFile >> "ALYSIA_LABORATORIES" >> _type >> "construction" >> "require");
 _pos = getPosATL _object;
 
 [
@@ -26,9 +26,9 @@ _pos = getPosATL _object;
 		_pos select 2,
 		getDir _object,
 		_type,
-		[_require] call AdenisServer_fnc_mresArray
+		[_require] call AlysiaServer_fnc_mresArray
 	], 1
 ] call ExtDB3_fnc_async;
 
-gServer_laboratories pushBack ([_uid, _type, _plate, _pos, (getdir _object), _require] call AdenisServer_fnc_laboratory_init_construction);
+gServer_laboratories pushBack ([_uid, _type, _plate, _pos, (getdir _object), _require] call AlysiaServer_fnc_laboratory_init_construction);
 deleteVehicle _object;

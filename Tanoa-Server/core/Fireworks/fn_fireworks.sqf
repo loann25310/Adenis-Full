@@ -156,4 +156,4 @@ if (_type isEqualTo "rain") then
 	_singleFizz,
 	_groupFizz,
 	_randomSleepShort
-] remoteExec ["AdenisClient_fnc_fireworks_effects", -2];
+] remoteExec ["AlysiaClient_fnc_fireworks_effects", -2];

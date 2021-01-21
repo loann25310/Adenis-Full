@@ -3,13 +3,13 @@
 	Code written by Lyeed
 */
 
-[] call AdenisClient_fnc_stripDownPlayer;
+[] call AlysiaClient_fnc_stripDownPlayer;
 
 if ((player getVariable ["arrested", false]) && !(isNull g_arrest_Prison)) then {
-	player forceAddUniform getText(missionConfigFile >> "ADENIS_PRISONS" >> typeof(g_arrest_Prison) >> "uniform");
+	player forceAddUniform getText(missionConfigFile >> "ALYSIA_PRISONS" >> typeof(g_arrest_Prison) >> "uniform");
 } else {
 
-	_config = missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "Loadout";
+	_config = missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "Loadout";
 
 	_uniform = getText(_config >> "uniform");
 	if (_uniform != "") then {player forceAddUniform _uniform};
@@ -30,6 +30,6 @@ if ((player getVariable ["arrested", false]) && !(isNull g_arrest_Prison)) then 
 	};
 
 	{
-		[_x, true] call AdenisClient_fnc_handleItem;
+		[_x, true] call AlysiaClient_fnc_handleItem;
 	} forEach getArray(_config >> "items");
 };

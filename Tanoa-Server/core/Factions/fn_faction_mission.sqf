@@ -9,7 +9,7 @@ _time = [_this, 2, 0, [0]] call BIS_fnc_param;
 
 if (isNull _from) exitWith {};
 
-_config = missionConfigFile >> "ADENIS_MISSIONS" >> _type;
+_config = missionConfigFile >> "ALYSIA_MISSIONS" >> _type;
 if (getNumber(_config >> "count_per_reboot") != -1) then
 {
 	_count = call compile format["mission_reboot_%1_mission", _type];
@@ -31,14 +31,14 @@ _position = _data select 0;
 		[_time, "H:MM:SS"] call CBA_fnc_formatElapsedTime
 	],
 	"LIVRAISON"
-] remoteExecCall ["AdenisClient_fnc_phone_message_receive", _from];
+] remoteExecCall ["AlysiaClient_fnc_phone_message_receive", _from];
 
 uiSleep _time;
 
 _try = 1;
 while {(count(nearestObjects[_position, ["Car", "Air", "Ship", "Tank"], 8]) > 0)} do
 {
-	[format["Un véhicule bloque l'apparition de la mission.<br/>Tentative n°%1<br/>Nouvel essaie dans 10 secondes...", _try]] remoteExecCall ["AdenisClient_fnc_error", _from];
+	[format["Un véhicule bloque l'apparition de la mission.<br/>Tentative n°%1<br/>Nouvel essaie dans 10 secondes...", _try]] remoteExecCall ["AlysiaClient_fnc_error", _from];
 	uiSleep 10;
 	_try = _try + 1;
 };
@@ -58,7 +58,7 @@ _types = [];
 
 _vehicle = getText(_config >> "vehicle") createVehicle _position;
 _vehicle setDir (_data select 1);
-[_vehicle] call AdenisClient_fnc_clearVehicleAmmo;
+[_vehicle] call AlysiaClient_fnc_clearVehicleAmmo;
 
 if (!isNull(_from)) then
 {
@@ -69,7 +69,7 @@ if (!isNull(_from)) then
 			(mapGridPosition _position)
 		],
 		"LIVRAISON"
-	] remoteExecCall ["AdenisClient_fnc_phone_message_receive", _from];
+	] remoteExecCall ["AlysiaClient_fnc_phone_message_receive", _from];
 };
 
 for "_i" from 0 to _loop_count do
@@ -83,7 +83,7 @@ for "_i" from 0 to _loop_count do
 		case "magazines": {_vehicle addMagazineCargoGlobal [_item, 4]};
 		case "backpacks": {_vehicle addBackpackCargoGlobal [_item, 1]};
 		case "items": {_vehicle addItemCargoGlobal [_item, 1]};
-		case "virtuals": {[true, _vehicle, "Trunk", _item, 1] call AdenisClient_fnc_handleTrunk};
+		case "virtuals": {[true, _vehicle, "Trunk", _item, 1] call AlysiaClient_fnc_handleTrunk};
 	};
 };
 
@@ -95,7 +95,7 @@ if ((_vehicle isKindOf "Car") || (_vehicle isKindOf "Ship") || (_vehicle isKindO
 		[_vehicle, 2] remoteExecCall ["lock", _vehicle];
 	};
 } else {
-	["Le coffre sera supprimé dans <t color='#FF8000'>20 minutes</t>."] remoteExecCall ["AdenisClient_fnc_info", _from];
+	["Le coffre sera supprimé dans <t color='#FF8000'>20 minutes</t>."] remoteExecCall ["AlysiaClient_fnc_info", _from];
 	uiSleep (60 * 20);
 	deleteVehicle _vehicle;
 };

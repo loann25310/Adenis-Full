@@ -73,7 +73,7 @@ class RscDisplayC4: RscDisplayDefault
 		class BUTTON_VALIDATE: RscButtonSilent
 		{
 			idc=12006;
-			action="[true] call AdenisClient_fnc_c4_activate;";
+			action="[true] call AlysiaClient_fnc_c4_activate;";
 
 			x=0.415104 * safezoneW + safezoneX;
 			y=0.471296 * safezoneH + safezoneY;
@@ -83,7 +83,7 @@ class RscDisplayC4: RscDisplayDefault
 		class BUTTON_UP: RscButtonSilent
 		{
 			idc=12007;
-			action="[true] call AdenisClient_fnc_c4_timer;";
+			action="[true] call AlysiaClient_fnc_c4_timer;";
 
 			x=0.556771 * safezoneW + safezoneX;
 			y=0.526852 * safezoneH + safezoneY;
@@ -93,7 +93,7 @@ class RscDisplayC4: RscDisplayDefault
 		class BUTTON_DOWN: RscButtonSilent
 		{
 			idc=12008;
-			action="[false] call AdenisClient_fnc_c4_timer;";
+			action="[false] call AlysiaClient_fnc_c4_timer;";
 
 			x=0.534114 * safezoneW + safezoneX;
 			y=0.526519 * safezoneH + safezoneY;

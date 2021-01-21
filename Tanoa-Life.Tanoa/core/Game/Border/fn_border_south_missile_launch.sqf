@@ -14,7 +14,7 @@ if (!(_type in ["M_Air_AA_MI02", "M_Titan_AA_long", "M_Zephyr", "M_Air_AA"])) ex
 _missile = _type createVehicle [(_begin select 0), (_begin select 1), (_begin select 2) + _added_height];
 _missile setVectorDirAndUp [[0,0,10],[10,10,10]];
 
-[_missile] remoteExec ["AdenisClient_fnc_border_south_missile_effects", -2];
+[_missile] remoteExec ["AlysiaClient_fnc_border_south_missile_effects", -2];
 
 uiSleep 4;
 

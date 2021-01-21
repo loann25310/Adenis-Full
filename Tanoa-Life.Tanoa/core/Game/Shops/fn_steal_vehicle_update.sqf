@@ -16,7 +16,7 @@ if (_type isEqualTo "") exitWith {};
 _display = findDisplay 99000;
 if (isNull _display) exitWith {};
 
-_vehicleInfo = [_type] call AdenisClient_fnc_fetchVehInfo;
+_vehicleInfo = [_type] call AlysiaClient_fnc_fetchVehInfo;
 if ((_vehicleInfo select 9) isEqualTo 0) exitWith
 {
 	ctrlShow[99005, false];
@@ -29,7 +29,7 @@ if ((_vehicleInfo select 9) isEqualTo 0) exitWith
 (_display displayCtrl 99004) ctrlSetStructuredText parseText format
 [
 	"<t align='center' color='#8cff9b'>%1</t><t align='right'>$</t>",
-	[_vehicleInfo select 21] call AdenisClient_fnc_numberText
+	[_vehicleInfo select 21] call AlysiaClient_fnc_numberText
 ];
 
 ctrlShow[99005, true];

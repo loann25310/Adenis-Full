@@ -58,15 +58,15 @@
 			{
 				private "_handle";
 				if (_unit_1 getVariable ["is_coma", false]) then {
-					_handle = [_unit_1, false] spawn AdenisClient_fnc_action_body_drop;
+					_handle = [_unit_1, false] spawn AlysiaClient_fnc_action_body_drop;
 				} else {
-					_handle = [_unit_1, false] spawn AdenisClient_fnc_stopescort;
+					_handle = [_unit_1, false] spawn AlysiaClient_fnc_stopescort;
 				};
 
 				waitUntil {scriptDone _handle};
 				[_unit_1, _veh] remoteExecCall ["moveInCargo", _unit_1];
 			} else {
-				_config = missionConfigFile >> "ADENIS_DYN_OBJECTS" >> typeOf(_unit_1);
+				_config = missionConfigFile >> "ALYSIA_DYN_OBJECTS" >> typeOf(_unit_1);
 				if (isClass(_config)) then
 				{
 					{
@@ -79,7 +79,7 @@
 					} forEach (attachedObjects _unit_1);
 					if ((_veh getVariable ["trunk_in_use_ID", ""]) isEqualTo "") then
 					{
-						[true, _veh, "Trunk", getText(_config >> "item"), 1, true] call AdenisClient_fnc_handleTrunk;
+						[true, _veh, "Trunk", getText(_config >> "item"), 1, true] call AlysiaClient_fnc_handleTrunk;
 					};
 
 					deleteVehicle _unit_1;
@@ -87,20 +87,20 @@
 			};
 		} forEach (attachedObjects player);
 
-		_fuel_base = getText(missionConfigFile >> "ADENIS_VEHICLES" >> typeOf(_veh) >> "fuel");
+		_fuel_base = getText(missionConfigFile >> "ALYSIA_VEHICLES" >> typeOf(_veh) >> "fuel");
 		while {((vehicle player) isEqualTo _veh)} do
 		{
 			if (((driver _veh) isEqualTo player) && (isEngineOn _veh)) then
 			{
 				_fuel_current = _veh getVariable ["refuel_type", ""];
 				if (_fuel_current isEqualTo "") then {
-					_conso = getNumber(missionConfigFile >> "ADENIS_FUEL" >> _fuel_base >> "conso");
+					_conso = getNumber(missionConfigFile >> "ALYSIA_FUEL" >> _fuel_base >> "conso");
 				} else {
-					_conso = getNumber(missionConfigFile >> "ADENIS_FUEL" >> _fuel_current >> "conso");
+					_conso = getNumber(missionConfigFile >> "ALYSIA_FUEL" >> _fuel_current >> "conso");
 					if ((_fuel_base != _fuel_current) && (_fuel_current != "bio")) then
 					{
 						if (!(_fuel_base in ["SP95", "SP98"]) || ((_fuel_base in ["SP95", "SP98"]) && !(_fuel_current in ["SP95", "SP98"]))) then {
-							[_veh, "HitEngine", 1] call AdenisClient_fnc_setHitPointDamage;
+							[_veh, "HitEngine", 1] call AlysiaClient_fnc_setHitPointDamage;
 						};
 					};
 				};
@@ -108,7 +108,7 @@
 				_veh setFuel ((fuel _veh) - (((abs(speed _veh) + 10) / 200000) * _conso));
 			};
 
-			if ((cameraView isEqualTo "EXTERNAL") && (getNumber(missionConfigFile >> "ADENIS_VEHICLES" >> typeOf(_veh) >> "forceFirstPersonView") isEqualTo 1)) then
+			if ((cameraView isEqualTo "EXTERNAL") && (getNumber(missionConfigFile >> "ALYSIA_VEHICLES" >> typeOf(_veh) >> "forceFirstPersonView") isEqualTo 1)) then
 			{
 				player switchCamera "Internal";
 			};
@@ -135,11 +135,11 @@
 		[
 			"Vous devez être dans le canal <t color='#FFBF00'>TaskForceRadio</t> pour pouvoir jouer sur le serveur.<br/>" +
 			"Vous serez expulsé du jeu dans <t color='#01DF01'>45 secondes</t> si vous n'y retournez pas."
-		] call AdenisClient_fnc_error;
+		] call AlysiaClient_fnc_error;
 		uiSleep 45;
 		if (!((call TFAR_fnc_getTeamSpeakChannelName) in ["TaskForceRadio"])) then
 		{
-			[] call AdenisDB_fnc_query_update_disconnect;
+			[] call AlysiaDB_fnc_query_update_disconnect;
 			uiSleep 2;
 			["Teamspeak", false, true] call BIS_fnc_endMission;
 		};
@@ -147,33 +147,33 @@
 
 	_fnc_server =
 	{
-		["Vous n'êtes pas connecté sur le Teamspeak du serveur. Vous allez être expulsé dans 45 secondes."] call AdenisClient_fnc_error;
+		["Vous n'êtes pas connecté sur le Teamspeak du serveur. Vous allez être expulsé dans 45 secondes."] call AlysiaClient_fnc_error;
 		uiSleep 45;
 		if (!(["AdenisRP x Your-dev.fr", call TFAR_fnc_getTeamSpeakServerName] call BIS_fnc_inString)) then
 		{
-			[] call AdenisDB_fnc_query_update_disconnect;
+			[] call AlysiaDB_fnc_query_update_disconnect;
 			uiSleep 2;
 			["Teamspeak", false, true] call BIS_fnc_endMission;
 		};
 	};
 
 	g_totalSession = 0;
-	_salary_time = getNumber(missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "salary" >> "timer");
+	_salary_time = getNumber(missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "salary" >> "timer");
 	while {true} do
 	{
 		uiSleep 60;
 		g_totalSession = g_totalSession + 1;
 
-		if ((g_totalSession % 4) isEqualTo 0) then {[] call AdenisDB_fnc_query_update_usual};
-		if ((g_totalSession % 5) isEqualTo 0) then {[(random(6) * -1) + 1] call AdenisClient_fnc_handleThirst};
-		if ((g_totalSession % 6) isEqualTo 0) then {[(random(10) * -1) + 1] call AdenisClient_fnc_handleHunger};
+		if ((g_totalSession % 4) isEqualTo 0) then {[] call AlysiaDB_fnc_query_update_usual};
+		if ((g_totalSession % 5) isEqualTo 0) then {[(random(6) * -1) + 1] call AlysiaClient_fnc_handleThirst};
+		if ((g_totalSession % 6) isEqualTo 0) then {[(random(10) * -1) + 1] call AlysiaClient_fnc_handleHunger};
 		if ((g_totalSession % _salary_time) isEqualTo 0) then
 		{
-			[] call AdenisClient_fnc_salaryProcess;
+			[] call AlysiaClient_fnc_salaryProcess;
 	       	g_nextPay = time + (_salary_time * 60);
 		};
 
-		if (("(getText(_x >> 'uid') isEqualTo (getPlayerUID player)) && (getNumber(_x >> 'teamspeak') isEqualTo 1)" configClasses (missionConfigFile >> "ADENIS_STAFF" >> "members")) isEqualTo []) then
+		if (("(getText(_x >> 'uid') isEqualTo (getPlayerUID player)) && (getNumber(_x >> 'teamspeak') isEqualTo 1)" configClasses (missionConfigFile >> "ALYSIA_STAFF" >> "members")) isEqualTo []) then
 		{
 			if ((["AdenisRP x Your-dev.fr", (call TFAR_fnc_getTeamSpeakServerName)] call BIS_fnc_inString) && (call TFAR_fnc_isTeamSpeakPluginEnabled)) then
 			{
@@ -187,11 +187,11 @@
 
 		if (rain > 0) then
 		{
-			if (((vehicle player) isEqualTo player) && (g_alcool isEqualTo 0) && (((uniform player) isEqualTo "")) && (getNumber(missionConfigFile >> "ADENIS_ITEMS_ARMA" >> (currentWeapon player) >> "protect_rain") isEqualTo 0)) then
+			if (((vehicle player) isEqualTo player) && (g_alcool isEqualTo 0) && (((uniform player) isEqualTo "")) && (getNumber(missionConfigFile >> "ALYSIA_ITEMS_ARMA" >> (currentWeapon player) >> "protect_rain") isEqualTo 0)) then
 			{
 				if (random(200) < (1 + (rain * 10))) then
 				{
-					["rhume"] spawn AdenisClient_fnc_handleDesease;
+					["rhume"] spawn AlysiaClient_fnc_handleDesease;
 				};
 			};
 		};
@@ -237,7 +237,7 @@ if (count(g_deseases) > 0) then
 	[] spawn
 	{
 		{
-			[(_x select 0)] spawn AdenisClient_fnc_handleDesease;
+			[(_x select 0)] spawn AlysiaClient_fnc_handleDesease;
 		} forEach g_deseases;
 	};
 };

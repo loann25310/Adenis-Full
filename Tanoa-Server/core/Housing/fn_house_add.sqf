@@ -9,8 +9,8 @@ _player = [_this, 1, objNull, [objNull]] call BIS_fnc_param;
 if ((isNull _house) || (isNull _player)) exitWith {};
 if (_house in gServer_houses) exitWith
 {
-	diag_log format["Error: (_house in gServer_houses) in AdenisServer_fnc_house_add.sqf (%1)", getPlayerUID _player];
-	["Cette maison n'est pas en vente."] remoteExecCall ["AdenisClient_fnc_info", owner _player];
+	diag_log format["Error: (_house in gServer_houses) in AlysiaServer_fnc_house_add.sqf (%1)", getPlayerUID _player];
+	["Cette maison n'est pas en vente."] remoteExecCall ["AlysiaClient_fnc_info", owner _player];
 };
 
 _housePos = getPosATL _house;
@@ -32,6 +32,6 @@ gServer_houses pushBack _house;
 	], 1
 ] call ExtDB3_fnc_async;
 
-_this call AdenisServer_fnc_logHouseBuy;
+_this call AlysiaServer_fnc_logHouseBuy;
 
-[_house] remoteExecCall ["AdenisClient_fnc_houseReceive", (owner _player)];
+[_house] remoteExecCall ["AlysiaClient_fnc_houseReceive", (owner _player)];

@@ -12,7 +12,7 @@ if (isNull _target) exitWith {};
 _id = (_target getVariable "house_owner") select 2;
 if (isNull(missionNamespace getVariable [format["house_storage_out_%1", _id], objNull])) then
 {
-	_storage = createVehicle [getText(missionConfigFile >> "ADENIS_HOUSES" >> typeOf(_target) >> "storage" >> "type"), [0, 0, 0], [], 0, "NONE"];
+	_storage = createVehicle [getText(missionConfigFile >> "ALYSIA_HOUSES" >> typeOf(_target) >> "storage" >> "type"), [0, 0, 0], [], 0, "NONE"];
 	missionNamespace setVariable [format["house_storage_out_%1", _id], _storage, true];
 	player disableCollisionWith _storage;
 	_storage setPosATL (getPosATL player);
@@ -68,7 +68,7 @@ if (isNull(missionNamespace getVariable [format["house_storage_out_%1", _id], ob
 		};
 	};
 
-	["<t color='#FF8000'>Coffre</t> sortie."] call AdenisClient_fnc_info;
+	["<t color='#FF8000'>Coffre</t> sortie."] call AlysiaClient_fnc_info;
 	g_action_inUse = false;
 
 	while {!(isNull _storage)} do

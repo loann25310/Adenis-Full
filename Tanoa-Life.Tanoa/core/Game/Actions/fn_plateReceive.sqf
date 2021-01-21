@@ -6,13 +6,13 @@ private["_number", "_owner"];
 _number = [_this, 0, "", [""]] call BIS_fnc_param;
 
 if (missionNamespace getVariable ["central_inUse", false]) exitWith {
-	["Vous avez déjà une demande en cours."] call AdenisClient_fnc_error;
+	["Vous avez déjà une demande en cours."] call AlysiaClient_fnc_error;
 };
 if (_number isEqualTo "") exitWith {
-	["Vous n'avez pas précisé d'immatriculation à chercher."] call AdenisClient_fnc_error;
+	["Vous n'avez pas précisé d'immatriculation à chercher."] call AlysiaClient_fnc_error;
 };
 
-["Demande reçue.<br/>Veuillez patienter pendant que nous traitons vos informations.", "CENTRAL"] call AdenisClient_fnc_phone_message_receive;
+["Demande reçue.<br/>Veuillez patienter pendant que nous traitons vos informations.", "CENTRAL"] call AlysiaClient_fnc_phone_message_receive;
 missionNamespace setVariable ["central_inUse", true];
 
 {
@@ -28,9 +28,9 @@ missionNamespace setVariable ["central_inUse", true];
 uiSleep(10 + random(30));
 
 if (isNil "_owner") then {
-	["Nous ne pouvons pas donner suite à votre <t color='#FF8000'>demande d'immatriculation</t>.<br/>Aucun véhicule ne correspond aux informations fournies.", "CENTRAL"] call AdenisClient_fnc_phone_message_receive;
+	["Nous ne pouvons pas donner suite à votre <t color='#FF8000'>demande d'immatriculation</t>.<br/>Aucun véhicule ne correspond aux informations fournies.", "CENTRAL"] call AlysiaClient_fnc_phone_message_receive;
 } else {
-	[format["Résultat de votre <t color='#FF8000'>demande d'immatriculation</t> : %1.", _owner], "CENTRAL"] call AdenisClient_fnc_phone_message_receive;
+	[format["Résultat de votre <t color='#FF8000'>demande d'immatriculation</t> : %1.", _owner], "CENTRAL"] call AlysiaClient_fnc_phone_message_receive;
 };
 
 missionNamespace setVariable ["central_inUse", false];

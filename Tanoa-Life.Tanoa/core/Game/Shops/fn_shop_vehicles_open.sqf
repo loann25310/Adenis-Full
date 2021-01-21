@@ -7,23 +7,23 @@ _shop = [(_this select 3), 0, "", [""]] call BIS_fnc_param;
 _spawnPoints = [(_this select 3), 1, [], [[]]] call BIS_fnc_param;
 
 if (_shop isEqualTo "") exitWith {
-	["Aucun type de concesionnaire précisé."] call AdenisClient_fnc_error;
+	["Aucun type de concesionnaire précisé."] call AlysiaClient_fnc_error;
 };
 
-_config_shop = missionConfigFile >> "ADENIS_SHOPS_VEHICLES" >> _shop;
+_config_shop = missionConfigFile >> "ALYSIA_SHOPS_VEHICLES" >> _shop;
 if (!isClass(_config_shop)) exitWith
 {
-	[format["Impossible de trouver les informations concernant le magasin : <t color='#FF8000'>%1</t>", _shop]] call AdenisClient_fnc_error;
-	diag_log format["[ALYSIA:ERROR] Vehicle shop %1 not defined in ADENIS_SHOPS_VEHICLES (class not found)", _shop];
+	[format["Impossible de trouver les informations concernant le magasin : <t color='#FF8000'>%1</t>", _shop]] call AlysiaClient_fnc_error;
+	diag_log format["[ALYSIA:ERROR] Vehicle shop %1 not defined in ALYSIA_SHOPS_VEHICLES (class not found)", _shop];
 };
 
 if ((getText(_config_shop >> "side") != "") && (str(playerSide) != getText(_config_shop >> "side"))) exitWith
 {
 	[format[
 		"Votre faction <t color='#04B404'>%1</t> n'est pas autorisé à acheter ici.<br/>Ce magasin <t color='#2EFE9A'>%2</t> est <t color='#FF0000'>réservé</t>.",
-		([playerSide] call AdenisClient_fnc_sideToStr),
+		([playerSide] call AlysiaClient_fnc_sideToStr),
 		getText(_config_shop >> "name")
-	]] call AdenisClient_fnc_error;
+	]] call AlysiaClient_fnc_error;
 };
 
 createDialog "RscDisplayShopVehicles";
@@ -45,7 +45,7 @@ _list = _display displayCtrl 2302;
 lbClear _list;
 
 {
-	_config_veh = missionConfigFile >> "ADENIS_VEHICLES" >> _x;
+	_config_veh = missionConfigFile >> "ALYSIA_VEHICLES" >> _x;
 	if (isClass(_config_veh)) then
 	{
 		_index = _list lbAdd getText(_config_veh >> "realname");
@@ -63,8 +63,8 @@ lbClear _list;
 		_list lbSetTooltip [_index, (_list lbText _index)];
 		_list lbSetValue [_index, getNumber(_config_veh >> "buyPrice")];
 	} else {
-		diag_log format["ERROR: %1 not defined in ADENIS_VEHICLES", _x];
-		systemChat format["ERROR: %1 not defined in ADENIS_VEHICLES", _x];
+		diag_log format["ERROR: %1 not defined in ALYSIA_VEHICLES", _x];
+		systemChat format["ERROR: %1 not defined in ALYSIA_VEHICLES", _x];
 	};
 } forEach getArray(_config_shop >> "stock");
 

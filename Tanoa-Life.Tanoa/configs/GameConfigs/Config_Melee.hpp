@@ -1,4 +1,4 @@
-class ADENIS_MELEE
+class ALYSIA_MELEE
 {
 	class Skyline_SwingAnim_Outils
 	{

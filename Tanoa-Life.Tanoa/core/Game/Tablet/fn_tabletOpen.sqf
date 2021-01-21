@@ -6,7 +6,7 @@ private["_display", "_bar"];
 
 if (!(missionNamespace getVariable ["g_connected", false])) exitWith {};
 if (missionNamespace getVariable ["g_action_inUse", false]) exitWith {};
-if (player getVariable ["arrested", false]) exitWith {["Vous n'avez pas accès à votre tablette en prison."] call AdenisClient_fnc_error};
+if (player getVariable ["arrested", false]) exitWith {["Vous n'avez pas accès à votre tablette en prison."] call AlysiaClient_fnc_error};
 if ((player getVariable ["restrained", false]) || (player getVariable ["knockedOut", false])) exitWith {};
 if (dialog) exitWith {if (!(isNull (uiNamespace getVariable ["tablet", displayNull]))) then {closeDialog 0};};
 if ((headgear player) isEqualTo "mgsr_headbag") exitWith {};
@@ -29,7 +29,7 @@ g_ctrl_shown = [];
 if (player getVariable ["tablet_on", false]) then
 {
 	g_app = "MAIN";
-	["MAIN"] spawn AdenisClient_fnc_tabletApp;
+	["MAIN"] spawn AlysiaClient_fnc_tabletApp;
 } else {
 	private["_loading_ctrl", "_loading_ctrl_white"];
 
@@ -41,7 +41,7 @@ if (player getVariable ["tablet_on", false]) then
 	_loading_ctrl ctrlSetPosition (ctrlPosition (_display displayCtrl 7502));
 	_loading_ctrl ctrlCommit 0;
 
-	if (profileNamespace getVariable ["ADENIS_tablet_animation", false]) then
+	if (profileNamespace getVariable ["ALYSIA_tablet_animation", false]) then
 	{
 		_loading_ctrl ctrlSetFade 1;
 		_loading_ctrl ctrlCommit 0;
@@ -78,7 +78,7 @@ while {!(isNull _display)} do
 		"<t align='left'><img image='%1'/> %2</t><t align='center'>%3</t><t align='right'>%4/%5/%6 <img image='Alysia_Client_Texture\Data\tablet\infobar\date.paa'/></t>",
 		if ("ItemGPS" in (assignedItems player)) then {"Alysia_Client_Texture\Data\tablet\infobar\gps_yes.paa"} else {"Alysia_Client_Texture\Data\tablet\infobar\gps_no.paa"},
 		if ("ItemGPS" in (assignedItems player)) then {(mapGridPosition player)} else {"Pas de signal"},
-		([] call AdenisClient_fnc_strTime),
+		([] call AlysiaClient_fnc_strTime),
 		(date select 2),
 		(date select 1),
 		(date select 0)

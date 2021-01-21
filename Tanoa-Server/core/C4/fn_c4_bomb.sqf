@@ -20,7 +20,7 @@ if (!(isNull _vehicle)) then
 	{
 		case "shounka_a3_brinks_noir":
 		{
-			_count = [(_vehicle getVariable ["Trunk", []]), "money_transfer"] call AdenisClient_fnc_itemTrunk;
+			_count = [(_vehicle getVariable ["Trunk", []]), "money_transfer"] call AlysiaClient_fnc_itemTrunk;
 			if (_count > 0) then
 			{
 				for "_i" from 1 to _count do
@@ -38,22 +38,22 @@ if (!(isNull _vehicle)) then
 		case "Bank_Sahrani_N":
 		{
 			_vehicle animate ["Vault_Door", 1];
-			[_vehicle, "bankAlarm"] call AdenisClient_fnc_globalSay3d;
+			[_vehicle, "bankAlarm"] call AlysiaClient_fnc_globalSay3d;
 
 			[
 				"Alerte !<br/>La porte de <t color='#FF8000'>la salle des coffres</t> de la banque vient d'imploser.<br/>Les braqueurs vont s'emparer de l'argent, sauvez le contribuable !",
 				"BANQUE"
-			] remoteExecCall ["AdenisClient_fnc_phone_message_receive", west];
+			] remoteExecCall ["AlysiaClient_fnc_phone_message_receive", west];
 		};
 		case "Bank_Sahrani_S":
 		{
 			_vehicle animate ["Vault_Door", 1];
-			[_vehicle, "bankAlarm"] call AdenisClient_fnc_globalSay3d;
+			[_vehicle, "bankAlarm"] call AlysiaClient_fnc_globalSay3d;
 
 			[
 				"Alerte !<br/>La porte de <t color='#FF8000'>la salle des coffres</t> de la banque vient d'imploser.<br/>Les braqueurs vont s'emparer de l'argent, notre Leader vous ordonne de les arrêter !",
 				"BANQUE"
-			] remoteExecCall ["AdenisClient_fnc_phone_message_receive", east];
+			] remoteExecCall ["AlysiaClient_fnc_phone_message_receive", east];
 		};
 	};
 };

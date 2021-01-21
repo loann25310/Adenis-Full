@@ -6,10 +6,10 @@ private ["_target", "_count"];
 _target = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
 
 if (isNull _target) exitWith {
-	["Cible invalide."] call AdenisClient_fnc_error;
+	["Cible invalide."] call AlysiaClient_fnc_error;
 };
 if ((speed _target) >= 1) exitWith {
-	["Le véhicule doit être à l'arrêt."] call AdenisClient_fnc_error;
+	["Le véhicule doit être à l'arrêt."] call AlysiaClient_fnc_error;
 };
 
 _count = 0;
@@ -22,7 +22,7 @@ _count = 0;
 } forEach (crew _target);
 
 if (_count isEqualTo 0) then {
-	["Il n'y a personne de menotté ou dans le coma dans le véhicule."] call AdenisClient_fnc_error;
+	["Il n'y a personne de menotté ou dans le coma dans le véhicule."] call AlysiaClient_fnc_error;
 } else {
-	[format["Vous avez sorti %1 personne%2 du véhicule.", _count, if (_count > 1) then {"s"} else {""}]] call AdenisClient_fnc_info;
+	[format["Vous avez sorti %1 personne%2 du véhicule.", _count, if (_count > 1) then {"s"} else {""}]] call AlysiaClient_fnc_info;
 };

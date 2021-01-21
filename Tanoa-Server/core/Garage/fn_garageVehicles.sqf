@@ -14,7 +14,7 @@ _types_formated = "";
 } forEach _types;
 
 if (_types_formated isEqualTo "") exitWith {
-	[[]] remoteExecCall ["AdenisClient_fnc_garageOpen", (owner _unit)];
+	[[]] remoteExecCall ["AlysiaClient_fnc_garageOpen", (owner _unit)];
 };
 
 _queryResult =
@@ -29,11 +29,11 @@ _queryResult =
 ] call ExtDB3_fnc_async;
 
 {
-	(_queryResult select _forEachIndex) set [4, [(_x select 4)] call AdenisServer_fnc_mresToArray];// inventory
-	(_queryResult select _forEachIndex) set [10, [(_x select 10)] call AdenisServer_fnc_mresToArray];// HitPointsDamage
+	(_queryResult select _forEachIndex) set [4, [(_x select 4)] call AlysiaServer_fnc_mresToArray];// inventory
+	(_queryResult select _forEachIndex) set [10, [(_x select 10)] call AlysiaServer_fnc_mresToArray];// HitPointsDamage
 } forEach _queryResult;
 
-[_queryResult] remoteExecCall ["AdenisClient_fnc_garageOpen", (owner _unit)];
+[_queryResult] remoteExecCall ["AlysiaClient_fnc_garageOpen", (owner _unit)];
 /*
 	0 classname
 	1 plate

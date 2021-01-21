@@ -16,7 +16,7 @@ if ((isNull _target) || (isNull _from)) exitWith {};
 		_target getVariable "realname",
 		_level
 	]
-] remoteExecCall ["AdenisClient_fnc_info", (owner _from)];
+] remoteExecCall ["AlysiaClient_fnc_info", (owner _from)];
 
 [
 	format
@@ -24,7 +24,7 @@ if ((isNull _target) || (isNull _from)) exitWith {};
 		"Votre niveau d'accréditation rebelle a été <t color='#FF8000'>mis à jour</t>.<br/><br/>Nouveau niveau : <t color='#00FF00'>%1</t>.<br/>Veuillez vous reconnecter.",
 		_level
 	]
-] remoteExecCall ["AdenisClient_fnc_info", (owner _target)];
+] remoteExecCall ["AlysiaClient_fnc_info", (owner _target)];
 
 _target setVariable ["rank", _level, true];
 

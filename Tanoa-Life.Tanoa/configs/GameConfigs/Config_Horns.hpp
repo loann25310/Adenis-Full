@@ -1,4 +1,4 @@
-class ADENIS_HORN
+class ALYSIA_HORN
 {
 	class east
 	{

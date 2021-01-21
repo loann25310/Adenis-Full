@@ -14,7 +14,7 @@ if ((isNull _from) || (isNull _to)) exitWith {};
 	"1:SERVER_REFUND_LOG:%1 [%2] refund %3$ to %4 [%5]",
 	_from getVariable "realname",
 	getPlayerUID _from,
-	[_amount] call AdenisClient_fnc_numberText,
+	[_amount] call AlysiaClient_fnc_numberText,
 	_to getVariable "realname",
 	getPlayerUID _to
 ];

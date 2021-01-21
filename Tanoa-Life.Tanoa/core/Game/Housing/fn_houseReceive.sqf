@@ -15,6 +15,6 @@ _marker setMarkerColorLocal "ColorWhite";
 _marker setMarkerTypeLocal "Maels_housing";
 _marker setMarkerSizeLocal [0.55, 0.55];
 
-[0] call AdenisDB_fnc_query_update_partial;
-[false, getNumber(missionConfigFile >> "ADENIS_HOUSES" >> (typeOf _house) >> "price"), "Achat maison"] call AdenisClient_fnc_handleATM;
+[0] call AlysiaDB_fnc_query_update_partial;
+[false, getNumber(missionConfigFile >> "ALYSIA_HOUSES" >> (typeOf _house) >> "price"), "Achat maison"] call AlysiaClient_fnc_handleATM;
 playSound "buy";

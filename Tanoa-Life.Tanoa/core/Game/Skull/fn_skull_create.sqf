@@ -21,7 +21,7 @@ if (g_cash > 0) then {
 
 {
 	_data pushBack ["virtual", _x];
-} forEach ([] call AdenisClient_fnc_getInv);
+} forEach ([] call AlysiaClient_fnc_getInv);
 
 {
 	if (_x != "") then {_data pushBack ["arma", _x]};
@@ -48,8 +48,8 @@ _skull setVariable ["inv", _data, true];
 
 _skull setVariable ["info",
 	[
-		[] call AdenisClient_fnc_strDate,
-		[] call AdenisClient_fnc_strTime,
+		[] call AlysiaClient_fnc_strDate,
+		[] call AlysiaClient_fnc_strTime,
 		(getPlayerUID player),
 		g_nationality,
 		g_sexe,

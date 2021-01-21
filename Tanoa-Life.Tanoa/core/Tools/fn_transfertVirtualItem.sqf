@@ -17,21 +17,21 @@ if (isNull _t_target) exitWith {false};
 
 if (_t_from isEqualTo player) then
 {
-	if ([false, _t_item, _t_amount] call AdenisClient_fnc_handleInv) then
+	if ([false, _t_item, _t_amount] call AlysiaClient_fnc_handleInv) then
 	{
-		if ([true, _t_target, _t_variable, _t_item, _t_amount, _t_apply] call AdenisClient_fnc_handleTrunk) then {
+		if ([true, _t_target, _t_variable, _t_item, _t_amount, _t_apply] call AlysiaClient_fnc_handleTrunk) then {
 			_t_return = true;
 		} else {
-			[true, _t_item, _t_amount] call AdenisClient_fnc_handleInv;
+			[true, _t_item, _t_amount] call AlysiaClient_fnc_handleInv;
 		};
 	};
 } else {
-	if ([false, _t_from, _t_variable, _t_item, _t_amount, _t_apply] call AdenisClient_fnc_handleTrunk) then
+	if ([false, _t_from, _t_variable, _t_item, _t_amount, _t_apply] call AlysiaClient_fnc_handleTrunk) then
 	{
-		if ([true, _t_item, _t_amount] call AdenisClient_fnc_handleInv) then {
+		if ([true, _t_item, _t_amount] call AlysiaClient_fnc_handleInv) then {
 			_t_return = true;
 		} else {
-			[true, _t_from, _t_variable, _t_item, _t_amount, _t_apply] call AdenisClient_fnc_handleTrunk;
+			[true, _t_from, _t_variable, _t_item, _t_amount, _t_apply] call AlysiaClient_fnc_handleTrunk;
 		};
 	};
 };

@@ -46,7 +46,7 @@ class MARKET_RESSOURCES_HEADER: RscStructuredText
 class MARKET_RESSOURCES_LIST: RscListbox
 {
 	idc=MARKET_RESSOURCES_LIST_IDC;
-	onLBSelChanged="_this call AdenisClient_fnc_APP_market_update;";
+	onLBSelChanged="_this call AlysiaClient_fnc_APP_market_update;";
 	colorBackground[]={0,0,0,0.8};
 	rowHeight=0.08;
 

@@ -14,7 +14,7 @@ if (isNull _target) exitWith {};
 		[
 			"stop",
 			"Caresser",
-			"[g_dog,'dog_one',30] call AdenisClient_fnc_globalSay3d;g_dog setDir ([g_dog, player] call BIS_fnc_DirTo);",
+			"[g_dog,'dog_one',30] call AlysiaClient_fnc_globalSay3d;g_dog setDir ([g_dog, player] call BIS_fnc_DirTo);",
 			"
 				!(g_dog getVariable ['follow', false]) &&
 				!(g_dog getVariable ['search', false])
@@ -22,14 +22,14 @@ if (isNull _target) exitWith {};
 		],[
 			"hire",
 			"Renvoyer",
-			"[] call AdenisClient_fnc_dog_hire;",
+			"[] call AlysiaClient_fnc_dog_hire;",
 			"
 				(g_dog isEqualTo g_interaction_target)
 			"
 		],[
 			"search",
 			"Chercher",
-			"[] spawn AdenisClient_fnc_dog_search;",
+			"[] spawn AlysiaClient_fnc_dog_search;",
 			"
 				(g_dog isEqualTo g_interaction_target) &&
 				!(g_dog getVariable ['search', false])
@@ -37,7 +37,7 @@ if (isNull _target) exitWith {};
 		],[
 			"stop",
 			"Assis-toi",
-			"[] call AdenisClient_fnc_dog_stop;",
+			"[] call AlysiaClient_fnc_dog_stop;",
 			"
 				(g_dog isEqualTo g_interaction_target) &&
 				(
@@ -48,7 +48,7 @@ if (isNull _target) exitWith {};
 		],[
 			"follow",
 			"Suis-moi",
-			"[] call AdenisClient_fnc_dog_follow;",
+			"[] call AlysiaClient_fnc_dog_follow;",
 			"
 				(g_dog isEqualTo g_interaction_target) &&
 				!(g_dog getVariable ['follow', false])
@@ -60,4 +60,4 @@ if (isNull _target) exitWith {};
 	true,
 	false,
 	true
-] spawn AdenisClient_fnc_interactions_create;
+] spawn AlysiaClient_fnc_interactions_create;

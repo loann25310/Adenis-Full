@@ -9,5 +9,5 @@ _unit = [_this, 2, objNull, [objNull]] call BIS_fnc_param;
 
 if ((_vid isEqualTo -1) || (isNull _unit) || (isNull _vehicle)) exitWith {};
 
-[(getPlayerUID _unit), (side _unit), _vehicle] call AdenisServer_fnc_keyManagement;
+[(getPlayerUID _unit), (side _unit), _vehicle] call AlysiaServer_fnc_keyManagement;
 [format["UPDATE vehicles SET active='1' WHERE plate='%1'", _vid], 1] call ExtDB3_fnc_async;

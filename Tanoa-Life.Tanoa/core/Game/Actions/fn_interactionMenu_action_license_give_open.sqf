@@ -6,7 +6,7 @@ private["_list", "_display", "_button", "_target"];
 _target = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
 
 if (isNull _target) exitWith {
-	["Cible invalide."] call AdenisClient_fnc_error;
+	["Cible invalide."] call AlysiaClient_fnc_error;
 };
 
 g_interaction_target = _target;
@@ -23,18 +23,18 @@ lbClear _list;
 
 {
 	_license = configName _x;
-	_index = _list lbAdd ([_license] call AdenisClient_fnc_licenseGetName);
+	_index = _list lbAdd ([_license] call AlysiaClient_fnc_licenseGetName);
 	_list lbSetData [_index, _license];
 } forEach
 (
 	"
 		(
 			((player getVariable ['rank',0]) >= getNumber(_x >> 'rank')) &&
-			((getText(_x >> 'license') isEqualTo '') || ([getText(_x >> 'license')] call AdenisClient_fnc_hasLicense)) &&
+			((getText(_x >> 'license') isEqualTo '') || ([getText(_x >> 'license')] call AlysiaClient_fnc_hasLicense)) &&
 			((getNumber(_x >> 'same_side_only') isEqualTo 0) || ((getNumber(_x >> 'same_side_only') isEqualTo 1) && ((side g_interaction_target) isEqualTo playerSide))) &&
-			(isClass(missionConfigFile >> 'ADENIS_LICENSES' >> (configName _x) >> 'factions' >> str(side g_interaction_target)))
+			(isClass(missionConfigFile >> 'ALYSIA_LICENSES' >> (configName _x) >> 'factions' >> str(side g_interaction_target)))
 		)
-	" configClasses (missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'licenses_give')
+	" configClasses (missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'licenses_give')
 );
 
 if ((lbSize _list) isEqualTo 0) then
@@ -51,7 +51,7 @@ if ((lbSize _list) isEqualTo 0) then
 	_button = _display displayCtrl 69007;
 	_button buttonSetAction
 	"
-		[lbData[69002,lbCurSel 69002], player] remoteExec ['AdenisClient_fnc_interactionMenu_action_license_give_action', g_interaction_target];
+		[lbData[69002,lbCurSel 69002], player] remoteExec ['AlysiaClient_fnc_interactionMenu_action_license_give_action', g_interaction_target];
 		closeDialog 0;
 	";
 

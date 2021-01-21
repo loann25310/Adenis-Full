@@ -12,7 +12,7 @@ _list = _display displayCtrl 9900;
 lbClear _list;
 
 {
-	_config = missionConfigFile >> "ADENIS_ATM" >> typeOf(_x);
+	_config = missionConfigFile >> "ALYSIA_ATM" >> typeOf(_x);
 	if (isClass(_config)) then
 	{
 		if (getNumber(_config >> "tablet") isEqualTo 1) then
@@ -27,20 +27,20 @@ lbClear _list;
 if ((lbSize _list) isEqualTo 0) then {
 	_list lbAdd "Aucun";
 } else {
-	[9903, true] call AdenisClient_fnc_tabletShow;
-	[9905, true] call AdenisClient_fnc_tabletShow;
-	[9906, true] call AdenisClient_fnc_tabletShow;
-	[9907, true] call AdenisClient_fnc_tabletShow;
-	[9908, true] call AdenisClient_fnc_tabletShow;
-	[9909, true] call AdenisClient_fnc_tabletShow;
-	[9910, true] call AdenisClient_fnc_tabletShow;
+	[9903, true] call AlysiaClient_fnc_tabletShow;
+	[9905, true] call AlysiaClient_fnc_tabletShow;
+	[9906, true] call AlysiaClient_fnc_tabletShow;
+	[9907, true] call AlysiaClient_fnc_tabletShow;
+	[9908, true] call AlysiaClient_fnc_tabletShow;
+	[9909, true] call AlysiaClient_fnc_tabletShow;
+	[9910, true] call AlysiaClient_fnc_tabletShow;
 	lbSortByValue _list;
 };
 
 _list lbSetCurSel 0;
 
-[] call AdenisClient_fnc_hideAllMarkers;
+[] call AlysiaClient_fnc_hideAllMarkers;
 
 waitUntil {(g_app != "DAB")};
 
-[] call AdenisClient_fnc_showAllMarkers;
+[] call AlysiaClient_fnc_showAllMarkers;

@@ -6,13 +6,13 @@ private["_storage", "_target", "_virtual", "_armaStorage", "_weapons", "_magazin
 _target = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
 
 if (isNull _target) exitWith {
-	["Cible invalide."] call AdenisClient_fnc_error;
+	["Cible invalide."] call AlysiaClient_fnc_error;
 };
 if (g_action_inUse) exitWith {
-	["Vous êtes déjà en train d'effectuer une action."] call AdenisClient_fnc_error;
+	["Vous êtes déjà en train d'effectuer une action."] call AlysiaClient_fnc_error;
 };
 if (!(isNil "gServer_soonReboot") && hasInterface) exitWith {
-	["Vous ne pouvez pas interagir avec votre coffre juste avant le <t color='#B40404'>redémarrage</t> du serveur."] call AdenisClient_fnc_error;
+	["Vous ne pouvez pas interagir avec votre coffre juste avant le <t color='#B40404'>redémarrage</t> du serveur."] call AlysiaClient_fnc_error;
 };
 
 uiSleep((random(1)) + 0.5);
@@ -22,7 +22,7 @@ _storage = _target getVariable ["company_storage_out", objNull];
 if (isNull _storage) then
 {
 	_pos = getPosATL player;
-	_storage = createVehicle [getText(missionConfigFile >> "ADENIS_COMPANIES_TYPES" >> ((_target getVariable "company_info") select 2) >> "storage" >> "type"), [0, 0, 0], [], 0, "NONE"];
+	_storage = createVehicle [getText(missionConfigFile >> "ALYSIA_COMPANIES_TYPES" >> ((_target getVariable "company_info") select 2) >> "storage" >> "type"), [0, 0, 0], [], 0, "NONE"];
 	_target setVariable ["company_storage_out", _storage, true];
 	_storage setPosATL [(_pos select 0) + 1, _pos select 1, _pos select 2];
 
@@ -82,7 +82,7 @@ if (isNull _storage) then
 		};
 	};
 
-	["<t color='#FF8000'>Coffre</t> sortie."] call AdenisClient_fnc_info;
+	["<t color='#FF8000'>Coffre</t> sortie."] call AlysiaClient_fnc_info;
 	g_action_inUse = false;
 
 	while {!(isNull _storage)} do
@@ -100,9 +100,9 @@ if (isNull _storage) then
 		_target setVariable ["company_inv_virtual", (_storage getVariable ["Trunk", []]), true];
 		_target setVariable ["company_inv_arma", ([getWeaponCargo _storage, getMagazineCargo _storage, getItemCargo _storage, getBackpackCargo _storage]), true];
 		deleteVehicle _storage;
-		["<t color='#FF8000'>Coffre</t> rangé."] call AdenisClient_fnc_info;
+		["<t color='#FF8000'>Coffre</t> rangé."] call AlysiaClient_fnc_info;
 	} else {
-		["Vous ne pouvez pas ranger le coffre pendant que quelqu'un le fouille."] call AdenisClient_fnc_error;
+		["Vous ne pouvez pas ranger le coffre pendant que quelqu'un le fouille."] call AlysiaClient_fnc_error;
 	};
 	g_action_inUse = false;
 };

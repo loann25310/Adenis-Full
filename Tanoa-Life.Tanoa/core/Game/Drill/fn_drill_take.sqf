@@ -6,13 +6,13 @@ private "_object";
 _object = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
 
 if (g_action_inUse) exitWith {
-	["Vous êtes déjà en train d'effectuer une action."] call AdenisClient_fnc_error;
+	["Vous êtes déjà en train d'effectuer une action."] call AlysiaClient_fnc_error;
 };
 if (isNull _object) exitWith {
-	["Cible invalide."] call AdenisClient_fnc_error;
+	["Cible invalide."] call AlysiaClient_fnc_error;
 };
 if (!(player canAdd "Bank_Drill")) exitWith {
-	["Vous n'avez pas assez de place dans votre inventaire pour récupérer cet objet."] call AdenisClient_fnc_error;
+	["Vous n'avez pas assez de place dans votre inventaire pour récupérer cet objet."] call AlysiaClient_fnc_error;
 };
 
 g_action_inUse = true;

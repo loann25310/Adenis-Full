@@ -24,12 +24,12 @@ switch (_list lbData _sel) do
 		} else {
 			(g_shop_tmp_buy select _index) set [1, (_data select 1) - 1];
 		};
-		g_shop_weight_actual = g_shop_weight_actual - ([(_data select 0)] call AdenisClient_fnc_itemGetWeight);
+		g_shop_weight_actual = g_shop_weight_actual - ([(_data select 0)] call AlysiaClient_fnc_itemGetWeight);
 	};
 	case "SELL":
 	{
 		_data = g_shop_tmp_sell select _index;
-		[true, (_data select 0), 1] call AdenisClient_fnc_handleInv;
+		[true, (_data select 0), 1] call AlysiaClient_fnc_handleInv;
 		if ((_data select 1) isEqualTo 1) then {
 			g_shop_tmp_sell deleteAt _index;
 		} else {
@@ -38,7 +38,7 @@ switch (_list lbData _sel) do
 	};
 };
 
-[] call AdenisClient_fnc_shop_virtual_update_basket;
+[] call AlysiaClient_fnc_shop_virtual_update_basket;
 lbSetCurSel[2405, lbCurSel 2405];
 uiSleep 0.1;
 

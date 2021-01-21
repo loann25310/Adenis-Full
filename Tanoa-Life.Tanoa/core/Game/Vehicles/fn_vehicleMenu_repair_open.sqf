@@ -6,7 +6,7 @@ private["_display", "_health", "_target"];
 _target = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
 
 if (isNull _target) exitWith {
-	["Cible invalide."] call AdenisClient_fnc_error;
+	["Cible invalide."] call AlysiaClient_fnc_error;
 };
 
 if (!(createDialog "RscDisplayVehicleRepair")) exitWith {};
@@ -22,11 +22,11 @@ _health = floor((1 - (damage _target)) * 100);
 [
 	"<t align='center'><t color='%2'>%3</t>%1</t>",
 	"%",
-	([_health] call AdenisClient_fnc_vehicleMenu_repair_getColor) select 1,
+	([_health] call AlysiaClient_fnc_vehicleMenu_repair_getColor) select 1,
 	_health
 ];
 
-[] call AdenisClient_fnc_vehicleMenu_repair_fill;
+[] call AlysiaClient_fnc_vehicleMenu_repair_fill;
 
 while {!(isNull _display)} do
 {

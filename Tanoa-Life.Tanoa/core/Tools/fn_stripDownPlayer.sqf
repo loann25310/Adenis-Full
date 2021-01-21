@@ -21,4 +21,4 @@ RemoveAllWeapons player;
 
 {
     missionNamespace setVariable [format["inv_%1", (_x select 0)], 0];
-} forEach ([] call AdenisClient_fnc_getInv);
+} forEach ([] call AlysiaClient_fnc_getInv);

@@ -9,12 +9,12 @@ _garage = [_this, 3, "", [""]] call BIS_fnc_param;
 if ((_garage isEqualTo "") || (isNull _target)) exitWith {};
 
 if (g_action_inUse) exitWith {
-	["Vous avez l'air occupé<br/>Revenez plus tard"] call AdenisClient_fnc_error;
+	["Vous avez l'air occupé<br/>Revenez plus tard"] call AlysiaClient_fnc_error;
 };
 
-_cfg = missionConfigFile >> "ADENIS_GARAGES" >> _garage;
+_cfg = missionConfigFile >> "ALYSIA_GARAGES" >> _garage;
 if (!isClass(_cfg)) exitWith {
-	[format["Impossible de trouver les informations concernant le garage [%1]", _garage]] call AdenisClient_fnc_error;
+	[format["Impossible de trouver les informations concernant le garage [%1]", _garage]] call AlysiaClient_fnc_error;
 };
 
 g_garage_info =
@@ -25,4 +25,4 @@ g_garage_info =
 	getNumber(_cfg >> "pay")
 ];
 
-[player, (g_garage_info select 1)] remoteExec ["AdenisServer_fnc_garageVehicles", 2];
+[player, (g_garage_info select 1)] remoteExec ["AlysiaServer_fnc_garageVehicles", 2];

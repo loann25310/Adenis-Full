@@ -54,13 +54,13 @@ lbClear _list_origin;
 	_index = _list_origin lbAdd getText(_x >> "name");
 	_list_origin lbSetPicture [_index, getText(_x >> "flag")];
 	_list_origin lbSetData [_index, (configName _x)];
-} forEach ("true" configClasses (missionConfigFile >> "ADENIS_NATIONALITIES"));
+} forEach ("true" configClasses (missionConfigFile >> "ALYSIA_NATIONALITIES"));
 _list_origin lbSetCurSel 0;
 
 waitUntil
 {
-	(_display displayCtrl 1507) ctrlSetStructuredText parseText format["<t align='center'>%1</t>", ([] call AdenisClient_fnc_strTime)];
-	(_display displayCtrl 1506) ctrlSetStructuredText parseText format["<t align='center'>%1</t>", ([] call AdenisClient_fnc_strDate)];
+	(_display displayCtrl 1507) ctrlSetStructuredText parseText format["<t align='center'>%1</t>", ([] call AlysiaClient_fnc_strTime)];
+	(_display displayCtrl 1506) ctrlSetStructuredText parseText format["<t align='center'>%1</t>", ([] call AlysiaClient_fnc_strDate)];
 	uiSleep 0.5;
 	isNull (findDisplay 1500)
 };

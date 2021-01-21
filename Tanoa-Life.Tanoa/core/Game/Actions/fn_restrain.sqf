@@ -5,7 +5,7 @@
 
 if (((player getVariable ["surrender", false]) || ((animationState player) == "incapacitated")) && !(player getVariable ["restrained", false])) then
 {
-	[player, "handcuffs", 10] call AdenisClient_fnc_globalSay3d;
+	[player, "handcuffs", 10] call AlysiaClient_fnc_globalSay3d;
 	player setVariable ["restrained", true, true];
 	if (player getVariable ["restrained_down", false]) then {
 		player setVariable ["restrained_down", false, true];
@@ -48,7 +48,7 @@ if (((player getVariable ["surrender", false]) || ((animationState player) == "i
 		uiSleep 0.3;
 	};
 
-	[player, "cuffout", 10] call AdenisClient_fnc_globalSay3d;
+	[player, "cuffout", 10] call AlysiaClient_fnc_globalSay3d;
 	if (player getVariable ["restrained_down", false]) then
 	{
 		player playMove "Acts_AidlPsitMstpSsurWnonDnon_out";

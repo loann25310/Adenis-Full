@@ -1,4 +1,4 @@
-class ADENIS_GARAGES
+class ALYSIA_GARAGES
 {
 	class airfield_1
 	{
@@ -170,7 +170,7 @@ class ADENIS_GARAGES
 	};
 	class land_16: Land_1
 	{
-		name="Hôpital de Malieuville";
+		name="Hôpital de Georgetown";
 		spawns[]={"land_16_spawn_1","land_16_spawn_2"};
 	};
 	class land_17: Land_1

@@ -31,5 +31,5 @@ missionNamespace setVariable ["calling_number", ""];
 missionNamespace setVariable ["calling_answer", nil];
 
 if (g_app isEqualTo "PHONE_CALLING") then {
-	["PHONE_CALL"] spawn AdenisClient_fnc_tabletApp;
+	["PHONE_CALL"] spawn AlysiaClient_fnc_tabletApp;
 };

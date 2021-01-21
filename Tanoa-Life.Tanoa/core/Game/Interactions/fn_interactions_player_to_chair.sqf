@@ -10,22 +10,22 @@
 		[
 			"sit",
 			"S'asseoir",
-			"[g_interaction_target] call AdenisClient_fnc_sitDown",
+			"[g_interaction_target] call AlysiaClient_fnc_sitDown",
 			"true"
 		],[
 			"take",
 			"Récupérer",
-			"[g_interaction_target] spawn AdenisClient_fnc_dynamicObject_packup;",
+			"[g_interaction_target] spawn AlysiaClient_fnc_dynamicObject_packup;",
 			"(g_interaction_target getVariable ['isPackable', false])"
 		],[
 			"take",
 			"Escorter",
-			"[g_interaction_target] call AdenisClient_fnc_dynamicObject_escort;",
-			"(getNumber(missionConfigFile >> 'ADENIS_DYN_OBJECTS' >> typeOf(g_interaction_target) >> 'escort') isEqualTo 1)"
+			"[g_interaction_target] call AlysiaClient_fnc_dynamicObject_escort;",
+			"(getNumber(missionConfigFile >> 'ALYSIA_DYN_OBJECTS' >> typeOf(g_interaction_target) >> 'escort') isEqualTo 1)"
 		]
 	],
 	"Chaise",
 	"Alysia_Client_Texture\Data\interactions\background.jpg",
 	true,
 	false
-] spawn AdenisClient_fnc_interactions_create;
+] spawn AlysiaClient_fnc_interactions_create;

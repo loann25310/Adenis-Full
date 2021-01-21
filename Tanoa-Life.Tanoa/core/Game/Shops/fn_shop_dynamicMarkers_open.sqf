@@ -7,4 +7,4 @@ if (playerSide != civilian) exitWith {};
 
 if (!(createDialog "RscDisplayShopDynMarkers")) exitWith {};
 
-[] call AdenisClient_fnc_shop_dynamicMarkers_update_list;
+[] call AlysiaClient_fnc_shop_dynamicMarkers_update_list;

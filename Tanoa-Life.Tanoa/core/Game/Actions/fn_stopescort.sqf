@@ -7,10 +7,10 @@ _target = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
 _action = [_this, 1, true, [true]] call BIS_fnc_param;
 
 if (isNull _target) exitWith {
-	["Cible invalide."] call AdenisClient_fnc_error;
+	["Cible invalide."] call AlysiaClient_fnc_error;
 };
 if (g_action_inUse) exitWith {
-	["Vous êtes déjà en train d'effectuer une action."] call AdenisClient_fnc_error;
+	["Vous êtes déjà en train d'effectuer une action."] call AlysiaClient_fnc_error;
 };
 
 if (_action) then

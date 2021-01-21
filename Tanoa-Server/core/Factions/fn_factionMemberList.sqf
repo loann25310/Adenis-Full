@@ -15,4 +15,4 @@ _list = switch (side _player) do
 };
 if (isNil "_list") exitWith {};
 
-[_list] remoteExec ["AdenisClient_fnc_APP_faction_leader_officeHandler", (owner _player), false];
+[_list] remoteExec ["AlysiaClient_fnc_APP_faction_leader_officeHandler", (owner _player), false];

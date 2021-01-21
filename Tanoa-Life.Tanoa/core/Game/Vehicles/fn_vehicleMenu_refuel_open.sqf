@@ -6,7 +6,7 @@ private["_target", "_list", "_display"];
 _target = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
 
 if (isNull _target) exitWith {
-	["Cible invalide."] call AdenisClient_fnc_error;
+	["Cible invalide."] call AlysiaClient_fnc_error;
 };
 
 g_interaction_target = _target;
@@ -26,7 +26,7 @@ lbClear _list;
 {
 	if (_x in (magazines player)) then
 	{
-		_details = [_x] call AdenisClient_fnc_fetchCfgDetails;
+		_details = [_x] call AlysiaClient_fnc_fetchCfgDetails;
 		if (!(_details isEqualTo [])) then
 		{
 			_index = _list lbAdd (_details select 1);
@@ -44,7 +44,7 @@ if ((lbSize _list) isEqualTo 0) then
 	ctrlShow[69006, false];
 	ctrlShow[69007, false];
 } else {
-	(_display displayCtrl 69007) buttonSetAction "[] spawn AdenisClient_fnc_vehicleMenu_refuel_action;";
+	(_display displayCtrl 69007) buttonSetAction "[] spawn AlysiaClient_fnc_vehicleMenu_refuel_action;";
 };
 
 _list lbSetCurSel 0;

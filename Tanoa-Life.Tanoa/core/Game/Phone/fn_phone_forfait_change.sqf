@@ -7,7 +7,7 @@ _new = [_this, 0, "", [""]] call BIS_fnc_param;
 
 if (_new isEqualTo "") exitWith {};
 
-_config = missionConfigFile >> "ADENIS_PHONE" >> "FORFAITS" >> _new;
+_config = missionConfigFile >> "ALYSIA_PHONE" >> "FORFAITS" >> _new;
 if (isClass(_config)) then
 {
 	_maxSMS = getNumber(_config >> "sms_max");
@@ -26,7 +26,7 @@ if (isClass(_config)) then
 	};
 
 	if ((player getVariable ["number", ""]) isEqualTo "") then {
-		[] call AdenisClient_fnc_phone_number_change;
+		[] call AlysiaClient_fnc_phone_number_change;
 	};
 
 	g_phone_forfait = _new;

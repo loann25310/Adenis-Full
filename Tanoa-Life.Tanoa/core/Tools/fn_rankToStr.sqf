@@ -10,9 +10,9 @@ _short = [_this, 2, false, [false]] call BIS_fnc_param;
 if (_side isEqualTo sideUnknown) exitWith {"Unknown side"};
 
 if (!_short) then {
-	_array = getArray(missionConfigFile >> "ADENIS_FACTIONS" >> str(_side) >> "Ranks" >> "ranks_complet");
+	_array = getArray(missionConfigFile >> "ALYSIA_FACTIONS" >> str(_side) >> "Ranks" >> "ranks_complet");
 } else {
-	_array = getArray(missionConfigFile >> "ADENIS_FACTIONS" >> str(_side) >> "Ranks" >> "ranks_short");
+	_array = getArray(missionConfigFile >> "ALYSIA_FACTIONS" >> str(_side) >> "Ranks" >> "ranks_short");
 };
 
 _max = count(_array);

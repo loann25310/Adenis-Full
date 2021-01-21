@@ -9,7 +9,7 @@ if (!(isNull (uiNameSpace getVariable ["RscTitleArrest", displayNull]))) exitWit
 
 ("prisonLayer" call BIS_fnc_rscLayer) cutRsc ["RscTitleArrest", "PLAIN"];
 
-_config_prison = missionConfigFile >> "ADENIS_PRISONS" >> typeof(g_arrest_Prison);
+_config_prison = missionConfigFile >> "ALYSIA_PRISONS" >> typeof(g_arrest_Prison);
 
 disableSerialization;
 _display = uiNameSpace getVariable ["RscTitleArrest", displayNull];
@@ -29,7 +29,7 @@ while {(g_arrest_Time >= 1)} do
 		getText(_config_prison >> "name"),
 		g_arrest_Reason,
 		[g_arrest_Time, "M:SS"] call CBA_fnc_formatElapsedTime,
-		if (g_arrest_Caution isEqualTo 0) then {"Aucune"} else {[g_arrest_Caution] call AdenisClient_fnc_numberText}
+		if (g_arrest_Caution isEqualTo 0) then {"Aucune"} else {[g_arrest_Caution] call AlysiaClient_fnc_numberText}
 	];
 
 	if ((player distance g_arrest_Prison) > getNumber(_config_prison >> "escape_distance")) exitWith
@@ -46,7 +46,7 @@ while {(g_arrest_Time >= 1)} do
 
 if (g_arrest_Escape) then
 {
-	[g_arrest_Prison, "prison_escape"] call AdenisClient_fnc_globalSay3d;
+	[g_arrest_Prison, "prison_escape"] call AlysiaClient_fnc_globalSay3d;
 
 	{
 		[
@@ -59,25 +59,25 @@ if (g_arrest_Escape) then
 				(mapGridPosition player),
 				g_arrest_Reason
 			], "PRISON"
-		] remoteExecCall ["AdenisClient_fnc_phone_message_receive", ([_x] call AdenisClient_fnc_strToSide)];
+		] remoteExecCall ["AlysiaClient_fnc_phone_message_receive", ([_x] call AlysiaClient_fnc_strToSide)];
 	} forEach getArray(_config_prison >> "sides");
 
 	[
 		[
 			["En cavale", "<t align = 'center' size = '1'>%1</t><br/>"], ["", ""],
-			[([] call AdenisClient_fnc_strDate), "<t align = 'center' size = '0.7'>%1</t><br/>"], ["", ""],
-			[([] call AdenisClient_fnc_strTime), "<t align = 'center' size = '0.7'>%1</t>"], ["", ""], ["", ""]
+			[([] call AlysiaClient_fnc_strDate), "<t align = 'center' size = '0.7'>%1</t><br/>"], ["", ""],
+			[([] call AlysiaClient_fnc_strTime), "<t align = 'center' size = '0.7'>%1</t>"], ["", ""], ["", ""]
 		]
 	] spawn BIS_fnc_typeText;
 } else {
 
-	[] call AdenisClient_fnc_stripDownPlayer;
+	[] call AlysiaClient_fnc_stripDownPlayer;
 
-	[true, (g_arrest_Gear select 0)] call AdenisClient_fnc_handleCash;
-	[(g_arrest_Gear select 1)] call AdenisClient_fnc_loadGear;
+	[true, (g_arrest_Gear select 0)] call AlysiaClient_fnc_handleCash;
+	[(g_arrest_Gear select 1)] call AlysiaClient_fnc_loadGear;
 
 	{
-		[true, (_x select 0), (_x select 1)] call AdenisClient_fnc_handleInv;
+		[true, (_x select 0), (_x select 1)] call AlysiaClient_fnc_handleInv;
 	} forEach (g_arrest_Gear select 2);
 
 	player setPosATL getArray(_config_prison >> "exit");
@@ -85,8 +85,8 @@ if (g_arrest_Escape) then
 	[
 		[
 			["Vous êtes libre", "<t align = 'center' size = '1'>%1</t><br/>"], ["", ""],
-			[([] call AdenisClient_fnc_strDate), "<t align = 'center' size = '0.7'>%1</t><br/>"], ["", ""],
-			[([] call AdenisClient_fnc_strTime), "<t align = 'center' size = '0.7'>%1</t>"], ["", ""], ["", ""]
+			[([] call AlysiaClient_fnc_strDate), "<t align = 'center' size = '0.7'>%1</t><br/>"], ["", ""],
+			[([] call AlysiaClient_fnc_strTime), "<t align = 'center' size = '0.7'>%1</t>"], ["", ""], ["", ""]
 		]
 	] spawn BIS_fnc_typeText;
 };
@@ -96,6 +96,6 @@ g_arrest_Cellule = 0;
 g_arrest_Caution = 0;
 g_arrest_Reason = "";
 g_arrest_Gear = [];
-[3] call AdenisDB_fnc_query_update_partial;
+[3] call AlysiaDB_fnc_query_update_partial;
 
 player setVariable ["arrested", false, true];

@@ -6,11 +6,11 @@ private["_index", "_name"];
 
 _index = lbValue[2802, (lbCurSel 2802)];
 if (_index isEqualTo -1) exitWith {
-	["Vous n'avez pas sélectionné de véhicule."] call AdenisClient_fnc_error;
+	["Vous n'avez pas sélectionné de véhicule."] call AlysiaClient_fnc_error;
 };
 
 if (g_action_inUse) exitWith {
-	["Vous êtes déjà en train d'effectuer une action."] call AdenisClient_fnc_error;
+	["Vous êtes déjà en train d'effectuer une action."] call AlysiaClient_fnc_error;
 };
 g_action_inUse = true;
 
@@ -19,12 +19,12 @@ _name = [
 	"Renommer",
 	"Nom",
 	((g_garage_vehicles select _index) select 5)
-] call AdenisClient_fnc_edit_create;
+] call AlysiaClient_fnc_edit_create;
 
 if (_name != "") then
 {
-	["Changement de nom dans le garage <t color='#3ADF00'>effectué</t> !"] call AdenisClient_fnc_info;
-	[((g_garage_vehicles select _index) select 1), _name] remoteExec ["AdenisServer_fnc_vehicle_update_name", 2];
+	["Changement de nom dans le garage <t color='#3ADF00'>effectué</t> !"] call AlysiaClient_fnc_info;
+	[((g_garage_vehicles select _index) select 1), _name] remoteExec ["AlysiaServer_fnc_vehicle_update_name", 2];
 	(g_garage_vehicles select _index) set [5, _name];
 
 	waitUntil
@@ -33,7 +33,7 @@ if (_name != "") then
 		!dialog
 	};
 
-	[g_garage_vehicles] call AdenisClient_fnc_garageOpen;
+	[g_garage_vehicles] call AlysiaClient_fnc_garageOpen;
 };
 
 g_action_inUse = false;

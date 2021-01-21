@@ -26,19 +26,19 @@ missionNamespace setVariable ["calling_number", (_from getVariable "number")];
 missionNamespace setVariable ["calling_hide", _hide];
 
 _time = 0;
-_sound = profileNamespace getVariable ["ADENIS_phone_call_ring", ""];
+_sound = profileNamespace getVariable ["ALYSIA_phone_call_ring", ""];
 if (_sound isEqualTo "") then
 {
 	_sleep = 3.5;
 	_duration = 2.6;
 } else {
-	_config = missionConfigFile >> "ADENIS_PHONE" >> "CALL" >> "sounds" >> _sound;
+	_config = missionConfigFile >> "ALYSIA_PHONE" >> "CALL" >> "sounds" >> _sound;
 	if (isClass(_config)) then
 	{
 		_sleep = getNumber(_config >> "sleep");
 		_duration = getNumber(_config >> "duration");
 	} else {
-		profileNamespace setVariable ["ADENIS_phone_call_ring", ""];
+		profileNamespace setVariable ["ALYSIA_phone_call_ring", ""];
 		_sleep = 3.5;
 		_duration = 2.6;
 	};
@@ -46,14 +46,14 @@ if (_sound isEqualTo "") then
 
 while {((isNil {(missionNamespace getVariable "calling_answer")}) && g_is_alive && ((missionNamespace getVariable ["calling_number", ""]) isEqualTo (_from getVariable "number")))} do
 {
-	if ([] call AdenisClient_fnc_hasPhone) then
+	if ([] call AlysiaClient_fnc_hasPhone) then
 	{
 		if ((_time >= _sleep) || (_time isEqualTo 0)) then
 		{
 			if (_sound isEqualTo "") then {
 				playSound "message_rcv_silent";
 			} else {
-				[player, _sound, getNumber(_config >> "distance")] call AdenisClient_fnc_globalSay3d;
+				[player, _sound, getNumber(_config >> "distance")] call AlysiaClient_fnc_globalSay3d;
 			};
 			missionNamespace setVariable ["message_sound_end_time", (time + _duration)];
 			_time = 0;
@@ -70,7 +70,7 @@ if (!(missionNamespace getVariable ["calling_answer", false])) exitWith
 	missionNamespace setVariable ["calling_answer", nil];
 	if (g_app in ["PHONE_CALLRECEIVING", "MAIN"]) then
 	{
-		["MAIN"] spawn AdenisClient_fnc_tabletApp;
+		["MAIN"] spawn AlysiaClient_fnc_tabletApp;
 	};
 };
 
@@ -90,9 +90,9 @@ g_phone_call_history pushBack [0, if (_hide) then {"Inconnu"} else {_from getVar
 
 [_phone, _c_channel, _freq] call TFAR_fnc_SetChannelFrequency;
 
-_handle = ["PHONE_CALLING"] spawn AdenisClient_fnc_tabletApp;
+_handle = ["PHONE_CALLING"] spawn AlysiaClient_fnc_tabletApp;
 waitUntil {scriptDone _handle};
 
-[player, _freq] remoteExecCall ["AdenisClient_fnc_phone_call_etablish", _from];
+[player, _freq] remoteExecCall ["AlysiaClient_fnc_phone_call_etablish", _from];
 
-[] spawn AdenisClient_fnc_phone_call_loop;
+[] spawn AlysiaClient_fnc_phone_call_loop;

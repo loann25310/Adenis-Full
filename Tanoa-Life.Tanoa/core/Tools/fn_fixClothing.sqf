@@ -5,15 +5,15 @@
 private "_magazines";
 
 if (((uniform player) isEqualTo "") && ((vest player) isEqualTo "")) exitWith {
-	["Vous n'avez pas de tenue/gilet à corriger."] call AdenisClient_fnc_error;
+	["Vous n'avez pas de tenue/gilet à corriger."] call AlysiaClient_fnc_error;
 };
 
-[7829, false] call AdenisClient_fnc_tabletShow;
+[7829, false] call AlysiaClient_fnc_tabletShow;
 
 uiSleep(random(1) + 0.1);
 
 if ((time - g_action_delay) < 2) exitWith {
-	["Veuillez ralentir dans vos actions."] call AdenisClient_fnc_error;
+	["Veuillez ralentir dans vos actions."] call AlysiaClient_fnc_error;
 };
 g_action_delay = time;
 

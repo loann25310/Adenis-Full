@@ -1,4 +1,4 @@
-class ADENIS_FUEL_STATION
+class ALYSIA_FUEL_STATION
 {
 	class Land_FuelStation_01_pump_F
 	{
@@ -78,7 +78,7 @@ class ADENIS_FUEL_STATION
 	};
 };
 
-class ADENIS_FUEL
+class ALYSIA_FUEL
 {
 	class Diesel
 	{
