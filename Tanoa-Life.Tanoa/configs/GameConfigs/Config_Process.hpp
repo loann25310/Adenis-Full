@@ -4349,4 +4349,94 @@ class ALYSIA_PROCESS
 			};
 		};
 	};
+	class Emballage_meuble
+	{
+		name="Usine d'emballage des Meubles";
+		sound="smelting";
+		class require
+		{
+			items_virtual[]={{"furniture",1}};
+		};
+		class receive
+		{
+			items_virtual[]={{"furniturepa",1}};
+		};
+		time_per_item=1;
+		time_default=5;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"Emballage_meuble_acier_cigarette"};
+			};
+			class WEST
+			{
+				licenses[]={"Emballage_meuble_acier_cigarette"};
+			};
+			class GUER
+			{
+				licenses[]={"Emballage_meuble_acier_cigarette"};
+			};
+		};
+	};
+	class Emballage_acier
+	{
+		name="Usine d'emballage des Barres d'acier";
+		sound="smelting";
+		class require
+		{
+			items_virtual[]={{"steelp",1}};
+		};
+		class receive
+		{
+			items_virtual[]={{"steelppa",1}};
+		};
+		time_per_item=1;
+		time_default=5;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"Emballage_meuble_acier_cigarette"};
+			};
+			class WEST
+			{
+				licenses[]={"Emballage_meuble_acier_cigarette"};
+			};
+			class GUER
+			{
+				licenses[]={"Emballage_meuble_acier_cigarette"};
+			};
+		};
+	};
+	class Emballage_cigarettes
+	{
+		name="Usine d'emballage des Cigarettes";
+		sound="smelting";
+		class require
+		{
+			items_virtual[]={{"cigarette",1}};
+		};
+		class receive
+		{
+			items_virtual[]={{"Cigarettepa",1}};
+		};
+		time_per_item=1;
+		time_default=5;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"Emballage_meuble_acier_cigarette"};
+			};
+			class WEST
+			{
+				licenses[]={"Emballage_meuble_acier_cigarette"};
+			};
+			class GUER
+			{
+				licenses[]={"Emballage_meuble_acier_cigarette"};
+			};
+		};
+	};
 };

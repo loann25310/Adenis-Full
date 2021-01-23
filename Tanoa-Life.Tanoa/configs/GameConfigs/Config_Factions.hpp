@@ -508,7 +508,7 @@ class ALYSIA_FACTIONS
 				"Quartier Maitre 1ère classe",
 				"Second Maitre",
 				"Maitre",
-				"Premier Maitre"
+				"Premier Maitre",
 				"Maitre Principal",
 				"Major",
 				"Aspirant",

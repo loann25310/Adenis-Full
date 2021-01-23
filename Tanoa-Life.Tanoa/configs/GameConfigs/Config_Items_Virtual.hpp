@@ -107,6 +107,7 @@ class ALYSIA_ITEMS
     class medoc_rhume
     {
         name="Comprimé de Nurofex";
+        buy_license_CIV="admin";
         weight=1;
         image="Alysia_Client\Textures\Items_virtual\medoc_rhume.paa";
         price_buy=200;
@@ -119,6 +120,7 @@ class ALYSIA_ITEMS
     class medoc_toux_1
     {
         name="Bouteille de Sirop de Tussidax";
+        buy_license_CIV="admin";
         weight=1;
         image="Alysia_Client\Textures\Items_virtual\medoc_toux_1.paa";
         price_buy=520;
@@ -132,6 +134,7 @@ class ALYSIA_ITEMS
     class medoc_toux_2
     {
         name="Comprimé de Padéryx";
+        buy_license_CIV="admin";
         weight=1;
         image="Alysia_Client\Textures\Items_virtual\medoc_toux_2.paa";
         price_buy=200;
@@ -144,6 +147,7 @@ class ALYSIA_ITEMS
     class medoc_depression
     {
         name="Antidépresseurs";
+        buy_license_CIV="admin";
         weight=1;
         image="Alysia_Client\Textures\Items_virtual\medoc_toux_2.paa";
         price_buy=180;
@@ -158,6 +162,7 @@ class ALYSIA_ITEMS
     {
         name="Test ADN";
         buy_license_GUER="guer_gen";
+        buy_license_CIV="admin";
         buy_rank_GUER=1;
         weight=3;
         price_buy=24500;
@@ -168,6 +173,7 @@ class ALYSIA_ITEMS
     {
         name="Scalpel chirurgical";
         buy_license_GUER="guer_chirurgien";
+        buy_license_CIV="admin";
         buy_rank_GUER=1;
         weight=1;
         price_buy=9500;
@@ -178,6 +184,7 @@ class ALYSIA_ITEMS
     {
         name="Stethoscope";
         buy_license_GUER="guer_medical";
+        buy_license_CIV="admin";
         buy_rank_GUER=1;
         weight=2;
         image="Alysia_Client\Textures\Items_virtual\stethoscope.paa";
@@ -188,6 +195,7 @@ class ALYSIA_ITEMS
     {
         name="Brancard";
         buy_rank_GUER=1;
+        buy_license_CIV="admin";
         weight=7;
         image="Alysia_Client\Textures\Items_virtual\brancard.paa";
         price_buy=350;
@@ -485,6 +493,18 @@ class ALYSIA_ITEMS
         };
         class remove {};
     };
+    class Cigarettepa
+    {
+        name="Cigarette Emballé";
+        weight=1;
+        image="Alysia_Client\Textures\Items_virtual\cigarette.paa";
+        class market
+        {
+            max=1800;
+            min=840;
+        };
+        class remove {};
+    };
 
     class objvaleur
     {
@@ -558,8 +578,21 @@ class ALYSIA_ITEMS
         image="Alysia_Client\Textures\Items_virtual\meuble.paa";
         class market
         {
-            max=7815;
+            max=5800;
             min=3639;
+        };
+        class remove {};
+    };
+
+    class furniturepa
+    {
+        name="Meuble Emballé";
+        weight=5;
+        image="Alysia_Client\Textures\Items_virtual\meuble.paa";
+        class market
+        {
+            max=10941;
+            min=5094;
         };
         class remove {};
     };
@@ -608,6 +641,18 @@ class ALYSIA_ITEMS
         {
             max=3752;
             min=774;
+        };
+        class remove {};
+    };
+    class steelppa
+    {
+        name="Barre Acier Emballé";
+        weight=2;
+        image="Alysia_Client\Textures\Items_virtual\steel.paa";
+        class market
+        {
+            max=5252;
+            min=1083;
         };
         class remove {};
     };
@@ -1761,7 +1806,7 @@ class ALYSIA_ITEMS
     {
         name="Barre de céréales";
         weight=1;
-        image="ALYSIA_Textures\barrecereales.paa";
+        image="Adenis_Textures\barrecereales.paa";
         class food
         {
             hunger=2;
@@ -2478,7 +2523,7 @@ class ALYSIA_ITEMS
     class pork
     {
         name="Porc";
-        weight=36;
+        weight=2;
         price_buy=500;
         image="Alysia_Client\Textures\Items_virtual\pork.paa";
         buy_license_CIV="company_cook";

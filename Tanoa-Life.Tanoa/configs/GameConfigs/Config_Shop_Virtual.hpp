@@ -127,7 +127,10 @@ class ALYSIA_SHOPS_VIRTUAL
 		};
 		sell[]=
 		{
-			"furniture"
+			"furniture",
+			"furniturepa",
+			"Cigarettepa",
+			"steelppa"
 		};
 	};
 
