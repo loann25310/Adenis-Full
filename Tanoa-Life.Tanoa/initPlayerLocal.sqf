@@ -180,7 +180,7 @@ if (hasInterface) then
 		true,
 		true,
 		"",
-		"!(vehicle player isEqualTo player) && (vehicle player isKindOf ""Ship"") && (abs (speed (vehicle player)) < 5) && !(abs (speed (vehicle player)) < 1)",
+		"!(vehicle player isEqualTo player) && (vehicle player isKindOf ""Ship"") && ((driver (vehicle player)) isEqualTo player) && (abs (speed (vehicle player)) < 5) && !(abs (speed (vehicle player)) < 0.2)",
 		50,
 		false,
 		"",
@@ -205,8 +205,11 @@ if (hasInterface) then
 	    };
 	};
 
-	if (((getPlayerUID player) in ["76561198171075495","76561198146571164","76561198395387821","76561198116958747"]) || (playerSide isEqualTo west)) then { 
- 		player setVariable ["copLevel",1,true]; 
+	if ((
+		(!(isNull g_company) && {(((g_company getVariable ['company_info',['','','']]) select 2) isEqualTo 'money_transfer')}) ||
+		(!(isNull g_company) && {(((g_company getVariable ['company_info',['','','']]) select 2) isEqualTo 'bank')})
+	) || (playerSide isEqualTo west)) then { 
+ 		player setVariable ["copLevel",1,true];
 	};
 
 	diag_log "---------------------------------------------------------------------------------------------------------";
