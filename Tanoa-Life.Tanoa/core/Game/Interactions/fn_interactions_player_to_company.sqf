@@ -183,7 +183,8 @@ if (isNull _object) exitWith {};
 			"
 				('Alysia_Lockpick' in (magazines player)) &&
 				(([g_interaction_target] call AlysiaClient_fnc_nearestDoor) != 0) &&
-				((g_interaction_target animationPhase format['door_%1_rot',(([g_interaction_target] call AlysiaClient_fnc_nearestDoor) != 0)]) isEqualTo 0)
+				((g_interaction_target animationPhase format['door_%1_rot',(([g_interaction_target] call AlysiaClient_fnc_nearestDoor) != 0)]) isEqualTo 0) &&
+				(west countSide playableUnits >= 2)
 			"
 		]
 	],
