@@ -706,5 +706,13 @@ class CfgFunctions
 			class APP_compagnies_infolist {};
 			class APP_staff_esp {};
 		};
+
+		
+
+		class TV
+		{
+			file="core\Game\TV";
+			class showAnnonce {};
+		};
 	};
 };

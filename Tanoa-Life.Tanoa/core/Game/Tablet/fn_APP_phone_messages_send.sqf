@@ -47,6 +47,17 @@ if ((
 	_list lbSetPicture [_index, getText(missionConfigFile >> "ALYSIA_FACTIONS" >> "CIV" >> "icon")];
 };
 
+if ((
+		["admin"] call AlysiaClient_fnc_hasLicense
+	) || (
+		["company_press"] call AlysiaClient_fnc_hasLicense
+	)
+) then {
+	_index = _list lbAdd "ADENISTV";
+	_list lbSetData [_index, "TV"];
+	_list lbSetPicture [_index, getText(missionConfigFile >> "ALYSIA_FACTIONS" >> "CIV" >> "icon")];
+};
+
 if (isClass(missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "phone" >> "central_plate")) then
 {
 	_index = _list lbAdd "Central";

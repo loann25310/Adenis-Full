@@ -154,6 +154,31 @@ _sent = 0;
 			};
 		};
 
+		case "TV":
+		{
+			if (count _msg > 111) then
+			{
+				_error = _error + format
+				[
+					"[AdenisTV] Votre message est trop long : %1/%2<br/>",
+					count _msg, 111
+				];
+			} else {
+				if ((missionNamespace getVariable ["gAnnonce_lastTime", 0]) + 30 >= time) then
+				{
+					_error = _error + format
+					[
+						"[AdenisTV] Merci de patienter avant de reposter une annonce. Attente : %1 seconde(s)",
+						round (((missionNamespace getVariable ["gAnnonce_lastTime", 0]) + 30) - time)
+					];
+				} else {
+					_sent = _sent + 1;
+					missionNamespace setVariable ["gAnnonce_lastTime", time, true];
+					[_msg] remoteExec ["AlysiaClient_fnc_showAnnonce", -2];
+				};
+			};
+		};
+
 		default
 		{
 			if ([_number] call AlysiaClient_fnc_isNumber) then
