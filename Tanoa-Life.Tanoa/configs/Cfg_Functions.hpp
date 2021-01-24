@@ -329,6 +329,7 @@ class CfgFunctions
 			class vehicleMenu_repair_open {};
 			class vehicleMenu_repair_update {};
 			class vehicleMenu_repair_getColor {};
+			class vehicleMenu_repair_light {};
 			class vehicleMenu_steal {};
 			class vehicleMenu_impound {};
 			class vehicleMenu_pullout {};

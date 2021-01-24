@@ -104,6 +104,13 @@ if (isNull _target) exitWith {};
 				(vehicle player) isEqualTo player
 			"
 		],[
+			"repair",
+			"Fix Lumière",
+			"[g_interaction_target] spawn AlysiaClient_fnc_vehicleMenu_repair_light;",
+			"
+				(vehicle player) isEqualTo player
+			"
+		],[
 			"flip",
 			"Retourner",
 			"[g_interaction_target] spawn AlysiaClient_fnc_vehicleMenu_flip;",
