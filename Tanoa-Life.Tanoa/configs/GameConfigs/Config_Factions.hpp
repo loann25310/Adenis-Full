@@ -264,6 +264,13 @@ class ALYSIA_FACTIONS
 				license="admin";
 			};
 
+			class emballageressources
+			{
+				rank=0;
+				same_side_only=0;
+				license="admin";
+			};
+
 			class driver
 			{
 				rank=0;

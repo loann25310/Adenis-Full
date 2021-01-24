@@ -229,6 +229,7 @@ class ALYSIA_SHOPS_ARMA
 			"Alysia_repair_engine",
 			"Alysia_repair_body",
 			"Alysia_siphon",
+			"dam_thom_phare",
 			"Alysia_repair_glass",
 			"routbarrinvch",
 			"barriereinvch",

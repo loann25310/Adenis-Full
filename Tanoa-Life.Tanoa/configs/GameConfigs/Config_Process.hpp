@@ -4334,7 +4334,7 @@ class ALYSIA_PROCESS
 			};
 		};
 	};
-	class emballageressources
+	class emballageressources_furniture
 	{
 		name="Usine d'emballage des Meubles";
 		sound="smelting";
@@ -4364,7 +4364,7 @@ class ALYSIA_PROCESS
 			};
 		};
 	};
-	class emballageressources
+	class emballageressources_steelp
 	{
 		name="Usine d'emballage des Barres d'acier";
 		sound="smelting";
@@ -4394,7 +4394,7 @@ class ALYSIA_PROCESS
 			};
 		};
 	};
-	class emballageressources
+	class emballageressources_cigarette
 	{
 		name="Usine d'emballage des Cigarettes";
 		sound="smelting";

@@ -2437,6 +2437,11 @@ class ALYSIA_ITEMS_ARMA
 		buy_license_CIV[]={"company_garagist"};
 		buy_price=3500;
 	};
+	class dam_thom_phare
+	{
+		buy_license_CIV[]={"company_garagist"};
+		buy_price=3500;
+	};
 	class Alysia_repair_glass
 	{
 		buy_license_CIV[]={"company_garagist"};
