@@ -88,7 +88,7 @@ if (!(alive g_snake_unit)) then
 	player assignItem "ItemMap";
 
 	{
-		if (typeOf(_x) isEqualTo "Land_Suitcase_F") then
+		if (typeOf(_x) isEqualTo "Land_TentSolar_01_folded_olive_F") then
 		{
 			if (((_x getVariable ["info", ["","",""]]) select 2) isEqualTo (getPlayerUID player)) then
 			{

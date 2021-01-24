@@ -9,7 +9,7 @@ if (count (nearestObjects [_pos, ["Car", "Air"], 5]) > 0) then {
 	_pos = [_pos, 10] call CBA_fnc_randPos;
 };
 
-_skull = createVehicle ["Land_Suitcase_F", [0,0,0], [], 0, "CAN_COLLIDE"];
+_skull = createVehicle ["Land_TentSolar_01_folded_olive_F", [0,0,0], [], 0, "CAN_COLLIDE"];
 _skull setPosATL _pos;
 _skull setDir random(360);
 
