@@ -134,40 +134,6 @@ _CreateLocalVehicle =
 ["Land_Canal_Wall_10m_F","[5637.468262,10405.319336,0.473904]",24.0908,-100,0,0,[]] call _CreateLocalVehicle;
 ["Land_Canal_Wall_10m_F","[5629.0888672,10398.15918,0.606902]",201.869,-100,0,0,[]] call _CreateLocalVehicle;
 
-// Hopital
-["Land_ChairWood_F","[5893.974609,10258.623047,0.204636]",36.2525,-100,0,0,[]] call _CreateLocalVehicle;
-["Land_ChairWood_F","[5894.713379,10258.0839844,0.204636]",36.2525,-100,0,0,[]] call _CreateLocalVehicle;
-["Land_ChairWood_F","[5896.611328,10256.765625,0.204636]",36.2525,-100,0,0,[]] call _CreateLocalVehicle;
-["Land_ChairWood_F","[5895.374023,10257.615234,0.204636]",36.2525,-100,0,0,[]] call _CreateLocalVehicle;
-["Land_ChairWood_F","[5896.0263672,10257.182617,0.204636]",36.2525,-100,0,0,[]] call _CreateLocalVehicle;
-// ["Land_Plank_01_8m_F","[5870.135254,10258.600586,0]",127.722,16.4381,0,0,[]] call _CreateLocalVehicle;
-// ["Land_Plank_01_4m_F","[5874.395996,10255.223633,0]",127.722,17.942,0,0,[]] call _CreateLocalVehicle;
-// ["Land_Plank_01_4m_F","[5874.945313,10255.93457,0]",127.722,17.942,0,0,[]] call _CreateLocalVehicle;
-// ["Land_Plank_01_8m_F","[5870.75293,10259.399414,0]",127.722,16.4381,0,0,[]] call _CreateLocalVehicle;
-["Land_Pot_01_F","[5900.153809,10242.271484,0.13429]",216.522,-100,0,0,[]] call _CreateLocalVehicle;
-["Flower_Medium_White1","[5899.979004,10242.341797,1.02684]",234.522,-100,0,0,[]] call _CreateLocalVehicle;
-["Flower_Medium_Blue","[5900.697754,10241.962891,0.85851]",252.522,-100,0,0,[]] call _CreateLocalVehicle;
-["Flower_Medium_White2","[5899.550781,10242.367188,0.885036]",252.522,-100,0,0,[]] call _CreateLocalVehicle;
-["Flower_Tansy","[5900.36084,10242.186523,0.945868]",219.522,-100,0,0,[]] call _CreateLocalVehicle;
-["Flower_Medium_Blue","[5899.735352,10242.741211,0.85851]",294.522,-100,0,0,[]] call _CreateLocalVehicle;
-["Flower_Medium_Blue","[5900.148438,10242.365234,0.85851]",252.522,-100,0,0,[]] call _CreateLocalVehicle;
-["Flower_Medium_Blue","[5899.929199,10242.447266,0.85851]",252.522,-100,0,0,[]] call _CreateLocalVehicle;
-["Flower_Medium_Blue","[5900.436035,10242.136719,0.85851]",252.522,-100,0,0,[]] call _CreateLocalVehicle;
-["Land_File2_F","[5892.807617,10239.501953,7.625]",309.522,-100,0,0,[]] call _CreateLocalVehicle;
-["Fridge_01_closed_F","[5896.690918,10232.34375,6.63329]",216.585,-100,0,0,[]] call _CreateLocalVehicle;
-["Land_Printer_01_F","[5901.333984,10237.394531,1.15015]",36.5851,-100,0,0,[]] call _CreateLocalVehicle;
-["Land_ShelvesWooden_F","[5901.438965,10237.291992,0.171717]",306.585,-100,0,0,[]] call _CreateLocalVehicle;
-["Land_ChairWood_F","[5898.391113,10233.441406,6.65099]",172.01,-100,0,0,[]] call _CreateLocalVehicle;
-["Land_ChairWood_F","[5899.144531,10234.30957,5.03297]",127.01,-100,0,0,[]] call _CreateLocalVehicle;
-["Land_ChairWood_F","[5899.900391,10235.237305,2.12051]",127.01,-100,0,0,[]] call _CreateLocalVehicle;
-["Land_ChairWood_F","[5897.00732422,10234.0869141,6.659]",217.01,-100,0,0,[]] call _CreateLocalVehicle;
-["Land_ChairWood_F","[5896.349121,10235.0175781,6.659]",256.01,-100,0,0,[]] call _CreateLocalVehicle;
-["Land_ChairWood_F","[5896.793457,10236.0527344,6.03686]",306.535,-100,0,0,[]] call _CreateLocalVehicle;
-["Land_ChairWood_F","[5897.463867,10236.925781,3.4106]",306.535,-100,0,0,[]] call _CreateLocalVehicle;
-["Land_ChairWood_F","[5899.0551758,10236.805664,0.881648]",40.01,-100,0,0,[]] call _CreateLocalVehicle;
-["Land_ChairWood_F","[5900.0390625,10236.381836,0.201424]",67.01,-100,0,0,[]] call _CreateLocalVehicle;
-["Land_ChairWood_F","[5898.198242,10237.423828,1.32253]",355.01,-100,0,0,[]] call _CreateLocalVehicle;
-
 //Farming : Fer
 ["Land_SharpStone_02","[13479.558594,9592.50293,0]",-204.116,-100,0,0,[]] call _CreateLocalVehicle;
 ["Land_SharpStone_02","[13489.886719,9597.762695,-0.228114]",-164.116,-100,0,0,[]] call _CreateLocalVehicle;
