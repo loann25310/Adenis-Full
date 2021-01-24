@@ -853,7 +853,7 @@ if (playerSide isEqualTo independent) then
 	} forEach ([stand_info_guer_1]);
 };
 
-if (playerSide isEqualTo east) then
+/*if (playerSide isEqualTo east) then
 {
 	{
 		_marker = createMarkerLocal [format["stand_faction_%1", _forEachIndex], (getPos _x)];
@@ -866,7 +866,7 @@ if (playerSide isEqualTo east) then
 	{
 		removeAllActions _x;
 	} forEach ([stand_info_east_1, stand_info_east_2]);
-};
+};*/
 
 if (playerSide isEqualTo west) then
 {

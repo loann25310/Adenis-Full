@@ -174,6 +174,16 @@ while {(_death_timer > 0) && !g_coma_dead && (player getVariable ["is_coma", fal
 			_ctrl_suicide_frame ctrlShow false;
 			false;
 		};
+		case (g_compresse > 0):
+		{
+			_ctrl_suicide_left ctrlSetStructuredText parseText "<t align='center' size='1.5'>Vous êtes sous l'effet de l'adrénaline ou des compresses ont été appliqués</t>";
+			_ctrl_suicide_left ctrlShow true;
+			_ctrl_suicide_image ctrlShow false;
+			_ctrl_suicide_button ctrlShow false;
+			_ctrl_suicide_text ctrlShow false;
+			_ctrl_suicide_frame ctrlShow false;
+			false;
+		};
 		case (time < (player getVariable ["medic_request_time", 0])):
 		{
 			_ctrl_suicide_left ctrlSetStructuredText parseText format

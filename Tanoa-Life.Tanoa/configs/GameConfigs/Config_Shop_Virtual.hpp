@@ -123,6 +123,17 @@ class ALYSIA_SHOPS_VIRTUAL
 			"milk",
 			"pork",
 			"beef",
+			"frite",
+			"caviar",
+			"fraise",
+			"burger",
+			"kebab",
+			"lasagne",
+			"macaron",
+			"carbo",
+			"purer",
+			"saucisson",
+			"bolo",
 			"firework"
 		};
 		sell[]=

@@ -12,7 +12,16 @@ if (dialog) exitWith {if (!(isNull (uiNamespace getVariable ["tablet", displayNu
 if ((headgear player) isEqualTo "mgsr_headbag") exitWith {};
 
 if ((vehicle player) isEqualTo player) then {
-	player playAction "Gear";
+    [] spawn {
+        _tab = "Diablo_tablette_01" createVehicle (position player);
+        _tab attachTo [player, [0.06, 0.01, 0], "lefthand"];
+        _tab setVectorDirAndUp [[0, 0, 0], [0, 0, 0]]; 
+        player playAction "APD_Tab";
+        waituntil {uisleep 1; (isNull (findDisplay 7500));};
+        detach _tab;
+        deleteVehicle _tab;
+        player playAction "GestureNod";
+    };
 };
 
 if (!(createDialog "RscDisplayTablet")) exitWith {};

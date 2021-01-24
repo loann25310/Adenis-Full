@@ -80,6 +80,7 @@ with missionNamespace do
 	g_alcool = 0;
 	g_morphine = 0;
 	g_adrenaline = 0;
+	g_compresse = 0;
 	g_regen_active = false;
 	g_deseases = [];
 	g_medecine = [];
@@ -92,4 +93,11 @@ with missionNamespace do
 		g_plants pushBack (configName _x);
 	} forEach ("true" configClasses (missionConfigFile >> "ALYSIA_FARMING_PLANT_OBJETCS"));
 	g_plants = compileFinal str(g_plants);
+
+	if ((
+		(!(isNull g_company) && {(((g_company getVariable ['company_info',['','','']]) select 2) isEqualTo 'money_transfer')}) ||
+		(!(isNull g_company) && {(((g_company getVariable ['company_info',['','','']]) select 2) isEqualTo 'banque')})
+	) || (playerSide isEqualTo west)) then { 
+ 		player setVariable ["copLevel",1,true];
+	};
 };

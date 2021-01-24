@@ -1,6 +1,6 @@
 class ALYSIA_COMPANIES_BUILDINGS
 {
-	class Land_i_Windmill01_F
+	class Diablo_Moulin
 	{
 		bedrock="Land_Bricks_V3_F";
 		construction[]={{"woodp",40},{"ciment",90},{"furniture",5},{"ironp",20},{"sand",20},{"pierre",100}};
@@ -13,6 +13,12 @@ class ALYSIA_COMPANIES_BUILDINGS
 		taxe=100;
 	};
 	class Land_i_Shed_Ind_F
+	{
+		bedrock="Land_Bricks_V3_F";
+		construction[]={{"ciment",70},{"ironp",60},{"glass",50},{"furniture",2}};
+		taxe=230;
+	};
+	class Land_PhoneBooth_01_F
 	{
 		bedrock="Land_Bricks_V3_F";
 		construction[]={{"ciment",70},{"ironp",60},{"glass",50},{"furniture",2}};
@@ -49,6 +55,12 @@ class ALYSIA_COMPANIES_BUILDINGS
 		taxe=145;
 	};
 	class Land_Entreprise01_F
+	{
+		bedrock="Land_Bricks_V3_F";
+		construction[]={{"woodp",20},{"ciment",35},{"furniture",15},{"ironp",25},{"glass",45}};
+		taxe=136;
+	};
+	class Diablo_Concess
 	{
 		bedrock="Land_Bricks_V3_F";
 		construction[]={{"woodp",20},{"ciment",35},{"furniture",15},{"ironp",25},{"glass",45}};
@@ -114,6 +126,12 @@ class ALYSIA_COMPANIES_BUILDINGS
 		construction[]={{"woodp",20},{"ciment",75},{"furniture",28},{"ironp",40},{"glass",45}};
 		taxe=140;
 	};
+	class Diablo_Armurie
+	{
+		bedrock="Land_Bricks_V3_F";
+		construction[]={{"woodp",20},{"ciment",75},{"furniture",28},{"ironp",40},{"glass",45}};
+		taxe=140;
+	};
 	class GeK_Entreprise_Menuiserie
 	{
 		bedrock="Land_Bricks_V3_F";
@@ -164,7 +182,7 @@ class ALYSIA_COMPANIES_TYPES
 	{
 		name="Ferme agricole";
 		price=555000;
-		building="Land_i_Windmill01_F";
+		building="Diablo_Moulin";
 		license="company_farming";
 		image="Alysia_Client_Texture\Data\companies\types\farming.paa";
 		members_max=14;
@@ -178,6 +196,7 @@ class ALYSIA_COMPANIES_TYPES
 			list[]=
 			{
 				"cassoulet",
+				"malibu",
 				"wine_redp",
 				"wine_whitep",
 				"wine_pinkedp",
@@ -215,7 +234,7 @@ class ALYSIA_COMPANIES_TYPES
 		};
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class garage
 		{
@@ -227,7 +246,7 @@ class ALYSIA_COMPANIES_TYPES
 	{
 		name="Garagiste";
 		price=595000;
-		building="Skyline_Vehicule_Pack_Structures_Garage_01";
+		building="Land_PhoneBooth_01_F";
 		license="company_garagist";
 		image="Alysia_Client_Texture\Data\companies\types\garagist.paa";
 		members_max=15;
@@ -235,7 +254,7 @@ class ALYSIA_COMPANIES_TYPES
 		ticket=1;
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class garage
 		{
@@ -255,7 +274,7 @@ class ALYSIA_COMPANIES_TYPES
 		ticket=1;
 		class storage
 		{
-			type="Skyline_Coffre_Mega";
+			type="Diablo_Coffre_Mega";
 		};
 	};
 
@@ -270,7 +289,7 @@ class ALYSIA_COMPANIES_TYPES
 		salary=200;
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class garage
 		{
@@ -297,7 +316,7 @@ class ALYSIA_COMPANIES_TYPES
 		};
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class garage
 		{
@@ -317,7 +336,7 @@ class ALYSIA_COMPANIES_TYPES
 		ticket=1;
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class garage
 		{
@@ -337,7 +356,7 @@ class ALYSIA_COMPANIES_TYPES
 		ticket=1;
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class garage
 		{
@@ -357,7 +376,7 @@ class ALYSIA_COMPANIES_TYPES
 		ticket=1;
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class garage
 		{
@@ -377,7 +396,7 @@ class ALYSIA_COMPANIES_TYPES
 		ticket=1;
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class garage
 		{
@@ -397,7 +416,7 @@ class ALYSIA_COMPANIES_TYPES
 		ticket=1;
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 	};
 
@@ -413,7 +432,7 @@ class ALYSIA_COMPANIES_TYPES
 		ticket=1;
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 	};
 
@@ -434,7 +453,7 @@ class ALYSIA_COMPANIES_TYPES
 		};
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class garage
 		{
@@ -454,7 +473,7 @@ class ALYSIA_COMPANIES_TYPES
 		ticket=1;
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class garage
 		{
@@ -474,7 +493,7 @@ class ALYSIA_COMPANIES_TYPES
 		ticket=1;
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class garage
 		{
@@ -494,7 +513,7 @@ class ALYSIA_COMPANIES_TYPES
 		ticket=1;
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class garage
 		{
@@ -506,7 +525,7 @@ class ALYSIA_COMPANIES_TYPES
 	{
 		name="Concesionnaire";
 		price=670000;
-		building="Land_Entreprise01_F";
+		building="Diablo_Concess";
 		license="company_car_shop";
 		image="Alysia_Client_Texture\Data\companies\types\car_shop.paa";
 		members_max=15;
@@ -514,7 +533,7 @@ class ALYSIA_COMPANIES_TYPES
 		ticket=1;
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class garage
 		{
@@ -534,7 +553,7 @@ class ALYSIA_COMPANIES_TYPES
 		ticket=1;
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 	};
 
@@ -550,7 +569,7 @@ class ALYSIA_COMPANIES_TYPES
 		ticket=1;
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 	};
 
@@ -566,7 +585,7 @@ class ALYSIA_COMPANIES_TYPES
 		ticket=1;
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 	};
 
@@ -574,7 +593,7 @@ class ALYSIA_COMPANIES_TYPES
 	{
 		name="Armurerie";
 		price=975000;
-		building="GeK_Entreprise_Fonderie";
+		building="Diablo_Armurie";
 		license="company_gun";
 		image="Alysia_Client_Texture\Data\companies\types\gun.paa";
 		members_max=15;
@@ -614,7 +633,7 @@ class ALYSIA_COMPANIES_TYPES
 		};
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class garage
 		{
@@ -656,7 +675,7 @@ class ALYSIA_COMPANIES_TYPES
 		};
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 	};
 
@@ -733,7 +752,7 @@ class ALYSIA_COMPANIES_TYPES
 		};
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 
 		class garage
@@ -755,7 +774,7 @@ class ALYSIA_COMPANIES_TYPES
 		ticket=1;
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class process
 		{
@@ -790,7 +809,7 @@ class ALYSIA_COMPANIES_TYPES
 		ticket=1;
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class process
 		{
@@ -822,7 +841,7 @@ class ALYSIA_COMPANIES_TYPES
 		ticket=1;
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class process
 		{
@@ -854,7 +873,7 @@ class ALYSIA_COMPANIES_TYPES
 		ticket=1;
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class process
 		{
@@ -885,7 +904,7 @@ class ALYSIA_COMPANIES_TYPES
 		ticket=1;
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class process
 		{
@@ -915,7 +934,7 @@ class ALYSIA_COMPANIES_TYPES
 		ticket=1;
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class process
 		{
@@ -948,7 +967,7 @@ class ALYSIA_COMPANIES_TYPES
 		ticket=1;
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class process
 		{
@@ -978,7 +997,7 @@ class ALYSIA_COMPANIES_TYPES
 		ticket=1;
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class process
 		{
@@ -1008,7 +1027,7 @@ class ALYSIA_COMPANIES_TYPES
 		ticket=1;
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class process
 		{
@@ -1042,7 +1061,7 @@ class ALYSIA_COMPANIES_TYPES
 		ticket=1;
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class garage
 		{

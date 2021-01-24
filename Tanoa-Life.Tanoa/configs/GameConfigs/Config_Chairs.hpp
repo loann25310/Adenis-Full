@@ -7,6 +7,9 @@ class ALYSIA_CHAIRS
 		dir=180;
 	};
 	class Land_CampingChair_V1_F: Land_Chair_EP1 {};
+	class Diablo_Siege_1: Land_Chair_EP1 {};
+	class Diablo_Siege_2: Land_Chair_EP1 {};
+	class Diablo_Siege_3: Land_Chair_EP1 {};
 	class Land_CampingChair_V2_F: Land_Chair_EP1 {};
 	class Land_OfficeChair_01_F: Land_Chair_EP1 {};
 	class Land_ChairWood_F: Land_Chair_EP1 {};
