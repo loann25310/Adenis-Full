@@ -108,7 +108,8 @@ if (isNull _target) exitWith {};
 			"Fix Lumière",
 			"[g_interaction_target] spawn AlysiaClient_fnc_vehicleMenu_repair_light;",
 			"
-				(vehicle player) isEqualTo player
+				(vehicle player) isEqualTo player &&
+				('dam_thom_phare' in (magazines player))
 			"
 		],[
 			"flip",
