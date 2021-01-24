@@ -4920,7 +4920,7 @@ class ALYSIA_VEHICLES
 		colors[]={};
 	};
 
-	class geK_ElCamino
+	class Dieter_Apolia_Chevrolet_ElCamino_aqua
 	{
 		realname="Chevrolet eL Camino";
 		buyPrice=175000;
@@ -4932,30 +4932,39 @@ class ALYSIA_VEHICLES
 		fuelCapacity=78;
 		colors[]=
 		{
-			"GeK_ElCamino_01",
-			"GeK_ElCamino_02",
-			"GeK_ElCamino_03",
-			"GeK_ElCamino_04",
-			"GeK_ElCamino_05",
-			"GeK_ElCamino_06",
-			"GeK_ElCamino_07",
-			"GeK_ElCamino_08",
-			"GeK_ElCamino_09",
-			"GeK_ElCamino_10",
-			"GeK_ElCamino_11"
+			"Dieter_Apolia_Chevrolet_ElCamino_aqua",
+			"Dieter_Apolia_Chevrolet_ElCamino_noir",
+			"Dieter_Apolia_Chevrolet_ElCamino_bleunuit",
+			"Dieter_Apolia_Chevrolet_ElCamino_bleu",
+			"Dieter_Apolia_Chevrolet_ElCamino_gris",
+			"Dieter_Apolia_Chevrolet_ElCamino_yellow",
+			"Dieter_Apolia_Chevrolet_ElCamino_darkgreen",
+			"Dieter_Apolia_Chevrolet_ElCamino_bordeau",
+			"Dieter_Apolia_Chevrolet_ElCamino_green",
+			"Dieter_Apolia_Chevrolet_ElCamino_orange",
+			"Dieter_Apolia_Chevrolet_ElCamino_pink",
+			"Dieter_Apolia_Chevrolet_ElCamino_purple",
+			"Dieter_Apolia_Chevrolet_ElCamino_darkpurple",
+			"Dieter_Apolia_Chevrolet_ElCamino_red",
+			"Dieter_Apolia_Chevrolet_ElCamino_darkred",
+			"Dieter_Apolia_Chevrolet_ElCamino_white"
 		};
 	};
-	class GeK_ElCamino_01: geK_ElCamino {};
-	class GeK_ElCamino_02: geK_ElCamino {};
-	class GeK_ElCamino_03: geK_ElCamino {};
-	class GeK_ElCamino_04: geK_ElCamino {};
-	class GeK_ElCamino_05: geK_ElCamino {};
-	class GeK_ElCamino_06: geK_ElCamino {};
-	class GeK_ElCamino_07: geK_ElCamino {};
-	class GeK_ElCamino_08: geK_ElCamino {};
-	class GeK_ElCamino_09: geK_ElCamino {};
-	class GeK_ElCamino_10: geK_ElCamino {};
-	class GeK_ElCamino_11: geK_ElCamino {};
+	class Dieter_Apolia_Chevrolet_ElCamino_noir: Dieter_Apolia_Chevrolet_ElCamino_aqua {};
+	class Dieter_Apolia_Chevrolet_ElCamino_bleunuit: Dieter_Apolia_Chevrolet_ElCamino_aqua {};
+	class Dieter_Apolia_Chevrolet_ElCamino_bleu: Dieter_Apolia_Chevrolet_ElCamino_aqua {};
+	class Dieter_Apolia_Chevrolet_ElCamino_gris: Dieter_Apolia_Chevrolet_ElCamino_aqua {};
+	class Dieter_Apolia_Chevrolet_ElCamino_yellow: Dieter_Apolia_Chevrolet_ElCamino_aqua {};
+	class Dieter_Apolia_Chevrolet_ElCamino_darkgreen: Dieter_Apolia_Chevrolet_ElCamino_aqua {};
+	class Dieter_Apolia_Chevrolet_ElCamino_bordeau: Dieter_Apolia_Chevrolet_ElCamino_aqua {};
+	class Dieter_Apolia_Chevrolet_ElCamino_green: Dieter_Apolia_Chevrolet_ElCamino_aqua {};
+	class Dieter_Apolia_Chevrolet_ElCamino_orange: Dieter_Apolia_Chevrolet_ElCamino_aqua {};
+	class Dieter_Apolia_Chevrolet_ElCamino_pink: Dieter_Apolia_Chevrolet_ElCamino_aqua {};
+	class Dieter_Apolia_Chevrolet_ElCamino_purple: Dieter_Apolia_Chevrolet_ElCamino_aqua {};
+	class Dieter_Apolia_Chevrolet_ElCamino_darkpurple: Dieter_Apolia_Chevrolet_ElCamino_aqua {};
+	class Dieter_Apolia_Chevrolet_ElCamino_red: Dieter_Apolia_Chevrolet_ElCamino_aqua {};
+	class Dieter_Apolia_Chevrolet_ElCamino_darkred: Dieter_Apolia_Chevrolet_ElCamino_aqua {};
+	class Dieter_Apolia_Chevrolet_ElCamino_white: Dieter_Apolia_Chevrolet_ElCamino_aqua {};
 
 	class geK_Avalanche
 	{
@@ -5117,7 +5126,7 @@ class ALYSIA_VEHICLES
 	class GeK_M6_10: GeK_M6 {};
 	class GeK_M6_11: GeK_M6 {};
 
-	class GeK_DS3
+	class Dieter_Apolia_Citroen_DS3_aqua
 	{
 		realname="Citroen DS3";
 		buyPrice=17650;
@@ -5129,30 +5138,39 @@ class ALYSIA_VEHICLES
 		fuelCapacity=50;
 		colors[]=
 		{
-			"GeK_DS3_01",
-			"GeK_DS3_02",
-			"GeK_DS3_03",
-			"GeK_DS3_04",
-			"GeK_DS3_05",
-			"GeK_DS3_06",
-			"GeK_DS3_07",
-			"GeK_DS3_08",
-			"GeK_DS3_09",
-			"GeK_DS3_10",
-			"GeK_DS3_11"
+			"Dieter_Apolia_Citroen_DS3_aqua",
+			"Dieter_Apolia_Citroen_DS3_noir",
+			"Dieter_Apolia_Citroen_DS3_bleunuit",
+			"Dieter_Apolia_Citroen_DS3_bleu",
+			"Dieter_Apolia_Citroen_DS3_gris",
+			"Dieter_Apolia_Citroen_DS3_yellow",
+			"Dieter_Apolia_Citroen_DS3_darkgreen",
+			"Dieter_Apolia_Citroen_DS3_bordeau",
+			"Dieter_Apolia_Citroen_DS3_green",
+			"Dieter_Apolia_Citroen_DS3_orange",
+			"Dieter_Apolia_Citroen_DS3_pink",
+			"Dieter_Apolia_Citroen_DS3_purple",
+			"Dieter_Apolia_Citroen_DS3_darkpurple",
+			"Dieter_Apolia_Citroen_DS3_red",
+			"Dieter_Apolia_Citroen_DS3_darkred",
+			"Dieter_Apolia_Citroen_DS3_white"
 		};
 	};
-	class GeK_DS3_01: GeK_DS3 {};
-	class GeK_DS3_02: GeK_DS3 {};
-	class GeK_DS3_03: GeK_DS3 {};
-	class GeK_DS3_04: GeK_DS3 {};
-	class GeK_DS3_05: GeK_DS3 {};
-	class GeK_DS3_06: GeK_DS3 {};
-	class GeK_DS3_07: GeK_DS3 {};
-	class GeK_DS3_08: GeK_DS3 {};
-	class GeK_DS3_09: GeK_DS3 {};
-	class GeK_DS3_10: GeK_DS3 {};
-	class GeK_DS3_11: GeK_DS3 {};
+	class Dieter_Apolia_Citroen_DS3_noir: Dieter_Apolia_Citroen_DS3_aqua {};
+	class Dieter_Apolia_Citroen_DS3_bleunuit: Dieter_Apolia_Citroen_DS3_aqua {};
+	class Dieter_Apolia_Citroen_DS3_bleu: Dieter_Apolia_Citroen_DS3_aqua {};
+	class Dieter_Apolia_Citroen_DS3_gris: Dieter_Apolia_Citroen_DS3_aqua {};
+	class Dieter_Apolia_Citroen_DS3_yellow: Dieter_Apolia_Citroen_DS3_aqua {};
+	class Dieter_Apolia_Citroen_DS3_darkgreen: Dieter_Apolia_Citroen_DS3_aqua {};
+	class Dieter_Apolia_Citroen_DS3_bordeau: Dieter_Apolia_Citroen_DS3_aqua {};
+	class Dieter_Apolia_Citroen_DS3_green: Dieter_Apolia_Citroen_DS3_aqua {};
+	class Dieter_Apolia_Citroen_DS3_orange: Dieter_Apolia_Citroen_DS3_aqua {};
+	class Dieter_Apolia_Citroen_DS3_pink: Dieter_Apolia_Citroen_DS3_aqua {};
+	class Dieter_Apolia_Citroen_DS3_purple: Dieter_Apolia_Citroen_DS3_aqua {};
+	class Dieter_Apolia_Citroen_DS3_darkpurple: Dieter_Apolia_Citroen_DS3_aqua {};
+	class Dieter_Apolia_Citroen_DS3_red: Dieter_Apolia_Citroen_DS3_aqua {};
+	class Dieter_Apolia_Citroen_DS3_darkred: Dieter_Apolia_Citroen_DS3_aqua {};
+	class Dieter_Apolia_Citroen_DS3_white: Dieter_Apolia_Citroen_DS3_aqua {};
 
 	class GeK_250GT
 	{
@@ -5587,7 +5605,7 @@ class ALYSIA_VEHICLES
 	class GeK_Apollo_10: GeK_Apollo {};
 	class GeK_Apollo_11: GeK_Apollo {};
 
-	class GeK_107
+	class Dieter_Apolia_Peugot_107_aqua
 	{
 		realname="Peugeot-107";
 		buyPrice=10000;
@@ -5599,30 +5617,39 @@ class ALYSIA_VEHICLES
 		fuelCapacity=35;
 		colors[]=
 		{
-			"GeK_107_01",
-			"GeK_107_02",
-			"GeK_107_03",
-			"GeK_107_04",
-			"GeK_107_05",
-			"GeK_107_06",
-			"GeK_107_07",
-			"GeK_107_08",
-			"GeK_107_09",
-			"GeK_107_10",
-			"GeK_107_11"
+			"Dieter_Apolia_Peugot_107_aqua",
+			"Dieter_Apolia_Peugot_107_noir",
+			"Dieter_Apolia_Peugot_107_bleunuit",
+			"Dieter_Apolia_Peugot_107_bleu",
+			"Dieter_Apolia_Peugot_107_gris",
+			"Dieter_Apolia_Peugot_107_yellow",
+			"Dieter_Apolia_Peugot_107_darkgreen",
+			"Dieter_Apolia_Peugot_107_bordeau",
+			"Dieter_Apolia_Peugot_107_green",
+			"Dieter_Apolia_Peugot_107_orange",
+			"Dieter_Apolia_Peugot_107_pink",
+			"Dieter_Apolia_Peugot_107_purple",
+			"Dieter_Apolia_Peugot_107_darkpurple",
+			"Dieter_Apolia_Peugot_107_red",
+			"Dieter_Apolia_Peugot_107_darkred",
+			"Dieter_Apolia_Peugot_107_white"
 		};
 	};
-	class GeK_107_01: GeK_107 {};
-	class GeK_107_02: GeK_107 {};
-	class GeK_107_03: GeK_107 {};
-	class GeK_107_04: GeK_107 {};
-	class GeK_107_05: GeK_107 {};
-	class GeK_107_06: GeK_107 {};
-	class GeK_107_07: GeK_107 {};
-	class GeK_107_08: GeK_107 {};
-	class GeK_107_09: GeK_107 {};
-	class GeK_107_10: GeK_107 {};
-	class GeK_107_11: GeK_107 {};
+	class Dieter_Apolia_Peugot_107_noir: Dieter_Apolia_Peugot_107_aqua {};
+	class Dieter_Apolia_Peugot_107_bleunuit: Dieter_Apolia_Peugot_107_aqua {};
+	class Dieter_Apolia_Peugot_107_bleu: Dieter_Apolia_Peugot_107_aqua {};
+	class Dieter_Apolia_Peugot_107_gris: Dieter_Apolia_Peugot_107_aqua {};
+	class Dieter_Apolia_Peugot_107_yellow: Dieter_Apolia_Peugot_107_aqua {};
+	class Dieter_Apolia_Peugot_107_darkgreen: Dieter_Apolia_Peugot_107_aqua {};
+	class Dieter_Apolia_Peugot_107_bordeau: Dieter_Apolia_Peugot_107_aqua {};
+	class Dieter_Apolia_Peugot_107_green: Dieter_Apolia_Peugot_107_aqua {};
+	class Dieter_Apolia_Peugot_107_orange: Dieter_Apolia_Peugot_107_aqua {};
+	class Dieter_Apolia_Peugot_107_pink: Dieter_Apolia_Peugot_107_aqua {};
+	class Dieter_Apolia_Peugot_107_purple: Dieter_Apolia_Peugot_107_aqua {};
+	class Dieter_Apolia_Peugot_107_darkpurple: Dieter_Apolia_Peugot_107_aqua {};
+	class Dieter_Apolia_Peugot_107_red: Dieter_Apolia_Peugot_107_aqua {};
+	class Dieter_Apolia_Peugot_107_darkred: Dieter_Apolia_Peugot_107_aqua {};
+	class Dieter_Apolia_Peugot_107_white: Dieter_Apolia_Peugot_107_aqua {};
 
 	class GeK_911_1972
 	{
@@ -5661,7 +5688,7 @@ class ALYSIA_VEHICLES
 	class GeK_911_1972_10: GeK_911_1972 {};
 	class GeK_911_1972_11: GeK_911_1972 {};
 
-	class GeK_clio
+	class Dieter_Apolia_Clio
 	{
 		realname="Renault Clio";
 		buyPrice=12000;
@@ -5673,30 +5700,40 @@ class ALYSIA_VEHICLES
 		fuelCapacity=35;
 		colors[]=
 		{
-			"GeK_clio_01",
-			"GeK_clio_02",
-			"GeK_clio_03",
-			"GeK_clio_04",
-			"GeK_clio_05",
-			"GeK_clio_06",
-			"GeK_clio_07",
-			"GeK_clio_08",
-			"GeK_clio_09",
-			"GeK_clio_10",
-			"GeK_clio_11"
+			"Dieter_Apolia_Clio_aqua",
+			"Dieter_Apolia_Clio_noir",
+			"Dieter_Apolia_Clio_bleunuit",
+			"Dieter_Apolia_Clio_bleu",
+			"Dieter_Apolia_Clio_gris",
+			"Dieter_Apolia_Clio_yellow",
+			"Dieter_Apolia_Clio_darkgreen",
+			"Dieter_Apolia_Clio_bordeau",
+			"Dieter_Apolia_Clio_green",
+			"Dieter_Apolia_Clio_orange",
+			"Dieter_Apolia_Clio_pink",
+			"Dieter_Apolia_Clio_purple",
+			"Dieter_Apolia_Clio_darkpurple",
+			"Dieter_Apolia_Clio_red",
+			"Dieter_Apolia_Clio_darkred",
+			"Dieter_Apolia_Clio_white"
 		};
 	};
-	class GeK_clio_01: GeK_clio {};
-	class GeK_clio_02: GeK_clio {};
-	class GeK_clio_03: GeK_clio {};
-	class GeK_clio_04: GeK_clio {};
-	class GeK_clio_05: GeK_clio {};
-	class GeK_clio_06: GeK_clio {};
-	class GeK_clio_07: GeK_clio {};
-	class GeK_clio_08: GeK_clio {};
-	class GeK_clio_09: GeK_clio {};
-	class GeK_clio_10: GeK_clio {};
-	class GeK_clio_11: GeK_clio {};
+	class Dieter_Apolia_Clio_aqua: Dieter_Apolia_Clio {};
+	class Dieter_Apolia_Clio_noir: Dieter_Apolia_Clio {};
+	class Dieter_Apolia_Clio_bleunuit: Dieter_Apolia_Clio {};
+	class Dieter_Apolia_Clio_bleu: Dieter_Apolia_Clio {};
+	class Dieter_Apolia_Clio_gris: Dieter_Apolia_Clio {};
+	class Dieter_Apolia_Clio_yellow: Dieter_Apolia_Clio {};
+	class Dieter_Apolia_Clio_darkgreen: Dieter_Apolia_Clio {};
+	class Dieter_Apolia_Clio_bordeau: Dieter_Apolia_Clio {};
+	class Dieter_Apolia_Clio_green: Dieter_Apolia_Clio {};
+	class Dieter_Apolia_Clio_orange: Dieter_Apolia_Clio {};
+	class Dieter_Apolia_Clio_pink: Dieter_Apolia_Clio {};
+	class Dieter_Apolia_Clio_purple: Dieter_Apolia_Clio {};
+	class Dieter_Apolia_Clio_darkpurple: Dieter_Apolia_Clio {};
+	class Dieter_Apolia_Clio_red: Dieter_Apolia_Clio {};
+	class Dieter_Apolia_Clio_darkred: Dieter_Apolia_Clio {};
+	class Dieter_Apolia_Clio_white: Dieter_Apolia_Clio {};
 
 	class GeK_Renault_magnum
 	{
@@ -5883,7 +5920,7 @@ class ALYSIA_VEHICLES
 	class GeK_TLC100_10: GeK_TLC100 {};
 	class GeK_TLC100_11: GeK_TLC100 {};
 
-	class GeK_Golf
+	class Dieter_Apolia_Golf_R_noir
 	{
 		realname="Volkswagen Golf";
 		buyPrice=34500;
@@ -5895,30 +5932,39 @@ class ALYSIA_VEHICLES
 		fuelCapacity=50;
 		colors[]=
 		{
-			"GeK_Golf_01",
-			"GeK_Golf_02",
-			"GeK_Golf_03",
-			"GeK_Golf_04",
-			"GeK_Golf_05",
-			"GeK_Golf_06",
-			"GeK_Golf_07",
-			"GeK_Golf_08",
-			"GeK_Golf_09",
-			"GeK_Golf_10",
-			"GeK_Golf_11"
+			"Dieter_Apolia_Golf_R_noir",
+			"Dieter_Apolia_Golf_R_aqua",
+			"Dieter_Apolia_Golf_R_bleunuit",
+			"Dieter_Apolia_Golf_R_bleu",
+			"Dieter_Apolia_Golf_R_gris",
+			"Dieter_Apolia_Golf_R_yellow",
+			"Dieter_Apolia_Golf_R_darkgreen",
+			"Dieter_Apolia_Golf_R_bordeau",
+			"Dieter_Apolia_Golf_R_green",
+			"Dieter_Apolia_Golf_R_orange",
+			"Dieter_Apolia_Golf_R_pink",
+			"Dieter_Apolia_Golf_R_purple",
+			"Dieter_Apolia_Golf_R_darkpurple",
+			"Dieter_Apolia_Golf_R_red",
+			"Dieter_Apolia_Golf_R_darkred",
+			"Dieter_Apolia_Golf_R_white"
 		};
 	};
-	class GeK_Golf_01: GeK_Golf {};
-	class GeK_Golf_02: GeK_Golf {};
-	class GeK_Golf_03: GeK_Golf {};
-	class GeK_Golf_04: GeK_Golf {};
-	class GeK_Golf_05: GeK_Golf {};
-	class GeK_Golf_06: GeK_Golf {};
-	class GeK_Golf_07: GeK_Golf {};
-	class GeK_Golf_08: GeK_Golf {};
-	class GeK_Golf_09: GeK_Golf {};
-	class GeK_Golf_10: GeK_Golf {};
-	class GeK_Golf_11: GeK_Golf {};
+	class Dieter_Apolia_Golf_R_aqua: Dieter_Apolia_Golf_R_noir {};
+	class Dieter_Apolia_Golf_R_bleunuit: Dieter_Apolia_Golf_R_noir {};
+	class Dieter_Apolia_Golf_R_bleu: Dieter_Apolia_Golf_R_noir {};
+	class Dieter_Apolia_Golf_R_gris: Dieter_Apolia_Golf_R_noir {};
+	class Dieter_Apolia_Golf_R_yellow: Dieter_Apolia_Golf_R_noir {};
+	class Dieter_Apolia_Golf_R_darkgreen: Dieter_Apolia_Golf_R_noir {};
+	class Dieter_Apolia_Golf_R_bordeau: Dieter_Apolia_Golf_R_noir {};
+	class Dieter_Apolia_Golf_R_green: Dieter_Apolia_Golf_R_noir {};
+	class Dieter_Apolia_Golf_R_orange: Dieter_Apolia_Golf_R_noir {};
+	class Dieter_Apolia_Golf_R_pink: Dieter_Apolia_Golf_R_noir {};
+	class Dieter_Apolia_Golf_R_purple: Dieter_Apolia_Golf_R_noir {};
+	class Dieter_Apolia_Golf_R_darkpurple: Dieter_Apolia_Golf_R_noir {};
+	class Dieter_Apolia_Golf_R_red: Dieter_Apolia_Golf_R_noir {};
+	class Dieter_Apolia_Golf_R_darkred: Dieter_Apolia_Golf_R_noir {};
+	class Dieter_Apolia_Golf_R_white: Dieter_Apolia_Golf_R_noir {};
 
 	class GeK_C30
 	{
@@ -6757,7 +6803,7 @@ class ALYSIA_VEHICLES
 		fuelCapacity=350;
 	};
 
-	class GeK_UAZ_3303
+	class Dieter_Apolia_UAZ_aqua
 	{
 		realname="UAZ";
 		buyPrice=101000;
@@ -6769,36 +6815,39 @@ class ALYSIA_VEHICLES
 		fuelCapacity=65;
 		colors[]=
 		{
-			"GeK_UAZ_3303_noir",
-			"GeK_UAZ_3303_grissombre",
-			"GeK_UAZ_3303_gris",
-			"GeK_UAZ_3303_grisclair",
-			"GeK_UAZ_3303_blanc",
-			"GeK_UAZ_3303_sable",
-			"GeK_UAZ_3303_bordeau",
-			"GeK_UAZ_3303_bleu",
-			"GeK_UAZ_3303_bleunuit",
-			"GeK_UAZ_3303_mauvenuit",
-			"GeK_UAZ_3303_vert",
-			"GeK_UAZ_3303_jaune",
-			"GeK_UAZ_3303_rouge",
-			"GeK_UAZ_3303_orange"
+			"Dieter_Apolia_UAZ_aqua",
+			"Dieter_Apolia_UAZ_noir",
+			"Dieter_Apolia_UAZ_bleunuit",
+			"Dieter_Apolia_UAZ_bleu",
+			"Dieter_Apolia_UAZ_gris",
+			"Dieter_Apolia_UAZ_yellow",
+			"Dieter_Apolia_UAZ_darkgreen",
+			"Dieter_Apolia_UAZ_bordeau",
+			"Dieter_Apolia_UAZ_green",
+			"Dieter_Apolia_UAZ_orange",
+			"Dieter_Apolia_UAZ_pink",
+			"Dieter_Apolia_UAZ_purple",
+			"Dieter_Apolia_UAZ_darkpurple",
+			"Dieter_Apolia_UAZ_red",
+			"Dieter_Apolia_UAZ_darkred",
+			"Dieter_Apolia_UAZ_white"
 		};
 	};
-	class GeK_UAZ_3303_noir: GeK_UAZ_3303 {};
-	class GeK_UAZ_3303_grissombre: GeK_UAZ_3303 {};
-	class GeK_UAZ_3303_gris: GeK_UAZ_3303 {};
-	class GeK_UAZ_3303_grisclair: GeK_UAZ_3303 {};
-	class GeK_UAZ_3303_blanc: GeK_UAZ_3303 {};
-	class GeK_UAZ_3303_sable: GeK_UAZ_3303 {};
-	class GeK_UAZ_3303_bordeau: GeK_UAZ_3303 {};
-	class GeK_UAZ_3303_bleu: GeK_UAZ_3303 {};
-	class GeK_UAZ_3303_bleunuit: GeK_UAZ_3303 {};
-	class GeK_UAZ_3303_mauvenuit: GeK_UAZ_3303 {};
-	class GeK_UAZ_3303_vert: GeK_UAZ_3303 {};
-	class GeK_UAZ_3303_jaune: GeK_UAZ_3303 {};
-	class GeK_UAZ_3303_rouge: GeK_UAZ_3303 {};
-	class GeK_UAZ_3303_orange: GeK_UAZ_3303 {};
+	class Dieter_Apolia_UAZ_noir: Dieter_Apolia_UAZ_aqua {};
+	class Dieter_Apolia_UAZ_bleunuit: Dieter_Apolia_UAZ_aqua {};
+	class Dieter_Apolia_UAZ_bleu: Dieter_Apolia_UAZ_aqua {};
+	class Dieter_Apolia_UAZ_gris: Dieter_Apolia_UAZ_aqua {};
+	class Dieter_Apolia_UAZ_yellow: Dieter_Apolia_UAZ_aqua {};
+	class Dieter_Apolia_UAZ_darkgreen: Dieter_Apolia_UAZ_aqua {};
+	class Dieter_Apolia_UAZ_bordeau: Dieter_Apolia_UAZ_aqua {};
+	class Dieter_Apolia_UAZ_green: Dieter_Apolia_UAZ_aqua {};
+	class Dieter_Apolia_UAZ_orange: Dieter_Apolia_UAZ_aqua {};
+	class Dieter_Apolia_UAZ_pink: Dieter_Apolia_UAZ_aqua {};
+	class Dieter_Apolia_UAZ_purple: Dieter_Apolia_UAZ_aqua {};
+	class Dieter_Apolia_UAZ_darkpurple: Dieter_Apolia_UAZ_aqua {};
+	class Dieter_Apolia_UAZ_red: Dieter_Apolia_UAZ_aqua {};
+	class Dieter_Apolia_UAZ_darkred: Dieter_Apolia_UAZ_aqua {};
+	class Dieter_Apolia_UAZ_white: Dieter_Apolia_UAZ_aqua {};
 
 	class GeK_Zil
 	{
