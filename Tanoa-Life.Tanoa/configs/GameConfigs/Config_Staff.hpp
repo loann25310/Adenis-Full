@@ -38,6 +38,10 @@ class ALYSIA_STAFF
 		{
 			uid="76561198084504163";
 		};
+		class Loann: admin
+		{
+			uid="76561198171075495";
+		};
 
 		// - Modo
 		class modo
@@ -84,10 +88,6 @@ class ALYSIA_STAFF
 		{
 			uid="76561198253768844";
 		};
-		class Loann: admin
-		{
-			uid="76561198171075495";
-		};
 		class ChuckWillis: support
 		{
 			uid="76561197990198883";
@@ -99,6 +99,10 @@ class ALYSIA_STAFF
 		class JesusFlores: support
 		{
 			uid="76561198116958747";
+		};
+		class EdouardShigeno: support
+		{
+			uid="76561198013254407";
 		};
 	};
 

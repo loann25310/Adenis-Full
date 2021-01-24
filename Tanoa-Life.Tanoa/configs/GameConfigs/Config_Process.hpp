@@ -2068,7 +2068,7 @@ class ALYSIA_PROCESS
 		};
 		class receive
 		{
-			items_virtual[]={{"cafe",3}};
+			items_virtual[]={{"cafe",15}};
 		};
 	};
 	/* ====================================== company_furniture ====================================== */

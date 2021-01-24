@@ -2105,7 +2105,7 @@ class ALYSIA_VEHICLES
  	class Skyline_Vehicule_A3_Orca_F
 	{
 		realname="PO-30 Orca";
-		buyPrice=1300000;
+		buyPrice=1800000;
 		inventory=15;
 		side="CIV";
 		insurance=1;
@@ -4311,7 +4311,7 @@ class ALYSIA_VEHICLES
 	class Skyline_Vehicule_APEX_Qilin
 	{
 		realname="Quilin";
-		buyPrice=395000;
+		buyPrice=400000;
 		inventory=75;
 		side="CIV";
 		insurance=0;
@@ -4539,7 +4539,7 @@ class ALYSIA_VEHICLES
 	class AlessioRS4MatGofast
 	{
 		realname="RS4 déplaqué";
-		buyPrice=1500000;
+		buyPrice=500000;
 		inventory=55;
 		side="CIV";
 		insurance=0;
@@ -4552,7 +4552,7 @@ class ALYSIA_VEHICLES
     class AlessioRS5GoFastMat
 	{
 		realname="RS5 déplaqué";
-		buyPrice=1600000;
+		buyPrice=600000;
 		inventory=55;
 		side="CIV";
 		insurance=0;
@@ -4565,7 +4565,7 @@ class ALYSIA_VEHICLES
     class AlessioM5GofastMat
 	{
 		realname="M5 déplaqué";
-		buyPrice=1500000;
+		buyPrice=500000;
 		inventory=55;
 		side="CIV";
 		insurance=0;
@@ -4578,7 +4578,7 @@ class ALYSIA_VEHICLES
     class AlessioMustangGoFastMat
 	{
 		realname="Mustang déplaqué";
-		buyPrice=1900000;
+		buyPrice=900000;
 		inventory=55;
 		side="CIV";
 		insurance=0;
@@ -4591,7 +4591,7 @@ class ALYSIA_VEHICLES
     class AlessioC63Black_mat
 	{
 		realname="C63 déplaqué";
-		buyPrice=2000000;
+		buyPrice=200000;
 		inventory=55;
 		side="CIV";
 		insurance=0;

@@ -1886,8 +1886,8 @@ class ALYSIA_ITEMS
         };
         class market
         {
-            max=2344;
-            min=1290;
+            max=3344;
+            min=2290;
         };
         class remove {};
     };
@@ -2123,8 +2123,8 @@ class ALYSIA_ITEMS
         };
         class market
         {
-            max=4644;
-            min=2443;
+            max=6000;
+            min=3443;
         };
     };
     class assembling_champagne

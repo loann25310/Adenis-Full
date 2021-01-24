@@ -945,6 +945,11 @@ class ALYSIA_ITEMS_ARMA
 		buy_price=15;
 	};
 
+	class XsG_Item_Nikon
+	{
+		buy_price=15;
+	};
+	
 	class Adenis_Compresse
 	{
 		buy_price=5000;

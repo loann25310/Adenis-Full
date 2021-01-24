@@ -114,6 +114,7 @@ class ALYSIA_SHOPS_ARMA
 			"Skyline_Hache_01",
 			"Skyline_Pioche_01",
 			"Skyline_Pelle_01",
+			"XsG_Item_Nikon",
 			"Skyline_Merlin_01",
 			"SkylineItems_Bandage",
 			"Chemlight_blue",
