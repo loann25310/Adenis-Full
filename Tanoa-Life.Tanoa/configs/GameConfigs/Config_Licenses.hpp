@@ -1058,7 +1058,7 @@ class ALYSIA_LICENSES
 			class WEST: CIV {};
 		};
 	};
-	class Emballage_meuble_acier_cigarette
+	class emballageressources
 	{
 		name=" Emballage des meubles, Barres d'aciers, Cigarettes";
 		class factions

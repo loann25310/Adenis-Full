@@ -4334,7 +4334,7 @@ class ALYSIA_PROCESS
 			};
 		};
 	};
-	class Emballage_meuble
+	class emballageressources
 	{
 		name="Usine d'emballage des Meubles";
 		sound="smelting";
@@ -4352,19 +4352,19 @@ class ALYSIA_PROCESS
 		{
 			class CIV
 			{
-				licenses[]={"Emballage_meuble_acier_cigarette"};
+				licenses[]={"emballageressources"};
 			};
 			class WEST
 			{
-				licenses[]={"Emballage_meuble_acier_cigarette"};
+				licenses[]={"emballageressources"};
 			};
 			class GUER
 			{
-				licenses[]={"Emballage_meuble_acier_cigarette"};
+				licenses[]={"emballageressources"};
 			};
 		};
 	};
-	class Emballage_acier
+	class emballageressources
 	{
 		name="Usine d'emballage des Barres d'acier";
 		sound="smelting";
@@ -4382,19 +4382,19 @@ class ALYSIA_PROCESS
 		{
 			class CIV
 			{
-				licenses[]={"Emballage_meuble_acier_cigarette"};
+				licenses[]={"emballageressources"};
 			};
 			class WEST
 			{
-				licenses[]={"Emballage_meuble_acier_cigarette"};
+				licenses[]={"emballageressources"};
 			};
 			class GUER
 			{
-				licenses[]={"Emballage_meuble_acier_cigarette"};
+				licenses[]={"emballageressources"};
 			};
 		};
 	};
-	class Emballage_cigarettes
+	class emballageressources
 	{
 		name="Usine d'emballage des Cigarettes";
 		sound="smelting";
@@ -4404,7 +4404,7 @@ class ALYSIA_PROCESS
 		};
 		class receive
 		{
-			items_virtual[]={{"Cigarettepa",1}};
+			items_virtual[]={{"cigarettepa",1}};
 		};
 		time_per_item=1;
 		time_default=5;
@@ -4412,15 +4412,15 @@ class ALYSIA_PROCESS
 		{
 			class CIV
 			{
-				licenses[]={"Emballage_meuble_acier_cigarette"};
+				licenses[]={"emballageressources"};
 			};
 			class WEST
 			{
-				licenses[]={"Emballage_meuble_acier_cigarette"};
+				licenses[]={"emballageressources"};
 			};
 			class GUER
 			{
-				licenses[]={"Emballage_meuble_acier_cigarette"};
+				licenses[]={"emballageressources"};
 			};
 		};
 	};

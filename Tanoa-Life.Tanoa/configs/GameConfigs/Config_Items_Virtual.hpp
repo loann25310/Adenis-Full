@@ -493,7 +493,7 @@ class ALYSIA_ITEMS
         };
         class remove {};
     };
-    class Cigarettepa
+    class cigarettepa
     {
         name="Cigarette Emballé";
         weight=1;
