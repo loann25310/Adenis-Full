@@ -75,7 +75,7 @@ if (_vehicle isKindOf "Man") then
 					true breakOut "main";
 				};
 
-				if (_type isEqualTo "Skyline_Alysia_Crane_01_F") then
+				if (_type isEqualTo "Land_Suitcase_F") then
 				{
 					[_target] call AlysiaClient_fnc_interactions_player_to_skull;
 					true breakOut "main";
@@ -199,7 +199,7 @@ if (_vehicle isKindOf "Man") then
 		true breakOut "main";
 	};
 
-	_skull = (nearestObjects [player, ["Skyline_Alysia_Crane_01_F"], 2]) select 0;
+	_skull = (nearestObjects [player, ["Land_Suitcase_F"], 2]) select 0;
 	if (!(isNil "_skull")) then
 	{
 		[_skull] call AlysiaClient_fnc_interactions_player_to_skull;
@@ -213,7 +213,7 @@ if (_vehicle isKindOf "Man") then
 		true breakOut "main";
 	};
 
-	_skull = (nearestObjects [player, ["Skyline_Alysia_Crane_01_F"], 2]) select 0;
+	_skull = (nearestObjects [player, ["Land_Suitcase_F"], 2]) select 0;
 	if (!(isNil "_skull")) then
 	{
 		[_skull] call AlysiaClient_fnc_interactions_player_to_skull;

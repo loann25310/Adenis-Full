@@ -108,7 +108,7 @@ if (alive g_rabbit_unit) then {
 	player assignItem "ItemMap";
 
 	{
-		if (typeOf(_x) isEqualTo "Skyline_Alysia_Crane_01_F") then
+		if (typeOf(_x) isEqualTo "Land_Suitcase_F") then
 		{
 			if (((_x getVariable ["info", ["","",""]]) select 2) isEqualTo (getPlayerUID player)) then
 			{
