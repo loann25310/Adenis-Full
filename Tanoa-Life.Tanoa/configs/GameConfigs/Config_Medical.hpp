@@ -27,6 +27,13 @@ class ALYSIA_MEDICAL
 		tick_amount=1;
 	};
 
+	class compresse
+	{
+		seringue_amount=18;
+		tick_timer=10;
+		tick_amount=1;
+	};
+
 	class coma
 	{
 		death_timer=1800;

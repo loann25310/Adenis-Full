@@ -6,7 +6,7 @@ class ALYSIA_HOUSES
 		class house {};
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class factions
 		{
@@ -21,7 +21,7 @@ class ALYSIA_HOUSES
 		class house {};
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class factions
 		{
@@ -36,7 +36,7 @@ class ALYSIA_HOUSES
 		price=250000;
 		class storage
 		{
-			type="Skyline_Coffre_Large";
+			type="Diablo_Coffre_Large";
 		};
 		class factions
 		{
@@ -53,7 +53,7 @@ class ALYSIA_HOUSES
 		class house {};
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class factions
 		{
@@ -67,7 +67,7 @@ class ALYSIA_HOUSES
 		price=1750000;
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class factions
 		{
@@ -82,7 +82,7 @@ class ALYSIA_HOUSES
 		class house {};
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class factions
 		{
@@ -97,7 +97,7 @@ class ALYSIA_HOUSES
 		class house {};
 		class storage
 		{
-			type="Skyline_Coffre_Extra";
+			type="Diablo_Coffre_Extra";
 		};
 		class factions
 		{
@@ -112,7 +112,7 @@ class ALYSIA_HOUSES
 		class house {};
 		class storage
 		{
-			type="Skyline_Coffre_Large";
+			type="Diablo_Coffre_Large";
 		};
 		class factions
 		{
@@ -122,12 +122,12 @@ class ALYSIA_HOUSES
 		};
 	};
 
-	class Alysia_Medical_Hopital_01_F
+	class Diablo_HP
 	{
 		price=450000;
 		class storage
 		{
-			type="Skyline_Coffre_Large";
+			type="Diablo_Coffre_Large";
 		};
 		disableLockDoorOnStartup=1;
 		class factions
@@ -145,7 +145,7 @@ class ALYSIA_HOUSES
 		class house {};
 		class storage
 		{
-			type="Skyline_Coffre_Medium";
+			type="Diablo_Coffre_Medium";
 		};
 		class factions
 		{
@@ -166,7 +166,7 @@ class ALYSIA_HOUSES
 		class house {};
 		class storage
 		{
-			type="Skyline_Coffre_Medium";
+			type="Diablo_Coffre_Medium";
 		};
 		class factions
 		{
@@ -187,7 +187,7 @@ class ALYSIA_HOUSES
 		class house {};
 		class storage
 		{
-			type="Skyline_Coffre_Medium";
+			type="Diablo_Coffre_Medium";
 		};
 		class factions
 		{
@@ -207,7 +207,7 @@ class ALYSIA_HOUSES
 		price=975000;
 		class storage
 		{
-			type="Skyline_Coffre_Large";
+			type="Diablo_Coffre_Large";
 		};
 		class factions
 		{
@@ -224,7 +224,7 @@ class ALYSIA_HOUSES
 		price=950000;
 		class storage
 		{
-			type="Skyline_Coffre_Large";
+			type="Diablo_Coffre_Large";
 		};
 		class factions
 		{
@@ -241,7 +241,7 @@ class ALYSIA_HOUSES
 		price=950000;
 		class storage
 		{
-			type="Skyline_Coffre_Large";
+			type="Diablo_Coffre_Large";
 		};
 		class factions
 		{
@@ -259,7 +259,7 @@ class ALYSIA_HOUSES
 		class house {};
 		class storage
 		{
-			type="Skyline_Coffre_Medium";
+			type="Diablo_Coffre_Medium";
 		};
 		class factions
 		{
@@ -284,7 +284,7 @@ class ALYSIA_HOUSES
 		class house {};
 		class storage
 		{
-			type="Skyline_Coffre_Medium";
+			type="Diablo_Coffre_Medium";
 		};
 		class factions
 		{
@@ -305,7 +305,7 @@ class ALYSIA_HOUSES
  		class house {};
  		class storage
  		{
-			type="Skyline_Coffre_Medium";
+			type="Diablo_Coffre_Medium";
  		};
  		class factions
  		{
@@ -326,7 +326,7 @@ class ALYSIA_HOUSES
 		class house {};
 		class storage
 		{
-			type="Skyline_Coffre_Small";
+			type="Diablo_Coffre_Small";
 		};
 		class factions
 		{
@@ -351,7 +351,7 @@ class ALYSIA_HOUSES
 		class house {};
 		class storage
 		{
-			type="Skyline_Coffre_Small";
+			type="Diablo_Coffre_Small";
 		};
 		class factions
 		{
@@ -372,7 +372,7 @@ class ALYSIA_HOUSES
 		class house {};
 		class storage
 		{
-			type="Skyline_Coffre_Small";
+			type="Diablo_Coffre_Small";
 		};
 		class factions
 		{
@@ -393,7 +393,7 @@ class ALYSIA_HOUSES
 		class house {};
 		class storage
 		{
-			type="Skyline_Coffre_Small";
+			type="Diablo_Coffre_Small";
 		};
 		class factions
 		{
@@ -414,7 +414,7 @@ class ALYSIA_HOUSES
 		class house {};
 		class storage
 		{
-			type="Skyline_Coffre_Small";
+			type="Diablo_Coffre_Small";
 		};
 		class factions
 		{
@@ -435,7 +435,7 @@ class ALYSIA_HOUSES
 		class house {};
 		class storage
 		{
-			type="Skyline_Coffre_Small";
+			type="Diablo_Coffre_Small";
 		};
 		class factions
 		{
@@ -456,7 +456,7 @@ class ALYSIA_HOUSES
 		class house {};
 		class storage
 		{
-			type="Skyline_Coffre_Small";
+			type="Diablo_Coffre_Small";
 		};
 		class factions
 		{
@@ -477,7 +477,7 @@ class ALYSIA_HOUSES
 		class house {};
 		class storage
 		{
-			type="Skyline_Coffre_Small";
+			type="Diablo_Coffre_Small";
 		};
 		class factions
 		{
@@ -498,7 +498,7 @@ class ALYSIA_HOUSES
 		class house {};
 		class storage
 		{
-			type="Skyline_Coffre_Small";
+			type="Diablo_Coffre_Small";
 		};
 		class factions
 		{
@@ -519,7 +519,7 @@ class ALYSIA_HOUSES
 		class house {};
 		class storage
 		{
-			type="Skyline_Coffre_Small";
+			type="Diablo_Coffre_Small";
 		};
 		class factions
 		{
@@ -540,7 +540,7 @@ class ALYSIA_HOUSES
 		class house {};
 		class storage
 		{
-			type="Skyline_Coffre_Small";
+			type="Diablo_Coffre_Small";
 		};
 		class factions
 		{
@@ -561,7 +561,7 @@ class ALYSIA_HOUSES
 		class house {};
 		class storage
 		{
-			type="Skyline_Coffre_Small";
+			type="Diablo_Coffre_Small";
 		};
 		class factions
 		{
@@ -582,7 +582,7 @@ class ALYSIA_HOUSES
 		class house {};
 		class storage
 		{
-			type="Skyline_Coffre_Small";
+			type="Diablo_Coffre_Small";
 		};
 		class factions
 		{
@@ -603,7 +603,7 @@ class ALYSIA_HOUSES
 		class house {};
 		class storage
 		{
-			type="Skyline_Coffre_Small";
+			type="Diablo_Coffre_Small";
 		};
 		class factions
 		{
@@ -624,7 +624,7 @@ class ALYSIA_HOUSES
 		class house {};
 		class storage
 		{
-			type="Skyline_Coffre_Small";
+			type="Diablo_Coffre_Small";
 		};
 		class factions
 		{

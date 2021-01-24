@@ -319,57 +319,27 @@ class ALYSIA_ITEMS_ARMA
 	class EF_M_jkt3: rds_uniform_Functionary1 {};
 	class EF_M_jkt32: rds_uniform_Functionary1 {};
 
-	/////////////////////////////////UNIFORME FEMME/////////////////////////////
-	class EF_FEM_2U
+	///////////////////////////////// BACKPACKS Femme/////////////////////////////////
+	class EF_FBAG_BK
 	{
-		buy_price=250;
+		buy_price=450;
 	};
-	class EF_FEM_3_2: EF_FEM_2U {};
-	class EF_FEM_3_3LPBPS: EF_FEM_2U {};
-	class EF_FEM_3_3LPBP: EF_FEM_2U {};
-	class EF_FEM_3_3LPBR: EF_FEM_2U {};
-	class EF_FEM_3_3LPBW: EF_FEM_2U {};
-	class EF_FEM_3_3LPB: EF_FEM_2U {};
-	class EF_FEM_3_3LPBL: EF_FEM_2U {};
-	class EF_FEM_3_3LPBPS2: EF_FEM_2U {};
-	class EF_FEM_3_3LPBP2: EF_FEM_2U {};
-	class EF_FEM_3_3LPBR2: EF_FEM_2U {};
-	class EF_FEM_3_3LPBW2: EF_FEM_2U {};
-	class EF_FEM_3_3LPB2: EF_FEM_2U {};
-	class EF_FEM_3_3LPBL2: EF_FEM_2U {};
-	class EF_FEM_3: EF_FEM_2U {};
-	class EF_FEM_4: EF_FEM_2U {};
-	class EF_FEM_4_2LPBPS: EF_FEM_2U {};
-	class EF_FEM_4_2LPBP: EF_FEM_2U {};
-	class EF_FEM_4_2LPBR: EF_FEM_2U {};
-	class EF_FEM_4_2LPBW: EF_FEM_2U {};
-	class EF_FEM_4_2LPB: EF_FEM_2U {};
-	class EF_FEM_4_2LPBL: EF_FEM_2U {};
-	class EF_FEM_4_2LPBPS2: EF_FEM_2U {};
-	class EF_FEM_4_2LPBP2: EF_FEM_2U {};
-	class EF_FEM_4_2LPBR2: EF_FEM_2U {};
-	class EF_FEM_4_2LPBW2: EF_FEM_2U {};
-	class EF_FEM_4_2LPB2: EF_FEM_2U {};
-	class EF_FEM_4_2LPBL2: EF_FEM_2U {};
-	class EF_FEM_5: EF_FEM_2U {};
-	class EF_FEM_6: EF_FEM_2U {};
-	class EF_FEM_3_42: EF_FEM_2U {};
-	class EF_FEM_2BK: EF_FEM_2U {};
+	class EF_FBAG_BL: EF_FBAG_BK {};
+	class EF_FBAG_BW: EF_FBAG_BK {};
+	class EF_FBAG_RD: EF_FBAG_BK {};
+	class EF_FBAG_SG: EF_FBAG_BK {};
+	class EF_FBAG_VL: EF_FBAG_BK {};
+	class EF_FBAG_HB_BK: EF_FBAG_BK {};
+	class EF_FBAG_HB_BL: EF_FBAG_BK {};
+	class EF_FBAG_HB_RD: EF_FBAG_BK {};
+	class EF_FBAG_HB_SG: EF_FBAG_BK {};
+	class EF_FBAG_HB_VL: EF_FBAG_BK {};
+	class EF_FBAG_SL_BK: EF_FBAG_BK {};
+	class EF_FBAG_SL_BL: EF_FBAG_BK {};
+	class EF_FBAG_SL_RD: EF_FBAG_BK {};
+	class EF_FBAG_SL_SG: EF_FBAG_BK {};
+	class EF_FBAG_SL_VL: EF_FBAG_BK {};
 
-	///////////////////////////////// GOGGLE FEMME///////////////////////////////////
-	class EF_FG21
-	{
-		buy_price=400;
-	};
-	class EF_FG1: EF_FG21 {};
-	class EF_ACC1: EF_FG21 {};
-	class EF_ACC2: EF_FG21 {};
-	class EF_ACC3: EF_FG21 {};
-	class EF_AC1: EF_FG21 {};
-	class EF_AC2: EF_FG21 {};
-	class EF_AC3: EF_FG21 {};
-	class EF_PG1: EF_FG21 {};
-	class EF_PG2: EF_FG21 {};
 	////////////////////////////////// HEADGEAR FEMME //////////////////////////
 	class EF_Fcap_O
 	{
@@ -416,33 +386,163 @@ class ALYSIA_ITEMS_ARMA
 	class EF_FHAT_BK: EF_Fcap_O {};
 	class EF_FHAT_CL: EF_Fcap_O {};
 	class EF_FHAT_PI: EF_Fcap_O {};
-	////////////////////////////////// VEST FEMME //////////////////////////
-	class EF_SHF_BK
+
+	/////////////////////////////////UNIFORME FEMME/////////////////////////////
+	class EF_FEM_2U
 	{
-		buy_price=1675;
-		buy_license_CIV[]={"gun","politique_pnt_member"};
+		buy_price=250;
 	};
-	class EF_SHF_BW: EF_SHF_BK {};
-	///////////////////////////////// BACKPACKS Femme/////////////////////////////////
-	class EF_FBAG_BK
+	class EF_FEM_3_2: EF_FEM_2U {};
+	class EF_FEM_3_3LPBPS: EF_FEM_2U {};
+	class EF_FEM_3_3LPB: EF_FEM_2U {};
+	class EF_FEM_3_3LPBPS2: EF_FEM_2U {};
+	class EF_FEM_3_3LPBP2: EF_FEM_2U {};
+	class EF_FEM_3_3LPB2: EF_FEM_2U {};
+	class EF_FEM_3: EF_FEM_2U {};
+	class EF_FEM_4: EF_FEM_2U {};
+	class EF_FEM_4_2LPBPS: EF_FEM_2U {};
+	class EF_FEM_4_2LPBP: EF_FEM_2U {};
+	class EF_FEM_4_2LPBR: EF_FEM_2U {};
+	class EF_FEM_4_2LPBW: EF_FEM_2U {};
+	class EF_FEM_4_2LPB: EF_FEM_2U {};
+	class EF_FEM_4_2LPBL: EF_FEM_2U {};
+	class EF_FEM_4_2LPBPS2: EF_FEM_2U {};
+	class EF_FEM_4_2LPBP2: EF_FEM_2U {};
+	class EF_FEM_4_2LPBR2: EF_FEM_2U {};
+	class EF_FEM_4_2LPBW2: EF_FEM_2U {};
+	class EF_FEM_4_2LPB2: EF_FEM_2U {};
+	class EF_FEM_4_2LPBL2: EF_FEM_2U {};
+	class EF_FEM_5: EF_FEM_2U {};
+	class EF_FEM_6: EF_FEM_2U {};
+	class EF_FEM_3_42: EF_FEM_2U {};
+	class EF_FEM_2BK: EF_FEM_2U {};
+	class EF_FEM_3_9B: EF_FEM_2U {};
+    class EF_FEM_3_9B2: EF_FEM_2U {};
+    class EF_FEM_3_9BL: EF_FEM_2U {};
+    class EF_FEM_3_9K: EF_FEM_2U {};
+    class EF_FEM_3_9K3: EF_FEM_2U {};
+    class EF_FEM_3_9R: EF_FEM_2U {};
+    class EF_FEM_3_9R2: EF_FEM_2U {};
+    class EF_FEM_3_9V: EF_FEM_2U {};
+    class EF_FEM_3_9V2: EF_FEM_2U {};
+    class EF_FEM_3_9V3: EF_FEM_2U {};
+    class EF_FEM_3_9W: EF_FEM_2U {};
+    class EF_FEM_3_9W3: EF_FEM_2U {};
+    class EF_FEM_3_3B: EF_FEM_2U {};
+    class EF_FEM_3_3BL: EF_FEM_2U {};    
+    class EF_FEM_3_3OD: EF_FEM_2U {}; 
+    class EF_FEM_3_3SG: EF_FEM_2U {}; 
+    class EF_FEM_3_3PP: EF_FEM_2U {};
+    class EF_FEM_3_3LPBP3: EF_FEM_2U {};
+    class EF_FEM_3_3B2: EF_FEM_2U {};
+    class EF_FEM_3_3BL2: EF_FEM_2U {};
+    class EF_FEM_3_3OD2: EF_FEM_2U {};
+    class EF_FEM_3_3SG2: EF_FEM_2U {};
+    class EF_FEM_3_3B3: EF_FEM_2U {};
+    class EF_FEM_3_3BL3: EF_FEM_2U {};
+    class EF_FEM_3_3OD3: EF_FEM_2U {};
+    class EF_FEM_3_3SG3: EF_FEM_2U {};
+    class EF_FEM_3_3PP3: EF_FEM_2U {};
+    class EF_FEM_3_3_PUNK: EF_FEM_2U {};
+    class EF_FEM_3_3LPBR: EF_FEM_2U {};
+    class EF_FEM_3_3LPBP: EF_FEM_2U {};
+    class EF_FEM_3_3LPBW: EF_FEM_2U {};
+    class EF_FEM_3_3LPBL: EF_FEM_2U {};
+    class EF_FEM_3_3LPBR2: EF_FEM_2U {};
+    class EF_FEM_3_3LPBW2: EF_FEM_2U {};
+    class EF_FEM_3_3LPBL2: EF_FEM_2U {};
+    class EF_FEM_3_3LPBPS3: EF_FEM_2U {};
+    class EF_FEM_3_3LPBR3: EF_FEM_2U {};
+    class EF_FEM_3_3LPBW3: EF_FEM_2U {};
+    class EF_FEM_3_3LPB3: EF_FEM_2U {};
+    class EF_FEM_3_3LPBL3: EF_FEM_2U {};
+    class EF_FEM_3A: EF_FEM_2U {};
+    class EF_FEM_3A2: EF_FEM_2U {};
+    class EF_FEM_3_8_BKBK: EF_FEM_2U {};
+    class EF_FEM_3_8_BKBK2: EF_FEM_2U {};
+    class EF_FEM_3_8_BWBK: EF_FEM_2U {};
+    class EF_FEM_3_8_BWGR: EF_FEM_2U {};
+    class EF_FEM_3_8_GRGR: EF_FEM_2U {};
+    class EF_FEM_3_8_GRBK: EF_FEM_2U {};
+    class EF_FEM_3_9_2B2: EF_FEM_2U {};
+    class EF_FEM_3_9_2BL2: EF_FEM_2U {};
+    class EF_FEM_3_9_2K: EF_FEM_2U {};
+    class EF_FEM_3_9_2R: EF_FEM_2U {};
+    class EF_FEM_3_9_2V2: EF_FEM_2U {};
+    class EF_FEM_3_9_2W2: EF_FEM_2U {};
+    class EF_FEM_4_2B: EF_FEM_2U {};
+    class EF_FEM_4_2OD: EF_FEM_2U {};
+    class EF_FEM_4_2B2: EF_FEM_2U {};
+    class EF_FEM_4_2OD2: EF_FEM_2U {};
+    class EF_FEM_4_2PP2: EF_FEM_2U {};
+    class EF_FEM_4_2OD3: EF_FEM_2U {};
+    class EF_FEM_4_2PP3: EF_FEM_2U {};
+    class EF_FEM_4_72ADR: EF_FEM_2U {};  
+    class EF_FEM_4_77: EF_FEM_2U {};
+    class EF_FEM_4_77R: EF_FEM_2U {};
+    class EF_FEM_4_75: EF_FEM_2U {};
+    class EF_FEM_4_75R: EF_FEM_2U {};
+    class EF_FEM_4_76: EF_FEM_2U {};
+    class EF_FEM_4_76R: EF_FEM_2U {};
+    class EF_FEM_4_76R2: EF_FEM_2U {};
+    class EF_FEM_4_73: EF_FEM_2U {};
+    class EF_FEM_4_73R: EF_FEM_2U {};
+    class EF_FEM_4_73R2: EF_FEM_2U {};
+    class EF_FEM_4_74: EF_FEM_2U {};
+    class EF_FEM_4_74R: EF_FEM_2U {};
+    class EF_FEM_4_7R: EF_FEM_2U {};
+    class EF_FEM_4_72: EF_FEM_2U {};
+    class EF_FEM_4_72R: EF_FEM_2U {};
+    class EF_FEM_4_72ADR2: EF_FEM_2U {};
+    class EF_FEM_4_72ADR3: EF_FEM_2U {};
+    class EF_FEM_4_4B: EF_FEM_2U {};
+    class EF_FEM_4_4RC: EF_FEM_2U {};
+    class EF_FEM_4_4W: EF_FEM_2U {};
+    class EF_FEM_4_42: EF_FEM_2U {};
+    class EF_FEM_4_42RC: EF_FEM_2U {};
+    class EF_FEM_4_42W: EF_FEM_2U {};
+    class EF_FEM_4_43: EF_FEM_2U {};
+    class EF_FEM_4_4RC3: EF_FEM_2U {};
+    class EF_FEM_62: EF_FEM_2U {};
+    class EF_FEM_72: EF_FEM_2U {};
+    class EF_FEM_73: EF_FEM_2U {};
+    class EF_FEM_7: EF_FEM_2U {};
+    class EF_FEM_74: EF_FEM_2U {};
+    class EF_FEM_8: EF_FEM_2U {};
+    class EF_FEM_8_2: EF_FEM_2U {};
+    class EF_FEM_8_4: EF_FEM_2U {};
+    class EF_FEM_10A_BK: EF_FEM_2U {};
+    class EF_FEM_10A_BK_BL: EF_FEM_2U {};
+    class EF_FEM_10A_BK_K: EF_FEM_2U {};
+    class EF_FEM_10A_BK_W: EF_FEM_2U {};
+    class EF_FEM_10A_BWK: EF_FEM_2U {};
+    class EF_FEM_10A_R_BK: EF_FEM_2U {};
+    class EF_FEM_10A_SG_W: EF_FEM_2U {};
+    class EF_FEM_3_9_BK: EF_FEM_2U {};
+    class EF_FEM_3_9_BW: EF_FEM_2U {};
+    class EF_FEM_3_9_GR: EF_FEM_2U {};
+    class EF_FEM_3_9_BL: EF_FEM_2U {};
+    class EF_FEM_3_9_BK2: EF_FEM_2U {};
+    class EF_FEM_3_9_BW2: EF_FEM_2U {};
+    class EF_FEM_3_9_GR2: EF_FEM_2U {};
+    class EF_FEM_3_9_BL2: EF_FEM_2U {};
+
+	///////////////////////////////// GOGGLE FEMME///////////////////////////////////
+	class EF_FG21
 	{
-		buy_price=450;
+		buy_price=400;
 	};
-	class EF_FBAG_BL: EF_FBAG_BK {};
-	class EF_FBAG_BW: EF_FBAG_BK {};
-	class EF_FBAG_RD: EF_FBAG_BK {};
-	class EF_FBAG_SG: EF_FBAG_BK {};
-	class EF_FBAG_VL: EF_FBAG_BK {};
-	class EF_FBAG_HB_BK: EF_FBAG_BK {};
-	class EF_FBAG_HB_BL: EF_FBAG_BK {};
-	class EF_FBAG_HB_RD: EF_FBAG_BK {};
-	class EF_FBAG_HB_SG: EF_FBAG_BK {};
-	class EF_FBAG_HB_VL: EF_FBAG_BK {};
-	class EF_FBAG_SL_BK: EF_FBAG_BK {};
-	class EF_FBAG_SL_BL: EF_FBAG_BK {};
-	class EF_FBAG_SL_RD: EF_FBAG_BK {};
-	class EF_FBAG_SL_SG: EF_FBAG_BK {};
-	class EF_FBAG_SL_VL: EF_FBAG_BK {};
+	class EF_FG1: EF_FG21 {};
+	class EF_ACC1: EF_FG21 {};
+	class EF_ACC2: EF_FG21 {};
+	class EF_ACC3: EF_FG21 {};
+	class EF_AC1: EF_FG21 {};
+	class EF_AC2: EF_FG21 {};
+	class EF_AC3: EF_FG21 {};
+	class EF_PG1: EF_FG21 {};
+	class EF_PG2: EF_FG21 {};
+
+
 	///////////////////////////////// BACKBACK /////////////////////////////////
 	class Skyline_Backpack_Improvise_01_F
 	{
@@ -843,6 +943,11 @@ class ALYSIA_ITEMS_ARMA
 	class SkylineItems_Bandage
 	{
 		buy_price=15;
+	};
+
+	class Adenis_Compresse
+	{
+		buy_price=5000;
 	};
 
 	class Skyline_Alysia_Parapluie_01_F

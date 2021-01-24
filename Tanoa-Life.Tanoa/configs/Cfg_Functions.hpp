@@ -210,6 +210,8 @@ class CfgFunctions
 			class item_patron {};
 			class item_firework {};
 			class item_fauxPapiers {};
+			class item_compresse_apply {};
+			class item_compresse_use {};
 		};
 
 		class ChangeKey

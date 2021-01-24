@@ -2,9 +2,9 @@ class ALYSIA_LABORATORIES
 {
 	class lab_marijuana
 	{
-		object="Skyline_Alysia_WorkBench_Marijuana_01_F";
+		object="Diablo_TB_Marijuana_01_F";
 		process[]={"marijuana"};
-		destroy[]={"EAST"};
+		destroy[]={"WEST"};
 		class marker
 		{
 		 	ShapeLocal="ICON";
@@ -22,7 +22,7 @@ class ALYSIA_LABORATORIES
 	{
 		object="Skyline_Alysia_WorkBench_Marijuana_01_F";
 		process[]={"mushroom","mushroom_bocal"};
-		destroy[]={"EAST"};
+		destroy[]={"WEST"};
 		class marker
 		{
 		 	ShapeLocal="ICON";
@@ -38,9 +38,9 @@ class ALYSIA_LABORATORIES
 	};
 	class lab_meth
 	{
-		object="Skyline_Alysia_WorkBench_Methamphetamine_01_F";
+		object="Diablo_TB_Methamphetamine_01_F";
 		process[]={"meth"};
-		destroy[]={"EAST"};
+		destroy[]={"WEST"};
 		class marker
 		{
 		 	ShapeLocal="ICON";
@@ -56,9 +56,9 @@ class ALYSIA_LABORATORIES
 	};
 	class lab_cocaine
 	{
-		object="Skyline_Alysia_WorkBench_Cocaine_01_F";
+		object="Diablo_TB_Cocaine_01_F";
 		process[]={"cocaine","cocainec"};
-		destroy[]={"EAST"};
+		destroy[]={"WEST"};
 		class marker
 		{
 		 	ShapeLocal="ICON";
@@ -74,9 +74,9 @@ class ALYSIA_LABORATORIES
 	};
 	class lab_heroin
 	{
-		object="Skyline_Alysia_WorkBench_Heroine_01_F";
+		object="Diablo_TB_Heroine_01_F";
 		process[]={"heroin","seringueheroin"};
-		destroy[]={"EAST"};
+		destroy[]={"WEST"};
 		class marker
 		{
 		 	ShapeLocal="ICON";
@@ -94,7 +94,7 @@ class ALYSIA_LABORATORIES
 	{
 		object="Land_Factory_Conv1_End_F";
 		process[]={"cigare","cigare_clothing"};
-		destroy[]={"EAST"};
+		destroy[]={"WEST"};
 		class marker
 		{
 		 	ShapeLocal="ICON";
@@ -112,7 +112,7 @@ class ALYSIA_LABORATORIES
 	{
 		object="HealTable_F";
 		process[]={};
-		destroy[]={"EAST"};
+		destroy[]={"WEST"};
 		class marker
 		{
 		 	ShapeLocal="ICON";
@@ -130,7 +130,7 @@ class ALYSIA_LABORATORIES
 	{
 		object="Skyline_Alysia_WorkBench_Construction_01_F";
 		process[]={"chair_wood","table_wood","light_double","bag_01","bag_02"};
-		destroy[]={"EAST"};
+		destroy[]={"WEST"};
 		class marker
 		{
 		 	ShapeLocal="ICON";
@@ -180,7 +180,7 @@ class ALYSIA_LABORATORIES
 			"magazine_ruger_mk2",
 			"magazine_mosin"
 		};
-		destroy[]={"EAST"};
+		destroy[]={"WEST"};
 		class marker
 		{
 		 	ShapeLocal="ICON";

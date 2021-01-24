@@ -205,13 +205,6 @@ if (hasInterface) then
 	    };
 	};
 
-	if ((
-		(!(isNull g_company) && {(((g_company getVariable ['company_info',['','','']]) select 2) isEqualTo 'money_transfer')}) ||
-		(!(isNull g_company) && {(((g_company getVariable ['company_info',['','','']]) select 2) isEqualTo 'bank')})
-	) || (playerSide isEqualTo west)) then { 
- 		player setVariable ["copLevel",1,true];
-	};
-
 	diag_log "---------------------------------------------------------------------------------------------------------";
 	diag_log format["              End of Client Init :: Total Execution Time %1 seconds ", (diag_tickTime - _timeStamp)];
 	diag_log "---------------------------------------------------------------------------------------------------------";

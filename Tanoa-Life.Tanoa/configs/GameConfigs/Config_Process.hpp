@@ -1403,6 +1403,21 @@ class ALYSIA_PROCESS
 		time_per_item=4;
 		time_default=2;
 	};
+	class malibu: cassoulet
+	{
+		name="Assemblage (malibu)";
+		sound="cooking";
+		class require
+		{
+			items_virtual[]={{"rhum",1},{"coconut",2}};
+		};
+		class receive
+		{
+			items_virtual[]={{"malibu",1}};
+		};
+		time_per_item=3;
+		time_default=2;
+	};
 	class white_grape_juicep: cassoulet
 	{
 		name="Mélange";
@@ -2116,7 +2131,7 @@ class ALYSIA_PROCESS
 	/* ====================================== company_tabac ====================================== */
 	class tabac
 	{
-		name="Tubage de cigarettes";
+		name="Tubage des cigarettes";
 		sound="salt_process";
 		class require
 		{
@@ -2136,49 +2151,19 @@ class ALYSIA_PROCESS
 			class GUER {};
 		};
 	};
-	class cig_clothing_01: tabac
+
+	class tabac_arma : tabac
 	{
-		name="Fabrication : cigarette (1)";
+		name="Retubage des cigarettes";
 		class require
 		{
-			items_virtual[]={{"tabac",1}};
+			items_virtual[]={{"cigarette",1}};
 		};
 		class receive
 		{
-			items_arma[]={"EWK_Cig1"};
+			items_arma[]={"murshun_cigs_cig0"};
 		};
-	};
-	class cig_clothing_02: cig_clothing_01
-	{
-		name="Fabrication : cigarette (2)";
-		class receive
-		{
-			items_arma[]={"EWK_Cig2"};
-		};
-	};
-	class cig_clothing_03: cig_clothing_01
-	{
-		name="Fabrication : cigarette (3)";
-		class receive
-		{
-			items_arma[]={"EWK_Cig3"};
-		};
-	};
-	class cig_clothing_04: cig_clothing_01
-	{
-		name="Fabrication : cigarette (4)";
-		class receive
-		{
-			items_arma[]={"EWK_Cig4"};
-		};
-	};
-	class cig_clothing_05: cig_clothing_01
-	{
-		name="Fabrication : cigarette (5)";
-		class receive
-		{
-			items_arma[]={"EWK_Cig6"};
-		};
+		time_per_item=1;
 	};
 
 	class holosight

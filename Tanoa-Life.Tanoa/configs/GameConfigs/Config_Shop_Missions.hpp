@@ -6,7 +6,7 @@ class ALYSIA_MISSIONS
 		sides[]={"CIV"};
 		condition="(true)";
 		price=15000000;
-		vehicle="Skyline_Coffre_Large";
+		vehicle="Diablo_Coffre_Large";
 		count_per_reboot=-1;
 		max_delivery_time=30;
 		min_delivery_time=10;

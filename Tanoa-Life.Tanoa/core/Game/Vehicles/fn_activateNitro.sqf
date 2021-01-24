@@ -8,7 +8,7 @@ _vehicle = vehicle player;
 if (!(_vehicle isKindOf "Car") || ((driver _vehicle) != player)) exitWith {};
 if ((_vehicle getVariable ["nitro", 0]) < 1) exitWith {};
 if ((speed _vehicle) <= 10) exitWith {
-	["Vous devez rouler � plus de <t color='#FF8000'>10km/h</t> pour activer la nitro."] calAlysiaClientnt_fnc_error;
+	["Vous devez rouler à plus de <t color='#FF8000'>10km/h</t> pour activer la nitro."] call AlysiaClientnt_fnc_error;
 };
 
 _vehicle setVariable ["nitro", ((_vehicle getVariable ["nitro", 0]) - 1), true];

@@ -1439,11 +1439,11 @@ class ALYSIA_ITEMS
             "Skyline_Vehicule_Jonzie_Tanker_Truck_11_F",
             "Skyline_Vehicule_Jonzie_Tanker_Truck_12_F",
             "Skyline_Vehicule_Jonzie_Tanker_Truck_13_F",
-            "Skyline_Coffre_Small",
-            "Skyline_Coffre_Medium",
-            "Skyline_Coffre_Large",
-            "Skyline_Coffre_Extra",
-            "Skyline_Coffre_Mega",
+            "Diablo_Coffre_Small",
+            "Diablo_Coffre_Medium",
+            "Diablo_Coffre_Large",
+            "Diablo_Coffre_Extra",
+            "Diablo_Coffre_Mega",
 			"USAF_C17",
 			"A320_ch_AZ",
 			"A320_ch_LX",
@@ -1655,11 +1655,11 @@ class ALYSIA_ITEMS
         store[]=
         {
             "Skyline_Brinks_01_F",
-            "Skyline_Coffre_Small",
-            "Skyline_Coffre_Medium",
-            "Skyline_Coffre_Large",
-            "Skyline_Coffre_Extra",
-            "Skyline_Coffre_Mega"
+            "Diablo_Coffre_Small",
+            "Diablo_Coffre_Medium",
+            "Diablo_Coffre_Large",
+            "Diablo_Coffre_Extra",
+            "Diablo_Coffre_Mega"
         };
         class remove {};
     };
@@ -2652,6 +2652,317 @@ class ALYSIA_ITEMS
         class food
         {
             hunger=60;
+            thirst=0;
+            sound="eat_biscuit";
+        };
+    };
+
+    class bourbon
+    {
+        name="Bouteille de bourbon";
+        weight=2;
+        price_buy=80;
+        price_sell=1097;
+        image="Alysia_Client\Textures\Items_virtual\Bourbon.paa";
+        class food
+        {
+            hunger=-5;
+            thirst=25;
+            sound="drink_wine";
+            alcool=0.6;
+        };
+        /*class market
+        {
+            max=2917;
+            min=1354;
+        };*/
+        class remove {};
+    };
+    class vodka
+    {
+        name="Bouteille de vodka";
+        weight=2;
+        price_buy=80;
+        price_sell=1097;
+        image="Alysia_Client\Textures\Items_virtual\Vodka.paa";
+        class food
+        {
+            hunger=-5;
+            thirst=25;
+            sound="drink_wine";
+            alcool=0.6;
+        };
+        /*class market
+        {
+            max=5001;
+            min=2161;
+        };*/
+        class remove {};
+    };
+    class banana_liqueur
+    {
+        name="Liqueur de banane";
+        weight=2;
+        price_buy=80;
+        price_sell=1097;
+        image="Alysia_Client\Textures\Items_virtual\LiqueurDeBanane.paa";
+        class food
+        {
+            hunger=-5;
+            thirst=25;
+            sound="drink_wine";
+            alcool=0.6;
+        };
+        /*class market
+        {
+            max=3720;
+            min=2119;
+        };*/
+        class remove {};
+    };
+    class malibu
+    {
+        name="Alcool de coco";
+        weight=2;
+        price_buy=80;
+        price_sell=1097;
+        image="Alysia_Client\Textures\Items_virtual\AlcoolDeCoco.paa";
+        class food
+        {
+            hunger=-5;
+            thirst=25;
+            sound="drink_wine";
+            alcool=0.6;
+        };
+        /*class market
+        {
+            max=4283;
+            min=2332;
+        };*/
+        class remove {};
+    };
+	class frite
+    {
+        name="Paquet de frite";
+        weight=1;
+        image="Alysia_Client\Textures\Items_virtual\paquet_frites.paa";
+        price_buy=100;
+        class remove {};
+        class food
+        {
+            hunger=20;
+            thirst=0;
+            sound="eat_biscuit";
+        };
+    };
+    class caviar
+    {
+        name="Caviar";
+        weight=1;
+        image="Alysia_Client\Textures\Items_virtual\Caviar.paa";
+        price_buy=100;
+        class remove {};
+        class market
+        {
+            max=3157;
+            min=2076;
+        };
+        class food
+        {
+            hunger=20;
+            thirst=0;
+            sound="eat_biscuit";
+        };
+    };
+    class fraise
+    {
+        name="Ravier de fraises";
+        weight=1;
+        image="Alysia_Client\Textures\Items_virtual\Fraise.paa";
+        buy_license_CIV="company_cook";
+        price_buy=100;
+        class remove {};
+        class food
+        {
+            hunger=5;
+            thirst=0;
+            sound="eat_biscuit";
+        };
+    };
+    class shotalcool
+    {
+        name="Shot d'alcool";
+        weight=1;
+        image="Alysia_Client\Textures\Items_virtual\shot_alcool.paa";
+        price_buy=100;
+        class food
+        {
+            hunger=5;
+            thirst=5;
+            sound="drink_wine";
+            alcool=0.03;
+        };
+        class remove {};
+    };
+    class burger
+    {
+        name="Hamburger";
+        weight=1;
+        image="Alysia_Client\Textures\Items_virtual\Hamburger.paa";
+        price_buy=100;
+        class remove {};
+        class food
+        {
+            hunger=30;
+            thirst=0;
+            sound="eat_biscuit";
+        };
+    };
+    class homar
+    {
+        name="Homar";
+        weight=1;
+        image="Alysia_Client\Textures\Items_virtual\Homard.paa";
+        buy_license_CIV="company_cook";
+        price_buy=100;
+        class remove {};
+        class food
+        {
+            hunger=15;
+            thirst=0;
+            sound="eat_biscuit";
+        };
+    };
+    class kebab
+    {
+        name="Kebab";
+        weight=1;
+        image="Alysia_Client\Textures\Items_virtual\kebab.paa";
+        buy_license_CIV="company_cook";
+        price_buy=100;
+        class remove {};
+        class food
+        {
+            hunger=30;
+            thirst=0;
+            sound="eat_biscuit";
+        };
+    };
+    class langouste
+    {
+        name="Langouste";
+        weight=1;
+        image="Alysia_Client\Textures\Items_virtual\Langouste.paa";
+        price_buy=100;
+        class remove {};
+        class food
+        {
+            hunger=15;
+            thirst=0;
+            sound="eat_biscuit";
+        };
+    };
+    class lasagne
+    {
+        name="Lasagne";
+        weight=1;
+        image="Alysia_Client\Textures\Items_virtual\Lasagne.paa";
+        buy_license_CIV="company_cook";
+        price_buy=100;
+        class remove {};
+        class food
+        {
+            hunger=25;
+            thirst=0;
+            sound="eat_biscuit";
+        };
+    };
+    class macaron
+    {
+        name="Macaron";
+        weight=1;
+        image="Alysia_Client\Textures\Items_virtual\Macaron.paa";
+        buy_license_CIV="company_cook";
+        price_buy=100;
+        class remove {};
+        class food
+        {
+            hunger=5;
+            thirst=0;
+            sound="eat_biscuit";
+        };
+    };
+    class carbo
+    {
+        name="Pâte Carbonara";
+        weight=1;
+        image="Alysia_Client\Textures\Items_virtual\Pate_Carbonara.paa";
+        price_buy=100;
+        buy_license_CIV="company_cook";
+        class remove {};
+        class food
+        {
+            hunger=30;
+            thirst=0;
+            sound="eat_biscuit";
+        };
+    };
+    class purer
+    {
+        name="Purée";
+        weight=1;
+        image="Alysia_Client\Textures\Items_virtual\puree.paa";
+        buy_license_CIV="company_cook";
+        price_buy=100;
+        class remove {};
+        class food
+        {
+            hunger=5;
+            thirst=0;
+            sound="eat_biscuit";
+        };
+    };
+    class chantilly
+    {
+        name="Ravier de chantilly";
+        weight=1;
+        image="Alysia_Client\Textures\Items_virtual\ravier_chantilly.paa";
+        buy_license_CIV="company_cook";
+        price_buy=100;
+        class remove {};
+        class food
+        {
+            hunger=2;
+            thirst=0;
+            sound="eat_biscuit";
+        };
+    };
+    class saucisson
+    {
+        name="Saucisson";
+        weight=1;
+        image="Alysia_Client\Textures\Items_virtual\Saucisson.paa";
+        buy_license_CIV="company_cook";
+        price_buy=100;
+        class remove {};
+        class food
+        {
+            hunger=10;
+            thirst=-5;
+            sound="eat_biscuit";
+        };
+    };
+    class bolo
+    {
+        name="Spaghetti Bolognaise";
+        weight=1;
+        image="Alysia_Client\Textures\Items_virtual\Spaghetti_Bolognaise.paa";
+        buy_license_CIV="company_cook";
+        price_buy=100;
+        class remove {};
+        class food
+        {
+            hunger=30;
             thirst=0;
             sound="eat_biscuit";
         };
