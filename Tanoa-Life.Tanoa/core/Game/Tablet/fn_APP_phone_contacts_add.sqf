@@ -14,12 +14,12 @@ if (_name isEqualTo "") exitWith {
 	["Vous n'avez pas entré de nom pour votre contact"] call AlysiaClient_fnc_error;
 };
 
-_bad = [_name, getText(missionConfigFile >> "ALYSIA_PHONE" >> "CONTACTS" >> "characters_allowed")] call AlysiaClient_fnc_TextAllowed;
+_bad = [_name, getText(missionConfigFile >> "ADENIS_PHONE" >> "CONTACTS" >> "characters_allowed")] call AlysiaClient_fnc_TextAllowed;
 if (_bad != "") exitWith {
 	[format["Vous utilisez un caractère interdit dans le nom de votre contact à ajouter (%1)", _bad]] call AlysiaClient_fnc_error;
 };
-if (([_name] call CBA_fnc_strLen) > getNumber(missionConfigFile >> "ALYSIA_PHONE" >> "CONTACTS" >> "characters_max")) exitWith {
-	[format["Le nom entré pour votre contact ne doit pas dépasser %1 caractères", getNumber(missionConfigFile >> "ALYSIA_PHONE" >> "CONTACTS" >> "characters_max")]] call AlysiaClient_fnc_error;
+if (([_name] call CBA_fnc_strLen) > getNumber(missionConfigFile >> "ADENIS_PHONE" >> "CONTACTS" >> "characters_max")) exitWith {
+	[format["Le nom entré pour votre contact ne doit pas dépasser %1 caractères", getNumber(missionConfigFile >> "ADENIS_PHONE" >> "CONTACTS" >> "characters_max")]] call AlysiaClient_fnc_error;
 };
 
 if (!([_number] call AlysiaClient_fnc_isNumber)) exitWith {
@@ -28,7 +28,7 @@ if (!([_number] call AlysiaClient_fnc_isNumber)) exitWith {
 if (([_number] call CBA_fnc_strLen) != 6) exitWith {
 	["Un numéro de téléphone doit être composé de six chiffres"] call AlysiaClient_fnc_error;
 };
-if ((count g_phone_contacts) >= getNumber(missionConfigFile >> "ALYSIA_PHONE" >> "FORFAITS" >> g_phone_forfait >> "contacts_max")) exitWith {
+if ((count g_phone_contacts) >= getNumber(missionConfigFile >> "ADENIS_PHONE" >> "FORFAITS" >> g_phone_forfait >> "contacts_max")) exitWith {
 	["Vous avez déjà atteint votre quota maximum de contacts"] call AlysiaClient_fnc_error;
 };
 

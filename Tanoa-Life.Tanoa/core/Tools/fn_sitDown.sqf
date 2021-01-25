@@ -20,7 +20,7 @@ if (_players) exitWith
 	};
 };
 
-_config = missionConfigFile >> "ALYSIA_CHAIRS" >> typeOf(_chair);
+_config = missionConfigFile >> "ADENIS_CHAIRS" >> typeOf(_chair);
 
 [player, getText(_config >> "anim")] remoteExecCall ["switchMove", -2];
 player setPosATL [(getPosATL _chair) select 0, (getPosATL _chair) select 1, ((getPosATL _chair) select 2) + getNumber(_config >> "height")];

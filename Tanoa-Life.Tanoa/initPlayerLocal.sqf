@@ -9,7 +9,7 @@ if (hasInterface) then
 	diag_log "---------------------------------------- Starting Client Init ----------------------------------------";
 	diag_log "------------------------------------------------------------------------------------------------------";
 	_timeStamp = diag_tickTime;
-	_staff = !(("(getText(_x >> 'uid') isEqualTo (getPlayerUID player)) && (getNumber(_x >> 'skip_checks') isEqualTo 1)" configClasses (missionConfigFile >> "ALYSIA_STAFF" >> "members")) isEqualTo []);
+	_staff = !(("(getText(_x >> 'uid') isEqualTo (getPlayerUID player)) && (getNumber(_x >> 'skip_checks') isEqualTo 1)" configClasses (missionConfigFile >> "ADENIS_STAFF" >> "members")) isEqualTo []);
 
 	enableSaving [false, false];
 

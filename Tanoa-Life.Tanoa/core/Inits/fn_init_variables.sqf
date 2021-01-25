@@ -91,13 +91,6 @@ with missionNamespace do
 	g_plants = [];
 	{
 		g_plants pushBack (configName _x);
-	} forEach ("true" configClasses (missionConfigFile >> "ALYSIA_FARMING_PLANT_OBJETCS"));
+	} forEach ("true" configClasses (missionConfigFile >> "ADENIS_FARMING_PLANT_OBJETCS"));
 	g_plants = compileFinal str(g_plants);
-
-	if ((
-		(!(isNull g_company) && {(((g_company getVariable ['company_info',['','','']]) select 2) isEqualTo 'money_transfer')}) ||
-		(!(isNull g_company) && {(((g_company getVariable ['company_info',['','','']]) select 2) isEqualTo 'banque')})
-	) || (playerSide isEqualTo west)) then { 
- 		player setVariable ["copLevel",1,true];
-	};
 };

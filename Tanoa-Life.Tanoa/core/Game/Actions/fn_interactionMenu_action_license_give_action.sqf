@@ -19,7 +19,7 @@ _action =
 		([(side _from), (_from getVariable["rank", 0])] call AlysiaClient_fnc_rankToStr),
 		(_from getVariable ["realname", (name _from)]),
 		([(side _from)] call AlysiaClient_fnc_sideToStr),
-		getText(missionConfigFile >> "ALYSIA_FACTIONS" >> str(_from) >> "name"),
+		getText(missionConfigFile >> "ADENIS_FACTIONS" >> str(_from) >> "name"),
 		[_license] call AlysiaClient_fnc_licenseGetName
 	],
 	"Licence",

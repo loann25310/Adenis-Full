@@ -1,4 +1,4 @@
-class ALYSIA_TAXES
+class ADENIS_TAXES
 {
 	class gServer_tax_companies_employee_multiplier
 	{

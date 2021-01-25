@@ -12,7 +12,7 @@ _list =  _display displayCtrl 8201;
 lbClear _list;
 
 {
-	_info = ["Alysia", _x] call CBA_fnc_getKeybind;
+	_info = ["Adenis", _x] call CBA_fnc_getKeybind;
 	if (isNil "_info") then {
 		systemChat format["Key %1 has no info", _x];
 	} else {

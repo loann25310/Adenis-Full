@@ -1,8 +1,8 @@
-class ALYSIA_MISSIONS
+class ADENIS_MISSIONS
 {
 	class reb_1
 	{
-		name="Livraison rebelle";
+		name="Convoi de l'Amerloque";
 		sides[]={"CIV"};
 		condition="(true)";
 		price=15000000;
@@ -87,6 +87,78 @@ class ALYSIA_MISSIONS
 				"blueprint_watchpost_tall",
 				"blueprint_watchpost_small",
 				"blueprint_watchtower_wood"
+			};
+		};
+		class prevent
+		{
+			needed_markers[]={"blackMarket_marker_1","blackMarket_marker_2"};
+		};
+	};
+
+	class reb_2
+	{
+		name="Convoi de Blanchito";
+		sides[]={"CIV"};
+		condition="(true)";
+		price=5000000;
+		vehicle="Diablo_Coffre_Large";
+		count_per_reboot=-1;
+		max_delivery_time=30;
+		min_delivery_time=10;
+		loop_count_random=-1;
+		loop_count_min=32;
+		class stock
+		{
+			weapons[]=
+			{
+				"RH_ttracker",
+				"RH_deagle",
+				"RH_Deaglem",
+				"RH_Deagles",
+				"RH_Deagleg",
+				"RH_ttracker_g",
+				"RH_bullb",
+				"RH_bull"
+			};
+			magazines[]=
+			{
+				"RH_6Rnd_45ACP_Mag",
+				"RH_7Rnd_50_AE",
+				"RH_6Rnd_454_Mag"
+			};
+			items[]=
+			{
+				"optic_Hamr",
+				"optic_Hamr_khk_F",
+				"optic_MRCO",
+				"optic_MRCO",
+				"optic_Holosight_blk_F",
+				"optic_Holosight_smg",
+				"optic_Holosight_smg_blk_F",
+				"optic_Aco",
+				"optic_ACO_grn",
+				"optic_Aco_smg",
+				"optic_ACO_grn_smg",
+				"optic_Arco_blk_F",
+				"optic_Arco_ghex_F",
+				"optic_Arco",
+				"mgsr_headbag",
+				"G_Bandanna_blk",
+				"Skyline_GasMask",
+				"Skyline_optic_PSO1"
+			};
+			virtuals[]=
+			{
+				"blueprint_protector",
+				"blueprint_micro_uzi",
+				"blueprint_pm73_rak",
+				"blueprint_kimber_night_warrior",
+				"blueprint_umateba_model_6_unica",
+				"blueprint_taurus_raging_bull",
+				"blueprint_ruger_mk2",
+				"fauxpapiers",
+				"blueprint_taurus_tracker_455",
+				"blueprint_desert_eagle"
 			};
 		};
 		class prevent

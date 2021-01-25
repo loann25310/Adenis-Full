@@ -17,7 +17,7 @@ if ((player getVariable ["refuel_type", ""]) isEqualTo "") then
 	["Veuillez maintenant insérer le pistolet dans le réservoir de votre véhicule<br/>Pour annuler l'action, interagissez avec la station."] call AlysiaClient_fnc_info;
 	closeDialog 0;
 
-	_distance = getNumber(missionConfigFile >> "ALYSIA_FUEL_STATION" >> typeOf(_station) >> "max_distance_allowed");
+	_distance = getNumber(missionConfigFile >> "ADENIS_FUEL_STATION" >> typeOf(_station) >> "max_distance_allowed");
 	while {((player getVariable ["refuel_type", ""]) != "")} do
 	{
 		if ((player distance _station) > _distance) exitWith

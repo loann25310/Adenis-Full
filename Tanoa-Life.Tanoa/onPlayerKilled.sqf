@@ -17,7 +17,7 @@ if ((player getVariable ["tf_voiceVolume", 0]) > 0) then {player setVariable ["t
 	{
 		missionNamespace setVariable [format["license_%1", (configName _x)], false];
 	};
-} forEach ("getNumber(_x >> 'factions' >> str(playerSide) >> 'lostOnDeath') isEqualTo 1" configClasses (missionConfigFile >> "ALYSIA_LICENSES"));
+} forEach ("getNumber(_x >> 'factions' >> str(playerSide) >> 'lostOnDeath') isEqualTo 1" configClasses (missionConfigFile >> "ADENIS_LICENSES"));
 
 ("deathLayer" call BIS_fnc_rscLayer) cutText ["Vous êtes en soin intensif", "BLACK FADED", 999999, true];
 

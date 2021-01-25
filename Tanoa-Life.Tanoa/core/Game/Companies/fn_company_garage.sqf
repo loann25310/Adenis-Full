@@ -17,7 +17,7 @@ if (isNil "_info") exitWith {
 	["Impossibler de récupérér les informations de l'entreprise."] call AlysiaClient_fnc_error;
 };
 
-_config = missionConfigFile >> "ALYSIA_COMPANIES_TYPES" >> (_info select 2);
+_config = missionConfigFile >> "ADENIS_COMPANIES_TYPES" >> (_info select 2);
 if (!isClass(_config)) exitWith {
 	["Impossible de trouver la config entreprise de la cible."] call AlysiaClient_fnc_error;
 };

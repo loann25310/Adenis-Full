@@ -12,7 +12,7 @@ if (_sel isEqualTo -1) exitWith {};
 if (!g_interaction_target_trunk_store) exitWith {};
 
 _item = lbData[505, _sel];
-_storeType = getArray(missionConfigFile >> "ALYSIA_ITEMS" >> _item >> "store");
+_storeType = getArray(missionConfigFile >> "ADENIS_ITEMS" >> _item >> "store");
 if (!(_storeType isEqualTo []) && !(typeOf(g_interaction_target) in _storeType)) exitWith
 {
 	[

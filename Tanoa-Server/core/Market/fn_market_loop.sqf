@@ -29,7 +29,7 @@ while {!gServer_soonReboot} do
 				[_ressource, _newPrice, true] call AlysiaServer_fnc_market_setPrice;
 			};
 		};
-	} foreach ("isClass(_x >> 'market')" configClasses (missionConfigFile >> "ALYSIA_ITEMS"));
+	} foreach ("isClass(_x >> 'market')" configClasses (missionConfigFile >> "ADENIS_ITEMS"));
 
 	gServer_market_event_next = serverTime + (60 * 30);
 	publicVariable "gServer_market_event_next";

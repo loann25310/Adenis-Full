@@ -1,4 +1,4 @@
-class ALYSIA_DYN_OBJECTS
+class ADENIS_DYN_OBJECTS
 {
 	class barriere
 	{

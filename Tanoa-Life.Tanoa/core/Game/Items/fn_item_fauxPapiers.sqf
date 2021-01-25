@@ -40,7 +40,7 @@ if(!_type) exitWith {
 		_list_origin lbSetPicture [_index, getText(_x >> "flag")];
 		_list_origin lbSetPictureColor [_index, [1, 1, 1, 1]];
 		_list_origin lbSetData [_index, (configName _x)];
-	} forEach ("true" configClasses (missionConfigFile >> "ALYSIA_NATIONALITIES"));
+	} forEach ("true" configClasses (missionConfigFile >> "ADENIS_NATIONALITIES"));
 	_list_origin lbSetCurSel 0;
 };
 

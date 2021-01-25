@@ -12,7 +12,7 @@ _list = _display displayCtrl 9900;
 lbClear _list;
 
 {
-	_config = missionConfigFile >> "ALYSIA_ATM" >> typeOf(_x);
+	_config = missionConfigFile >> "ADENIS_ATM" >> typeOf(_x);
 	if (isClass(_config)) then
 	{
 		if (getNumber(_config >> "tablet") isEqualTo 1) then

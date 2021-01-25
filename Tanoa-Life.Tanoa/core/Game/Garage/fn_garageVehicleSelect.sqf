@@ -132,7 +132,7 @@ if (((_vehicleInfo select 11) isEqualTo str(playerSide)) || ((_vehicleInfo selec
   	_vehicleInfo select 10,
     round((_fuel * (_vehicleInfo select 7)) / 100),
   	round(_vehicleInfo select 7),
-    getText(missionConfigFile >> "ALYSIA_FUEL" >> (_vehicleInfo select 14) >> "name"),
+    getText(missionConfigFile >> "ADENIS_FUEL" >> (_vehicleInfo select 14) >> "name"),
     if (_price_condition) then {"#31B404"} else {"#DF0101"},
     if (_rank_condition) then {"#31B404"} else {"#DF0101"},
     [[_vehicleInfo select 11] call AlysiaClient_fnc_strToSide, _rank] call AlysiaClient_fnc_rankToStr,
@@ -140,7 +140,7 @@ if (((_vehicleInfo select 11) isEqualTo str(playerSide)) || ((_vehicleInfo selec
     _fuel,
     "%",
     if (_faction_condition) then {"#31B404"} else {"#DF0101"},
-    getText(missionConfigFile >> "ALYSIA_FACTIONS" >> (_vehicleInfo select 11) >> "name_full"),
+    getText(missionConfigFile >> "ADENIS_FACTIONS" >> (_vehicleInfo select 11) >> "name_full"),
     getNumber(configFile >> "CfgVehicles" >> _className >> "maximumload"),
     if (_className isKindOf "Car") then {"Oui"} else {"Non"},
     if ((_vehicleInfo select 23) isEqualTo 1) then {"Non"} else {"Oui"}

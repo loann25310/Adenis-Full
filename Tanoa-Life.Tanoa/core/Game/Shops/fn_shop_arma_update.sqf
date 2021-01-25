@@ -21,21 +21,21 @@ if (isNull _display) exitWith {};
 
 g_shop_active = true;
 
-_price = getNumber(missionConfigFile >> "ALYSIA_ITEMS_ARMA" >> _item >> "buy_price");
+_price = getNumber(missionConfigFile >> "ADENIS_ITEMS_ARMA" >> _item >> "buy_price");
 if ((_price > 0) && (g_cash >= _price)) then {
 	_price_condition = true;
 } else {
 	_price_condition = false;
 };
 
-_rank = getNumber(missionConfigFile >> "ALYSIA_ITEMS_ARMA" >> _item >> format["buy_condition_%1", playerSide]);
+_rank = getNumber(missionConfigFile >> "ADENIS_ITEMS_ARMA" >> _item >> format["buy_condition_%1", playerSide]);
 if ((_rank isEqualTo 0) || ((_rank > 0) && ((player getVariable ["rank", 0]) >= _rank))) then {
 	_rank_condition = true;
 } else {
 	_rank_condition = false;
 };
 
-_licenses = getArray(missionConfigFile >> "ALYSIA_ITEMS_ARMA" >> _item >> format["buy_license_%1", playerSide]);
+_licenses = getArray(missionConfigFile >> "ADENIS_ITEMS_ARMA" >> _item >> format["buy_license_%1", playerSide]);
 if (count(_licenses) > 0) then
 {
 	_licenses_text = "";

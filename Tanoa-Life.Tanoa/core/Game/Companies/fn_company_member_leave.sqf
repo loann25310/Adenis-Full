@@ -11,7 +11,7 @@ _info = g_company getVariable "company_info";
 if (isNil "_info") exitWith {};
 
 _hasLicense = false;
-_license = getText(missionConfigFile >> "ALYSIA_COMPANIES_TYPES" >> (_info select 2) >> "license");
+_license = getText(missionConfigFile >> "ADENIS_COMPANIES_TYPES" >> (_info select 2) >> "license");
 if (_license != "") then
 {
 	if ([_license] call AlysiaClient_fnc_hasLicense) then

@@ -26,7 +26,7 @@ _list ctrlSetEventHandler ["LBSelChanged", "_this call AlysiaClient_fnc_APP_stor
 		_list lbSetValue [_index, getNumber(_x >> "price")];
 		_list lbSetData [_index, str([_app, getText(_x >> "description")])];
 	};
-} forEach ("str(playerSide) in getArray(_x >> 'sides')" configClasses (missionConfigFile >> "ALYSIA_SHOP_APPLICATIONS"));
+} forEach ("str(playerSide) in getArray(_x >> 'sides')" configClasses (missionConfigFile >> "ADENIS_SHOP_APPLICATIONS"));
 
 if ((lbSize _list) isEqualTo 0) then {
 	_list lbAdd "Aucune";

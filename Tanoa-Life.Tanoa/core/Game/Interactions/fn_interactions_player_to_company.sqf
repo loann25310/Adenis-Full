@@ -16,7 +16,7 @@ if (isNull _object) exitWith {};
 			"Perquisition",
 			"[g_interaction_target,'company'] spawn AlysiaClient_fnc_item_perquisition;",
 			"
-				(getNumber(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'companies' >> 'search') isEqualTo 1) &&
+				(getNumber(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'companies' >> 'search') isEqualTo 1) &&
 				!(g_interaction_target getVariable ['perquisition',false]) &&
 				!(g_interaction_target getVariable ['construction',false])
 			"
@@ -36,12 +36,12 @@ if (isNull _object) exitWith {};
 				(
 					((getPlayerUID player) isEqualTo ((g_interaction_target getVariable 'company_info') select 1)) ||
 					(
-						isClass(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'companies' >> 'history') &&
+						isClass(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'companies' >> 'history') &&
 						(
-							(getNumber(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'companies' >> 'history' >> 'rank') <= (player getVariable ['rank',0])) &&
+							(getNumber(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'companies' >> 'history' >> 'rank') <= (player getVariable ['rank',0])) &&
 							(
-								(getText(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'companies' >> 'history' >> 'license') isEqualTo '') ||
-								([getText(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'companies' >> 'history' >> 'license')] call AlysiaClient_fnc_hasLicense)
+								(getText(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'companies' >> 'history' >> 'license') isEqualTo '') ||
+								([getText(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'companies' >> 'history' >> 'license')] call AlysiaClient_fnc_hasLicense)
 							)
 						)
 					)
@@ -69,20 +69,20 @@ if (isNull _object) exitWith {};
 			"[g_interaction_target] call AlysiaClient_fnc_company_process;",
 			"
 				!(g_interaction_target getVariable ['construction',false]) &&
-				(isClass(missionConfigFile >> 'ALYSIA_COMPANIES_TYPES' >> ((g_interaction_target getVariable 'company_info') select 2) >> 'process')) &&
-				{((player distance (g_interaction_target modelToWorld getArray(missionConfigFile >> 'ALYSIA_COMPANIES_TYPES' >> ((g_interaction_target getVariable 'company_info') select 2) >> 'process' >> 'modelPos'))) <= getNumber(missionConfigFile >> 'ALYSIA_COMPANIES_TYPES' >> ((g_interaction_target getVariable 'company_info') select 2) >> 'process' >> 'posDistance'))}
+				(isClass(missionConfigFile >> 'ADENIS_COMPANIES_TYPES' >> ((g_interaction_target getVariable 'company_info') select 2) >> 'process')) &&
+				{((player distance (g_interaction_target modelToWorld getArray(missionConfigFile >> 'ADENIS_COMPANIES_TYPES' >> ((g_interaction_target getVariable 'company_info') select 2) >> 'process' >> 'modelPos'))) <= getNumber(missionConfigFile >> 'ADENIS_COMPANIES_TYPES' >> ((g_interaction_target getVariable 'company_info') select 2) >> 'process' >> 'posDistance'))}
 			"
 		],[
 			"inventory",
 			"Coffre",
 			"[g_interaction_target] spawn AlysiaClient_fnc_company_storage;",
 			"
-				isClass(missionConfigFile >> 'ALYSIA_COMPANIES_TYPES' >> ((g_interaction_target getVariable 'company_info') select 2) >> 'storage') &&
+				isClass(missionConfigFile >> 'ADENIS_COMPANIES_TYPES' >> ((g_interaction_target getVariable 'company_info') select 2) >> 'storage') &&
 				!(g_interaction_target getVariable ['construction',false]) &&
 				(
 					(g_company isEqualTo g_interaction_target) ||
 					(
-						(getNumber(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'companies' >> 'search') isEqualTo 1) &&
+						(getNumber(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'companies' >> 'search') isEqualTo 1) &&
 						(g_interaction_target getVariable ['perquisition',false])
 					)
 				)
@@ -99,7 +99,7 @@ if (isNull _object) exitWith {};
 			"Garage",
 			"[g_interaction_target] call AlysiaClient_fnc_company_garage;",
 			"
-				isClass(missionConfigFile >> 'ALYSIA_COMPANIES_TYPES' >> ((g_interaction_target getVariable 'company_info') select 2) >> 'garage') &&
+				isClass(missionConfigFile >> 'ADENIS_COMPANIES_TYPES' >> ((g_interaction_target getVariable 'company_info') select 2) >> 'garage') &&
 				!(g_interaction_target getVariable ['construction',false]) &&
 				(g_company isEqualTo g_interaction_target)
 			"
@@ -108,7 +108,7 @@ if (isNull _object) exitWith {};
 			"Rentrer",
 			"[g_interaction_target] spawn AlysiaClient_fnc_garageStoreOpen;",
 			"
-				isClass(missionConfigFile >> 'ALYSIA_COMPANIES_TYPES' >> ((g_interaction_target getVariable 'company_info') select 2) >> 'garage') &&
+				isClass(missionConfigFile >> 'ADENIS_COMPANIES_TYPES' >> ((g_interaction_target getVariable 'company_info') select 2) >> 'garage') &&
 				!(g_interaction_target getVariable ['construction',false]) &&
 				(g_company isEqualTo g_interaction_target)
 			"
@@ -126,12 +126,12 @@ if (isNull _object) exitWith {};
 			"Détruire",
 			"[g_interaction_target] spawn AlysiaClient_fnc_company_destroy;",
 			"
-				isClass(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'companies' >> 'destroy') &&
+				isClass(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'companies' >> 'destroy') &&
 				(
-					(getNumber(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'companies' >> 'destroy' >> 'rank') <= (player getVariable ['rank',0])) &&
+					(getNumber(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'companies' >> 'destroy' >> 'rank') <= (player getVariable ['rank',0])) &&
 					(
-						(getText(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'companies' >> 'destroy' >> 'license') isEqualTo '') ||
-						([getText(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'companies' >> 'destroy' >> 'license')] call AlysiaClient_fnc_hasLicense)
+						(getText(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'companies' >> 'destroy' >> 'license') isEqualTo '') ||
+						([getText(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'companies' >> 'destroy' >> 'license')] call AlysiaClient_fnc_hasLicense)
 					)
 				)
 			"
@@ -142,7 +142,7 @@ if (isNull _object) exitWith {};
 			"
 				(g_company isEqualTo g_interaction_target) ||
 				(
-					(getNumber(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'companies' >> 'search') isEqualTo 1) &&
+					(getNumber(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'companies' >> 'search') isEqualTo 1) &&
 					(g_interaction_target getVariable ['perquisition',false])
 				)
 			"
@@ -155,7 +155,7 @@ if (isNull _object) exitWith {};
 				(
 					(g_interaction_target isEqualTo g_company) ||
 					(
-						(getNumber(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'companies' >> 'search') isEqualTo 1) &&
+						(getNumber(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'companies' >> 'search') isEqualTo 1) &&
 						(g_interaction_target getVariable ['perquisition',false])
 					)
 				)

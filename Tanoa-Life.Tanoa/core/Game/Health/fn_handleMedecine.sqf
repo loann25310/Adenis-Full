@@ -7,7 +7,7 @@ _item_med = [_this, 0, "", [""]] call BIS_fnc_param;
 
 if (_item_med isEqualTo "") exitWith {};
 
-_config_med = missionConfigFile >> "ALYSIA_MEDECINE" >> _item_med;
+_config_med = missionConfigFile >> "ADENIS_MEDECINE" >> _item_med;
 if (!isClass(_config_med)) exitWith {};
 
 if (([_item_med, g_medecine] call AlysiaClient_fnc_index) isEqualTo -1) then

@@ -18,10 +18,10 @@ if (isNull g_company) then
 	g_company = _company;
 	if (_give_license) then
 	{
-		_license = getText(missionConfigFile >>  "ALYSIA_COMPANIES_TYPES" >> (_info select 2) >> "license");
+		_license = getText(missionConfigFile >>  "ADENIS_COMPANIES_TYPES" >> (_info select 2) >> "license");
 		if (_license != "") then
 		{
-			_config = missionConfigFile >> "ALYSIA_LICENSES" >> _license >> "factions" >> str(playerSide);
+			_config = missionConfigFile >> "ADENIS_LICENSES" >> _license >> "factions" >> str(playerSide);
 			if (isClass(_config)) then {missionNamespace setVariable [format["license_%1", _license], true]};
 		};
 	};

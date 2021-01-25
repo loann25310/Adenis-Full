@@ -34,7 +34,7 @@ uiSleep 2;
 _plants = [];
 {
 	_plants pushBack (configName _x);
-} forEach ("true" configClasses (missionConfigFile >> "ALYSIA_FARMING_PLANT_OBJETCS"));
+} forEach ("true" configClasses (missionConfigFile >> "ADENIS_FARMING_PLANT_OBJETCS"));
 
 while {(_vehicle getVariable ["farm_gather", false])} do
 {
@@ -71,7 +71,7 @@ while {(_vehicle getVariable ["farm_gather", false])} do
 					["Récolte terminé<br/>L'inventaire du véhicule est plein"] call AlysiaClient_fnc_error;
 					breakOut "loop";
 				};
-			} forEach getArray(missionConfigFile >> "ALYSIA_FARMING_PLANT_OBJETCS" >> typeOf(_plant) >> "receive");
+			} forEach getArray(missionConfigFile >> "ADENIS_FARMING_PLANT_OBJETCS" >> typeOf(_plant) >> "receive");
 			deleteVehicle _plant;
 	 	};
 	};

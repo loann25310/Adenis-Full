@@ -13,7 +13,7 @@ if ([_license] call AlysiaClient_fnc_hasLicense) exitWith {
 	[format["Cette personne possède déjà la license : <t color='#DF3A01'>%1</t>.", [_license] call AlysiaClient_fnc_licenseGetName]] remoteExecCall ["AlysiaClient_fnc_info", _from];
 };
 
-_config = missionConfigFile >> "ALYSIA_LICENSES" >> _license >> "factions" >> str(playerSide);
+_config = missionConfigFile >> "ADENIS_LICENSES" >> _license >> "factions" >> str(playerSide);
 if (!isClass(_config)) exitWith {
 	[format["Cette personne n'est pas autorisé à recevoir la license : <t color='#DF3A01'>%1</t>.", [_license] call AlysiaClient_fnc_licenseGetName]] remoteExecCall ["AlysiaClient_fnc_info", _from];
 };

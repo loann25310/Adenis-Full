@@ -790,9 +790,9 @@ _colonelLaptop = ["Land_Laptop_unfolded_scripted_F","[7358.354004,8533.303711,4.
 
 //ATM
 {
-	if (isClass(missionConfigFile >> "ALYSIA_ATM" >> typeOf(_x))) then
+	if (isClass(missionConfigFile >> "ADENIS_ATM" >> typeOf(_x))) then
 	{
-		_config_ATM = missionConfigFile >> "ALYSIA_ATM" >> typeOf(_x);
+		_config_ATM = missionConfigFile >> "ADENIS_ATM" >> typeOf(_x);
 		if (isClass(_config_ATM >> "marker") && (_x getVariable ["alysia_marker", true])) then
 		{
 			_marker = createMarkerLocal [format["atm_marker_%1", _forEachIndex], (getPos _x)];

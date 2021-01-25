@@ -67,7 +67,7 @@ if (_action) then
 						(_veh getVariable "info") select 2
 					], "GOUV", false
 				] remoteExecCall ["AlysiaClient_fnc_phone_message_receive", [configName _x] call AlysiaClient_fnc_strToSide];
-			} forEach ("getNumber(_x >> 'phone' >> 'receive_fuel_alert') isEqualTo 1" configClasses (missionConfigFile >> "ALYSIA_FACTIONS"));
+			} forEach ("getNumber(_x >> 'phone' >> 'receive_fuel_alert') isEqualTo 1" configClasses (missionConfigFile >> "ADENIS_FACTIONS"));
 			missionNamespace setVariable ["refuel_prevent", false];
 		};
 	};

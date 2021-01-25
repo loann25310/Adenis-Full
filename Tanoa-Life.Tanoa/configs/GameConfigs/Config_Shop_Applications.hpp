@@ -1,4 +1,4 @@
-class ALYSIA_SHOP_APPLICATIONS
+class ADENIS_SHOP_APPLICATIONS
 {
 	class VEHICLES
 	{
@@ -17,14 +17,14 @@ class ALYSIA_SHOP_APPLICATIONS
 	class FUEL
 	{
 		name="Stations essence";
-		description="Application vous permettant de consulter les stocks de toutes les stations service de l'archipel";
+		description="Application vous permettant de consulter les stocks de toutes les stations services de l'archipel";
 		price=5000;
 		sides[]={"CIV","WEST","EAST","GUER"};
 	};
 	class ANNOUNCES
 	{
 		name="Annonces";
-		description="Que vous cherchiez un compagnon,du travail ou des employés,cette application est faite pour vous !";
+		description="Que vous cherchiez un compagnon, du travail ou des employés, cette application est faite pour vous !";
 		price=700;
 		sides[]={"CIV","GUER"};
 	};
@@ -38,7 +38,7 @@ class ALYSIA_SHOP_APPLICATIONS
 	class ANNUAIRE
 	{
 		name="Annuaire téléphonique";
-		description="Répertorie les numéros publiques de l'Archipel";
+		description="Répertorie les numéros publics de l'Archipel";
 		price=1200;
 		sides[]={"CIV","WEST","EAST","GUER"};
 	};

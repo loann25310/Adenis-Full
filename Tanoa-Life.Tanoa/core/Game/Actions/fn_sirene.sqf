@@ -15,7 +15,7 @@ if (_veh != player) then
 		} else {
 
 			{
-				_configs = (format["getText(_x >> 'item') isEqualTo '%1'", (_x select 0)]) configClasses (missionConfigFile >> "ALYSIA_HORN");
+				_configs = (format["getText(_x >> 'item') isEqualTo '%1'", (_x select 0)]) configClasses (missionConfigFile >> "ADENIS_HORN");
 				if (count(_configs) > 0) exitWith {_config = (_configs select 0)};
 			} forEach (_veh getVariable ["Trunk", []]);
 			if (isNil "_config") exitWith {};

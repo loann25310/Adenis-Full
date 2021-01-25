@@ -12,7 +12,7 @@ if (!g_connected) exitWith {};
 if (((player getVariable ["number", ""])) isEqualTo "") exitWith {};
 if (_from in g_phone_blacklist) exitWith {};
 
-if ((count g_phone_messages) >= getNumber(missionConfigFile >> "ALYSIA_PHONE" >> "FORFAITS" >> g_phone_forfait >> "sms_max")) then {
+if ((count g_phone_messages) >= getNumber(missionConfigFile >> "ADENIS_PHONE" >> "FORFAITS" >> g_phone_forfait >> "sms_max")) then {
 	g_phone_messages deleteAt 0;
 };
 
@@ -25,15 +25,15 @@ if (g_is_alive) then
 {
 	if ([] call AlysiaClient_fnc_hasPhone) then
 	{
-		_sound = profileNamespace getVariable ["ALYSIA_phone_sms_ring", ""];
+		_sound = profileNamespace getVariable ["ADENIS_phone_sms_ring", ""];
 		if (_sound isEqualTo "") then {
 			playSound "message_rcv_silent";
 		} else {
-			_config = missionConfigFile >> "ALYSIA_PHONE" >> "SMS" >> "sounds" >> _sound;
+			_config = missionConfigFile >> "ADENIS_PHONE" >> "SMS" >> "sounds" >> _sound;
 			if (isClass(_config)) then {
 				[player, _sound, getNumber(_config >> "distance")] call AlysiaClient_fnc_globalSay3d;
 			} else {
-				profileNamespace setVariable ["ALYSIA_phone_sms_ring", ""];
+				profileNamespace setVariable ["ADENIS_phone_sms_ring", ""];
 			};
 		};
 	};

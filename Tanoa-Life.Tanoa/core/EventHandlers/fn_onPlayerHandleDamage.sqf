@@ -25,7 +25,7 @@ if (g_connected && !g_staff_god && (_damage > 0)) then
 	{
 		if ((_source != player) && (_projectile != "") && ((currentWeapon _source) != "")) then
 		{
-			if (getNumber(missionConfigFile >> "ALYSIA_ITEMS_ARMA" >> (currentWeapon _source) >> "disableDamage") isEqualTo 1) then {
+			if (getNumber(missionConfigFile >> "ADENIS_ITEMS_ARMA" >> (currentWeapon _source) >> "disableDamage") isEqualTo 1) then {
 				_damage = 0;
 			} else {
 				if (!(player getVariable ["bullet_check", false])) then
@@ -33,10 +33,10 @@ if (g_connected && !g_staff_god && (_damage > 0)) then
 					player setVariable ["bullet_check", true, true];
 				};
 			};
-			if (((player distance _source) < 70) && (getNumber(missionConfigFile >> "ALYSIA_ITEMS_ARMA" >> (currentWeapon _source) >> "knockOut") isEqualTo 1)) then {
+			if (((player distance _source) < 70) && (getNumber(missionConfigFile >> "ADENIS_ITEMS_ARMA" >> (currentWeapon _source) >> "knockOut") isEqualTo 1)) then {
 				[] spawn AlysiaClient_fnc_knockedOut;
 			};
-			if (((player distance _source) < 50) && (getNumber(missionConfigFile >> "ALYSIA_ITEMS_ARMA" >> (currentWeapon _source) >> "paintball") isEqualTo 1)) then
+			if (((player distance _source) < 50) && (getNumber(missionConfigFile >> "ADENIS_ITEMS_ARMA" >> (currentWeapon _source) >> "paintball") isEqualTo 1)) then
 			{
 				if ((player distance [5313.110352,11281.470703,0]) < 100) then {
 					[] spawn AlysiaClient_fnc_knockedOut;

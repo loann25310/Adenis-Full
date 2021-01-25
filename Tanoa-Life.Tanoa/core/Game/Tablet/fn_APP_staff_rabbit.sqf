@@ -4,7 +4,7 @@
 */
 private["_player", "_config", "_actions"];
 
-_config = ("getText(_x >> 'uid') isEqualTo (getPlayerUID player)" configClasses (missionConfigFile >> "ALYSIA_STAFF" >> "members")) select 0;
+_config = ("getText(_x >> 'uid') isEqualTo (getPlayerUID player)" configClasses (missionConfigFile >> "ADENIS_STAFF" >> "members")) select 0;
 if (isNil "_config") exitWith {};
 
 _player = player;

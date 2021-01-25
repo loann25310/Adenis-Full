@@ -5,7 +5,7 @@
 private["_item", "_config", "_amount"];
 _item = [_this, 0, "", [""]] call BIS_fnc_param;
 
-_config = missionConfigFile >> "ALYSIA_VACCINS" >> _item;
+_config = missionConfigFile >> "ADENIS_VACCINS" >> _item;
 if (!isClass(_config)) exitWith {};
 
 _amount = getNumber(_config >> "time");

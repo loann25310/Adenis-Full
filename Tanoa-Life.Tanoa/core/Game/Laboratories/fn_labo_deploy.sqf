@@ -8,7 +8,7 @@ _item = [_this, 0, "", [""]] call BIS_fnc_param;
 if (_item isEqualTo "") exitWith {};
 
 
-_config = missionConfigFile >> "ALYSIA_LABORATORIES" >> _item;
+_config = missionConfigFile >> "ADENIS_LABORATORIES" >> _item;
 if (!isClass(_config)) exitWith {};
 if (playerSide != civilian) exitWith {
 	["Vous ne pouvez pas utiliser cet objet."] call AlysiaClient_fnc_error;

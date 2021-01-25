@@ -12,7 +12,7 @@ if (_gear isEqualTo []) then
     [] call AlysiaClient_fnc_init_loadout;
     player addItem "ItemGPS";
     player assignItem "ItemGPS";
-    [getText(missionConfigFile >> "ALYSIA_FACTIONS" >> "CIV" >> "identity_item"), true] call AlysiaClient_fnc_handleItem;
+    [getText(missionConfigFile >> "ADENIS_FACTIONS" >> "CIV" >> "identity_item"), true] call AlysiaClient_fnc_handleItem;
 } else {
 
     _primaryWeaponGear = [_gear, 6, ["", [], [], 0], [[]]] call BIS_fnc_param;

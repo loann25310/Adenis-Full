@@ -52,7 +52,7 @@ if (g_staff_markers) then
 		} forEach _markers;
 	};
 } else {
-	_factionMarkers = missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "map_factions_markers";
+	_factionMarkers = missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "map_factions_markers";
 	if (isClass _factionMarkers) then
 	{
 		[getArray(_factionMarkers >> "shown")] spawn
@@ -100,7 +100,7 @@ if (g_staff_markers) then
 		};
 	};
 
-	if (isClass(missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "map_coma_markers")) then
+	if (isClass(missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "map_coma_markers")) then
 	{
 		[] spawn
 		{

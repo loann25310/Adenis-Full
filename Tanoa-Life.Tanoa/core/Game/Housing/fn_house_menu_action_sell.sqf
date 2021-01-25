@@ -11,7 +11,7 @@ if (((_target getVariable ["house_owner", ["", ""]]) select 0) != (getPlayerUID 
 	["Cette maison ne vous appartient pas."] call AlysiaClient_fnc_error;
 };
 
-_price = round(getNumber(missionConfigFile >> "ALYSIA_HOUSES" >> (typeOf _target) >> "price") / 2);
+_price = round(getNumber(missionConfigFile >> "ADENIS_HOUSES" >> (typeOf _target) >> "price") / 2);
 _action =
 [
 	format["Vous allez <t color='#DF0101'>vendre</t> votre maison pour <t color='#8cff9b'>%1$</t>", [_price] call AlysiaClient_fnc_numberText],

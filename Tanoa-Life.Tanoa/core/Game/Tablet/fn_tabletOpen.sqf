@@ -11,7 +11,7 @@ if ((player getVariable ["restrained", false]) || (player getVariable ["knockedO
 if (dialog) exitWith {if (!(isNull (uiNamespace getVariable ["tablet", displayNull]))) then {closeDialog 0};};
 if ((headgear player) isEqualTo "mgsr_headbag") exitWith {};
 
-if ((vehicle player) isEqualTo player) then {
+if ((vehicle player) isEqualTo player && !g_staff_on) then {
     [] spawn {
         _tab = "Diablo_tablette_01" createVehicle (position player);
         _tab attachTo [player, [0.06, 0.01, 0], "lefthand"];
@@ -50,7 +50,7 @@ if (player getVariable ["tablet_on", false]) then
 	_loading_ctrl ctrlSetPosition (ctrlPosition (_display displayCtrl 7502));
 	_loading_ctrl ctrlCommit 0;
 
-	if (profileNamespace getVariable ["ALYSIA_tablet_animation", false]) then
+	if (profileNamespace getVariable ["ADENIS_tablet_animation", false]) then
 	{
 		_loading_ctrl ctrlSetFade 1;
 		_loading_ctrl ctrlCommit 0;

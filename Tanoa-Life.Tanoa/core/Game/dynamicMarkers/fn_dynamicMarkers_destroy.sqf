@@ -8,7 +8,7 @@ _marker = [_this, 0, "", [""]] call BIS_fnc_param;
 if (_marker isEqualTo "") exitWith {};
 if ((player distance (getMarkerPos _marker)) <= 20) then
 {
-	_item = getText(missionConfigFile >> "ALYSIA_DYN_MARKERS" >> _marker >> "destroy_item");
+	_item = getText(missionConfigFile >> "ADENIS_DYN_MARKERS" >> _marker >> "destroy_item");
 	if ((_item isEqualTo "") || (([_item] call AlysiaClient_fnc_itemCount) > 0)) then
 	{
 		if ([format["Vous êtes sur le point de détruire <t color='#74DF00'>%1</t><br/>.", (markerText _marker)], "Validation", "Valider", "Annuler"] call BIS_fnc_guiMessage) then

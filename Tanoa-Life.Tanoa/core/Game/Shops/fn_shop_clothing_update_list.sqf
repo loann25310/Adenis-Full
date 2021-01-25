@@ -105,7 +105,7 @@ _list = _display displayCtrl 3103;
 lbClear _list;
 
 {
-	if (isClass(missionConfigFile >> "ALYSIA_ITEMS_ARMA" >> _x)) then
+	if (isClass(missionConfigFile >> "ADENIS_ITEMS_ARMA" >> _x)) then
 	{
 		_details = [_x] call AlysiaClient_fnc_fetchCfgDetails;
 		if (_details isEqualTo []) then
@@ -115,12 +115,12 @@ lbClear _list;
 		} else {
 			if ((([_x] call BIS_fnc_itemType) select 1) isEqualTo _itemType) then
 			{
-				_displayName = getText(missionConfigFile >> "ALYSIA_ITEMS_ARMA" >> _x >> "name");
+				_displayName = getText(missionConfigFile >> "ADENIS_ITEMS_ARMA" >> _x >> "name");
 				if (_displayName isEqualTo "") then {_displayName = _details select 1};
 
 				_index = _list lbAdd _displayName;
 				_list lbSetData [_index, _x];
-				_list lbSetValue [_index, getNumber(missionConfigFile >> "ALYSIA_ITEMS_ARMA" >> _x >> "buy_price")];
+				_list lbSetValue [_index, getNumber(missionConfigFile >> "ADENIS_ITEMS_ARMA" >> _x >> "buy_price")];
 				_list lbSetPicture [_index, (_details select 2)];
 				_list lbSetTooltip [_index, (_list lbText _index)];
 			} else {
@@ -129,10 +129,10 @@ lbClear _list;
 			};
 		};
 	} else {
-		diag_log format["ERROR: %1 not defined in ALYSIA_ITEMS_ARMA", _x];
-		systemChat format["ERROR: %1 not defined in ALYSIA_ITEMS_ARMA", _x];
+		diag_log format["ERROR: %1 not defined in ADENIS_ITEMS_ARMA", _x];
+		systemChat format["ERROR: %1 not defined in ADENIS_ITEMS_ARMA", _x];
 	};
-} forEach (getArray(missionConfigFile >> "ALYSIA_SHOPS_CLOTHING" >> g_shop_clothing_type >> _type));
+} forEach (getArray(missionConfigFile >> "ADENIS_SHOPS_CLOTHING" >> g_shop_clothing_type >> _type));
 if ((lbSize _list) isEqualTo 0) then
 {
 	_list lbAdd "Vide";

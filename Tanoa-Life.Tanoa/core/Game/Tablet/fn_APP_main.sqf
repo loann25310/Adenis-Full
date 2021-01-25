@@ -32,15 +32,15 @@ _global_apps =
 		"Alysia_Client_Texture\Data\tablet\applications\app_staff_select.paa",
 		"['staff'] spawn AlysiaClient_fnc_tabletApp;",
 		"Staff",
-		"count(""getText(_x >> 'uid') isEqualTo (getPlayerUID player)"" configClasses (missionConfigFile >> 'ALYSIA_STAFF' >> 'members')) != 0"
+		"count(""getText(_x >> 'uid') isEqualTo (getPlayerUID player)"" configClasses (missionConfigFile >> 'ADENIS_STAFF' >> 'members')) != 0"
 	],[
 		"Alysia_Client_Texture\Data\tablet\applications\app_gov.paa",
 		"Alysia_Client_Texture\Data\tablet\applications\app_gov_select.paa",
 		"['gov'] spawn AlysiaClient_fnc_tabletApp;",
 		"Gouv",
 		"
-			isClass(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'taxes_app') &&
-			{(player getVariable ['rank', 0]) >= getNumber(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'taxes_app' >> 'rank')}
+			isClass(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'taxes_app') &&
+			{(player getVariable ['rank', 0]) >= getNumber(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'taxes_app' >> 'rank')}
 		"
 	],[
 		"Alysia_Client_Texture\Data\tablet\applications\app_bank.paa",
@@ -89,7 +89,7 @@ _global_apps =
 		"Alysia_Client_Texture\Data\tablet\applications\app_faction_select.paa",
 		"['faction'] spawn AlysiaClient_fnc_tabletApp;",
 		"Faction",
-		"isClass(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'board')"
+		"isClass(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'board')"
 	],[
 		"Alysia_Client_Texture\Data\tablet\applications\app_licences.paa",
 		"Alysia_Client_Texture\Data\tablet\applications\app_licences_select.paa",

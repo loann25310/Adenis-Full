@@ -1,4 +1,4 @@
-class ALYSIA_FARMING_OBJECT
+class ADENIS_FARMING_OBJECT
 {
 	class default_mine
 	{
@@ -30,7 +30,7 @@ class ALYSIA_FARMING_OBJECT
 	class Skyline_Alysia_Charbon_02_F: Skyline_Alysia_Charbon_01_F {};
 };
 
-class ALYSIA_FARMING_GATHER
+class ADENIS_FARMING_GATHER
 {
 	// sounds=oil / mining / shovel / gather1 / gather2
 	class wood_field_marker_1

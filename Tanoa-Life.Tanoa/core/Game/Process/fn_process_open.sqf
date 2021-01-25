@@ -6,11 +6,11 @@ private["_maxAmount", "_processLicenses", "_rank", "_display", "_license_conditi
 g_interaction_target = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
 g_interaction_process_type = [_this, 3, "", [""]] call BIS_fnc_param;
 
-_config = missionConfigFile >> "ALYSIA_PROCESS" >> g_interaction_process_type;
+_config = missionConfigFile >> "ADENIS_PROCESS" >> g_interaction_process_type;
 if (!isClass(_config)) exitWith
 {
 	[format["Impossible de trouver les informations concernant le traitement <color='#FF8000'>%1</t>", g_interaction_process_type]] call AlysiaClient_fnc_error;
-	diag_log format["[ALYSIA:ERROR] Process %1 not defined in ALYSIA_PROCESS (class not found)", g_interaction_process_type];
+	diag_log format["[ALYSIA:ERROR] Process %1 not defined in ADENIS_PROCESS (class not found)", g_interaction_process_type];
 };
 
 if (g_action_inUse) exitWith {

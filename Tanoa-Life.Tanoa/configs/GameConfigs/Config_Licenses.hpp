@@ -1,4 +1,4 @@
-class ALYSIA_LICENSES
+class ADENIS_LICENSES
 {
 	class rebelle_1
 	{
@@ -491,7 +491,7 @@ class ALYSIA_LICENSES
 	};
 	class company_car_shop
 	{
-		name="Employé de concesionnaire";
+		name="Employé de concessionnaire";
 		class factions
 		{
 			class CIV

@@ -1,4 +1,4 @@
-class ALYSIA_SHOPS_VIRTUAL
+class ADENIS_SHOPS_VIRTUAL
 {
 	/* GLOBAL MARKET */
 	class fishmarket
@@ -163,8 +163,7 @@ class ALYSIA_SHOPS_VIRTUAL
 			"perqui",
 			"destroy_labo",
 			"blueprint_glock_18",
-			"blueprint_g17",
-			"blueprint_mp44"
+			"blueprint_g17"
 		};
 	};
 	class east
@@ -193,7 +192,6 @@ class ALYSIA_SHOPS_VIRTUAL
 			"blueprint_vp70",
 			"blueprint_cz75",
 			"blueprint_protector",
-			"blueprint_ump_45",
 			"blueprint_rook_40",
 			"blueprint_blaser_b95",
 			"blueprint_vermin_smg",
@@ -232,7 +230,7 @@ class ALYSIA_SHOPS_VIRTUAL
 	class cacao: dealer
 	{
 		name="Commerçant de cacao";
-		sell[]={"cacaop"};
+		sell[]={"cacaop","tabchoco"};
 	};
 	class coffee: dealer
 	{

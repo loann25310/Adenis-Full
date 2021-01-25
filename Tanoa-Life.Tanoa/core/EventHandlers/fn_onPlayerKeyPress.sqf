@@ -9,7 +9,7 @@ if (
 		((vehicle player) isKindOf "Man")
 	) || (
 		!((vehicle player) isKindOf "Man") &&
-		(getNumber(missionConfigFile >> "ALYSIA_VEHICLES" >> typeOf(vehicle player) >> "forceFirstPersonView") isEqualTo 1)
+		(getNumber(missionConfigFile >> "ADENIS_VEHICLES" >> typeOf(vehicle player) >> "forceFirstPersonView") isEqualTo 1)
 	))
 ) exitWith {true};
 

@@ -6,7 +6,7 @@ private["_action", "_price"];
 
 if ((player getVariable ["number", ""]) isEqualTo "") exitWith {};
 
-_price = getNumber(missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "phone" >> "change_number_price");
+_price = getNumber(missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "phone" >> "change_number_price");
 if (g_atm < _price) exitWith {
 	[format["Vous n'avez pas assez d'argent<br/>Prix : <t color='#8cff9b'>%1</t>$", [_price] call AlysiaClient_fnc_numberText]] call AlysiaClient_fnc_error;
 };

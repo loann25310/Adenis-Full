@@ -10,9 +10,9 @@ _amount = round([_this, 3, 1, [1]] call BIS_fnc_param);
 
 if (_fuel isEqualTo "") exitWith {};
 
-_config_station = missionConfigFile >> "ALYSIA_FUEL_STATION" >> typeof(_station);
+_config_station = missionConfigFile >> "ADENIS_FUEL_STATION" >> typeof(_station);
 if (!isClass(_config_station)) exitWith {};
-if (!isClass(missionConfigFile >> "ALYSIA_FUEL" >> _fuel)) exitWith {};
+if (!isClass(missionConfigFile >> "ADENIS_FUEL" >> _fuel)) exitWith {};
 
 _max = getNumber(_config_station >> "stock" >> _fuel >> "max");
 _actual = _station getVariable [_fuel, _max];

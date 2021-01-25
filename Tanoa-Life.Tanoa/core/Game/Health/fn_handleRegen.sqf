@@ -7,7 +7,7 @@ private "_config";
 if (g_regen_active) exitWith {};
 
 g_regen_active = true;
-_config = missionConfigFile >> "ALYSIA_MEDICAL" >> "regen";
+_config = missionConfigFile >> "ADENIS_MEDICAL" >> "regen";
 
 while {(g_blood < 4000)} do
 {

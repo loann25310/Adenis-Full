@@ -1,4 +1,4 @@
-class ALYSIA_STORAGES
+class ADENIS_STORAGES
 {
 	class Diablo_Coffre_Small
 	{

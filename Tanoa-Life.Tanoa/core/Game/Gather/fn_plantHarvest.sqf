@@ -61,7 +61,7 @@ _missing = "";
 	} else {
 		[true, (_x select 0), _amount] call AlysiaClient_fnc_handleInv;
 	};
-} forEach getArray(missionConfigFile >> "ALYSIA_FARMING_PLANT_OBJETCS" >> typeOf(_object) >> "receive");
+} forEach getArray(missionConfigFile >> "ADENIS_FARMING_PLANT_OBJETCS" >> typeOf(_object) >> "receive");
 
 if (_space) then
 {

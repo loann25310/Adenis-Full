@@ -18,7 +18,7 @@ if (isEngineOn _target) exitWith {
 if (!(["Siphonnage", 10, _target, "", "AinvPknlMstpsnonWnonDnon_medic_1"] call AlysiaClient_fnc_showProgress)) exitWith {};
 
 _type = _target getVariable ["refuel_type", ""];
-if (_type isEqualTo "") then {_type = getText(missionConfigFile >> "ALYSIA_VEHICLES" >> typeOf(_target) >> "fuel")};
+if (_type isEqualTo "") then {_type = getText(missionConfigFile >> "ADENIS_VEHICLES" >> typeOf(_target) >> "fuel")};
 
 if ("Alysia_jerrycan_empty" in (magazines player)) then
 {
@@ -31,7 +31,7 @@ if ("Alysia_jerrycan_empty" in (magazines player)) then
 		case "GPL": {"Alysia_jerrycan_gpl"};
 	};
 
-	_count = floor(((fuel _target) * getNumber(missionConfigFile >> "ALYSIA_VEHICLES" >> typeof(_target) >> "fuelCapacity")) / 20);
+	_count = floor(((fuel _target) * getNumber(missionConfigFile >> "ADENIS_VEHICLES" >> typeof(_target) >> "fuelCapacity")) / 20);
 	if (_count >= 1) then
 	{
 		for "_i" from 1 to _count do

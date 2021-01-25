@@ -18,12 +18,12 @@ if (isNil "_info") exitWith {};
 _uids = _members select 0;
 _names = _members select 1;
 
-(_display displayCtrl 9602) ctrlSetText getText(missionConfigFile >> "ALYSIA_COMPANIES_TYPES" >> (_info select 2) >> "image");
+(_display displayCtrl 9602) ctrlSetText getText(missionConfigFile >> "ADENIS_COMPANIES_TYPES" >> (_info select 2) >> "image");
 
 (_display displayCtrl 9603) ctrlSetStructuredText parseText format
 [
 	"<t align='center' size='1.1'>%1 : %2</t>",
-	getText(missionConfigFile >> "ALYSIA_COMPANIES_TYPES" >> (_info select 2) >> "name"),
+	getText(missionConfigFile >> "ADENIS_COMPANIES_TYPES" >> (_info select 2) >> "name"),
 	(_info select 0)
 ];
 
@@ -31,7 +31,7 @@ _names = _members select 1;
 [
 	"<t align='left'>Membres</t><t align='right'>%1/%2</t>",
 	count(_uids),
-	getNumber(missionConfigFile >> "ALYSIA_COMPANIES_TYPES" >> (_info select 2) >> "members_max")
+	getNumber(missionConfigFile >> "ADENIS_COMPANIES_TYPES" >> (_info select 2) >> "members_max")
 ];
 
 _list = _display displayCtrl 9606;
@@ -65,7 +65,7 @@ if ((_info select 1) isEqualTo (getPlayerUID player)) then
 		[(_company getVariable ["company_bank", 0])] call AlysiaClient_fnc_numberText
 	];
 
-	if (count(getArray(missionConfigFile >> "ALYSIA_COMPANIES_TYPES" >> (_info select 2) >> "ressources_link")) > 0) then
+	if (count(getArray(missionConfigFile >> "ADENIS_COMPANIES_TYPES" >> (_info select 2) >> "ressources_link")) > 0) then
 	{
 		ctrlSetText [9619, str(g_company getVariable "company_link_percentage")];
 		[9619, true] call AlysiaClient_fnc_tabletShow;

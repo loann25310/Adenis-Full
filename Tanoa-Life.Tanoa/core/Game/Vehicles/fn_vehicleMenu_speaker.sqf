@@ -22,7 +22,7 @@ _ids = [];
 			[(_data select 1), (_data select 0)] call AlysiaClient_fnc_globalSay3d;
 			(_data select 1) setVariable ["speaker_active", false];
 		}, [(_x select 1), _target], 5000, true, true, "", ""]);
-} forEach getArray(missionConfigFile >> "ALYSIA_VEHICLES" >> typeOf(_target) >> "speaker");
+} forEach getArray(missionConfigFile >> "ADENIS_VEHICLES" >> typeOf(_target) >> "speaker");
 
 _target setVariable ["speaker_active", true];
 

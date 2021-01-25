@@ -26,7 +26,7 @@ if (!isNull(_obj)) exitWith {
 	["Vous avez déjà une valise de billets."] call AlysiaClient_fnc_error;
 };
 
-if (getNumber(missionConfigFile >> "ALYSIA_ATM" >> typeOf(_target) >> "company_money_get") isEqualTo 0) exitWith {
+if (getNumber(missionConfigFile >> "ADENIS_ATM" >> typeOf(_target) >> "company_money_get") isEqualTo 0) exitWith {
 	["Vous ne pouvez pas récupérer de valise de billets à partir de ce distributeur."] call AlysiaClient_fnc_error;
 };
 

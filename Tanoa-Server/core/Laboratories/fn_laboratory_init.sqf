@@ -11,7 +11,7 @@ _direction = [_this, 4, 0, [0]] call BIS_fnc_param;
 _extra_process = [_this, 5, [], [[]]] call BIS_fnc_param;
 _inv_virtual =[_this, 6, [], [[]]] call BIS_fnc_param;
 
-_object = getText(missionConfigFile >> "ALYSIA_LABORATORIES" >> _type >> "object") createVehicle [0,0,0];
+_object = getText(missionConfigFile >> "ADENIS_LABORATORIES" >> _type >> "object") createVehicle [0,0,0];
 _object setPosATL _position;
 _object setDir _direction;
 

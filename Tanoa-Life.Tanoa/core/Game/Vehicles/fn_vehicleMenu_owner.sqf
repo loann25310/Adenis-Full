@@ -27,12 +27,12 @@ _display = findDisplay 68000;
 (_display displayCtrl 68002) ctrlSetText "Alysia_Client_Texture\Data\vehicle\background.jpg";
 (_display displayCtrl 68003) ctrlSetStructuredText parseText "<t size='1.5' align='center'>Boîte de gants</t>";
 
-if ((getNumber(missionConfigFile >> "ALYSIA_VEHICLES" >> typeof(_target) >> "disableOwnerInfos") isEqualTo 0) && !(isNil "_info")) then
+if ((getNumber(missionConfigFile >> "ADENIS_VEHICLES" >> typeof(_target) >> "disableOwnerInfos") isEqualTo 0) && !(isNil "_info")) then
 {
     _licenses_text = "";
     {
 		_licenses_text = _licenses_text + format["- %1<br/>", [_x] call AlysiaClient_fnc_licenseGetName];
-    } forEach getArray(missionConfigFile >> "ALYSIA_VEHICLES" >> typeof(_target) >> "licenses");
+    } forEach getArray(missionConfigFile >> "ADENIS_VEHICLES" >> typeof(_target) >> "licenses");
 
     _immatriculation = _info select 2;
     _insurance = if ((_info select 3) isEqualTo 1) then {"<t color='#8cff9b'>Oui</t>"} else {"<t color='#ff8c8c'>Non</t>"};
@@ -52,7 +52,7 @@ if ((getNumber(missionConfigFile >> "ALYSIA_VEHICLES" >> typeof(_target) >> "dis
 	+	"<t align='left'>%5</t>",
 	_immatriculation,
 	_insurance,
-	getText(missionConfigFile >> "ALYSIA_FUEL" >> getText(missionConfigFile >> "ALYSIA_VEHICLES" >> typeOf(_target) >> "fuel") >> "name"),
+	getText(missionConfigFile >> "ADENIS_FUEL" >> getText(missionConfigFile >> "ADENIS_VEHICLES" >> typeOf(_target) >> "fuel") >> "name"),
 	_licenses_text
 ];
 

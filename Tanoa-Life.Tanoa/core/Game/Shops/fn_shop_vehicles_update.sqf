@@ -103,20 +103,20 @@ _display = findDisplay 2300;
 	_vehicleInfo select 5,
 	_vehicleInfo select 10,
 	round(_vehicleInfo select 7),
-	getText(missionConfigFile >> "ALYSIA_FUEL" >> (_vehicleInfo select 14) >> "name"),
+	getText(missionConfigFile >> "ADENIS_FUEL" >> (_vehicleInfo select 14) >> "name"),
 	if (_price_condition) then {"#31B404"} else {"#DF0101"},
 	[_price] call AlysiaClient_fnc_numberText,
 	_licenses_text,
 	([([_side] call AlysiaClient_fnc_strToSide), _rank] call AlysiaClient_fnc_rankToStr),
 	if (_rank_condition) then {"#31B404"} else {"#DF0101"},
 	if (_side_condition) then {"#31B404"} else {"#DF0101"},
-	getText(missionConfigFile >> "ALYSIA_FACTIONS" >> _side >> "name")
+	getText(missionConfigFile >> "ADENIS_FACTIONS" >> _side >> "name")
 ];
 
 _list_colors = _display displayCtrl 2303;
 lbClear _list_colors;
 {
-	if (isClass(missionConfigFile >> "ALYSIA_VEHICLES" >> _x)) then
+	if (isClass(missionConfigFile >> "ADENIS_VEHICLES" >> _x)) then
 	{
 		if (isClass(configFile >> "CfgVehicles" >> _x)) then
 		{
@@ -127,8 +127,8 @@ lbClear _list_colors;
 			systemChat format["ERROR: %1 not defined in CfgVehicles", _x];
 		};
 	} else {
-		diag_log format["ERROR: %1 not defined in ALYSIA_VEHICLES", _x];
-		systemChat format["ERROR: %1 not defined in ALYSIA_VEHICLES", _x];
+		diag_log format["ERROR: %1 not defined in ADENIS_VEHICLES", _x];
+		systemChat format["ERROR: %1 not defined in ADENIS_VEHICLES", _x];
 	};
 } forEach _data;
 _list_colors lbSetCurSel 0;

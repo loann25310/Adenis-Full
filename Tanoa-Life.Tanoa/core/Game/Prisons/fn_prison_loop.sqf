@@ -9,7 +9,7 @@ if (!(isNull (uiNameSpace getVariable ["RscTitleArrest", displayNull]))) exitWit
 
 ("prisonLayer" call BIS_fnc_rscLayer) cutRsc ["RscTitleArrest", "PLAIN"];
 
-_config_prison = missionConfigFile >> "ALYSIA_PRISONS" >> typeof(g_arrest_Prison);
+_config_prison = missionConfigFile >> "ADENIS_PRISONS" >> typeof(g_arrest_Prison);
 
 disableSerialization;
 _display = uiNameSpace getVariable ["RscTitleArrest", displayNull];

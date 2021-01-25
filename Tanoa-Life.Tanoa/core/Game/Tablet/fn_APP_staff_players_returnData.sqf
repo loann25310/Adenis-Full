@@ -9,7 +9,7 @@ _inv_arma = [_this, 2, [], [[]]] call BIS_fnc_param;
 _cash = [_this, 3, 0, [0]] call BIS_fnc_param;
 _atm = [_this, 4, 0, [0]] call BIS_fnc_param;
 
-_config = ("getText(_x >> 'uid') isEqualTo (getPlayerUID player)" configClasses (missionConfigFile >> "ALYSIA_STAFF" >> "members")) select 0;
+_config = ("getText(_x >> 'uid') isEqualTo (getPlayerUID player)" configClasses (missionConfigFile >> "ADENIS_STAFF" >> "members")) select 0;
 if (isNil "_config") exitWith {closeDialog 0};
 
 _handle = ["STAFF_DATA"] spawn AlysiaClient_fnc_tabletApp;

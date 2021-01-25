@@ -1,4 +1,4 @@
-class ALYSIA_VEHICLES_INFO
+class ADENIS_VEHICLES_INFO
 {
 	/* MASTER VEHICLES CONFIG */
 	insurance_percentage=0.3;
@@ -10,7 +10,7 @@ class ALYSIA_VEHICLES_INFO
 	// based on vehicle's buyPrice
 };
 
-class ALYSIA_VEHICLES
+class ADENIS_VEHICLES
 {
 	/*
 	class master_vehicleClassname
@@ -748,6 +748,7 @@ class ALYSIA_VEHICLES
 			"Skyline_GMC_Vandura_14_F",
 			"Skyline_GMC_Vandura_15_F",
 			"Skyline_GMC_Vandura_16_F",
+			"Adenis_GMC_Fiestanoa ",
 			"Skyline_GMC_Vandura_17_F"
 		};
 	};
@@ -1137,53 +1138,6 @@ class ALYSIA_VEHICLES
 	class shounka_a3_spr_civ_rose: shounka_a3_spr_civ {};
 	class shounka_a3_spr_civ_rouge: shounka_a3_spr_civ {};
 	class shounka_a3_spr_civ_violet: shounka_a3_spr_civ {};
-
-	class Skyline_Mercedes_Sprinter
-	{
-		realname="Mercedes Sprinter";
-		buyPrice=110000;
-		inventory=200;
-		side="CIV";
-		insurance=1;
-		licenses[]={"driver"};
-		fuel="Diesel";
-		fuelCapacity=100;
-		colors[]=
-		{
-			"Skyline_Mercedes_Sprinter_01_F",
-			"Skyline_Mercedes_Sprinter_02_F",
-			"Skyline_Mercedes_Sprinter_03_F",
-			"Skyline_Mercedes_Sprinter_04_F",
-			"Skyline_Mercedes_Sprinter_05_F",
-			"Skyline_Mercedes_Sprinter_06_F",
-			"Skyline_Mercedes_Sprinter_07_F",
-			"Skyline_Mercedes_Sprinter_08_F",
-			"Skyline_Mercedes_Sprinter_09_F",
-			"Skyline_Mercedes_Sprinter_10_F",
-			"Skyline_Mercedes_Sprinter_11_F",
-			"Skyline_Mercedes_Sprinter_12_F",
-			"Skyline_Mercedes_Sprinter_13_F",
-			"Skyline_Mercedes_Sprinter_14_F",
-			"Skyline_Mercedes_Sprinter_15_F",
-			"Skyline_Mercedes_Sprinter_16_F"
-		};
-	};
-	class Skyline_Mercedes_Sprinter_01_F: Skyline_Mercedes_Sprinter {};
-	class Skyline_Mercedes_Sprinter_02_F: Skyline_Mercedes_Sprinter {};
-	class Skyline_Mercedes_Sprinter_03_F: Skyline_Mercedes_Sprinter {};
-	class Skyline_Mercedes_Sprinter_04_F: Skyline_Mercedes_Sprinter {};
-	class Skyline_Mercedes_Sprinter_05_F: Skyline_Mercedes_Sprinter {};
-	class Skyline_Mercedes_Sprinter_06_F: Skyline_Mercedes_Sprinter {};
-	class Skyline_Mercedes_Sprinter_07_F: Skyline_Mercedes_Sprinter {};
-	class Skyline_Mercedes_Sprinter_08_F: Skyline_Mercedes_Sprinter {};
-	class Skyline_Mercedes_Sprinter_09_F: Skyline_Mercedes_Sprinter {};
-	class Skyline_Mercedes_Sprinter_10_F: Skyline_Mercedes_Sprinter {};
-	class Skyline_Mercedes_Sprinter_11_F: Skyline_Mercedes_Sprinter {};
-	class Skyline_Mercedes_Sprinter_12_F: Skyline_Mercedes_Sprinter {};
-	class Skyline_Mercedes_Sprinter_13_F: Skyline_Mercedes_Sprinter {};
-	class Skyline_Mercedes_Sprinter_14_F: Skyline_Mercedes_Sprinter {};
-	class Skyline_Mercedes_Sprinter_15_F: Skyline_Mercedes_Sprinter {};
-	class Skyline_Mercedes_Sprinter_16_F: Skyline_Mercedes_Sprinter {};
 
 	class Skyline_Mercedes_Sprinter_Depannage
 	{
@@ -2936,7 +2890,7 @@ class ALYSIA_VEHICLES
     {
         realname="RHIB ANT Camo";
         buyprice=85000;
-        inventory=100;
+        inventory=170;
         licenses[]={"boat"};
         fuel="diesel";
         fuelCapacity=160;
@@ -2976,7 +2930,7 @@ class ALYSIA_VEHICLES
 	class Skyline_Mercedes_Sprinter_Samu: Alysia_GUER_base
 	{
 		realname="Mercedes Sprinter";
-		buyPrice=47500;
+		buyPrice=1000;
 		inventory=110;
 		fuelCapacity=100;
 		colors[]=
@@ -2989,7 +2943,7 @@ class ALYSIA_VEHICLES
 	class Maels_boat_samu: Alysia_GUER_base
 	{
 		realname="Bateau Samu";
-		buyprice=45000;
+		buyprice=1000;
 		inventory=100;
 		licenses[]={"boat"};
 		fuelCapacity=112;
@@ -2998,7 +2952,7 @@ class ALYSIA_VEHICLES
 	class Jonzie_Ambulance: Alysia_GUER_base
 	{
 		realname="Ambulance avec civière";
-		buyPrice=45000;
+		buyPrice=1000;
 		inventory=100;
 		fuelCapacity=112;
 	};
@@ -3006,7 +2960,7 @@ class ALYSIA_VEHICLES
 	class Skyline_VW_TouaregR50_Samu_01_F: Alysia_GUER_base
 	{
 		realname="VW Touareg R50";
-		buyPrice=57500;
+		buyPrice=1000;
 		inventory=90;
 		fuelCapacity=84;
 		rank=2;
@@ -3015,7 +2969,7 @@ class ALYSIA_VEHICLES
 	class Skyline_VW_TouaregR50_Samu_02_F : Skyline_VW_TouaregR50_Samu_01_F
 	{
 		realname="VW Touareg R50 (Signalisation)";
-		buyPrice=65500;
+		buyPrice=1000;
 	};
 
 	class zamak_SAMU: Alysia_GUER_base
@@ -3030,7 +2984,7 @@ class ALYSIA_VEHICLES
 	class FPTL_BSPP: Alysia_GUER_base
 	{
 		realname="Fptl";
-		buyPrice=96150;
+		buyPrice=1000;
 		inventory=100;
 		fuelCapacity=210;
 		rank=2;
@@ -3039,7 +2993,7 @@ class ALYSIA_VEHICLES
 	class RealMan_FPTScaniaBSPSG: Alysia_GUER_base
 	{
 		realname="Fpt";
-		buyPrice=96150;
+		buyPrice=1000;
 		inventory=100;
 		fuelCapacity=210;
 		rank=2;
@@ -3048,7 +3002,7 @@ class ALYSIA_VEHICLES
 	class CCRM_BSPP: Alysia_GUER_base
 	{
 		realname="Ccrm";
-		buyPrice=96150;
+		buyPrice=1000;
 		inventory=100;
 		fuelCapacity=210;
 		rank=2;
@@ -3057,7 +3011,7 @@ class ALYSIA_VEHICLES
 	class chepa_Scania_124L: Alysia_GUER_base
 	{
 		realname="Epan";
-		buyPrice=96150;
+		buyPrice=1000;
 		inventory=100;
 		fuelCapacity=210;
 		rank=2;
@@ -3066,7 +3020,7 @@ class ALYSIA_VEHICLES
 	class Iveco_Daily_VPC_BSPP: Alysia_GUER_base
 	{
 		realname="Véhicule poste de commandemant";
-		buyPrice=96150;
+		buyPrice=1000;
 		inventory=100;
 		fuelCapacity=210;
 		rank=2;
@@ -3075,7 +3029,7 @@ class ALYSIA_VEHICLES
 	class chOshkosh_striker_3000: Alysia_GUER_base
 	{
 		realname="Striker 3000";
-		buyPrice=96150;
+		buyPrice=1000;
 		inventory=100;
 		fuelCapacity=210;
 		rank=2;
@@ -3084,7 +3038,7 @@ class ALYSIA_VEHICLES
 	class RealMan_X3VL: Alysia_GUER_base
 	{
 		realname="Vlcg BMW X3";
-		buyPrice=96150;
+		buyPrice=1000;
 		inventory=100;
 		fuelCapacity=210;
 		rank=2;
@@ -3093,7 +3047,7 @@ class ALYSIA_VEHICLES
 	class RealMan_Megane4VL: Alysia_GUER_base
 	{
 		realname="Vlcg Megane 4";
-		buyPrice=96150;
+		buyPrice=1000;
 		inventory=100;
 		fuelCapacity=210;
 		rank=2;
@@ -3102,7 +3056,7 @@ class ALYSIA_VEHICLES
 	class RealMan_SprinterG3: Alysia_GUER_base
 	{
 		realname="VSAV Mercedes";
-		buyPrice=96150;
+		buyPrice=1000;
 		inventory=100;
 		fuelCapacity=210;
 		rank=2;
@@ -3111,7 +3065,7 @@ class ALYSIA_VEHICLES
 	class RealMan_Master3VSAVBSPSG: Alysia_GUER_base
 	{
 		realname="Vsav Renault";
-		buyPrice=96150;
+		buyPrice=1000;
 		inventory=100;
 		fuelCapacity=210;
 		rank=2;
@@ -3120,7 +3074,7 @@ class ALYSIA_VEHICLES
 	class RealMan_Trafic3VBECL: Alysia_GUER_base
 	{
 		realname="Vbecl";
-		buyPrice=96150;
+		buyPrice=1000;
 		inventory=100;
 		fuelCapacity=210;
 		rank=2;
@@ -3129,7 +3083,7 @@ class ALYSIA_VEHICLES
 	class devidoirch: Alysia_GUER_base
 	{
 		realname="Devidoir";
-		buyPrice=96150;
+		buyPrice=1000;
 		inventory=100;
 		fuelCapacity=210;
 		rank=2;
@@ -3138,7 +3092,7 @@ class ALYSIA_VEHICLES
 	class brancardch: Alysia_GUER_base
 	{
 		realname="Brancard";
-		buyPrice=96150;
+		buyPrice=1000;
 		inventory=100;
 		fuelCapacity=210;
 		rank=2;
@@ -3147,7 +3101,7 @@ class ALYSIA_VEHICLES
 	class CSP_BSPP: Alysia_GUER_base
 	{
 		realname="Véhicule plongeur";
-		buyPrice=96150;
+		buyPrice=1000;
 		inventory=100;
 		fuelCapacity=210;
 		rank=2;
@@ -3156,7 +3110,7 @@ class ALYSIA_VEHICLES
 	class umh_down: Alysia_GUER_base
 	{
 		realname="UMH Samu";
-		buyPrice=96150;
+		buyPrice=1000;
 		inventory=100;
 		fuelCapacity=210;
 		rank=2;
@@ -3165,7 +3119,7 @@ class ALYSIA_VEHICLES
 	class trafic3_ml: Alysia_GUER_base
 	{
 		realname="Medcin legiste";
-		buyPrice=96150;
+		buyPrice=1000;
 		inventory=100;
 		fuelCapacity=210;
 		rank=2;
@@ -3174,7 +3128,7 @@ class ALYSIA_VEHICLES
 		class Realman_X3VLI: Alysia_GUER_base
 	{
 		realname="VLI Bmw X3 SAMU";
-		buyPrice=96150;
+		buyPrice=1000;
 		inventory=100;
 		fuelCapacity=210;
 		rank=2;
@@ -3183,7 +3137,7 @@ class ALYSIA_VEHICLES
 		class RealMan_Megane4SAMU: Alysia_GUER_base
 	{
 		realname="VlI Megane 4 SAMU";
-		buyPrice=96150;
+		buyPrice=1000;
 		inventory=100;
 		fuelCapacity=210;
 		rank=2;
@@ -3192,7 +3146,7 @@ class ALYSIA_VEHICLES
 	class Mrshounka_corbillard_base_p: Alysia_GUER_base
 	{
 		realname="Corbillard";
-		buyPrice=65000;
+		buyPrice=1000;
 		inventory=45;
 		fuelCapacity=96;
 		rank=8;
@@ -3221,7 +3175,7 @@ class ALYSIA_VEHICLES
 	class GeK_S60_Paramedic: Alysia_GUER_base
 	{
 		realname="Volvo S60";
-		buyPrice=55000;
+		buyPrice=1000;
 		inventory=90;
 		fuelCapacity=120;
 		rank=8;
@@ -3230,7 +3184,7 @@ class ALYSIA_VEHICLES
 	class GeK_TLC100_Medic: Alysia_GUER_base
 	{
 		realname="Toyota TLC100";
-		buyPrice=60000;
+		buyPrice=1000;
 		inventory=90;
 		fuelCapacity=120;
 		rank=4;
@@ -3239,7 +3193,7 @@ class ALYSIA_VEHICLES
 	class DAR_ExplorerMedic: Alysia_GUER_base
 	{
 		realname="Ford Explorer";
-		buyPrice=62500;
+		buyPrice=1000;
 		inventory=90;
 		fuelCapacity=80;
 		rank=3;
@@ -3248,7 +3202,7 @@ class ALYSIA_VEHICLES
 	class EC635_ADAC: Alysia_GUER_base
 	{
 		realname="EC635";
-		buyPrice=385000;
+		buyPrice=1000;
 		inventory=70;
 		licenses[]={"pilot"};
 		fuel="Kerosene";
@@ -3258,7 +3212,7 @@ class ALYSIA_VEHICLES
 	class Skyline_Agusta_Bell_01_F: Alysia_GUER_base
 	{
 		realname="Agusta-Bell AB.212";
-		buyPrice=355000;
+		buyPrice=1000;
 		inventory=70;
 		licenses[]={"pilot"};
 		fuel="Kerosene";
@@ -3516,6 +3470,53 @@ class ALYSIA_VEHICLES
 	class Skyline_Ford_Transit_12_F: Skyline_Ford_Transit {};
 	class Skyline_Ford_Transit_13_F: Skyline_Ford_Transit {};
 	
+	class Skyline_Mercedes_Sprinter
+	{
+		realname="Sprinter";
+		buyPrice=200000;
+		inventory=240;
+		side="CIV";
+		insurance=1;
+		licenses[]={"driver"};
+		fuel="Diesel";
+		fuelCapacity=150;
+		colors[]=
+		{
+			"Skyline_Mercedes_Sprinter_01_F",
+			"Skyline_Mercedes_Sprinter_11_F",
+			"Skyline_Mercedes_Sprinter_12_F",
+			"Skyline_Mercedes_Sprinter_14_F",
+			"Skyline_Mercedes_Sprinter_16_F",
+			"Skyline_Mercedes_Sprinter_15_F",
+			"Skyline_Mercedes_Sprinter_02_F",
+			"Skyline_Mercedes_Sprinter_05_F",
+			"Skyline_Mercedes_Sprinter_04_F",
+			"Skyline_Mercedes_Sprinter_03_F",
+			"Skyline_Mercedes_Sprinter_08_F",
+			"Skyline_Mercedes_Sprinter_07_F",
+			"Skyline_Mercedes_Sprinter_06_F",
+			"Skyline_Mercedes_Sprinter_13_F",
+			"Skyline_Mercedes_Sprinter_10_F",
+			"Skyline_Mercedes_Sprinter_09_F"
+		};
+	};
+	class Skyline_Mercedes_Sprinter_01_F: Skyline_Mercedes_Sprinter {};
+	class Skyline_Mercedes_Sprinter_11_F: Skyline_Mercedes_Sprinter {};
+	class Skyline_Mercedes_Sprinter_12_F: Skyline_Mercedes_Sprinter {};
+	class Skyline_Mercedes_Sprinter_14_F: Skyline_Mercedes_Sprinter {};
+	class Skyline_Mercedes_Sprinter_16_F: Skyline_Mercedes_Sprinter {};
+	class Skyline_Mercedes_Sprinter_15_F: Skyline_Mercedes_Sprinter {};
+	class Skyline_Mercedes_Sprinter_02_F: Skyline_Mercedes_Sprinter {};
+	class Skyline_Mercedes_Sprinter_05_F: Skyline_Mercedes_Sprinter {};
+	class Skyline_Mercedes_Sprinter_04_F: Skyline_Mercedes_Sprinter {};
+	class Skyline_Mercedes_Sprinter_03_F: Skyline_Mercedes_Sprinter {};
+	class Skyline_Mercedes_Sprinter_08_F: Skyline_Mercedes_Sprinter {};
+	class Skyline_Mercedes_Sprinter_07_F: Skyline_Mercedes_Sprinter {};
+	class Skyline_Mercedes_Sprinter_06_F: Skyline_Mercedes_Sprinter {};
+	class Skyline_Mercedes_Sprinter_13_F: Skyline_Mercedes_Sprinter {};
+	class Skyline_Mercedes_Sprinter_10_F: Skyline_Mercedes_Sprinter {};
+	class Skyline_Mercedes_Sprinter_09_F: Skyline_Mercedes_Sprinter {};
+
 	class d3s_urus_18
 	{
 		realname="Lamborghini Urus";
@@ -6210,7 +6211,7 @@ class ALYSIA_VEHICLES
 			{"Musique (Sonate Pour L'ANT En FA Mineur)", "fouine_ANT_2"}
 		};
 	};
-	class ALYSIA_GMC_Fiestanoa : Maels_Vandura_GMC_special
+	class ADENIS_GMC_Fiestanoa : Maels_Vandura_GMC_special
 	{
 		realname="GMC Fiestanoa";
 	};

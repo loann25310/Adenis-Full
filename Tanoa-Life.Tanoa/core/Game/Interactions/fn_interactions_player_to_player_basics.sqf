@@ -123,16 +123,16 @@
 			"[g_interaction_target] call AlysiaClient_fnc_company_create_open;",
 			"
 				(
-					isClass(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'companies' >> 'create') &&
+					isClass(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'companies' >> 'create') &&
 					(
-						(getNumber(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'companies' >> 'create' >> 'rank') <= (player getVariable ['rank',0])) &&
+						(getNumber(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'companies' >> 'create' >> 'rank') <= (player getVariable ['rank',0])) &&
 						(
-							(getText(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'companies' >> 'create' >> 'license') isEqualTo '') ||
-							([getText(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'companies' >> 'create' >> 'license')] call AlysiaClient_fnc_hasLicense)
+							(getText(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'companies' >> 'create' >> 'license') isEqualTo '') ||
+							([getText(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'companies' >> 'create' >> 'license')] call AlysiaClient_fnc_hasLicense)
 						)
 					)
 				) && (
-					getNumber(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(side(g_interaction_target)) >> 'companies' >> 'owner') isEqualTo 1
+					getNumber(missionConfigFile >> 'ADENIS_FACTIONS' >> str(side(g_interaction_target)) >> 'companies' >> 'owner') isEqualTo 1
 				)
 			"
 		],[
@@ -140,7 +140,7 @@
 			"Recruter",
 			"[g_interaction_target,g_company] call AlysiaClient_fnc_company_member_invite;",
 			"
-				(getNumber(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(side g_interaction_target) >> 'companies' >> 'employee') isEqualTo 1) &&
+				(getNumber(missionConfigFile >> 'ADENIS_FACTIONS' >> str(side g_interaction_target) >> 'companies' >> 'employee') isEqualTo 1) &&
 				!(isNull g_company) &&
 				{((g_company getVariable 'company_info') select 1) isEqualTo (getPlayerUID player)}
 			"
@@ -168,10 +168,10 @@
 							((player getVariable [''rank'',0]) >= getNumber(_x >> ''rank'')) &&
 							((getText(_x >> ''license'') isEqualTo '''') || ([getText(_x >> ''license'')] call AlysiaClient_fnc_hasLicense)) &&
 							((getNumber(_x >> ''same_side_only'') isEqualTo 0) || ((getNumber(_x >> ''same_side_only'') isEqualTo 1) && ((side g_interaction_target) isEqualTo playerSide))) &&
-							(isClass(missionConfigFile >> ''ALYSIA_LICENSES'' >> (configName _x) >> ''factions'' >> str(side g_interaction_target)))
+							(isClass(missionConfigFile >> ''ADENIS_LICENSES'' >> (configName _x) >> ''factions'' >> str(side g_interaction_target)))
 						)
 					'
-					configClasses (missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'licenses_give')
+					configClasses (missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'licenses_give')
 				) > 0
 			"
 		],[

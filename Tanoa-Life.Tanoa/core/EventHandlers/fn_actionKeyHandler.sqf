@@ -28,7 +28,7 @@ if (_vehicle isKindOf "Man") then
 			};
 			true breakOut "main";
 		} else {
-			if (isClass(missionConfigFile >> "ALYSIA_DYN_OBJECTS" >> typeOf(_x))) then
+			if (isClass(missionConfigFile >> "ADENIS_DYN_OBJECTS" >> typeOf(_x))) then
 			{
 				detach _x;
 				true breakOut "main";
@@ -81,13 +81,13 @@ if (_vehicle isKindOf "Man") then
 					true breakOut "main";
 				};
 
-				if (isClass(missionConfigFile >> "ALYSIA_ATM" >> _type)) then
+				if (isClass(missionConfigFile >> "ADENIS_ATM" >> _type)) then
 				{
 					[_target] call AlysiaClient_fnc_interactions_player_to_atm;
 					true breakOut "main";
 				};
 
-				if (isClass(missionConfigFile >> "ALYSIA_STORAGES" >> _type)) then
+				if (isClass(missionConfigFile >> "ADENIS_STORAGES" >> _type)) then
 				{
 					[_target, "Trunk", true, true, false, false] spawn AlysiaClient_fnc_virtual_menu_exhange_open;
 					true breakOut "main";
@@ -99,7 +99,7 @@ if (_vehicle isKindOf "Man") then
 					true breakOut "main";
 				};
 
-				if (isClass(missionConfigFile >> "ALYSIA_FARMING_PLANT_OBJETCS" >> _type)) then
+				if (isClass(missionConfigFile >> "ADENIS_FARMING_PLANT_OBJETCS" >> _type)) then
 				{
 					[_target] spawn AlysiaClient_fnc_plantHarvest;
 					true breakOut "main";
@@ -123,19 +123,19 @@ if (_vehicle isKindOf "Man") then
 					true breakOut "main";
 				};
 
-				if (isClass(missionConfigFile >> "ALYSIA_FUEL_STATION" >> _type)) then
+				if (isClass(missionConfigFile >> "ADENIS_FUEL_STATION" >> _type)) then
 				{
 					[_target] call AlysiaClient_fnc_interactions_player_to_station;
 					true breakOut "main";
 				};
 
-				if (isClass(missionConfigFile >> "ALYSIA_CHAIRS" >> _type)) then
+				if (isClass(missionConfigFile >> "ADENIS_CHAIRS" >> _type)) then
 				{
 					[_target] call AlysiaClient_fnc_interactions_player_to_chair;
 					true breakOut "main";
 				};
 
-				if (isClass(missionConfigFile >> "ALYSIA_DYN_OBJECTS" >> _type)) then
+				if (isClass(missionConfigFile >> "ADENIS_DYN_OBJECTS" >> _type)) then
 				{
 					if (_target getVariable ["isPackable", false]) then
 					{
@@ -173,7 +173,7 @@ if (_vehicle isKindOf "Man") then
 			};
 		};
 
-		if (isClass(missionConfigFile >> "ALYSIA_HOUSES" >> _type)) then
+		if (isClass(missionConfigFile >> "ADENIS_HOUSES" >> _type)) then
 		{
 			if (((player distance _target) < 10) || (([_target] call AlysiaClient_fnc_nearestDoor) != 0)) then
 			{
@@ -184,7 +184,7 @@ if (_vehicle isKindOf "Man") then
 
 		if ((player distance _target) < ((((boundingBox _target) select 1) select 0)) + 1.2) then
 		{
-			if (isClass(missionConfigFile >> "ALYSIA_FARMING_OBJECT" >> _type)) then
+			if (isClass(missionConfigFile >> "ADENIS_FARMING_OBJECT" >> _type)) then
 			{
 				[_target] spawn AlysiaClient_fnc_farm_object;
 				true breakOut "main";
@@ -240,7 +240,7 @@ if (_vehicle isKindOf "Man") then
 				true breakOut "main";
 			};
 		};
-	} forEach ("((player distance (getMarkerPos (configName _x))) < getNumber(_x >> 'distance'))" configClasses (missionConfigFile >> "ALYSIA_DYN_MARKERS"));
+	} forEach ("((player distance (getMarkerPos (configName _x))) < getNumber(_x >> 'distance'))" configClasses (missionConfigFile >> "ADENIS_DYN_MARKERS"));
 
 	{
 		if (player distance (getMarkerPos (configName _x)) < getNumber(_x >> "area")) then
@@ -248,7 +248,7 @@ if (_vehicle isKindOf "Man") then
 			[(configName _x)] spawn AlysiaClient_fnc_plantSeed;
 			true breakOut "main";
 		};
-	} forEach ("true" configClasses (missionConfigFile >> "ALYSIA_FARMING_PLANT_MARKERS"));
+	} forEach ("true" configClasses (missionConfigFile >> "ADENIS_FARMING_PLANT_MARKERS"));
 
 	{
 		_marker = configName _x;
@@ -266,7 +266,7 @@ if (_vehicle isKindOf "Man") then
 				true breakOut "main";
 			};
 		};
-	} forEach ("true" configClasses (missionConfigFile >> "ALYSIA_FARMING_GATHER"));
+	} forEach ("true" configClasses (missionConfigFile >> "ADENIS_FARMING_GATHER"));
 
 	if (!isNull(g_company)) then
 	{

@@ -21,7 +21,7 @@ if ((_target getVariable ["sabotage", 0]) > serverTime) exitWith
 	] call AlysiaClient_fnc_error;
 };
 
-_process = getArray(missionConfigFile >> "ALYSIA_LABORATORIES" >> (_info select 2) >> "process") + (_target getVariable ["extra_process", []]);
+_process = getArray(missionConfigFile >> "ADENIS_LABORATORIES" >> (_info select 2) >> "process") + (_target getVariable ["extra_process", []]);
 
 {
 	_config = _x;
@@ -32,6 +32,6 @@ _process = getArray(missionConfigFile >> "ALYSIA_LABORATORIES" >> (_info select 
 			if (!(_proc in _process)) then {_process pushBack _proc};
 		} forEach getArray(_config >> "process");
 	};
-} forEach ((format["'%1' in getArray(_x >> 'labos')", (_info select 2)]) configClasses (missionConfigFile >> "ALYSIA_BLUEPRINTS"));
+} forEach ((format["'%1' in getArray(_x >> 'labos')", (_info select 2)]) configClasses (missionConfigFile >> "ADENIS_BLUEPRINTS"));
 
 [_target, _process] call AlysiaClient_fnc_process_choice_open;

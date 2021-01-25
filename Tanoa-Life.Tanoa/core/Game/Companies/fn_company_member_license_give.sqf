@@ -13,7 +13,7 @@ if (isNil "_info") exitWith {
 	["Impossible de récupérer les informations de l'entreprise."] call AlysiaClient_fnc_error;
 };
 
-_license = getText(missionConfigFile >>  "ALYSIA_COMPANIES_TYPES" >> (_info select 2) >> "license");
+_license = getText(missionConfigFile >>  "ADENIS_COMPANIES_TYPES" >> (_info select 2) >> "license");
 if (_license isEqualTo "") exitWith {
 	["Votre type d'entreprise ne vous donne accès à aucune license supplémentaire."] call AlysiaClient_fnc_error;
 };
@@ -29,7 +29,7 @@ _action =
 	[
 		"Vous êtes sur le point de payer la licence : <t color='#FF4000'>%1</t>.<br/>Prix : <t color='#8cff9b'>%2</t>$.<br/>Validez-vous ?",
 		[_license] call AlysiaClient_fnc_licenseGetName,
-		[getNumber(missionConfigFile >> "ALYSIA_LICENSES" >> _license >> "factions" >> str(side _target) >> "price")] call AlysiaClient_fnc_numberText
+		[getNumber(missionConfigFile >> "ADENIS_LICENSES" >> _license >> "factions" >> str(side _target) >> "price")] call AlysiaClient_fnc_numberText
 	],
 	"Validation",
 	"Valider",

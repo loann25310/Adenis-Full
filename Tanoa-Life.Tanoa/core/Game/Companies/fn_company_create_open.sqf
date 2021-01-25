@@ -24,7 +24,7 @@ lbClear _list;
 	_index = _list lbAdd getText(_x >> "name");
 	_list lbSetData [_index, (configName _x)];
 	_list lbSetPicture [_index, getText(_x >> "image")];
-} forEach ("true" configClasses (missionConfigFile >> "ALYSIA_COMPANIES_TYPES"));
+} forEach ("true" configClasses (missionConfigFile >> "ADENIS_COMPANIES_TYPES"));
 if ((lbSize _list) isEqualTo 0) then
 {
 	_list lbAdd "Aucun";

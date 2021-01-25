@@ -11,16 +11,16 @@ if ((isNull _company) || (isNull _who)) exitWith {};
 _info = _company getVariable "company_info";
 if (isNil "_info") exitWith {};
 
-_max = getNumber(missionConfigFile >> "ALYSIA_COMPANIES_TYPES" >> (_info select 2) >> "members_max");
+_max = getNumber(missionConfigFile >> "ADENIS_COMPANIES_TYPES" >> (_info select 2) >> "members_max");
 if (count((_company getVariable "company_members") select 0) >= _max) exitWith {
 	[format["<t color='#74DF00'>%1</t> comprends déjà %2 employés et ne peut en avoir plus", (_info select 0), _max]] call AlysiaClient_fnc_error;
 };
 
-if (getNumber(missionConfigFile >> "ALYSIA_FACTIONS" >> str(side _who) >> "companies" >> "employee") isEqualTo 0) exitWith {
+if (getNumber(missionConfigFile >> "ADENIS_FACTIONS" >> str(side _who) >> "companies" >> "employee") isEqualTo 0) exitWith {
 	["La personne que vous essayez de recruter n'est pas en mesure d'être employée d'une entreprise"] call AlysiaClient_fnc_error;
 };
 
-_item_player = getText(missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "identity_item");
+_item_player = getText(missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "identity_item");
 if ((_item_player != "") && !(_item_player in (magazines player))) exitWith
 {
 	[format[
@@ -30,7 +30,7 @@ if ((_item_player != "") && !(_item_player in (magazines player))) exitWith
 	]] call AlysiaClient_fnc_error;
 };
 
-_item_target = getText(missionConfigFile >> "ALYSIA_FACTIONS" >> str(side _who) >> "identity_item");
+_item_target = getText(missionConfigFile >> "ADENIS_FACTIONS" >> str(side _who) >> "identity_item");
 if ((_item_target != "") && !(_item_target in (magazines _who))) exitWith
 {
 	[format[

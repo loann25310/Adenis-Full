@@ -15,7 +15,7 @@ if (g_action_inUse) exitWith {
 	["Vous êtes déjà en train d'effectuer une action."] call AlysiaClient_fnc_error;
 };
 
-_config = missionConfigFile >> "ALYSIA_VEHICLES" >> typeOf(_vehicle) >> "c4_bomb";
+_config = missionConfigFile >> "ADENIS_VEHICLES" >> typeOf(_vehicle) >> "c4_bomb";
 if (!isClass(_config)) exitWith {
 	["Impossible de placer du c4 sur ce véhicule."] call AlysiaClient_fnc_error;
 };

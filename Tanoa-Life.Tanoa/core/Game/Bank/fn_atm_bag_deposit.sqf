@@ -22,7 +22,7 @@ if (isNull(_obj)) exitWith {
 	["Vous n'avez pas de valise de billet."] call AlysiaClient_fnc_error;
 };
 
-_max = getNumber(missionConfigFile >> "ALYSIA_ATM" >> typeOf(_target) >> "money_stock");
+_max = getNumber(missionConfigFile >> "ADENIS_ATM" >> typeOf(_target) >> "money_stock");
 _amount = _target getVariable ["money", _max];
 if (_amount < _max) then
 {

@@ -30,11 +30,11 @@ resetCamShake;
 
 if ((player getVariable ["arrested", false]) && !(isNull g_arrest_Prison) && !(g_arrest_Cellule isEqualTo "")) then
 {
-	_config_cell = missionConfigFile >> "ALYSIA_PRISONS" >> typeof(g_arrest_Prison) >> "cells" >> g_arrest_Cellule;
+	_config_cell = missionConfigFile >> "ADENIS_PRISONS" >> typeof(g_arrest_Prison) >> "cells" >> g_arrest_Cellule;
 	player setPos (g_arrest_Prison modelToWorld getArray(_config_cell >> "pos"));
 	player setDir getNumber(_config_cell >> "dir");
 } else {
-	_config = missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "respawn";
+	_config = missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "respawn";
 	if (["assr_medical"] call AlysiaClient_fnc_hasLicense) then
 	{
 		missionNamespace setVariable ["license_assr_medical", false];

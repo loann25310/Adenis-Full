@@ -14,7 +14,7 @@ if (_sel isEqualTo -1) exitWith {
 };
 
 _mission = lbData[97001, _sel];
-_config = missionConfigFile >> "ALYSIA_MISSIONS" >> _mission;
+_config = missionConfigFile >> "ADENIS_MISSIONS" >> _mission;
 if ((_mission isEqualTo "") || !(isClass(_config))) exitWith {
 	["Impossible de récupérer les informations de la mission."] call AlysiaClient_fnc_error;
 };

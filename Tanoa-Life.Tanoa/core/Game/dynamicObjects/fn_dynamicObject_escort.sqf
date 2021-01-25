@@ -9,4 +9,4 @@ if (isNull _object) exitWith {
 	["Cible invalide."] call AlysiaClient_fnc_error;
 };
 
-_object attachTo [player, getArray(missionConfigFile >> "ALYSIA_DYN_OBJECTS" >> typeOf(_object) >> "attachTo")];
+_object attachTo [player, getArray(missionConfigFile >> "ADENIS_DYN_OBJECTS" >> typeOf(_object) >> "attachTo")];

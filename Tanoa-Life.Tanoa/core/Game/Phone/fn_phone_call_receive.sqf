@@ -26,19 +26,19 @@ missionNamespace setVariable ["calling_number", (_from getVariable "number")];
 missionNamespace setVariable ["calling_hide", _hide];
 
 _time = 0;
-_sound = profileNamespace getVariable ["ALYSIA_phone_call_ring", ""];
+_sound = profileNamespace getVariable ["ADENIS_phone_call_ring", ""];
 if (_sound isEqualTo "") then
 {
 	_sleep = 3.5;
 	_duration = 2.6;
 } else {
-	_config = missionConfigFile >> "ALYSIA_PHONE" >> "CALL" >> "sounds" >> _sound;
+	_config = missionConfigFile >> "ADENIS_PHONE" >> "CALL" >> "sounds" >> _sound;
 	if (isClass(_config)) then
 	{
 		_sleep = getNumber(_config >> "sleep");
 		_duration = getNumber(_config >> "duration");
 	} else {
-		profileNamespace setVariable ["ALYSIA_phone_call_ring", ""];
+		profileNamespace setVariable ["ADENIS_phone_call_ring", ""];
 		_sleep = 3.5;
 		_duration = 2.6;
 	};

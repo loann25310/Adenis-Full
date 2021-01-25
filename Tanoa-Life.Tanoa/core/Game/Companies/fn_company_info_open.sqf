@@ -32,6 +32,6 @@ if (isNull _display) exitWith {};
 	+	"DG<br/>"
 	+	"%3",
 	(_info select 0),
-	getText(missionConfigFile >> "ALYSIA_COMPANIES_TYPES" >> (_info select 2) >> "name"),
+	getText(missionConfigFile >> "ADENIS_COMPANIES_TYPES" >> (_info select 2) >> "name"),
 	(_info select 4)
 ];

@@ -17,7 +17,7 @@ if (serverTime < 600) exitWith {
 if (_target in g_vehicles) exitWith {
 	["Vous possédez déjà les clefs de ce véhicule."] call AlysiaClient_fnc_error;
 };
-if (getNumber(missionConfigFile >> "ALYSIA_VEHICLES" >> typeOf(_target) >> "disableLockpick") isEqualTo 1) exitWith {
+if (getNumber(missionConfigFile >> "ADENIS_VEHICLES" >> typeOf(_target) >> "disableLockpick") isEqualTo 1) exitWith {
 	["Ce type de véhicule ne peut pas être crocheté."] call AlysiaClient_fnc_error;
 };
 

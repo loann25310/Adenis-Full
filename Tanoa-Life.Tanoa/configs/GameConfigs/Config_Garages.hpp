@@ -1,4 +1,4 @@
-class ALYSIA_GARAGES
+class ADENIS_GARAGES
 {
 	class airfield_1
 	{
@@ -217,6 +217,11 @@ class ALYSIA_GARAGES
 	{
 		name="Garage Servizio di denaro";
 		spawns[]={"land_25_spawn_1"};
+	};
+	class land_26: Land_1
+	{
+		name="Garage Motorsport";
+		spawns[]={"land_26_spawn_1"};
 	};
 
 	class fourriere_1

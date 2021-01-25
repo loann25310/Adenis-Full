@@ -33,5 +33,5 @@ player addEventHandler ["InventoryOpened", "[_this select 1] spawn AlysiaEvent_f
 {
 	{
 		missionNamespace setVariable [format["market_sync_%1", (configName _x)], ([(configName _x)] call AlysiaClient_fnc_market_getPrice)];
-	} foreach ("isClass(_x >> 'market')" configClasses (missionConfigFile >> "ALYSIA_ITEMS"));
+	} foreach ("isClass(_x >> 'market')" configClasses (missionConfigFile >> "ADENIS_ITEMS"));
 };

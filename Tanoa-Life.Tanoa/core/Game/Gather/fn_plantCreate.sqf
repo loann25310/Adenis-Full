@@ -9,7 +9,7 @@ _engrais = [_this, 2, false, [false]] call BIS_fnc_param;
 
 if ((_type isEqualTo "") || (_pos isEqualTo [])) exitWith {objNull};
 
-_config = missionConfigFile >> "ALYSIA_FARMING_PLANT_OBJETCS" >> _plant;
+_config = missionConfigFile >> "ADENIS_FARMING_PLANT_OBJETCS" >> _plant;
 if (!isClass(_config)) exitWith {objNull};
 
 _plantGrowingtime = getNumber(_config >> "growingTime") + round(random(getNumber(_config >> "extraGrow")));

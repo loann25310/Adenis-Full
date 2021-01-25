@@ -7,7 +7,7 @@ _new = [_this, 0, "", [""]] call BIS_fnc_param;
 
 if (_new isEqualTo "") exitWith {};
 
-_config = missionConfigFile >> "ALYSIA_PHONE" >> "FORFAITS" >> _new;
+_config = missionConfigFile >> "ADENIS_PHONE" >> "FORFAITS" >> _new;
 if (isClass(_config)) then
 {
 	_maxSMS = getNumber(_config >> "sms_max");

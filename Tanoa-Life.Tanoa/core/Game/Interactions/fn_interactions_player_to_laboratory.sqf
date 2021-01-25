@@ -27,7 +27,7 @@
 			"Traitements",
 			"[g_interaction_target] call AlysiaClient_fnc_labo_process;",
 			"
-				(count getArray(missionConfigFile >> 'ALYSIA_LABORATORIES' >> ((g_interaction_target getVariable ['laboratory_info',['','','']]) select 2) >> 'process') > 0) &&
+				(count getArray(missionConfigFile >> 'ADENIS_LABORATORIES' >> ((g_interaction_target getVariable ['laboratory_info',['','','']]) select 2) >> 'process') > 0) &&
 				!(g_interaction_target getVariable ['construction', false])
 			"
 		],
@@ -38,7 +38,7 @@
 			"
 				(
 					((['destroy_labo'] call AlysiaClient_fnc_itemCount) > 0) &&
-					(str(playerSide) in getArray(missionConfigFile >> 'ALYSIA_LABORATORIES' >> ((g_interaction_target getVariable ['laboratory_info',['','','']]) select 2) >> 'destroy'))
+					(str(playerSide) in getArray(missionConfigFile >> 'ADENIS_LABORATORIES' >> ((g_interaction_target getVariable ['laboratory_info',['','','']]) select 2) >> 'destroy'))
 				) || (
 					((g_interaction_target getVariable 'laboratory_info') select 1) isEqualTo (getPlayerUID player)
 				)

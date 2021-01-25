@@ -9,7 +9,7 @@ _amount = [_this, 2, 0, [0]] call BIS_fnc_param;
 
 if ((isNull _atm) || (_amount isEqualTo 0)) exitWith {};
 
-_config = missionConfigFile >> "ALYSIA_ATM" >> typeOf(_atm);
+_config = missionConfigFile >> "ADENIS_ATM" >> typeOf(_atm);
 if (!isClass(_config)) exitWith {};
 
 _max = getNumber(_config >> "money_stock");

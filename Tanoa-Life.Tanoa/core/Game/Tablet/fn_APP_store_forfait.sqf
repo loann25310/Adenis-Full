@@ -27,7 +27,7 @@ _list ctrlSetEventHandler ["LBSelChanged", "_this call AlysiaClient_fnc_APP_stor
 		if (_forfait isEqualTo g_phone_forfait) then {"(le votre)"} else {""}
 	];
 	_list lbSetData [_index, _forfait];
-} foreach ("str(playerSide) in getArray(_x >> 'sides')" configClasses (missionConfigFile >> "ALYSIA_PHONE" >> "FORFAITS"));
+} foreach ("str(playerSide) in getArray(_x >> 'sides')" configClasses (missionConfigFile >> "ADENIS_PHONE" >> "FORFAITS"));
 
 if ((lbSize _list) isEqualTo 0) then {
 	_list lbAdd "Aucun";

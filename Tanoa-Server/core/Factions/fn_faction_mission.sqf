@@ -9,7 +9,7 @@ _time = [_this, 2, 0, [0]] call BIS_fnc_param;
 
 if (isNull _from) exitWith {};
 
-_config = missionConfigFile >> "ALYSIA_MISSIONS" >> _type;
+_config = missionConfigFile >> "ADENIS_MISSIONS" >> _type;
 if (getNumber(_config >> "count_per_reboot") != -1) then
 {
 	_count = call compile format["mission_reboot_%1_mission", _type];

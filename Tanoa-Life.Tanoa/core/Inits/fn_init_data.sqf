@@ -68,7 +68,7 @@ g_phone_contacts = _this select 31;
 g_phone_forfait = _this select 33;
 g_phone_blacklist = _this select 34;
 {
-	_config = missionConfigFile >> "ALYSIA_SHOP_APPLICATIONS" >> _x;
+	_config = missionConfigFile >> "ADENIS_SHOP_APPLICATIONS" >> _x;
 	if (isClass(_config)) then
 	{
 		if (str(playerSide) in getArray(_config >> "sides")) then
@@ -86,7 +86,7 @@ g_phone_annuaire = _this select 40;
 
 // ======== LICENSES ===========
 {
-	_config = missionConfigFile >> "ALYSIA_LICENSES" >> _x;
+	_config = missionConfigFile >> "ADENIS_LICENSES" >> _x;
 	if (isClass(_config)) then
 	{
 		if (isClass(_config >> "factions" >> str(playerSide))) then
@@ -147,14 +147,21 @@ switch (playerSide) do
 	};
 };
 
-g_nextPay = time + (getNumber(missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "salary" >> "timer") * 60);
+g_nextPay = time + (getNumber(missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "salary" >> "timer") * 60);
 
-if (isClass(missionConfigFile >> "ALYSIA_PHONE" >> "FORFAITS" >> g_phone_forfait)) then
+if (isClass(missionConfigFile >> "ADENIS_PHONE" >> "FORFAITS" >> g_phone_forfait)) then
 {
-	if (!(str(playerSide) in getArray(missionConfigFile >> "ALYSIA_PHONE" >> "FORFAITS" >> g_phone_forfait >> "sides"))) then
+	if (!(str(playerSide) in getArray(missionConfigFile >> "ADENIS_PHONE" >> "FORFAITS" >> g_phone_forfait >> "sides"))) then
 	{
 		["lite"] call AlysiaClient_fnc_phone_forfait_change;
 	};
+};
+
+if ((
+	(!(isNull g_company) && {(((g_company getVariable ['company_info',['','','']]) select 2) isEqualTo 'money_transfer')}) ||
+	(!(isNull g_company) && {(((g_company getVariable ['company_info',['','','']]) select 2) isEqualTo 'banque')})
+) || (playerSide isEqualTo west)) then { 
+	player setVariable ["copLevel",1,true];
 };
 
 true;

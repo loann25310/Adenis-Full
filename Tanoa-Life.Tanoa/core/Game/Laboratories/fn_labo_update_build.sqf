@@ -12,7 +12,7 @@ if (isNull _object) exitWith {
 deleteMarker "laboratory";
 g_laboratory = _object;
 
-_config = (format["getText(_x >> 'object') == '%1'", typeOf(_object)] configClasses (missionConfigFile >> "ALYSIA_LABORATORIES")) select 0;
+_config = (format["getText(_x >> 'object') == '%1'", typeOf(_object)] configClasses (missionConfigFile >> "ADENIS_LABORATORIES")) select 0;
 if (isNil "_config") exitWith {
 	["Impossible de récupérer les informations du laboratoire venant d'être construit."] call AlysiaClient_fnc_error;
 };

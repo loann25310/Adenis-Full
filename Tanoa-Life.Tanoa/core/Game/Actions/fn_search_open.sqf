@@ -37,7 +37,7 @@ _array = [];
 	private "_delete";
 
 	_className = _x select 0;
-	if (isClass(missionConfigFile >> "ALYSIA_ITEMS" >> _className >> "remove")) then {
+	if (isClass(missionConfigFile >> "ADENIS_ITEMS" >> _className >> "remove")) then {
 		_delete = 1;
 	} else {
 		_delete = 0;

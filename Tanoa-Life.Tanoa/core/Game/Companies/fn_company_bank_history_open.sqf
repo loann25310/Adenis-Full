@@ -42,7 +42,7 @@ if ((lbSize _list) isEqualTo 1) then {
 	_list lbAdd "Historique vide";
 };
 
-_config_history = missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "companies" >> "history" >> "clean";
+_config_history = missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "companies" >> "history" >> "clean";
 if (isClass(_config_history)) then
 {
 	if (

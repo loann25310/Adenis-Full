@@ -17,7 +17,7 @@ if (isNull _display) exitWith {};
 _forfait = _list lbData _index;
 if (_forfait isEqualTo "") exitWith {};
 
-_config = missionConfigFile >> "ALYSIA_PHONE" >> "FORFAITS" >> _forfait;
+_config = missionConfigFile >> "ADENIS_PHONE" >> "FORFAITS" >> _forfait;
 if (!isClass(_config)) exitWith {};
 
 (_display displayCtrl 8111) ctrlSetStructuredText parseText format
@@ -43,7 +43,7 @@ if (!isClass(_config)) exitWith {};
 
 [8111, true] call AlysiaClient_fnc_tabletShow;
 
-if ((g_atm < getNumber(missionConfigFile >> "ALYSIA_PHONE" >> "FORFAITS" >> _forfait >> "bill")) || (_forfait isEqualTo g_phone_forfait)) then
+if ((g_atm < getNumber(missionConfigFile >> "ADENIS_PHONE" >> "FORFAITS" >> _forfait >> "bill")) || (_forfait isEqualTo g_phone_forfait)) then
 {
 	[8108, false] call AlysiaClient_fnc_tabletShow;
 	[8109, false] call AlysiaClient_fnc_tabletShow;

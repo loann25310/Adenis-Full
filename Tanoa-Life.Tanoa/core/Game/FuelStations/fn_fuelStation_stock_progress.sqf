@@ -14,14 +14,14 @@ if (((locked _veh) isEqualTo 2)) exitWith {["Remplissage de la station impossibl
 if (_veh getVariable ["refuel_inUse", false]) exitWith {["Remplissage de la station impossible.<br/>Quelqu'un est déjà en train d'utiliser le véhicule."] call AlysiaClient_fnc_error};
 
 _type = player getVariable ["stock_station_type", ""];
-_config = missionConfigFile >> "ALYSIA_FUEL" >> _type;
+_config = missionConfigFile >> "ADENIS_FUEL" >> _type;
 if (_type isEqualTo "") exitWith {["Remplissage de la station impossible.<br/>Impossible de trouver l'essence que vous avez selectionné."] call AlysiaClient_fnc_error};
 
-_maxDistance = getNumber(missionConfigFile >> "ALYSIA_FUEL_STATION" >> typeOf(_station) >> "max_distance_allowed");
+_maxDistance = getNumber(missionConfigFile >> "ADENIS_FUEL_STATION" >> typeOf(_station) >> "max_distance_allowed");
 if ((player distance _station) > _maxDistance) exitWith {["Remplissage de la station impossible.<br/>Vous êtes trop loin de la station."] call AlysiaClient_fnc_error};
 
 _currentLiters = [_station, _type] call AlysiaClient_fnc_fuelStation_fuel_getStock;
-_litersMax = getNumber(missionConfigFile >> "ALYSIA_FUEL_STATION" >> typeOf(_station) >> "stock" >> _type >> "max");
+_litersMax = getNumber(missionConfigFile >> "ADENIS_FUEL_STATION" >> typeOf(_station) >> "stock" >> _type >> "max");
 if (_currentLiters isEqualTo _litersMax) exitWith {
 	[format["Remplissage de la station impossible.<br/>Le stock de <t color='#FF8000'>%1</t> est complet.", getText(_config >> "name")]] call AlysiaClient_fnc_error;
 };

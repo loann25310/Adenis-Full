@@ -14,7 +14,7 @@ if (_className isEqualTo "") exitWith {
 	["Impossible de récupérer les informations du véhicule à acheter."] call AlysiaClient_fnc_error;
 };
 
-_price = getNumber(missionConfigFile >> "ALYSIA_VEHICLES" >> _className >> "buyPrice");
+_price = getNumber(missionConfigFile >> "ADENIS_VEHICLES" >> _className >> "buyPrice");
 if (_price isEqualTo 0) exitWith {
 	["Impossible de récupérer le prix du véhicule à acheter."] call AlysiaClient_fnc_error;
 };
@@ -29,7 +29,7 @@ if (g_shop_active) exitWith {
 g_shop_active = true;
 _proceed = false;
 
-if (getNumber(missionConfigFile >> "ALYSIA_SHOPS_VEHICLES" >> g_shop_vehicles_type >> "createVehicle") isEqualTo 1) then
+if (getNumber(missionConfigFile >> "ADENIS_SHOPS_VEHICLES" >> g_shop_vehicles_type >> "createVehicle") isEqualTo 1) then
 {
 	private["_validSpawn", "_spawnPos"];
 

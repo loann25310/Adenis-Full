@@ -1,4 +1,4 @@
-class ALYSIA_BLUEPRINTS
+class ADENIS_BLUEPRINTS
 {
 
 	class blueprint_uniformeMIT
@@ -187,10 +187,6 @@ class ALYSIA_BLUEPRINTS
 		process[]={
 			"fn_fall",
 			"magazine_fn_fall",
-			"katiba",
-			"magazine_katiba",
-			"mp44",
-			"magazine_mp44",
 			"MOSIN",
 			"MOSIN_BAILLONETTE",
 			"magazine_mosin"

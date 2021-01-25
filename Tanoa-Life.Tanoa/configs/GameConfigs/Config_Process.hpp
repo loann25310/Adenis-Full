@@ -1,4 +1,4 @@
-class ALYSIA_PROCESS
+class ADENIS_PROCESS
 {
 	// Sons disponibles : "cement_mix" | "collectoil" | "cooking" | "drug_process" | "salt_process" | "smelting"
 	/* ====================================== SAMU ===================================== */
@@ -1400,7 +1400,7 @@ class ALYSIA_PROCESS
 		{
 			items_virtual[]={{"wine_red",1}};
 		};
-		time_per_item=4;
+		time_per_item=2;
 		time_default=2;
 	};
 	class malibu: cassoulet
@@ -1445,7 +1445,7 @@ class ALYSIA_PROCESS
 		{
 			items_virtual[]={{"assembling_wine_white",1}};
 		};
-		time_per_item=3;
+		time_per_item=2;
 		time_default=2;
 	};
 	class wine_whitep: cassoulet
@@ -1460,7 +1460,7 @@ class ALYSIA_PROCESS
 		{
 			items_virtual[]={{"wine_white",1}};
 		};
-		time_per_item=4;
+		time_per_item=2;
 		time_default=2;
 	};
 	class pinked_grape_juicep: cassoulet
@@ -1475,7 +1475,7 @@ class ALYSIA_PROCESS
 		{
 			items_virtual[]={{"pinked_grape_juice",1}};
 		};
-		time_per_item=3;
+		time_per_item=2;
 		time_default=2;
 	};
 	class assembling_wine_pinkedp: cassoulet
@@ -1490,7 +1490,7 @@ class ALYSIA_PROCESS
 		{
 			items_virtual[]={{"assembling_wine_pinked",1}};
 		};
-		time_per_item=3;
+		time_per_item=2;
 		time_default=2;
 	};
 	class wine_pinkedp: cassoulet
@@ -1505,7 +1505,7 @@ class ALYSIA_PROCESS
 		{
 			items_virtual[]={{"wine_pinked",1}};
 		};
-		time_per_item=4;
+		time_per_item=2;
 		time_default=2;
 	};
 	class assembling_champagne: cassoulet
@@ -1520,7 +1520,7 @@ class ALYSIA_PROCESS
 		{
 			items_virtual[]={{"assembling_champagne",1}};
 		};
-		time_per_item=3;
+		time_per_item=2;
 		time_default=2;
 	};
 	class champagnep: cassoulet
@@ -1535,7 +1535,7 @@ class ALYSIA_PROCESS
 		{
 			items_virtual[]={{"champagne",1}};
 		};
-		time_per_item=4;
+		time_per_item=2;
 		time_default=2;
 	};
 	class Maltagep: cassoulet
@@ -2227,7 +2227,7 @@ class ALYSIA_PROCESS
 	};
 	class military_shoulder: shoulder
 	{
-		name="Fabrication : Crosse Millitaire";
+		name="Fabrication : Crosse Militaire";
 		class require
 		{
 			items_virtual[]={{"steelp",2},{"ironp",1},{"woodp",1}};
@@ -2270,7 +2270,7 @@ class ALYSIA_PROCESS
 	};
 	class military_barrel: shoulder
 	{
-		name="Fabrication : Canon Millitaire";
+		name="Fabrication : Canon Militaire";
 		class require
 		{
 			items_virtual[]={{"steelp",2},{"ironp",2}};
@@ -2312,7 +2312,7 @@ class ALYSIA_PROCESS
 
 	class military_receiver: shoulder
 	{
-		name="Fabrication : Culasse Millitaire";
+		name="Fabrication : Culasse Militaire";
 		class require
 		{
 			items_virtual[]={{"steelp",3},{"ironp",1}};
@@ -2355,7 +2355,7 @@ class ALYSIA_PROCESS
 
 	class military_grip: shoulder
 	{
-		name="Fabrication : Poignée Millitaire";
+		name="Fabrication : Poignée Militaire";
 		class require
 		{
 			items_virtual[]={{"steelp",2},{"ironp",1},{"woodp",1}};
@@ -2398,7 +2398,7 @@ class ALYSIA_PROCESS
 	class military_slapper: shoulder
 
 	{
-		name="Fabrication : Percuteur Millitaire";
+		name="Fabrication : Percuteur Militaire";
 		class require
 		{
 			items_virtual[]={{"steelp",2}};
@@ -2440,7 +2440,7 @@ class ALYSIA_PROCESS
 
 	class military_frame: shoulder
 	{
-		name="Fabrication : Armature Millitaire";
+		name="Fabrication : Armature Militaire";
 		class require
 		{
 			items_virtual[]={{"steelp",3},{"ironp",2}};
@@ -2467,7 +2467,7 @@ class ALYSIA_PROCESS
 	};
 	class military_magazine: shoulder
 	{
-		name="Fabrication : Chargeur Millitaire";
+		name="Fabrication : Chargeur Militaire";
 		class require
 		{
 			items_virtual[]={{"steelp",1},{"ironp",1}};
@@ -2484,7 +2484,7 @@ class ALYSIA_PROCESS
 		name="Fabrication : Balles";
 		class require
 		{
-			items_virtual[]={{"steelp",1}};
+			items_virtual[]={{"steelp",1},{"soufre",50}};
 		};
 		class receive
 		{
@@ -2494,10 +2494,10 @@ class ALYSIA_PROCESS
 	};
 	class military_bullet: shoulder
 	{
-		name="Fabrication : Balles Millitaire";
+		name="Fabrication : Balles Militaire";
 		class require
 		{
-			items_virtual[]={{"steelp",1}};
+			items_virtual[]={{"steelp",1},{"soufre",60}};
 		};
 		class receive
 		{
@@ -2510,7 +2510,7 @@ class ALYSIA_PROCESS
 		name="Fabrication : chevrotine";
 		class require
 		{
-			items_virtual[]={{"steelp",1}};
+			items_virtual[]={{"steelp",1},{"soufre",40}};
 		};
 		class receive
 		{
@@ -3864,7 +3864,7 @@ class ALYSIA_PROCESS
 	};
 	class military_shoulder_deprecated: shoulder_deprecated
 	{
-		name="Fabrication : Crosse Millitaire";
+		name="Fabrication : Crosse Militaire";
 		class require
 		{
 			items_virtual[]={{"steelp",3},{"ironp",3},{"woodp",1}};
@@ -3904,7 +3904,7 @@ class ALYSIA_PROCESS
 	};
 	class military_barrel_deprecated: shoulder_deprecated
 	{
-		name="Fabrication : Canon Millitaire";
+		name="Fabrication : Canon Militaire";
 		class require
 		{
 			items_virtual[]={{"steelp",4},{"ironp",2}};
@@ -3944,7 +3944,7 @@ class ALYSIA_PROCESS
 	};
 	class military_receiver_deprecated: shoulder_deprecated
 	{
-		name="Fabrication : Culasse Millitaire";
+		name="Fabrication : Culasse Militaire";
 		class require
 		{
 			items_virtual[]={{"steelp",4},{"ironp",2}};
@@ -3984,7 +3984,7 @@ class ALYSIA_PROCESS
 	};
 	class military_grip_deprecated: shoulder_deprecated
 	{
-		name="Fabrication : Poignée Millitaire";
+		name="Fabrication : Poignée Militaire";
 		class require
 		{
 			items_virtual[]={{"steelp",4},{"ironp",2},{"woodp",1}};
@@ -4024,7 +4024,7 @@ class ALYSIA_PROCESS
 	};
 	class military_slapper_deprecated: shoulder_deprecated
 	{
-		name="Fabrication : Percuteur Millitaire";
+		name="Fabrication : Percuteur Militaire";
 		class require
 		{
 			items_virtual[]={{"steelp",3}};
@@ -4064,7 +4064,7 @@ class ALYSIA_PROCESS
 	};
 	class military_frame_deprecated: shoulder_deprecated
 	{
-		name="Fabrication : Armature Millitaire";
+		name="Fabrication : Armature Militaire";
 		class require
 		{
 			items_virtual[]={{"steelp",3},{"ironp",3}};
@@ -4091,7 +4091,7 @@ class ALYSIA_PROCESS
 	};
 	class military_magazine_deprecated: shoulder_deprecated
 	{
-		name="Fabrication : Chargeur Millitaire";
+		name="Fabrication : Chargeur Militaire";
 		class require
 		{
 			items_virtual[]={{"steelp",1},{"ironp",2}};
@@ -4118,7 +4118,7 @@ class ALYSIA_PROCESS
 	};
 	class military_bullet_deprecated: shoulder_deprecated
 	{
-		name="Fabrication : Balles Millitaire";
+		name="Fabrication : Balles Militaire";
 		class require
 		{
 			items_virtual[]={{"steelp",1}};
@@ -4241,7 +4241,36 @@ class ALYSIA_PROCESS
 			};
 		};
 	};
-	
+	class cacao
+	{
+		name="Transformation du cacao";
+		sound="salt_process";
+		class require
+		{
+			items_virtual[]={{"cacaop",4}};
+		};
+		class receive
+		{
+			items_virtual[]={{"tabchoco",2}};
+		};
+		time_per_item=1;
+		time_default=2;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_cacao"};
+			};
+			class WEST
+			{
+				licenses[]={"company_cacao"};
+			};
+			class GUER
+			{
+				licenses[]={"company_cacao"};
+			};
+		};
+	};	
 	class wood
 	{
 		name="Scierie";

@@ -14,7 +14,7 @@ if (_item isEqualTo "") exitWith {
 	["Impossible de récupérer les informations de l'objet sélectionné."] call AlysiaClient_fnc_error;
 };
 
-_price = getNumber(missionConfigFile >> "ALYSIA_ITEMS_ARMA" >> _item >> "buy_price");
+_price = getNumber(missionConfigFile >> "ADENIS_ITEMS_ARMA" >> _item >> "buy_price");
 if (_price > g_cash) exitWith {
 	["Vous n'avez pas assez d'argent."] call AlysiaClient_fnc_error;
 };
@@ -29,9 +29,9 @@ if ([_item, true, false] call AlysiaClient_fnc_handleItem) then
 {
 	[false, _price] call AlysiaClient_fnc_handleCash;
 	playSound "buy";
-	if (isClass(missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "board")) then
+	if (isClass(missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "board")) then
 	{
-		if (_item in getArray(missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "board" >> "history_items")) then
+		if (_item in getArray(missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "board" >> "history_items")) then
 		{
 			[(player getVariable "realname"), _item, playerSide] remoteExecCall ["AlysiaServer_fnc_factionHistoryAdd", 2];
 		};

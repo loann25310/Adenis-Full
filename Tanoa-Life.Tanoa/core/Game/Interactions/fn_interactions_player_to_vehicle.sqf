@@ -29,7 +29,7 @@ if (isNull _target) exitWith {};
 				((player getVariable ['stock_station_type', '']) != '') &&
 				!(isNull (missionNamespace getVariable ['refuel_pump', objNull])) &&
 				(['company_fuel'] call AlysiaClient_fnc_hasLicense) &&
-				{([(g_interaction_target getVariable ['Trunk', []]), getText(missionConfigFile >> 'ALYSIA_FUEL' >> (player getVariable ['stock_station_type', '']) >> 'item_refuel')] call AlysiaClient_fnc_itemTrunk) > 0} &&
+				{([(g_interaction_target getVariable ['Trunk', []]), getText(missionConfigFile >> 'ADENIS_FUEL' >> (player getVariable ['stock_station_type', '']) >> 'item_refuel')] call AlysiaClient_fnc_itemTrunk) > 0} &&
 				!(isNull g_company)
 			"
 		],[
@@ -67,7 +67,7 @@ if (isNull _target) exitWith {};
 					(g_interaction_target in g_vehicles) ||
 					(
 						(playerSide != civilian) &&
-						(str(playerSide) isEqualTo getText(missionConfigFile >> 'ALYSIA_VEHICLES' >> typeOf(g_interaction_target) >> 'side'))
+						(str(playerSide) isEqualTo getText(missionConfigFile >> 'ADENIS_VEHICLES' >> typeOf(g_interaction_target) >> 'side'))
 					)
 				)
 			"
@@ -81,7 +81,7 @@ if (isNull _target) exitWith {};
 					(g_interaction_target in g_vehicles) ||
 					(
 						(playerSide != civilian) &&
-						(str(playerSide) isEqualTo getText(missionConfigFile >> 'ALYSIA_VEHICLES' >> typeOf(g_interaction_target) >> 'side'))
+						(str(playerSide) isEqualTo getText(missionConfigFile >> 'ADENIS_VEHICLES' >> typeOf(g_interaction_target) >> 'side'))
 					)
 				)
 			"
@@ -179,7 +179,7 @@ if (isNull _target) exitWith {};
 			"Récolter",
 			"[g_interaction_target] spawn AlysiaClient_fnc_vehicleMenu_farm_gather;",
 			"
-				(getNumber(missionConfigFile >> 'ALYSIA_VEHICLES' >> typeOf(g_interaction_target) >> 'tractor') isEqualTo 1) &&
+				(getNumber(missionConfigFile >> 'ADENIS_VEHICLES' >> typeOf(g_interaction_target) >> 'tractor') isEqualTo 1) &&
 				((vehicle player) isEqualTo g_interaction_target) &&
 				((driver g_interaction_target) isEqualTo player)
 			"
@@ -188,7 +188,7 @@ if (isNull _target) exitWith {};
 			"Planter",
 			"[g_interaction_target] spawn AlysiaClient_fnc_vehicleMenu_farm_plant;",
 			"
-				(getNumber(missionConfigFile >> 'ALYSIA_VEHICLES' >> typeOf(g_interaction_target) >> 'tractor') isEqualTo 1) &&
+				(getNumber(missionConfigFile >> 'ADENIS_VEHICLES' >> typeOf(g_interaction_target) >> 'tractor') isEqualTo 1) &&
 				((vehicle player) isEqualTo g_interaction_target) &&
 				((driver g_interaction_target) isEqualTo player)
 			"
@@ -208,8 +208,8 @@ if (isNull _target) exitWith {};
 				((vehicle player) isKindOf 'Man') &&
 				(isNull (player getVariable ['wallet_obj', objNull])) &&
 				(([(g_interaction_target getVariable ['Trunk', []]), 'money_transfer'] call AlysiaClient_fnc_itemTrunk) > 0) &&
-				(isClass(missionConfigFile >> 'ALYSIA_VEHICLES' >> typeOf(g_interaction_target) >> 'company_money_transfer')) &&
-				{((player distance (g_interaction_target modelToWorld getArray(missionConfigFile >> 'ALYSIA_VEHICLES' >> typeOf(g_interaction_target) >> 'company_money_transfer' >> 'pos'))) <= 1)} &&
+				(isClass(missionConfigFile >> 'ADENIS_VEHICLES' >> typeOf(g_interaction_target) >> 'company_money_transfer')) &&
+				{((player distance (g_interaction_target modelToWorld getArray(missionConfigFile >> 'ADENIS_VEHICLES' >> typeOf(g_interaction_target) >> 'company_money_transfer' >> 'pos'))) <= 1)} &&
 				!(isNull g_company) &&
 				{(((g_company getVariable 'company_info') select 2) isEqualTo 'money_transfer')}
 			 "
@@ -220,8 +220,8 @@ if (isNull _target) exitWith {};
 			"
 				((vehicle player) isKindOf 'Man') &&
 				!(isNull (player getVariable ['wallet_obj', objNull])) &&
-				(isClass(missionConfigFile >> 'ALYSIA_VEHICLES' >> typeOf(g_interaction_target) >> 'company_money_transfer')) &&
-				{((player distance (g_interaction_target modelToWorld getArray(missionConfigFile >> 'ALYSIA_VEHICLES' >> typeOf(g_interaction_target) >> 'company_money_transfer' >> 'pos'))) <= 1)}
+				(isClass(missionConfigFile >> 'ADENIS_VEHICLES' >> typeOf(g_interaction_target) >> 'company_money_transfer')) &&
+				{((player distance (g_interaction_target modelToWorld getArray(missionConfigFile >> 'ADENIS_VEHICLES' >> typeOf(g_interaction_target) >> 'company_money_transfer' >> 'pos'))) <= 1)}
 			 "
 		],[
 			"money_bomb",
@@ -231,15 +231,15 @@ if (isNull _target) exitWith {};
 				((vehicle player) isKindOf 'Man') &&
 				((attachedObjects g_interaction_target) isEqualTo []) &&
 				('Bank_Bomb' in (magazines player)) &&
-				(isClass(missionConfigFile >> 'ALYSIA_VEHICLES' >> typeOf(g_interaction_target) >> 'c4_bomb')) &&
-				{((player distance (g_interaction_target modelToWorld getArray(missionConfigFile >> 'ALYSIA_VEHICLES' >> typeOf(g_interaction_target) >> 'c4_bomb' >> 'attachTo'))) <= 2.5)}
+				(isClass(missionConfigFile >> 'ADENIS_VEHICLES' >> typeOf(g_interaction_target) >> 'c4_bomb')) &&
+				{((player distance (g_interaction_target modelToWorld getArray(missionConfigFile >> 'ADENIS_VEHICLES' >> typeOf(g_interaction_target) >> 'c4_bomb' >> 'attachTo'))) <= 2.5)}
 			"
 		],[
 			"speaker",
 			"Haut-parleurs",
 			"[g_interaction_target] spawn AlysiaClient_fnc_vehicleMenu_speaker;",
 			"
-				(count(getArray(missionConfigFile >> 'ALYSIA_VEHICLES' >> typeOf(g_interaction_target) >> 'speaker')) > 0) &&
+				(count(getArray(missionConfigFile >> 'ADENIS_VEHICLES' >> typeOf(g_interaction_target) >> 'speaker')) > 0) &&
 				((vehicle player) isEqualTo g_interaction_target) &&
 				((driver g_interaction_target) isEqualTo player)
 			"

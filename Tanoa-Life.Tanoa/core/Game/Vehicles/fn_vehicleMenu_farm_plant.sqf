@@ -53,14 +53,14 @@ while {(_vehicle getVariable ["farm_plant", false])} do
 	{
 		if (
 				(_pos distance (getMarkerPos (configName _x)) <= getNumber(_x >> "area")) &&
-				(([(_vehicle getVariable ["Trunk", []]), getText(missionConfigFile >> "ALYSIA_FARMING_PLANT_OBJETCS" >> getText(_x >> "plant") >> "seed")] call AlysiaClient_fnc_itemTrunk) > 0)
+				(([(_vehicle getVariable ["Trunk", []]), getText(missionConfigFile >> "ADENIS_FARMING_PLANT_OBJETCS" >> getText(_x >> "plant") >> "seed")] call AlysiaClient_fnc_itemTrunk) > 0)
 			) exitWith
 		{
 			_plant = getText(_x >> "plant");
-			_seed = getText(missionConfigFile >> "ALYSIA_FARMING_PLANT_OBJETCS" >> getText(_x >> "plant") >> "seed");
-			_distance = getNumber(missionConfigFile >> "ALYSIA_FARMING_PLANT_OBJETCS" >> getText(_x >> "plant") >> "distance");
+			_seed = getText(missionConfigFile >> "ADENIS_FARMING_PLANT_OBJETCS" >> getText(_x >> "plant") >> "seed");
+			_distance = getNumber(missionConfigFile >> "ADENIS_FARMING_PLANT_OBJETCS" >> getText(_x >> "plant") >> "distance");
 		};
-	} forEach ("true" configClasses (missionConfigFile >> "ALYSIA_FARMING_PLANT_MARKERS"));
+	} forEach ("true" configClasses (missionConfigFile >> "ADENIS_FARMING_PLANT_MARKERS"));
 	if (((isNil "_plant") || (isNil "_seed")) && !isNull(g_company)) then
 	{
 		_info = g_company getVariable "company_info";
@@ -73,7 +73,7 @@ while {(_vehicle getVariable ["farm_plant", false])} do
 					_seed = getText(_x >> "seed");
 					_distance = getNumber(_x >> "distance");
 				};
-			} forEach ("getNumber(_x >> 'disableForMill') isEqualTo 0" configClasses (missionConfigFile >> "ALYSIA_FARMING_PLANT_OBJETCS"));
+			} forEach ("getNumber(_x >> 'disableForMill') isEqualTo 0" configClasses (missionConfigFile >> "ADENIS_FARMING_PLANT_OBJETCS"));
 		};
 	};
 

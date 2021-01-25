@@ -7,7 +7,7 @@ _item = [_this, 0, "", [""]] call BIS_fnc_param;
 
 if (_item isEqualTo "") exitWith {};
 
-_config = missionConfigFile >> "ALYSIA_ITEMS" >> _item >> "food";
+_config = missionConfigFile >> "ADENIS_ITEMS" >> _item >> "food";
 if (isClass(_config)) then
 {
 	_sound = getText(_config >> "sound");
@@ -22,10 +22,10 @@ if (isClass(_config)) then
 	[getNumber(_config >> "thirst")] call AlysiaClient_fnc_handleThirst;
 	[getNumber(_config >> "hunger")] call AlysiaClient_fnc_handleHunger;
 	[getNumber(_config >> "alcool")] call AlysiaClient_fnc_handleAlcool;
-	if (isClass(missionConfigFile >> "ALYSIA_MEDECINE" >> _item)) then {
+	if (isClass(missionConfigFile >> "ADENIS_MEDECINE" >> _item)) then {
 		[_item] spawn AlysiaClient_fnc_handleMedecine;
 	};
-	if (isClass(missionConfigFile >> "ALYSIA_DRUGS" >> _item)) then {
+	if (isClass(missionConfigFile >> "ADENIS_DRUGS" >> _item)) then {
 		[_item] spawn AlysiaClient_fnc_handleDrug;
 	};
 

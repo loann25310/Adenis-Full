@@ -14,7 +14,7 @@ if (!isNil {(g_interaction_target getVariable "house_sold")}) exitWith {
 	["Ce bâtiment a récemment été mis en vente et ne peut pas être achetée de suite"] call AlysiaClient_fnc_error;
 };
 
-_item = getText(missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "identity_item");
+_item = getText(missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "identity_item");
 if ((_item != "") && !(_item in (magazines player))) exitWith
 {
 	[format[
@@ -23,14 +23,14 @@ if ((_item != "") && !(_item in (magazines player))) exitWith
 	]] call AlysiaClient_fnc_error;
 };
 
-_maxHouse = getNumber(missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "housing" >> "max");
+_maxHouse = getNumber(missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "housing" >> "max");
 _actual = 0;
 {
 	if (((_x getVariable ["house_owner", ["", ""]]) select 0) isEqualTo (getPlayerUID player)) then {_actual = _actual + 1};
 } forEach g_houses;
 if (_actual >= _maxHouse) exitWith {[format["Vous possedez %1 bâtiments. Vous êtes autorisé à en avoir %2.", _actual, _maxHouse]] call AlysiaClient_fnc_error};
 
-_price = getNumber(missionConfigFile >> "ALYSIA_HOUSES" >> (typeOf g_interaction_target) >> "price");
+_price = getNumber(missionConfigFile >> "ADENIS_HOUSES" >> (typeOf g_interaction_target) >> "price");
 if (g_atm < _price) exitWith {};
 
 _action =

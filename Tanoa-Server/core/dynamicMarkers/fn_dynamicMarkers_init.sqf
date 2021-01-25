@@ -21,7 +21,7 @@ _missing = [];
 		_result = _result select 0;
 		_marker = [_name, [(_result select 0), (_result select 1), (_result select 2)]] call AlysiaServer_fnc_dynamicMarkers_create;
 	};
-} forEach ("true" configClasses (missionConfigFile >> "ALYSIA_DYN_MARKERS"));
+} forEach ("true" configClasses (missionConfigFile >> "ADENIS_DYN_MARKERS"));
 
 {
 	_pos = [_x] call AlysiaServer_fnc_dynamicMarkers_getPos;

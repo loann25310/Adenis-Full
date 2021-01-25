@@ -21,7 +21,7 @@ if (["Diagnostic médical", 15, _target] call AlysiaClient_fnc_showProgress) the
 	_temp = 36 + random(1);
 
 	{
-		_config = missionConfigFile >> "ALYSIA_DESEASES" >> (_x select 0);
+		_config = missionConfigFile >> "ADENIS_DESEASES" >> (_x select 0);
 		_sentences = getArray(_config >> "sentences");
 		if (count(_sentences) > 0) then {
 			_other = _other + format["- %1<br/>", (_sentences call BIS_fnc_selectRandom)];

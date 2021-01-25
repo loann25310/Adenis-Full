@@ -21,7 +21,7 @@ if (_sel isEqualTo -1) exitWith
 };
 
 _item = _list lbData _sel;
-_config = missionConfigFile >> "ALYSIA_ITEMS" >> _item;
+_config = missionConfigFile >> "ADENIS_ITEMS" >> _item;
 if ((_item isEqualTo "") || !(isClass(_config))) exitWith
 {
 	ctrlShow[2407, false];

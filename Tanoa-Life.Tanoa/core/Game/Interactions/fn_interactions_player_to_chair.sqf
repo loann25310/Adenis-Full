@@ -21,7 +21,7 @@
 			"take",
 			"Escorter",
 			"[g_interaction_target] call AlysiaClient_fnc_dynamicObject_escort;",
-			"(getNumber(missionConfigFile >> 'ALYSIA_DYN_OBJECTS' >> typeOf(g_interaction_target) >> 'escort') isEqualTo 1)"
+			"(getNumber(missionConfigFile >> 'ADENIS_DYN_OBJECTS' >> typeOf(g_interaction_target) >> 'escort') isEqualTo 1)"
 		]
 	],
 	"Chaise",

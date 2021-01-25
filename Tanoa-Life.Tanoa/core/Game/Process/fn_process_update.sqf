@@ -8,7 +8,7 @@ disableSerialization;
 _display = findDisplay 53000;
 if (isNull _display) exitWith {};
 
-_config = missionConfigFile >> "ALYSIA_PROCESS" >> g_interaction_process_type;
+_config = missionConfigFile >> "ADENIS_PROCESS" >> g_interaction_process_type;
 
 _maxAmount = round(parseNumber(ctrlText 53006));
 if (_maxAmount < 1) then

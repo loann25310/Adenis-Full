@@ -64,7 +64,7 @@ switch (_action) do
 		_btnR4 ctrlShow true;
 		_txtR4 ctrlShow true;
 
-		_config_atm = missionConfigFile >> "ALYSIA_ATM" >> typeOf(g_interaction_target);
+		_config_atm = missionConfigFile >> "ADENIS_ATM" >> typeOf(g_interaction_target);
 		if (getNumber(_config_atm >> "company") isEqualTo 1) then
 		{
 			if (!(isNull g_company)) then
@@ -85,7 +85,7 @@ switch (_action) do
 
 		if (getNumber(_config_atm >> "money_faction") isEqualTo 1) then
 		{
-			_config_bank_faction = missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "bank_faction";
+			_config_bank_faction = missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "bank_faction";
 			if (isClass(_config_bank_faction)) then
 			{
 				if ((player getVariable ["rank", 0]) >= getNumber(_config_bank_faction >> "rank")) then
@@ -102,7 +102,7 @@ switch (_action) do
 		{
 			if ((["illegal_money"] call AlysiaClient_fnc_itemCount) > 0) then
 			{
-				_config_launder = missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "launder_transfer";
+				_config_launder = missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "launder_transfer";
 				if (isClass(_config_launder)) then
 				{
 					if ((player getVariable ["rank", 0]) >= getNumber(_config_launder >> "rank")) then
@@ -139,11 +139,11 @@ switch (_action) do
 		_btnR4 ctrlShow true;
 		_txtR4 ctrlShow true;
 
-		if (g_atm >= getNumber(missionConfigFile >> "ALYSIA_ATM" >> typeOf(g_interaction_target) >> "withdraw_max")) then {
-			_value = getNumber(missionConfigFile >> "ALYSIA_ATM" >> typeOf(g_interaction_target) >> "withdraw_max");
+		if (g_atm >= getNumber(missionConfigFile >> "ADENIS_ATM" >> typeOf(g_interaction_target) >> "withdraw_max")) then {
+			_value = getNumber(missionConfigFile >> "ADENIS_ATM" >> typeOf(g_interaction_target) >> "withdraw_max");
 		} else {
-			if (g_atm <= getNumber(missionConfigFile >> "ALYSIA_ATM" >> typeOf(g_interaction_target) >> "withdraw_min")) then {
-				_value = getNumber(missionConfigFile >> "ALYSIA_ATM" >> typeOf(g_interaction_target) >> "withdraw_min");
+			if (g_atm <= getNumber(missionConfigFile >> "ADENIS_ATM" >> typeOf(g_interaction_target) >> "withdraw_min")) then {
+				_value = getNumber(missionConfigFile >> "ADENIS_ATM" >> typeOf(g_interaction_target) >> "withdraw_min");
 			} else {
 				_value = g_atm;
 			};
@@ -174,11 +174,11 @@ switch (_action) do
 		_btnR4 ctrlShow true;
 		_txtR4 ctrlShow true;
 
-		if (g_cash >= getNumber(missionConfigFile >> "ALYSIA_ATM" >> typeOf(g_interaction_target) >> "deposit_max")) then {
-			_value = getNumber(missionConfigFile >> "ALYSIA_ATM" >> typeOf(g_interaction_target) >> "deposit_max");
+		if (g_cash >= getNumber(missionConfigFile >> "ADENIS_ATM" >> typeOf(g_interaction_target) >> "deposit_max")) then {
+			_value = getNumber(missionConfigFile >> "ADENIS_ATM" >> typeOf(g_interaction_target) >> "deposit_max");
 		} else {
-			if (g_cash <= getNumber(missionConfigFile >> "ALYSIA_ATM" >> typeOf(g_interaction_target) >> "deposit_min")) then {
-				_value = getNumber(missionConfigFile >> "ALYSIA_ATM" >> typeOf(g_interaction_target) >> "deposit_min");
+			if (g_cash <= getNumber(missionConfigFile >> "ADENIS_ATM" >> typeOf(g_interaction_target) >> "deposit_min")) then {
+				_value = getNumber(missionConfigFile >> "ADENIS_ATM" >> typeOf(g_interaction_target) >> "deposit_min");
 			} else {
 				_value = g_cash;
 			};
@@ -239,11 +239,11 @@ switch (_action) do
 		_btnR4 ctrlShow true;
 		_txtR4 ctrlShow true;
 
-		if (([playerSide] call AlysiaClient_fnc_atmFactionGet) >= getNumber(missionConfigFile >> "ALYSIA_ATM" >> typeOf(g_interaction_target) >> "withdraw_max")) then {
-			_value = getNumber(missionConfigFile >> "ALYSIA_ATM" >> typeOf(g_interaction_target) >> "withdraw_max");
+		if (([playerSide] call AlysiaClient_fnc_atmFactionGet) >= getNumber(missionConfigFile >> "ADENIS_ATM" >> typeOf(g_interaction_target) >> "withdraw_max")) then {
+			_value = getNumber(missionConfigFile >> "ADENIS_ATM" >> typeOf(g_interaction_target) >> "withdraw_max");
 		} else {
-			if (([playerSide] call AlysiaClient_fnc_atmFactionGet) <= getNumber(missionConfigFile >> "ALYSIA_ATM" >> typeOf(g_interaction_target) >> "withdraw_min")) then {
-				_value = getNumber(missionConfigFile >> "ALYSIA_ATM" >> typeOf(g_interaction_target) >> "withdraw_min");
+			if (([playerSide] call AlysiaClient_fnc_atmFactionGet) <= getNumber(missionConfigFile >> "ADENIS_ATM" >> typeOf(g_interaction_target) >> "withdraw_min")) then {
+				_value = getNumber(missionConfigFile >> "ADENIS_ATM" >> typeOf(g_interaction_target) >> "withdraw_min");
 			} else {
 				_value = ([playerSide] call AlysiaClient_fnc_atmFactionGet);
 			};
@@ -273,11 +273,11 @@ switch (_action) do
 		_btnR4 ctrlShow true;
 		_txtR4 ctrlShow true;
 
-		if (g_cash >= getNumber(missionConfigFile >> "ALYSIA_ATM" >> typeOf(g_interaction_target) >> "deposit_max")) then {
-			_value = getNumber(missionConfigFile >> "ALYSIA_ATM" >> typeOf(g_interaction_target) >> "deposit_max");
+		if (g_cash >= getNumber(missionConfigFile >> "ADENIS_ATM" >> typeOf(g_interaction_target) >> "deposit_max")) then {
+			_value = getNumber(missionConfigFile >> "ADENIS_ATM" >> typeOf(g_interaction_target) >> "deposit_max");
 		} else {
-			if (g_cash <= getNumber(missionConfigFile >> "ALYSIA_ATM" >> typeOf(g_interaction_target) >> "deposit_min")) then {
-				_value = getNumber(missionConfigFile >> "ALYSIA_ATM" >> typeOf(g_interaction_target) >> "deposit_min");
+			if (g_cash <= getNumber(missionConfigFile >> "ADENIS_ATM" >> typeOf(g_interaction_target) >> "deposit_min")) then {
+				_value = getNumber(missionConfigFile >> "ADENIS_ATM" >> typeOf(g_interaction_target) >> "deposit_min");
 			} else {
 				_value = g_cash;
 			};
@@ -338,11 +338,11 @@ switch (_action) do
 		_btnR4 ctrlShow true;
 		_txtR4 ctrlShow true;
 
-		if ((g_company getVariable ["company_bank", 0]) >= getNumber(missionConfigFile >> "ALYSIA_ATM" >> typeOf(g_interaction_target) >> "withdraw_max")) then {
-			_value = getNumber(missionConfigFile >> "ALYSIA_ATM" >> typeOf(g_interaction_target) >> "withdraw_max");
+		if ((g_company getVariable ["company_bank", 0]) >= getNumber(missionConfigFile >> "ADENIS_ATM" >> typeOf(g_interaction_target) >> "withdraw_max")) then {
+			_value = getNumber(missionConfigFile >> "ADENIS_ATM" >> typeOf(g_interaction_target) >> "withdraw_max");
 		} else {
-			if ((g_company getVariable ["company_bank", 0]) <= getNumber(missionConfigFile >> "ALYSIA_ATM" >> typeOf(g_interaction_target) >> "withdraw_min")) then {
-				_value = getNumber(missionConfigFile >> "ALYSIA_ATM" >> typeOf(g_interaction_target) >> "withdraw_min");
+			if ((g_company getVariable ["company_bank", 0]) <= getNumber(missionConfigFile >> "ADENIS_ATM" >> typeOf(g_interaction_target) >> "withdraw_min")) then {
+				_value = getNumber(missionConfigFile >> "ADENIS_ATM" >> typeOf(g_interaction_target) >> "withdraw_min");
 			} else {
 				_value = (g_company getVariable ["company_bank", 0]);
 			};
@@ -372,11 +372,11 @@ switch (_action) do
 		_btnR4 ctrlShow true;
 		_txtR4 ctrlShow true;
 
-		if (g_cash >= getNumber(missionConfigFile >> "ALYSIA_ATM" >> typeOf(g_interaction_target) >> "deposit_max")) then {
-			_value = getNumber(missionConfigFile >> "ALYSIA_ATM" >> typeOf(g_interaction_target) >> "deposit_max");
+		if (g_cash >= getNumber(missionConfigFile >> "ADENIS_ATM" >> typeOf(g_interaction_target) >> "deposit_max")) then {
+			_value = getNumber(missionConfigFile >> "ADENIS_ATM" >> typeOf(g_interaction_target) >> "deposit_max");
 		} else {
-			if (g_cash <= getNumber(missionConfigFile >> "ALYSIA_ATM" >> typeOf(g_interaction_target) >> "deposit_min")) then {
-				_value = getNumber(missionConfigFile >> "ALYSIA_ATM" >> typeOf(g_interaction_target) >> "deposit_min");
+			if (g_cash <= getNumber(missionConfigFile >> "ADENIS_ATM" >> typeOf(g_interaction_target) >> "deposit_min")) then {
+				_value = getNumber(missionConfigFile >> "ADENIS_ATM" >> typeOf(g_interaction_target) >> "deposit_min");
 			} else {
 				_value = g_cash;
 			};

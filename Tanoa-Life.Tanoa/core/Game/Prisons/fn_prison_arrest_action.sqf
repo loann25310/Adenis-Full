@@ -14,7 +14,7 @@ if (isNull g_interaction_prison) exitWith {
 	["Prison invalide."] call AlysiaClient_fnc_error;
 };
 
-_config = missionConfigFile >> "ALYSIA_PRISONS" >> typeOf(g_interaction_prison);
+_config = missionConfigFile >> "ADENIS_PRISONS" >> typeOf(g_interaction_prison);
 
 _timeMin = getNumber(_config >> "time" >> "min");
 _timeMax = getNumber(_config >> "time" >> "max");

@@ -52,12 +52,12 @@ if ((lbSize _ctrl_licenses) isEqualTo 0) then
 	(_indentityInfo select 2) select 0,
 	(_indentityInfo select 2) select 1,
 	(_indentityInfo select 2) select 2,
-	getText(missionConfigFile >> "ALYSIA_NATIONALITIES" >> (_indentityInfo select 3) >> "name"),
+	getText(missionConfigFile >> "ADENIS_NATIONALITIES" >> (_indentityInfo select 3) >> "name"),
 	[side _from] call AlysiaClient_fnc_sideToStr,
 	[side _from, (_from getVariable ["rank", 0])] call AlysiaClient_fnc_rankToStr
 ];
 
-_config = missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "licenses_seize";
+_config = missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "licenses_seize";
 if (!(isClass(_config)) || ((player getVariable ["rank", 0]) < getNumber(_config >> "rank"))) then
 {
 	ctrlShow[58004, false];

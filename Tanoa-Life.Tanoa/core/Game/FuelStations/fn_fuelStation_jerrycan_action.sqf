@@ -14,7 +14,7 @@ if (_type isEqualTo "") exitWith {["Impossible de trouver l'essence que vous ave
 
 closeDialog 0;
 
-if (player distance _station > getNumber(missionConfigFile >> "ALYSIA_FUEL_STATION" >> typeOf(_station) >> "max_distance_allowed")) exitWith {
+if (player distance _station > getNumber(missionConfigFile >> "ADENIS_FUEL_STATION" >> typeOf(_station) >> "max_distance_allowed")) exitWith {
 	["Vous êtes trop loin de la station."] call AlysiaClient_fnc_error;
 };
 
@@ -27,7 +27,7 @@ if (_currentLiters < 20) exitWith
 		format
 		[
 			"Cette station ne possède pas assez de <t color='#3ADF00'>%1</t> pour remplir un jerrycan.<br/>Il faut au minimum 20 litres et il en reste <t color='#FF8000'>%2</t>.",
-			getText(missionConfigFile >> "ALYSIA_FUEL" >> _type >> "name"),
+			getText(missionConfigFile >> "ADENIS_FUEL" >> _type >> "name"),
 			_currentLiters
 		]
 	] call AlysiaClient_fnc_error;
@@ -42,7 +42,7 @@ disableSerialization;
 _display = findDisplay 17000;
 if (isNull _display) exitWith {};
 
-(_display displayCtrl 17006) ctrlSetStructuredText parseText getText(missionConfigFile >> "ALYSIA_FUEL" >> _type >> "name");
+(_display displayCtrl 17006) ctrlSetStructuredText parseText getText(missionConfigFile >> "ADENIS_FUEL" >> _type >> "name");
 
 _bill = 0;
 _liters = 0;
@@ -99,7 +99,7 @@ if (_fill) then
 {
 	if (["Alysia_jerrycan_empty", false] call AlysiaClient_fnc_handleItem) then
 	{
-		[getText(missionConfigFile >> "ALYSIA_FUEL" >> _type >> "item_jerrycan"), true] call AlysiaClient_fnc_handleItem;
+		[getText(missionConfigFile >> "ADENIS_FUEL" >> _type >> "item_jerrycan"), true] call AlysiaClient_fnc_handleItem;
 		_station setVariable [_type, (_currentLiters - _liters), true];
 		[false, _bill, "Station Essence"] call AlysiaClient_fnc_handleATM;
 		[format["<t color='#8cff9b'>%1</t>$ ont été prélevés de votre compte en banque.", ([_bill] call AlysiaClient_fnc_numberText)], "buy"] call AlysiaClient_fnc_info;

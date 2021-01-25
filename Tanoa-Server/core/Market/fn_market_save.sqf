@@ -16,6 +16,6 @@ diag_log "[BOURSE] Saving";
 			_ressource
 		], 1
 	] call ExtDB3_fnc_async;
-} foreach ("isClass(_x >> 'market')" configClasses (missionConfigFile >> "ALYSIA_ITEMS"));
+} foreach ("isClass(_x >> 'market')" configClasses (missionConfigFile >> "ADENIS_ITEMS"));
 
 diag_log "[BOURSE] Saved";

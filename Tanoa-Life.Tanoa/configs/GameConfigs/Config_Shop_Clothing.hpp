@@ -1,4 +1,4 @@
-class ALYSIA_SHOPS_CLOTHING
+class ADENIS_SHOPS_CLOTHING
 {
 	class civ_clothing
 	{

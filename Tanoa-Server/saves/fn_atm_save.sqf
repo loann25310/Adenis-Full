@@ -10,7 +10,7 @@ diag_log "[ATM] Saving ...";
 uiSleep 1;
 
 {
-	_config = missionConfigFile >> "ALYSIA_ATM" >> typeOf(_x);
+	_config = missionConfigFile >> "ADENIS_ATM" >> typeOf(_x);
 	if (isClass(_config)) then
 	{
 		if (getNumber(_config >> "save") isEqualTo 1) then

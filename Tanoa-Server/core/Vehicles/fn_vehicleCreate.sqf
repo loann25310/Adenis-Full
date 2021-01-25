@@ -10,7 +10,7 @@ _className = [_this, 2, "", [""]] call BIS_fnc_param;
 if ((isNull _player) || (_className isEqualTo "")) exitWith {};
 
 _plate = round(random(999999));
-_insurance = getNumber(missionConfigFile >> "ALYSIA_VEHICLES" >> _className >> "insurance");
+_insurance = getNumber(missionConfigFile >> "ADENIS_VEHICLES" >> _className >> "insurance");
 
 if (isNull _vehicle) then
 {

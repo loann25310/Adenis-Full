@@ -14,23 +14,23 @@
 	5  : transportSoldier (CfgVehicles)
 	6  : enginePower (CfgVehicles)
 	7  : fuelCapacity (CfgVehicles)
-	8  : realname (ALYSIA_VEHICLES)
-	9  : buy price (ALYSIA_VEHICLES)
-	10 : virtual inventory (ALYSIA_VEHICLES)
-	11 : side (ALYSIA_VEHICLES)
-	12 : insurance (ALYSIA_VEHICLES)
-	13 : licenses (ALYSIA_VEHICLES)
-	14 : fuel type (ALYSIA_VEHICLES)
-	15 : rank (ALYSIA_VEHICLES)
-	16 : colors (ALYSIA_VEHICLES)
-	17 : garage price (ALYSIA_VEHICLES_INFO)
-	18 : assurance price (ALYSIA_VEHICLES_INFO)
-	19 : sell price (ALYSIA_VEHICLES_INFO)
-	20 : import price (ALYSIA_VEHICLES_INFO)
-	21 : steal price (ALYSIA_VEHICLES_INFO)
-	22 : disableOwnerInfos (ALYSIA_VEHICLES)
-	23 : disableLockpick (ALYSIA_VEHICLES)
-	24 : impound price (ALYSIA_VEHICLES_INFO)
+	8  : realname (ADENIS_VEHICLES)
+	9  : buy price (ADENIS_VEHICLES)
+	10 : virtual inventory (ADENIS_VEHICLES)
+	11 : side (ADENIS_VEHICLES)
+	12 : insurance (ADENIS_VEHICLES)
+	13 : licenses (ADENIS_VEHICLES)
+	14 : fuel type (ADENIS_VEHICLES)
+	15 : rank (ADENIS_VEHICLES)
+	16 : colors (ADENIS_VEHICLES)
+	17 : garage price (ADENIS_VEHICLES_INFO)
+	18 : assurance price (ADENIS_VEHICLES_INFO)
+	19 : sell price (ADENIS_VEHICLES_INFO)
+	20 : import price (ADENIS_VEHICLES_INFO)
+	21 : steal price (ADENIS_VEHICLES_INFO)
+	22 : disableOwnerInfos (ADENIS_VEHICLES)
+	23 : disableLockpick (ADENIS_VEHICLES)
+	24 : impound price (ADENIS_VEHICLES_INFO)
 */
 private["_class", "_configFile", "_missionConfigFile_Vehicles", "_missionConfigFile_VehiclesInfo"];
 _class = [_this, 0, "", [""]] call BIS_fnc_param;
@@ -45,12 +45,12 @@ if (!isClass(_configFile)) exitWith
 	[]
 };
 
-_missionConfigFile_Vehicles = missionConfigFile >> "ALYSIA_VEHICLES" >> _class;
-_missionConfigFile_VehiclesInfo = missionConfigFile >> "ALYSIA_VEHICLES_INFO";
+_missionConfigFile_Vehicles = missionConfigFile >> "ADENIS_VEHICLES" >> _class;
+_missionConfigFile_VehiclesInfo = missionConfigFile >> "ADENIS_VEHICLES_INFO";
 if (!isClass(_missionConfigFile_Vehicles)) exitWith
 {
-	diag_log format["ERROR: Vehicle [%1] not defined in ALYSIA_VEHICLES", _class];
-	systemChat format["ERROR: Vehicle [%1] not defined in ALYSIA_VEHICLES", _class];
+	diag_log format["ERROR: Vehicle [%1] not defined in ADENIS_VEHICLES", _class];
+	systemChat format["ERROR: Vehicle [%1] not defined in ADENIS_VEHICLES", _class];
 	[]
 };
 

@@ -36,12 +36,12 @@ g_shop_lock_str = "";
 	_index = _list lbAdd format["- %1x %2", [_amount] call AlysiaClient_fnc_numberText, [_item] call AlysiaClient_fnc_itemGetName];
 	_list lbSetData [_index, "SELL"];
 	_list lbSetValue [_index, _forEachIndex];
-	if (getNumber(missionConfigFile >> "ALYSIA_ITEMS" >> _item >> "illegal") isEqualTo 1) then {
+	if (getNumber(missionConfigFile >> "ADENIS_ITEMS" >> _item >> "illegal") isEqualTo 1) then {
 		g_shop_receive_illegal = g_shop_receive_illegal + (([_item] call AlysiaClient_fnc_itemGetSellPrice) * _amount);
 	} else {
 		g_shop_receive_dollar = g_shop_receive_dollar + (([_item] call AlysiaClient_fnc_itemGetSellPrice) * _amount);
 	};
-	if (getNumber(missionConfigFile >> "ALYSIA_ITEMS" >> _item >> "lockShop") isEqualTo 1) then
+	if (getNumber(missionConfigFile >> "ADENIS_ITEMS" >> _item >> "lockShop") isEqualTo 1) then
 	{
 		g_shop_lock_bool = true;
 		g_shop_lock_str = g_shop_lock_str + format["%1<br/>", [_item] call AlysiaClient_fnc_itemGetName];

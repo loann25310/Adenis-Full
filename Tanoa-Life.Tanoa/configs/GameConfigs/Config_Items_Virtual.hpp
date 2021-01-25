@@ -1,4 +1,4 @@
-class ALYSIA_ITEMS
+class ADENIS_ITEMS
 {
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //                                                     EXEMPLE
@@ -1247,8 +1247,8 @@ class ALYSIA_ITEMS
         class remove {};
         class market
         {
-            max=2000;
-            min=1000;
+            max=4000;
+            min=2000;
         };
     };
     
@@ -1487,7 +1487,7 @@ class ALYSIA_ITEMS
     };
     class kerosene: sp98
     {
-        name="Kéroséne";
+        name="Kérosène";
         image="Alysia_Client\Textures\Items_virtual\kerosene.paa";
         class remove {};
     };
@@ -1754,6 +1754,19 @@ class ALYSIA_ITEMS
         class remove {};
     };
     
+    class tabchoco
+    {
+        name="Tablette de Chocolat";
+        weight=1;
+        image="Alysia_Client\Textures\Items_virtual\chocolate_bar.paa";
+        class market
+        {
+            max=1900;
+            min=2900;
+        };
+        class remove {};
+    };
+
     class coffee_seed
     {
         name="Graine (Café)";
@@ -1784,7 +1797,7 @@ class ALYSIA_ITEMS
         class market
         {
             max=6925;
-            min=3259;
+            min=4000;
         };
         class remove {};
     };
@@ -1816,7 +1829,7 @@ class ALYSIA_ITEMS
         };
         class market
         {
-            max=1600;
+            max=1850;
             min=800;
         };
         class remove {};
@@ -2746,6 +2759,7 @@ class ALYSIA_ITEMS
         name="Paquet de frite";
         weight=1;
         image="Adenis_Textures\paquet_frites.paa";
+        buy_license_CIV="company_cook";
         price_buy=100;
         class remove {};
         class food
@@ -2760,13 +2774,9 @@ class ALYSIA_ITEMS
         name="Caviar";
         weight=1;
         image="Adenis_Textures\Caviar.paa";
+        buy_license_CIV="company_cook";
         price_buy=100;
         class remove {};
-        class market
-        {
-            max=3157;
-            min=2076;
-        };
         class food
         {
             hunger=20;
@@ -2809,6 +2819,7 @@ class ALYSIA_ITEMS
         name="Hamburger";
         weight=1;
         image="Adenis_Textures\Hamburger.paa";
+        buy_license_CIV="company_cook";
         price_buy=100;
         class remove {};
         class food

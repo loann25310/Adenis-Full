@@ -24,6 +24,7 @@
 #include "GameConfigs\Config_Nationalities.hpp"
 #include "GameConfigs\Config_Chairs.hpp"
 #include "GameConfigs\Config_Staff.hpp"
+#include "GameConfigs\Config_Whitelist.hpp"
 #include "GameConfigs\Config_ATM.hpp"
 #include "GameConfigs\Config_Medical.hpp"
 #include "GameConfigs\Config_Dynamic_Objects.hpp"

@@ -25,7 +25,7 @@ g_cash = 0;
 
 [] call AlysiaClient_fnc_stripDownPlayer;
 
-_config_prison = missionConfigFile >> "ALYSIA_PRISONS" >> typeof(_prison);
+_config_prison = missionConfigFile >> "ADENIS_PRISONS" >> typeof(_prison);
 _config_cell = _config_prison >> "cells" >> g_arrest_Cellule;
 
 player setPosATL (g_arrest_Prison modelToWorld getArray(_config_cell >> "pos"));

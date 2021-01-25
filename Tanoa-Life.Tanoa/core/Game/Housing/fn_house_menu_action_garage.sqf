@@ -12,7 +12,7 @@ if (g_action_inUse) exitWith {
 	["Vous êtes déjà en train d'effectuer une action."] call AlysiaClient_fnc_error;
 };
 
-_config = missionConfigFile >> "ALYSIA_HOUSES" >> typeOf(_target);
+_config = missionConfigFile >> "ADENIS_HOUSES" >> typeOf(_target);
 if (!isClass(_config)) exitWith {
 	["Impossible de trouver la config bâtiment de la cible."] call AlysiaClient_fnc_error;
 };

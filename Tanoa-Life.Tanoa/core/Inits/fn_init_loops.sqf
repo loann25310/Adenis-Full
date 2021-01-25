@@ -66,7 +66,7 @@
 				waitUntil {scriptDone _handle};
 				[_unit_1, _veh] remoteExecCall ["moveInCargo", _unit_1];
 			} else {
-				_config = missionConfigFile >> "ALYSIA_DYN_OBJECTS" >> typeOf(_unit_1);
+				_config = missionConfigFile >> "ADENIS_DYN_OBJECTS" >> typeOf(_unit_1);
 				if (isClass(_config)) then
 				{
 					{
@@ -87,16 +87,16 @@
 			};
 		} forEach (attachedObjects player);
 
-		_fuel_base = getText(missionConfigFile >> "ALYSIA_VEHICLES" >> typeOf(_veh) >> "fuel");
+		_fuel_base = getText(missionConfigFile >> "ADENIS_VEHICLES" >> typeOf(_veh) >> "fuel");
 		while {((vehicle player) isEqualTo _veh)} do
 		{
 			if (((driver _veh) isEqualTo player) && (isEngineOn _veh)) then
 			{
 				_fuel_current = _veh getVariable ["refuel_type", ""];
 				if (_fuel_current isEqualTo "") then {
-					_conso = getNumber(missionConfigFile >> "ALYSIA_FUEL" >> _fuel_base >> "conso");
+					_conso = getNumber(missionConfigFile >> "ADENIS_FUEL" >> _fuel_base >> "conso");
 				} else {
-					_conso = getNumber(missionConfigFile >> "ALYSIA_FUEL" >> _fuel_current >> "conso");
+					_conso = getNumber(missionConfigFile >> "ADENIS_FUEL" >> _fuel_current >> "conso");
 					if ((_fuel_base != _fuel_current) && (_fuel_current != "bio")) then
 					{
 						if (!(_fuel_base in ["SP95", "SP98"]) || ((_fuel_base in ["SP95", "SP98"]) && !(_fuel_current in ["SP95", "SP98"]))) then {
@@ -108,7 +108,7 @@
 				_veh setFuel ((fuel _veh) - (((abs(speed _veh) + 10) / 200000) * _conso));
 			};
 
-			if ((cameraView isEqualTo "EXTERNAL") && (getNumber(missionConfigFile >> "ALYSIA_VEHICLES" >> typeOf(_veh) >> "forceFirstPersonView") isEqualTo 1)) then
+			if ((cameraView isEqualTo "EXTERNAL") && (getNumber(missionConfigFile >> "ADENIS_VEHICLES" >> typeOf(_veh) >> "forceFirstPersonView") isEqualTo 1)) then
 			{
 				player switchCamera "Internal";
 			};
@@ -158,7 +158,7 @@
 	};
 
 	g_totalSession = 0;
-	_salary_time = getNumber(missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "salary" >> "timer");
+	_salary_time = getNumber(missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "salary" >> "timer");
 	while {true} do
 	{
 		uiSleep 60;
@@ -173,7 +173,7 @@
 	       	g_nextPay = time + (_salary_time * 60);
 		};
 
-		if (("(getText(_x >> 'uid') isEqualTo (getPlayerUID player)) && (getNumber(_x >> 'teamspeak') isEqualTo 1)" configClasses (missionConfigFile >> "ALYSIA_STAFF" >> "members")) isEqualTo []) then
+		if (("(getText(_x >> 'uid') isEqualTo (getPlayerUID player)) && (getNumber(_x >> 'teamspeak') isEqualTo 1)" configClasses (missionConfigFile >> "ADENIS_STAFF" >> "members")) isEqualTo []) then
 		{
 			if ((["AdenisRP x Your-dev.fr", (call TFAR_fnc_getTeamSpeakServerName)] call BIS_fnc_inString) && (call TFAR_fnc_isTeamSpeakPluginEnabled)) then
 			{
@@ -187,7 +187,7 @@
 
 		if (rain > 0) then
 		{
-			if (((vehicle player) isEqualTo player) && (g_alcool isEqualTo 0) && (((uniform player) isEqualTo "")) && (getNumber(missionConfigFile >> "ALYSIA_ITEMS_ARMA" >> (currentWeapon player) >> "protect_rain") isEqualTo 0)) then
+			if (((vehicle player) isEqualTo player) && (g_alcool isEqualTo 0) && (((uniform player) isEqualTo "")) && (getNumber(missionConfigFile >> "ADENIS_ITEMS_ARMA" >> (currentWeapon player) >> "protect_rain") isEqualTo 0)) then
 			{
 				if (random(200) < (1 + (rain * 10))) then
 				{

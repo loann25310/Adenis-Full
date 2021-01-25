@@ -12,7 +12,7 @@ if ((_uid isEqualTo "") || (isNull _object) || (_type isEqualTo "")) exitWith {}
 uiSleep 3;
 
 _plate = round(random(999999));
-_require = getArray(missionConfigFile >> "ALYSIA_LABORATORIES" >> _type >> "construction" >> "require");
+_require = getArray(missionConfigFile >> "ADENIS_LABORATORIES" >> _type >> "construction" >> "require");
 _pos = getPosATL _object;
 
 [

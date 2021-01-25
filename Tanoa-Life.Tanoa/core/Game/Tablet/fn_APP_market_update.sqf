@@ -16,7 +16,7 @@ if (isNull _display) exitWith {};
 _ressource = _list lbData _sel;
 if (_ressource isEqualTo "") exitWith {};
 
-_config = missionConfigFile >> "ALYSIA_ITEMS" >> _ressource;
+_config = missionConfigFile >> "ADENIS_ITEMS" >> _ressource;
 
 _price = [_ressource] call AlysiaClient_fnc_market_getPrice;
 _sync = missionNamespace getVariable [format["market_sync_%1", _ressource], _price];

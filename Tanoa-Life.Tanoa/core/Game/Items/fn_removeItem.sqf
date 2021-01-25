@@ -18,7 +18,7 @@ if (g_action_inUse) exitWith {
 	["Vous êtes déjà en train d'effectuer une action."] call AlysiaClient_fnc_error;
 };
 
-_config = missionConfigFile >> "ALYSIA_ITEMS" >> _item >> "remove";
+_config = missionConfigFile >> "ADENIS_ITEMS" >> _item >> "remove";
 if (!isClass(_config)) exitWith {
 	["Impossible de supprimer cet objet."] call AlysiaClient_fnc_error;
 };

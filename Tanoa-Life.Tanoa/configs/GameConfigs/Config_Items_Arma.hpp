@@ -1,4 +1,4 @@
-class ALYSIA_ITEMS_ARMA
+class ADENIS_ITEMS_ARMA
 {
 	/*==================
 	**      HOW TO
@@ -801,7 +801,6 @@ class ALYSIA_ITEMS_ARMA
 	class Alysia_PistolHolder_Civ
 	{
 		buy_price=1275;
-		buy_license_CIV[]={"gun","politique_pnt_member"};
 	};
 	class Alysia_PistolHolder_Suitcase_Civ: Alysia_PistolHolder_Civ
 	{

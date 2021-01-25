@@ -29,7 +29,7 @@ lbClear _ctrl_actions;
 		_index = _ctrl_actions lbAdd getText(_x >> "name");
 		_ctrl_actions lbSetData [_index, getText(_x >> "statement")];
 	};
-} forEach ("(getPlayerUID player) in getArray(_x >> 'allow')" configClasses (missionConfigFile >> "ALYSIA_STAFF" >> "commands" >> "target"));
+} forEach ("(getPlayerUID player) in getArray(_x >> 'allow')" configClasses (missionConfigFile >> "ADENIS_STAFF" >> "commands" >> "target"));
 if ((lbSize _ctrl_actions) isEqualTo 0) then
 {
 	_ctrl_actions lbAdd "Aucune";

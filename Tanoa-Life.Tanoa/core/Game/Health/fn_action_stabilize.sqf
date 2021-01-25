@@ -15,7 +15,7 @@ if (g_action_inUse) exitWith {
 if ((_type isEqualTo "defib") && !("SkylineItems_Defibrilateur" in (magazines player))) exitWith {
 	["Vous n'avez pas de défibrilateur."] call AlysiaClient_fnc_error;
 };
-if ((_type isEqualTo "defib") && (getNumber(missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "can_use_debrif") isEqualTo 0)) exitWith {
+if ((_type isEqualTo "defib") && (getNumber(missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "can_use_debrif") isEqualTo 0)) exitWith {
 	["Vous n'êtes pas abilité à manier ce type de défibrilateur."] call AlysiaClient_fnc_error;
 };
 if (_unit getVariable ["bullet_check", false]) exitWith {
@@ -27,8 +27,8 @@ if (_unit getVariable ["bullet_operation_inUse", false]) exitWith {
 
 _chance = switch (_type) do
 {
-	case "main": {getNumber(missionConfigFile >> "ALYSIA_MEDICAL" >> "stabilize" >> "hand_succeed_percentage")};
-	case "defib": {getNumber(missionConfigFile >> "ALYSIA_MEDICAL" >> "stabilize" >> "debif_succeed_percentage")};
+	case "main": {getNumber(missionConfigFile >> "ADENIS_MEDICAL" >> "stabilize" >> "hand_succeed_percentage")};
+	case "defib": {getNumber(missionConfigFile >> "ADENIS_MEDICAL" >> "stabilize" >> "debif_succeed_percentage")};
 };
 if (isNil "_chance") exitWith {
 	["Impossible de déterminer vos chances de réaminer"] call AlysiaClient_fnc_error;

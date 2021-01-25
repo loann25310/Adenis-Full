@@ -8,7 +8,7 @@ disableSerialization;
 _display = findDisplay 2400;
 if (isNull _display) exitWith {};
 
-_config = missionConfigFile >> "ALYSIA_SHOPS_VIRTUAL" >> g_shop_type;
+_config = missionConfigFile >> "ADENIS_SHOPS_VIRTUAL" >> g_shop_type;
 if (!isClass(_config)) exitWith {};
 
 _list = _display displayCtrl 2405;

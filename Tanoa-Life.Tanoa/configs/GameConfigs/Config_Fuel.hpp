@@ -1,4 +1,4 @@
-class ALYSIA_FUEL_STATION
+class ADENIS_FUEL_STATION
 {
 	class Land_FuelStation_01_pump_F
 	{
@@ -78,7 +78,7 @@ class ALYSIA_FUEL_STATION
 	};
 };
 
-class ALYSIA_FUEL
+class ADENIS_FUEL
 {
 	class Diesel
 	{
@@ -112,7 +112,7 @@ class ALYSIA_FUEL
 	};
 	class Kerosene
 	{
-		name="Kerosene";
+		name="Kérosène";
 		picture="Alysia_Client_Texture\Data\fuel\kerosene.paa";
 		conso=0.8;
 		item_jerrycan="Alysia_jerrycan_kerosene";

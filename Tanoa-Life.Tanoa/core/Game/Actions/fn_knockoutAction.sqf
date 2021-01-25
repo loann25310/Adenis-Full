@@ -24,7 +24,7 @@ if (isNil "_anims") exitWith {false};
 if ((animationState player) in _anims) exitWith {false};
 
 _anim = _anims call BIS_fnc_selectRandom;
-_config = missionConfigFile >> "ALYSIA_MELEE" >> _anim;
+_config = missionConfigFile >> "ADENIS_MELEE" >> _anim;
 if (!isClass(_config)) exitWith {false};
 
 _fatigue = (getFatigue player) + (getNumber(_config >> "fatigue") + ((speed player) / 150));

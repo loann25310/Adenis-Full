@@ -16,9 +16,9 @@
 					(isNull (attachedTo g_interaction_target))
 				) && (
 					(
-						getText(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(side g_interaction_target) >> 'identity_item') isEqualTo ''
+						getText(missionConfigFile >> 'ADENIS_FACTIONS' >> str(side g_interaction_target) >> 'identity_item') isEqualTo ''
 					) || (
-						getText(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(side g_interaction_target) >> 'identity_item') in (magazines g_interaction_target)
+						getText(missionConfigFile >> 'ADENIS_FACTIONS' >> str(side g_interaction_target) >> 'identity_item') in (magazines g_interaction_target)
 					)
 				)
 			"

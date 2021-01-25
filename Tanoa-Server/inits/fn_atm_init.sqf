@@ -12,7 +12,7 @@ diag_log "[ATM] Setup";
 		diag_log format["Error can't find %1 at [%2,%3,%4]", (_x select 0), (_x select 1), (_x select 2), (_x select 3)];
 	} else {
 		_amount = _x select 4;
-		_max = getNumber(missionConfigFile >> "ALYSIA_ATM" >> (_x select 0) >> "money_stock");
+		_max = getNumber(missionConfigFile >> "ADENIS_ATM" >> (_x select 0) >> "money_stock");
 		if (_amount > _max) then {
 			_atm setVariable ["money", _max, true];
 		} else {

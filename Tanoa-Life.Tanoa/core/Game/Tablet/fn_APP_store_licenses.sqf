@@ -30,7 +30,7 @@ _list ctrlSetEventHandler ["LBSelChanged", "_this call AlysiaClient_fnc_APP_stor
 			_list lbSetTooltip [_index, (_list lbText _index)];
 		};
 	};
-} foreach ("isClass(_x >> 'factions' >> str(playerSide))" configClasses (missionConfigFile >> "ALYSIA_LICENSES"));
+} foreach ("isClass(_x >> 'factions' >> str(playerSide))" configClasses (missionConfigFile >> "ADENIS_LICENSES"));
 
 if ((lbSize _list) isEqualTo 0) then {
 	_list lbAdd "Aucune";

@@ -16,21 +16,21 @@ if (_sel isEqualTo -1) exitWith {};
 closeDialog 0;
 _part = lbData[2907, _sel];
 
-_tool = getText(missionConfigFile >> "ALYSIA_REPAIR" >> _part >> "tool");
+_tool = getText(missionConfigFile >> "ADENIS_REPAIR" >> _part >> "tool");
 if ((_tool != "") && !(_tool in (magazines player))) exitWith {
 	[format["Vous n'avez pas l'outil requis (<t color='#8cff9b'>%1</t>) pour effectuer cette réparation", getText(configFile >> "CfgMagazines" >> _tool >> "displayName")]] call AlysiaClient_fnc_error;
 };
 
-_item = getText(missionConfigFile >> "ALYSIA_REPAIR" >> _part >> "item");
+_item = getText(missionConfigFile >> "ADENIS_REPAIR" >> _part >> "item");
 if ((_item isEqualTo "") || ((_item != "") && (_item in (magazines player)))) then
 {
 	_heal = 100;
 	_useItem = true;
-	_time = getNumber(missionConfigFile >> "ALYSIA_REPAIR" >> _part >> "time") * 1.5;
+	_time = getNumber(missionConfigFile >> "ADENIS_REPAIR" >> _part >> "time") * 1.5;
 } else {
 	_heal = 40;
 	_useItem = false;
-	_time = getNumber(missionConfigFile >> "ALYSIA_REPAIR" >> _part >> "time");
+	_time = getNumber(missionConfigFile >> "ADENIS_REPAIR" >> _part >> "time");
 };
 
 _life = lbValue[2907, _sel];

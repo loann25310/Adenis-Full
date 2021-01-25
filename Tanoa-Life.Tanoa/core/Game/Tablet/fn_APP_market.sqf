@@ -16,7 +16,7 @@ lbClear _list;
 	_index = _list lbAdd ([_item] call AlysiaClient_fnc_itemGetName);
 	_list lbSetData [_index, _item];
 	_list lbSetPicture [_index, ([_item] call AlysiaClient_fnc_itemGetImage)];
-} foreach ("isClass(_x >> 'market')" configClasses (missionConfigFile >> "ALYSIA_ITEMS"));
+} foreach ("isClass(_x >> 'market')" configClasses (missionConfigFile >> "ADENIS_ITEMS"));
 lbSort [_list, "ASC"];
 
 _list lbSetCurSel (missionNamespace getVariable ["market_sync_id", 0]);

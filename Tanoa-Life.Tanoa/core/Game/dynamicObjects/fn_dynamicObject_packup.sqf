@@ -16,7 +16,7 @@ if ((time - g_action_delay) <= 0.8) exitWith {
 	["Veuillez <t color='#FF8000'>ralentir</t> dans vos actions."] call AlysiaClient_fnc_error;
 };
 
-_item = getText(missionConfigFile >> "ALYSIA_DYN_OBJECTS" >> typeOf(_object) >> "item");
+_item = getText(missionConfigFile >> "ADENIS_DYN_OBJECTS" >> typeOf(_object) >> "item");
 if (([_item, 1, g_carryWeight, g_maxWeight] call AlysiaClient_fnc_calWeightDiff) isEqualTo 0) exitWith {
 	["Vous n'avez <t color='#FF8000'>pas assez</t> de place."] call AlysiaClient_fnc_error;
 };

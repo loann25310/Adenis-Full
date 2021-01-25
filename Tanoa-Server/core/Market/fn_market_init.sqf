@@ -23,7 +23,7 @@ publicVariable "gServer_market_event_next";
 	};
 
 	[_ressourceName, _ressourcePrice, true] call AlysiaServer_fnc_market_setPrice;
-} foreach ("isClass(_x >> 'market')" configClasses (missionConfigFile >> "ALYSIA_ITEMS"));
+} foreach ("isClass(_x >> 'market')" configClasses (missionConfigFile >> "ADENIS_ITEMS"));
 
 [] spawn AlysiaServer_fnc_market_loop;
 

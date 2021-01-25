@@ -11,7 +11,7 @@ _add_to_gouv = 0;
 if (!(player getVariable ["arrested", false])) then
 {
 	private["_amount", "_taxe", "_price", "_config"];
-	_config = missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "salary";
+	_config = missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "salary";
 	if (isClass(_config)) then
 	{
 		_amount = getNumber(_config >> "amount");
@@ -40,7 +40,7 @@ if (!isNull(g_company) && !(g_company getVariable ['construction', false])) then
 	private["_info", "_price_employees", "_price_building"];
 	_info = g_company getVariable "company_info";
 
-	_price_employees = getNumber(missionConfigFile >> "ALYSIA_COMPANIES_TYPES" >> (_info select 2) >> "salary");
+	_price_employees = getNumber(missionConfigFile >> "ADENIS_COMPANIES_TYPES" >> (_info select 2) >> "salary");
 	if (_price_employees > 0) then
 	{
 		if ((_info select 1) isEqualTo (getPlayerUID player)) then
@@ -84,7 +84,7 @@ if (!isNull(g_company) && !(g_company getVariable ['construction', false])) then
 		};
 	};
 
-	_price_building = getNumber(missionConfigFile >> "ALYSIA_COMPANIES_BUILDINGS" >> typeOf(g_company) >> "taxe");
+	_price_building = getNumber(missionConfigFile >> "ADENIS_COMPANIES_BUILDINGS" >> typeOf(g_company) >> "taxe");
 	if ((_price_building > 0) && (gServer_tax_companies_building_multiplier > 0)) then
 	{
 		_price_building = _price_building * gServer_tax_companies_building_multiplier;
@@ -98,7 +98,7 @@ if (!isNull(g_company) && !(g_company getVariable ['construction', false])) then
 	};
 };
 
-_config_phone = missionConfigFile >> "ALYSIA_PHONE" >> "FORFAITS" >> g_phone_forfait;
+_config_phone = missionConfigFile >> "ADENIS_PHONE" >> "FORFAITS" >> g_phone_forfait;
 if (isClass(_config_phone)) then
 {
 	private "_price";
@@ -118,7 +118,7 @@ if (_add_to_gouv > 0) then {
 	[east, true, _add_to_gouv, (getPlayerUID player)] remoteExecCall ["AlysiaServer_fnc_factionBankHandle", 2];
 };
 
-if (profileNamespace getVariable ["ALYSIA_phone_salary", true]) then
+if (profileNamespace getVariable ["ADENIS_phone_salary", true]) then
 {
 	[
 		format

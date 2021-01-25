@@ -22,7 +22,7 @@ if ([] call AlysiaClient_fnc_hasPhone) then
 		(_display displayCtrl 8501) ctrlSetStructuredText parseText format
 		[
 			"<t font='PuristaBold' align='right'><t size='1.2'>Forfait</t> <t size='2' color='#190707'>%1</t></t>",
-			getText(missionConfigFile >> "ALYSIA_PHONE" >> "FORFAITS" >> g_phone_forfait >> "name")
+			getText(missionConfigFile >> "ADENIS_PHONE" >> "FORFAITS" >> g_phone_forfait >> "name")
 		];
 
 		_actual_idc = 8502;
@@ -89,7 +89,7 @@ if ([] call AlysiaClient_fnc_hasPhone) then
 				"Alysia_Client_Texture\Data\phone\main\number.paa",
 				"Alysia_Client_Texture\Data\phone\main\number_select.paa",
 				"[] spawn AlysiaClient_fnc_APP_phone_change;",
-				"getNumber(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'phone' >> 'change_number_price') != -1",
+				"getNumber(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'phone' >> 'change_number_price') != -1",
 				"Changer de numéro"
 			],
 			[

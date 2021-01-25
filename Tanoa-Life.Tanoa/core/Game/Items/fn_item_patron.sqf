@@ -9,7 +9,7 @@ if (_item isEqualTo "") exitWith {
 	["Aucun patron précisé."] call AlysiaClient_fnc_error;
 };
 
-_config = missionConfigFile >> "ALYSIA_BLUEPRINTS" >> _item;
+_config = missionConfigFile >> "ADENIS_BLUEPRINTS" >> _item;
 if (!isClass(_config)) exitWith {
 	[format["<t color='#FF8000'>%1</t> n'est pas un patron."]] call AlysiaClient_fnc_error;
 };

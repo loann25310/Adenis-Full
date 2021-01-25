@@ -7,7 +7,7 @@ _type = [_this, 0, "", [""]] call BIS_fnc_param;
 
 if (_type isEqualTo "") exitWith {};
 
-_config = missionConfigFile >> "ALYSIA_DESEASES" >> _type;
+_config = missionConfigFile >> "ADENIS_DESEASES" >> _type;
 if (!isClass(_config)) exitWith {};
 
 if (missionNamespace getVariable [format["deases_%1_active", _type], false]) exitWith {};
@@ -26,7 +26,7 @@ if (_index isEqualTo -1) then
 			configName _x,
 			round(random(getNumber(_x >> "heal" >> _type >> "max") - getNumber(_x >> "heal" >> _type >> "min"))) + getNumber(_x >> "heal" >> _type >> "min")
 		];
-	} forEach ((format["_x >> 'heal' >> '%1'", _type]) configClasses (missionConfigFile >> "ALYSIA_MEDECINE"));
+	} forEach ((format["_x >> 'heal' >> '%1'", _type]) configClasses (missionConfigFile >> "ADENIS_MEDECINE"));
 	g_deseases pushBack [_type, _medecine];
 } else {
 	_medecine = (g_deseases select _index) select 1;
@@ -49,13 +49,13 @@ while {count(_medecine) > 0} do
 
 		if (_contagion_chance > 0) then
 		{
-			if ((getNumber(missionConfigFile >> "ALYSIA_ITEMS_ARMA" >> (goggles player) >> "protect_contamination_air") isEqualTo 0) &&
-				(getNumber(missionConfigFile >> "ALYSIA_ITEMS_ARMA" >> (headgear player) >> "protect_contamination_air") isEqualTo 0)) then {
+			if ((getNumber(missionConfigFile >> "ADENIS_ITEMS_ARMA" >> (goggles player) >> "protect_contamination_air") isEqualTo 0) &&
+				(getNumber(missionConfigFile >> "ADENIS_ITEMS_ARMA" >> (headgear player) >> "protect_contamination_air") isEqualTo 0)) then {
 				{
 					if ((alive _x) && (_x != player) && !(_x getVariable ["is_coma", false])) then
 					{
-						if ((getNumber(missionConfigFile >> "ALYSIA_ITEMS_ARMA" >> (goggles _x) >> "protect_contamination_air") isEqualTo 0) &&
-							(getNumber(missionConfigFile >> "ALYSIA_ITEMS_ARMA" >> (headgear _x) >> "protect_contamination_air") isEqualTo 0)) then {
+						if ((getNumber(missionConfigFile >> "ADENIS_ITEMS_ARMA" >> (goggles _x) >> "protect_contamination_air") isEqualTo 0) &&
+							(getNumber(missionConfigFile >> "ADENIS_ITEMS_ARMA" >> (headgear _x) >> "protect_contamination_air") isEqualTo 0)) then {
 							if (random(100) <= _contagion_chance) then
 							{
 								[_type] remoteExec ["AlysiaClient_fnc_handleDesease", _x];

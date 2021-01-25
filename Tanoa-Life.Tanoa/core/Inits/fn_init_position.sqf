@@ -8,7 +8,7 @@ if ((player getVariable ["arrested", false]) && !(isNull g_arrest_Prison)) then 
 } else {
 	if (!g_is_alive || ((count _this) != 3) || (_this isEqualTo [0,0,0]) || {(_this distance [1264.85,560.408,0.000864983]) < 150}) then
 	{
-		_marker = getText(missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "respawn" >> "marker");
+		_marker = getText(missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "respawn" >> "marker");
 		player setPos (getMarkerPos _marker);
 		player setDir (markerDir _marker);
 	} else {

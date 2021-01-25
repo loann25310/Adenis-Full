@@ -21,7 +21,7 @@ _data = call compile _data;
 
 _object = nearestObject [(_data select 1), (_data select 0)];
 _info = _object getVariable "company_info";
-_config = missionConfigFile >> "ALYSIA_COMPANIES_TYPES" >> (_info select 2);
+_config = missionConfigFile >> "ADENIS_COMPANIES_TYPES" >> (_info select 2);
 
 (_display displayCtrl 13005) ctrlSetStructuredText parseText format["<t align='center'>%1</t>", (_info select 0)];
 

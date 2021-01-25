@@ -8,7 +8,7 @@ if (missionNamespace getVariable ["g_connected", false]) then
 	private["_msgs", "_allow"];
 
 	_msgs = missionNamespace getVariable ["g_phone_messages", []];
-	_allow = getText(missionConfigFile >> "ALYSIA_PHONE" >> "SMS" >> "characters_allowed");
+	_allow = getText(missionConfigFile >> "ADENIS_PHONE" >> "SMS" >> "characters_allowed");
 	{
 		if (([(_x select 3), _allow] call AlysiaClient_fnc_TextAllowed) != "") then {
 			_msgs = _msgs - [_x];

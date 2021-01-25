@@ -9,14 +9,14 @@ _litres = [_this, 2, 0, [0]] call BIS_fnc_param;
 _carburant = [_this, 3, "", [""]] call BIS_fnc_param;
 
 if ((isNull _vehicle) || (_litres isEqualTo 0) || (_carburant isEqualTo "")) exitWith {};
-if (!isClass(missionConfigFile >> "ALYSIA_FUEL" >> _carburant)) exitWith {
+if (!isClass(missionConfigFile >> "ADENIS_FUEL" >> _carburant)) exitWith {
 	[format["%1 ne correspond pas à un type d'essence défini.", _carburant]] call AlysiaClient_fnc_error;
 };
-if (!isClass(missionConfigFile >> "ALYSIA_VEHICLES" >> typeOf(_vehicle))) exitWith {
-	[format["%1 n'est pas fini dans ALYSIA_VEHICLES.", typeOf(_vehicle)]] call AlysiaClient_fnc_error;
+if (!isClass(missionConfigFile >> "ADENIS_VEHICLES" >> typeOf(_vehicle))) exitWith {
+	[format["%1 n'est pas fini dans ADENIS_VEHICLES.", typeOf(_vehicle)]] call AlysiaClient_fnc_error;
 };
 
-_max = getNumber(missionConfigFile >> "ALYSIA_VEHICLES" >> typeof(_vehicle) >> "fuelCapacity");
+_max = getNumber(missionConfigFile >> "ADENIS_VEHICLES" >> typeof(_vehicle) >> "fuelCapacity");
 if (_type) then
 {
 	_actual = ((fuel _vehicle) * _max) + _litres;
@@ -33,7 +33,7 @@ if (local _vehicle) then {
 	[_vehicle, _actual] remoteExecCall ["setFuel", _vehicle];
 };
 
-if (_carburant != getText(missionConfigFile >> "ALYSIA_VEHICLES" >> typeOf(_vehicle) >> "fuel")) then
+if (_carburant != getText(missionConfigFile >> "ADENIS_VEHICLES" >> typeOf(_vehicle) >> "fuel")) then
 {
 	if ((_vehicle getVariable ["refuel_type", ""]) != _carburant) then {
 		_vehicle setVariable ["refuel_type", _carburant, true];

@@ -9,7 +9,7 @@ _type = [_this, 1, "", [""]] call BIS_fnc_param;
 if (isNull _target) exitWith {
 	["Cible invalide."] call AlysiaClient_fnc_error;
 };
-if (getNumber(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'housing' >> 'search') isEqualTo 0) exitWith {
+if (getNumber(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'housing' >> 'search') isEqualTo 0) exitWith {
 	["Vous n'êtes pas autorisé à utiliser cet objet."] call AlysiaClient_fnc_error;
 };
 if (_target getVariable ["perquisition", false]) exitWith {

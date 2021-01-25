@@ -9,7 +9,7 @@ _num = floor([_this, 2, 0, [0]] call BIS_fnc_param);
 
 if ((_item isEqualTo "") || (_num isEqualTo 0)) exitWith {false};
 
-_config = missionConfigFile >> "ALYSIA_ITEMS" >> _item;
+_config = missionConfigFile >> "ADENIS_ITEMS" >> _item;
 if (!isClass(_config)) exitWith {false};
 
 _return = false;

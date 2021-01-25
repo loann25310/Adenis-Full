@@ -17,15 +17,15 @@ sliderSetSpeed[7819, 1, 1];
 sliderSetPosition[7819, _voice];
 
 _check_anim = _display displayCtrl 7827;
-_check_anim cbSetChecked (profileNamespace getVariable ["ALYSIA_tablet_animation", true]);
+_check_anim cbSetChecked (profileNamespace getVariable ["ADENIS_tablet_animation", true]);
 _check_anim ctrlSetEventHandler
 [
 	"CheckedChanged",
 	"
 		if ((_this select 1) isEqualTo 0) then {
-			profileNamespace setVariable [""ALYSIA_tablet_animation"", false];
+			profileNamespace setVariable [""ADENIS_tablet_animation"", false];
 		} else {
-			profileNamespace setVariable [""ALYSIA_tablet_animation"", true];
+			profileNamespace setVariable [""ADENIS_tablet_animation"", true];
 		};
 	"
 ];

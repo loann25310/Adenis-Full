@@ -12,7 +12,7 @@ if (_forfait isEqualTo g_phone_forfait) exitWith {
 	["Vous possedez déjà ce forfait."] call AlysiaClient_fnc_error;
 };
 
-_price = getNumber(missionConfigFile >> "ALYSIA_PHONE" >> "FORFAITS" >> _forfait >> "bill");
+_price = getNumber(missionConfigFile >> "ADENIS_PHONE" >> "FORFAITS" >> _forfait >> "bill");
 if (g_atm < _price) exitWith {
 	["Vous n'avez pas assez d'argent."] call AlysiaClient_fnc_error;
 };

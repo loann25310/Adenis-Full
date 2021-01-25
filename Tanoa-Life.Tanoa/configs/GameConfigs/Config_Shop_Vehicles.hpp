@@ -1,4 +1,4 @@
-class ALYSIA_SHOPS_VEHICLES
+class ADENIS_SHOPS_VEHICLES
 {
 	
 	class CIV_air
@@ -132,6 +132,7 @@ class ALYSIA_SHOPS_VEHICLES
 			"GeK_Audi_Quattro",
 			"chevrolet_Apache_chris20215",
 			"Polaris_RZR_Turbo_chris20215",
+			"Skyline_Mercedes_Sprinter",
 			"AM_M939A2_chris20215_m939",
 			"Golf2_16D",
 			"Lemon_Jeep",
@@ -237,7 +238,7 @@ class ALYSIA_SHOPS_VEHICLES
 			"R_HotairBalloon",
 			/* company_music_label */
 			"Maels_Vandura_GMC_special",
-			"ALYSIA_GMC_Fiestanoa",
+			"ADENIS_GMC_Fiestanoa",
 			"depanren",
 			"chdepanpl",
 			"plateau",

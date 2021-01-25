@@ -31,7 +31,7 @@ if (!(_item in (magazines player))) exitWith {
 	["Vous devez garder le jerrycan sur vous durant toute l'action."] call AlysiaClient_fnc_error;
 };
 
-_config = (format["getText(_x >> 'item_jerrycan') isEqualTo '%1'", _item] configClasses (missionConfigFile >> "ALYSIA_FUEL")) select 0;
+_config = (format["getText(_x >> 'item_jerrycan') isEqualTo '%1'", _item] configClasses (missionConfigFile >> "ADENIS_FUEL")) select 0;
 if (isNil "_config") exitWith {
 	[format["Impossible de trouver le fuel correspondant à l'item [%1]", _item]] call AlysiaClient_fnc_error;
 };

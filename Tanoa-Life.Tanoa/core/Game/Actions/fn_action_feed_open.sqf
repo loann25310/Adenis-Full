@@ -32,7 +32,7 @@ lbClear _list;
 		_list lbSetPicture [_index, ([_item] call AlysiaClient_fnc_itemGetImage)];
 		_list lbSetTooltip [_index, ([_item] call AlysiaClient_fnc_itemGetName)];
 	};
-} forEach ("isClass(_x >> 'food')" configClasses (missionConfigFile >> "ALYSIA_ITEMS"));
+} forEach ("isClass(_x >> 'food')" configClasses (missionConfigFile >> "ADENIS_ITEMS"));
 
 if ((lbSize _list) isEqualTo 0) then
 {

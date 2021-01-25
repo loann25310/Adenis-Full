@@ -24,7 +24,7 @@ class CfgFunctions
 
 	class Server
 	{
-		tag = "AdenisServer";
+		tag = "AlysiaServer";
 
 		class global
 		{

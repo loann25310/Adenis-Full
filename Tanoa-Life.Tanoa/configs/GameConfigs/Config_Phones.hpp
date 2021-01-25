@@ -1,4 +1,4 @@
-class ALYSIA_PHONE
+class ADENIS_PHONE
 {
 	class CONTACTS
 	{

@@ -55,7 +55,7 @@ if (player getVariable ["restrained", false]) then {
 			[_x, false] spawn AlysiaClient_fnc_stopescort;
 		};
 	} else {
-		if (isClass(missionConfigFile >> "ALYSIA_DYN_OBJECTS" >> typeOf(_x))) then {
+		if (isClass(missionConfigFile >> "ADENIS_DYN_OBJECTS" >> typeOf(_x))) then {
 			detach _x;
 		};
 	};
@@ -84,8 +84,8 @@ _ctrl_suicide_frame = _display displayCtrl 360;
 _ctrl_near = _display displayCtrl 359;
 _ctrl_samu = _display displayCtrl 358;
 
-_time_before_suicide = getNumber(missionConfigFile >> "ALYSIA_MEDICAL" >> "coma" >> "wait_before_suicide");
-_death_timer = getNumber(missionConfigFile >> "ALYSIA_MEDICAL" >> "coma" >> "death_timer");
+_time_before_suicide = getNumber(missionConfigFile >> "ADENIS_MEDICAL" >> "coma" >> "wait_before_suicide");
+_death_timer = getNumber(missionConfigFile >> "ADENIS_MEDICAL" >> "coma" >> "death_timer");
 _counter_max = _death_timer;
 
 g_blood = 10;
@@ -253,11 +253,11 @@ if (player getVariable ["bed_awake", false]) then {player setVariable ["bed_awak
 if (!g_coma_dead) then
 {
 	player switchCamera "Internal";
-	player setFatigue getNumber(missionConfigFile >> "ALYSIA_MEDICAL" >> "coma" >> "setFatigue_when_stabilize");
+	player setFatigue getNumber(missionConfigFile >> "ADENIS_MEDICAL" >> "coma" >> "setFatigue_when_stabilize");
 	cutText ["", "BLACK IN", 20, true];
-	getNumber(missionConfigFile >> "ALYSIA_MEDICAL" >> "coma" >> "time_fade_sound_when_stabilize") fadeSound 1;
+	getNumber(missionConfigFile >> "ADENIS_MEDICAL" >> "coma" >> "time_fade_sound_when_stabilize") fadeSound 1;
 	missionNamespace setVariable ["silence", false];
-	[getNumber(missionConfigFile >> "ALYSIA_MEDICAL" >> "coma" >> "blood_receive_when_stabilize")] call AlysiaClient_fnc_handleBlood;
+	[getNumber(missionConfigFile >> "ADENIS_MEDICAL" >> "coma" >> "blood_receive_when_stabilize")] call AlysiaClient_fnc_handleBlood;
 
 	if (g_thirst < 10) then {[15] call AlysiaClient_fnc_handleThirst};
 	if (g_hunger < 10) then {[15] call AlysiaClient_fnc_handleHunger};
@@ -273,7 +273,7 @@ if (!g_coma_dead) then
 		};
 	} else {
 		detach player;
-		if (isClass(missionConfigFile >> "ALYSIA_CHAIRS" >> typeof(_attachedTo))) then
+		if (isClass(missionConfigFile >> "ADENIS_CHAIRS" >> typeof(_attachedTo))) then
 		{
 			waitUntil {isNull (attachedTo player)};
 			if(!([_attachedTo] call AlysiaClient_fnc_sitDown)) then {

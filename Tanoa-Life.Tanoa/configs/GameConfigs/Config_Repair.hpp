@@ -1,4 +1,4 @@
-class ALYSIA_REPAIR
+class ADENIS_REPAIR
 {
 	class HitFuel
 	{
@@ -195,7 +195,7 @@ class ALYSIA_REPAIR
 
 	class HitHydraulics
 	{
-		name="Suspenssion";
+		name="Suspension";
 		tool="Alysia_repair_toolbox";
 		item="";
 		picture="Alysia_Client_Texture\Data\vehicle\repair\parts\HitHydraulics.paa";
@@ -204,7 +204,7 @@ class ALYSIA_REPAIR
 
 	class HitGear
 	{
-		name="Trains d'attérrissage";
+		name="Trains d'atterrissage";
 		tool="Alysia_repair_toolbox";
 		item="";
 		picture="Alysia_Client_Texture\Data\vehicle\repair\parts\HitGear.paa";

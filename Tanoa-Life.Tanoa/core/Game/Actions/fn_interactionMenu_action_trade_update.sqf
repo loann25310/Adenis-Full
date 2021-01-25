@@ -66,7 +66,7 @@ lbClear _ctrl_list_keys_buildings;
 	{
 		if (((_x getVariable ['house_owner', ['', '']]) select 0) isEqualTo (getPlayerUID player)) then
 		{
-			if (isClass(missionConfigFile >> "ALYSIA_HOUSES" >> typeOf(_x) >> "factions" >> str(side g_interaction_target))) then
+			if (isClass(missionConfigFile >> "ADENIS_HOUSES" >> typeOf(_x) >> "factions" >> str(side g_interaction_target))) then
 			{
 				_index = _ctrl_list_keys_buildings lbAdd getText(configFile >> "CfgVehicles" >> typeOf(_x) >> "displayName");
 				_ctrl_list_keys_buildings lbSetPicture [_index, getText(configFile >> "CfgVehicles" >> (typeOf _x) >> "picture")];

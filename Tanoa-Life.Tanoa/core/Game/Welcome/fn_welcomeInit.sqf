@@ -34,10 +34,10 @@ _camera camCommit 0;
 ("initLayer" call BIS_fnc_rscLayer) cutText ["", "BLACK IN", 4, false];
 4 fadeSound 1;
 
-profileNamespace setVariable ["ALYSIA_phone_sms_ring", ""];
-profileNamespace setVariable ["ALYSIA_phone_call_ring", ""];
-profileNamespace setVariable ["ALYSIA_tablet_animation", false];
-profileNamespace setVariable ["ALYSIA_house_spawn_info", nil];
+profileNamespace setVariable ["ADENIS_phone_sms_ring", ""];
+profileNamespace setVariable ["ADENIS_phone_call_ring", ""];
+profileNamespace setVariable ["ADENIS_tablet_animation", false];
+profileNamespace setVariable ["ADENIS_house_spawn_info", nil];
 saveProfileNamespace;
 
 _action =

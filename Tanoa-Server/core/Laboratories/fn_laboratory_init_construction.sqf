@@ -10,7 +10,7 @@ _position = [_this, 3, [0,0,0], [[]]] call BIS_fnc_param;
 _direction = [_this, 4, 0, [0]] call BIS_fnc_param;
 _require = [_this, 5, [], [[]]] call BIS_fnc_param;
 
-_object = getText(missionConfigFile >> "ALYSIA_LABORATORIES" >> _type >> "construction" >> "object") createVehicle [0,0,0];
+_object = getText(missionConfigFile >> "ADENIS_LABORATORIES" >> _type >> "construction" >> "object") createVehicle [0,0,0];
 _object setPosATL _position;
 _object setDir _direction;
 

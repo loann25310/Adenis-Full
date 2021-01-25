@@ -15,7 +15,7 @@ disableSerialization;
 _display = findDisplay 97000;
 if (isNull _display) exitWith {};
 
-_config = missionConfigFile >> "ALYSIA_MISSIONS" >> (_list lbData _sel);
+_config = missionConfigFile >> "ADENIS_MISSIONS" >> (_list lbData _sel);
 _price = getNumber(_config >> "price");
 
 (_display displayCtrl 97004) ctrlSetStructuredText parseText format

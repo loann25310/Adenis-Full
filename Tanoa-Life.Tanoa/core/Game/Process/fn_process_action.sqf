@@ -20,7 +20,7 @@ if ((vehicle player) != player) exitWith {
 	["Vous devez être à pied pour traiter"] call AlysiaClient_fnc_error;
 };
 
-_config = missionConfigFile >> "ALYSIA_PROCESS" >> _type;
+_config = missionConfigFile >> "ADENIS_PROCESS" >> _type;
 _requireTarget = isClass(_config >> "target");
 if (_requireTarget && (isNull _target)) exitWith {
 	["Le traitement à besoin d'émaner d'une entité"] call AlysiaClient_fnc_error;

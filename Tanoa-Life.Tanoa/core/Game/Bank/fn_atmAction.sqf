@@ -23,7 +23,7 @@ if (g_interaction_target getVariable ["inUse", false]) exitWith {
 	["Le DAB est en cours de réapprovisionnement, veuillez patienter"] call AlysiaClient_fnc_error;
 };
 
-_config = missionConfigFile >> "ALYSIA_ATM" >> typeOf(g_interaction_target);
+_config = missionConfigFile >> "ADENIS_ATM" >> typeOf(g_interaction_target);
 if (!isClass(_config)) exitWith {};
 
 switch (_action) do

@@ -27,7 +27,7 @@ gServer_houses = [];
 			_house setVariable ["house_owner", [(_x select 1), (_x select 5), (_x select 0)], true];
 			_house setVariable ["house_tenants", ([(_x select 6)] call AlysiaServer_fnc_mresToArray), false];
 
-			if (getNumber(missionConfigFile >> "ALYSIA_HOUSES" >> typeOf(_house) >> "disableLockDoorOnStartup") isEqualTo 0) then
+			if (getNumber(missionConfigFile >> "ADENIS_HOUSES" >> typeOf(_house) >> "disableLockDoorOnStartup") isEqualTo 0) then
 			{
 				for "_i" from 1 to getNumber(configFile >> "CfgVehicles" >> (typeOf _house) >> "numberOfDoors") do
 				{

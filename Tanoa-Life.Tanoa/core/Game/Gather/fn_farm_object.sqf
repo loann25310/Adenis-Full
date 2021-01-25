@@ -7,7 +7,7 @@ _target = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
 
 if (isNull _target) exitWith {};
 
-_config = missionConfigFile >> "ALYSIA_FARMING_OBJECT" >> typeOf(_target);
+_config = missionConfigFile >> "ADENIS_FARMING_OBJECT" >> typeOf(_target);
 if (!(isClass _config)) exitWith {};
 
 _tool = getText(_config >> "tool");

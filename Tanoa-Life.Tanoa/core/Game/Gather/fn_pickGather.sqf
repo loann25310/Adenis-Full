@@ -9,11 +9,11 @@ if (_marker isEqualTo "") exitWith {};
 if (g_action_inUse) exitWith {};
 if ((vehicle player) != player) exitWith {};
 
-_config = missionConfigFile >> "ALYSIA_FARMING_GATHER" >> _marker;
+_config = missionConfigFile >> "ADENIS_FARMING_GATHER" >> _marker;
 if (!isClass(_config)) exitWith
 {
 	[format["Impossible de trouver les informations concernant la zone <t align='center' color='#FF8000'>%1</t>", _marker]] call AlysiaClient_fnc_error;
-	diag_log format["[ALYSIA:ERROR] Marker %1 not defined in ALYSIA_FARMING_GATHER (class not found)", _marker];
+	diag_log format["[ALYSIA:ERROR] Marker %1 not defined in ADENIS_FARMING_GATHER (class not found)", _marker];
 };
 
 _tool = getText(_config >> "tool");

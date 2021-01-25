@@ -7,7 +7,7 @@ _type = [_this, 0, "", [""]] call BIS_fnc_param;
 
 if (_type isEqualTo "") exitWith {};
 
-_config = missionConfigFile >> "ALYSIA_MISSIONS" >> _type;
+_config = missionConfigFile >> "ADENIS_MISSIONS" >> _type;
 if (!isClass(_config)) exitWith {};
 
 _condition = false;

@@ -17,7 +17,7 @@ if (isNull _target) then {
 					!(_target in g_vehicles) &&
 					!(
 						(playerSide != civilian) &&
-						(str(playerSide) isEqualTo getText(missionConfigFile >> 'ALYSIA_VEHICLES' >> typeOf(_target) >> 'side'))
+						(str(playerSide) isEqualTo getText(missionConfigFile >> 'ADENIS_VEHICLES' >> typeOf(_target) >> 'side'))
 					)
 				) then {
 				["Vous ne pouvez pas fouiller un <t color='#FF8000'>véhicule vérrouillé</t>."] call AlysiaClient_fnc_error;

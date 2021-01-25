@@ -13,7 +13,7 @@ if (isNull _target) exitWith {
 	["Cible invalide."] call AlysiaClient_fnc_error;
 };
 
-_config = missionConfigFile >> "ALYSIA_SHOPS_VIRTUAL" >> _type;
+_config = missionConfigFile >> "ADENIS_SHOPS_VIRTUAL" >> _type;
 if (!isClass(_config)) exitWith {
 	[format["Impossible de trouver les informations concernant le magasin<br/><t align='center' color='#FF8000'>%1</t>", _type]] call AlysiaClient_fnc_error;
 };

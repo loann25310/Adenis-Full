@@ -41,7 +41,7 @@ if ((lbSize _list_civ) isEqualTo 0) then {
 lbSort [_list_civ, "ASC"];
 _list_civ lbSetCurSel -1;
 
-_config = missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide);
+_config = missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide);
 
 if (count(getArray(_config >> "board" >> "history_items")) isEqualTo 0) then {
 	[8739, false] call AlysiaClient_fnc_tabletShow;

@@ -16,5 +16,5 @@ _marker setMarkerTypeLocal "Maels_housing";
 _marker setMarkerSizeLocal [0.55, 0.55];
 
 [0] call AlysiaDB_fnc_query_update_partial;
-[false, getNumber(missionConfigFile >> "ALYSIA_HOUSES" >> (typeOf _house) >> "price"), "Achat maison"] call AlysiaClient_fnc_handleATM;
+[false, getNumber(missionConfigFile >> "ADENIS_HOUSES" >> (typeOf _house) >> "price"), "Achat maison"] call AlysiaClient_fnc_handleATM;
 playSound "buy";

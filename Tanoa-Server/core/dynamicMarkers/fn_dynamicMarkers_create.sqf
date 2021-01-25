@@ -8,7 +8,7 @@ _position = [_this, 1, [], [[]]] call BIS_fnc_param;
 
 if (_position isEqualTo []) exitWith {};
 
-_config = missionConfigFile >> "ALYSIA_DYN_MARKERS" >> _name;
+_config = missionConfigFile >> "ADENIS_DYN_MARKERS" >> _name;
 if (!isClass _config) exitWith {};
 
 _marker = createmarker [_name, _position];

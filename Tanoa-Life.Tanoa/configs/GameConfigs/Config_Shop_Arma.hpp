@@ -1,4 +1,4 @@
-class ALYSIA_SHOPS_ARMA
+class ADENIS_SHOPS_ARMA
 {
 	class WEST_gun
 	{
@@ -25,27 +25,14 @@ class ALYSIA_SHOPS_ARMA
 			"Chemlight_yellow",
 			"Chemlight_green",
 			"Chemlight_blue",
-			"Skyline_Mosin9130_01_F",
-			"Skyline_Mosin9130_02_F",
-			"5Rnd_762x54_Mosin",
-			"Alysia_MP44",
-			"Alysia_MP44_magazine",
-			"Skyline_Fal_02_F",
-			"20Rnd_762x51_Fal",
-			"arifle_Katiba_C_F",
-			"30Rnd_65x39_caseless_green",
 			"RH_m9a",
 			"RH_15Rnd_9x19_M9",
 			"optic_hamr",
 			"optic_LRPS",
 			"optic_Holosight_blk_F",
-			"arifle_AK12_F",
-			"RH_m9",
 			"acc_flashlight",
 			"optic_MRCO",
-			"bipod_02_F_blk",
-			"RH_X300",
-			"30Rnd_762x39_AK12_Mag_F"
+			"bipod_02_F_blk"
 		};
 	};
 

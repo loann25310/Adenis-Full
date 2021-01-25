@@ -12,7 +12,7 @@ if (g_action_inUse) exitWith {
 	["Vous avez l'air occupé<br/>Revenez plus tard"] call AlysiaClient_fnc_error;
 };
 
-_cfg = missionConfigFile >> "ALYSIA_GARAGES" >> _garage;
+_cfg = missionConfigFile >> "ADENIS_GARAGES" >> _garage;
 if (!isClass(_cfg)) exitWith {
 	[format["Impossible de trouver les informations concernant le garage [%1]", _garage]] call AlysiaClient_fnc_error;
 };

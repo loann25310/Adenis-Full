@@ -14,7 +14,7 @@ if (isEngineOn _veh) exitWith {["Plein impossible.<br/>Le véhicule doit avoir l
 if (((locked _veh) isEqualTo 2)) exitWith {["Plein impossible.<br/>Le véhicule doit être ouvert pour effectuer un plein."] call AlysiaClient_fnc_error};
 if (_veh getVariable ["refuel_inUse", false]) exitWith {["Plein impossible.<br/>Une autre personne effectue actuellement le plein du véhicule."] call AlysiaClient_fnc_error};
 
-_maxDistance = getNumber(missionConfigFile >> "ALYSIA_FUEL_STATION" >> typeOf(_station) >> "max_distance_allowed");
+_maxDistance = getNumber(missionConfigFile >> "ADENIS_FUEL_STATION" >> typeOf(_station) >> "max_distance_allowed");
 if ((player distance _station) > _maxDistance) exitWith {
 	["Plein impossible.<br/>Vous êtes trop loin de la station."] call AlysiaClient_fnc_error;
 };
@@ -26,7 +26,7 @@ if (_currentLiters < 1) exitWith
 		format
 		[
 			"Cette station ne possède pas assez de <t color='#3ADF00'>%1</t> pour commencer un plein.<br/>Il faut au minimum 1 litre et il en reste <t color='#FF8000'>%2</t>.",
-			getText(missionConfigFile >> "ALYSIA_FUEL" >> _type >> "name"),
+			getText(missionConfigFile >> "ADENIS_FUEL" >> _type >> "name"),
 			_currentLiters
 		]
 	] call AlysiaClient_fnc_error;
@@ -41,12 +41,12 @@ disableSerialization;
 _display = findDisplay 17000;
 if (isNull _display) exitWith {};
 
-(_display displayCtrl 17006) ctrlSetStructuredText parseText getText(missionConfigFile >> "ALYSIA_FUEL" >> _type >> "name");
+(_display displayCtrl 17006) ctrlSetStructuredText parseText getText(missionConfigFile >> "ADENIS_FUEL" >> _type >> "name");
 _veh setVariable ["refuel_inUse", true, true];
 
 _bill = 0;
 _liters = 0;
-_fuelmax = getNumber(missionConfigFile >> "ALYSIA_VEHICLES" >> (typeOf _veh) >> "fuelCapacity");
+_fuelmax = getNumber(missionConfigFile >> "ADENIS_VEHICLES" >> (typeOf _veh) >> "fuelCapacity");
 _fill = false;
 _distanceBegin = (player distance _veh) + 2;
 
@@ -111,7 +111,7 @@ if (dialog) then {closeDialog 0};
 if (_fill) then
 {
 	private "_can_pay";
-	_config_bank = missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "bank_faction";
+	_config_bank = missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "bank_faction";
 	if (isClass(_config_bank) && (getNumber(_config_bank >> "payFuel") isEqualTo 1)) then
 	{
 		if ([false, _bill] call AlysiaClient_fnc_atmFactionHandle) then
@@ -123,7 +123,7 @@ if (_fill) then
 			_can_pay = false;
 		};
 	} else {
-		if (getNumber(missionConfigFile >> "ALYSIA_FUEL_STATION" >> typeOf(_station) >> "payDirect") isEqualTo 1) then
+		if (getNumber(missionConfigFile >> "ADENIS_FUEL_STATION" >> typeOf(_station) >> "payDirect") isEqualTo 1) then
 		{
 			if (_bill <= g_atm) then
 			{

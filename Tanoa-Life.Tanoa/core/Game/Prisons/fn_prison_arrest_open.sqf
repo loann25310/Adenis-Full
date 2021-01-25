@@ -25,7 +25,7 @@ createDialog "RscDisplayArrest";
 disableSerialization;
 _display = findDisplay 20000;
 
-_config = missionConfigFile >> "ALYSIA_PRISONS" >> typeOf(_prison);
+_config = missionConfigFile >> "ADENIS_PRISONS" >> typeOf(_prison);
 
 _list = _display displayCtrl 20006;
 lbClear _list;

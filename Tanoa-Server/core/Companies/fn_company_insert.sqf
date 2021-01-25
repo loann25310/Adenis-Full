@@ -12,7 +12,7 @@ if ((_type isEqualTo "") || (isNull _object) || (isNull _owner) || (_name isEqua
 
 _position = getPos _object;
 _dir = getDir _object;
-_require = getArray(missionConfigFile >> "ALYSIA_COMPANIES_BUILDINGS" >> typeOf(_object) >> "construction");
+_require = getArray(missionConfigFile >> "ADENIS_COMPANIES_BUILDINGS" >> typeOf(_object) >> "construction");
 _plate = str(round(random(999999)));
 
 [

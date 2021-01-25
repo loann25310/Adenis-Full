@@ -8,7 +8,7 @@ _item = [_this, 0, "", [""]] call BIS_fnc_param;
 if (_item isEqualTo "") exitWith {};
 if (!(isNull g_objPut)) exitWith {["Vous deployez déjà un élèment"] call AlysiaClient_fnc_error};
 
-_config = (format["getText(_x >> 'item') isEqualTo ('%1')", _item] configClasses (missionConfigFile >> "ALYSIA_DYN_OBJECTS")) select 0;
+_config = (format["getText(_x >> 'item') isEqualTo ('%1')", _item] configClasses (missionConfigFile >> "ADENIS_DYN_OBJECTS")) select 0;
 if (isNil "_config") exitWith {["Cet objet ne peut pas être placé"] call AlysiaClient_fnc_error};
 
 _object = configName(_config) createVehicle [0, 0, 0];

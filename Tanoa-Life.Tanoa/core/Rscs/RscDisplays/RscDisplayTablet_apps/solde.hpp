@@ -34,7 +34,7 @@ class SOLDE_INFO: RscStructuredText
 class SOLDE_SMS_CHECKBOX: RscCheckbox
 {
 	idc=SOLDE_SMS_CHECKBOX_IDC;
-	onCheckedChanged="if ((_this select 1) isEqualTo 0) then {profileNamespace setVariable [""ALYSIA_phone_salary"", false]} else {profileNamespace setVariable [""ALYSIA_phone_salary"", true]};";
+	onCheckedChanged="if ((_this select 1) isEqualTo 0) then {profileNamespace setVariable [""ADENIS_phone_salary"", false]} else {profileNamespace setVariable [""ADENIS_phone_salary"", true]};";
 	
 	x=0.329844 * safezoneW + safezoneX;
 	y=0.643 * safezoneH + safezoneY;

@@ -9,7 +9,7 @@ if ((vehicle player) != player) exitWith {["Vous devez être à pied."] call Aly
 _target = cursorObject;
 _check = switch (true) do
 {
-	case (isClass(missionConfigFile >> "ALYSIA_HOUSES" >> typeOf(_target))): {true};
+	case (isClass(missionConfigFile >> "ADENIS_HOUSES" >> typeOf(_target))): {true};
 	default {false};
 };
 if (!_check) exitWith {

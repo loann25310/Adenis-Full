@@ -22,7 +22,7 @@ _storage = _target getVariable ["company_storage_out", objNull];
 if (isNull _storage) then
 {
 	_pos = getPosATL player;
-	_storage = createVehicle [getText(missionConfigFile >> "ALYSIA_COMPANIES_TYPES" >> ((_target getVariable "company_info") select 2) >> "storage" >> "type"), [0, 0, 0], [], 0, "NONE"];
+	_storage = createVehicle [getText(missionConfigFile >> "ADENIS_COMPANIES_TYPES" >> ((_target getVariable "company_info") select 2) >> "storage" >> "type"), [0, 0, 0], [], 0, "NONE"];
 	_target setVariable ["company_storage_out", _storage, true];
 	_storage setPosATL [(_pos select 0) + 1, _pos select 1, _pos select 2];
 

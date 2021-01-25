@@ -24,12 +24,12 @@ _action =
 		"<t align='center'>-----------------------</t><br/>" +
 		"<t align='center' font='PuristaMedium'>Description</t><br/>" +
 		"%5",
-		if (_side isEqualTo civilian) then {(_company getVariable "company_info") select 0} else {getText(missionConfigFile >> "ALYSIA_FACTIONS" >> str(_side) >> "name_full")},
+		if (_side isEqualTo civilian) then {(_company getVariable "company_info") select 0} else {getText(missionConfigFile >> "ADENIS_FACTIONS" >> str(_side) >> "name_full")},
 		if (_side isEqualTo civilian) then {""} else {[_side, _from getVariable ["rank", 0]] call AlysiaClient_fnc_rankToStr},
 		_from getVariable "realname",
 		[_price] call AlysiaClient_fnc_numberText,
 		_desc,
-		getText(missionConfigFile >> "ALYSIA_FACTIONS" >> str(_side) >> "icon")
+		getText(missionConfigFile >> "ADENIS_FACTIONS" >> str(_side) >> "icon")
 	],
 	"Paiement",
 	"Accepter",

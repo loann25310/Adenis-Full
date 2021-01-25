@@ -27,7 +27,7 @@ if (_item isEqualTo "") exitWith
 	_button_2 ctrlShow false;
 };
 
-_config = missionConfigFile >> "ALYSIA_ITEMS" >> _item;
+_config = missionConfigFile >> "ADENIS_ITEMS" >> _item;
 
 switch (true) do
 {

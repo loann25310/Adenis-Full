@@ -1,4 +1,4 @@
-class ALYSIA_COMPANIES_BUILDINGS
+class ADENIS_COMPANIES_BUILDINGS
 {
 	class Diablo_Moulin
 	{
@@ -170,13 +170,13 @@ class ALYSIA_COMPANIES_BUILDINGS
 	};
 };
 
-class ALYSIA_COMMPAGNIES_INFO
+class ADENIS_COMMPAGNIES_INFO
 {
 	name_allowed="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-éè?!,.ù_à ";
 	name_max=30;
 };
 
-class ALYSIA_COMPANIES_TYPES
+class ADENIS_COMPANIES_TYPES
 {
 	class farming
 	{
@@ -272,6 +272,16 @@ class ALYSIA_COMPANIES_TYPES
 		members_max=15;
 		salary=105;
 		ticket=1;
+		class process
+		{
+			posDistance=8;
+			modelPos[]={12.164,13.268,-1.874};
+			list[]={"fn_fall",
+			"magazine_fn_fall",
+			"MOSIN",
+			"MOSIN_BAILLONETTE",
+			"magazine_mosin"};
+		};
 		class storage
 		{
 			type="Diablo_Coffre_Mega";
@@ -525,7 +535,7 @@ class ALYSIA_COMPANIES_TYPES
 	{
 		name="Concesionnaire";
 		price=670000;
-		building="Diablo_Concess";
+		building="Land_PhoneBooth_01_F";
 		license="company_car_shop";
 		image="Alysia_Client_Texture\Data\companies\types\car_shop.paa";
 		members_max=15;
@@ -912,7 +922,8 @@ class ALYSIA_COMPANIES_TYPES
 			modelPos[]={6.28711,0.510254,0.528652};
 			list[]=
 			{
-				"cacao"
+				"cacao",
+				"tabchoco"
 			};
 		};
 		class garage
@@ -942,7 +953,6 @@ class ALYSIA_COMPANIES_TYPES
 			modelPos[]={6.28711,0.510254,0.528652};
 			list[]=
 			{
-				"iron",
 				"acier",
 				"conserve",
 				"light_double"

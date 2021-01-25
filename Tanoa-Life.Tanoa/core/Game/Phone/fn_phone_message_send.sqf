@@ -10,11 +10,11 @@ _hide = [_this, 2, false, [false]] call BIS_fnc_param;
 if ((time - g_action_delay) < 2) exitWith {[0, "Veuillez ralentir dans vos actions"]};
 if (_msg isEqualTo "") exitWith {[0, "Vous ne pouvez pas envoyer de message vide"]};
 
-_bad = [_msg, getText(missionConfigFile >> "ALYSIA_PHONE" >> "SMS" >> "characters_allowed")] call AlysiaClient_fnc_TextAllowed;
+_bad = [_msg, getText(missionConfigFile >> "ADENIS_PHONE" >> "SMS" >> "characters_allowed")] call AlysiaClient_fnc_TextAllowed;
 if (_bad != "") exitWith {[0, format["Vous utilisez un caractère interdit dans votre message (%1)", _bad]]};
-if (([_msg] call CBA_fnc_strLen) > getNumber(missionConfigFile >> "ALYSIA_PHONE" >> "SMS" >> "characters_max")) exitWith {[0, format["Votre message ne doit pas dépasser %1 caractères", getNumber(missionConfigFile >> "ALYSIA_PHONE" >> "SMS" >> "characters_max")]]};
+if (([_msg] call CBA_fnc_strLen) > getNumber(missionConfigFile >> "ADENIS_PHONE" >> "SMS" >> "characters_max")) exitWith {[0, format["Votre message ne doit pas dépasser %1 caractères", getNumber(missionConfigFile >> "ADENIS_PHONE" >> "SMS" >> "characters_max")]]};
 if (_to isEqualTo []) exitWith {[0, "Vous n'avez pas entré de destinataire"]};
-if ((count _to) > getNumber(missionConfigFile >> "ALYSIA_PHONE" >> "SMS" >> "send_max")) exitWith {[0, format["Vous ne pouvez pas envoyer de message à plus de %1 numéros", getNumber(missionConfigFile >> "ALYSIA_PHONE" >> "SMS" >> "send_max")]]};
+if ((count _to) > getNumber(missionConfigFile >> "ADENIS_PHONE" >> "SMS" >> "send_max")) exitWith {[0, format["Vous ne pouvez pas envoyer de message à plus de %1 numéros", getNumber(missionConfigFile >> "ADENIS_PHONE" >> "SMS" >> "send_max")]]};
 
 _from = player getVariable "number";
 if (isNil "_from") exitWith {[0, "Vous n'avez pas de numéro de téléphone"]};
@@ -31,7 +31,7 @@ _sent = 0;
 	{
 		case "CENTRAL":
 		{
-			if (isClass(missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "phone" >> "central_plate")) then
+			if (isClass(missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "phone" >> "central_plate")) then
 			{
 				if (missionNamespace getVariable ["central_inUse", false]) then
 				{
@@ -56,8 +56,8 @@ _sent = 0;
 		case "CIV":
 		{
 			if ((
-					isClass(missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "phone" >> "send_global_message") &&
-					(getNumber(missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "phone" >> "send_global_message" >> "rank") <= (player getVariable ["rank", 0]))
+					isClass(missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "phone" >> "send_global_message") &&
+					(getNumber(missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "phone" >> "send_global_message" >> "rank") <= (player getVariable ["rank", 0]))
 				) || (
 					["company_press"] call AlysiaClient_fnc_hasLicense
 			)) then
@@ -89,7 +89,7 @@ _sent = 0;
 				_error = _error + format
 				[
 					"<t align='left'>Numéro</t><t align='right'>[%2]</t><br/>Aucune membre de <t color='#FF4000'>%1</t> n'est disponible<br/><t align='center'>----------</t><br/>",
-					getText(missionConfigFile >> "ALYSIA_FACTIONS" >> "GUER" >> "name"), _number
+					getText(missionConfigFile >> "ADENIS_FACTIONS" >> "GUER" >> "name"), _number
 				];
 			} else {
 				if (_hide) then
@@ -113,7 +113,7 @@ _sent = 0;
 				_error = _error + format
 				[
 					"<t align='left'>Numéro</t><t align='right'>[%2]</t><br/>Aucune membre de <t color='#FF4000'>%1</t> n'est disponible<br/><t align='center'>----------</t><br/>",
-					getText(missionConfigFile >> "ALYSIA_FACTIONS" >> "WEST" >> "name"), _number
+					getText(missionConfigFile >> "ADENIS_FACTIONS" >> "WEST" >> "name"), _number
 				];
 			} else {
 				if (_hide) then
@@ -137,7 +137,7 @@ _sent = 0;
 				_error = _error + format
 				[
 					"<t align='left'>Numéro</t><t align='right'>[%2]</t><br/>Aucune membre de <t color='#FF4000'>%1</t> n'est disponible<br/><t align='center'>----------</t><br/>",
-					getText(missionConfigFile >> "ALYSIA_FACTIONS" >> "EAST" >> "name"), _number
+					getText(missionConfigFile >> "ADENIS_FACTIONS" >> "EAST" >> "name"), _number
 				];
 			} else {
 				if (_hide) then
@@ -189,7 +189,7 @@ _sent = 0;
 					{
 						if (_number in (missionNamespace getVariable ["gServer_phone_numbers", []])) then
 						{
-							_price = getNumber(missionConfigFile >> "ALYSIA_PHONE" >> "FORFAITS" >> g_phone_forfait >> "sms_price");
+							_price = getNumber(missionConfigFile >> "ADENIS_PHONE" >> "FORFAITS" >> g_phone_forfait >> "sms_price");
 							if (g_atm >= _price) then
 							{
 								if (!(_number in g_phone_blacklist)) then

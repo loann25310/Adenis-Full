@@ -12,7 +12,7 @@ if (isNull _target) exitWith {
 _info = _target getVariable "company_info";
 if (isNil "_info") exitWith {};
 
-_process = getArray(missionConfigFile >> "ALYSIA_COMPANIES_TYPES" >> (_info select 2) >> "process" >> "list");
+_process = getArray(missionConfigFile >> "ADENIS_COMPANIES_TYPES" >> (_info select 2) >> "process" >> "list");
 
 {
 	_config = _x;
@@ -23,6 +23,6 @@ _process = getArray(missionConfigFile >> "ALYSIA_COMPANIES_TYPES" >> (_info sele
 			if (!(_proc in _process)) then {_process pushBack _proc};
 		} forEach getArray(_config >> "process");
 	};
-} forEach ((format["'%1' in getArray(_x >> 'compagnies')", (_info select 2)]) configClasses (missionConfigFile >> "ALYSIA_BLUEPRINTS"));
+} forEach ((format["'%1' in getArray(_x >> 'compagnies')", (_info select 2)]) configClasses (missionConfigFile >> "ADENIS_BLUEPRINTS"));
 
 [_target, _process] call AlysiaClient_fnc_process_choice_open;

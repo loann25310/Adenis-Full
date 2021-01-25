@@ -12,7 +12,7 @@
 			"Perquisition",
 			"[g_interaction_target, 'house'] spawn AlysiaClient_fnc_item_perquisition;",
 			"
-				(getNumber(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'housing' >> 'search') isEqualTo 1) &&
+				(getNumber(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'housing' >> 'search') isEqualTo 1) &&
 				!(g_interaction_target getVariable ['perquisition', false]) &&
 				!((g_interaction_target getVariable ['house_owner', []]) isEqualTo [])
 			"
@@ -21,7 +21,7 @@
 			"Propriétaire",
 			"[g_interaction_target] call AlysiaClient_fnc_house_menu_action_owner;",
 			"
-				(getNumber(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'housing' >> 'search') isEqualTo 1) &&
+				(getNumber(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'housing' >> 'search') isEqualTo 1) &&
 				(g_interaction_target getVariable ['perquisition', false])
 			"
 		],[
@@ -36,7 +36,7 @@
 			"Acheter",
 			"[g_interaction_target] call AlysiaClient_fnc_house_menu_open_buy;",
 			"
-				(isClass(missionConfigFile >> 'ALYSIA_HOUSES' >> (typeOf g_interaction_target) >> 'factions' >> str(playerSide))) &&
+				(isClass(missionConfigFile >> 'ADENIS_HOUSES' >> (typeOf g_interaction_target) >> 'factions' >> str(playerSide))) &&
 				((g_interaction_target getVariable ['house_owner', []]) isEqualTo [])
 			"
 		],[
@@ -44,12 +44,12 @@
 			"Coffre",
 			"[g_interaction_target] spawn AlysiaClient_fnc_house_menu_action_storage;",
 			"
-				isClass(missionConfigFile >> 'ALYSIA_HOUSES' >> typeOf(g_interaction_target) >> 'storage') &&
+				isClass(missionConfigFile >> 'ADENIS_HOUSES' >> typeOf(g_interaction_target) >> 'storage') &&
 				(
 					(g_interaction_target in g_houses) ||
 					(
 						(g_interaction_target getVariable ['perquisition', false]) &&
-						(getNumber(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'housing' >> 'search') isEqualTo 1)
+						(getNumber(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'housing' >> 'search') isEqualTo 1)
 					)
 				)
 			"
@@ -58,7 +58,7 @@
 			"Garage",
 			"[g_interaction_target] call AlysiaClient_fnc_house_menu_action_garage;",
 			"
-				isClass(missionConfigFile >> 'ALYSIA_HOUSES' >> typeOf(g_interaction_target) >> 'garage') &&
+				isClass(missionConfigFile >> 'ADENIS_HOUSES' >> typeOf(g_interaction_target) >> 'garage') &&
 				(g_interaction_target in g_houses)
 			"
 		],[
@@ -66,7 +66,7 @@
 			"Rentrer",
 			"[g_interaction_target] spawn AlysiaClient_fnc_garageStoreOpen;",
 			"
-				isClass(missionConfigFile >> 'ALYSIA_HOUSES' >> typeOf(g_interaction_target) >> 'garage') &&
+				isClass(missionConfigFile >> 'ADENIS_HOUSES' >> typeOf(g_interaction_target) >> 'garage') &&
 				(g_interaction_target in g_houses)
 			"
 		],[
@@ -77,7 +77,7 @@
 				(g_interaction_target in g_houses) ||
 				(
 					(g_interaction_target getVariable ['perquisition', false]) &&
-					(getNumber(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'housing' >> 'search') isEqualTo 1)
+					(getNumber(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'housing' >> 'search') isEqualTo 1)
 				)
 			"
 		],[
@@ -90,7 +90,7 @@
 					(g_interaction_target in g_houses) ||
 					(
 						(g_interaction_target getVariable ['perquisition', false]) &&
-						(getNumber(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'housing' >> 'search') isEqualTo 1)
+						(getNumber(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'housing' >> 'search') isEqualTo 1)
 					)
 				)
 			"
@@ -111,7 +111,7 @@
 			"
 				(g_interaction_target in g_houses) &&
 				(g_respawn_point != g_interaction_target) &&
-				isClass(missionConfigFile >> 'ALYSIA_HOUSES' >> typeof(g_interaction_target) >> 'house') &&
+				isClass(missionConfigFile >> 'ADENIS_HOUSES' >> typeof(g_interaction_target) >> 'house') &&
 				(((g_interaction_target getVariable ['house_owner', ['', '']]) select 0) isEqualTo (getPlayerUID player))
 			"
 		],[

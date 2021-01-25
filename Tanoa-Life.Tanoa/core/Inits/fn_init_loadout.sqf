@@ -6,10 +6,10 @@
 [] call AlysiaClient_fnc_stripDownPlayer;
 
 if ((player getVariable ["arrested", false]) && !(isNull g_arrest_Prison)) then {
-	player forceAddUniform getText(missionConfigFile >> "ALYSIA_PRISONS" >> typeof(g_arrest_Prison) >> "uniform");
+	player forceAddUniform getText(missionConfigFile >> "ADENIS_PRISONS" >> typeof(g_arrest_Prison) >> "uniform");
 } else {
 
-	_config = missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "Loadout";
+	_config = missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "Loadout";
 
 	_uniform = getText(_config >> "uniform");
 	if (_uniform != "") then {player forceAddUniform _uniform};

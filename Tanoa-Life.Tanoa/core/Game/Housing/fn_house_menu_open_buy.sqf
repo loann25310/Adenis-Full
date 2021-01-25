@@ -15,7 +15,7 @@ disableSerialization;
 _display = findDisplay 45000;
 g_interaction_target = _target;
 
-_config = missionConfigFile >> "ALYSIA_HOUSES" >> typeOf(_target);
+_config = missionConfigFile >> "ADENIS_HOUSES" >> typeOf(_target);
 
 _rank = getNumber(_config >> "factions" >> str(playerSide) >> "rank");
 if ((_rank isEqualTo 0) || ((_rank > 0) && ((player getVariable ["rank", 0]) >= _rank))) then {
@@ -52,7 +52,7 @@ if ((_price > 0) && (g_atm >= _price)) then {
 	if (_rank_condition) then {"#31B404"} else {"#DF0101"},
 	[playerSide, _rank] call AlysiaClient_fnc_rankToStr,
 	if (_license_condition) then {"#31B404"} else {"#DF0101"},
-	if (_license isEqualTo "") then {"Aucune"} else {getText(missionConfigFile >> "ALYSIA_LICENSES" >> _license >> "name")},
+	if (_license isEqualTo "") then {"Aucune"} else {getText(missionConfigFile >> "ADENIS_LICENSES" >> _license >> "name")},
 	if (_price_condition) then {"#31B404"} else {"#DF0101"},
 	[_price] call AlysiaClient_fnc_numberText,
 	if (isClass(_config >> "storage")) then {"<t color='#8cff9b'>Oui</t>"} else {"<t color='#ff8c8c'>Non</t>"},
@@ -61,7 +61,7 @@ if ((_price > 0) && (g_atm >= _price)) then {
 		format
 		[
 			"<t align='left'>Inventaire virtuel</t><t align='right'>%1</t><br/><t align='left'>Inventaire physique</t><t align='right'>%2</t><br/>",
-			getNumber(missionConfigFile >> "ALYSIA_STORAGES" >> getText(_config >> "storage" >> "type") >> "inventory"),
+			getNumber(missionConfigFile >> "ADENIS_STORAGES" >> getText(_config >> "storage" >> "type") >> "inventory"),
 			getNumber(configFile >> "CfgVehicles" >> getText(_config >> "storage" >> "type") >> "maximumLoad")
 		];
 	} else {""}

@@ -35,13 +35,13 @@ _action = switch (true) do
 
 if (_action) then
 {
-	_item = getText(missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "identity_item");
+	_item = getText(missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "identity_item");
 	if ((_item isEqualTo "") || (_item in (magazines player))) then
 	{
 		_licenses = [];
 
 		{
-			if (str(side _from) in getArray(missionConfigFile >> "ALYSIA_LICENSES" >> _x >> "factions" >> str(playerSide) >> "search_shown")) then {
+			if (str(side _from) in getArray(missionConfigFile >> "ADENIS_LICENSES" >> _x >> "factions" >> str(playerSide) >> "search_shown")) then {
 				_licenses pushBack _x;
 			};
 		} forEach ([] call AlysiaClient_fnc_getLicenses);

@@ -26,7 +26,7 @@ if ((cbChecked (_display displayCtrl 35006)) && g_garage_pay) then
 	_weight = 0;
 
 	{
-		if (getNumber(missionConfigFile >> "ALYSIA_ITEMS" >> (_x select 0) >> "illegal") isEqualTo 1) then {
+		if (getNumber(missionConfigFile >> "ADENIS_ITEMS" >> (_x select 0) >> "illegal") isEqualTo 1) then {
 			_hasIllegal = true;
 		};
 		_weight = _weight + ([_x select 0] call AlysiaClient_fnc_itemGetWeight);

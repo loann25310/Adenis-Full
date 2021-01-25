@@ -10,6 +10,6 @@ _res = [];
 	if ([_license] call AlysiaClient_fnc_hasLicense) then {
 		_res pushBack _license;
 	};
-} foreach ("true" configClasses (missionConfigFile >> "ALYSIA_LICENSES"));
+} foreach ("true" configClasses (missionConfigFile >> "ADENIS_LICENSES"));
 
 _res;

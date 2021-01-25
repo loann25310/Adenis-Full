@@ -4,7 +4,7 @@
 */
 
 /* ==================[CONFIG]===================*/
-if (getNumber(missionConfigFile >> "ALYSIA_FACTIONS" >> str(playerSide) >> "interaction_seize_gear") isEqualTo 1) then
+if (getNumber(missionConfigFile >> "ADENIS_FACTIONS" >> str(playerSide) >> "interaction_seize_gear") isEqualTo 1) then
 {
 	player addAction
 	[

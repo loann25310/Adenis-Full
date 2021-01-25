@@ -18,26 +18,26 @@ switch (true) do
 	case (_target isEqualTo g_company):
 	{
 		_title = (_target getVariable "company_info") select 0;
-		_allow_types = getArray(missionConfigFile >> "ALYSIA_COMPANIES_TYPES" >> ((_target getVariable "company_info") select 2) >> "garage" >> "types");
+		_allow_types = getArray(missionConfigFile >> "ADENIS_COMPANIES_TYPES" >> ((_target getVariable "company_info") select 2) >> "garage" >> "types");
 		_public = false;
 		_pay = false;
 	};
 	case (_target in g_houses):
 	{
 		_title = "Chez vous";
-		_allow_types = getArray(missionConfigFile >> "ALYSIA_HOUSES" >> typeOf(_target) >> "garage" >> "types");
+		_allow_types = getArray(missionConfigFile >> "ADENIS_HOUSES" >> typeOf(_target) >> "garage" >> "types");
 		_public = false;
 		_pay = false;
 	};
 	default
 	{
-		_config = missionConfigFile >> "ALYSIA_GARAGES" >> _type;
+		_config = missionConfigFile >> "ADENIS_GARAGES" >> _type;
 		if (isClass(_config)) then
 		{
 			_title = getText(_config >> "name");
 			_allow_types = getArray(_config >> "types");
 		} else {
-			[format["%1 n'est pas un garage défini dans ALYSIA_GARAGES.", _type]] call AlysiaClient_fnc_error;
+			[format["%1 n'est pas un garage défini dans ADENIS_GARAGES.", _type]] call AlysiaClient_fnc_error;
 		};
 		_public = true;
 		_pay = true;

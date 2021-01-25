@@ -17,14 +17,14 @@
 			"take",
 			"Récupérer le corps",
 			"[g_interaction_target] spawn AlysiaClient_fnc_skullMenu_take;",
-			"(getNumber(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'skull_take') isEqualTo 1)"
+			"(getNumber(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'skull_take') isEqualTo 1)"
 		],
 		[
 			"who",
 			"Identité",
 			"[g_interaction_target] spawn AlysiaClient_fnc_skullMenu_who;",
 			"
-				(getNumber(missionConfigFile >> 'ALYSIA_FACTIONS' >> str(playerSide) >> 'skull_who') isEqualTo 1) &&
+				(getNumber(missionConfigFile >> 'ADENIS_FACTIONS' >> str(playerSide) >> 'skull_who') isEqualTo 1) &&
 				((['adn'] call AlysiaClient_fnc_itemCount) > 0)
 			"
 		]

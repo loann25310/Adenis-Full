@@ -54,7 +54,7 @@ _idc = 9020;
 		[_idc, true] call AlysiaClient_fnc_tabletShow;
 		_idc = _idc + 1;
 	};
-} forEach ("(getPlayerUID player) in getArray(_x >> 'allow')" configClasses (missionConfigFile >> "ALYSIA_STAFF" >> "commands" >> "buttons"));
+} forEach ("(getPlayerUID player) in getArray(_x >> 'allow')" configClasses (missionConfigFile >> "ADENIS_STAFF" >> "commands" >> "buttons"));
 
 for "_i" from 9020 to 9028 do {
 	[_idc, false] call AlysiaClient_fnc_tabletShow;

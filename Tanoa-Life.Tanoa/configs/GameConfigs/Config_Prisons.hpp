@@ -1,4 +1,4 @@
-class ALYSIA_PRISONS
+class ADENIS_PRISONS
 {
 	class Land_Gaol_Main
 	{
