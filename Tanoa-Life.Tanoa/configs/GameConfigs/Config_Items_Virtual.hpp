@@ -1758,11 +1758,11 @@ class ADENIS_ITEMS
     {
         name="Tablette de Chocolat";
         weight=1;
-        image="Alysia_Client\Textures\Items_virtual\chocolate_bar.paa";
+        image="Adenis_Textures\Chocolat.paa";
         class market
         {
-            max=1900;
-            min=2900;
+            max=2900;
+            min=1900;
         };
         class remove {};
     };

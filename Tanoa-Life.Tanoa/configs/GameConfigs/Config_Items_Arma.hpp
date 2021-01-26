@@ -730,6 +730,15 @@ class ADENIS_ITEMS_ARMA
 	class EWK_Cig4: EWK_Cig1 {};
 	class EWK_Cig6: EWK_Cig1 {};
 
+	class murshun_cigs_cig0
+	{
+
+	};
+	class murshun_cigs_cig1: murshun_cigs_cig0 {};
+	class murshun_cigs_cig2: murshun_cigs_cig0 {};
+	class murshun_cigs_cig3: murshun_cigs_cig0 {};
+	class murshun_cigs_cig4: murshun_cigs_cig0 {};
+
 	class G_Shades_Black
 	{
 		buy_price=15;

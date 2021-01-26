@@ -793,11 +793,8 @@ class ADENIS_COMPANIES_TYPES
 			list[]=
 			{
 				"tabac",
-				"cig_clothing_01",
-				"cig_clothing_02",
-				"cig_clothing_03",
-				"cig_clothing_04",
-				"cig_clothing_05"
+				"cigareclothing",
+				"cigarettesclothing"
 			};
 		};
 		class garage
@@ -923,7 +920,7 @@ class ADENIS_COMPANIES_TYPES
 			list[]=
 			{
 				"cacao",
-				"tabchoco"
+				"tabchocop"
 			};
 		};
 		class garage

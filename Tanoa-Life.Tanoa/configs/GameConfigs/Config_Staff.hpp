@@ -192,7 +192,7 @@ class ADENIS_STAFF
 			class reboot
 			{
 				name="Reboot";
-				statement="[] remoteExec ['AlysiaServer_fnc_serverSave',2];";
+				statement="if(!(['Êtes vous sur de vouloir redémarrer le serveur ?','Confirmation','Oui','Non']call BIS_fnc_guiMessage))exitWith{};if(!(['Êtes vous sur de ne pas faire une Chuck Willis ?','Confirmation','Oui','Non']call BIS_fnc_guiMessage))exitWith{};if(!(['Êtes-vous conscient que tous les joueurs vont être déconnectés ?','Confirmation','Je le suis','Non,Annuler !']call BIS_fnc_guiMessage))exitWith{};[]remoteExec['AlysiaServer_fnc_serverSave',2];";
 				condition="isNil 'gServer_soonReboot'";
 				allow[]=ADMIN_AND_MODO;
 				verify=1;

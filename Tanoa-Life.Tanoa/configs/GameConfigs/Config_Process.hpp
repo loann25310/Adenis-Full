@@ -105,7 +105,7 @@ class ADENIS_PROCESS
 			class GUER {};
 		};
 	};
-	class cigare_clothing: cigare
+	class cigareclothing
 	{
 		name="Fabrication : cigare (vêtement)";
 		class require
@@ -114,7 +114,7 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_arma[]={"EWK_Cigar1"};
+			items_arma[]={"EWK_Cig1"};
 		};
 	};
 
@@ -1342,14 +1342,14 @@ class ADENIS_PROCESS
 		sound="drug_process";
 		class require
 		{
-			items_virtual[]={{"bean",6},{"conserve",1}};
+			items_virtual[]={{"bean",3},{"conserve",1}};
 		};
 		class receive
 		{
 			items_virtual[]={{"cassoulet",1}};
 		};
 		time_per_item=2;
-		time_default=10;
+		time_default=2;
 		class factions
 		{
 			class CIV
@@ -2152,7 +2152,7 @@ class ADENIS_PROCESS
 		};
 	};
 
-	class tabac_arma : tabac
+	class cigarettesclothing
 	{
 		name="Retubage des cigarettes";
 		class require
@@ -2161,7 +2161,7 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_arma[]={"murshun_cigs_cig0"};
+			items_arma[]={{"murshun_cigs_cig0",1}};
 		};
 		time_per_item=1;
 	};
@@ -2773,7 +2773,24 @@ class ADENIS_PROCESS
 		{
 			items_arma[]={"Skyline_UMP45_01_F"};
 		};
-	};
+		time_per_item=1;
+		time_default=2;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_gun"};
+			};
+			class WEST
+			{
+				licenses[]={"company_gun"};
+			};
+			class GUER
+			{
+				licenses[]={"company_gun"};
+			};
+		};
+	};	
 	class fnp_45: tec9
 	{
 		name="Fabrication : FNP45";
@@ -4241,9 +4258,9 @@ class ADENIS_PROCESS
 			};
 		};
 	};
-	class cacao
+	class tabchocop
 	{
-		name="Transformation du cacao";
+		name="Création des tablettes de chocolat";
 		sound="salt_process";
 		class require
 		{
