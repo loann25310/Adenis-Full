@@ -68,6 +68,7 @@ addMissionEventHandler ["HandleDisconnect", {_this call AlysiaServer_fnc_clientD
 [] call AlysiaServer_fnc_fuel_init;
 [] call AlysiaServer_fnc_time_init;
 [] call AlysiaServer_fnc_cleanup_init;
+[] call AlysiaServer_fnc_donator_init;
 
 private["_hour", "_min", "_time", "_calc", "_best", "_bestTime"];
 _time = call AlysiaServer_fnc_getRealTime;

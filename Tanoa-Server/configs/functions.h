@@ -153,6 +153,7 @@ class CfgFunctions
 			class keyManagement {};
 			class spikeStrip {};
 			class whitelistRebels {};
+			class donator_init {};
 		};
 
 		class Tools
