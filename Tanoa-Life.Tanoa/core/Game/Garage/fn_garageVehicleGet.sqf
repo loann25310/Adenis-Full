@@ -79,7 +79,7 @@ if ((g_garage_info select 2) isEqualTo []) then
 {
 	if (!(isNull g_interaction_target)) then
 	{
-		_position = (getPosATL g_interaction_target) findEmptyPosition [(((boundingBox g_interaction_target) select 1) select 0), ((((boundingBox g_interaction_target) select 1) select 0) + 70), _vehicleClassname];
+		_position = (getPosATL g_interaction_target) findEmptyPosition [(((boundingBox g_interaction_target) select 1) select 0), ((((boundingBox g_interaction_target) select 1) select 0) + 150), _vehicleClassname];
 		if (count(_position) > 0) then
 		{
 			if ((nearestObjects [_position, ["Car", "Air", "Ship"], 7]) isEqualTo []) then

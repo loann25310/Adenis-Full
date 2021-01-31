@@ -18,33 +18,25 @@ class ADENIS_MISSIONS
 			{
 				"Skyline_Mosin9130_01_F",
 				"Skyline_Mosin9130_02_F",
-				"Skyline_Mosin9130_03_F",
-				"Skyline_Mosin9130_04_F",
-				"Skyline_Mosin9130_Bayonette_01_F",
-				"Skyline_Mosin9130_Bayonette_02_F",
 				"Skyline_Mosin9130_Bayonette_03_F",
 				"Skyline_Mosin9130_Bayonette_04_F",
 				"Skyline_M4A1_01_F",
 				"Skyline_M4A1_02_F",
-				"RH_ttracker",
 				"RH_deagle",
 				"RH_Deaglem",
+				"hlc_rifle_ak74_MTK",
 				"RH_Deagles",
 				"RH_Deagleg",
-				"RH_ttracker_g",
-				"RH_bullb",
-				"RH_bull",
 				"Skyline_AKS_Rail_01_F"
 			};
 			magazines[]=
 			{
 				"30Rnd_556x45_Stanag",
-				"5Rnd_762x54_Mosin",
 				"RH_6Rnd_45ACP_Mag",
+				"hlc_30Rnd_545x39_B_AK"
 				"RH_7Rnd_50_AE",
 				"30Rnd_762x39_AKM",
-				"RH_6Rnd_454_Mag",
-				"Bank_Bomb"
+				"RH_6Rnd_454_Mag"
 			};
 			items[]=
 			{
@@ -63,7 +55,6 @@ class ADENIS_MISSIONS
 				"optic_Arco_ghex_F",
 				"optic_Arco",
 				"mgsr_headbag",
-				"G_Bandanna_blk",
 				"Skyline_GasMask",
 				"Skyline_optic_PSO1"
 			};
@@ -73,16 +64,13 @@ class ADENIS_MISSIONS
 				"blueprint_tt_33",
 				"blueprint_micro_uzi",
 				"blueprint_pm73_rak",
-				"blueprint_kimber_night_warrior",
 				"blueprint_umateba_model_6_unica",
 				"blueprint_taurus_raging_bull",
-				"blueprint_ruger_mk2",
 				"blueprint_taurus_tracker_455",
 				"blueprint_desert_eagle",
 				"blueprint_akm",
 				"blueprint_M4A1",
 				"blueprint_AKS",
-				"blueprint_fnp_45",
 				"blueprint_hedgehog",
 				"blueprint_watchpost_tall",
 				"blueprint_watchpost_small",
@@ -289,7 +277,7 @@ class ADENIS_MISSIONS
 
 	class west_1
 	{
-		name="Convoi Guardia di Monti";
+		name="Convoi Cuba";
 		sides[]={"WEST"};
 		condition="((player getVariable ['rank',0]) >= 4)";
 		price=0;

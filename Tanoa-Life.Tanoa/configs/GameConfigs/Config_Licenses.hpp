@@ -26,6 +26,19 @@ class ADENIS_LICENSES
 		};
 	};
 
+	class flt_rebelle
+	{
+		name="Membre de la Résitance";
+		class factions
+		{
+			class CIV
+			{
+				price=2500000;
+				search_shown[]={};
+			};
+		};
+	};
+
 	class spart_rebelle
 	{
 		name="Membre de la SPART";

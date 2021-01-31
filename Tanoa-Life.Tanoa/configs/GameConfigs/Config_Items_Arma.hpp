@@ -730,6 +730,11 @@ class ADENIS_ITEMS_ARMA
 	class EWK_Cig4: EWK_Cig1 {};
 	class EWK_Cig6: EWK_Cig1 {};
 
+	class HG_Weed_0
+	{
+		buy_price=1000;
+	};
+
 	class murshun_cigs_cig0
 	{
 
@@ -910,6 +915,60 @@ class ADENIS_ITEMS_ARMA
 	};
 
 
+	///////////////////////////////////////////////  FLT   ///////////////////////////////////////////////////
+
+	class LR_Shemagh
+	{
+		buy_price=5000;
+		buy_license_CIV[]={"flt_rebelle"};
+	};
+
+	class LR_Shemagh_OD : LR_Shemagh {};
+
+	class LR_ESS_HEAR : LR_Shemagh
+	{
+		buy_price=5000;
+	};
+
+	class LR_Shemagh_ESS_HEAR_NOPLETOR : LR_Shemagh
+	{
+		buy_price=5000;
+	};
+
+	class LR_Shemagh_ESS_HEAR_NOPLETOR_OD : LR_Shemagh
+	{
+		buy_price=5000;
+	};
+
+	class LR_Treillis : LR_Shemagh
+	{
+		buy_price=10000;
+	};
+
+	class LR_Bag : LR_Shemagh
+	{
+		buy_price=10000;
+	};
+
+	class LR_Treillis_2 : LR_Shemagh {};
+
+	class LR_Treillis_Syn : LR_Shemagh {};
+
+	class LR_Vest : LR_Shemagh
+	{
+		buy_price=95000;
+	};
+	/////////////////////////////////////////////NEW ARMES REBELLE//////////////////////////////////////////////
+	class hlc_rifle_ak74_MTK
+	{
+		buy_price=10000;
+		buy_license_CIV[]={""};
+	};
+	class hlc_30Rnd_545x39_B_AK
+	{
+		buy_price=10000;
+		buy_license_CIV[]={""};
+	};
 	///////////////////////////////////////////////  SPART   ///////////////////////////////////////////////////
 
 	class U_SPART_souple
@@ -1604,7 +1663,67 @@ class ADENIS_ITEMS_ARMA
 		buy_condition_GUER=1;
 		buy_price=20;
 	};
-
+	///////////////////////////////////////////////////Cuba/////////////////////////////////////////////////////////////////////////////////
+	class U_I_C_Soldier_Para_1_F
+	{
+		buy_price=100;
+		buy_condition_WEST=1;
+	};
+	class U_I_C_Soldier_Para_4_F
+	{
+		buy_price=100;
+		buy_condition_WEST=1;
+	};
+	class TAC_EI_RRV1_OD
+	{
+		buy_price=100;
+		buy_condition_WEST=1;
+	};
+	class tf_rt1523g_bwmod
+	{
+		buy_price=100;
+		buy_condition_WEST=1;
+	};
+	class H_Bandanna_camo
+	{
+		buy_price=100;
+		buy_condition_WEST=1;
+	};
+	class H_MilCap_wdl
+	{
+		buy_price=100;
+		buy_condition_WEST=1;
+	};
+	class G_Balaclava_oli
+	{
+		buy_price=100;
+		buy_condition_WEST=1;
+	};
+	class hlc_rifle_416D10
+	{
+		buy_price=25000;
+		buy_condition_WEST=1;
+	};
+	class hlc_30rnd_556x45_EPR
+	{
+		buy_price=100;
+		buy_condition_WEST=1;
+	};
+	class hlc_wp_m16a2
+	{
+		buy_price=50000;
+		buy_condition_WEST=4;
+	};
+	class hlc_rifle_g3a3ris
+	{
+		buy_price=50000;
+		buy_condition_WEST=11;
+	};
+	class hlc_20rnd_762x51_b_G3
+	{
+		buy_price=100;
+		buy_condition_WEST=11;
+	};
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	///////////////////////////////////////////////////     Garde de Malieu     ////////////////////////////////////////////////////////////
@@ -2417,7 +2536,47 @@ class ADENIS_ITEMS_ARMA
 		buy_condition_GUER=3;
 		protect_contamination_air=1;
 	};
-	
+
+	class EF_SHF_BK
+	{
+		buy_price=85;
+	};
+
+	class EF_SHF_BW
+	{
+		buy_price=85;
+	};
+
+	class EF_SHF_PK
+	{
+		buy_price=85;
+	};
+
+	class U_C_Uniform_Scientist_02_formal_F
+	{
+		buy_price=85;
+	};
+
+	class U_C_Uniform_Scientist_02_F
+	{
+		buy_price=85;
+	};
+
+	class U_C_Uniform_Scientist_01_formal_F
+	{
+		buy_price=85;
+	};
+
+	class U_C_E_LooterJacket_01_F
+	{
+		buy_price=85;
+	};
+
+	class U_C_Uniform_Farmer_01_F
+	{
+		buy_price=85;
+	};
+
 	// Garagiste
 	
 	class Alysia_repair_rotor
@@ -2448,7 +2607,7 @@ class ADENIS_ITEMS_ARMA
 	class dam_thom_phare
 	{
 		buy_license_CIV[]={"company_garagist"};
-		buy_price=3500;
+		buy_price=500;
 	};
 	class Alysia_repair_glass
 	{

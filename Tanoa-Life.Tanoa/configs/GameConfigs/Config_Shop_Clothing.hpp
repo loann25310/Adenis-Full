@@ -186,6 +186,11 @@ class ADENIS_SHOPS_CLOTHING
 			"Skyline_Character_U_CivilE_04_F",
 			"Skyline_Character_U_CivilE_05_F",
 			"Skyline_Character_U_CivilE_06_F",
+			"U_C_Uniform_Farmer_01_F",
+			"U_C_E_LooterJacket_01_F",
+			"U_C_Uniform_Scientist_01_formal_F",
+			"U_C_Uniform_Scientist_02_F",
+			"U_C_Uniform_Scientist_02_formal_F",
 			"Skyline_Character_U_CivilE_07_F"
 		};
 		vests[]=
@@ -404,6 +409,36 @@ class ADENIS_SHOPS_CLOTHING
 			"Chapeau_Costume"
 		};
 		backpacks[]={};
+	};
+
+	class flt_clothing
+	{
+		name="Shop la Résitance";
+		uniforms[]=
+		{
+			"LR_Treillis",
+			"LR_Treillis_2",
+			"LR_Treillis_Syn"
+		};
+		vests[]=
+		{
+			"LR_Vest"
+		};
+		goggles[]=
+		{
+			"LR_ESS_HEAR",
+			"LR_Shemagh_ESS_HEAR_NOPLETOR",
+			"LR_Shemagh_ESS_HEAR_NOPLETOR_OD"
+		};
+		headgear[]=
+		{
+			"LR_Shemagh",
+			"LR_Shemagh_OD"
+		};
+		backpacks[]=
+		{
+			"LR_Bag"
+		};
 	};
 
 	class spart_clothing
@@ -635,7 +670,8 @@ class ADENIS_SHOPS_CLOTHING
 		vests[]=
 		{
 			"EF_SHF_BK",
-			"EF_SHF_BW"
+			"EF_SHF_BW",
+			"EF_SHF_PK"
 		};
 	};
 
@@ -867,8 +903,7 @@ class ADENIS_SHOPS_CLOTHING
 		headgear[]=
 		{
 			"casquette_glr",
-		    "H_Cap_marshal",
-		    "H_mas_itr_hatnavy_f"
+		    "H_Cap_marshal"
 		};
 		vests[]=
 		{
@@ -1235,64 +1270,30 @@ class ADENIS_SHOPS_CLOTHING
 
 	class WEST_clothing
 	{
-		name="Friperie GDM";
+		name="Friperie Cuba";
 		side="WEST";
 		uniforms[]=
 		{
-			"U_B_Wetsuit",
-			"U_mas_itr_B_CombatUniform_cc",
-			"Alysia_Uniform_West_Garde",
-			"Alysia_Uniform_West_Caporal",
-			"Alysia_Uniform_West_Sergent",
-			"Alysia_Uniform_West_Lieutenant",
-			"Alysia_Uniform_West_Commandant",
-			"Alysia_Uniform_West_Commissaire_02",
-			"Alysia_Uniform_West_Commissaire_01",
-			"U_B_mas_itr_dress_air",
-			"U_B_mas_itr_coverall",
-			"U_mas_itr_B_Uniform_nav",
-			"U_mas_itr_B_Uniform_navOff",
-			"U_B_mas_itr_dress_navy",
-			"TRYK_U_B_BLK",
-			"U_mas_itr_B_CombatUniform_veg"
+			"U_I_C_Soldier_Para_1_F",
+			"U_I_C_Soldier_Para_4_F"
 		};
 		headgear[]=
 		{
-			"Alysia_Casque_West_01",
-			"Alysia_Casque_West_02",
-			"Alysia_Casque_West_03",
-			"Alysia_Casquette_West_01",
-			"Alysia_Casquette_West_02",
-			"Alysia_Casquette_West_03",
-			"Alysia_Casquette_West_04",
-			"Alysia_Casquette_West_05",
-			"Alysia_Casquette_West_06_01",
-			"Alysia_Casquette_West_06_02",
-			"H_mas_itr_PilotHelmetHeli_B",
-			"H_mas_itr_hatair_f",
-			"H_mas_itr_Beret_z",
-			"H_mas_itr_Beret_s",
-			"H_mas_itr_hatnavy_f",
-			"H_mas_itr_Beret_f",
-			"H_mas_itr_helmet_gog_veg"
+		"H_MilCap_wdl",
+		"H_Bandanna_camo",
+		"H_Bandanna_khk"
 		};
 		vests[]=
 		{
-			"V_mas_itr_PlateCarrierCC_rgr",
-			"V_RebreatherB",
-			"Alysia_Belt",
-			"Alysia_Vest_West_01",
-			"Alysia_Vest_West_02",
-			"V_mas_itr_pilotvest_rgr",
-			"V_mas_itr_PlateCarrierMM_rgr",
-			"TAC_V_Sheriff_BA_TB",
-			"V_mas_itr_PlateCarrier1_rgr"
+			"TAC_EI_RRV1_OD"
 		};
 		backpacks[]=
 		{
 			"TRYK_B_Coyotebackpack_BLK",
 			"B_ViperLightHarness_blk_F",
 			"B_ViperLightHarness_khk_F",
+			"B_Kitbag_sgg",
+			"tf_rt1523g_bwmod",
 			"Alysia_Radio_LR_West",
 			"Alysia_Radio_LR_East"
 		};
@@ -1300,6 +1301,7 @@ class ADENIS_SHOPS_CLOTHING
 		{
 			"G_B_Diving",
 			"G_Balaclava_blk",
+			"G_Balaclava_oli",
 			"TRYK_kio_balaclava_BLK"
 		};
 	};

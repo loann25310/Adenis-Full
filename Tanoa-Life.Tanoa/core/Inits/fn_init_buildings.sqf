@@ -234,7 +234,6 @@ _CreateLocalVehicle =
 ["Land_ConcreteWall_01_l_8m_F","[5680.17334,10994.986328,-0.0387206]",-398.525,-100,0,0,[]] call _CreateLocalVehicle;
 ["Land_ConcreteWall_01_l_8m_F","[5673.880371,10989.976563,-0.0387206]",321.475,-100,0,0,[]] call _CreateLocalVehicle;
 ["Land_ConcreteWall_01_l_4m_F","[5669.717285,10986.400391,-0.0387206]",-404.431,-100,0,0,[]] call _CreateLocalVehicle;
-["Lyeed_Billboard_GDM","[5677.795898,10986.21875,-0.551363]",-48.1819,-100,0,0,[]] call _CreateLocalVehicle;
 
 // Base : Armée Nationalee Tanocienne
 ["Land_Mil_WallBig_4m_F","[7365.672363,8573.160156,-0.0244108]",132.727,-100,0,0,[]] call _CreateLocalVehicle;

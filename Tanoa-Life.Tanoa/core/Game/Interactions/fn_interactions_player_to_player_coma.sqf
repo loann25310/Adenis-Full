@@ -56,7 +56,7 @@
 			"Compresse",
 			"[nil,nil,nil,g_interaction_target] spawn AlysiaClient_fnc_item_compresse_use;",
 			"
-				('Apolia_Compresse' in (magazines player)) &&
+				('Adenis_Compresse' in (magazines player)) &&
 				!(g_interaction_target getVariable ['bed_awake', false]) &&
 				!(g_interaction_target getVariable ['transporting',false]) &&
 				(isNull (attachedTo g_interaction_target))

@@ -23,7 +23,7 @@ class Header
 {
 	gameType=RPG;// Game type is a simplified category describing what a mission is about. It helps player to navigate through potentially large number of available missions and pick the one they would like to play.
 	minPlayers=1;//min # of players the mission supports
-	maxPlayers=200;//max # of players the mission supports
+	maxPlayers=170;//max # of players the mission supports
 };
 allowedVoteCmds[] = {};
 //---------------------------------

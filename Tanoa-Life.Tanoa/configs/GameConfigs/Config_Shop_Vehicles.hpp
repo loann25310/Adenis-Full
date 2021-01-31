@@ -201,7 +201,6 @@ class ADENIS_SHOPS_VEHICLES
 			"chdepanpl_glr",
 			"chTransport_L_glr",
 			"Skyline_Scania_G420_Depanneuse",
-			"Skyline_Jeep_Wrangler_Rubicon_Depannage",
 			"Skyline_Mercedes_Sprinter_Depannage",
 			"Maels_Mercedes_Sprinter_fast_repair",
 			"Skyline_Jeep_Wrangler_Rubicon_Depannage_01_F",
@@ -393,33 +392,27 @@ class ADENIS_SHOPS_VEHICLES
 
 	class WEST
 	{
-		name="Concessionnaire GDM";
+		name="Concessionnaire Cuba";
 		createVehicle=0;
 		side="WEST";
 		stock[]=
 		{
 			/* Véhicules Terrestres non armés */
-			"RDS_Lada_Civ_05",
-			"Alysia_R71_West_Base",
-			"Alysia_GMC_West_Base",
-			"GeK_Cadillac_Fleetwood_Brougham_85_04",
-			"Lemon_Beverly_Sedan_Garde",
-			"Lemon_Citroen_2CV_Garde_Tanocienne",
-			"Mrshounka_cherokee_noir_mat",
-			"d3s_gls63amg_17_FSB",
-			"d3s_vklasse_17_UNM",
-			"B_mas_itr_MBT_03_cannon_F",
-			"B_mas_itr_Truck_02_covered_F",
-			"B_mas_itr_Truck_02_transport_F",
+			"Skyline_Vehicule_A3_Offroad_05_F",
+			"Skyline_MTVR_4X4",
+			"Skyline_MTVR_MK23",
+			"Skyline_MTVR_MK27",
+			"Skyline_MTVR_MK27T",
+			"RDS_JAWA353_Civ_01",
+			"Lemon_Jeep_kaki",
+			"Skyline_Vehicule_APEX_MB_4WD_05_F",
+			"RDS_tt650_Civ_01",
+			"GeK_Cadillac_Fleetwood_Brougham_85_09",
 			/* Véhicules Terrestres armés */
 			/* Véhicules Navals */
 			/* Véhicules Aériens */
-			"B_mas_itr_Heli_Transport_02_F",
-			"B_mas_itr_Heli_Transport_03_unarmed_F",
-			"B_mas_itr_Heli_Transport_02_F",
-			"EC135Unarmedlu",
-			"B_mas_itr_Heli_Light_01_F",
-			"B_Heli_Light_01_F"
+			"I_C_Heli_Light_01_civil_F"
+
 		};
 	};
 };

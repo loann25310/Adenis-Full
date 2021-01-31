@@ -72,7 +72,13 @@ class ADENIS_REPAIR
 	class HitRBWheel: HitLFWheel {
 		name="Roue droite 4";
 	};
-
+	class hitrf3wheel: HitLFWheel {
+		name="Roue droite 4";
+	};
+	class hitlf3wheel: HitLFWheel {
+		name="Roue droite 4";
+	};
+	
 	class HitFWheel: HitLFWheel {
 		name="Roue avant";
 	};
@@ -190,7 +196,7 @@ class ADENIS_REPAIR
 		tool="Alysia_repair_toolbox";
 		item="";
 		picture="Alysia_Client_Texture\Data\vehicle\repair\parts\HitLight.paa";
-		time=7;
+		time=2;
 	};
 
 	class HitHydraulics

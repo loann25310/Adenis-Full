@@ -497,7 +497,7 @@ class ADENIS_ITEMS
     {
         name="Cigarette Emballé";
         weight=1;
-        image="Alysia_Client\Textures\Items_virtual\cigarette.paa";
+        image="Adenis_Textures\carton.paa";
         class market
         {
             max=1800;
@@ -588,7 +588,7 @@ class ADENIS_ITEMS
     {
         name="Meuble Emballé";
         weight=5;
-        image="Alysia_Client\Textures\Items_virtual\meuble.paa";
+        image="Adenis_Textures\carton.paa";
         class market
         {
             max=10941;
@@ -648,7 +648,7 @@ class ADENIS_ITEMS
     {
         name="Barre Acier Emballé";
         weight=2;
-        image="Alysia_Client\Textures\Items_virtual\steel.paa";
+        image="Adenis_Textures\carton.paa";
         class market
         {
             max=5252;
@@ -1240,9 +1240,9 @@ class ADENIS_ITEMS
         class food
         {
             hunger=50;
-            thirst=-20;
+            thirst=-10;
             sound="eat_biscuit";
-            unlimitedRun=120;
+            unlimitedRun=240;
         };
         class remove {};
         class market
@@ -1303,7 +1303,7 @@ class ADENIS_ITEMS
         {
             thirst=10;
             hunger=-5;
-            unlimitedRun=30;
+            unlimitedRun=120;
             sound="drink_water";
         };
         class remove {};
@@ -1334,6 +1334,16 @@ class ADENIS_ITEMS
             thirst=-5;
             sound="eat_biscuit";
         };
+        class remove {};
+    };
+    class cleuniverselle
+    {
+        name="clé universelle serrure";
+        weight=1;
+        price_buy=3000;
+        buy_license_CIV="company_garagist";
+        image="";
+
         class remove {};
     };
     class petitbeurre
@@ -1544,7 +1554,7 @@ class ADENIS_ITEMS
     class lab_marijuana
     {
         name="Laboratoire de marijuana";
-        price_buy=68000;
+        price_buy=400000;
         weight=40;
         illegal=1;
         image="Alysia_Client\Textures\Items_virtual\drogue.paa";
@@ -1558,7 +1568,7 @@ class ADENIS_ITEMS
     class lab_mushroom
     {
         name="Laboratoire de champignon";
-        price_buy=158000;
+        price_buy=200000;
         weight=40;
         illegal=1;
         image="Alysia_Client\Textures\Items_virtual\drogue.paa";
@@ -1572,7 +1582,7 @@ class ADENIS_ITEMS
     class lab_meth: lab_marijuana
     {
         name="Laboratoire de methamphetamine";
-        price_buy=209500;
+        price_buy=1000000;
         image="Alysia_Client\Textures\Items_virtual\drogue.paa";
         class use
         {
@@ -1583,7 +1593,7 @@ class ADENIS_ITEMS
     class lab_cocaine: lab_marijuana
     {
         name="Laboratoire de cocaïne";
-        price_buy=165000;
+        price_buy=800000;
         image="Alysia_Client\Textures\Items_virtual\drogue.paa";
         class use
         {
@@ -1594,7 +1604,7 @@ class ADENIS_ITEMS
     class lab_heroin: lab_marijuana
     {
         name="Laboratoire d'héroïne";
-        price_buy=194000;
+        price_buy=800000;
         image="Alysia_Client\Textures\Items_virtual\drogue.paa";
         class use
         {
@@ -1605,7 +1615,7 @@ class ADENIS_ITEMS
     class lab_cigare: lab_marijuana
     {
         name="Usine à cigares";
-        price_buy=98750;
+        price_buy=200000;
         image="Alysia_Client\Textures\Items_virtual\lab_cigare.paa";
         class use
         {
@@ -1616,7 +1626,7 @@ class ADENIS_ITEMS
     class lab_heal: lab_marijuana
     {
         name="Table d'opération illégale";
-        price_buy=103850;
+        price_buy=300000;
         image="Alysia_Client\Textures\Items_virtual\lab_heal.paa";
         class use
         {
@@ -1627,7 +1637,7 @@ class ADENIS_ITEMS
     class lab_gun: lab_marijuana
     {
         name="Etabli illégale d'armement";
-        price_buy=259000;
+        price_buy=1000000;
         image="";
         class use
         {
@@ -1638,7 +1648,7 @@ class ADENIS_ITEMS
     class lab_construction: lab_marijuana
     {
         name="Etabli illégale de constructions";
-        price_buy=88500;
+        price_buy=150000;
         image="Alysia_Client\Textures\Items_virtual\construction.paa";
         class use
         {
@@ -1825,7 +1835,6 @@ class ADENIS_ITEMS
             hunger=2;
             thirst=0;
             sound="eat_biscuit";
-            unlimitedRun=120;
         };
         class market
         {
@@ -1845,11 +1854,11 @@ class ADENIS_ITEMS
             hunger=2;
             thirst=0;
             sound="eat_biscuit";
-            unlimitedRun=120;
+            unlimitedRun=20;
         };
         class market
         {
-            max=2200;
+            max=1800;
             min=800;
         };
         class remove {};
@@ -3178,218 +3187,264 @@ class ADENIS_ITEMS
         price_buy=10000;
         buy_rank_EAST=10;
         buy_rank_WEST=6;
-        image="Alysia_Client\Textures\Items_virtual\Blueprint.paa";
+        image="Adenis_Textures\patron.paa";
         class remove {};
     };
     class blueprint_sig: blueprint_gsh18
     {
         name="Blueprint de SIG P226";
+        image="Adenis_Textures\patron.paa";
     };
     class blueprint_guardia: blueprint_gsh18
     {
         name="Blueprint Guardia";
+        image="Adenis_Textures\patron.paa";
     };
     class blueprint_m9: blueprint_gsh18
     {
         name="Blueprint de M9";
+        image="Adenis_Textures\patron.paa";
     };
     class blueprint_micro_uzi: blueprint_gsh18
     {
         name="Blueprint de Micro Uzi";
+        image="Adenis_Textures\patron.paa";
         illegal=1;
     };
     class blueprint_vp70: blueprint_gsh18
     {
         name="Blueprint de VP70";
+        image="Adenis_Textures\patron.paa";
     };
     class blueprint_m1911: blueprint_gsh18
     {
          name="Blueprint de M1911";
+         image="Adenis_Textures\patron.paa";
     };
     class blueprint_cz75: blueprint_gsh18
     {
         name="Blueprint de CZ75";
+        image="Adenis_Textures\patron.paa";
     };
     class blueprint_protector: blueprint_gsh18
     {
         name="Blueprint de Protector";
+        image="Adenis_Textures\patron.paa";
     };
     class blueprint_ump_45: blueprint_gsh18
     {
         name="Blueprint de UMP45";
+        image="Adenis_Textures\patron.paa";
     };
     class blueprint_fnp_45: blueprint_gsh18
     {
         name="Blueprint de FNP45";
+        image="Adenis_Textures\patron.paa";
         illegal=1;
     };
     class blueprint_rook_40: blueprint_gsh18
     {
         name="Blueprint de ROOK 40";
+        image="Adenis_Textures\patron.paa";
     };
     class blueprint_sw_659: blueprint_gsh18
     {
         name="Blueprint de SW659";
+        image="Adenis_Textures\patron.paa";
         illegal=1;
     };
     class blueprint_tt_33: blueprint_gsh18
     {
         name="Blueprint de TT33";
+        image="Adenis_Textures\patron.paa";
         illegal=1;
     };
     class blueprint_sdar: blueprint_gsh18
     {
         name="Blueprint de SDAR";
+        image="Adenis_Textures\patron.paa";
     };
     class blueprint_blaser_b95: blueprint_gsh18
     {
         name="Blueprint de Blaser 95";
+        image="Adenis_Textures\patron.paa";
     };
     class blueprint_pm73_rak: blueprint_gsh18
     {
         name="Blueprint de PM73 RAK";
+        image="Adenis_Textures\patron.paa";
         illegal=1;
     };
     class blueprint_glock_18: blueprint_gsh18
     {
         name="Blueprint de Glock";
+        image="Adenis_Textures\patron.paa";
     };
     class blueprint_usp_40_match: blueprint_gsh18
     {
         name="Blueprint de USP 40";
+        image="Adenis_Textures\patron.paa";
         illegal=1;
     };
     class blueprint_pm_9mm: blueprint_gsh18
     {
         name="Blueprint de PM 9MM";
+        image="Adenis_Textures\patron.paa";
         illegal=1;
     };
     class blueprint_kimber_night_warrior: blueprint_gsh18
     {
         name="Blueprint de Kimber Night Warrior";
+        image="Adenis_Textures\patron.paa";
         illegal=1;
     };
     class blueprint_umateba_model_6_unica: blueprint_gsh18
     {
         name="Blueprint de Umateba Unica";
+        image="Adenis_Textures\patron.paa";
         illegal=1;
     };
     class blueprint_taurus_raging_bull: blueprint_gsh18
     {
         name="Blueprint de Taurus Raging Bull";
+        image="Adenis_Textures\patron.paa";
         illegal=1;
     };
     class blueprint_taurus_tracker_455: blueprint_gsh18
     {
         name="Blueprint de Taurus Tracker 455";
+        image="Adenis_Textures\patron.paa";
         illegal=1;
     };
     class blueprint_desert_eagle: blueprint_gsh18
     {
         name="Blueprint de Desert Eagle";
+        image="Adenis_Textures\patron.paa";
         illegal=1;
     };    
     class blueprint_vermin_smg: blueprint_gsh18
     {
         name="Blueprint de Vermin SMG";
+        image="Adenis_Textures\patron.paa";
     };
     class blueprint_car_95: blueprint_gsh18
     {
         name="Blueprint de CAR 95";
+        image="Adenis_Textures\patron.paa";
     };    
     class blueprint_spar_16: blueprint_gsh18
     {
         name="Blueprint de SPAR 16";
+        image="Adenis_Textures\patron.paa";
     };
     class blueprint_hk416: blueprint_gsh18   
     {        
         name="Blueprint de HK416";
+        image="Adenis_Textures\patron.paa";
     };      
     class blueprint_hk417: blueprint_gsh18      
     {
        name="Blueprint de HK417";
+       image="Adenis_Textures\patron.paa";
     };
     class blueprint_akm: blueprint_gsh18
     {
         name="Blueprint de AKM";
+        image="Adenis_Textures\patron.paa";
         illegal=1;
     };
     class blueprint_M4A1: blueprint_gsh18
     {
         name="Blueprint de M4A1";
+        image="Adenis_Textures\patron.paa";
         illegal=1;
     };
     class blueprint_DP_28: blueprint_gsh18
     {
         name="Blueprint de DP28";
+        image="Adenis_Textures\patron.paa";
         illegal=1;
     };
     class blueprint_AKS: blueprint_gsh18
     {
         name="Blueprint de AKS";
+        image="Adenis_Textures\patron.paa";
         illegal=1;
     };
     class blueprint_AK12: blueprint_gsh18
     {
         name="Blueprint de AK12";
+        image="Adenis_Textures\patron.paa";
         illegal=1;
     };
     class blueprint_SVD: blueprint_gsh18
     {
         name="Blueprint de SVD";
+        image="Adenis_Textures\patron.paa";
         illegal=1;
     };
     class blueprint_mp44: blueprint_gsh18
     {
         name="Blueprint de MP 44";
+        image="Adenis_Textures\patron.paa";
     };
     class blueprint_g17: blueprint_gsh18
     {
         name="Blueprint de G17";
+        image="Adenis_Textures\patron.paa";
     };
     class blueprint_tec9: blueprint_gsh18
     {
         name="Blueprint de Tec9";
+        image="Adenis_Textures\patron.paa";
         illegal=1;
     };
     class blueprint_mp5: blueprint_gsh18
     {
         name="Blueprint de MP5";
+        image="Adenis_Textures\patron.paa";
         illegal=1;
     };
     class blueprint_mp7: blueprint_gsh18
     {
         name="Blueprint de MP7";
+        image="Adenis_Textures\patron.paa";
         illegal=1;
     };
     class blueprint_vz61: blueprint_gsh18
     {
         name="Blueprint de VZ61 Skorpion";
+        image="Adenis_Textures\patron.paa";
         illegal=1;
     };
     class blueprint_ruger_mk2: blueprint_gsh18
     {
         name="Blueprint de Tec9";
+        image="Adenis_Textures\patron.paa";
         illegal=1;
     };
     class blueprint_hedgehog: blueprint_gsh18
     {
         name="Blueprint de Hérisson Tchèque";
+        image="Adenis_Textures\patron.paa";
         illegal=1;
     };
     class blueprint_watchpost_tall: blueprint_gsh18
     {
         name="Poste de garde (grand)";
+        image="Adenis_Textures\patron.paa";
         illegal=1;
     };
     class blueprint_watchpost_small: blueprint_gsh18
     {
         name="Blueprint de Poste de garde (petit)";
+        image="Adenis_Textures\patron.paa";
         illegal=1;
     };
     class blueprint_watchtower_wood: blueprint_gsh18
     {
         name="Blueprint de our de guet en bois";
+        image="Adenis_Textures\patron.paa";
         illegal=1;
     };
 };

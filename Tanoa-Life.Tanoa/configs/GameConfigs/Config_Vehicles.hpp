@@ -2449,7 +2449,33 @@ class ADENIS_VEHICLES
 		fuel="SP98";
 		fuelCapacity=43;
 	};	
-	
+	class I_C_Heli_Light_01_civil_F: Alysia_WEST_base
+	{
+		realname="Humming Bird";
+		buyPrice=2000;
+		inventory=30;
+		fuel="SP98";
+		fuelCapacity=4300;
+		rank=3;
+	};
+	class RDS_JAWA353_Civ_01: Alysia_WEST_base
+	{
+		realname="Jawa 353";
+		buyPrice=2000;
+		inventory=30;
+		fuel="SP98";
+		fuelCapacity=400;
+		rank=1;
+	};
+	class RDS_tt650_Civ_01: Alysia_WEST_base
+	{
+		realname="TT650";
+		buyPrice=2000;
+		inventory=30;
+		fuel="SP98";
+		fuelCapacity=40;
+		rank=3;
+	};
 	class d3s_tahoe_UNM : Alysia_WEST_base
 	{
 		realname="TAHOE Guardia";

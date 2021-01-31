@@ -250,7 +250,29 @@ class ADENIS_PROCESS
 			class GUER {};
 		};
 	};
-
+	class 
+	{
+		name="Traitement du join de cannabis";
+		sound="smelting";
+		class require
+		{
+			items_virtual[]={{"marijuana",3}};
+		};
+		class receive
+		{
+			items_arma[]={"HG_Weed_0"};
+		};
+		time_per_item=2;
+		time_default=7;
+		class target {};
+		class factions
+		{
+			class CIV {};
+			class WEST {};
+			class EAST {};
+			class GUER {};
+		};
+	};
 	class mushroom
 	{
 		name="Séchage des champignons";
@@ -537,7 +559,7 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_virtual[]={{"ironp",1},{"soufre",1}};
+			items_virtual[]={{"ironp",1},{"soufre",2}};
 		};
 		time_per_item=2;
 		time_default=5;
@@ -2484,11 +2506,11 @@ class ADENIS_PROCESS
 		name="Fabrication : Balles";
 		class require
 		{
-			items_virtual[]={{"steelp",1},{"soufre",50}};
+			items_virtual[]={{"steelp",1},{"soufre",10}};
 		};
 		class receive
 		{
-			items_virtual[]={{"bulletp",50}};
+			items_virtual[]={{"bulletp",40}};
 		};
 		time_per_item=2;
 	};
@@ -2497,11 +2519,11 @@ class ADENIS_PROCESS
 		name="Fabrication : Balles Militaire";
 		class require
 		{
-			items_virtual[]={{"steelp",1},{"soufre",60}};
+			items_virtual[]={{"steelp",1},{"soufre",20}};
 		};
 		class receive
 		{
-			items_virtual[]={{"military_bulletp",20}};
+			items_virtual[]={{"military_bulletp",30}};
 		};
 		time_per_item=2;
 	};
@@ -2514,7 +2536,7 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_virtual[]={{"chevrotinep",10}};
+			items_virtual[]={{"chevrotinep",15}};
 		};
 		time_per_item=2;
 	};
@@ -3005,7 +3027,7 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_arma[]={"Skyline_AKM_01_F"};
+			items_arma[]={"hlc_rifle_ak74_MTK"};
 		};
 		time_per_item=25;
 		time_default=2;
@@ -3230,7 +3252,7 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_arma[]={"30Rnd_762x39_AKM"};
+			items_arma[]={"hlc_30Rnd_545x39_B_AK"};
 		};
 		time_default=3;
 		time_per_item=2;

@@ -13,15 +13,20 @@ class ADENIS_WHITELIST
 
 	donator_slots[] =
 	{
+		"CIV_121",
+		"CIV_122",
+		"CIV_123",
+		"CIV_124",
+		"CIV_125",
+		"CIV_126",
+		"CIV_127",
+		"CIV_128",
+		"CIV_129",
+		"CIV_130",
 		"CIV_131",
 		"CIV_132",
 		"CIV_133",
 		"CIV_134",
-		"CIV_135",
-		"CIV_136",
-		"CIV_137",
-		"CIV_138",
-		"CIV_139",
-		"CIV_140"
+		"CIV_135"
 	};
 };

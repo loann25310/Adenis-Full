@@ -131,7 +131,7 @@ class ADENIS_BLUEPRINTS
 	};
 	class blueprint_akm: blueprint_gsh18
 	{
-		process[]={"AKM","magazine_akm"};
+		process[]={"hlc_rifle_ak74_MTK","hlc_30Rnd_545x39_B_AK"};
 	};
 	class blueprint_car_95: blueprint_gsh18
 	{

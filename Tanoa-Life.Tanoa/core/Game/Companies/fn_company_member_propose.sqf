@@ -17,11 +17,11 @@ if (!(isNull g_company)) exitWith
 	[format["<t color='#FFBF00'>%1</t> a essayé de vous embaucher dans son entreprise mais vous avez refusé automatiquement car vous travaillez déjà pour le compte d'une entreprise.", (_from getVariable "realname")]] call AlysiaClient_fnc_info;
 };
 
-if (!(['medical'] call AlysiaClient_fnc_hasLicense)) exitWith
+/*if (!(['medical'] call AlysiaClient_fnc_hasLicense)) exitWith
 {
 	[format["<t color='#FFBF00'>%1</t> ne possède pas de certificat médical.", (player getVariable "realname")]] remoteExecCall ["AlysiaClient_fnc_info", _from];
 	[format["<t color='#FFBF00'>%1</t> a essayé de vous embaucher dans son entreprise mais vous avez refusé automatiquement car vous n'avez pas de certificat médical.", (_from getVariable "realname")]] call AlysiaClient_fnc_info;
-};
+};*/
 
 _action =
 [

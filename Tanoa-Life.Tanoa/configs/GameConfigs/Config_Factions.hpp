@@ -271,6 +271,27 @@ class ADENIS_FACTIONS
 				license="admin";
 			};
 
+			class tbo_rebelle
+			{
+				rank=0;
+				same_side_only=0;
+				license="admin";
+			};
+
+			class flt_rebelle
+			{
+				rank=0;
+				same_side_only=0;
+				license="admin";
+			};
+
+			class spart_rebelle
+			{
+				rank=0;
+				same_side_only=0;
+				license="admin";
+			};
+
 			class driver
 			{
 				rank=0;
@@ -546,10 +567,10 @@ class ADENIS_FACTIONS
 	class WEST
 	{
 		/*** GLOBAL ***/
-		name="GDM";
-		name_full="Guardia di Monti";
-		icon="Alysia_Client_Texture\Data\faction\WEST_logo.paa";
-		identity_item="Alysia_Identity_West";
+		name="FRC";
+		name_full="Fuerzas revolucionarias cubanas";
+		icon="";
+		identity_item="Alysia_Identity_Civ";
 
 		/*** SALARY ***/
 		class salary
@@ -663,7 +684,7 @@ class ADENIS_FACTIONS
 		/*** LOADOUT ***/
 		class Loadout
 		{
-			uniform="Alysia_Uniform_West_Garde";
+			uniform="U_I_C_Soldier_Para_1_F";
 			headgear="";
 			vest="";
 			backpack="";
@@ -676,29 +697,29 @@ class ADENIS_FACTIONS
 			ranks_complet[]=
 			{
 				"Civil",
-				"Garde",
-				"Caporal",
-				"Caporal-Chef",
-				"Sergent",
-				"Sergent-Chef",
-				"Lieutenant",
-				"Capitaine",
-				"Commandant",
-				"Commissaire Général"
+				"Cabo",
+				"Sargente",
+				"Suboficial",
+				"Teniente",
+				"Capitan",
+				"Mayor",
+				"Comandante en jefe",
+				"Vice Presidente",
+				"Presidente"
 			};
 
 			ranks_short[]=
 			{
 				"Civ",
-				"Ga",
-				"Cp",
-				"CpC",
+				"Ca",
 				"Sgt",
-				"SgtC",
-				"Lt",
-				"Cne",
-				"Cmd",
-				"Com-Gen"
+				"Sub",
+				"Ten",
+				"Cpt",
+				"May",
+				"Com",
+				"VP",
+				"Pr"
 			};
 		};
 	};

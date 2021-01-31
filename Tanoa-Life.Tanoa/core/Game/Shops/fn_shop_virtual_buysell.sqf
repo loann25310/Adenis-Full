@@ -50,7 +50,7 @@ if (g_shop_lock_bool) then {
 
 if (g_shop_receive_illegal > 0) then
 {
-	if(west countSide playableUnits == 0) then
+	/*if(west countSide playableUnits == 0) then
 	{
 		[true, "illegal_money", round (g_shop_receive_illegal / 2)] call AlysiaClient_fnc_handleInv;
 	}
@@ -64,7 +64,8 @@ if (g_shop_receive_illegal > 0) then
 		{
 			[true, "illegal_money", g_shop_receive_illegal] call AlysiaClient_fnc_handleInv;
 		};
-	};
+	};*/
+	[true, "illegal_money", g_shop_receive_illegal] call AlysiaClient_fnc_handleInv;
 	g_shop_receive_illegal = 0;
 };
 

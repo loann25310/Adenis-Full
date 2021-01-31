@@ -35,7 +35,7 @@
 								[
 									format
 									[
-											"Votre véhicule <t color='#FE9A2E'>%1</t> en <t color='#FACC2E'>%2</t> est resté inactif depuis 50 minutes.<br/>"
+											"Votre véhicule <t color='#FE9A2E'>%1</t> en <t color='#FACC2E'>%2</t> est resté inactif depuis 90 minutes.<br/>"
 										+	"Si vous ne le bougez pas de plus de <t color='#01DF01'>10 mètres</t> d'ici 10 minutes, votre véhicule sera envoyé automatiquement en <t color='#AC58FA'>fourrière</t> par le serveur.<br/>"
 										+	"Son inventaire ne sera <t color='#FE2E64'>pas sauvegardé</t>.",
 										getText(configFile >> "CfgVehicles" >> typeof(_x) >> "displayName"),

@@ -173,7 +173,7 @@ while {true} do
 		_min = _time select 1;
 	};
 
-	if (time >= _nextAnnounceTime) then
+	/*if (time >= _nextAnnounceTime) then
 	{
 		_nextAnnounceTime = time + (round(random(10) + 1) * 60);
 
@@ -187,5 +187,5 @@ while {true} do
 				"volcan"
 			] call BIS_fnc_selectRandom)
 		] remoteExecCall ["AlysiaClient_fnc_border_south_sounds", -2];
-	};
+	};*/
 };
