@@ -4,11 +4,12 @@
 */
 private "_target";
 _target = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
+_item = [_this, 1, "", [""]] call BIS_fnc_param;
 
 if ((isNull _target) || (!(_target isKindOf "Car") && !(_target isKindOf "Ship") && !(_target isKindOf "Air"))) exitWith {
 	["Cible invalde."] call AlysiaClient_fnc_error;
 };
-if (!("Alysia_Lockpick" in (magazines player))) exitWith {
+if (!(_item in (magazines player))) exitWith {
 	["Vous n'avez pas de kit de crochetage."] call AlysiaClient_fnc_error;
 };
 if (serverTime < 600) exitWith {
@@ -23,11 +24,11 @@ if (getNumber(missionConfigFile >> "ADENIS_VEHICLES" >> typeOf(_target) >> "disa
 
 if (!(["Crochetage de véhicule", 12, _target, "", "AinvPknlMstpsnonWnonDnon_medic_1"] call AlysiaClient_fnc_showProgress)) exitWith {};
 
-if (!("Alysia_Lockpick" in (magazines player))) exitWith {
+if (!(_item in (magazines player))) exitWith {
 	["Vous n'avez pas de kit de crochetage."] call AlysiaClient_fnc_error;
 };
 
-player removeMagazine "Alysia_Lockpick";
+player removeMagazine _item;
 [_target, "lockpick", 100] call AlysiaClient_fnc_globalSay3d;
 if ((random(100)) < 25 || ["company_garagist"] call AlysiaClient_fnc_hasLicense) then
 {

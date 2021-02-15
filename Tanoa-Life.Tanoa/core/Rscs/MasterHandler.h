@@ -39,6 +39,7 @@
 #include "RscDisplays\RscDisplayWallet.hpp"
 #include "RscDisplays\RscDisplayFauxPapiers.hpp"
 #include "RscDisplays\RscDisplayChangeKey.hpp"
+#include "RscDisplays\RscDisplayAnimations.hpp"
 
 class RscTitles
 {

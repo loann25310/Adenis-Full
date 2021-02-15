@@ -280,6 +280,7 @@ class ADENIS_SHOPS_VEHICLES
 		{
 			"Mrshounka_hummer_civ",
 			"madsa_hummer_h2",
+			"GeK_Civilian_H1",
 			"Skyline_Vehicule_A3_Offroad_Rebelle",
 			"Skyline_Vehicule_A3_Offroad_Armed_Rebelle",
 			"Skyline_MTVR_4X4",
@@ -398,21 +399,17 @@ class ADENIS_SHOPS_VEHICLES
 		stock[]=
 		{
 			/* Véhicules Terrestres non armés */
-			"Skyline_Vehicule_A3_Offroad_05_F",
-			"Skyline_MTVR_4X4",
-			"Skyline_MTVR_MK23",
-			"Skyline_MTVR_MK27",
-			"Skyline_MTVR_MK27T",
 			"RDS_JAWA353_Civ_01",
 			"Lemon_Jeep_kaki",
 			"Skyline_Vehicule_APEX_MB_4WD_05_F",
 			"RDS_tt650_Civ_01",
 			"GeK_Cadillac_Fleetwood_Brougham_85_09",
+			"B_T_LSV_01_unarmed_F",
 			/* Véhicules Terrestres armés */
 			/* Véhicules Navals */
 			/* Véhicules Aériens */
-			"I_C_Heli_Light_01_civil_F"
-
+			"B_Heli_Light_01_F",
+			"I_E_Heli_light_03_unarmed_F"
 		};
 	};
 };

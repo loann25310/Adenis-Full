@@ -24,13 +24,13 @@ class ADENIS_COMPANIES_BUILDINGS
 		construction[]={{"ciment",70},{"ironp",60},{"glass",50},{"furniture",2}};
 		taxe=230;
 	};
-	class Land_WIP_F
+	class Diablo_Ent_Service
 	{
 		bedrock="Land_Bricks_V3_F";
 		construction[]={{"woodp",75},{"furniture",5},{"ironp",25},{"sand",50},{"glass",30},{"pierre",50}};
 		taxe=225;
 	};
-	class Land_Hangar_F
+	class Land_Addon_05_F
 	{
 		bedrock="Land_Bricks_V3_F";
 		construction[]={{"woodp",55},{"ciment",70},{"furniture",10},{"ironp",20},{"sand",50},{"glass",20}};
@@ -311,7 +311,7 @@ class ADENIS_COMPANIES_TYPES
 	{
 		name="Entreprise de BTP";
 		price=482000;
-		building="Land_WIP_F";
+		building="Diablo_Ent_Service";
 		license="company_construction";
 		image="Alysia_Client_Texture\Data\companies\types\construction.paa";
 		members_max=15;
@@ -338,7 +338,7 @@ class ADENIS_COMPANIES_TYPES
 	{
 		name="Transport de personnes : Taxi & Luxe";
 		price=375000;
-		building="Land_Hangar_F";
+		building="Land_Addon_05_F";
 		license="company_transport_people";
 		image="Alysia_Client_Texture\Data\companies\types\transport.paa";
 		members_max=15;
@@ -420,6 +420,22 @@ class ADENIS_COMPANIES_TYPES
 		price=250000;
 		building="Land_Entreprise01_F";
 		license="company_service";
+		image="Alysia_Client_Texture\Data\companies\types\service.paa";
+		members_max=15;
+		salary=100;
+		ticket=1;
+		class storage
+		{
+			type="Diablo_Coffre_Extra";
+		};
+	};
+
+	class compagnie_airienne
+	{
+		name="Compagnie Aérienne";
+		price=250000;
+		building="Diablo_Ent_Service";
+		license="company_compagnie_airienne";
 		image="Alysia_Client_Texture\Data\companies\types\service.paa";
 		members_max=15;
 		salary=100;
@@ -793,6 +809,7 @@ class ADENIS_COMPANIES_TYPES
 			list[]=
 			{
 				"tabac",
+				"cigare",
 				"cigareclothing",
 				"cigarettesclothing"
 			};
@@ -968,7 +985,7 @@ class ADENIS_COMPANIES_TYPES
 		building="GeK_Entreprise_Scierie";
 		image="Alysia_Client_Texture\Data\companies\types\wood.paa";
 		license="company_wood";
-		ressources_link[]={"wood","woodp"};
+		ressources_link[]={"wood","woodp","palette"};
 		members_max=15;
 		salary=105;
 		ticket=1;
@@ -982,7 +999,8 @@ class ADENIS_COMPANIES_TYPES
 			modelPos[]={6.28711,0.510254,0.528652};
 			list[]=
 			{
-				"wood"
+				"wood",
+				"palette"
 			};
 		};
 		class garage

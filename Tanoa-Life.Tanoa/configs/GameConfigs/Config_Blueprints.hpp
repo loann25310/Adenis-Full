@@ -25,6 +25,10 @@ class ADENIS_BLUEPRINTS
 	{
 		process[]={"sig_p226","magazine_sig_p226"};
 	};
+	class blueprint_RH_g17: blueprint_gsh18
+	{
+		process[]={"RH_g17","RH_17Rnd_9x19_g17"};
+	};
 	class blueprint_g17: blueprint_gsh18
 	{
 		process[]={"g17","magazine_g17"};
@@ -131,7 +135,7 @@ class ADENIS_BLUEPRINTS
 	};
 	class blueprint_akm: blueprint_gsh18
 	{
-		process[]={"hlc_rifle_ak74_MTK","hlc_30Rnd_545x39_B_AK"};
+		process[]={"AKM","magazine_akm"};
 	};
 	class blueprint_car_95: blueprint_gsh18
 	{

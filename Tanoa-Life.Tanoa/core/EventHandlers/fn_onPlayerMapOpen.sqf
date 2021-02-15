@@ -6,7 +6,7 @@ private "_id";
 
 waitUntil {visibleMap};
 
-/*_id = (findDisplay 12) displayaddEventHandler ["KeyDown", {((_this select 1) isEqualTo 29)}];*/
+_id = (findDisplay 12) displayaddEventHandler ["KeyDown", {((_this select 1) isEqualTo 29)}];
 
 if ((vehicle player) isEqualTo player) then {
 	player playAction "Gear";
@@ -142,7 +142,7 @@ if (g_staff_markers) then
 	};
 };
 
-/*while {visibleMap} do
+while {visibleMap} do
 {
 	waitUntil {!visibleMap || !(isNull (uiNamespace getVariable ["RscDisplayInsertMarker", displayNull]))};
 	if (!(isNull (uiNamespace getVariable ["RscDisplayInsertMarker", displayNull]))) then
@@ -152,4 +152,3 @@ if (g_staff_markers) then
 };
 
 (findDisplay 12) displayRemoveEventHandler ["KeyDown", _id];
-*/

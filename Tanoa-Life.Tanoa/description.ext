@@ -23,7 +23,7 @@ class Header
 {
 	gameType=RPG;// Game type is a simplified category describing what a mission is about. It helps player to navigate through potentially large number of available missions and pick the one they would like to play.
 	minPlayers=1;//min # of players the mission supports
-	maxPlayers=170;//max # of players the mission supports
+	maxPlayers=150;//max # of players the mission supports
 };
 allowedVoteCmds[] = {};
 //---------------------------------
@@ -114,7 +114,7 @@ forceRotorLibSimulation=0;// Force enable or disable RotorLib. Default value: 0 
 *********** Communication *********
 ***********************************/
 // Disable global, side, command and system chat. MOTD and admin say have exception and will show in global. Introduced in BETA 1.60.93398.
-disableChannels[]={{0,1,1},{1,0,1},{2,1,1},{3,1,1},{4,1,1},{5,0,1},{6,1,1}};
+disableChannels[]={{0,1,1},{1,1,1},{2,1,1},{3,1,1},{4,1,1},{5,1,1},{6,1,1}};
 //---------------------------------
 
 /**********************************

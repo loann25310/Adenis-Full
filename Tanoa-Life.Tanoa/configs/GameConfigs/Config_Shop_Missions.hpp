@@ -25,17 +25,18 @@ class ADENIS_MISSIONS
 				"RH_deagle",
 				"RH_Deaglem",
 				"hlc_rifle_ak74_MTK",
+				"hlc_rifle_aks74_MTK",
+				"hlc_rifle_aku12",
+				"hlc_rifle_aek971_mtk",
 				"RH_Deagles",
-				"RH_Deagleg",
-				"Skyline_AKS_Rail_01_F"
+				"RH_Deagleg"
 			};
 			magazines[]=
 			{
 				"30Rnd_556x45_Stanag",
 				"RH_6Rnd_45ACP_Mag",
-				"hlc_30Rnd_545x39_B_AK"
+				"hlc_30Rnd_545x39_B_AK",
 				"RH_7Rnd_50_AE",
-				"30Rnd_762x39_AKM",
 				"RH_6Rnd_454_Mag"
 			};
 			items[]=
@@ -65,12 +66,10 @@ class ADENIS_MISSIONS
 				"blueprint_micro_uzi",
 				"blueprint_pm73_rak",
 				"blueprint_umateba_model_6_unica",
-				"blueprint_taurus_raging_bull",
 				"blueprint_taurus_tracker_455",
 				"blueprint_desert_eagle",
 				"blueprint_akm",
 				"blueprint_M4A1",
-				"blueprint_AKS",
 				"blueprint_hedgehog",
 				"blueprint_watchpost_tall",
 				"blueprint_watchpost_small",
@@ -100,6 +99,8 @@ class ADENIS_MISSIONS
 			weapons[]=
 			{
 				"RH_ttracker",
+				"C1987_MP7",
+				"C1987_MP7_folded",
 				"RH_deagle",
 				"RH_Deaglem",
 				"RH_Deagles",
@@ -111,6 +112,7 @@ class ADENIS_MISSIONS
 			magazines[]=
 			{
 				"RH_6Rnd_45ACP_Mag",
+				"C1987_40Rnd_46x30_mp7",
 				"RH_7Rnd_50_AE",
 				"RH_6Rnd_454_Mag"
 			};

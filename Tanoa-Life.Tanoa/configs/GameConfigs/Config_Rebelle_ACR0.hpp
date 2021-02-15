@@ -366,7 +366,6 @@ class TRYK_U_B_BLKBLK_CombatUniform: TRYK_U_B_OD_OD_R_CombatUniform {};
 class TRYK_U_B_ARO2_CombatUniform: TRYK_U_B_OD_OD_R_CombatUniform {};
 class TRYK_U_B_BLKBLK_R_CombatUniform: TRYK_U_B_OD_OD_R_CombatUniform {};
 class U_Soldat_ai: TRYK_U_B_OD_OD_R_CombatUniform {};
-class U_I_C_Soldier_Para_1_F: TRYK_U_B_OD_OD_R_CombatUniform {};
 class U_I_C_Soldier_Camo_F: TRYK_U_B_OD_OD_R_CombatUniform {};
 
 ////////////////////////

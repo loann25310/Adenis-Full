@@ -437,6 +437,19 @@ class ADENIS_LICENSES
 			};
 		};
 	};
+	class company_compagnie_airienne
+	{
+		name="Licence de Compagnie Aérienne";
+		class factions
+		{
+			class CIV
+			{
+				price=12250;
+				condition="!(isNull g_company) && {(((g_company getVariable ['company_info',['','','']]) select 2) isEqualTo 'compagnie_airienne')}";
+				search_shown[]={"WEST","EAST","GUER","CIV"};
+			};
+		};
+	};
 	class company_driving_school
 	{
 		name="Moniteur d'auto école";

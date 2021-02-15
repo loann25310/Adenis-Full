@@ -86,6 +86,18 @@ class ADENIS_VEHICLES
 	class madsa_hummer_h2_white_F: madsa_hummer_h2 {};
 	class madsa_hummer_h2_yellow_F: madsa_hummer_h2 {};
 
+	class GeK_Civilian_H1
+	{
+		realname="Hummer H1";
+		buyPrice=344000;
+		inventory=85;
+		side="CIV";
+		insurance=0;
+		disableOwnerInfos=1;
+		licenses[]={"rebelle_1"};
+		fuel="SP95";
+		fuelCapacity=121;
+	};	
 	class RDS_Zetor6945_Base
 	{
 		realname="Tracteur Zetor6945";
@@ -2449,12 +2461,21 @@ class ADENIS_VEHICLES
 		fuel="SP98";
 		fuelCapacity=43;
 	};	
-	class I_C_Heli_Light_01_civil_F: Alysia_WEST_base
+	class B_Heli_Light_01_F: Alysia_WEST_base
 	{
 		realname="Humming Bird";
 		buyPrice=2000;
 		inventory=30;
-		fuel="SP98";
+		fuel="Kerosene";
+		fuelCapacity=4300;
+		rank=3;
+	};
+	class I_E_Heli_light_03_unarmed_F: Alysia_WEST_base
+	{
+		realname="Hellcat";
+		buyPrice=2000;
+		inventory=30;
+		fuel="Kerosene";
 		fuelCapacity=4300;
 		rank=3;
 	};
@@ -2747,12 +2768,12 @@ class ADENIS_VEHICLES
 	};
 	class Alysia_R71_East_01: Alysia_R71_East_Base {};
 
-	class B_T_LSV_01_unarmed_F: Alysia_EAST_base
+	class B_T_LSV_01_unarmed_F: Alysia_WEST_base
 	{
 		realname="Prowler";
 		buyPrice=22500;
 		inventory=75;
-		rank=2;
+		rank=3;
 		fuel="Diesel";
 		fuelCapacity=84;
 		colors[]=
@@ -2840,7 +2861,7 @@ class ADENIS_VEHICLES
 	{
 		realname="Bateau à moteur";
 		buyprice=72000;
-		inventory=100;
+		inventory=175;
 		licenses[]={"boat"};
 		fuel="diesel";
 		fuelCapacity=112;
@@ -4495,7 +4516,7 @@ class ADENIS_VEHICLES
 	{
 		realname="Bateau transport";
 		buyPrice=50000;
-		inventory=150;
+		inventory=300;
 		side="CIV";
 		insurance=1;
 		licenses[]={"boat"};
@@ -4722,7 +4743,7 @@ class ADENIS_VEHICLES
 	{
 		realname="Bateau à moteur";
 		buyPrice=8000;
-		inventory=120;
+		inventory=175;
 		fuelCapacity=160;
 		colors[]={};
 	};
@@ -6970,7 +6991,7 @@ class ADENIS_VEHICLES
 		inventory=10;
 		side="CIV";
 		insurance=1;
-		licenses[]={"company_service"};
+		licenses[]={"company_compagnie_airienne"};
 		fuel="SP98";
 		fuelCapacity=45;
 	};
@@ -6981,7 +7002,7 @@ class ADENIS_VEHICLES
 		inventory=1000;
 		side="CIV";
 		insurance=1;
-		licenses[]={"pilot","company_service"};
+		licenses[]={"pilot","company_compagnie_airienne"};
 		fuel="Kerosene";
 		fuelCapacity=850;
 	};
@@ -6992,7 +7013,7 @@ class ADENIS_VEHICLES
 		inventory=800;
 		side="CIV";
 		insurance=1;
-		licenses[]={"pilot","company_service"};
+		licenses[]={"pilot","company_compagnie_airienne"};
 		fuel="Kerosene";
 		fuelCapacity=850;
 	};
@@ -7007,7 +7028,7 @@ class ADENIS_VEHICLES
 		inventory=1200;
 		side="CIV";
 		insurance=1;
-		licenses[]={"pilot","company_service"};
+		licenses[]={"pilot","company_compagnie_airienne"};
 		fuel="Kerosene";
 		fuelCapacity=2300;
 	};
@@ -7019,7 +7040,7 @@ class ADENIS_VEHICLES
 		inventory=1200;
 		side="CIV";
 		insurance=1;
-		licenses[]={"pilot","company_service"};
+		licenses[]={"pilot","company_compagnie_airienne"};
 		fuel="Kerosene";
 		fuelCapacity=2300;
 	};
@@ -7030,20 +7051,9 @@ class ADENIS_VEHICLES
 		inventory=1200;
 		side="CIV";
 		insurance=1;
-		licenses[]={"pilot","company_service"};
+		licenses[]={"pilot","company_compagnie_airienne"};
 		fuel="Kerosene";
 		fuelCapacity=2300;
-	};
-	class B_Heli_Light_01_F
-	{
-		realname="EC135 Garde";
-		buyPrice=350000;
-		inventory=50;
-		side="WEST";
-		insurance=1;
-		licenses[]={"pilot"};
-		fuel="Kerosene";
-		fuelCapacity=200;
 	};
 	class EC135Blanclu
 	{
@@ -7076,7 +7086,7 @@ class ADENIS_VEHICLES
 		inventory=180;
 		side="CIV";
 		insurance=1;
-		licenses[]={"pilot","company_service"};
+		licenses[]={"pilot","company_compagnie_airienne"};
 		fuel="Kerosene";
 		fuelCapacity=250;
 	};
@@ -7088,7 +7098,7 @@ class ADENIS_VEHICLES
 		inventory=180;
 		side="CIV";
 		insurance=1;
-		licenses[]={"pilot","company_service"};
+		licenses[]={"pilot","company_compagnie_airienne"};
 		fuel="Kerosene";
 		fuelCapacity=250;
 	};
@@ -7100,7 +7110,7 @@ class ADENIS_VEHICLES
 		inventory=180;
 		side="CIV";
 		insurance=1;
-		licenses[]={"pilot","company_service"};
+		licenses[]={"pilot","company_compagnie_airienne"};
 		fuel="Kerosene";
 		fuelCapacity=250;
 	};
@@ -7208,7 +7218,7 @@ class ADENIS_VEHICLES
 		inventory=1;
 		side="CIV";
 		insurance=1;
-		licenses[]={"company_service"};
+		licenses[]={"company_compagnie_airienne"};
 		fuel="Diesel";
 		fuelCapacity=80;
 	};
@@ -7219,7 +7229,7 @@ class ADENIS_VEHICLES
 		inventory=1;
 		side="CIV";
 		insurance=1;
-		licenses[]={"company_service"};
+		licenses[]={"company_compagnie_airienne"};
 		fuel="Diesel";
 		fuelCapacity=80;
 	};
@@ -7230,7 +7240,7 @@ class ADENIS_VEHICLES
 		inventory=30;
 		side="CIV";
 		insurance=1;
-		licenses[]={"company_service"};
+		licenses[]={"company_compagnie_airienne"};
 		fuel="Diesel";
 		fuelCapacity=80;
 	};
@@ -7242,7 +7252,7 @@ class ADENIS_VEHICLES
 		inventory=30;
 		side="CIV";
 		insurance=1;
-		licenses[]={"company_service"};
+		licenses[]={"company_compagnie_airienne"};
 		fuel="Diesel";
 		fuelCapacity=80;
 	};
@@ -7253,7 +7263,7 @@ class ADENIS_VEHICLES
 		inventory=30;
 		side="CIV";
 		insurance=1;
-		licenses[]={"company_money_tranfer"};
+		licenses[]={"company_compagnie_airienne"};
 		fuel="Diesel";
 		fuelCapacity=80;
 	};

@@ -597,6 +597,14 @@ class ADENIS_ITEMS
         class remove {};
     };
 
+    class palette
+    {
+        name="Palette";
+        weight=2;
+        image="Adenis_Textures\palette.paa";
+        class remove {};
+    };
+
     class iron
     {
         name="Minerai de fer";
@@ -639,7 +647,7 @@ class ADENIS_ITEMS
         image="Alysia_Client\Textures\Items_virtual\steel.paa";
         class market
         {
-            max=3752;
+            max=3000;
             min=774;
         };
         class remove {};
@@ -651,8 +659,8 @@ class ADENIS_ITEMS
         image="Adenis_Textures\carton.paa";
         class market
         {
-            max=5252;
-            min=1083;
+            max=6252;
+            min=2583;
         };
         class remove {};
     };
@@ -1558,7 +1566,6 @@ class ADENIS_ITEMS
         weight=40;
         illegal=1;
         image="Alysia_Client\Textures\Items_virtual\drogue.paa";
-        buy_license_CIV="rebelle_1";
         class use
         {
             action="['lab_marijuana'] spawn AlysiaClient_fnc_labo_deploy;";
@@ -1738,8 +1745,8 @@ class ADENIS_ITEMS
         image="Alysia_Client\Textures\Items_virtual\ginger.paa";
         class market
         {
-            max=114;
-            min=63;
+            max=94;
+            min=43;
         };
         class remove {};
     };
@@ -1771,8 +1778,13 @@ class ADENIS_ITEMS
         image="Adenis_Textures\Chocolat.paa";
         class market
         {
-            max=2900;
-            min=1900;
+            max=2200;
+            min=800;
+        };
+        class food
+        {
+            hunger=40;
+            sound="eat_biscuit";
         };
         class remove {};
     };

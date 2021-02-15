@@ -217,6 +217,7 @@ class ADENIS_SHOPS_ARMA
 		{
 			//"Skyline_UMP45_01_F",
 			//"25Rnd_45ACP_Mag",
+			"Adenis_Clef_Universelle",
 			"Alysia_repair_rotor",
 			"Alysia_repair_fuel",
 			"Alysia_repair_engine",

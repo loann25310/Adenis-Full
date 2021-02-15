@@ -132,13 +132,24 @@ if (isNull _target) exitWith {};
 		],[
 			"lockpick",
 			"Crochetter",
-			"[g_interaction_target] spawn AlysiaClient_fnc_vehicleMenu_steal;",
+			"[g_interaction_target,'Alysia_Lockpick'] spawn AlysiaClient_fnc_vehicleMenu_steal;",
 			"
 				('Alysia_Lockpick' in (magazines player)) &&
 				!(g_interaction_target in g_vehicles) &&
 				((vehicle player) isEqualTo player)
 			"
-		],[
+		],
+		[
+			"lockpick",
+			"Ouvrir avec le passe",
+			"[g_interaction_target,'Adenis_Clef_Universelle'] spawn AlysiaClient_fnc_vehicleMenu_steal;",
+			"
+				('Adenis_Clef_Universelle' in (magazines player)) &&
+				!(g_interaction_target in g_vehicles) &&
+				((vehicle player) isEqualTo player)
+			"
+		],
+		[
 			"pullout",
 			"Sortir",
 			"[g_interaction_target] call AlysiaClient_fnc_vehicleMenu_pullout;",

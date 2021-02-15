@@ -18,6 +18,20 @@
 	};
 };
 
+[] spawn {
+	disableSerialization;
+	while {true} do {
+		waitUntil { visibleMap };
+		_display = uiNamespace getVariable "RSCDiary";
+		_ctrl = _display displayCtrl 1202;
+		_ctrl ctrlEnable false;
+		_ctrl ctrlsettextcolor [0,0,0,0];
+		_ctrl ctrlSetTooltip "";
+		_ctrl ctrlCommit 0;
+		waitUntil { !visibleMap };
+	};
+};
+
 [] spawn
 {
 	private["_veh", "_fuel_base", "_fuel_current", "_conso"];
@@ -178,10 +192,10 @@
 			if ((["AdenisRP x Your-dev.fr", (call TFAR_fnc_getTeamSpeakServerName)] call BIS_fnc_inString) && (call TFAR_fnc_isTeamSpeakPluginEnabled)) then
 			{
 				if (!((call TFAR_fnc_getTeamSpeakChannelName) isEqualTo "TaskForceRadio")) then {
-					[] spawn _fnc_channel;
+					//[] spawn _fnc_channel;
 				};
 			} else {
-				[] spawn _fnc_server;
+				// [] spawn _fnc_server;
 			};
 		};
 

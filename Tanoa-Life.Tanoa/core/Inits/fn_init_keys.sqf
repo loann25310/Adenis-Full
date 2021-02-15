@@ -40,20 +40,5 @@ g_keybinds pushBack "actionSirene";
 ["Adenis", "actionNitro", "Nitro du véhicule", {[] call AlysiaClient_fnc_activateNitro}, {}, [DIK_1, [true, false, false]], false, 0, false] call CBA_fnc_addKeybind;
 g_keybinds pushBack "actionNitro";
 
-["Adenis", "actionAnimPushup", "Animation : Pompe", {["AmovPercMstpSnonWnonDnon_exercisePushup"] spawn AlysiaClient_fnc_animPlay}, {}, [DIK_NUMPAD1, [false, false, false]], false, 0, false] call CBA_fnc_addKeybind;
-g_keybinds pushBack "actionAnimPushup";
-
-["Adenis", "actionAnimKata", "Animation : Kata", {["AmovPercMstpSnonWnonDnon_exerciseKata"] spawn AlysiaClient_fnc_animPlay}, {}, [DIK_NUMPAD2, [false, false, false]], false, 0, false] call CBA_fnc_addKeybind;
-g_keybinds pushBack "actionAnimKata";
-
-["Adenis", "actionAnimKneeBend", "Animation : Flexion", {["AmovPercMstpSnonWnonDnon_exercisekneeBendA"] spawn AlysiaClient_fnc_animPlay}, {}, [DIK_NUMPAD3, [false, false, false]], false, 0, false] call CBA_fnc_addKeybind;
-g_keybinds pushBack "actionAnimKneeBend";
-
-["Adenis", "actionAnimSplit", "Animation : Grand écart", {["Acts_EpicSplit"] spawn AlysiaClient_fnc_animPlay}, {}, [DIK_NUMPAD4, [false, false, false]], false, 0, false] call CBA_fnc_addKeybind;
-g_keybinds pushBack "actionAnimSplit";
-
-["Adenis", "actionAnimSitTired", "Animation : Assis (dépité, apeuré)", {["Acts_CivilShocked_2"] spawn AlysiaClient_fnc_animPlay}, {}, [DIK_NUMPAD5, [false, false, false]], false, 0, false] call CBA_fnc_addKeybind;
-g_keybinds pushBack "actionAnimSitTired";
-
-["Adenis", "actionAnimPissing", "Animation : Uriner", {["Acts_AidlPercMstpSlowWrflDnon_pissing"] spawn AlysiaClient_fnc_animPlay}, {}, [DIK_NUMPAD6, [false, false, false]], false, 0, false] call CBA_fnc_addKeybind;
-g_keybinds pushBack "actionAnimPissing";
+["Adenis", "actionAnimationMenu", "Ouvrir le menu des animations", {createDialog "RscDisplayAnimations";_control=(findDisplay 35600)displayCtrl 35602;_anims="true" configClasses(missionConfigFile>>"ADENIS_ANIMATIONS");{_index=_control lbAdd(getText(_x>>"name"));_control lbSetData[_index,configName _x];}forEach _anims;}, {}, [DIK_O, [false, false, false]], false, 0, false] call CBA_fnc_addKeybind;
+g_keybinds pushBack "actionAnimationMenu";

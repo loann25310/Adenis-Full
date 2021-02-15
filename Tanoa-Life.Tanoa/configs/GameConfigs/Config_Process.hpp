@@ -105,7 +105,7 @@ class ADENIS_PROCESS
 			class GUER {};
 		};
 	};
-	class cigareclothing
+	class cigareclothing : cigare
 	{
 		name="Fabrication : cigare (vêtement)";
 		class require
@@ -116,8 +116,18 @@ class ADENIS_PROCESS
 		{
 			items_arma[]={"EWK_Cig1"};
 		};
+		time_per_item=2;
+		time_default=7;
+		class target {};
+		class factions
+		{
+			class CIV {};
+			class WEST {};
+			class EAST {};
+			class GUER {};
+		};
 	};
-
+	
 	class heroin
 	{
 		name="Traitement de l'héroine";
@@ -472,10 +482,12 @@ class ADENIS_PROCESS
 			class GUER {};
 		};
 	};
-	class bouteille: glass
+	class bouteille
 	{
 		name="Fonte du verre en Bouteille";
 		sound="smelting";
+		time_per_item=2;
+		time_default=2;
 		class require
 		{
 			items_virtual[]={{"glass",1}};
@@ -483,6 +495,13 @@ class ADENIS_PROCESS
 		class receive
 		{
 			items_virtual[]={{"bouteillevide",1}};
+		};
+		class factions
+		{
+			class CIV {};
+			class WEST {};
+			class EAST {};
+			class GUER {};
 		};
 	};
 	class bocalp: glass
@@ -559,7 +578,7 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_virtual[]={{"ironp",1},{"soufre",2}};
+			items_virtual[]={{"ironp",1},{"soufre",1}};
 		};
 		time_per_item=2;
 		time_default=5;
@@ -591,6 +610,13 @@ class ADENIS_PROCESS
 			items_virtual[]={{"steelp",1}};
 		};
 		time_per_item=2;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_steel"};
+			};
+		};
 	};
 	class repair_rotor: iron
 	{
@@ -2183,9 +2209,18 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_arma[]={{"murshun_cigs_cig0",1}};
+			items_arma[]={"murshun_cigs_cig0"};
 		};
-		time_per_item=1;
+		time_per_item=2;
+		time_default=7;
+		class target {};
+		class factions
+		{
+			class CIV {};
+			class WEST {};
+			class EAST {};
+			class GUER {};
+		};
 	};
 
 	class holosight
@@ -2813,6 +2848,64 @@ class ADENIS_PROCESS
 			};
 		};
 	};	
+	class RH_g17: tec9
+	{
+		name="Fabrication : Glock 17";
+		class require
+		{
+			items_virtual[]={{"intermediary_barrelp",1},{"intermediary_receiverp",1},{"intermediary_gripp",1},{"intermediary_slapperp",1},{"intermediary_shoulderp",1},{"triggerp",1}};
+		};
+		class receive
+		{
+			items_arma[]={"RH_g17"};
+		};
+		time_per_item=1;
+		time_default=2;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_gun"};
+			};
+			class WEST
+			{
+				licenses[]={"company_gun"};
+			};
+			class GUER
+			{
+				licenses[]={"company_gun"};
+			};
+		};
+	};
+	class RH_17Rnd_9x19_g17
+	{
+		name="Fabrication :Chargeur de Glock 17";
+		class require
+		{
+			items_virtual[]={{"magazinep",1},{"bulletp",19}};
+		};
+		class receive
+		{
+			items_arma[]={"RH_17Rnd_9x19_g17"};
+		};
+		time_per_item=1;
+		time_default=2;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_gun"};
+			};
+			class WEST
+			{
+				licenses[]={"company_gun"};
+			};
+			class GUER
+			{
+				licenses[]={"company_gun"};
+			};
+		};
+	};
 	class fnp_45: tec9
 	{
 		name="Fabrication : FNP45";
@@ -3017,9 +3110,10 @@ class ADENIS_PROCESS
 			items_arma[]={"SMG_01_F"};
 		};
 	};
+
 	class AKM
 	{
-		name="Fabrication : AKM";
+		name="Fabrication : AK74 MTK";
 		sound="smelting";
 		class require
 		{
@@ -3039,9 +3133,11 @@ class ADENIS_PROCESS
 			class GUER {};
 		};
 	};
-	class aug_a1: AKM
+	
+	class aug_a1
 	{
 		name="Fabrication : AUG A1";
+		sound="smelting";
 		class require
 		{
 			items_virtual[]={{"intermediary_barrelp",1},{"intermediary_receiverp",1},{"intermediary_gripp",1},{"intermediary_slapperp",1},{"intermediary_framep",1},{"triggerp",1}};
@@ -3050,7 +3146,17 @@ class ADENIS_PROCESS
 		{
 			items_arma[]={"Skyline_AugA1_01_F"};
 		};
+		time_per_item=25;
+		time_default=2;
+		class factions
+		{
+			class CIV {};
+			class WEST {};
+			class EAST {};
+			class GUER {};
+		};
 	};
+	
 	class mp44: AKM
 	{
 		name="Fabrication : MP 44";
@@ -4340,6 +4446,36 @@ class ADENIS_PROCESS
 			};
 		};
 	};
+	class palette
+	{
+		name="Fabrication de palette";
+		sound="smelting";
+		class require
+		{
+			items_virtual[]={{"woodp",4}};
+		};
+		class receive
+		{
+			items_virtual[]={{"palette",1}};
+		};
+		time_per_item=1;
+		time_default=5;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_wood"};
+			};
+			class WEST
+			{
+				licenses[]={"company_wood"};
+			};
+			class GUER
+			{
+				licenses[]={"company_wood"};
+			};
+		};
+	};
 
 	class bounty
 	{
@@ -4408,7 +4544,7 @@ class ADENIS_PROCESS
 		sound="smelting";
 		class require
 		{
-			items_virtual[]={{"furniture",1}};
+			items_virtual[]={{"furniture",1},{"palette",1}};
 		};
 		class receive
 		{
@@ -4438,7 +4574,7 @@ class ADENIS_PROCESS
 		sound="smelting";
 		class require
 		{
-			items_virtual[]={{"steelp",1}};
+			items_virtual[]={{"steelp",1},{"palette",1}};
 		};
 		class receive
 		{
@@ -4468,7 +4604,7 @@ class ADENIS_PROCESS
 		sound="smelting";
 		class require
 		{
-			items_virtual[]={{"cigarette",1}};
+			items_virtual[]={{"cigarette",1},{"palette",1}};
 		};
 		class receive
 		{

@@ -110,7 +110,7 @@ class ADENIS_GARAGES
 	};
 	class land_4: land_1
 	{
-		name="Garage de Luganville";
+		name="Garage de Ouméré";
 		spawns[]={"land_4_spawn_1","land_4_spawn_2"};
 	};
 	class land_5: land_1
@@ -145,7 +145,7 @@ class ADENIS_GARAGES
 	};
 	class land_11: land_1
 	{
-		name="Garage de Moddergat";
+		name="Garage de Ravita";
 		spawns[]={"land_11_spawn_1","land_11_spawn_2"};
 	};
 	class land_12: land_1
@@ -168,60 +168,65 @@ class ADENIS_GARAGES
 		name="Garage de Rautake";
 		spawns[]={"land_15_spawn_1","land_15_spawn_2"};
 	};
-	class land_16: Land_1
+	class land_16: land_1
 	{
 		name="Hôpital de Georgetown";
 		spawns[]={"land_16_spawn_1","land_16_spawn_2"};
 	};
-	class land_17: Land_1
+	class land_17: land_1
 	{
 		name="Garage terrestre aéroport";
 		spawns[]={"land_17_spawn_1"};
 	};
-	class land_18: Land_1
+	class land_18: land_1
 	{
 		name="Garage tanoatruck";
 		spawns[]={"land_18_spawn_1"};
 	};
-	class land_19: Land_1
+	class land_19: land_1
 	{
 		name="Garage";
 		spawns[]={"land_19_spawn_1"};
 	};
-	class land_20: Land_1
+	class land_20: land_1
 	{
 		name="Garage";
 		spawns[]={"land_20_spawn_1"};
 	};
-	class land_21: Land_1
+	class land_21: land_1
 	{
 		name="Garage Concessionnaire aéroport";
 		spawns[]={"land_21_spawn_1"};
 	};
-	class land_22: Land_1
+	class land_22: land_1
 	{
 		name="Garage du PTI";
 		spawns[]={"land_22_spawn_1","land_22_spawn_2"};
 	};
-	class land_23: Land_1
+	class land_23: land_1
 	{
 		name="Garage PépitoBTP";
 		spawns[]={"land_23_spawn_1","land_23_spawn_2"};
 	};
-	class land_24: Land_1
+	class land_24: land_1
 	{
 		name="Garage Planete Garage";
 		spawns[]={"land_24_spawn_1"};
 	};
-	class land_25: Land_1
+	class land_25: land_1
 	{
 		name="Garage Servizio di denaro";
 		spawns[]={"land_25_spawn_1"};
 	};
-	class land_26: Land_1
+	class land_26: land_1
 	{
 		name="Garage Motorsport";
 		spawns[]={"land_26_spawn_1"};
+	};
+	class land_27: land_1
+	{
+		name="Garage Fiestanoa";
+		spawns[]={"land_27_spawn_1","land_27_spawn_2"};
 	};
 
 	class fourriere_1

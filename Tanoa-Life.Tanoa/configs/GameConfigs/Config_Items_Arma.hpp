@@ -93,6 +93,18 @@ class ADENIS_ITEMS_ARMA
 		buy_price=500;
  	};
 	
+ 	class RH_g17
+ 	{
+		buy_license_CIV[]={"gun"};
+		buy_price=95000;
+ 	};
+	
+	class RH_17Rnd_9x19_g17
+ 	{
+		buy_license_CIV[]={"gun"};
+		buy_price=500;
+ 	};
+
 	class Fett_SDAR
 	{
 		buy_license_CIV[]={"gun","politique_pnt_member"};
@@ -874,6 +886,11 @@ class ADENIS_ITEMS_ARMA
 	{
 		buy_price=600;
 	};
+	class Adenis_Clef_Universelle
+	{
+		buy_price=600;
+		buy_license_CIV[]={"company_garagist"};
+	};
 	class RH_mak
 	{
 		buy_price=45000;
@@ -965,6 +982,36 @@ class ADENIS_ITEMS_ARMA
 		buy_license_CIV[]={""};
 	};
 	class hlc_30Rnd_545x39_B_AK
+	{
+		buy_price=10000;
+		buy_license_CIV[]={""};
+	};
+	class hlc_rifle_aks74_MTK
+	{
+		buy_price=10000;
+		buy_license_CIV[]={""};
+	};
+	class hlc_rifle_aku12
+	{
+		buy_price=10000;
+		buy_license_CIV[]={""};
+	};
+	class hlc_rifle_aek971_mtk
+	{
+		buy_price=10000;
+		buy_license_CIV[]={""};
+	};
+	class C1987_MP7
+	{
+		buy_price=10000;
+		buy_license_CIV[]={""};
+	};
+	class C1987_40Rnd_46x30_mp7
+	{
+		buy_price=10000;
+		buy_license_CIV[]={""};
+	};
+	class C1987_MP7_folded
 	{
 		buy_price=10000;
 		buy_license_CIV[]={""};
@@ -1102,17 +1149,19 @@ class ADENIS_ITEMS_ARMA
 	class Skyline_Uniforme_Securite_01_F
 	{
 		buy_price=10000;
-		buy_license_CIV[]={"company_money_tranfer"};
+		buy_license_CIV[]={"company_compagnie_airienne"};
 	};
 	class Skyline_Uniforme_Securite_02_F: Skyline_Uniforme_Securite_01_F {};
 	class Skyline_Uniforme_Securite_03_F: Skyline_Uniforme_Securite_01_F {};
-	class TRYK_U_B_BLK3CD: Skyline_Uniforme_Securite_01_F {};
+	class TRYK_U_B_BLK3CD: Skyline_Uniforme_Securite_01_F {
+		buy_license_CIV[]={"company_money_tranfer"};
+	};
 
 	class Skyline_Veste_Securite_01_F : Skyline_Uniforme_Securite_01_F
 	{
 		buy_price=90000;
 	};
-	class Skyline_UMP45_01_F: Skyline_Uniforme_Securite_01_F
+	class Skyline_UMP45_01_F: TRYK_U_B_BLK3CD
 	{
 		buy_price=40000;
 	};
@@ -1223,83 +1272,55 @@ class ADENIS_ITEMS_ARMA
 	{
 		name="Uniforme pilote";
 		buyprice=100;
-		buy_licence_CIV="company_service";
+		buy_license_CIV="company_compagnie_airienne";
 	};
 	class ML_Uniform_captainpilotlan
 	{
 		name="Uniforme pilote avec badge";
 		buyprice=100;
-		buy_licence_CIV="company_service";
+		buy_license_CIV="company_compagnie_airienne";
 	};
 	class ML_uniform_captainpilot_vest
 	{
 		name="Veste pilote";
 		buyprice=100;
-		buy_licence_CIV="company_service";
+		buy_license_CIV="company_compagnie_airienne";
 	};
 	class ML_Uniform_copilot
 	{
 		name="Uniforme copilote";
 		buyprice=100;
-		buy_licence_CIV="company_service";
+		buy_license_CIV="company_compagnie_airienne";
 	};
 	class ML_Uniform_copilotlan
 	{
 		name="Uniforme copilote avec badge";
 		buyprice=100;
-		buy_licence_CIV="company_service";
+		buy_license_CIV="company_compagnie_airienne";
 	};
 	class ML_uniform_copilot_vest
 	{
 		name="Veste copilote";
 		buyprice=100;
-		buy_licence_CIV="company_service";
+		buy_license_CIV="company_compagnie_airienne";
 	};
 	class ML_Pilot_Cap
 	{
 		name="Casquette pilote";
 		buyprice=100;
-		buy_licence_CIV="company_service";
+		buy_license_CIV="company_compagnie_airienne";
 	};
 	class TRYK_OVERALL_SAGE_BLKboots_nk
 	{
 		name="UNIFORME HOMME DE MANOEUVRE";
 		buyprice=100;
-		buy_licence_CIV="company_service";
+		buy_license_CIV="company_compagnie_airienne";
 	};
 	class H_Cap_marshal
 	{
 		name="Casquette homme de manoeuvre";
 		buyprice=100;
-		buy_licence_CIV="company_service";
-	};
-
-	// PTI
-	class U_B_mas_itr_dress_cc
-	{
-		name="Unifrome PTI 1";
-		buyprice=100;
-		buy_licence_CIV="membre_pti";
-	};
-	class U_B_mas_itr_dress_army : U_B_mas_itr_dress_cc
-	{
-		name="Unifrome PTI 2";
-	};
-	class U_B_mas_itr_dress_navy : U_B_mas_itr_dress_cc
-	{
-		name="Unifrome PTI 3";
-	};
-	class H_mas_itr_hatarmy_f : U_B_mas_itr_dress_cc
-	{
-		name="Chapeau PTI 2";
-	};
-	class H_mas_itr_hatalp_f : U_B_mas_itr_dress_cc
-	{
-		name="Chapeau PTI 3";
-	};
-	class H_mas_itr_hatcc_f : U_B_mas_itr_dress_cc
-	{
-		name="Chapeau PTI 4";
+		buy_license_CIV="company_compagnie_airienne";
 	};
 
 
@@ -1684,17 +1705,7 @@ class ADENIS_ITEMS_ARMA
 		buy_price=100;
 		buy_condition_WEST=1;
 	};
-	class H_Bandanna_camo
-	{
-		buy_price=100;
-		buy_condition_WEST=1;
-	};
 	class H_MilCap_wdl
-	{
-		buy_price=100;
-		buy_condition_WEST=1;
-	};
-	class G_Balaclava_oli
 	{
 		buy_price=100;
 		buy_condition_WEST=1;
@@ -2582,27 +2593,27 @@ class ADENIS_ITEMS_ARMA
 	class Alysia_repair_rotor
 	{
 		buy_license_CIV[]={"company_garagist"};
-		buy_price=5000;
+		buy_price=500;
 	};
 	class Alysia_repair_fuel
 	{
 		buy_license_CIV[]={"company_garagist"};
-		buy_price=3500;
+		buy_price=500;
 	};
 	class Alysia_repair_engine
 	{
 		buy_license_CIV[]={"company_garagist"};
-		buy_price=3500;
+		buy_price=500;
 	};
 	class Alysia_repair_body
 	{
 		buy_license_CIV[]={"company_garagist"};
-		buy_price=5000;
+		buy_price=500;
 	};
 	class Alysia_siphon
 	{
 		buy_license_CIV[]={"company_garagist"};
-		buy_price=3500;
+		buy_price=500;
 	};
 	class dam_thom_phare
 	{
@@ -2612,7 +2623,7 @@ class ADENIS_ITEMS_ARMA
 	class Alysia_repair_glass
 	{
 		buy_license_CIV[]={"company_garagist"};
-		buy_price=3500;
+		buy_price=500;
 	};
 	#include "Config_Rebelle_ACR0.hpp"
 	#include "Config_Rebelle_ACR1.hpp"

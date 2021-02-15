@@ -109,7 +109,6 @@ class ADENIS_SHOPS_VIRTUAL
 			"coneflash",
 			"tmpgauche",
 			"tmpdroite",
-			"cleuniverselle",
 			"p50temp",
 			"p30temp",
 			"raisin_black_seed",

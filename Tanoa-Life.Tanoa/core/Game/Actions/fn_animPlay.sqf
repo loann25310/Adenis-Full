@@ -35,3 +35,4 @@ if (g_interrupted) then
 	titleText["Interrompu", "PLAIN DOWN"];
 	[player, ""] remoteExecCall ["switchMove", -2];
 };
+g_interrupted = false;

@@ -1,7 +1,7 @@
 class Cfg_Server {
 
 	/* PASSWORDS */
-	rcon_password="HXQGBBEWpJ";
+	rcon_password="NDE1gxLVJK";
 	TFR_password="lOyXrlZLeo";
 
 	/* TIME MULTIPLIERS */

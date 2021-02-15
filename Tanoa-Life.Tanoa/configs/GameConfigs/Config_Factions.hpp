@@ -604,22 +604,22 @@ class ADENIS_FACTIONS
 				rank=1;
 				class clean
 				{
-					rank=9;
+					rank=7;
 				};
 			};
 			class destroy
 			{
-				rank=9;
+				rank=7;
 			};
 			class create
 			{
-				rank=9;
+				rank=7;
 			};
 		};
 
 		class bank_faction
 		{
-			rank=9;
+			rank=7;
 			payFuel=1;
 		};
 
