@@ -291,17 +291,14 @@ class ADENIS_SHOPS_VEHICLES
 			"Skyline_Vehicule_A3_M900_F_rebel",
 			"Skyline_Vehicule_A3_MH9_Unarmed_F_rebel",
 			"GeK_Raptor",
-			"GeK_G65",
-			"Lemon_Mercedes_ML_63_Rebelle",
-			"Lemon_Mercedes_ML_63_Rebelle_Kaki",
 			"Skyline_Vehicule_APEX_RHIB_02_F",
-			"MH9_EIT",
-			"ffaa_ar_lcm",
 			"AlessioRS4MatGofast",
 			"AlessioRS5GoFastMat",
 			"AlessioM5GofastMat",
 			"AlessioMustangGoFastMat",
-			"AlessioC63Black_mat"
+			"AlessioC63Black_mat",
+			"Peck_MercedesBenz_G65_Rebelle",
+			"Peck_MercedezBenz_ML63_Rebelle_9"
 		};
 	};
 
@@ -352,41 +349,7 @@ class ADENIS_SHOPS_VEHICLES
 		side="EAST";
 		stock[]=
 		{
-			/* Véhicules Terrestres non armés */
-			"Alysia_GMC_East_Base",
-			"Alysia_R71_East_Base",
-			"Alysia_Opelblitz_East_Base",
-			"Alysia_Minicooper_East_Base",
-			"Gurkha_f5",
-			"B_Truck_01_ammo_F",
-			"iD_Jeep_Willys_Cmd",
-			"Alysia_Willys_philidor",
-			"Alysia_Willys_rochefort",
-			"Alysia_Willys_droolens",
-			"Alysia_Willys_gomez",
-			"Alysia_Willys_matariki",
-			"Lemon_Jeep_ANT",
-			"Lemon_Bronco_ANT",
-			"ANT_Prowler",
-            "Skyline_Vehicule_APEX_Prowler_01_F",
-			/* Véhicules Terrestres armés */
-			"Gurkha_M60",
-			"Alysia_Willys_philidor_armed",
-			"Alysia_Willys_rochefort_armed",
-			"Alysia_Willys_droolens_armed",
-			"Alysia_Willys_gomez_armed",
-			"Alysia_Willys_matariki_armed",
-			"Alysia_APC_East",
-			/* Véhicules Navals */
-			"B_Boat_Armed_01_minigun_F",
-			"ANT_RHIB",
-			"Maels_boat_ant",
-			/* Véhicules Aériens */
-			"Alysia_heli_light_East_01",
-			"Alysia_EC635_East_01",
-			"B_T_VTOL_01",
-			"Alysia_Hellcat_East_01",
-			"MH9_BDR",
+			"XsG_Amarok_Base_F",
 			"EC135Unarmedlu"
 		};
 	};

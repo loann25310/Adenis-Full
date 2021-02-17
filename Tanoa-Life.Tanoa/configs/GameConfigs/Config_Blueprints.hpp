@@ -151,7 +151,7 @@ class ADENIS_BLUEPRINTS
 	};
 	class blueprint_AKS: blueprint_gsh18
 	{
-		process[]={"AKS","AKS_RAIL","magazine_aks"};
+		process[]={"AKS","magazine_aks"};
 	};
 	class blueprint_AK12: blueprint_gsh18
 	{

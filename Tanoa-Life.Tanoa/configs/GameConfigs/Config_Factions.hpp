@@ -5,7 +5,7 @@ class ADENIS_FACTIONS
 		/*** GLOBAL ***/
 		name="ANT";
 		name_full="Armée Nationale Tanocienne";
-		icon="Alysia_Client_Texture\Data\faction\EAST_logo.paa";
+		icon="Alysia_Client_Texture\Data\faction\CIV_logo.paa";
 		identity_item="Alysia_Identity_East";
 
 		/*** SALARY ***/
@@ -24,7 +24,7 @@ class ADENIS_FACTIONS
 			receive_fuel_alert=1;
 			class send_global_message
 			{
-				rank=5;
+				rank=13;
 			};
 			class central_plate {};
 		};
@@ -37,15 +37,15 @@ class ADENIS_FACTIONS
 			employee=0;
 			class history
 			{
-				rank=10;
+				rank=15;
 				class clean
 				{
-					rank=10;
+					rank=15;
 				};
 			};
 			class destroy
 			{
-				rank=10;
+				rank=15;
 			};
 		};
 
@@ -62,31 +62,31 @@ class ADENIS_FACTIONS
 		};
 		class taxes_app
 		{
-			rank=11;
+			rank=15;
 		};
 
 		/*** Licenses ***/
 		class licenses_seize
 		{
-			rank=4;
+			rank=2;
 		};
 		class licenses_give
 		{
 			class politique_pnt_sec
 			{
-				rank=11;
+				rank=15;
 				same_side_only=0;
 			};
 
 			class east_form
 			{
-				rank=11;
+				rank=14;
 				same_side_only=1;
 			};
 
 			class east_tank_resp
 			{
-				rank=11;
+				rank=14;
 				same_side_only=1;
 			};
 			class east_medic_resp: east_tank_resp {};
@@ -150,7 +150,7 @@ class ADENIS_FACTIONS
 		class housing
 		{
 			search=1;
-			max=2;
+			max=5;
 		};
 
 		/*** HEAL ***/
@@ -193,33 +193,41 @@ class ADENIS_FACTIONS
             ranks_complet[]=
             {
                 "Civil",
-                "Recrue",
                 "Soldat",
-                "Soldat 1er Classe",
+                "Première Classe",
+                "Caporal",
                 "Caporal-Chef",
                 "Sergent",
+                "Sergent-Chef",
                 "Adjudant",
+                "Adjudant-Chef",
                 "Major",
                 "Lieutenant",
                 "Capitaine",
+                "Commandant",
                 "Lieutenant Colonel",
-                "Colonel"
+                "Colonel",
+                "Président Général"
             };
 
             ranks_short[]=
             {
                 "Civ",
-                "Rec",
                 "Sdt",
                 "1cl",
-                "Cch",
+                "Cpl",
+                "Cpc",
                 "Sgt",
+                "SgC",
                 "Adj",
+                "Adc",
                 "Maj",
                 "Ltn",
                 "Cne",
+                "Cmd",
                 "Lcl",
-                "Col"
+                "Col",
+                "PG"
             };
         };
     };
@@ -250,7 +258,7 @@ class ADENIS_FACTIONS
 		/*** Licenses ***/
 		class licenses_give
 		{
-			class membre_pti
+			class membre_pnt
 			{
 				rank=0;
 				same_side_only=0;
@@ -319,7 +327,7 @@ class ADENIS_FACTIONS
 			employee=1;
 			class create
 			{
-				license="membre_pti";
+				license="membre_pnt";
 			};
 			class destroy
 			{
@@ -327,10 +335,10 @@ class ADENIS_FACTIONS
 			};
 			class history
 			{
-				license="membre_pti";
+				license="membre_pnt";
 				class clean
 				{
-					license="membre_pti";
+					license="membre_pnt";
 				};
 			};
 		};
@@ -378,14 +386,14 @@ class ADENIS_FACTIONS
 				"Citoyen",
 				"Criminel",
 				"Rebelle",
-				"PTI"
+				"PNT"
 			};
 			ranks_short[]=
 			{
 				"Cit",
 				"Crim",
 				"Reb",
-				"PTI"
+				"PNT"
 			};
 		};
 	};

@@ -36,7 +36,8 @@ if ((_state isEqualTo 0) && !_lockpick) then
 			{
 				if(_target getVariable ["alarmeOn", true]) then {
 					_target setVariable ["alarmeOn", false, true];
-					[format ["Urgent ! Une alarme a été déclenché en %1 !", mapGridPosition _target], "000000", true] remoteExecCall ["AlysiaClient_fnc_phone_message_receive", west];
+					[format ["Urgent ! Une alarme a été déclenché en %1 !", mapGridPosition _target], "GOUV", true] remoteExecCall ["AlysiaClient_fnc_phone_message_receive", west];
+					[format ["Urgent ! Une alarme a été déclenché en %1 !", mapGridPosition _target], "GOUV", true] remoteExecCall ["AlysiaClient_fnc_phone_message_receive", east];
 				};
 
 				player removeMagazine "Alysia_Lockpick";

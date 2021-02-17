@@ -80,7 +80,7 @@ for "_i" from 0 to _loop_count do
 	switch _type do
 	{
 		case "weapons": {_vehicle addWeaponCargoGlobal [_item, 1]};
-		case "magazines": {_vehicle addMagazineCargoGlobal [_item, 4]};
+		case "magazines": {_vehicle addMagazineCargoGlobal [_item, 8]};
 		case "backpacks": {_vehicle addBackpackCargoGlobal [_item, 1]};
 		case "items": {_vehicle addItemCargoGlobal [_item, 1]};
 		case "virtuals": {[true, _vehicle, "Trunk", _item, 1] call AlysiaClient_fnc_handleTrunk};

@@ -698,9 +698,9 @@ class ADENIS_LICENSES
 		};
 	};
 
-	class membre_pti
+	class membre_pnt
 	{
-		name="Secrétaire PTI";
+		name="Membre du PNT";
 		class factions
 		{
 			class CIV

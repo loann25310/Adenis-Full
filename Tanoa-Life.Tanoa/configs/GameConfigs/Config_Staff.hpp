@@ -310,6 +310,13 @@ class ADENIS_STAFF
 				name="TP spawn ArmTech";
 				statement="(call compile (lbData[9000,lbCurSel 9000])) setPos (getMarkerPos 'respawn_east')";
 			};
+			class kick_lobby
+			{
+				name="Kick Lobby";
+				statement="['bye'] remoteExec ['BIS_fnc_endMission',(call compile (lbData[9000,lbCurSel 9000]))];";
+				condition="(true)";
+				allow[]=ADMIN_AND_MODO;
+			};
 			/*class tp_west: tp_civ
 			{
 				name="TP spawn ArmTech";

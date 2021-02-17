@@ -2461,15 +2461,6 @@ class ADENIS_VEHICLES
 		fuel="SP98";
 		fuelCapacity=43;
 	};	
-	class B_Heli_Light_01_F: Alysia_WEST_base
-	{
-		realname="Humming Bird";
-		buyPrice=2000;
-		inventory=30;
-		fuel="Kerosene";
-		fuelCapacity=4300;
-		rank=3;
-	};
 	class I_E_Heli_light_03_unarmed_F: Alysia_WEST_base
 	{
 		realname="Hellcat";
@@ -2648,11 +2639,6 @@ class ADENIS_VEHICLES
 		fuelCapacity=250;
 		rank=2;
 		disableLockpick=1;
-	};
-
-	class EC135Unarmedlu: B_mas_itr_Heli_Light_01_F
-	{
-		realname="E135 - Italia";
 	};
 
 	class B_mas_itr_Heli_Transport_02_F: B_mas_itr_Heli_Light_01_F
@@ -2845,6 +2831,17 @@ class ADENIS_VEHICLES
 		rank=8;
 	};
 
+	
+	class B_Heli_Light_01_F: Alysia_EAST_base
+	{
+		realname="Humming Bird";
+		buyPrice=2000;
+		inventory=30;
+		fuel="Kerosene";
+		fuelCapacity=4300;
+		rank=5;
+	};
+
 	class B_Boat_Armed_01_minigun_F: Alysia_EAST_base
 	{
 		realname="Bateau à moteur armé";
@@ -2895,6 +2892,23 @@ class ADENIS_VEHICLES
 		fuelCapacity=230;
 		rank=2;
 	};	
+
+	class XsG_Amarok_Base_F: Alysia_EAST_base
+	{
+		realname="Volkswagen Amarok ANT";
+		buyPrice=45000;
+		inventory=45;
+		insurance=1;
+		licenses[]={};
+		fuel="SP98";
+		fuelCapacity=230;
+		rank=2;
+	};
+
+	class EC135Unarmedlu: Alysia_EAST_base
+	{
+		realname="E135 ANT";
+	};
 
 	class MH9_BDR: Alysia_EAST_base
 	{
@@ -4511,6 +4525,35 @@ class ADENIS_VEHICLES
 	class Skyline_Vehicule_A3_Offroad_18_F: Skyline_Vehicule_A3_Offroad_Rebelle {};
 	class Skyline_Vehicule_A3_Offroad_19_F: Skyline_Vehicule_A3_Offroad_Rebelle {};
 	class Skyline_Vehicule_A3_Offroad_20_F: Skyline_Vehicule_A3_Offroad_Rebelle {};
+
+
+	class Peck_MercedesBenz_G65_Rebelle
+	{
+		realname="G65 Rebelle";
+		buyPrice=1350000;
+		inventory=30;
+		side="CIV";
+		insurance=0;
+  		rank=0;
+  		licenses[]={"rebelle_1"};
+		fuel="Diesel";
+		fuelCapacity=100;
+		disableOwnerInfos=1;
+	};
+
+	class Peck_MercedezBenz_ML63_Rebelle_9
+	{
+		realname="ML63 Rebelle";
+		buyPrice=800000;
+		inventory=10;
+		side="CIV";
+		insurance=0;
+  		rank=0;
+  		licenses[]={"rebelle_1"};
+		fuel="Diesel";
+		fuelCapacity=100;
+		disableOwnerInfos=1;
+	};
 	
 	class Skyline_Vehicule_APEX_RHIB_01_F
 	{

@@ -106,7 +106,7 @@ class ADENIS_HOUSES
 			};
 		};
 	};
-	class Land_Cargo_House_V4_F
+	class Diablo_LitMilitaire_F
 	{
 		price=100000;
 		class house {};
@@ -117,6 +117,9 @@ class ADENIS_HOUSES
 		class factions
 		{
 			class WEST {
+				rank=2;
+			};
+			class EAST {
 				rank=2;
 			};
 		};
@@ -232,6 +235,9 @@ class ADENIS_HOUSES
 				license="home";
 			};
 			class WEST {
+				rank=1;
+			};
+			class EAST {
 				rank=1;
 			};
 		};

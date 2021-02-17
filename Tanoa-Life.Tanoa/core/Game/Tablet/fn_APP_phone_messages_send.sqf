@@ -21,7 +21,7 @@ lbClear _list;
 	_index = _list lbAdd getText(missionConfigFile >> "ADENIS_FACTIONS" >> _x >> "name");
 	_list lbSetData [_index, _x];
 	_list lbSetPicture [_index, getText(missionConfigFile >> "ADENIS_FACTIONS" >> _x >> "icon")];
-} forEach (["GUER", "WEST"]);
+} forEach (["GUER", "EAST"]);
 
 /*
 // Dépanneurs

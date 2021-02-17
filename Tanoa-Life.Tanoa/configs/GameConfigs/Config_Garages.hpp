@@ -200,7 +200,7 @@ class ADENIS_GARAGES
 	};
 	class land_22: land_1
 	{
-		name="Garage du PTI";
+		name="Garage du QG ANT";
 		spawns[]={"land_22_spawn_1","land_22_spawn_2"};
 	};
 	class land_23: land_1

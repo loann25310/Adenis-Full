@@ -509,12 +509,12 @@ class ADENIS_ITEMS
     class objvaleur
     {
         name="Objet de valeur";
-        weight=1;
+        weight=2;
         illegal=1;
         image="Alysia_Client\Textures\Items_virtual\objet_de_valeur.paa";
         class market
         {
-            max=900;
+            max=700;
             min=270;
         };
         class remove {};
@@ -1732,7 +1732,7 @@ class ADENIS_ITEMS
         name="Mandat de perquisition";
         weight=1;
         price_buy=5000;
-        buy_rank_EAST=10;
+        buy_rank_EAST=15;
         buy_rank_WEST=8;
         image="Alysia_Client\Textures\Items_virtual\perqui_north.paa";
         class remove {};

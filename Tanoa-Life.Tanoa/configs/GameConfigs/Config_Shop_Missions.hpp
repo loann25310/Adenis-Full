@@ -162,56 +162,28 @@ class ADENIS_MISSIONS
         name="Convoi Armée Nationale Tanocienne";
         sides[]={"EAST"};
         condition="((player getVariable ['rank',0]) >= 9)";
-        price=10000000;
+        price=1000000;
         vehicle="B_Truck_01_ammo_F";
         count_per_reboot=1;
         max_delivery_time=30;
         min_delivery_time=10;
-        loop_count_random=35;
-        loop_count_min=5;
+        loop_count_random=65;
+        loop_count_min=40;
         class stock
         {
             weapons[]=
             {
-                "Skyline_Fal_01_F",
-                "Skyline_Fal_02_F",
-                "arifle_SPAR_01_blk_F",
-                "arifle_SPAR_01_khk_F",
-                "arifle_SPAR_02_khk_F",
-                "arifle_SPAR_02_blk_F",
-                "arifle_SPAR_03_khk_F",
-                "arifle_SPAR_03_blk_F",
-                "RH_fn57",
-                "launch_NLAW_F",
-                "Skyline_AugA1_01_F",
-                "LMG_03_F",
-                "srifle_DMR_07_blk_F",
-                "arifle_CTAR_GL_blk_F"
+                "hlc_rifle_M27IAR",
+				"RH_p226"
             };
             magazines[]=
             {
-                "20Rnd_762x51_Mag",
-                "RH_20Rnd_57x28_FN",
-                "150Rnd_556x45_Drum_Mag_Tracer_F",
-                "20Rnd_762x51_Fal",
-                "NLAW_F",
-                "30Rnd_556x45_Stanag",
-                "20Rnd_650x39_Cased_Mag_F",
-                "200Rnd_556x45_Box_F",
-                "UGL_FlareCIR_F",
-                "UGL_FlareRed_F",
-                "UGL_FlareGreen_F",
-                "UGL_FlareWhite_F"
+                "hlc_30rnd_556x45_EPR",
+				"RH_15Rnd_9x19_SIG"
             };
             items[]=
             {
                 "bipod_01_F_blk",
-                "DemoCharge_Remote_Mag",
-                "SmokeShellWhite",
-                "Rangefinder",
-                "O_NVGoggles_ghex_F",
-                "O_NVGoggles_hex_F",
-                "NVGoggles_OPFOR",
                 "optic_DMS",
                 "optic_Hamr",
                 "optic_MRCO",
@@ -220,18 +192,9 @@ class ADENIS_MISSIONS
             };
             virtuals[]=
             {
-                "camoNet",
-                "hedgehog",
-                "destroy_archeo",
-                "destroy_stand",
-                "destroy_field",
                 "destroy_labo"
             };
         };
-		class prevent
-		{
-			needed_markers[]={"blackMarket_marker_1","blackMarket_marker_2"};
-		};
 	};
 
 	class guer_1

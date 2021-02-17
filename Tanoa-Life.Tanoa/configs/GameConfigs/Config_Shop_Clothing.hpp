@@ -1150,57 +1150,23 @@ class ADENIS_SHOPS_CLOTHING
 		side="EAST";
 		uniforms[]=
 		{
-			"Alysia_Uniform_East_recrue_Camo",
 			"Alysia_Uniform_East_recrue_Camo2",
-			"Alysia_Uniform_East_recrue_Parade",
-			"Alysia_Uniform_East_soldier_Camo",
 			"Alysia_Uniform_East_soldier_Camo2",
-			"Alysia_Uniform_East_soldier_Parade",
-			"Alysia_Uniform_East_soldier1st_Camo",
 			"Alysia_Uniform_East_soldier1st_Camo2",
-			"Alysia_Uniform_East_soldier1st_Parade",
-			"Alysia_Uniform_East_capochief_Camo",
 			"Alysia_Uniform_East_capochief_Camo2",
-			"Alysia_Uniform_East_capochief_Parade",
-			"Alysia_Uniform_East_sergent_Camo",
 			"Alysia_Uniform_East_sergent_Camo2",
-			"Alysia_Uniform_East_sergent_Parade",
-			"Alysia_Uniform_East_adjudant_Camo",
 			"Alysia_Uniform_East_adjudant_Camo2",
-			"Alysia_Uniform_East_adjudant_Parade",
-			"Alysia_Uniform_East_major_Camo",
 			"Alysia_Uniform_East_major_Camo2",
-			"Alysia_Uniform_East_major_Parade",
-			"Alysia_Uniform_East_lieutenant_Camo",
 			"Alysia_Uniform_East_lieutenant_Camo2",
-			"Alysia_Uniform_East_lieutenant_Parade",
-			"Alysia_Uniform_East_capitaine_Camo",
 			"Alysia_Uniform_East_capitaine_Camo2",
-			"Alysia_Uniform_East_capitaine_Parade",
-			"Alysia_Uniform_East_LtColonel_Camo",
 			"Alysia_Uniform_East_LtColonel_Camo2",
-			"Alysia_Uniform_East_LtColonel_Parade",
-			"Alysia_Uniform_East_colonel_Camo",
 			"Alysia_Uniform_East_colonel_Camo2",
-			"Alysia_Uniform_East_colonel_Parade",
 			"U_O_Wetsuit",
-			"U_I_FullGhillie_lsh",
-			"Alysia_Soldier_East_recrue_BDR",
-			"Alysia_Soldier_East_soldier_BDR",
-			"Alysia_Soldier_East_capo_BDR",
-			"Alysia_Soldier_East_sergent_BDR",
-			"Alysia_Soldier_East_major_BDR",
-			"Alysia_Soldier_East_adjudant_BDR",
-			"Alysia_Soldier_East_lieutenant_BDR",
-			"Alysia_Soldier_East_capitaine_BDR",
-			"Alysia_Soldier_East_LtColonel_BDR",
-			"Alysia_Soldier_East_colonel_BDR",
-			"Alysia_Uniform_West_Dictateur"
+			"U_I_FullGhillie_lsh"
 		};
 		headgear[]=
 		{
 			"Alysia_Casque_East_01",
-			"Alysia_Beret_East_BDR",
 			"H_HelmetCrew_I",
 			"H_PilotHelmetHeli_O",
 			"Alysia_Beret_East",
@@ -1210,57 +1176,15 @@ class ADENIS_SHOPS_CLOTHING
 			"Alysia_Casquette_East_LtColonel",
 			"Alysia_Casquette_East_colonel",
 			"Alysia_Calot_East_Recrue",
-			"Alysia_Calot_East_Soldier",
-			"Alysia_Calot_East_Soldier1st",
-			"Alysia_Calot_East_Capochief",
-			"Alysia_Calot_East_Sergent",
-			"Alysia_Calot_East_Adjudant",
-			"Alysia_Calot_East_Major",
-			"Alysia_Calot_East_Lieutenant",
-			"Alysia_Calot_East_Capitaine",
-			"Alysia_Calot_East_LtColonel",
-			"Alysia_Calot_East_Colonel",
 			"Payday_GeneralO"
 		};
 		vests[]=
 		{
-			"V_RebreatherIR",
-			"TAC_EI_RRV28_B",
-			"Alysia_Belt",
-			"Alysia_Vest_Soldier_East_01",
-			"Alysia_Vest_Soldier_East_01_camo",
-			"Alysia_Vest_Soldier_East_01_new",
-			"Alysia_Vest_Soldier_East_02",
-			"Alysia_Vest_Soldier_East_02_camo",
-			"Alysia_Vest_Soldier_East_02_new",
-			"Alysia_Vest_Soldier_East_03",
-			"Alysia_Vest_Soldier_East_03_camo",
-			"Alysia_Vest_Soldier_East_03_new",
-			"Alysia_Vest_Officer_East_01",
-			"Alysia_Vest_Officer_East_01_camo",
-			"Alysia_Vest_Officer_East_01_new",
-			"Alysia_Vest_Officer_East_02",
-			"Alysia_Vest_Officer_East_02_camo",
-			"Alysia_Vest_Officer_East_02_new",
-			"Alysia_Vest_Utility_East_01",
-			"Alysia_Vest_Utility_East_02",
-			"Alysia_Vest_Utility_East_03",
-			"Alysia_Vest_Utility_East_04",
-			"Alysia_Vest_Upgraded_East_1",
-			"Alysia_Vest_Upgraded_East_2",
-			"Alysia_Vest_Upgraded_East_3",
-			"Alysia_Vest_Upgraded_East_4",
-			"Alysia_Vest_Upgraded_East_5"
+			"LR_Vest"
 		};
 		backpacks[]=
 		{
-			"B_TacticalPack_oli",
-			"B_Carryall_oli",
-			"TRYK_B_Alicepack",
-			"TRYK_B_tube_od",
-			"TRYK_B_Medbag_OD",
-			"Alysia_Radio_LR_East",
-			"Alysia_Radio_LR_West"
+			"Alysia_Radio_LR_East"
 		};
 		goggles[]=
 		{

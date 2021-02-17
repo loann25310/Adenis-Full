@@ -23,3 +23,5 @@ _reasons = _display displayCtrl 70001;
 _reasons lbAdd "Demande de paiement";
 _reasons lbAdd "Activité professionnelle";
 _reasons lbSetCurSel 0;
+
+["Attention, le blanchiment fait perdre 50% de la valeur de l'argent sale !", "buy"] call AlysiaClient_fnc_info;

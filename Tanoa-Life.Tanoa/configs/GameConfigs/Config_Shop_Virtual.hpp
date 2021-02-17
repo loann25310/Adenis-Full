@@ -180,23 +180,7 @@ class ADENIS_SHOPS_VIRTUAL
 			"barriere",
 			"bargate",
 			"spikeStrip",
-			"horn_east",
-			"blueprint_usp_40_match",
-			"blueprint_m9",
-			"blueprint_m1911",
-			"blueprint_car_95",
-			"blueprint_pm_9mm",
-			"blueprint_gsh18",
-			"blueprint_sdar",
-			"blueprint_sig",
-			"blueprint_vp70",
-			"blueprint_cz75",
-			"blueprint_protector",
-			"blueprint_rook_40",
-			"blueprint_blaser_b95",
-			"blueprint_vermin_smg",
-			"blueprint_hk417",
-			"blueprint_hk416"
+			"horn_east"
 		};
 	};
 	class guer

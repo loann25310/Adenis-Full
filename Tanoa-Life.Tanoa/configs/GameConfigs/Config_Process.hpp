@@ -3217,18 +3217,6 @@ class ADENIS_PROCESS
 			items_arma[]={"Skyline_DP28_01_F"};
 		};
 	};
-	class AKS_RAIL: AKM
-	{
-		name="Fabrication : AKS + rail";
-		class require
-		{
-			items_virtual[]={{"military_framep",1},{"military_shoulderp",1},{"military_gripp",1},{"military_barrelp",1},{"military_slapperp",1},{"military_receiverp",1},{"triggerp",1}};
-		};
-		class receive
-		{
-			items_arma[]={"Skyline_AKS_Rail_01_F"};
-		};
-	};
 	class AKS: AKM
 	{
 		name="Fabrication : AKS";
@@ -3238,7 +3226,7 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_arma[]={"Skyline_AKM_Compact_01_F"};
+			items_arma[]={"hlc_rifle_aks74_MTK"};
 		};
 	};
 	class M4A1_COMPACT: AKM
@@ -3447,6 +3435,10 @@ class ADENIS_PROCESS
 	class magazine_aks: magazine_akm
 	{
 		name="Fabrication : Chargeur AKS";
+		class receive
+		{
+			items_arma[]={"hlc_30Rnd_545x39_B_AK"};
+		};
 	};
 	class magazine_mosin: magazine_akm
 	{
