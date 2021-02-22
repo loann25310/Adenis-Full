@@ -346,6 +346,9 @@ class CfgFunctions
 			class vehicleMenu_speaker {};
 			class vehicleMenu_push {};
 			class handleFuel {};
+			class paintCabine_open {};
+			class paintCabine_paint {};
+			class paintCabine_update {};
 		};
 
 		class Drill

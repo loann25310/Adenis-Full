@@ -144,6 +144,7 @@ class CfgFunctions
 			class vehicle_update_fuel {};
 			class vehicle_update_name {};
 			class vehicle_update_owner {};
+			class paintCabine_paint {};
 		};
 
 		class Systems

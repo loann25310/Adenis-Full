@@ -38,6 +38,7 @@ _diff = _price - _sync;
 	+	"<t align='left'>Depuis dernier évènement</t><t align='right'>%5<t color='%6'>%7</t>$</t><br/><br/>"
 	+	"<t align='center' color='#086A87'>- Informations - </t><br/>"
 	+	"<t align='left'>Légal</t><t align='right'>%4</t><br/>"
+	+	"<t align='left'>Ressource entreprise</t><t align='right'>%8</t><br/>"
 	+	"</t>",
 	[_price] call AlysiaClient_fnc_numberText,
 	[getNumber(_config >> "market" >> "max")] call AlysiaClient_fnc_numberText,
@@ -45,7 +46,8 @@ _diff = _price - _sync;
 	if (getNumber(_config >> "illegal") isEqualTo 1) then {"Non"} else {"Oui"},
 	if (_diff >= 0) then {"+"} else {"-"},
 	if (_diff >= 0) then {"#3ADF00"} else {"#DF0101"},
-	[abs _diff] call AlysiaClient_fnc_numberText
+	[abs _diff] call AlysiaClient_fnc_numberText,
+	if (getNumber(_config >> "market" >> "min") isEqualTo 1) then {"<t color='#00a329'>Oui</t>"} else {"<t color='#a30000'>Non</t>"}
 ];
 
 missionNamespace setVariable ["market_sync_id", _sel];

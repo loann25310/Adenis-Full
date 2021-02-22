@@ -441,32 +441,51 @@ class ADENIS_SHOPS_CLOTHING
 		};
 	};
 
-	class spart_clothing
+	class conexus_clothing
 	{
-		name="Shop SPART";
+		name="Shop Conexus";
 		uniforms[]=
 		{
-			"U_SPART_souple",
-			"U_SPART_combat",
-			"U_SPART_PM",
-			"U_SPART_Tshirt"
+			"Conexus_Uniforme",
+			"Conexus_LS"
 		};
 		vests[]=
 		{
-			"V_spart_gilet"
+			"ceinture_hc",
+			"Conexus_Vest"
 		};
-		goggles[]={};
+		goggles[]=
+		{
+			"Conexus_Masque_F",
+			"Conexus_Masque_kaki_F",
+			"Conexus_Masque_aviators_F",
+			"Conexus_Masque_RoundGlasses_F",
+			"Conexus_Masque_RoundGlasses_blk_F",
+			"Conexus_Masque_RoundGlasses_gold_F",
+			"Conexus_Masque_shades_green_F",
+			"Conexus_Masque_shades_red_F",
+			"Conexus_Masque_squares_F",
+			"Conexus_Masque_squares_tinted_F",
+			"Conexus_Masque_aviators_Kaki_F",
+			"Conexus_Masque_RoundGlasses_Kaki_F",
+			"Conexus_Masque_RoundGlasses_blk_Kaki_F",
+			"Conexus_Masque_RoundGlasses_gold_Kaki_F",
+			"Conexus_Masque_shades_green_Kaki_F",
+			"Conexus_Masque_shades_red_Kaki_F",
+			"Conexus_Masque_squares_Kaki_F",
+			"Conexus_Masque_squares_tinted_Kaki_F"
+		};
 		headgear[]=
 		{
-			"H_SPART_Beret",
-			"U_SPART_Tshirt",
-			"H_SPART_Booniehat",
-			"H_SPART_patrol",
-			"H_SPART_Masque"
+			"Conexus_casquette_01_F",
+			"Conexus_casquette_02_F",
+			"Conexus_booniehat_01_F",
+			"Casquette_HC"
 		};
 		backpacks[]=
 		{
-			"SPART_bagpack"
+			"Conecxus_Small_Bag_B",
+			"Conecxus_Bag_B"
 		};
 	};
 
@@ -1154,6 +1173,7 @@ class ADENIS_SHOPS_CLOTHING
 			"Alysia_Uniform_East_soldier_Camo2",
 			"Alysia_Uniform_East_soldier1st_Camo2",
 			"Alysia_Uniform_East_capochief_Camo2",
+			"Alysia_Uniform_East_capo_Camo2",
 			"Alysia_Uniform_East_sergent_Camo2",
 			"Alysia_Uniform_East_adjudant_Camo2",
 			"Alysia_Uniform_East_major_Camo2",
@@ -1161,22 +1181,15 @@ class ADENIS_SHOPS_CLOTHING
 			"Alysia_Uniform_East_capitaine_Camo2",
 			"Alysia_Uniform_East_LtColonel_Camo2",
 			"Alysia_Uniform_East_colonel_Camo2",
-			"U_O_Wetsuit",
-			"U_I_FullGhillie_lsh"
+			"U_O_Wetsuit"
 		};
 		headgear[]=
 		{
 			"Alysia_Casque_East_01",
-			"H_HelmetCrew_I",
 			"H_PilotHelmetHeli_O",
 			"Alysia_Beret_East",
 			"Alysia_Booniehat_East_01",
-			"Alysia_Casquette_East_Lieutenant",
-			"Alysia_Casquette_East_Capitaine",
-			"Alysia_Casquette_East_LtColonel",
-			"Alysia_Casquette_East_colonel",
-			"Alysia_Calot_East_Recrue",
-			"Payday_GeneralO"
+			"Alysia_Calot_East_Recrue"
 		};
 		vests[]=
 		{

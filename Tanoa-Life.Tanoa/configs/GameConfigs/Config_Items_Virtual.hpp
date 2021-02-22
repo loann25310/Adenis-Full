@@ -360,7 +360,7 @@ class ADENIS_ITEMS
     };
     class light_double
     {
-        name="Projecteur double";
+        name="Lampe de Camping";
         weight=3;
         image="";
         class use
@@ -486,6 +486,7 @@ class ADENIS_ITEMS
         name="Cigarette";
         weight=1;
         image="Alysia_Client\Textures\Items_virtual\cigarette.paa";
+        entrepriseItem = 1;
         class market
         {
             max=1000;
@@ -498,10 +499,11 @@ class ADENIS_ITEMS
         name="Cigarette Emballé";
         weight=1;
         image="Adenis_Textures\carton.paa";
+        entrepriseItem = 1;
         class market
         {
-            max=1800;
-            min=840;
+            max=7000;
+            min=5000;
         };
         class remove {};
     };
@@ -576,6 +578,7 @@ class ADENIS_ITEMS
         name="Meuble";
         weight=5;
         image="Alysia_Client\Textures\Items_virtual\meuble.paa";
+        entrepriseItem = 1;
         class market
         {
             max=5800;
@@ -589,10 +592,11 @@ class ADENIS_ITEMS
         name="Meuble Emballé";
         weight=5;
         image="Adenis_Textures\carton.paa";
+        entrepriseItem = 1;
         class market
         {
             max=10941;
-            min=5094;
+            min=7094;
         };
         class remove {};
     };
@@ -602,6 +606,7 @@ class ADENIS_ITEMS
         name="Palette";
         weight=2;
         image="Adenis_Textures\palette.paa";
+        entrepriseItem = 1;
         class remove {};
     };
 
@@ -645,6 +650,7 @@ class ADENIS_ITEMS
         name="Barre Acier";
         weight=2;
         image="Alysia_Client\Textures\Items_virtual\steel.paa";
+        entrepriseItem = 1;
         class market
         {
             max=3000;
@@ -657,6 +663,7 @@ class ADENIS_ITEMS
         name="Barre Acier Emballé";
         weight=2;
         image="Adenis_Textures\carton.paa";
+        entrepriseItem = 1;
         class market
         {
             max=6252;
@@ -684,10 +691,24 @@ class ADENIS_ITEMS
         name="Verre";
         weight=1;
         image="Alysia_Client\Textures\Items_virtual\verre.paa";
+        entrepriseItem = 1;
         class market
         {
             max=1200;
             min=800;
+        };
+        class remove {};
+    };
+    class glassemba
+    {
+        name="Verre Emballé";
+        weight=5;
+        image="Adenis_Textures\carton.paa";
+        entrepriseItem = 1;
+        class market
+        {
+            max=7091;
+            min=5094;
         };
         class remove {};
     };
@@ -921,8 +942,8 @@ class ADENIS_ITEMS
         lockShop=1;
         class market
         {
-            max=2770;
-            min=500;
+            max=3370;
+            min=800;
         };
         class remove {};
     };
@@ -1165,6 +1186,7 @@ class ADENIS_ITEMS
         name="Ciment";
         weight=3;
         image="Alysia_Client\Textures\Items_virtual\ciment.paa";
+        entrepriseItem = 1;
         class market
         {
             max=1200;
@@ -1245,6 +1267,7 @@ class ADENIS_ITEMS
         name="Conserve de Cassoulet";
         weight=2;
         image="Alysia_Client\Textures\Items_Inventaire\Cassoulet.paa";
+        entrepriseItem = 1;
         class food
         {
             hunger=50;
@@ -1776,6 +1799,7 @@ class ADENIS_ITEMS
         name="Tablette de Chocolat";
         weight=1;
         image="Adenis_Textures\Chocolat.paa";
+        entrepriseItem = 1;
         class market
         {
             max=2200;
@@ -1789,6 +1813,38 @@ class ADENIS_ITEMS
         class remove {};
     };
 
+    class planchefruitdemer
+    {
+        name="Plan de Fruit de Mer";
+        weight=1;
+        image="";
+        entrepriseItem = 1;
+        class market
+        {
+            max=5200;
+            min=2200;
+        };
+        class food
+        {
+            hunger=40;
+            sound="eat_biscuit";
+        };
+        class remove {};
+    };
+
+    class tabchocoemba
+    {
+        name="Tablette de Chocolat Emballé";
+        weight=5;
+        image="Adenis_Textures\carton.paa";
+        entrepriseItem = 1;
+        class market
+        {
+            max=7091;
+            min=5094;
+        };
+        class remove {};
+    };
     class coffee_seed
     {
         name="Graine (Café)";
@@ -1816,6 +1872,7 @@ class ADENIS_ITEMS
         name="Café en conserve";
         weight=3;
         image="Alysia_Client\Textures\Items_virtual\cafeconserve.paa";
+        entrepriseItem = 1;
         class market
         {
             max=6925;
@@ -1911,6 +1968,7 @@ class ADENIS_ITEMS
         name="Bouteille de Rhum";
         weight=2;
         image="Alysia_Client\Textures\Items_virtual\rhum.paa";
+        entrepriseItem = 1;
         class food
         {
             hunger=-5;
@@ -2147,6 +2205,7 @@ class ADENIS_ITEMS
         name="Bouteille de champagne";
         weight=1;
         image="Alysia_Client\Textures\Items_virtual\champagne.paa";
+        entrepriseItem = 1;
         class remove {};
         class food
         {
@@ -2440,7 +2499,7 @@ class ADENIS_ITEMS
         name="Oeuf";
         weight=1;
         image="Alysia_Client\Textures\Items_virtual\egg.paa";
-        buy_license_CIV="company_cook";
+        buy_license_CIV[]={"company_cook","company_farming"};
         price_buy=7;
         class remove {};
     };
@@ -2544,7 +2603,7 @@ class ADENIS_ITEMS
         weight=1;
         image="Alysia_Client\Textures\Items_virtual\milk.paa";
         price_buy=22;
-        buy_license_CIV="company_cook";
+        buy_license_CIV[]={"company_cook","company_farming"};
         class remove {};
         class food
         {
@@ -2563,6 +2622,33 @@ class ADENIS_ITEMS
         buy_license_CIV="company_cook";
         class remove {};
     };
+
+    class peinture
+    {
+        name="Pot de peinture blanche";
+        weight=10;
+        price_buy=20000;
+        buy_license_CIV="company_garagist";
+        image="Adenis_Textures\bombe_peinture.paa";
+        class remove {};
+    };
+
+    class bombe_vide
+    {
+        name="Aérosol vide";
+        weight=2;
+        image="Adenis_Textures\bombe_peinture.paa";
+        class remove {};
+    };
+
+    class bombe_peinture
+    {
+        name="Bombe de peinture blanche";
+        weight=3;
+        image="Adenis_Textures\bombe_peinture.paa";
+        class remove {};
+    };
+
     class chop_pork
     {
         name="Côte de porc";
@@ -3287,7 +3373,7 @@ class ADENIS_ITEMS
         image="Adenis_Textures\patron.paa";
         illegal=1;
     };
-    class blueprint_glock_18: blueprint_gsh18
+    class blueprint_glock: blueprint_gsh18
     {
         name="Blueprint de Glock";
         image="Adenis_Textures\patron.paa";

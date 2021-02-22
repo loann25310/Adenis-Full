@@ -4,7 +4,7 @@ class ADENIS_LABORATORIES
 	{
 		object="Diablo_TB_Marijuana_01_F";
 		process[]={"marijuana"};
-		destroy[]={"WEST"};
+		destroy[]={"WEST","EAST"};
 		class marker
 		{
 		 	ShapeLocal="ICON";
@@ -22,7 +22,7 @@ class ADENIS_LABORATORIES
 	{
 		object="Skyline_Alysia_WorkBench_Marijuana_01_F";
 		process[]={"mushroom","mushroom_bocal"};
-		destroy[]={"WEST"};
+		destroy[]={"WEST","EAST"};
 		class marker
 		{
 		 	ShapeLocal="ICON";
@@ -40,7 +40,7 @@ class ADENIS_LABORATORIES
 	{
 		object="Diablo_TB_Methamphetamine_01_F";
 		process[]={"meth"};
-		destroy[]={"WEST"};
+		destroy[]={"WEST","EAST"};
 		class marker
 		{
 		 	ShapeLocal="ICON";
@@ -58,7 +58,7 @@ class ADENIS_LABORATORIES
 	{
 		object="Diablo_TB_Cocaine_01_F";
 		process[]={"cocaine","cocainec"};
-		destroy[]={"WEST"};
+		destroy[]={"WEST","EAST"};
 		class marker
 		{
 		 	ShapeLocal="ICON";
@@ -76,7 +76,7 @@ class ADENIS_LABORATORIES
 	{
 		object="Diablo_TB_Heroine_01_F";
 		process[]={"heroin","seringueheroin"};
-		destroy[]={"WEST"};
+		destroy[]={"WEST","EAST"};
 		class marker
 		{
 		 	ShapeLocal="ICON";
@@ -94,7 +94,7 @@ class ADENIS_LABORATORIES
 	{
 		object="Land_Factory_Conv1_End_F";
 		process[]={"cigare","cigare_clothing"};
-		destroy[]={"WEST"};
+		destroy[]={"WEST","EAST"};
 		class marker
 		{
 		 	ShapeLocal="ICON";
@@ -112,7 +112,7 @@ class ADENIS_LABORATORIES
 	{
 		object="HealTable_F";
 		process[]={};
-		destroy[]={"WEST"};
+		destroy[]={"WEST","EAST"};
 		class marker
 		{
 		 	ShapeLocal="ICON";
@@ -130,7 +130,7 @@ class ADENIS_LABORATORIES
 	{
 		object="Skyline_Alysia_WorkBench_Construction_01_F";
 		process[]={"chair_wood","table_wood","light_double","bag_01","bag_02"};
-		destroy[]={"WEST"};
+		destroy[]={"WEST","EAST"};
 		class marker
 		{
 		 	ShapeLocal="ICON";
@@ -180,7 +180,7 @@ class ADENIS_LABORATORIES
 			"magazine_ruger_mk2",
 			"magazine_mosin"
 		};
-		destroy[]={"WEST"};
+		destroy[]={"WEST","EAST"};
 		class marker
 		{
 		 	ShapeLocal="ICON";

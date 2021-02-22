@@ -8,7 +8,7 @@ class ADENIS_DYN_MARKERS
 		color="ColorRed";
 		shape="ICON";
 		size=0.55;
-		destroy[]={"WEST"};
+		destroy[]={"WEST","EAST"};
 		destroy_item="destroy_field";
 		positions="champs";
 		distance=20;
@@ -61,7 +61,7 @@ class ADENIS_DYN_MARKERS
 		shape="ICON";
 		size=0.55;
 		linked="blackMarket_stand_1";
-		destroy[]={"WEST"};
+		destroy[]={"WEST","EAST"};
 		destroy_item="destroy_stand";
 		positions="stands_general";
 		distance=5;
@@ -85,7 +85,7 @@ class ADENIS_DYN_MARKERS
 		shape="ICON";
 		size=0.55;
 		linked="cars_seller_stand_1";
-		destroy[]={"WEST"};
+		destroy[]={"WEST","EAST"};
 		destroy_item="destroy_stand";
 		positions="stands_general";
 		distance=5;
@@ -109,7 +109,7 @@ class ADENIS_DYN_MARKERS
 		shape="ICON";
 		size=0.55;
 		linked="drugs_seller_stand_1";
-		destroy[]={"WEST"};
+		destroy[]={"WEST","EAST"};
 		destroy_item="destroy_stand";
 		positions="stands_general";
 		distance=5;
@@ -127,7 +127,7 @@ class ADENIS_DYN_MARKERS
 		color="ColorRed";
 		shape="ICON";
 		size=0.55;
-		destroy[]={"WEST"};
+		destroy[]={"WEST","EAST"};
 		destroy_item="destroy_archeo";
 		positions="archeologie";
 		distance=20;
@@ -144,7 +144,7 @@ class ADENIS_DYN_MARKERS
 		shape="ICON";
 		size=0.55;
 		linked="archeologie_process_stand_1";
-		destroy[]={"WEST"};
+		destroy[]={"WEST","EAST"};
 		destroy_item="destroy_stand";
 		positions="stands_general";
 		distance=5;
@@ -162,7 +162,7 @@ class ADENIS_DYN_MARKERS
 		color="ColorRed";
 		shape="ICON";
 		size=0.55;
-		destroy[]={"WEST"};
+		destroy[]={"WEST","EAST"};
 		destroy_item="destroy_field";
 		positions="pillage";
 		distance=20;
@@ -181,7 +181,7 @@ class ADENIS_DYN_MARKERS
 		shape="ICON";
 		size=0.55;
 		linked="soufre_process_stand_1";
-		destroy[]={"WEST"};
+		destroy[]={"WEST","EAST"};
 		destroy_item="destroy_stand";
 		positions="stands_general";
 		distance=5;
@@ -200,11 +200,10 @@ class ADENIS_DYN_MARKERS
 		shape="ICON";
 		size=0.55;
 		linked="rebel_stand_1";
-		destroy[]={"WEST"};
+		destroy[]={"WEST","EAST"};
 		destroy_item="destroy_stand";
 		positions="rebels";
 		distance=5;
-		nearObjects[]={"Campfire_burning_F"};
 	};
 	class rebel_marker_2: rebel_marker_1
 	{
@@ -218,7 +217,7 @@ class ADENIS_DYN_MARKERS
 		color="ColorRed";
 		shape="ICON";
 		size=0.55;
-		destroy[]={"WEST"};
+		destroy[]={"WEST","EAST"};
 		destroy_item="destroy_field";
 		positions="recif";
 		distance=20;
@@ -226,5 +225,19 @@ class ADENIS_DYN_MARKERS
 		{
 			price=300000;
 		};
+	};
+
+	class launder_1
+	{
+		text="Blanchisseur";
+		type="Maels_rebel";
+		color="ColorRed";
+		shape="ICON";
+		size=0.55;
+		linked="launder_stand_1";
+		destroy[]={"WEST","EAST"};
+		destroy_item="destroy_stand";
+		positions="rebels";
+		distance=5;
 	};
 };

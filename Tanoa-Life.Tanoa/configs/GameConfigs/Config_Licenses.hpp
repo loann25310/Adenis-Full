@@ -39,9 +39,9 @@ class ADENIS_LICENSES
 		};
 	};
 
-	class spart_rebelle
+	class conexus_rebelle
 	{
-		name="Membre de la SPART";
+		name="Membre de la Conexus";
 		class factions
 		{
 			class CIV

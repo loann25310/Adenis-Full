@@ -40,5 +40,10 @@ g_keybinds pushBack "actionSirene";
 ["Adenis", "actionNitro", "Nitro du véhicule", {[] call AlysiaClient_fnc_activateNitro}, {}, [DIK_1, [true, false, false]], false, 0, false] call CBA_fnc_addKeybind;
 g_keybinds pushBack "actionNitro";
 
-["Adenis", "actionAnimationMenu", "Ouvrir le menu des animations", {createDialog "RscDisplayAnimations";_control=(findDisplay 35600)displayCtrl 35602;_anims="true" configClasses(missionConfigFile>>"ADENIS_ANIMATIONS");{_index=_control lbAdd(getText(_x>>"name"));_control lbSetData[_index,configName _x];}forEach _anims;}, {}, [DIK_O, [false, false, false]], false, 0, false] call CBA_fnc_addKeybind;
+["Adenis", "actionAnimationMenu", "Ouvrir le menu des animations", {if(dialog)exitWith{};createDialog "RscDisplayAnimations";_control=(findDisplay 35600)displayCtrl 35602;_anims="true" configClasses(missionConfigFile>>"ADENIS_ANIMATIONS");{_index=_control lbAdd(getText(_x>>"name"));_control lbSetData[_index,configName _x];}forEach _anims;}, {}, [DIK_O, [false, false, false]], false, 0, false] call CBA_fnc_addKeybind;
 g_keybinds pushBack "actionAnimationMenu";
+
+if ((getPlayerUID player) in getArray(missionConfigFile >> "ADENIS_STAFF" >> "commands" >> "buttons" >> "god_on" >> "allow")) then {
+	["Adenis", "actionAdmin", "Action Admin", {if(!g_staff_on)then{[] spawn AlysiaClient_fnc_APP_staff_god;}else{g_staff_on=false;};}, {}, [DIK_F, [false, true, false]], false, 0, false] call CBA_fnc_addKeybind;
+	g_keybinds pushBack "actionAdmin";
+};

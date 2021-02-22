@@ -67,9 +67,26 @@ uiSleep 1;
 			_vehicle setVariable ["refuel_type", _fuel_type, true];
 		};
 
+		if (!((_x # 14) isEqualTo "")) then {
+			_configColor = missionConfigFile >> "ADENIS_PAINTS" >> "Colors" >> (_x # 14);
+			if (isArray(_configColor >> "color")) then {
+				_color = getArray(_configColor >> "color");
+				_vehicle setObjectTextureGlobal [0,
+					format [
+						"#(rgb,8,8,3)color(%1,%2,%3,1)",
+						(_color # 0) / 255,
+						(_color # 1) / 255,
+						(_color # 2) / 255
+					]
+				];
+			} else {
+				_vehicle setObjectTextureGlobal [0, getText(_configColor >> "color")];
+			};
+		};
+
 		_vehicle allowDamage true;
 	};
-} forEach ((["SELECT vehicles.HitPointsDamage,vehicles.side,vehicles.classname,vehicles.pid,vehicles.plate,vehicles.POS_x,vehicles.POS_y,vehicles.POS_z,vehicles.POS_direction,players.profileName,vehicles.assurance,vehicles.fuel,vehicles.inventory,vehicles.fuel_type FROM vehicles INNER JOIN players ON vehicles.pid=players.uid WHERE active='1'", 2] call ExtDB3_fnc_async));
+} forEach ((["SELECT vehicles.HitPointsDamage,vehicles.side,vehicles.classname,vehicles.pid,vehicles.plate,vehicles.POS_x,vehicles.POS_y,vehicles.POS_z,vehicles.POS_direction,players.profileName,vehicles.assurance,vehicles.fuel,vehicles.inventory,vehicles.fuel_type,vehicles.paint FROM vehicles INNER JOIN players ON vehicles.pid=players.uid WHERE active='1'", 2] call ExtDB3_fnc_async));
 
 diag_log "[VEHICLES] Ready";
 
@@ -88,4 +105,5 @@ diag_log "[VEHICLES] Ready";
 11	vehicles.fuel
 12	vehicles.inventory
 13  vehicles.fuel_type
+14  vehicles.paint
 */

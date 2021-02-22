@@ -173,19 +173,26 @@ while {true} do
 		_min = _time select 1;
 	};
 
-	/*if (time >= _nextAnnounceTime) then
+	if (time >= _nextAnnounceTime) then
 	{
 		_nextAnnounceTime = time + (round(random(10) + 1) * 60);
 
 		[
 			([
-				"contacter_madame_towisky",
-				"dette_pti",
-				"message_banca_di_monti",
-				"rejoindre_guardia",
-				"rejoindre_PTI",
-				"volcan"
+				"ant_1",
+				"ant_2",
+				"ant_3",
+				"ant_4",
+				"ant_5",
+				"ant_6",
+				"ant_7",
+				"ant_8",
+				"ant_9",
+				"ant_10",
+				"ant_11",
+				"ant_12",
+				"ant_13"
 			] call BIS_fnc_selectRandom)
 		] remoteExecCall ["AlysiaClient_fnc_border_south_sounds", -2];
-	};*/
+	};
 };

@@ -1,5 +1,5 @@
-#define ADMIN_AND_MODO {"76561198146571164","76561198237617140","76561198221841104","76561198084504163","76561198053858627","76561198171075495","76561198305059385","76561197990198883"}
-#define ADMIN_AND_MODO_AND_SUPORTPLUS {"76561198146571164","76561198237617140","76561198221841104","76561198084504163","76561198053858627","76561198171075495","76561198305059385","76561197990198883"}
+#define ADMIN_AND_MODO {"76561198146571164","76561198237617140","76561198221841104","76561198084504163","76561198053858627","76561198171075495","76561198305059385","76561197990198883","76561198395387821","76561198040104160","76561198101935400"}
+#define ADMIN_AND_MODO_AND_SUPORTPLUS {"76561198146571164","76561198237617140","76561198221841104","76561198084504163","76561198053858627","76561198171075495","76561198305059385","76561197990198883","76561198395387821","76561198040104160","76561198101935400"}
 
 class ADENIS_STAFF
 {
@@ -70,6 +70,21 @@ class ADENIS_STAFF
 			uid="76561198221841104";
 		};
 
+		class HarmonieBlake: modo
+		{
+			uid="76561198395387821";
+		};
+
+		class JasonChester: modo
+		{
+			uid="76561198040104160";
+		};
+
+		class NoraHaros: modo
+		{
+			uid="76561198101935400";
+		};
+
 		// - Support
 		class support
 		{
@@ -78,10 +93,6 @@ class ADENIS_STAFF
 			slot=0;
 			skip_checks=0;
 		};
-		class HarmonieBlake: support
-		{
-			uid="76561198395387821";
-		};
 		class AntonioMawari: support
 		{
 			uid="76561198253768844";
@@ -89,10 +100,6 @@ class ADENIS_STAFF
 		class JesusFlores: support
 		{
 			uid="76561198116958747";
-		};
-		class JasonChester: support
-		{
-			uid="76561198040104160";
 		};
 	};
 
@@ -314,6 +321,13 @@ class ADENIS_STAFF
 			{
 				name="Kick Lobby";
 				statement="['bye'] remoteExec ['BIS_fnc_endMission',(call compile (lbData[9000,lbCurSel 9000]))];";
+				condition="(true)";
+				allow[]=ADMIN_AND_MODO;
+			};
+			class info_radio
+			{
+				name="Info Radio";
+				statement="[[player],{(format['--Info Radio--<br/>Nom:%3<br/>Frequence Courte:%1<br/>Fréquence Longue:%2',if(call TFAR_fnc_haveSWRadio)then{(call TFAR_fnc_ActiveSwRadio)call TFAR_fnc_getSwFrequency}else{'No'},if(call TFAR_fnc_haveLRRadio)then{(call TFAR_fnc_ActiveLrRadio)call TFAR_fnc_getLrFrequency}else{'No'},profileName])remoteExec['AlysiaClient_fnc_info',(_this select 0)];}]remoteExec['bis_fnc_call',(call compile (lbData[9000,lbCurSel 9000]))];";
 				condition="(true)";
 				allow[]=ADMIN_AND_MODO;
 			};

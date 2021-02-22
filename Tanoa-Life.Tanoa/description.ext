@@ -184,3 +184,23 @@ showHUD[]={
 ***********************************/
 #include "configs\Cfg_Debriefings.hpp"
 //---------------------------------
+
+/**********************************
+************ Remote Exec ***********
+***********************************/
+class CfgRemoteExec
+{
+	class Commands
+	{
+		mode = 2;
+		jip = 1;
+		allowedTargets = 0;
+	};
+
+	class Functions
+	{
+		mode = 2;
+		jip = 1;
+		allowedTargets = 0;
+	};
+};

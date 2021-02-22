@@ -228,6 +228,11 @@ class ADENIS_GARAGES
 		name="Garage Fiestanoa";
 		spawns[]={"land_27_spawn_1","land_27_spawn_2"};
 	};
+	class land_28: land_1
+	{
+		name="Garage Nora Automobiles";
+		spawns[]={"land_28_spawn_1"};
+	};
 
 	class fourriere_1
 	{

@@ -1016,32 +1016,56 @@ class ADENIS_ITEMS_ARMA
 		buy_price=10000;
 		buy_license_CIV[]={""};
 	};
-	///////////////////////////////////////////////  SPART   ///////////////////////////////////////////////////
+	///////////////////////////////////////////////  Conexus   ///////////////////////////////////////////////////
 
-	class U_SPART_souple
+	// Uniforme
+	class Conexus_Uniforme
 	{
 		buy_price=10000;
-		buy_license_CIV[]={"spart_rebelle"};
+		buy_license_CIV[]={"conexus_rebelle"};
 	};
+	class Conexus_LS : Conexus_Uniforme {};
 
-	class U_SPART_combat : U_SPART_souple {};
-	class U_SPART_PM : U_SPART_souple {};
-	class U_SPART_Tshirt : U_SPART_souple {};
-
-	class V_spart_gilet : U_SPART_souple
+	// Pare-balle
+	class ceinture_hc : Conexus_Uniforme
 	{
 		buy_price=95000;
 	};
+	class Conexus_Vest : ceinture_hc {};
 
-	class SPART_bagpack : U_SPART_souple {};
+	// Sac
+	class Conecxus_Small_Bag_B : Conexus_Uniforme {};
+	class Conecxus_Bag_B : Conexus_Uniforme {};
 
-	class H_SPART_Beret : U_SPART_souple
+	// Lunettes
+	class Conexus_Masque_F : Conexus_Uniforme
 	{
 		buy_price=5000;
 	};
-	class H_SPART_Booniehat : H_SPART_Beret {};
-	class H_SPART_patrol : H_SPART_Beret {};
-	class H_SPART_Masque : H_SPART_Beret {};
+	class Conexus_Masque_kaki_F : Conexus_Masque_F {};
+	class Conexus_Masque_aviators_F : Conexus_Masque_F {};
+	class Conexus_Masque_RoundGlasses_F : Conexus_Masque_F {};
+	class Conexus_Masque_RoundGlasses_blk_F : Conexus_Masque_F {};
+	class Conexus_Masque_RoundGlasses_gold_F : Conexus_Masque_F {};
+	class Conexus_Masque_shades_green_F : Conexus_Masque_F {};
+	class Conexus_Masque_shades_red_F : Conexus_Masque_F {};
+	class Conexus_Masque_squares_F : Conexus_Masque_F {};
+	class Conexus_Masque_squares_tinted_F : Conexus_Masque_F {};
+	class Conexus_Masque_aviators_Kaki_F : Conexus_Masque_F {};
+	class Conexus_Masque_RoundGlasses_Kaki_F : Conexus_Masque_F {};
+	class Conexus_Masque_RoundGlasses_blk_Kaki_F : Conexus_Masque_F {};
+	class Conexus_Masque_RoundGlasses_gold_Kaki_F : Conexus_Masque_F {};
+	class Conexus_Masque_shades_green_Kaki_F : Conexus_Masque_F {};
+	class Conexus_Masque_shades_red_Kaki_F : Conexus_Masque_F {};
+	class Conexus_Masque_squares_Kaki_F : Conexus_Masque_F {};
+	class Conexus_Masque_squares_tinted_Kaki_F : Conexus_Masque_F {};
+
+	// Haut de tête
+	class Conexus_casquette_01_F : Conexus_Masque_F {};
+	class Conexus_casquette_02_F : Conexus_Masque_F {};
+	class Conexus_booniehat_01_F : Conexus_Masque_F {};
+	class Casquette_HC : Conexus_Masque_F {};
+
 
 	////////////////////////////////////////////  PREFECTURE   ///////////////////////////////////////////////////
 	class Alysia_Identity_Civ
@@ -1895,7 +1919,7 @@ class ADENIS_ITEMS_ARMA
 		buy_price=100;
 		buy_condition_WEST=1;
 	};
-	class Skyline_Fal_02_F
+	class hlc_rifle_M4
 	{
 		buy_price=5000;
 		buy_condition_WEST=1;
@@ -1963,12 +1987,12 @@ class ADENIS_ITEMS_ARMA
 	class Alysia_Booniehat_East_01
 	{
 		buy_price=80;
-		buy_condition_EAST=8;
+		buy_condition_EAST=1;
 	};
 	class Alysia_Beret_East
 	{
 		buy_price=200;
-		buy_condition_EAST=4;
+		buy_condition_EAST=2;
 	};
 	class Alysia_Casque_East_01
 	{
@@ -2060,84 +2084,66 @@ class ADENIS_ITEMS_ARMA
 	class Alysia_Vest_Upgraded_East_4: Alysia_Vest_Upgraded_East_1 {};
 	class Alysia_Vest_Upgraded_East_5: Alysia_Vest_Upgraded_East_1 {};
 
-	class Alysia_Uniform_East_colonel_Camo
+	class Alysia_Uniform_East_colonel_Camo2
 	{
 		buy_price=800;
+		buy_condition_EAST=14;
+	};
+
+	class Alysia_Uniform_East_LtColonel_Camo2: Alysia_Uniform_East_colonel_Camo2
+	{
+		buy_condition_EAST=13;
+	};
+
+	class Alysia_Uniform_East_capitaine_Camo2: Alysia_Uniform_East_colonel_Camo2
+	{
 		buy_condition_EAST=11;
 	};
-	class Alysia_Uniform_West_Dictateur: Alysia_Uniform_East_colonel_Camo {};
-	class Alysia_Uniform_East_colonel_Camo2: Alysia_Uniform_East_colonel_Camo {};
-	class Alysia_Uniform_East_colonel_Parade: Alysia_Uniform_East_colonel_Camo {};
 
-	class Alysia_Uniform_East_LtColonel_Camo: Alysia_Uniform_East_colonel_Camo
+	class Alysia_Uniform_East_lieutenant_Camo2: Alysia_Uniform_East_colonel_Camo2
 	{
 		buy_condition_EAST=10;
 	};
-	class Alysia_Uniform_East_LtColonel_Camo2: Alysia_Uniform_East_LtColonel_Camo {};
-	class Alysia_Uniform_East_LtColonel_Parade: Alysia_Uniform_East_LtColonel_Camo {};
 
-	class Alysia_Uniform_East_capitaine_Camo: Alysia_Uniform_East_colonel_Camo
+	class Alysia_Uniform_East_major_Camo2: Alysia_Uniform_East_colonel_Camo2
 	{
 		buy_condition_EAST=9;
 	};
-	class Alysia_Uniform_East_capitaine_Camo2: Alysia_Uniform_East_capitaine_Camo {};
-	class Alysia_Uniform_East_capitaine_Parade: Alysia_Uniform_East_capitaine_Camo {};
 
-	class Alysia_Uniform_East_lieutenant_Camo: Alysia_Uniform_East_colonel_Camo
-	{
-		buy_condition_EAST=8;
-	};
-	class Alysia_Uniform_East_lieutenant_Camo2: Alysia_Uniform_East_lieutenant_Camo {};
-	class Alysia_Uniform_East_lieutenant_Parade: Alysia_Uniform_East_lieutenant_Camo {};
-
-	class Alysia_Uniform_East_major_Camo: Alysia_Uniform_East_colonel_Camo
+	class Alysia_Uniform_East_adjudant_Camo2: Alysia_Uniform_East_colonel_Camo2
 	{
 		buy_condition_EAST=7;
 	};
-	class Alysia_Uniform_East_major_Camo2: Alysia_Uniform_East_major_Camo {};
-	class Alysia_Uniform_East_major_Parade: Alysia_Uniform_East_major_Camo {};
 
-	class Alysia_Uniform_East_adjudant_Camo: Alysia_Uniform_East_colonel_Camo
-	{
-		buy_condition_EAST=6;
-	};
-	class Alysia_Uniform_East_adjudant_Camo2: Alysia_Uniform_East_adjudant_Camo {};
-	class Alysia_Uniform_East_adjudant_Parade: Alysia_Uniform_East_adjudant_Camo {};
-
-	class Alysia_Uniform_East_sergent_Camo: Alysia_Uniform_East_colonel_Camo
+	class Alysia_Uniform_East_sergent_Camo2: Alysia_Uniform_East_colonel_Camo2
 	{
 		buy_condition_EAST=5;
 	};
-	class Alysia_Uniform_East_sergent_Camo2: Alysia_Uniform_East_sergent_Camo {};
-	class Alysia_Uniform_East_sergent_Parade: Alysia_Uniform_East_sergent_Camo {};
 
-	class Alysia_Uniform_East_capochief_Camo: Alysia_Uniform_East_colonel_Camo
+	class Alysia_Uniform_East_capochief_Camo2: Alysia_Uniform_East_colonel_Camo2
 	{
 		buy_condition_EAST=4;
 	};
-	class Alysia_Uniform_East_capochief_Camo2: Alysia_Uniform_East_capochief_Camo {};
-	class Alysia_Uniform_East_capochief_Parade: Alysia_Uniform_East_capochief_Camo {};
 
-	class Alysia_Uniform_East_soldier1st_Camo: Alysia_Uniform_East_colonel_Camo
+	class Alysia_Uniform_East_capo_Camo2: Alysia_Uniform_East_colonel_Camo2
 	{
 		buy_condition_EAST=3;
 	};
-	class Alysia_Uniform_East_soldier1st_Camo2: Alysia_Uniform_East_soldier1st_Camo {};
-	class Alysia_Uniform_East_soldier1st_Parade: Alysia_Uniform_East_soldier1st_Camo {};
 
-	class Alysia_Uniform_East_soldier_Camo: Alysia_Uniform_East_colonel_Camo
+	class Alysia_Uniform_East_soldier1st_Camo2: Alysia_Uniform_East_colonel_Camo2
 	{
 		buy_condition_EAST=2;
 	};
-	class Alysia_Uniform_East_soldier_Camo2: Alysia_Uniform_East_soldier_Camo {};
-	class Alysia_Uniform_East_soldier_Parade: Alysia_Uniform_East_soldier_Camo {};
 
-	class Alysia_Uniform_East_recrue_Camo: Alysia_Uniform_East_colonel_Camo
+	class Alysia_Uniform_East_soldier_Camo2: Alysia_Uniform_East_colonel_Camo2
 	{
 		buy_condition_EAST=1;
 	};
-	class Alysia_Uniform_East_recrue_Camo2: Alysia_Uniform_East_recrue_Camo {};
-	class Alysia_Uniform_East_recrue_Parade: Alysia_Uniform_East_recrue_Camo {};
+
+	class Alysia_Uniform_East_recrue_Camo2: Alysia_Uniform_East_colonel_Camo2
+	{
+		buy_condition_EAST=1;
+	};
 
 	class TRYK_B_Medbag_OD
 	{
@@ -2244,14 +2250,14 @@ class ADENIS_ITEMS_ARMA
         buy_condition_EAST=1;
     };
 
-    class Alysia_Uniform_East_colonel_BDR: Alysia_Uniform_East_colonel_Camo {};
-    class Alysia_Uniform_East_capitaine_BDR: Alysia_Uniform_East_colonel_Camo {};
-    class Alysia_Uniform_East_lieutenant_BDR: Alysia_Uniform_East_colonel_Camo {};
-    class Alysia_Uniform_East_major_BDR: Alysia_Uniform_East_colonel_Camo {};
-    class Alysia_Uniform_East_sergent_BDR: Alysia_Uniform_East_colonel_Camo {};
-    class Alysia_Uniform_East_caporal_BDR: Alysia_Uniform_East_colonel_Camo {};
-    class Alysia_Uniform_East_soldier_BDR: Alysia_Uniform_East_colonel_Camo {};
-    class Alysia_Uniform_East_recrue_BDR: Alysia_Uniform_East_colonel_Camo {};
+    class Alysia_Uniform_East_colonel_BDR: Alysia_Uniform_East_colonel_Camo2 {};
+    class Alysia_Uniform_East_capitaine_BDR: Alysia_Uniform_East_colonel_Camo2 {};
+    class Alysia_Uniform_East_lieutenant_BDR: Alysia_Uniform_East_colonel_Camo2 {};
+    class Alysia_Uniform_East_major_BDR: Alysia_Uniform_East_colonel_Camo2 {};
+    class Alysia_Uniform_East_sergent_BDR: Alysia_Uniform_East_colonel_Camo2 {};
+    class Alysia_Uniform_East_caporal_BDR: Alysia_Uniform_East_colonel_Camo2 {};
+    class Alysia_Uniform_East_soldier_BDR: Alysia_Uniform_East_colonel_Camo2 {};
+    class Alysia_Uniform_East_recrue_BDR: Alysia_Uniform_East_colonel_Camo2 {};
 
     class TRYK_B_Medbag_BK
     {

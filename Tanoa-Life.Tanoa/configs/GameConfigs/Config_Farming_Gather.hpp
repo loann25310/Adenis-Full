@@ -78,6 +78,8 @@ class ADENIS_FARMING_GATHER
 		area=40;
 	};
 
+	class sand_field_marker_2 : sand_field_marker_1 {};
+
 	class ginger_field_1
 	{
 		receive[]={{"ginger",3,1}};

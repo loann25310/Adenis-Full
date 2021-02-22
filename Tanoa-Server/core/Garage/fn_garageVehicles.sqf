@@ -21,7 +21,7 @@ _queryResult =
 [
 	format
 	[
-		"SELECT classname,plate,assurance,fuel,inventory,displayname,POS_store_x,POS_store_y,POS_store_z,type,HitPointsDamage,fuel_type FROM vehicles WHERE pid='%1' AND active='0' AND side='%2' AND type IN (%3) AND occuped='0'",
+		"SELECT classname,plate,assurance,fuel,inventory,displayname,POS_store_x,POS_store_y,POS_store_z,type,HitPointsDamage,fuel_type,paint FROM vehicles WHERE pid='%1' AND active='0' AND side='%2' AND type IN (%3) AND occuped='0'",
 		(getPlayerUID _unit),
 		str(side _unit),
 		_types_formated
@@ -47,4 +47,5 @@ _queryResult =
 	9 type
 	10 HitPointsDamage
 	11 fuel_type
+	12 paint
 */

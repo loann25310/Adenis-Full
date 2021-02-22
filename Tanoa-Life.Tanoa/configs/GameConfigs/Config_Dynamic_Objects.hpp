@@ -23,22 +23,22 @@ class ADENIS_DYN_OBJECTS
 	class tmpgauche
 	{
 		item="tmpgauche";
-		attachTo[]={0,2.5,0};
+		attachTo[]={0,2.5,0.2};
 	};
 	class tmpdroite
 	{
 		item="tmpdroite";
-		attachTo[]={0,2.5,0};
+		attachTo[]={0,2.5,0.2};
 	};
 	class p50temp
 	{
 		item="p50temp";
-		attachTo[]={0,2.5,0};
+		attachTo[]={0,2.5,0.2};
 	};
 	class p30temp
 	{
 		item="p30temp";
-		attachTo[]={0,2.5,0};
+		attachTo[]={0,2.5,0.2};
 	};
 
 	class Land_Razorwire_F

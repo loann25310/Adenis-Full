@@ -114,7 +114,7 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_arma[]={"EWK_Cig1"};
+			items_arma[]={"immersion_cigs_cigar0"};
 		};
 		time_per_item=2;
 		time_default=7;
@@ -3002,6 +3002,18 @@ class ADENIS_PROCESS
 			items_arma[]={"RH_g18"};
 		};
 	};
+	class glock_17: tec9
+	{
+		name="Fabrication : Glock 17";
+		class require
+		{
+			items_virtual[]={{"intermediary_barrelp",1},{"intermediary_receiverp",1},{"intermediary_gripp",1},{"intermediary_slapperp",1},{"intermediary_framep",1},{"triggerp",1}};
+		};
+		class receive
+		{
+			items_arma[]={"RH_g17"};
+		};
+	};
 	class kimber_night_warrior: tec9
 	{
 		name="Fabrication : Kimber Night Warrior";
@@ -3202,7 +3214,7 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_arma[]={"Skyline_M4A1_01_F"};
+			items_arma[]={"Skyline_M4A1_02_F"};
 		};
 	};
 	class DP_28: AKM
@@ -3298,7 +3310,7 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_arma[]={"Skyline_Fal_02_F"};
+			items_arma[]={"hlc_rifle_M4"};
 		};
 	};
 	class katiba: fn_fall
@@ -3738,6 +3750,18 @@ class ADENIS_PROCESS
 		class receive
 		{
 			items_arma[]={"RH_19Rnd_9x19_g18"};
+		};
+	};
+	class magazine_glock_17: magazine_akm
+	{
+		name="Fabrication : Chargeur Glock 17";
+		class require
+		{
+			items_virtual[]={{"magazinep",1},{"bulletp",19}};
+		};
+		class receive
+		{
+			items_arma[]={"RH_19Rnd_9x19_g17"};
 		};
 	};
 	class magazine_tec9: magazine_akm
@@ -4330,7 +4354,7 @@ class ADENIS_PROCESS
 	};
 	class light_double: iron
 	{
-		name="Fabrication : Projecteur double";
+		name="Fabrication : Lampe de Camping";
 		class require
 		{
 			items_virtual[]={{"ironp",7}};
@@ -4345,6 +4369,46 @@ class ADENIS_PROCESS
 			class CIV
 			{
 				licenses[]={"traitement_fer"};
+			};
+		};
+	};
+	class bombe_vide: iron
+	{
+		name="Fabrication : Aérosol vide";
+		class require
+		{
+			items_virtual[]={{"ironp",3}};
+		};
+		class receive
+		{
+			items_virtual[]={{"bombe_vide",1}};
+		};
+		time_per_item=4;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_steel"};
+			};
+		};
+	};
+	class bombe_peinture: iron
+	{
+		name="Fabrication : Bombe de peinture blanche";
+		class require
+		{
+			items_virtual[]={{"peinture",1},{"bombe_vide",5}};
+		};
+		class receive
+		{
+			items_virtual[]={{"bombe_peinture",5}};
+		};
+		time_per_item=4;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_garagist"};
 			};
 		};
 	};
@@ -4407,7 +4471,37 @@ class ADENIS_PROCESS
 				licenses[]={"company_cacao"};
 			};
 		};
-	};	
+	};
+	class planchefruitdemerp
+	{
+		name="Création des Planche de Fruit de Mer";
+		sound="salt_process";
+		class require
+		{
+			items_virtual[]={{"woodp",1},{"crevette",2},{"star",2},{"crabe",2},{"oursin",2}};
+		};
+		class receive
+		{
+			items_virtual[]={{"planchefruitdemer",2}};
+		};
+		time_per_item=1;
+		time_default=2;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_fish"};
+			};
+			class WEST
+			{
+				licenses[]={"company_fish"};
+			};
+			class GUER
+			{
+				licenses[]={"company_fish"};
+			};
+		};
+	};
 	class wood
 	{
 		name="Scierie";
@@ -4571,6 +4665,66 @@ class ADENIS_PROCESS
 		class receive
 		{
 			items_virtual[]={{"steelppa",1}};
+		};
+		time_per_item=1;
+		time_default=5;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"emballageressources"};
+			};
+			class WEST
+			{
+				licenses[]={"emballageressources"};
+			};
+			class GUER
+			{
+				licenses[]={"emballageressources"};
+			};
+		};
+	};
+	class emballageressources_glassemba
+	{
+		name="Usine d'emballage du Verre";
+		sound="smelting";
+		class require
+		{
+			items_virtual[]={{"glass",1},{"palette",1}};
+		};
+		class receive
+		{
+			items_virtual[]={{"glassemba",1}};
+		};
+		time_per_item=1;
+		time_default=5;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"emballageressources"};
+			};
+			class WEST
+			{
+				licenses[]={"emballageressources"};
+			};
+			class GUER
+			{
+				licenses[]={"emballageressources"};
+			};
+		};
+	};
+	class emballageressources_tabchocoemba
+	{
+		name="Usine d'emballage du Chocolat";
+		sound="smelting";
+		class require
+		{
+			items_virtual[]={{"tabchoco",1},{"palette",1}};
+		};
+		class receive
+		{
+			items_virtual[]={{"tabchocoemba",1}};
 		};
 		time_per_item=1;
 		time_default=5;

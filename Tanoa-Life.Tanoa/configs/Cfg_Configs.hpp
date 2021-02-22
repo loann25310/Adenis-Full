@@ -35,3 +35,4 @@
 #include "GameConfigs\Config_Melee.hpp"
 #include "GameConfigs\Config_Drugs.hpp"
 #include "GameConfigs\Config_Animations.hpp"
+#include "GameConfigs\Config_Paints.hpp"

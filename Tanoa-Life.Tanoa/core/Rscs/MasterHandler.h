@@ -40,6 +40,7 @@
 #include "RscDisplays\RscDisplayFauxPapiers.hpp"
 #include "RscDisplays\RscDisplayChangeKey.hpp"
 #include "RscDisplays\RscDisplayAnimations.hpp"
+#include "RscDisplays\RscDisplayCabinPeinture.hpp"
 
 class RscTitles
 {

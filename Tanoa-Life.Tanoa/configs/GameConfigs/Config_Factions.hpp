@@ -72,7 +72,7 @@ class ADENIS_FACTIONS
 		};
 		class licenses_give
 		{
-			class politique_pnt_sec
+			class membre_pnt
 			{
 				rank=15;
 				same_side_only=0;
@@ -293,7 +293,7 @@ class ADENIS_FACTIONS
 				license="admin";
 			};
 
-			class spart_rebelle
+			class conexus_rebelle
 			{
 				rank=0;
 				same_side_only=0;

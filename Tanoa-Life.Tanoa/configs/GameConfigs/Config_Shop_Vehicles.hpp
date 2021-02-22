@@ -49,35 +49,53 @@ class ADENIS_SHOPS_VEHICLES
 		createVehicle=0;
 		stock[]=
 		{
-			"d3s_C63S_14",
-			"d3s_amgGT_19_63S",
-			"d3s_s560_18",
-			"d3s_gl63AMG_12_SE",
-			"d3s_panamera_turbo_17",
-			"d3s_cayenne_turbo_s_16",
-			"d3s_f87_17_ACH",
-			"d3s_f80_14_SE",
-			"d3s_f90_18_FE",
-			"d3s_G07_x50i_19",
-			"d3s_RS6_20_D",
-			"d3s_Q7_15_D",
-			"d3s_Ftype_19_SVR",
-			"d3s_raptor_17",
-			"d3s_stelvio_18_Ti",
-			"d3s_evo_12_FQ",
-			"d3s_svr_17_HSE",
-			"d3s_boss_19",
-			"d3s_evoque_16_se",
-			"d3s_xesv_17",
-			"d3s_xes_15_SE",
-			"d3s_vogue_14_HSE",
-			"d3s_e60_09_ACS5",
-			"d3s_challenger_15_DM",
-			"d3s_g65amg_Mansory",
-			"d3s_urusMANS_19",
-			"d3s_LP700_11_L",
-			"d3s_amgGT_20_B",
-			"d3s_malibu_18_Prem"
+			"AlessioR8",
+			"V12_X6S_MET",
+			"V12_ESCALADE",
+			"V12_BELAIR_BLANC",
+			"V12_CORVETTE_MK12_BLANC",
+			"V12_CHEVELLESSBJ_NOIR",
+			"V12_RT",
+			"V12_DEMON_BLANC",
+			"Alessio458",
+			"AlessioGTB",
+			"V12_GTC4_BLANC",
+			"AlessioSuperfast",
+			"AlessioMustang",
+			"AlessioAventador",
+			"V12_GHIBLI",
+			"AlessioGTR",
+			"V12_M600",
+			"AlessioCayman",
+			"Alessio918"
+		};
+	};
+	class CIV_concess_2: CIV_air
+	{
+		name="Concessionnaire entreprise Nora Auto";
+		createVehicle=0;
+		stock[]=
+		{
+			"AlessioQuadrifoglio",
+			"AlessioRS4",
+			"AlessioRS5",
+			"V12_RS6AV_BLANCM",
+			"V12_E46_NOIRM",
+			"V12_GTS3",
+			"AlessioBM4",
+			"V12_FOCUSST12_BLANC",
+			"V12_FREIGHTLINER3",
+			"V12_VENDURA_BLANC",
+			"V12_CIVIC_NOIR",
+			"V12_AMGGT_BLANCM",
+			"V12_CL65",
+			"V12_GL63AMG_BLANC",
+			"AlessioC63N",
+			"AlessioIXMR",
+			"V12_SVR_BLANC",
+			"AlessioVIR",
+			"AlessioTouareg",
+			"V12_R34M_NOIR"
 		};
 	};
 	class CIV_land_normal: CIV_air
@@ -350,7 +368,9 @@ class ADENIS_SHOPS_VEHICLES
 		stock[]=
 		{
 			"XsG_Amarok_Base_F",
-			"EC135Unarmedlu"
+			"EC135Unarmedlu",
+			"B_Heli_Light_01_F",
+			"B_Truck_01_covered_F"
 		};
 	};
 

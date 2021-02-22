@@ -254,6 +254,17 @@ if (isNull _target) exitWith {};
 				((vehicle player) isEqualTo g_interaction_target) &&
 				((driver g_interaction_target) isEqualTo player)
 			"
+		],[
+			"speaker",
+			"Repeindre",
+			"[g_interaction_target] spawn AlysiaClient_fnc_paintCabine_open;",
+			"
+				(count (getObjectTextures g_interaction_target) > 0) && 
+				!(nearestObject [g_interaction_target, 'tas_garage_2'] isEqualTo objNull) && 
+				((g_interaction_target distance ((nearestObject [g_interaction_target, 'tas_garage_2']) getRelPos [5,32])) < 4) && 
+				!(isNull g_company) &&
+				{(((g_company getVariable 'company_info') select 2) isEqualTo 'garagist')}
+			"
 		]
 	],
 	getText(configFile >> "CfgVehicles" >> typeOf(_target) >> "displayName"),

@@ -20,7 +20,7 @@ class ADENIS_MISSIONS
 				"Skyline_Mosin9130_02_F",
 				"Skyline_Mosin9130_Bayonette_03_F",
 				"Skyline_Mosin9130_Bayonette_04_F",
-				"Skyline_M4A1_01_F",
+				"Skyline_M4A1_02_F",
 				"Skyline_M4A1_02_F",
 				"RH_deagle",
 				"RH_Deaglem",
@@ -184,10 +184,8 @@ class ADENIS_MISSIONS
             items[]=
             {
                 "bipod_01_F_blk",
-                "optic_DMS",
                 "optic_Hamr",
                 "optic_MRCO",
-                "Mask_M40",
                 "acc_pointer_IR"
             };
             virtuals[]=

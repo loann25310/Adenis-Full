@@ -97,9 +97,9 @@ class ADENIS_BLUEPRINTS
 	{
 		process[]={"blaser_b95","magazine_blaser_b95"};
 	};
-	class blueprint_glock_18: blueprint_gsh18
+	class blueprint_glock: blueprint_gsh18
 	{
-		process[]={"glock_18","magazine_glock_18"};
+		process[]={"glock_17","magazine_glock_17","glock_18","magazine_glock_18"};
 	};
 	class blueprint_kimber_night_warrior: blueprint_gsh18
 	{

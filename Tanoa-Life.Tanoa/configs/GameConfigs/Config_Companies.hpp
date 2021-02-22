@@ -260,6 +260,14 @@ class ADENIS_COMPANIES_TYPES
 		{
 			types[]={"Car"};
 		};
+		class process
+		{
+			posDistance=8;
+			modelPos[]={0,0,0};
+			list[]={
+				"bombe_peinture"
+			};
+		};
 	};
 
 	class banque
@@ -553,6 +561,26 @@ class ADENIS_COMPANIES_TYPES
 		price=670000;
 		building="Land_PhoneBooth_01_F";
 		license="company_car_shop";
+		image="Alysia_Client_Texture\Data\companies\types\car_shop.paa";
+		members_max=15;
+		salary=125;
+		ticket=1;
+		class storage
+		{
+			type="Diablo_Coffre_Extra";
+		};
+		class garage
+		{
+			types[]={"Car"};
+		};
+	};
+
+	class car_shop2
+	{
+		name="Concesionnaire2";
+		price=670000;
+		building="Land_PhoneBooth_01_F";
+		license="company_car_shop2";
 		image="Alysia_Client_Texture\Data\companies\types\car_shop.paa";
 		members_max=15;
 		salary=125;
@@ -969,7 +997,8 @@ class ADENIS_COMPANIES_TYPES
 			{
 				"acier",
 				"conserve",
-				"light_double"
+				"light_double",
+				"bombe_vide"
 			};
 		};
 		class garage

@@ -134,14 +134,18 @@ class ADENIS_SHOPS_VIRTUAL
 			"purer",
 			"saucisson",
 			"bolo",
-			"firework"
+			"firework",
+			"peinture"
 		};
 		sell[]=
 		{
 			"furniture",
 			"furniturepa",
 			"Cigarettepa",
-			"steelppa"
+			"glassemba",
+			"tabchocoemba",
+			"steelppa",
+			"planchefruitdemer"
 		};
 	};
 
@@ -162,7 +166,7 @@ class ADENIS_SHOPS_VIRTUAL
 			"horn_west",
 			"perqui",
 			"destroy_labo",
-			"blueprint_glock_18",
+			"blueprint_glock",
 			"blueprint_g17"
 		};
 	};

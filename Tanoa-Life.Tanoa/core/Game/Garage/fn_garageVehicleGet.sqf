@@ -2,7 +2,7 @@
 	Tanoa-Life RPG
 	Code written by Lyeed
 */
-private["_index", "_data", "_vehicleClassname", "_vehicleGaragePosition", "_price", "_validSpawn", "_vehicle", "_spawnPos", "_action", "_hitpoints", "_spawnDir"];
+private["_index", "_data", "_vehicleClassname", "_vehicleGaragePosition", "_price", "_validSpawn", "_configColor", "_color", "_vehicle", "_spawnPos", "_action", "_hitpoints", "_spawnDir"];
 
 if (!(isNil "gServer_soonReboot")) exitWith
 {
@@ -112,6 +112,23 @@ _vehicle setPlateNumber str(_data select 1);
 _vehicle setDir _spawnDir;
 _vehicle lock 2;
 _vehicle setVariable ["tf_side", "west", true];
+
+if (!((_data # 12) isEqualTo "")) then {
+	_configColor = missionConfigFile >> "ADENIS_PAINTS" >> "Colors" >> (_data # 12);
+	if (isArray(_configColor >> "color")) then {
+		_color = getArray(_configColor >> "color");
+		_vehicle setObjectTextureGlobal [0,
+			format [
+				"#(rgb,8,8,3)color(%1,%2,%3,1)",
+				(_color # 0) / 255,
+				(_color # 1) / 255,
+				(_color # 2) / 255
+			]
+		];
+	} else {
+		_vehicle setObjectTextureGlobal [0, getText(_configColor >> "color")];
+	};
+};
 
 [_vehicle] call AlysiaClient_fnc_clearVehicleAmmo;
 

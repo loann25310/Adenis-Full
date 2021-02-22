@@ -170,9 +170,6 @@ _CreateLocalVehicle =
 ["Land_BluntRock_apart","[14383.128906,10540.432617,5.19591]",-334.116,-100,0,0,[]] call _CreateLocalVehicle;
 ["Land_BluntRock_apart","[14382.679688,10485.0966797,-3.46394]",-334.116,-100,0,0,[]] call _CreateLocalVehicle;
 
-//Panneaux publicitaire
-["Lyeed_Billboard_Alysia_1","[5757.296387,10193.0966797,4.65166]",-74.9242,-100,0,0,[]] call _CreateLocalVehicle;
-
 // Base : GDM
 ["Land_ConcreteWall_01_l_8m_F","[5659.361328,10975.955078,0]",134.432,-100,0,0,[]] call _CreateLocalVehicle;
 ["Land_ConcreteWall_01_l_4m_F","[5655.137207,10971.644531,0.000841752]",-225.631,-100,0,0,[]] call _CreateLocalVehicle;
@@ -1004,8 +1001,6 @@ _colonelScreen_3 setVariable ["cam_data", [["colonel_military_cam_3", [7363.9,84
 } forEach ([_colonelScreen_2, _colonelScreen_1, _colonelScreen_3]);
 
 //Paintball
-["Lyeed_Billboard_New","[5300.0180664,11338.491211,0]",146.9,-100,0,0,[]] call _CreateLocalVehicle;
-["Lyeed_Billboard_Alysia_1","[5312.456055,11346.692383,0]",146.9,-100,0,0,[]] call _CreateLocalVehicle;
 ["fieldnetentry","[5306.29834,11342.644531,-0.215497]",326.85,-100,0,0,[]] call _CreateLocalVehicle;
 ["PaintBall_Cyl","[5302.652344,11340.419922,-0.553031]",326.85,-100,0,0,[]] call _CreateLocalVehicle;
 ["PaintBall_Cyl","[5309.693848,11345.195313,-0.443603]",326.85,-100,0,0,[]] call _CreateLocalVehicle;

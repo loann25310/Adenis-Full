@@ -1617,18 +1617,6 @@ class ADENIS_VEHICLES
 		fuelCapacity=587;
 	};
 
-	class B_Truck_01_covered_F
-	{
-		realname="HEMTT Couvert";
-		buyPrice=25000;
-		inventory=150;
-		side="CIV";
-		insurance=1;
-		licenses[]={"truck"};
-		fuel="Diesel";
-		fuelCapacity=587;
-	};
-
 	class B_Truck_01_box_F
 	{
 		realname="HEMTT Box";
@@ -2831,15 +2819,25 @@ class ADENIS_VEHICLES
 		rank=8;
 	};
 
+	class B_Truck_01_covered_F: Alysia_EAST_base
+	{
+		realname="Camion de transport de troupe";
+		buyPrice=49000;
+		inventory=250;
+		licenses[]={"truck"};
+		fuel="Diesel";
+		fuelCapacity=550;
+		rank=7;
+	};
 	
 	class B_Heli_Light_01_F: Alysia_EAST_base
 	{
 		realname="Humming Bird";
-		buyPrice=2000;
+		buyPrice=45000;
 		inventory=30;
 		fuel="Kerosene";
 		fuelCapacity=4300;
-		rank=5;
+		rank=3;
 	};
 
 	class B_Boat_Armed_01_minigun_F: Alysia_EAST_base
@@ -2902,12 +2900,19 @@ class ADENIS_VEHICLES
 		licenses[]={};
 		fuel="SP98";
 		fuelCapacity=230;
-		rank=2;
+		rank=1;
 	};
 
 	class EC135Unarmedlu: Alysia_EAST_base
 	{
 		realname="E135 ANT";
+		buyPrice=45000;
+		inventory=45;
+		insurance=1;
+		licenses[]={};
+		fuel="Kerosene";
+		fuelCapacity=230;
+		rank=4;
 	};
 
 	class MH9_BDR: Alysia_EAST_base
@@ -6882,6 +6887,234 @@ class ADENIS_VEHICLES
 		fuelCapacity=500;
 	};
 
+	class AlessioCayman
+	{
+		realname="Cayman";
+		buyPrice=750000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=500;
+	};
+
+	class Alessio918
+	{
+		realname="Porsche 918 Spyder";
+		buyPrice=1900000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=500;
+	};
+
+	class V12_M600
+	{
+		realname="M600";
+		buyPrice=800000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=500;
+	};
+
+	class AlessioGTR
+	{
+		realname="Nissan GTR";
+		buyPrice=900000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=500;
+	};
+
+	class V12_GHIBLI
+	{
+		realname="Ghibli";
+		buyPrice=700000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=500;
+	};
+
+	class AlessioAventador
+	{
+		realname="Aventador";
+		buyPrice=3000000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=500;
+	};
+
+	class AlessioMustang
+	{
+		realname="Mustang";
+		buyPrice=800000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=500;
+	};
+
+	class AlessioSuperfast
+	{
+		realname="Superfast";
+		buyPrice=1350000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=500;
+	};
+
+	class V12_GTC4_BLANC
+	{
+		realname="GTC4";
+		buyPrice=1100000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=500;
+	};
+
+	class AlessioGTB
+	{
+		realname="Ferrari 488";
+		buyPrice=1200000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=500;
+	};
+
+	class Alessio458
+	{
+		realname="Ferrari 458";
+		buyPrice=1000000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=500;
+	};
+
+	class V12_DEMON_BLANC
+	{
+		realname="Demon";
+		buyPrice=700000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=500;
+	};
+
+	class V12_RT
+	{
+		realname="RT";
+		buyPrice=1000000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=500;
+	};
+
+	class V12_CHEVELLESSBJ_NOIR
+	{
+		realname="Chevelle";
+		buyPrice=900000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=500;
+	};
+
+	class V12_CORVETTE_MK12_BLANC
+	{
+		realname="Corvette";
+		buyPrice=1250000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=500;
+	};
+
+	class V12_BELAIR_BLANC
+	{
+		realname="BLR";
+		buyPrice=990000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=500;
+	};
+
+	class V12_ESCALADE
+	{
+		realname="Escalade";
+		buyPrice=400000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=500;
+	};
+
+	class V12_X6S_MET
+	{
+		realname="X6";
+		buyPrice=750000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=500;
+	};
+
+	class AlessioR8
+	{
+		realname="Audi R8";
+		buyPrice=900000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=500;
+	};
+
 	class Lemon_Navistar
 	{
 		realname="Navistar";
@@ -6889,7 +7122,247 @@ class ADENIS_VEHICLES
 		inventory=40;
 		side="CIV";
 		insurance=1;
-		licenses[]={"truck","company_car_shop"};
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=350;
+	};
+
+	class AlessioQuadrifoglio
+	{
+		realname="Alfa Romeo Stelvio";
+		buyPrice=300000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=350;
+	};
+
+	class AlessioRS4
+	{
+		realname="Audi RS4";
+		buyPrice=425000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=350;
+	};
+
+	class AlessioRS5
+	{
+		realname="Audi RS5";
+		buyPrice=510000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=350;
+	};
+
+	class V12_RS6AV_BLANCM
+	{
+		realname="Audi RS6";
+		buyPrice=700000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=350;
+	};
+
+	class V12_E46_NOIRM
+	{
+		realname="E46";
+		buyPrice=200000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=350;
+	};
+
+	class V12_GTS3
+	{
+		realname="Porsche 911 type 991";
+		buyPrice=450000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=350;
+	};
+
+	class AlessioBM4
+	{
+		realname="BM4";
+		buyPrice=400000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=350;
+	};
+
+	class V12_FOCUSST12_BLANC
+	{
+		realname="Ford Focus ST12";
+		buyPrice=200000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=350;
+	};
+
+	class V12_FREIGHTLINER3
+	{
+		realname="Freightliner Transport";
+		buyPrice=600000;
+		inventory=250;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=350;
+	};
+
+	class V12_VENDURA_BLANC
+	{
+		realname="Vendura";
+		buyPrice=100000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=350;
+	};
+
+	class V12_CIVIC_NOIR
+	{
+		realname="Honda Civic";
+		buyPrice=175000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=350;
+	};
+
+	class V12_AMGGT_BLANCM
+	{
+		realname="AMGGT";
+		buyPrice=900000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=350;
+	};
+
+	class V12_CL65
+	{
+		realname="CL65";
+		buyPrice=500000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=350;
+	};
+
+	class V12_GL63AMG_BLANC
+	{
+		realname="AMG GL63";
+		buyPrice=650000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=350;
+	};
+
+	class AlessioC63N
+	{
+		realname="C63N";
+		buyPrice=800000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=350;
+	};
+
+	class AlessioIXMR
+	{
+		realname="IXMR";
+		buyPrice=400000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=350;
+	};
+
+	class V12_SVR_BLANC
+	{
+		realname="SVR";
+		buyPrice=550000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=350;
+	};
+
+	class AlessioVIR
+	{
+		realname="VIR";
+		buyPrice=140000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=350;
+	};
+
+	class AlessioTouareg
+	{
+		realname="Touareg";
+		buyPrice=180000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=350;
+	};
+
+	class V12_R34M_NOIR
+	{
+		realname="R34";
+		buyPrice=190000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
 		fuel="Diesel";
 		fuelCapacity=350;
 	};

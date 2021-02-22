@@ -92,7 +92,11 @@ if ((player getVariable ["arrested", false]) && !(isNull g_arrest_Prison) && !(g
 	} else {
 		_timeFade = 10;
 		_name = "Chez vous";
-		player setPosATL (g_respawn_point buildingPos 0);
+		if ((g_respawn_point buildingPos 0) isEqualTo [0,0,0]) then {
+			player setPosATL (getPosATL g_respawn_point);
+		} else {
+			player setPosATL (g_respawn_point buildingPos 0);
+		};
 		[4000] call AlysiaClient_fnc_handleBlood;
 	};
 };
