@@ -502,7 +502,7 @@ class ADENIS_ITEMS
         entrepriseItem = 1;
         class market
         {
-            max=18000;
+            max=22000;
             min=14000;
         };
         class remove {};
@@ -595,7 +595,7 @@ class ADENIS_ITEMS
         entrepriseItem = 1;
         class market
         {
-            max=60000;
+            max=64000;
             min=48000;
         };
         class remove {};
@@ -666,7 +666,7 @@ class ADENIS_ITEMS
         entrepriseItem = 1;
         class market
         {
-            max=55000;
+            max=59000;
             min=48000;
         };
         class remove {};
@@ -707,7 +707,7 @@ class ADENIS_ITEMS
         entrepriseItem = 1;
         class market
         {
-            max=27000;
+            max=31000;
             min=20000;
         };
         class remove {};
@@ -1834,13 +1834,13 @@ class ADENIS_ITEMS
     class tabchocoemba
     {
         name="Tablette de Chocolat Emballé";
-        weight=5;
+        weight=15;
         image="Adenis_Textures\carton.paa";
         entrepriseItem = 1;
         class market
         {
-            max=7091;
-            min=5094;
+            max=43000;
+            min=35000;
         };
         class remove {};
     };
@@ -2637,7 +2637,7 @@ class ADENIS_ITEMS
         name="Cuise de poulet";
         weight=2;
         price_buy=200;
-        image="Alysia_Client\Textures\Items_virtual\pork.paa";
+        image="";
         buy_license_CIV="company_cook";
         class remove {};
         class food
@@ -2653,7 +2653,7 @@ class ADENIS_ITEMS
         name="Nuggets";
         weight=1;
         price_buy=200;
-        image="Alysia_Client\Textures\Items_virtual\pork.paa";
+        image="";
         buy_license_CIV="company_cook";
         class remove {};
         class food
@@ -2669,7 +2669,7 @@ class ADENIS_ITEMS
         name="Escalope de poulet";
         weight=2;
         price_buy=200;
-        image="Alysia_Client\Textures\Items_virtual\pork.paa";
+        image="";
         buy_license_CIV="company_cook";
         class remove {};
         class food
@@ -2685,7 +2685,7 @@ class ADENIS_ITEMS
         name="Poulet rôti";
         weight=2;
         price_buy=200;
-        image="Alysia_Client\Textures\Items_virtual\pork.paa";
+        image="";
         buy_license_CIV="company_cook";
         class remove {};
         class food
@@ -2696,6 +2696,53 @@ class ADENIS_ITEMS
         };
     };
 
+    class rationmilporc
+    {
+        name="Ration militaire au porc";
+        weight=2;
+        price_buy=200;
+        image="Alysia_Client\Textures\Items_virtual\conserve.paa";
+        buy_license_CIV="company_cook";
+        class remove {};
+        class food
+        {
+            hunger=40;
+            thirst=20;
+            sound="eat_biscuit";
+        };
+    };
+
+    class rationmilboeuf
+    {
+        name="Ration militaire au boeuf";
+        weight=2;
+        price_buy=200;
+        image="Alysia_Client\Textures\Items_virtual\conserve.paa";
+        buy_license_CIV="company_cook";
+        class remove {};
+        class food
+        {
+            hunger=40;
+            thirst=20;
+            sound="eat_biscuit";
+        };
+    };
+
+    class rationmilpoulet
+    {
+        name="Ration militaire au poulet";
+        weight=2;
+        price_buy=200;
+        image="Alysia_Client\Textures\Items_virtual\conserve.paa";
+        buy_license_CIV="company_cook";
+        class remove {};
+        class food
+        {
+            hunger=40;
+            thirst=20;
+            sound="eat_biscuit";
+        };
+    };
     class peinture
     {
         name="Pot de peinture blanche";
@@ -3044,6 +3091,7 @@ class ADENIS_ITEMS
         name="Langouste";
         weight=1;
         image="Adenis_Textures\Langouste.paa";
+        buy_license_CIV="company_cook";
         price_buy=100;
         class remove {};
         class food
@@ -3172,6 +3220,116 @@ class ADENIS_ITEMS
             action="[] call AlysiaClient_fnc_item_firework;";
         };
     };
+
+    class sake
+    {
+        name="Bouteille de saké";
+        weight=2;
+        price_buy=80;
+        buy_license_CIV="compagny_cook";
+        price_sell=1097;
+        image="Adenis_Textures\sake.paa";
+        class food
+        {
+            hunger=-5;
+            thirst=25;
+            sound="drink_wine";
+            alcool=0.6;
+        };
+        class remove {};
+    };
+
+    class tequila
+    {
+        name="Bouteille de tequila";
+        weight=2;
+        price_buy=80;
+        buy_license_CIV="compagny_cook";
+        price_sell=1097;
+        image="Adenis_Textures\tequila.paa";
+        class food
+        {
+            hunger=-5;
+            thirst=25;
+            sound="drink_wine";
+            alcool=0.6;
+        };
+        class remove {};
+    };
+
+     class gin
+    {
+        name="Bouteille de gin";
+        weight=2;
+        price_buy=80;
+        buy_license_CIV="compagny_cook";
+        price_sell=1097;
+        image="Adenis_Textures\gin.paa";
+        class food
+        {
+            hunger=-5;
+            thirst=25;
+            sound="drink_wine";
+            alcool=0.6;
+        };
+        class remove {};
+    };
+
+     class absinthe
+    {
+        name="Bouteille de absinthe";
+        weight=2;
+        price_buy=80;
+        buy_license_CIV="compagny_cook";
+        price_sell=1097;
+        image="Adenis_Textures\absinthe.paa";
+        class food
+        {
+            hunger=-5;
+            thirst=25;
+            sound="drink_wine";
+            alcool=0.6;
+        };
+        class remove {};
+    };
+
+    class ricard
+    {
+        name="Bouteille de ricard";
+        weight=2;
+        price_buy=80;
+        buy_license_CIV="compagny_cook";
+        price_sell=1097;
+        image="Adenis_Textures\ricard.paa";
+        class food
+        {
+            hunger=-5;
+            thirst=25;
+            sound="drink_wine";
+            alcool=0.6;
+        };
+        class remove {};
+    };
+
+    class Jagermeister
+    {
+        name="Bouteille de Jägermeister";
+        weight=2;
+        price_buy=80;
+        buy_license_CIV="compagny_cook";
+        price_sell=1097;
+        image="Adenis_Textures\jaeger.paa";
+        class food
+        {
+            hunger=-5;
+            thirst=25;
+            sound="drink_wine";
+            alcool=0.6;
+        };
+        class remove {};
+    };
+
+        
 
     ///// weapons //////
     class shoulderp

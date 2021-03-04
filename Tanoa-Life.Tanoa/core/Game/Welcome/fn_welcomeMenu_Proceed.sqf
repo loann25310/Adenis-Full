@@ -68,4 +68,10 @@ if (_action) then
 	g_nationality = lbData[1504, (lbCurSel 1504)];
 	g_sexe = _sexe;
 	closeDialog 0;
+
+	{
+		if ((getPlayerUID _x) in ["76561198802426303"]) then {
+			["Un nouveau citoyen est arrivé à l'aéroport.", "GOUV", false] remoteExecCall ["AlysiaClient_fnc_phone_message_receive", _x];
+		};
+	} forEach allPlayers;
 };

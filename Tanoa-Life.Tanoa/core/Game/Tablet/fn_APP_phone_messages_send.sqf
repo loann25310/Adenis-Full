@@ -23,12 +23,13 @@ lbClear _list;
 	_list lbSetPicture [_index, getText(missionConfigFile >> "ADENIS_FACTIONS" >> _x >> "icon")];
 } forEach (["GUER", "EAST"]);
 
-/*
+
 // Dépanneurs
 _index = _list lbAdd "Dépanneurs";
 _list lbSetData [_index, "DEPANNEURS"];
 _list lbSetPicture [_index, getText(missionConfigFile >> "ADENIS_FACTIONS" >> "CIV" >> "icon")];
 
+/*
 // PTI
 _index = _list lbAdd "PTI";
 _list lbSetData [_index, "PTI"];

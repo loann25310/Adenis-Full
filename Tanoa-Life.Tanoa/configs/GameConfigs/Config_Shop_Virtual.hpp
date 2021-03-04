@@ -138,7 +138,24 @@ class ADENIS_SHOPS_VIRTUAL
 			"langouste",
 			"chantilly",
 			"firework",
-			"peinture"
+			"peinture",
+			"champagne",
+			"rhum",
+			"sake",
+			"tequila",
+			"gin",
+			"absinthe",
+			"ricard",
+			"Jagermeister",
+			"malibu",
+			"banana_liqueur",
+			"bourbon",
+			"beer",
+			"Whisky",
+			"wine_red",
+			"wine_white",
+			"wine_pinked",
+			"villagoise"
 		};
 		sell[]=
 		{

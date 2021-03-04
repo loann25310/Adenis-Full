@@ -190,7 +190,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"truck","company_location_land"};
 		fuel="Diesel";
-		fuelCapacity=145;
+		fuelCapacity=180;
 		colors[]={};
 	};
 
@@ -203,7 +203,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"truck","company_location_land"};
 		fuel="Diesel";
-		fuelCapacity=1455;
+		fuelCapacity=145;
 		colors[]=
 		{
 			"Skyline_Vehicule_Shounka_Renault_Magnum_01_F",
@@ -399,7 +399,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"driver"};
 		fuel="Diesel";
-		fuelCapacity=140;
+		fuelCapacity=80;
 		colors[]=
 		{
 			"Mrshounka_Bowler_c_noir",
@@ -430,7 +430,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"driver"};
 		fuel="SP98";
-		fuelCapacity=117;
+		fuelCapacity=80;
 		colors[]=
 		{
 			"shounka_avalanche_noir",
@@ -461,7 +461,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"driver"};
 		fuel="SP95";
-		fuelCapacity=131;
+		fuelCapacity=150;
 		colors[]=
 		{
 			"shounka_monsteur_noir",
@@ -678,7 +678,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"driver"};
 		fuel="SP98";
-		fuelCapacity=95;
+		fuelCapacity=80;
 		colors[]=
 		{
 			"Skyline_Vehicule_Shounka_F430_Scuderia_01_F",
@@ -804,7 +804,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"company_press","driver"};
 		fuel="Diesel";
-		fuelCapacity=110;
+		fuelCapacity=84;
 		colors[]={};
 	};	
 
@@ -849,7 +849,7 @@ class ADENIS_VEHICLES
 		disableOwnerInfos=1;
 		licenses[]={"rebelle_1"};
 		fuel="Diesel";
-		fuelCapacity=95;
+		fuelCapacity=70;
 		colors[]=
 		{
 			"Mrshounka_hummer_civ_bleufonce",
@@ -942,7 +942,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"driver","company_transport_people"};
 		fuel="Diesel";
-		fuelCapacity=88;
+		fuelCapacity=120;
 		colors[]=
 		{
 			"shounka_limo_civ_bleufonce",
@@ -973,7 +973,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"driver"};
 		fuel="SP98";
-		fuelCapacity=79;
+		fuelCapacity=90;
 		colors[]=
 		{
 			"Mrshounka_lykan_c_bleufonce",
@@ -1142,7 +1142,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"driver"};
 		fuel="Diesel";
-		fuelCapacity=100;
+		fuelCapacity=95;
 		colors[]=
 		{
 			"shounka_a3_spr_civ_bleufonce",
@@ -1173,7 +1173,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"driver","company_garagist"};
 		fuel="Diesel";
-		fuelCapacity=100;
+		fuelCapacity=95;
 		colors[]=
 		{
 			"Skyline_Mercedes_Sprinter_Depannage_01_F",
@@ -1415,7 +1415,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"driver"};
 		fuel="SP95";
-		fuelCapacity=93;
+		fuelCapacity=85;
 		colors[]=
 		{
 			"Mrshounka_r5_bleufonce",
@@ -1558,7 +1558,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"truck"};
 		fuel="Diesel";
-		fuelCapacity=400;
+		fuelCapacity=80;
 	};
 
 	class shounka_a3_tgs
@@ -1570,7 +1570,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"truck","company_garagist"};
 		fuel="Diesel";
-		fuelCapacity=400;
+		fuelCapacity=80;
 	};
 
 	class SAL_AudiCiv
@@ -1627,7 +1627,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"truck"};
 		fuel="Diesel";
-		fuelCapacity=587;
+		fuelCapacity=120;
 	};
 
 	class B_Truck_01_box_F
@@ -1639,7 +1639,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"truck"};
 		fuel="Diesel";
-		fuelCapacity=587;
+		fuelCapacity=120;
 	};
 
   	class DAR_M3Civ
@@ -1838,7 +1838,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"pilot"};
 		fuel="Kerosene";
-		fuelCapacity=242;
+		fuelCapacity=100;
 		colors[]=
 		{
 			"C_Heli_light_01_blue_F",
@@ -1891,7 +1891,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"pilot"};
 		fuel="Kerosene";
-		fuelCapacity=242;
+		fuelCapacity=120;
 		colors[]=
 		{
 			"Skyline_Vehicule_A3_M900_01_F",
@@ -1970,7 +1970,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"pilot"};
 		fuel="Kerosene";
-		fuelCapacity=375;
+		fuelCapacity=200;
 		colors[]=
 		{
 			"Skyline_Vehicule_A3_Mohawk_01_F"
@@ -1987,7 +1987,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"pilot"};
 		fuel="Kerosene";
-		fuelCapacity=242;
+		fuelCapacity=160;
 		colors[]=
 		{
 			"Skyline_Vehicule_A3_MH9_Unarmed_01_F",
@@ -2078,7 +2078,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"pilot"};
 		fuel="Kerosene";
-		fuelCapacity=350;
+		fuelCapacity=230;
 		colors[]=
 		{
 			"Skyline_Vehicule_A3_Orca_01_F",
@@ -2146,7 +2146,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"truck","company_fuel"};
 		fuel="Diesel";
-		fuelCapacity=400;
+		fuelCapacity=120;
 		colors[]=
 		{
 			"Skyline_Scania_Streamline_Citerne_01_F",
@@ -2187,7 +2187,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"truck","company_location_land"};
 		fuel="Diesel";
-		fuelCapacity=400;
+		fuelCapacity=120;
 		colors[]=
 		{
 			"Skyline_Scania_Streamline_Box_01_F",
@@ -2228,7 +2228,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"truck"};
 		fuel="Diesel";
-		fuelCapacity=400;
+		fuelCapacity=120;
 		colors[]=
 		{
 			"Skyline_Vehicule_Jonzie_Flat_Bed_01_F",
@@ -2375,7 +2375,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		colors[]={};
 		fuel="SP95";
-		fuelCapacity=200;
+		fuelCapacity=80;
 	};
 
 	class GSXR_ch
@@ -2388,7 +2388,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		colors[]={};
 		fuel="SP95";
-		fuelCapacity=121;
+		fuelCapacity=30;
 	};
 	class 690duke_ch: GSXR_ch {
 		realname="KTM 690 Duke";
@@ -2849,7 +2849,7 @@ class ADENIS_VEHICLES
 		buyPrice=45000;
 		inventory=30;
 		fuel="Kerosene";
-		fuelCapacity=1200;
+		fuelCapacity=120;
 		rank=3;
 	};
 
@@ -3558,7 +3558,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"driver"};
 		fuel="Diesel";
-		fuelCapacity=150;
+		fuelCapacity=90;
 		colors[]=
 		{
 			"Skyline_Mercedes_Sprinter_01_F",
@@ -3931,7 +3931,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"driver"};
 		fuel="SP98";
-		fuelCapacity=120;
+		fuelCapacity=60;
 		colors[]=
 		{
 			"Skyline_Vehicule_Jonzie_Quattroporte_01_F",
@@ -3970,7 +3970,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"driver"};
 		fuel="SP95";
-		fuelCapacity=650;
+		fuelCapacity=60;
 		colors[]=
 		{
 			"Skyline_Vehicule_Jonzie_Datsun_510_01_F",
@@ -4720,7 +4720,7 @@ class ADENIS_VEHICLES
 		disableOwnerInfos=1;
 		licenses[]={"rebelle_1"};
 		fuel="Diesel";
-		fuelCapacity=190;
+		fuelCapacity=100;
 	};
 
  	class C_Scooter_Transport_01_F
@@ -4814,7 +4814,7 @@ class ADENIS_VEHICLES
 		realname="MTVR 4X4";
 		buyPrice=120900;
 		inventory=350;
-		fuelCapacity=630;
+		fuelCapacity=200;
 		side="CIV";
 		insurance=0;
 		disableOwnerInfos=1;
@@ -4826,7 +4826,7 @@ class ADENIS_VEHICLES
 		realname="MTVR cargo";
 		buyPrice=255050;
 		inventory=415;
-		fuelCapacity=710;
+		fuelCapacity=200;
   		licenses[]={"rebelle_1"};
 	};
 	class DAR_MK27T: DAR_4X4
@@ -4834,14 +4834,14 @@ class ADENIS_VEHICLES
 		realname="MTVR cargo couvert";
 		buyPrice=415270;
 		inventory=500;
-		fuelCapacity=1000;
+		fuelCapacity=200;
   		licenses[]={"rebelle_1"};
 	};
 	class DAR_MK27: DAR_MK27T
 	{
 		realname="MTVR Extension non couvert";
 		buyPrice=595900;
-		inventory=590;
+		inventory=200;
   		licenses[]={"rebelle_1"};
 	};
 	class DAR_LHS_16: DAR_4X4
@@ -4849,7 +4849,7 @@ class ADENIS_VEHICLES
 		realname="MTVR LHS";
 		buyPrice=757200;
 		inventory=670;
-		fuelCapacity=1250;
+		fuelCapacity=200;
   		rank=2;
   		licenses[]={"rebelle_1"};
 	};
@@ -4858,7 +4858,7 @@ class ADENIS_VEHICLES
 		realname="MTVR 4X4";
 		buyPrice=120900;
 		inventory=350;
-		fuelCapacity=630;
+		fuelCapacity=200;
 		side="CIV";
 		insurance=0;
 		disableOwnerInfos=1;
@@ -4871,7 +4871,7 @@ class ADENIS_VEHICLES
 		realname="MTVR cargo";
 		buyPrice=255050;
 		inventory=415;
-		fuelCapacity=710;
+		fuelCapacity=200;
   		rank=0;
   		licenses[]={"rebelle_1"};
 	};
@@ -4880,7 +4880,7 @@ class ADENIS_VEHICLES
 		realname="MTVR cargo couvert";
 		buyPrice=475270;
 		inventory=500;
-		fuelCapacity=1000;
+		fuelCapacity=200;
   		rank=0;
   		licenses[]={"rebelle_1"};
 	};
@@ -4888,7 +4888,7 @@ class ADENIS_VEHICLES
 	{
 		realname="MTVR Extension non couvert";
 		buyPrice=695900;
-		inventory=590;
+		inventory=200;
   		licenses[]={"rebelle_1"};
 	};
 	class Skyline_MTVR_LHS_16: Skyline_MTVR_4X4
@@ -4896,7 +4896,7 @@ class ADENIS_VEHICLES
 		realname="MTVR LHS";
 		buyPrice=857200;
 		inventory=670;
-		fuelCapacity=1250;
+		fuelCapacity=200;
   		licenses[]={"rebelle_1"};
 	};
 	class GeK_Raptor: DAR_4X4
@@ -5084,7 +5084,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"driver"};
 		fuel="SP95";
-		fuelCapacity=117;
+		fuelCapacity=65;
 		colors[]={};
 	};
 
@@ -5376,7 +5376,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"truck","company_location_land"};
 		fuel="Diesel";
-		fuelCapacity=1515;
+		fuelCapacity=300;
 		colors[]=
 		{
 			"GeK_Iveco_Stralis_01",
@@ -5413,7 +5413,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"driver"};
 		fuel="Diesel";
-		fuelCapacity=120;
+		fuelCapacity=65;
 		colors[]=
 		{
 			"GeK_Agera_01",
@@ -5686,7 +5686,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"driver"};
 		fuel="SP95";
-		fuelCapacity=120;
+		fuelCapacity=90;
 		colors[]=
 		{
 			"GeK_Apollo_01",
@@ -6760,7 +6760,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"driver"};
 		fuel="Diesel";
-		fuelCapacity=135;
+		fuelCapacity=85;
 		colors[]=
 		{
 			"Lemon_Dac_Farm_rose",
@@ -6796,7 +6796,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"truck"};
 		fuel="Diesel";
-		fuelCapacity=175;
+		fuelCapacity=82;
 	};
 
 	class AM_M939A2_chris20215_m939
@@ -6808,7 +6808,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"truck"};
 		fuel="Diesel";
-		fuelCapacity=150;
+		fuelCapacity=95;
 		colors[]=
 		{
 			"AM_M939A2_chris20215_m939_body",
@@ -6835,7 +6835,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"truck"};
 		fuel="Diesel";
-		fuelCapacity=150;
+		fuelCapacity=95;
 	};
 
 	class Lemon_Citroen_SM
@@ -6897,7 +6897,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"truck","company_car_shop"};
 		fuel="Diesel";
-		fuelCapacity=500;
+		fuelCapacity=75;
 	};
 
 	class AlessioCayman
@@ -7137,7 +7137,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=350;
+		fuelCapacity=84;
 	};
 
 	class AlessioQuadrifoglio
@@ -7149,7 +7149,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=350;
+		fuelCapacity=84;
 	};
 
 	class AlessioRS4
@@ -7209,7 +7209,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=350;
+		fuelCapacity=84;
 	};
 
 	class AlessioBM4
@@ -7221,7 +7221,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=350;
+		fuelCapacity=84;
 	};
 
 	class V12_FOCUSST12_BLANC
@@ -7233,7 +7233,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=350;
+		fuelCapacity=84;
 	};
 
 	class V12_FREIGHTLINER3
@@ -7245,7 +7245,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=350;
+		fuelCapacity=84;
 	};
 
 	class V12_VENDURA_BLANC
@@ -7257,7 +7257,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=350;
+		fuelCapacity=84;
 	};
 
 	class V12_CIVIC_NOIR
@@ -7269,7 +7269,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=350;
+		fuelCapacity=84;
 	};
 
 	class V12_AMGGT_BLANCM
@@ -7281,7 +7281,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=350;
+		fuelCapacity=84;
 	};
 
 	class V12_CL65
@@ -7293,7 +7293,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=350;
+		fuelCapacity=84;
 	};
 
 	class V12_GL63AMG_BLANC
@@ -7305,7 +7305,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=350;
+		fuelCapacity=84;
 	};
 
 	class AlessioC63N
@@ -7317,7 +7317,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=350;
+		fuelCapacity=84;
 	};
 
 	class AlessioIXMR
@@ -7329,7 +7329,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=350;
+		fuelCapacity=84;
 	};
 
 	class V12_SVR_BLANC
@@ -7341,7 +7341,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=350;
+		fuelCapacity=84;
 	};
 
 	class AlessioVIR
@@ -7353,7 +7353,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=350;
+		fuelCapacity=84;
 	};
 
 	class AlessioTouareg
@@ -7365,7 +7365,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=350;
+		fuelCapacity=84;
 	};
 
 	class V12_R34M_NOIR
@@ -7377,7 +7377,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=350;
+		fuelCapacity=84;
 	};
 
 	class Dieter_Apolia_UAZ_aqua

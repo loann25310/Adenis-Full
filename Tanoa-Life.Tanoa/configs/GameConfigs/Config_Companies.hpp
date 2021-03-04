@@ -763,7 +763,14 @@ class ADENIS_COMPANIES_TYPES
 				"ground_beef",
 				"rib_coast_beef",
 				"beef_tenderloin_beef",
-				"rib_steak_beef"
+				"rib_steak_beef",
+				"cuissedepouletcook",
+				"nuggetscook",
+				"escalopepouletcook",
+				"pouletroticook",
+				"rationmilpouletp",
+				"rationmilboeufp",
+				"rationmilporcp"
 			};
 		};
 		class storage
@@ -973,7 +980,21 @@ class ADENIS_COMPANIES_TYPES
 			list[]=
 			{
 				"rhum",
-				"sugar"
+				"sugar",
+				"assembling_wine_redp",
+				"wine_redp",
+				"malibu",
+				"assembling_wine_whitep",
+				"wine_whitep",
+				"assembling_wine_pinkedp",
+				"wine_pinkedp",
+				"assembling_champagne",
+				"champagnep",
+				"Fermentp",
+				'Whiskyp',
+				"Ferment_beerp",
+				"Beerp",
+
 			};
 		};
 		class garage
@@ -1035,6 +1056,7 @@ class ADENIS_COMPANIES_TYPES
 			list[]=
 			{
 				"acier",
+				"serrurep",
 				"conserve",
 				"light_double",
 				"bombe_vide"
@@ -1162,7 +1184,7 @@ class ADENIS_COMPANIES_TYPES
 			modelPos[]={6.28711,0.510254,0.528652};
 			list[]=
 			{
-				"planchefruitdemer"
+				"planchefruitdemerp"
 			};
 		};
 		class garage

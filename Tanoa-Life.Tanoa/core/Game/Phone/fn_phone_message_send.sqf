@@ -179,6 +179,29 @@ _sent = 0;
 			};
 		};
 
+		case "DEPANNEURS":
+		{
+			private["_comagnies","_uids"];
+			_comagnies = [];
+			{
+				_info = _x getVariable ['company_info',['','','']];
+				if ((_info select 2) isEqualTo "cook") then {
+					_comagnies pushBack _x;
+				};
+			} forEach gServer_companies;
+
+			if (count _x == 0) exitWith {};
+
+			{
+				_uids = (_x getVariable ['company_members',[[],[]]]) select 0;
+				{
+					if ((getPlayerUID _x) in _uids) then {
+						[_msg, _from, _hide] remoteExecCall ["AlysiaClient_fnc_phone_message_receive", _x];
+					};
+				} forEach allPlayers;
+			} forEach _comagnies;
+		};
+
 		default
 		{
 			if ([_number] call AlysiaClient_fnc_isNumber) then

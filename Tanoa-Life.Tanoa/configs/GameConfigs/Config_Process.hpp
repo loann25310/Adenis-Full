@@ -624,6 +624,26 @@ class ADENIS_PROCESS
 			};
 		};
 	};
+	class serrurep: iron
+	{
+		name="Fonte de serrure";
+		class require
+		{
+			items_virtual[]={{"ironp",3},{"iron",3}};
+		};
+		class receive
+		{
+			items_virtual[]={{"serrurep",1}};
+		};
+		time_per_item=2;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_steel"};
+			};
+		};
+	};
 	class repair_rotor: iron
 	{
 		name="Fabrication : Rotor";
@@ -932,7 +952,7 @@ class ADENIS_PROCESS
 
 	class textilep
 	{
-		name="Création de sac à dos";
+		name="Création de sac à  dos Timberwood vert";
 		sound="smelting";
 		class require
 		{
@@ -954,7 +974,7 @@ class ADENIS_PROCESS
 	};
 	class textile2p: textilep
 	{
-		name="Création de sac à dos 2";
+		name="Création de sac à dos Timberwood bleu";
 		class receive
 		{
 			items_arma[]={"Maels_backpack_2"};
@@ -962,7 +982,7 @@ class ADENIS_PROCESS
 	};
 	class textile3p: textilep
 	{
-		name="Création de sac à dos 3";
+		name="Création de sac à dos Timberwood bleu et gris";
 		class receive
 		{
 			items_arma[]={"Maels_backpack_3"};
@@ -1427,7 +1447,7 @@ class ADENIS_PROCESS
 		time_per_item=3;
 		time_default=2;
 	};
-	class assembling_wine_redp: cassoulet
+	class assembling_wine_redp
 	{
 		name="Assemblage (vin rouge)";
 		sound="cooking";
@@ -1441,8 +1461,15 @@ class ADENIS_PROCESS
 		};
 		time_per_item=3;
 		time_default=2;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_rhum"};
+			};
+		};
 	};
-	class wine_redp: cassoulet
+	class wine_redp
 	{
 		name="Mise en bouteille du vin rouge";
 		sound="cooking";
@@ -1456,8 +1483,15 @@ class ADENIS_PROCESS
 		};
 		time_per_item=2;
 		time_default=2;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_rhum"};
+			};
+		};
 	};
-	class malibu: cassoulet
+	class malibu
 	{
 		name="Assemblage (malibu)";
 		sound="cooking";
@@ -1471,6 +1505,13 @@ class ADENIS_PROCESS
 		};
 		time_per_item=3;
 		time_default=2;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_rhum"};
+			};
+		};
 	};
 	class white_grape_juicep: cassoulet
 	{
@@ -1487,7 +1528,7 @@ class ADENIS_PROCESS
 		time_per_item=3;
 		time_default=2;
 	};
-	class assembling_wine_whitep: cassoulet
+	class assembling_wine_whitep
 	{
 		name="Assemblage (vin blanc)";
 		sound="cooking";
@@ -1501,8 +1542,15 @@ class ADENIS_PROCESS
 		};
 		time_per_item=2;
 		time_default=2;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_rhum"};
+			};
+		};
 	};
-	class wine_whitep: cassoulet
+	class wine_whitep
 	{
 		name="Mise en bouteille du vin blanc";
 		sound="cooking";
@@ -1516,6 +1564,13 @@ class ADENIS_PROCESS
 		};
 		time_per_item=2;
 		time_default=2;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_rhum"};
+			};
+		};
 	};
 	class pinked_grape_juicep: cassoulet
 	{
@@ -1532,7 +1587,7 @@ class ADENIS_PROCESS
 		time_per_item=2;
 		time_default=2;
 	};
-	class assembling_wine_pinkedp: cassoulet
+	class assembling_wine_pinkedp
 	{
 		name="Assemblage (vin rosé)";
 		sound="cooking";
@@ -1546,8 +1601,15 @@ class ADENIS_PROCESS
 		};
 		time_per_item=2;
 		time_default=2;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_rhum"};
+			};
+		};
 	};
-	class wine_pinkedp: cassoulet
+	class wine_pinkedp
 	{
 		name="Mise en bouteille du vin rosé";
 		sound="cooking";
@@ -1561,8 +1623,15 @@ class ADENIS_PROCESS
 		};
 		time_per_item=2;
 		time_default=2;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_rhum"};
+			};
+		};
 	};
-	class assembling_champagne: cassoulet
+	class assembling_champagne
 	{
 		name="Assemblage (champagne)";
 		sound="cooking";
@@ -1576,8 +1645,15 @@ class ADENIS_PROCESS
 		};
 		time_per_item=2;
 		time_default=2;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_rhum"};
+			};
+		};
 	};
-	class champagnep: cassoulet
+	class champagnep
 	{
 		name="Mise en bouteille du champagne";
 		sound="cooking";
@@ -1591,6 +1667,13 @@ class ADENIS_PROCESS
 		};
 		time_per_item=2;
 		time_default=2;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_rhum"};
+			};
+		};
 	};
 	class Maltagep: cassoulet
 	{
@@ -1622,7 +1705,7 @@ class ADENIS_PROCESS
 		time_per_item=2;
 		time_default=3;
 	};
-	class Fermentp: cassoulet
+	class Fermentp
 	{
 		name="Fermentation du moût";
 		sound="smelting";
@@ -1636,8 +1719,15 @@ class ADENIS_PROCESS
 		};
 		time_per_item=2;
 		time_default=3;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_rhum"};
+			};
+		};
 	};
-	class Whiskyp: cassoulet
+	class Whiskyp
 	{
 		name="Mise en bouteille du Whisky";
 		sound="salt_process";
@@ -1651,6 +1741,13 @@ class ADENIS_PROCESS
 		};
 		time_per_item=2;
 		time_default=3;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_rhum"};
+			};
+		};
 	};
 	class brewingp: cassoulet
 	{
@@ -1667,7 +1764,7 @@ class ADENIS_PROCESS
 		time_per_item=2;
 		time_default=3;
 	};
-	class Ferment_beerp: cassoulet
+	class Ferment_beerp
 	{
 		name="Fermentation du Houblon";
 		sound="smelting";
@@ -1681,8 +1778,15 @@ class ADENIS_PROCESS
 		};
 		time_per_item=2;
 		time_default=3;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_rhum"};
+			};
+		};
 	};
-	class Beerp: cassoulet
+	class Beerp
 	{
 		name="Mise en bouteille de la Bierre";
 		sound="salt_process";
@@ -1696,6 +1800,13 @@ class ADENIS_PROCESS
 		};
 		time_per_item=2;
 		time_default=3;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_rhum"};
+			};
+		};
 	};
 	class Pressing_olivep: cassoulet
 	{
@@ -1992,6 +2103,72 @@ class ADENIS_PROCESS
 		class receive
 		{
 			items_virtual[]={{"pouletroticook",1}};
+		};
+		time_per_item=2;
+		time_default=10;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_cook"};
+			};
+		};
+	};
+	class rationmilpouletp
+	{
+		name="Préparation des rations militaire au poulet";
+		sound="drug_process";
+		class require
+		{
+			items_virtual[]={{"escalopepouletcook",2},{"raisin_white",4},{"raisin_red",1},{"fraise",2},{"bean",2},{"macaron",2}};
+		};
+		class receive
+		{
+			items_virtual[]={{"rationmilpoulet",1}};
+		};
+		time_per_item=2;
+		time_default=10;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_cook"};
+			};
+		};
+	};
+	class rationmilboeufp
+	{
+		name="Préparation des rations militaire au boeuf";
+		sound="drug_process";
+		class require
+		{
+			items_virtual[]={{"beefsteak_beef",2},{"raisin_white",4},{"white_grape_juice",1},{"tabchoco",2},{"purer",2}};
+		};
+		class receive
+		{
+			items_virtual[]={{"rationmilboeuf",1}};
+		};
+		time_per_item=2;
+		time_default=10;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_cook"};
+			};
+		};
+	};
+	class rationmilporcp
+	{
+		name="Préparation des rations militaire au porc";
+		sound="drug_process";
+		class require
+		{
+			items_virtual[]={{"chop_pork",2},{"raisin_red",4},{"red_grape_juice",1},{"tabchoco",2},{"wheat",4}};
+		};
+		class receive
+		{
+			items_virtual[]={{"rationmilporc",1}};
 		};
 		time_per_item=2;
 		time_default=10;
@@ -3308,7 +3485,7 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_arma[]={"Skyline_M4A1_02_F"};
+			items_arma[]={"hlc_rifle_M4"};
 		};
 	};
 	class DP_28: AKM
@@ -3344,7 +3521,7 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_arma[]={"Skyline_M4A1_02_F"};
+			items_arma[]={"hlc_rifle_M4"};
 		};
 	};
 	class MOSIN: AKM
@@ -3473,7 +3650,7 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_arma[]={"30Rnd_556x45_Stanag"};
+			items_arma[]={"hlc_30rnd_556x45_EPR"};
 		};
 	};
 
