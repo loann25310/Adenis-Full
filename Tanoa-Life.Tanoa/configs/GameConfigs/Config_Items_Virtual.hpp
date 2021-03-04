@@ -497,13 +497,13 @@ class ADENIS_ITEMS
     class cigarettepa
     {
         name="Cigarette Emballé";
-        weight=1;
+        weight=10;
         image="Adenis_Textures\carton.paa";
         entrepriseItem = 1;
         class market
         {
-            max=7000;
-            min=5000;
+            max=18000;
+            min=14000;
         };
         class remove {};
     };
@@ -590,13 +590,13 @@ class ADENIS_ITEMS
     class furniturepa
     {
         name="Meuble Emballé";
-        weight=5;
+        weight=25;
         image="Adenis_Textures\carton.paa";
         entrepriseItem = 1;
         class market
         {
-            max=10941;
-            min=7094;
+            max=60000;
+            min=48000;
         };
         class remove {};
     };
@@ -661,13 +661,13 @@ class ADENIS_ITEMS
     class steelppa
     {
         name="Barre Acier Emballé";
-        weight=2;
+        weight=20;
         image="Adenis_Textures\carton.paa";
         entrepriseItem = 1;
         class market
         {
-            max=6252;
-            min=2583;
+            max=55000;
+            min=48000;
         };
         class remove {};
     };
@@ -702,13 +702,13 @@ class ADENIS_ITEMS
     class glassemba
     {
         name="Verre Emballé";
-        weight=5;
+        weight=15;
         image="Adenis_Textures\carton.paa";
         entrepriseItem = 1;
         class market
         {
-            max=7091;
-            min=5094;
+            max=27000;
+            min=20000;
         };
         class remove {};
     };
@@ -1344,7 +1344,7 @@ class ADENIS_ITEMS
     {
         name="Pizza";
         weight=2;
-        price_buy=11;
+        price_buy=45;
         image="Alysia_Client\Textures\Items_virtual\pizza.paa";
         class food
         {
@@ -1357,7 +1357,7 @@ class ADENIS_ITEMS
     {
         name="Sandwich au jambon";
         weight=1;
-        price_buy=6;
+        price_buy=35;
         image="Alysia_Client\Textures\Items_virtual\sandwich_jambon.paa";
         class food
         {
@@ -1381,7 +1381,7 @@ class ADENIS_ITEMS
     {
         name="Boîte de petits beurres";
         weight=1;
-        price_buy=3;
+        price_buy=30;
         image="Alysia_Client\Textures\Items_virtual\petitbeurre.paa";
         class food
         {
@@ -1721,7 +1721,6 @@ class ADENIS_ITEMS
     {
         name="Serrure neuve";
         weight=2;
-        price_buy=1750;
         image="Alysia_Client\Textures\Items_virtual\serrure.paa";
         buy_license_CIV="company_construction";
         class use
@@ -2133,7 +2132,7 @@ class ADENIS_ITEMS
         class food
         {
             hunger=0;
-            thirst=25;
+            thirst=60;
             sound="drink_water";
         };
     };
@@ -2189,7 +2188,7 @@ class ADENIS_ITEMS
         class food
         {
             hunger=0;
-            thirst=25;
+            thirst=60;
             sound="drink_water";
         };
     };
@@ -2250,7 +2249,7 @@ class ADENIS_ITEMS
         class food
         {
             hunger=0;
-            thirst=25;
+            thirst=60;
             sound="drink_water";
         };
     };
@@ -2272,7 +2271,7 @@ class ADENIS_ITEMS
     class sea_food
     {
         name="Plateau de fruit de mer";
-        weight=10;
+        weight=4;
         image="";
         class food
         {
@@ -2440,8 +2439,8 @@ class ADENIS_ITEMS
         class remove {};
         class food
         {
-            hunger=10;
-            thirst=5;
+            hunger=30;
+            thirst=15;
             sound="eat_biscuit";
         };
     };
@@ -2453,8 +2452,8 @@ class ADENIS_ITEMS
         class remove {};
         class food
         {
-            hunger=5;
-            thirst=10;
+            hunger=10;
+            thirst=20;
             sound="eat_biscuit";
         };
     };
@@ -2617,10 +2616,84 @@ class ADENIS_ITEMS
     {
         name="Porc";
         weight=2;
-        price_buy=500;
+        price_buy=200;
         image="Alysia_Client\Textures\Items_virtual\pork.paa";
         buy_license_CIV="company_cook";
         class remove {};
+    };
+
+    class pouletcook
+    {
+        name="Poulet complet";
+        weight=2;
+        price_buy=150;
+        image="";
+        buy_license_CIV="company_cook";
+        class remove {};
+    };
+
+    class cuissedepouletcook
+    {
+        name="Cuise de poulet";
+        weight=2;
+        price_buy=200;
+        image="Alysia_Client\Textures\Items_virtual\pork.paa";
+        buy_license_CIV="company_cook";
+        class remove {};
+        class food
+        {
+            hunger=50;
+            thirst=-15;
+            sound="eat_biscuit";
+        };
+    };
+
+    class nuggetscook
+    {
+        name="Nuggets";
+        weight=1;
+        price_buy=200;
+        image="Alysia_Client\Textures\Items_virtual\pork.paa";
+        buy_license_CIV="company_cook";
+        class remove {};
+        class food
+        {
+            hunger=30;
+            thirst=-30;
+            sound="eat_biscuit";
+        };
+    };
+
+    class escalopepouletcook
+    {
+        name="Escalope de poulet";
+        weight=2;
+        price_buy=200;
+        image="Alysia_Client\Textures\Items_virtual\pork.paa";
+        buy_license_CIV="company_cook";
+        class remove {};
+        class food
+        {
+            hunger=40;
+            thirst=-10;
+            sound="eat_biscuit";
+        };
+    };
+
+    class pouletroticook
+    {
+        name="Poulet rôti";
+        weight=2;
+        price_buy=200;
+        image="Alysia_Client\Textures\Items_virtual\pork.paa";
+        buy_license_CIV="company_cook";
+        class remove {};
+        class food
+        {
+            hunger=85;
+            thirst=-50;
+            sound="eat_biscuit";
+        };
     };
 
     class peinture
@@ -2693,7 +2766,7 @@ class ADENIS_ITEMS
     {
         name="Boeuf";
         weight=2;
-        price_buy=1000;
+        price_buy=400;
         image="Alysia_Client\Textures\Items_virtual\beef.paa";
         buy_license_CIV="company_cook";
         class remove {};
@@ -2947,7 +3020,7 @@ class ADENIS_ITEMS
         class food
         {
             hunger=15;
-            thirst=0;
+            thirst=5;
             sound="eat_biscuit";
         };
     };
@@ -2976,7 +3049,7 @@ class ADENIS_ITEMS
         class food
         {
             hunger=15;
-            thirst=0;
+            thirst=5;
             sound="eat_biscuit";
         };
     };

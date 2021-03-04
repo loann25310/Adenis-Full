@@ -20,9 +20,9 @@ if ((player distance _target) > 30) exitWith {
 	["Vous êtes trop loin du bâtiment."] call AlysiaClient_fnc_error;
 };
 
-if (!(["company_construction"] call AlysiaClient_fnc_hasLicense)) exitWith {
+/*if (!(["company_construction"] call AlysiaClient_fnc_hasLicense)) exitWith {
 	["Vous ne savez pas utiliser cet objet"] call AlysiaClient_fnc_error;
-};
+};*/
 
 _owner_uid = (_target getVariable "house_owner") select 0;
 if (isNil "_owner_uid") exitWith {

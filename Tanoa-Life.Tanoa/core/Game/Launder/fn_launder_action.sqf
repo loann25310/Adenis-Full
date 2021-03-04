@@ -9,10 +9,6 @@ if (isNull _target) exitWith {
 	["Cible invalide."] call AlysiaClient_fnc_error;
 };
 
-if (!(["whitelist_blanchiment"] call AlysiaClient_fnc_hasLicense)) exitWith {
-	["Vous ne pouvez pas faire cette action"] call AlysiaClient_fnc_error;
-};
-
 _amount = ctrlText 72001;
 if (!([_amount] call AlysiaClient_fnc_isNumber)) exitWith {
 	["La somme n'est pas <t color='#04B404'>un nombre</t>."] call AlysiaClient_fnc_error;
@@ -30,7 +26,16 @@ if ((["illegal_money"] call AlysiaClient_fnc_itemCount) < _amount) exitWith {
 };
 
 closeDialog 0;
-_data = [_amount, 900];
+_data = switch (true) do
+{
+	case (_amount <= 750000): {[_amount * 0.55, 60]};
+	case ((_amount > 750000) && (_amount < 1250000)): {[_amount * 0.6, 180]};
+	case ((_amount >= 1250000) && (_amount < 3000000)): {[_amount * 0.65, 300]};
+	case ((_amount >= 3000000) && (_amount < 7500000)): {[_amount * 0.7, 1000]};
+	case ((_amount >= 7500000) && (_amount < 15000000)): {[_amount * 0.75, 1600]};
+	case ((_amount >= 15000000) && (_amount < 20000000)): {[_amount * 0.8, 2200]};
+	case (_amount >= 20000000): {[_amount * 0.85, 3600]};
+};
 
 if (["Blanchiment", (_data select 1), _target] call AlysiaClient_fnc_showProgress) then
 {

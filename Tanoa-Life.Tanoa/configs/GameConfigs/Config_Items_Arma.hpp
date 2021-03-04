@@ -884,7 +884,7 @@ class ADENIS_ITEMS_ARMA
 	////////////////////////////////////////////  MARCHE NOIR   ///////////////////////////////////////////////////
 	class Alysia_Lockpick
 	{
-		buy_price=600;
+		buy_price=6000;
 	};
 	class Adenis_Clef_Universelle
 	{
@@ -974,6 +974,68 @@ class ADENIS_ITEMS_ARMA
 	class LR_Vest : LR_Shemagh
 	{
 		buy_price=95000;
+	};
+	///////////////////////////////////////////////  PNT   ///////////////////////////////////////////////////
+
+	class U_I_ParadeUniform_01_AAF_decorated_F
+	{
+		buy_price=5000;
+		buy_license_CIV[]={"membre_pnt"};
+	};
+	class U_O_ParadeUniform_01_CSAT_decorated_F
+	{
+		buy_price=5000;
+		buy_license_CIV[]={"membre_pnt"};
+	};
+	class U_B_ParadeUniform_01_US_decorated_F
+	{
+		buy_price=5000;
+		buy_license_CIV[]={"membre_pnt"};
+	};
+	class U_I_E_ParadeUniform_01_LDF_decorated_F
+	{
+		buy_price=5000;
+		buy_license_CIV[]={"membre_pnt"};
+	};
+	class U_I_ParadeUniform_01_AAF_F
+	{
+		buy_price=5000;
+		buy_license_CIV[]={"membre_pnt"};
+	};
+	class U_O_ParadeUniform_01_CSAT_F
+	{
+		buy_price=5000;
+		buy_license_CIV[]={"membre_pnt"};
+	};
+	class U_B_ParadeUniform_01_US_F
+	{
+		buy_price=5000;
+		buy_license_CIV[]={"membre_pnt"};
+	};
+	class U_I_E_ParadeUniform_01_LDF_F
+	{
+		buy_price=5000;
+		buy_license_CIV[]={"membre_pnt"};
+	};
+	class H_ParadeDressCap_01_AAF_F
+	{
+		buy_price=5000;
+		buy_license_CIV[]={"membre_pnt"};
+	};
+	class H_ParadeDressCap_01_CSAT_F
+	{
+		buy_price=5000;
+		buy_license_CIV[]={"membre_pnt"};
+	};
+	class H_ParadeDressCap_01_US_F
+	{
+		buy_price=5000;
+		buy_license_CIV[]={"membre_pnt"};
+	};
+	class H_ParadeDressCap_01_LDF_F
+	{
+		buy_price=5000;
+		buy_license_CIV[]={"membre_pnt"};
 	};
 	/////////////////////////////////////////////NEW ARMES REBELLE//////////////////////////////////////////////
 	class hlc_rifle_ak74_MTK
@@ -2235,8 +2297,10 @@ class ADENIS_ITEMS_ARMA
     {
         buy_price=200;
         buy_condition_EAST=2;
-        buy_license_EAST[]={"east_tank"};
     };
+	class Alysia_Beret_East_2 : Alysia_Beret_East_1 {};
+	class H_Beret_CSAT_01_F : Alysia_Beret_East_1 {};
+
 
     class Alysia_Beret_East_BDR
     {

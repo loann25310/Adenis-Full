@@ -367,10 +367,13 @@ class ADENIS_SHOPS_VEHICLES
 		side="EAST";
 		stock[]=
 		{
+			"B_T_LSV_01_unarmed_F",
 			"XsG_Amarok_Base_F",
 			"EC135Unarmedlu",
 			"B_Heli_Light_01_F",
-			"B_Truck_01_covered_F"
+			"B_Truck_01_covered_F",
+			"Alysia_Hellcat_East_01",
+			"ANT_RHIB"
 		};
 	};
 

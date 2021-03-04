@@ -378,7 +378,15 @@ class ADENIS_SHOPS_CLOTHING
 		{
 			"U_B_mas_itr_dress_cc",
 			"U_B_mas_itr_dress_army",
-			"U_B_mas_itr_dress_navy"
+			"U_B_mas_itr_dress_navy",
+			"U_I_ParadeUniform_01_AAF_decorated_F",
+			"U_O_ParadeUniform_01_CSAT_decorated_F",
+			"U_B_ParadeUniform_01_US_decorated_F",
+			"U_I_E_ParadeUniform_01_LDF_decorated_F",
+			"U_I_ParadeUniform_01_AAF_F",
+			"U_O_ParadeUniform_01_CSAT_F",
+			"U_B_ParadeUniform_01_US_F",
+			"U_I_E_ParadeUniform_01_LDF_F"
 		};
 		vests[]={};
 		goggles[]={};
@@ -386,7 +394,11 @@ class ADENIS_SHOPS_CLOTHING
 		{
 			"H_mas_itr_hatarmy_f",
 			"H_mas_itr_hatalp_f",
-			"H_mas_itr_hatcc_f"
+			"H_mas_itr_hatcc_f",
+			"H_ParadeDressCap_01_AAF_F",
+			"H_ParadeDressCap_01_CSAT_F",
+			"H_ParadeDressCap_01_US_F",
+			"H_ParadeDressCap_01_LDF_F"
 		};
 		backpacks[]={};
 	};
@@ -451,8 +463,8 @@ class ADENIS_SHOPS_CLOTHING
 		};
 		vests[]=
 		{
-			"ceinture_hc",
-			"Conexus_Vest"
+			"Conexus_Vest",
+			"ceinture_hc"
 		};
 		goggles[]=
 		{
@@ -1189,7 +1201,10 @@ class ADENIS_SHOPS_CLOTHING
 			"H_PilotHelmetHeli_O",
 			"Alysia_Beret_East",
 			"Alysia_Booniehat_East_01",
-			"Alysia_Calot_East_Recrue"
+			"Alysia_Calot_East_Recrue",
+			"Alysia_Beret_East_1",
+			"Alysia_Beret_East_2",
+			"H_Beret_CSAT_01_F"
 		};
 		vests[]=
 		{

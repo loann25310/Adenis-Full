@@ -122,7 +122,20 @@ class ADENIS_VEHICLES
 		fuelCapacity=67;
 		colors[]={};
 	};
-	
+
+	class V12_VELOCIRAPTOR_NOIR
+	{
+		realname="Velociraptor";
+		buyprice=260000;
+		inventory=20;
+		side="CIV";
+		insurance=1;
+		licence[]={"driver"};
+		fuel="SP98";
+		fuelCapacity=60;
+		colors[]={};
+	};
+
 	class sab_boat
 	{
 		realname="Yacht";
@@ -172,7 +185,7 @@ class ADENIS_VEHICLES
 	class d3s_actros_14 {
 		realname="Mercedes-Benz Actros";
 		buyPrice=600000;
-		inventory=725;
+		inventory=850;
 		side="CIV";
 		insurance=1;
 		licenses[]={"truck","company_location_land"};
@@ -185,7 +198,7 @@ class ADENIS_VEHICLES
 	{
 		realname="Renault Magnum";
 		buyPrice=415750;
-		inventory=650;
+		inventory=750;
 		side="CIV";
 		insurance=1;
 		licenses[]={"truck","company_location_land"};
@@ -2169,7 +2182,7 @@ class ADENIS_VEHICLES
 	{
 		realname="Scania Streamline (Box)";
 		buyPrice=373000;
-		inventory=630;
+		inventory=750;
 		side="CIV";
 		insurance=1;
 		licenses[]={"truck","company_location_land"};
@@ -2812,7 +2825,7 @@ class ADENIS_VEHICLES
 	{
 		realname="Camion de transport d'équipement";
 		buyPrice=190000;
-		inventory=250;
+		inventory=650;
 		licenses[]={"truck"};
 		fuel="Diesel";
 		fuelCapacity=550;
@@ -2823,7 +2836,7 @@ class ADENIS_VEHICLES
 	{
 		realname="Camion de transport de troupe";
 		buyPrice=49000;
-		inventory=250;
+		inventory=650;
 		licenses[]={"truck"};
 		fuel="Diesel";
 		fuelCapacity=550;
@@ -2836,7 +2849,7 @@ class ADENIS_VEHICLES
 		buyPrice=45000;
 		inventory=30;
 		fuel="Kerosene";
-		fuelCapacity=4300;
+		fuelCapacity=1200;
 		rank=3;
 	};
 
@@ -2899,7 +2912,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="SP98";
-		fuelCapacity=230;
+		fuelCapacity=89;
 		rank=1;
 	};
 
@@ -2966,7 +2979,7 @@ class ADENIS_VEHICLES
     class Alysia_Hellcat_East_01: Alysia_EAST_base
     {
         realname="Hellcat ANT";
-        buyprice=650000;
+        buyprice=65000;
         inventory=55;
         licenses[]={"east_pilot","pilot"};
         fuel="Kerosene";
@@ -4745,7 +4758,7 @@ class ADENIS_VEHICLES
 	{
 		realname="MK10";
 		buyPrice=450000;
-		Inventory=20;
+		Inventory=600;
 		side="CIV";
 		insurance=1;
 		licenses[]={"boat","company_location_sea"};
@@ -6896,7 +6909,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=500;
+		fuelCapacity=84;
 	};
 
 	class Alessio918
@@ -6908,7 +6921,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=500;
+		fuelCapacity=84;
 	};
 
 	class V12_M600
@@ -6920,7 +6933,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=500;
+		fuelCapacity=84;
 	};
 
 	class AlessioGTR
@@ -6932,7 +6945,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=500;
+		fuelCapacity=84;
 	};
 
 	class V12_GHIBLI
@@ -6944,7 +6957,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=500;
+		fuelCapacity=84;
 	};
 
 	class AlessioAventador
@@ -6956,7 +6969,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=500;
+		fuelCapacity=84;
 	};
 
 	class AlessioMustang
@@ -6968,7 +6981,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=500;
+		fuelCapacity=84;
 	};
 
 	class AlessioSuperfast
@@ -6980,7 +6993,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=500;
+		fuelCapacity=84;
 	};
 
 	class V12_GTC4_BLANC
@@ -6992,7 +7005,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=500;
+		fuelCapacity=84;
 	};
 
 	class AlessioGTB
@@ -7004,7 +7017,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=500;
+		fuelCapacity=84;
 	};
 
 	class Alessio458
@@ -7016,7 +7029,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=500;
+		fuelCapacity=84;
 	};
 
 	class V12_DEMON_BLANC
@@ -7028,7 +7041,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=500;
+		fuelCapacity=84;
 	};
 
 	class V12_RT
@@ -7040,7 +7053,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=500;
+		fuelCapacity=84;
 	};
 
 	class V12_CHEVELLESSBJ_NOIR
@@ -7052,7 +7065,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=500;
+		fuelCapacity=84;
 	};
 
 	class V12_CORVETTE_MK12_BLANC
@@ -7064,7 +7077,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=500;
+		fuelCapacity=84;
 	};
 
 	class V12_BELAIR_BLANC
@@ -7076,7 +7089,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=500;
+		fuelCapacity=84;
 	};
 
 	class V12_ESCALADE
@@ -7088,7 +7101,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=500;
+		fuelCapacity=84;
 	};
 
 	class V12_X6S_MET
@@ -7100,7 +7113,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=500;
+		fuelCapacity=84;
 	};
 
 	class AlessioR8
@@ -7112,7 +7125,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=500;
+		fuelCapacity=84;
 	};
 
 	class Lemon_Navistar
@@ -7148,7 +7161,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=350;
+		fuelCapacity=84;
 	};
 
 	class AlessioRS5
@@ -7160,7 +7173,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=350;
+		fuelCapacity=84;
 	};
 
 	class V12_RS6AV_BLANCM
@@ -7172,7 +7185,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=350;
+		fuelCapacity=84;
 	};
 
 	class V12_E46_NOIRM
@@ -7184,7 +7197,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={};
 		fuel="Diesel";
-		fuelCapacity=350;
+		fuelCapacity=84;
 	};
 
 	class V12_GTS3
@@ -7227,7 +7240,7 @@ class ADENIS_VEHICLES
 	{
 		realname="Freightliner Transport";
 		buyPrice=600000;
-		inventory=250;
+		inventory=400;
 		side="CIV";
 		insurance=1;
 		licenses[]={};
@@ -7535,6 +7548,15 @@ class ADENIS_VEHICLES
 	};
 	class A320_ch_LX : A320_ch_AZ {};
 	class A320_ch_LH : A320_ch_AZ {};
+	class I_Plane_Fighter_03_dynamicLoadout_F : A320_ch_AZ
+	{
+		realname="Buzzard";
+		buyPrice=1000000;
+		licenses[]={"pilot"};
+		disableOwnerInfos=1;
+		disableLockpick=1;
+	};
+
 	class A320_ch_SN : A320_ch_AZ {};
 	
 	class Loann_B777_Alitalia

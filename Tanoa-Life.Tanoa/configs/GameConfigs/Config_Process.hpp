@@ -476,7 +476,10 @@ class ADENIS_PROCESS
 		};
 		class factions
 		{
-			class CIV {};
+			class CIV 
+			{
+				licenses[]={"company_glass"};
+			};
 			class WEST {};
 			class EAST {};
 			class GUER {};
@@ -498,7 +501,10 @@ class ADENIS_PROCESS
 		};
 		class factions
 		{
-			class CIV {};
+			class CIV 
+			{
+				licenses[]={"company_glass"};
+			};
 			class WEST {};
 			class EAST {};
 			class GUER {};
@@ -1893,11 +1899,99 @@ class ADENIS_PROCESS
 		sound="drug_process";
 		class require
 		{
-			items_virtual[]={{"oursin",1},{"crevette",12},{"crabe",2}};
+			items_virtual[]={{"oursin",6},{"crevette",6},{"crabe",6}};
 		};
 		class receive
 		{
-			items_virtual[]={{"sea_food",1}};
+			items_virtual[]={{"sea_food",2}};
+		};
+		time_per_item=2;
+		time_default=10;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_cook"};
+			};
+		};
+	};
+	class cuissedepouletcookesca
+	{
+		name="Préparation du Poulet en escalope";
+		sound="drug_process";
+		class require
+		{
+			items_virtual[]={{"pouletcook",1}};
+		};
+		class receive
+		{
+			items_virtual[]={{"escalopepouletcook",4}};
+		};
+		time_per_item=2;
+		time_default=10;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_cook"};
+			};
+		};
+	};
+	class cuissedepouletcookpcuissep
+	{
+		name="Préparation du Poulet en cuisse de poulet";
+		sound="drug_process";
+		class require
+		{
+			items_virtual[]={{"pouletcook",1}};
+		};
+		class receive
+		{
+			items_virtual[]={{"cuissedepouletcook",2}};
+		};
+		time_per_item=2;
+		time_default=10;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_cook"};
+			};
+		};
+	};
+	class cuissedepouletcookpnuggets
+	{
+		name="Préparation du Poulet en nuggets";
+		sound="drug_process";
+		class require
+		{
+			items_virtual[]={{"pouletcook",1}};
+		};
+		class receive
+		{
+			items_virtual[]={{"nuggetscook",30}};
+		};
+		time_per_item=2;
+		time_default=10;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_cook"};
+			};
+		};
+	};
+	class cuissedepouletcookpouletroti
+	{
+		name="Préparation du Poulet en poulet rôti";
+		sound="drug_process";
+		class require
+		{
+			items_virtual[]={{"pouletcook",1}};
+		};
+		class receive
+		{
+			items_virtual[]={{"pouletroticook",1}};
 		};
 		time_per_item=2;
 		time_default=10;
@@ -2138,15 +2232,15 @@ class ADENIS_PROCESS
 		{
 			class CIV
 			{
-				licenses[]={"traitement_meubles"};
+				licenses[]={"company_furniture"};
 			};
 			class WEST
 			{
-				licenses[]={"traitement_meubles"};
+				licenses[]={"company_furniture"};
 			};
 			class GUER
 			{
-				licenses[]={"traitement_meubles"};
+				licenses[]={"company_furniture"};
 			};
 		};
 	};
@@ -4372,6 +4466,26 @@ class ADENIS_PROCESS
 			};
 		};
 	};
+	class serrure: iron
+	{
+		name="Fabrication : Lampe de Camping";
+		class require
+		{
+			items_virtual[]={{"ironp",4},{"steelp",1}};
+		};
+		class receive
+		{
+			items_virtual[]={{"serrure",1}};
+		};
+		time_per_item=20;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_steel"};
+			};
+		};
+	};
 	class bombe_vide: iron
 	{
 		name="Fabrication : Aérosol vide";
@@ -4630,7 +4744,7 @@ class ADENIS_PROCESS
 		sound="smelting";
 		class require
 		{
-			items_virtual[]={{"furniture",1},{"palette",1}};
+			items_virtual[]={{"furniture",5},{"palette",2}};
 		};
 		class receive
 		{
@@ -4660,7 +4774,7 @@ class ADENIS_PROCESS
 		sound="smelting";
 		class require
 		{
-			items_virtual[]={{"steelp",1},{"palette",1}};
+			items_virtual[]={{"steelp",10},{"palette",2}};
 		};
 		class receive
 		{
@@ -4686,11 +4800,11 @@ class ADENIS_PROCESS
 	};
 	class emballageressources_glassemba
 	{
-		name="Usine d'emballage du Verre";
+		name="Usine d'emballage du verre";
 		sound="smelting";
 		class require
 		{
-			items_virtual[]={{"glass",1},{"palette",1}};
+			items_virtual[]={{"glass",10},{"palette",2}};
 		};
 		class receive
 		{
@@ -4716,11 +4830,11 @@ class ADENIS_PROCESS
 	};
 	class emballageressources_tabchocoemba
 	{
-		name="Usine d'emballage du Chocolat";
+		name="Usine d'emballage du chocolat";
 		sound="smelting";
 		class require
 		{
-			items_virtual[]={{"tabchoco",1},{"palette",1}};
+			items_virtual[]={{"tabchoco",10},{"palette",2}};
 		};
 		class receive
 		{
@@ -4750,7 +4864,7 @@ class ADENIS_PROCESS
 		sound="smelting";
 		class require
 		{
-			items_virtual[]={{"cigarette",1},{"palette",1}};
+			items_virtual[]={{"cigarette",10},{"palette",2}};
 		};
 		class receive
 		{

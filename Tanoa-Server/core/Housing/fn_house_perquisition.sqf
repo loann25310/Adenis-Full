@@ -11,6 +11,12 @@ if ((isNull _house) || (isNull _from)) exitWith {};
 _this call AlysiaServer_fnc_logPerquisition;
 _house setVariable ["perquisition", true, true];
 
+{
+	if (((_house getVariable ["house_owner", ["", ""]]) select 0) isEqualTo (getPlayerUID _x)) then {
+		[format["Votre maison en coordonné %1 ce fait perquisitionner !", mapGridPosition _house]] remoteExec ["AlysiaClient_fnc_info", _x];
+	};
+} forEach allPlayers;
+
 uiSleep(60 * 10);
 
 _house setVariable ["perquisition", false, true];

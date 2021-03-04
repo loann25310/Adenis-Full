@@ -183,7 +183,6 @@ class ADENIS_SHOPS_ARMA
 		side="CIV";
 		stocks[]=
 		{
-			"SkylineItems_Couteau",
 			"Adenis_Compresse"
 		};
 	};

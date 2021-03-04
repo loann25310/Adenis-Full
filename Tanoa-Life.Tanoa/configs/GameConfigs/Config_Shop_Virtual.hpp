@@ -101,7 +101,6 @@ class ADENIS_SHOPS_VIRTUAL
 		side="CIV";
 		buy[]=
 		{
-			"serrure",
 			"oilu",
 			"barriere",
 			"barriere3",
@@ -123,6 +122,7 @@ class ADENIS_SHOPS_VIRTUAL
 			"milk",
 			"pork",
 			"beef",
+			"pouletcook",
 			"frite",
 			"caviar",
 			"fraise",
@@ -134,6 +134,9 @@ class ADENIS_SHOPS_VIRTUAL
 			"purer",
 			"saucisson",
 			"bolo",
+			"homar",
+			"langouste",
+			"chantilly",
 			"firework",
 			"peinture"
 		};

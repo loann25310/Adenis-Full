@@ -392,6 +392,19 @@ class ADENIS_COMPANIES_TYPES
 		members_max=15;
 		salary=158;
 		ticket=1;
+		class process
+		{
+			posDistance=2.5;
+			modelPos[]={6.28711,0.510254,0.528652};
+			list[]=
+			{
+				"cigarettepa",
+				"tabchocoemba",
+				"furniturepa",
+				"steelppa",
+				"glassemba"
+			};
+		};
 		class storage
 		{
 			type="Diablo_Coffre_Extra";
@@ -448,6 +461,19 @@ class ADENIS_COMPANIES_TYPES
 		members_max=15;
 		salary=100;
 		ticket=1;
+		class process
+		{
+			posDistance=2.5;
+			modelPos[]={6.28711,0.510254,0.528652};
+			list[]=
+			{
+				"cigarettepa",
+				"tabchocoemba",
+				"furniturepa",
+				"steelppa",
+				"glassemba"
+			};
+		};
 		class storage
 		{
 			type="Diablo_Coffre_Extra";
@@ -464,6 +490,19 @@ class ADENIS_COMPANIES_TYPES
 		members_max=15;
 		salary=100;
 		ticket=1;
+		class process
+		{
+			posDistance=2.5;
+			modelPos[]={6.28711,0.510254,0.528652};
+			list[]=
+			{
+				"cigarettepa",
+				"tabchocoemba",
+				"furniturepa",
+				"steelppa",
+				"glassemba"
+			};
+		};
 		class storage
 		{
 			type="Diablo_Coffre_Extra";
@@ -981,7 +1020,7 @@ class ADENIS_COMPANIES_TYPES
 		building="GeK_Entreprise_Fonderie";
 		image="Alysia_Client_Texture\Data\companies\types\steel.paa";
 		license="company_steel";
-		ressources_link[]={"ironp","soufre","steelp","rare_earth"};
+		ressources_link[]={"ironp","soufre","steelp","rare_earth","serrure"};
 		members_max=15;
 		salary=140;
 		ticket=1;
@@ -1116,6 +1155,15 @@ class ADENIS_COMPANIES_TYPES
 		class storage
 		{
 			type="Diablo_Coffre_Extra";
+		};
+		class process
+		{
+			posDistance=2.5;
+			modelPos[]={6.28711,0.510254,0.528652};
+			list[]=
+			{
+				"planchefruitdemer"
+			};
 		};
 		class garage
 		{

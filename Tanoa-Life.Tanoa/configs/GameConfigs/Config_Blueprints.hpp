@@ -143,7 +143,7 @@ class ADENIS_BLUEPRINTS
 	};
 	class blueprint_M4A1: blueprint_gsh18
 	{
-		process[]={"M4A1","M4A1_COMPACT","magazine_m4a1"};
+		process[]={"hlc_rifle_M4","hlc_30rnd_556x45_EPR"};
 	};
 	class blueprint_DP_28: blueprint_gsh18
 	{

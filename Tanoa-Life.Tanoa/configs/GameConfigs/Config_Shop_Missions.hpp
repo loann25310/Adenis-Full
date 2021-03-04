@@ -146,6 +146,7 @@ class ADENIS_MISSIONS
 				"blueprint_umateba_model_6_unica",
 				"blueprint_taurus_raging_bull",
 				"blueprint_ruger_mk2",
+				"blueprint_protector",
 				"fauxpapiers",
 				"blueprint_taurus_tracker_455",
 				"blueprint_desert_eagle"
@@ -173,20 +174,17 @@ class ADENIS_MISSIONS
         {
             weapons[]=
             {
-                "hlc_rifle_M27IAR",
-				"RH_p226"
+                "hlc_rifle_M27IAR"
             };
             magazines[]=
             {
-                "hlc_30rnd_556x45_EPR",
-				"RH_15Rnd_9x19_SIG"
+                "hlc_30rnd_556x45_EPR"
             };
             items[]=
             {
                 "bipod_01_F_blk",
                 "optic_Hamr",
-                "optic_MRCO",
-                "acc_pointer_IR"
+                "optic_MRCO"
             };
             virtuals[]=
             {

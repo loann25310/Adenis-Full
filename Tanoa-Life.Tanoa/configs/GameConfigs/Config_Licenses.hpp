@@ -1086,7 +1086,7 @@ class ADENIS_LICENSES
 	};
 	class emballageressources
 	{
-		name=" Emballage des meubles, Barres d'aciers, Cigarettes";
+		name="Licence d'emballage";
 		class factions
 		{
 			class CIV

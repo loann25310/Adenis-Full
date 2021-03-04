@@ -38,13 +38,13 @@ if (playerSide isEqualTo independent) then
 	if ((["scalpel"] call AlysiaClient_fnc_itemCount) > 0) then {
 		_chance = 4;
 	} else {
-		_chance = 8;
+		_chance = 50;
 	};
 } else {
 	if ((["scalpel"] call AlysiaClient_fnc_itemCount) > 0) then {
 		_chance = 20;
 	} else {
-		_chance = 30;
+		_chance = 50;
 	};
 };
 
