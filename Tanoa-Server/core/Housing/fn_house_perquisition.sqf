@@ -13,7 +13,7 @@ _house setVariable ["perquisition", true, true];
 
 {
 	if (((_house getVariable ["house_owner", ["", ""]]) select 0) isEqualTo (getPlayerUID _x)) then {
-		[format["Votre maison en coordonné %1 ce fait perquisitionner !", mapGridPosition _house]] remoteExec ["AlysiaClient_fnc_info", _x];
+		[format["Votre maison en coordonnées %1 se fait perquisitionner !", mapGridPosition _house]] remoteExec ["AlysiaClient_fnc_info", _x];
 	};
 } forEach allPlayers;
 
