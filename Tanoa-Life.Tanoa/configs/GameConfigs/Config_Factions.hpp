@@ -6,7 +6,7 @@ class ADENIS_FACTIONS
 		name="ANT";
 		name_full="Armée Nationale Tanocienne";
 		icon="Alysia_Client_Texture\Data\faction\CIV_logo.paa";
-		identity_item="Alysia_Identity_East";
+		identity_item="Alysia_Identity_Civ";
 
 		/*** SALARY ***/
 		class salary
@@ -84,51 +84,71 @@ class ADENIS_FACTIONS
 				same_side_only=1;
 			};
 
-			class east_tank_resp
+			class east_form_resp
 			{
 				rank=14;
 				same_side_only=1;
 			};
-			class east_medic_resp: east_tank_resp {};
-			class east_fm_resp: east_tank_resp {};
-			class east_dog_resp: east_tank_resp {};
-			class east_tp_resp: east_tank_resp {};
-			class east_cook_resp: east_tank_resp {};
-			class east_pilot_resp: east_tank_resp {};
-			class east_ope_radio_resp: east_tank_resp {};
+			class east_medic_resp: east_form_resp {};
+			class east_fm_resp: east_form_resp {};
+			class east_dog_resp: east_form_resp {};
+			class east_tp_resp: east_form_resp {};
+			class east_cook_resp: east_form_resp {};
+			class east_pilot_resp: east_form_resp {};
+			class east_ope_radio_resp: east_form_resp {};
+			class east_gcp_resp: east_form_resp {};
+			class east_gcm_resp: east_form_resp {};
+			class east_urtant_resp: east_form_resp {};
+			class east_uja_resp: east_form_resp {};
+			class east_upg_resp: east_form_resp {};
 
-			class east_tank
-			{
-				license="east_tank_resp";
-				same_side_only=1;
-			};
-			class east_medic: east_tank
+			class east_medic: east_form
 			{
 				license="east_medic_resp";
 			};
-			class east_fm: east_tank
+			class east_fm: east_form
 			{
 				license="east_fm_resp";
 			};
-			class east_dog: east_tank
+			class east_dog: east_form
 			{
 				license="east_dog_resp";
 			};
-			class east_tp: east_tank
+			class east_tp: east_form
 			{
 				license="east_tp_resp";
 			};
-			class east_cook: east_tank
+			class east_cook: east_form
 			{
 				license="east_cook_resp";
 			};
-			class east_pilot: east_tank
+			class east_pilot: east_form
 			{
 				license="east_pilot_resp";
 			};
-			class east_ope_radio: east_tank
+			class east_ope_radio: east_form
 			{
 				license="east_ope_radio_resp";
+			};
+			class east_gcp: east_form
+			{
+				license="east_gcp_resp";
+			};
+			class east_gcm: east_form
+			{
+				license="east_gcm_resp";
+			};
+			class east_urtant: east_form
+			{
+				license="east_urtant_resp";
+			};
+			class east_uja: east_form
+			{
+				license="east_uja_resp";
+			};
+			class east_upg: east_form
+			{
+				license="east_upg_resp";
 			};
 		};
 

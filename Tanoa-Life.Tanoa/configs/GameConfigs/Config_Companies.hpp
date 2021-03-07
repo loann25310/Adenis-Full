@@ -764,10 +764,10 @@ class ADENIS_COMPANIES_TYPES
 				"rib_coast_beef",
 				"beef_tenderloin_beef",
 				"rib_steak_beef",
-				"cuissedepouletcook",
-				"nuggetscook",
-				"escalopepouletcook",
-				"pouletroticook",
+				"cuissedepouletcookesca",
+				"cuissedepouletcookpcuissep",
+				"cuissedepouletcookpnuggets",
+				"cuissedepouletcookpouletroti",
 				"rationmilpouletp",
 				"rationmilboeufp",
 				"rationmilporcp"
@@ -991,9 +991,19 @@ class ADENIS_COMPANIES_TYPES
 				"assembling_champagne",
 				"champagnep",
 				"Fermentp",
-				'Whiskyp',
+				"Whiskyp",
 				"Ferment_beerp",
 				"Beerp",
+				"assembling_gin",
+				"ginp",
+				"assembling_sake",
+				"sakep",
+				"assembling_ricard",
+				"ricardp",
+				"assembling_vodka",
+				"vodkap",
+				"assembling_suze",
+				"suzep"
 
 			};
 		};
@@ -1003,6 +1013,41 @@ class ADENIS_COMPANIES_TYPES
 		};
 	};
 
+	class laboratoiremedical
+	{
+		name="Laboratoire Médicale";
+		price=800000;
+		building="GeK_Entreprise_Distillerie";
+		image="Alysia_Client_Texture\Data\companies\types\rhum.paa";
+		license="company_labomedical";
+		ressources_link[]={"smecta"};
+		members_max=15;
+		salary=180;
+		ticket=1;
+		class storage
+		{
+			type="Diablo_Coffre_Extra";
+		};
+		class process
+		{
+			posDistance=2.5;
+			modelPos[]={6.28711,0.510254,0.528652};
+			list[]=
+			{
+				"smectap",
+				"paracetamolp",
+				"stethoscopep",
+				"scalpelp",
+				"adnp",
+				"alcool_testp"
+
+			};
+		};
+		class garage
+		{
+			types[]={"Car"};
+		};
+	};
 	class cacao
 	{
 		name="Atelier de torréfaction du cacao";

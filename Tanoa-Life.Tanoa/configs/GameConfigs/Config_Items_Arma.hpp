@@ -973,7 +973,7 @@ class ADENIS_ITEMS_ARMA
 
 	class LR_Vest : LR_Shemagh
 	{
-		buy_price=95000;
+		buy_price=20000;
 	};
 	///////////////////////////////////////////////  CASINO   ///////////////////////////////////////////////////
 	///////////////////////////////////////////////  bronze   ///////////////////////////////////////////////////
@@ -1411,6 +1411,12 @@ class ADENIS_ITEMS_ARMA
 		buyprice=100;
 		buy_license_CIV="company_compagnie_airienne";
 	};
+	class tf_rt1523g_black
+	{
+		name="Sac à dos radio tour de contrôle";
+		buyprice=100;
+		buy_license_CIV="company_compagnie_airienne";
+	};
 	class ML_Uniform_copilot
 	{
 		name="Uniforme copilote";
@@ -1447,6 +1453,37 @@ class ADENIS_ITEMS_ARMA
 		buyprice=100;
 		buy_license_CIV="company_compagnie_airienne";
 	};
+
+	// CCS
+	class B_Wh_BLK_ROLLUP_soldier_F
+	{
+		name="Uniform CCS";
+		buyprice=100;
+		buy_license_CIV="company_money_tranfer";
+	};
+
+	class TRYK_UA_CAP
+	{
+		name="Casquette CCS";
+		buyprice=100;
+		buy_license_CIV="company_money_tranfer";
+	};
+
+	class TAC_Sheriff_BA_OD
+	{
+		name="Gilet CCS";
+		buyprice=100;
+		buy_license_CIV="company_money_tranfer";
+	};
+
+	class EF_BLT_M1
+	{
+		name="Ceinture CCS";
+		buyprice=100;
+		buy_license_CIV="company_money_tranfer";
+	};
+
+
 
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1772,6 +1809,7 @@ class ADENIS_ITEMS_ARMA
 		name="Casquette Capitaine de Corvette";
 		buy_condition_GUER=12;
 		buy_price=20;
+		buy_license_CIV="company_compagnie_airienne";
 	};
 	class cagoule_feu
 	{
@@ -2337,9 +2375,34 @@ class ADENIS_ITEMS_ARMA
         buy_price=200;
         buy_condition_EAST=2;
     };
+	class JB_ANT_Brasard_Samuel_Invert
+    {
+        buy_price=200;
+        buy_condition_EAST=14;
+    };
 	class Alysia_Beret_East_2 : Alysia_Beret_East_1 {};
 	class H_Beret_CSAT_01_F : Alysia_Beret_East_1 {};
-
+	class JB_ANT_Beret : Alysia_Beret_East_1 {};
+	class JB_ANT_Beret_UJA : Alysia_Beret_East_1
+	{
+		buy_license_EAST[]={"east_uja"};
+	};
+	class JB_ANT_Brasard_UJA : Alysia_Beret_East_1
+	{
+		buy_license_EAST[]={"east_uja"};
+	};
+	class JB_ANT_Beret_GCM : Alysia_Beret_East_1
+	{
+		buy_license_EAST[]={"east_gcm"};
+	};
+	class JB_ANT_Beret_GCP : Alysia_Beret_East_1
+	{
+		buy_license_EAST[]={"east_gcp"};
+	};
+	class JB_ANT_Beret_URTANT : Alysia_Beret_East_1
+	{
+		buy_license_EAST[]={"east_urtant"};
+	};
 
     class Alysia_Beret_East_BDR
     {

@@ -151,7 +151,7 @@ class ADENIS_SHOPS_VEHICLES
 			"chevrolet_Apache_chris20215",
 			"Polaris_RZR_Turbo_chris20215",
 			"Skyline_Mercedes_Sprinter",
-			"AM_M939A2_chris20215_m939",
+			// "AM_M939A2_chris20215_m939",
 			"Golf2_16D",
 			"Lemon_Jeep",
 			"Lemon_Citroen_2CV",
@@ -250,7 +250,6 @@ class ADENIS_SHOPS_VEHICLES
 			"Maels_ducati_AET",
 			"Maels_boat_aet",
 			"chcitan_civ_fm",
-			"chcitan_vlcg",
 			/* company_tourism */
 			"R_HotairBalloon",
 			/* company_music_label */
@@ -310,10 +309,8 @@ class ADENIS_SHOPS_VEHICLES
 			"Skyline_Vehicule_A3_MH9_Unarmed_F_rebel",
 			"GeK_Raptor",
 			"Skyline_Vehicule_APEX_RHIB_02_F",
-			"AlessioRS4MatGofast",
 			"AlessioRS5GoFastMat",
 			"AlessioM5GofastMat",
-			"AlessioMustangGoFastMat",
 			"AlessioC63Black_mat",
 			"Peck_MercedesBenz_G65_Rebelle",
 			"Peck_MercedezBenz_ML63_Rebelle_9"

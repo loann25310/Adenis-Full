@@ -48,7 +48,7 @@ class ADENIS_SHOPS_ARMA
 		side="EAST";
 		stocks[]=
 		{
-			"Alysia_Identity_East",
+			"Alysia_Identity_Civ",
 			"hgun_FlashBall_F",
 			"1Rnd_FlashBall_Mag",
 			"SkylineItems_Adrenaline",

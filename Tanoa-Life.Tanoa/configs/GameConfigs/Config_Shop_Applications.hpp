@@ -11,7 +11,14 @@ class ADENIS_SHOP_APPLICATIONS
 	{
 		name="Bourse";
 		description="Application mettant à votre disposition diverses informations économiques";
-		price=12800;
+		price=3000;
+		sides[]={"CIV","WEST","EAST","GUER"};
+	};
+	class MARKET_ENTREPRISE
+	{
+		name="Bourse Entreprise";
+		description="Application mettant à votre disposition diverses informations économiques";
+		price=30800;
 		sides[]={"CIV","WEST","EAST","GUER"};
 	};
 	class FUEL

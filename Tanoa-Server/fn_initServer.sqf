@@ -143,6 +143,37 @@ diag_log "----------------------------------------------------------------------
 diag_log format["Total Execution Time %1 seconds", (diag_tickTime - _timeStamp)];
 diag_log "---------------------------------------------------------------------------------------------------------";
 
+[] spawn {
+	// Save Loop
+	while {true} do {
+		sleep 590;
+		diag_log "[SAVE] Backup in 10 seconds";
+		systemChat "Sauvegarde du serveur dans 10 secondes.";
+		if(gServer_soonReboot)exitWith{};
+		sleep 10;
+		diag_log "[SAVE] Starting backup";
+		systemChat "Début de la sauvegarde.";
+		[] call AlysiaServer_fnc_cleanup_houseStorages;
+		[] spawn AlysiaServer_fnc_cleanup_companyStorages;
+		sleep 10;
+		// Sauvegarde
+		[] call AlysiaServer_fnc_cleanup_deadVehicles;
+		[] call AlysiaServer_fnc_house_save;
+		[false] call AlysiaServer_fnc_vehicles_save;
+		[] call AlysiaServer_fnc_factionsSave;
+		[] call AlysiaServer_fnc_market_save;
+		[] call AlysiaServer_fnc_taxes_save;
+		[] call AlysiaServer_fnc_laboratories_save;
+		[] call AlysiaServer_fnc_companies_save;
+		[] call AlysiaServer_fnc_atm_save;
+		[] call AlysiaServer_fnc_fuel_save;
+		[] call AlysiaServer_fnc_time_save;
+		sleep 1;
+		diag_log "[SAVE] Backup ended";
+		systemChat "Sauvegarde terminé.";
+	};
+};
+
 _nextAnnounceTime = (random(10) + 1) * 60;
 while {true} do
 {
@@ -177,7 +208,7 @@ while {true} do
 	{
 		_nextAnnounceTime = time + (round(random(10) + 1) * 60);
 
-		[
+		/*[
 			([
 				"ant_1",
 				"ant_2",
@@ -193,6 +224,6 @@ while {true} do
 				"ant_12",
 				"ant_13"
 			] call BIS_fnc_selectRandom)
-		] remoteExecCall ["AlysiaClient_fnc_border_south_sounds", -2];
+		] remoteExecCall ["AlysiaClient_fnc_border_south_sounds", -2];*/
 	};
 };

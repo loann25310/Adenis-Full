@@ -39,7 +39,8 @@ switch (_app) do
 	case "PHONE_BLACKLIST": {[] call AlysiaClient_fnc_APP_phone_blacklist};
 	case "LICENSES": {[] call AlysiaClient_fnc_APP_licenses};
 	case "FACTION": {[] call AlysiaClient_fnc_APP_faction};
-	case "MARKET": {[] spawn AlysiaClient_fnc_APP_market};
+	case "MARKET": {[false] spawn AlysiaClient_fnc_APP_market};
+	case "MARKET_ENTREPRISE": {[true] spawn AlysiaClient_fnc_APP_market};
 	case "STAFF": {[] call AlysiaClient_fnc_APP_staff};
 	case "FUEL": {[] spawn AlysiaClient_fnc_APP_fuel};
 	case "ANNOUNCES_WRITE": {[] call AlysiaClient_fnc_APP_announces_write};

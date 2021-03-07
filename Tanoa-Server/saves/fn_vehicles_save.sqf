@@ -2,7 +2,8 @@
 	Tanoa-Life RPG
 	Code written by Lyeed
 */
-
+private["_delete"]
+_delete = [_this, 0, true, [true]] call BIS_fnc_param;
 diag_log "[VEHICLES] Saving...";
 
 {
@@ -29,7 +30,9 @@ diag_log "[VEHICLES] Saving...";
 					(_x getVariable ["refuel_type", ""])
 				], 1
 			] call ExtDB3_fnc_async;
-			deleteVehicle _x;
+			if (_delete) then {
+				deleteVehicle _x;
+			};
 		};
 	};
 } forEach ((allMissionObjects "LandVehicle") + (allMissionObjects "Air") + (allMissionObjects "Ship"));

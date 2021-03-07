@@ -245,18 +245,49 @@ class ADENIS_FARMING_PLANT_OBJETCS
 	};
 	class Tree_Grape_Rouge
 	{
-		receive[]={{"raisin_red",5,1}};
+		receive[]={{"raisin_red",15,5}};
 		seed="raisin_black_seed";
 		distance=2;
-		growingTime=410;
+		growingTime=320;
 		groundLevel=1.2;
 		upLevel=1.1;
 		extraGrow=70;
 	};
 	class Tree_Grape_Blanc: Tree_Grape_Rouge
 	{
-		receive[]={{"raisin_white",5,1}};
+		receive[]={{"raisin_white",15,5}};
 		seed="raisin_white_seed";
+	};
+
+	//Riz
+	class b_Sugarcane_sapling_single
+	{
+		receive[]={{"riz",6,1}};
+		seed="riz_seed";
+		distance=3;
+		growingTime=120;
+		groundLevel=1.3;
+		upLevel=1.3;
+		extraGrow=50;
+	};
+
+	//Gentiane
+	class c_GrassDryCarduus_f
+	{
+		receive[]={{"gentiane",6,1}};
+		seed="gentiane_seed";
+		distance=3;
+		growingTime=120;
+		groundLevel=1;
+		upLevel=1;
+		extraGrow=50;
+	};
+
+	//Anis
+	class Plant_anis : c_GrassDryCarduus_f
+	{
+		receive[]={{"anis",6,1}};
+		seed="anis_seed";
 	};
 };
 

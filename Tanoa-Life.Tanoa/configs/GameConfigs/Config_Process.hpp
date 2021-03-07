@@ -2343,7 +2343,293 @@ class ADENIS_PROCESS
 			class GUER {};
 		};
 	};
-	/* ====================================== company_coffee ====================================== */
+
+	class assembling_gin
+	{
+		name="Assemblage (gin)";
+		sound="cooking";
+		class require
+		{
+			items_virtual[]={{"corn",1},{"orge",2}};
+		};
+		class receive
+		{
+			items_virtual[]={{"Tonneau_gin",1}};
+		};
+		time_per_item=2;
+		time_default=2;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_rhum"};
+			};
+		};
+	};
+
+	class ginp
+	{
+		name="Mise en bouteille du gin";
+		sound="salt_process";
+		class require
+		{
+			items_virtual[]={{"Tonneau_gin",1},{"bouteillevide",1}};
+		};
+		class receive
+		{
+			items_virtual[]={{"gin",1}};
+		};
+		time_per_item=2;
+		time_default=2;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_rhum"};
+			};
+		};
+	};
+
+	class assembling_sake : assembling_gin
+	{
+		name="Assemblage (sake)";
+		class require
+		{
+			items_virtual[]={{"corn",1}};
+		};
+		class receive
+		{
+			items_virtual[]={{"Tonneau_sake",1}};
+		};
+	};
+
+	class sakep : ginp
+	{
+		name="Mise en bouteille du sake";
+		class require
+		{
+			items_virtual[]={{"Tonneau_sake",1},{"bouteillevide",1}};
+		};
+		class receive
+		{
+			items_virtual[]={{"sake",1}};
+		};
+	};
+
+	class assembling_ricard : assembling_gin
+	{
+		name="Assemblage (ricard)";
+		class require
+		{
+			items_virtual[]={{"anis",1}};
+		};
+		class receive
+		{
+			items_virtual[]={{"Tonneau_ricard",1}};
+		};
+	};
+
+	class ricardp : ginp
+	{
+		name="Mise en bouteille du ricard";
+		class require
+		{
+			items_virtual[]={{"Tonneau_ricard",1},{"bouteillevide",1}};
+		};
+		class receive
+		{
+			items_virtual[]={{"ricard",1}};
+		};
+	};
+
+	class assembling_vodka : assembling_gin
+	{
+		name="Assemblage (vodka)";
+		class require
+		{
+			items_virtual[]={{"corn",1},{"orge",2},{"patate",1}};
+		};
+		class receive
+		{
+			items_virtual[]={{"Tonneau_vodka",1}};
+		};
+	};
+
+	class vodkap : ginp
+	{
+		name="Mise en bouteille de la vodka";
+		class require
+		{
+			items_virtual[]={{"Tonneau_vodka",1},{"bouteillevide",1}};
+		};
+		class receive
+		{
+			items_virtual[]={{"vodka",1}};
+		};
+	};
+
+	class assembling_suze : assembling_gin
+	{
+		name="Assemblage (suze)";
+		class require
+		{
+			items_virtual[]={{"gentiane",2}};
+		};
+		class receive
+		{
+			items_virtual[]={{"Tonneau_suze",1}};
+		};
+	};
+
+	class suzep : ginp
+	{
+		name="Mise en bouteille de la suze";
+		class require
+		{
+			items_virtual[]={{"Tonneau_suze",1},{"bouteillevide",1}};
+		};
+		class receive
+		{
+			items_virtual[]={{"suze",1}};
+		};
+	};
+
+	class smectap
+	{
+		name="Confection du Smecta";
+		sound="salt_process";
+		class require
+		{
+			items_virtual[]={{"gentiane",3}};
+		};
+		class receive
+		{
+			items_virtual[]={{"smecta",1}};
+		};
+		time_per_item=2;
+		time_default=2;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_laboratoiremedical"};
+			};
+		};
+	};
+
+	class paracetamolp
+	{
+		name="Confection du Doliprane";
+		sound="salt_process";
+		class require
+		{
+			items_virtual[]={{"corn",3}};
+		};
+		class receive
+		{
+			items_virtual[]={{"doliprane",1}};
+		};
+		time_per_item=2;
+		time_default=2;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_laboratoiremedical"};
+			};
+		};
+	};
+
+	class alcool_testp
+	{
+		name="Création d'Alcool test";
+		sound="salt_process";
+		class require
+		{
+			items_virtual[]={{"iron",2},{"glass",2}};
+		};
+		class receive
+		{
+			items_virtual[]={{"alcool_test",2}};
+		};
+		time_per_item=2;
+		time_default=2;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_laboratoiremedical"};
+			};
+		};
+	};
+
+	class adnp
+	{
+		name="Création de test ADN";
+		sound="salt_process";
+		class require
+		{
+			items_virtual[]={{"iron",2},{"glass",2}};
+		};
+		class receive
+		{
+			items_virtual[]={{"adn",2}};
+		};
+		time_per_item=2;
+		time_default=2;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_laboratoiremedical"};
+			};
+		};
+	};
+
+	class scalpelp
+	{
+		name="Création de scalpel";
+		sound="salt_process";
+		class require
+		{
+			items_virtual[]={{"ironp",2},{"steelp",2}};
+		};
+		class receive
+		{
+			items_virtual[]={{"adscalpel",4}};
+		};
+		time_per_item=2;
+		time_default=2;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_laboratoiremedical"};
+			};
+		};
+	};
+	class stethoscopep
+	{
+		name="Création de Stethoscope";
+		sound="salt_process";
+		class require
+		{
+			items_virtual[]={{"ironp",2},{"steelp",2}};
+		};
+		class receive
+		{
+			items_virtual[]={{"stethoscope",4}};
+		};
+		time_per_item=2;
+		time_default=2;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_laboratoiremedical"};
+			};
+		};
+	};	/* ====================================== company_coffee ====================================== */
 	class coffeep
 	{
 		name="Moudre du café";
@@ -4926,6 +5212,36 @@ class ADENIS_PROCESS
 		class receive
 		{
 			items_virtual[]={{"furniturepa",1}};
+		};
+		time_per_item=1;
+		time_default=5;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"emballageressources"};
+			};
+			class WEST
+			{
+				licenses[]={"emballageressources"};
+			};
+			class GUER
+			{
+				licenses[]={"emballageressources"};
+			};
+		};
+	};
+	class emballageressources_cassoulet
+	{
+		name="Usine d'emballage du cassoulet";
+		sound="smelting";
+		class require
+		{
+			items_virtual[]={{"cassoulet",10},{"palette",2}};
+		};
+		class receive
+		{
+			items_virtual[]={{"cassouletemba",1}};
 		};
 		time_per_item=1;
 		time_default=5;

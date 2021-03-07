@@ -14,7 +14,7 @@ class ADENIS_DYN_MARKERS
 		distance=20;
 		class shop
 		{
-			price=1000000;
+			price=15000000;
 		};
 	};
 	class cannabis_field_marker_1: cocaine_field_marker_1
@@ -22,7 +22,7 @@ class ADENIS_DYN_MARKERS
 		text="Champ de cannabis";
 		class shop
 		{
-			price=300000;
+			price=2000000;
 		};
 	};
 	class meth_field_marker_1: cocaine_field_marker_1
@@ -30,7 +30,7 @@ class ADENIS_DYN_MARKERS
 		text="Champ d'ephedra";
 		class shop
 		{
-			price=1200000;
+			price=20000000;
 		};
 	};
 	class heroin_field_marker_1: cocaine_field_marker_1
@@ -38,7 +38,7 @@ class ADENIS_DYN_MARKERS
 		text="Champ de pavot";
 		class shop
 		{
-			price=1000000;
+			price=15000000;
 		};
 	};
 	class mushroom_field_marker_1: cocaine_field_marker_1
@@ -47,7 +47,7 @@ class ADENIS_DYN_MARKERS
 		positions="mushroom";
 		class shop
 		{
-			price=300000;
+			price=2000000;
 		};
 	};
 
@@ -67,7 +67,7 @@ class ADENIS_DYN_MARKERS
 		distance=5;
 		class shop
 		{
-			price=300000;
+			price=6000000;
 		};
 	};
 	class blackMarket_marker_2: blackMarket_marker_1
@@ -91,7 +91,7 @@ class ADENIS_DYN_MARKERS
 		distance=5;
 		class shop
 		{
-			price=300000;
+			price=1000000;
 		};
 	};
 	class cars_seller_marker_2: cars_seller_marker_1
@@ -133,7 +133,7 @@ class ADENIS_DYN_MARKERS
 		distance=20;
 		class shop
 		{
-			price=200000;
+			price=2000000;
 		};
 	};
 	class renovation_marker
@@ -150,7 +150,7 @@ class ADENIS_DYN_MARKERS
 		distance=5;
 		class shop
 		{
-			price=200000;
+			price=2000000;
 		};
 	};
 
@@ -168,7 +168,7 @@ class ADENIS_DYN_MARKERS
 		distance=20;
 		class shop
 		{
-			price=60000;
+			price=2000000;
 		};
 	};
 
@@ -187,7 +187,7 @@ class ADENIS_DYN_MARKERS
 		distance=5;
 		class shop
 		{
-			price=400000;
+			price=5000000;
 		};
 	};
 
@@ -223,7 +223,7 @@ class ADENIS_DYN_MARKERS
 		distance=20;
 		class shop
 		{
-			price=300000;
+			price=2000000;
 		};
 	};
 

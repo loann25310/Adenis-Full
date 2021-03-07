@@ -3,8 +3,8 @@ class ADENIS_HORN
 	class east
 	{
 		item="horn_east";
-		sound="sirene_east";
-		sleep=4;
+		sound="siren_ant_1";
+		sleep=4.885;
 	};
 	class guer
 	{

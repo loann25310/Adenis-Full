@@ -107,6 +107,16 @@ _global_apps =
 			(player distance (getMarkerPos 'HV_2') < 20))
 		"
 	],[
+		"Alysia_Client_Texture\Data\tablet\applications\app_market.paa",
+		"Alysia_Client_Texture\Data\tablet\applications\app_market_select.paa",
+		"['MARKET_ENTREPRISE'] spawn AlysiaClient_fnc_tabletApp;",
+		"Bourse Entreprise",
+		"
+			('MARKET_ENTREPRISE' in g_apps) ||
+			((player distance (getMarkerPos 'HV_1') < 20) ||
+			(player distance (getMarkerPos 'HV_2') < 20))
+		"
+	],[
 		"Alysia_Client_Texture\Data\tablet\applications\app_fuel.paa",
 		"Alysia_Client_Texture\Data\tablet\applications\app_fuel_select.paa",
 		"['FUEL'] spawn AlysiaClient_fnc_tabletApp;",

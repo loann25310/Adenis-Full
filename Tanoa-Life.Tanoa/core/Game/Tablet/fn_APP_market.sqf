@@ -2,7 +2,8 @@
 	Tanoa-Life RPG
 	Code written by Lyeed
 */
-private["_display", "_list", "_event_ctrl", "_res"];
+private["_display", "_list", "_event_ctrl", "_res","_onlyEntreprise"];
+_onlyEntreprise = [_this, 0, false, [false]] call BIS_fnc_param;
 
 disableSerialization;
 _display = uiNamespace getVariable ["tablet", displayNull];

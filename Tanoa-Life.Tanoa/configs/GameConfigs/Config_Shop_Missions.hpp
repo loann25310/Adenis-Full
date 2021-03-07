@@ -5,7 +5,7 @@ class ADENIS_MISSIONS
 		name="Convoi de l'Amerloque";
 		sides[]={"CIV"};
 		condition="(true)";
-		price=15000000;
+		price=30000000;
 		vehicle="Diablo_Coffre_Large";
 		count_per_reboot=-1;
 		max_delivery_time=30;
@@ -87,7 +87,7 @@ class ADENIS_MISSIONS
 		name="Convoi de Blanchito";
 		sides[]={"CIV"};
 		condition="(true)";
-		price=5000000;
+		price=10000000;
 		vehicle="Diablo_Coffre_Large";
 		count_per_reboot=-1;
 		max_delivery_time=30;

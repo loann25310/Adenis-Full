@@ -6,10 +6,11 @@ private["_config"];
 
 _config = ("getText(_x >> 'uid') isEqualTo (getPlayerUID player)" configClasses (missionConfigFile >> "ADENIS_STAFF" >> "members")) select 0;
 if (isNil "_config") exitWith {};
+if (g_firstCombatActive) exitWith {};
 
 g_staff_esp = true;
 
-while {g_staff_esp} do
+while {g_staff_esp && !g_firstCombatActive} do
 {
 	_eventHandler = addMissionEventHandler ["Draw3D",
 
@@ -42,24 +43,5 @@ while {g_staff_esp} do
 
 	uiSleep 1;
 };
-
-private["_players", "_markers"];
-_players = [];
-_markers = [];
-{
-	if ((isPlayer _x) && (alive _x)) then {
-		_players pushBack _x;
-	};
-} foreach (playableUnits);
-
-{
-	private["_marker"];
-	_marker = createMarkerLocal [format["%1_admin_marker", (name _x)], (visiblePosition _x)];
-	_marker setMarkerColorLocal ([side _x, true] call BIS_fnc_sideColor);
-	_marker setMarkerShapeLocal "ICON";
-	_marker setMarkerTypeLocal "Mil_dot";
-	_marker setMarkerTextLocal format["%1", (_x getVariable["realname", (name _x)])];
-	_markers pushBack [_marker, _x];
-} forEach (_players);
 
 g_staff_markers = false;

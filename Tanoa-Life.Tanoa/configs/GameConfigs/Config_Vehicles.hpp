@@ -522,7 +522,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={"driver"};
-		fuel="Diesel";
+		fuel="SP95";
 		fuelCapacity=60;
 		colors[]=
 		{
@@ -553,7 +553,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={"driver"};
-		fuel="Diesel";
+		fuel="SP98";
 		fuelCapacity=60;
 		colors[]=
 		{
@@ -584,7 +584,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={"driver"};
-		fuel="Diesel";
+		fuel="SP95";
 		fuelCapacity=45;
 		colors[]=
 		{
@@ -753,7 +753,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={"driver"};
-		fuel="Diesel";
+		fuel="SP98";
 		fuelCapacity=83;
 		colors[]=
 		{
@@ -803,7 +803,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={"company_press","driver"};
-		fuel="Diesel";
+		fuel="SP98";
 		fuelCapacity=84;
 		colors[]={};
 	};	
@@ -816,7 +816,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={"driver"};
-		fuel="Diesel";
+		fuel="SP95";
 		fuelCapacity=55;
 		colors[]=
 		{
@@ -848,7 +848,7 @@ class ADENIS_VEHICLES
 		insurance=0;
 		disableOwnerInfos=1;
 		licenses[]={"rebelle_1"};
-		fuel="Diesel";
+		fuel="SP98";
 		fuelCapacity=70;
 		colors[]=
 		{
@@ -941,7 +941,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={"driver","company_transport_people"};
-		fuel="Diesel";
+		fuel="SP95";
 		fuelCapacity=120;
 		colors[]=
 		{
@@ -1476,7 +1476,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={"driver"};
-		fuel="Diesel";
+		fuel="SP95";
 		fuelCapacity=40;
 		colors[]=
 		{
@@ -1507,7 +1507,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={"driver"};
-		fuel="Diesel";
+		fuel="SP98";
 		fuelCapacity=33;
 		colors[]=
 		{
@@ -4666,7 +4666,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=0;
 		licenses[]={"rebelle_1"};
-		fuel="Diesel";
+		fuel="SP98";
 		fuelCapacity=100;
 		disableOwnerInfos=1;
 	};
@@ -4679,7 +4679,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=0;
 		licenses[]={"rebelle_1"};
-		fuel="Diesel";
+		fuel="SP95";
 		fuelCapacity=100;
 		disableOwnerInfos=1;
 	};
@@ -4705,7 +4705,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=0;
 		licenses[]={"rebelle_1"};
-		fuel="Diesel";
+		fuel="SP98";
 		fuelCapacity=100;
 		disableOwnerInfos=1;
 	};		
@@ -4719,7 +4719,7 @@ class ADENIS_VEHICLES
 		insurance=0;
 		disableOwnerInfos=1;
 		licenses[]={"rebelle_1"};
-		fuel="Diesel";
+		fuel="SP95";
 		fuelCapacity=100;
 	};
 
@@ -4841,7 +4841,7 @@ class ADENIS_VEHICLES
 	{
 		realname="MTVR Extension non couvert";
 		buyPrice=595900;
-		inventory=200;
+		inventory=500;
   		licenses[]={"rebelle_1"};
 	};
 	class DAR_LHS_16: DAR_4X4
@@ -5289,7 +5289,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={"driver"};
-		fuel="Diesel";
+		fuel="SP98";
 		fuelCapacity=91;
 		colors[]=
 		{
@@ -5412,7 +5412,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={"driver"};
-		fuel="Diesel";
+		fuel="SP95";
 		fuelCapacity=65;
 		colors[]=
 		{
@@ -6795,11 +6795,11 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={"truck"};
-		fuel="Diesel";
+		fuel="SP98";
 		fuelCapacity=82;
 	};
 
-	class AM_M939A2_chris20215_m939
+	/*class AM_M939A2_chris20215_m939
 	{
 		realname="AM général";
 		buyPrice=200000;
@@ -6807,7 +6807,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={"truck"};
-		fuel="Diesel";
+		fuel="SP95";
 		fuelCapacity=95;
 		colors[]=
 		{
@@ -6824,7 +6824,7 @@ class ADENIS_VEHICLES
 	class AM_M939A2_chris20215_kaki_1: AM_M939A2_chris20215_m939 {};
 	class AM_M939A2_chris20215_bleu_aly: AM_M939A2_chris20215_m939 {};
 	class AM_M939A2_chris20215_vert: AM_M939A2_chris20215_m939 {};
-	class AM_M939A2_chris20215_black: AM_M939A2_chris20215_m939 {};	
+	class AM_M939A2_chris20215_black: AM_M939A2_chris20215_m939 {};	*/
 	
 	class C_Truck_02_covered_F
 	{
@@ -6908,7 +6908,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={};
-		fuel="Diesel";
+		fuel="SP98";
 		fuelCapacity=84;
 	};
 
@@ -6920,7 +6920,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={};
-		fuel="Diesel";
+		fuel="SP95";
 		fuelCapacity=84;
 	};
 
@@ -6944,7 +6944,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={};
-		fuel="Diesel";
+		fuel="SP98";
 		fuelCapacity=84;
 	};
 
@@ -6968,7 +6968,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={};
-		fuel="Diesel";
+		fuel="SP95";
 		fuelCapacity=84;
 	};
 
@@ -6980,7 +6980,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={};
-		fuel="Diesel";
+		fuel="SP98";
 		fuelCapacity=84;
 	};
 
@@ -6992,7 +6992,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={};
-		fuel="Diesel";
+		fuel="SP95";
 		fuelCapacity=84;
 	};
 
@@ -7004,7 +7004,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={};
-		fuel="Diesel";
+		fuel="SP98";
 		fuelCapacity=84;
 	};
 
@@ -7028,7 +7028,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={};
-		fuel="Diesel";
+		fuel="SP95";
 		fuelCapacity=84;
 	};
 
@@ -7052,7 +7052,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={};
-		fuel="Diesel";
+		fuel="SP98";
 		fuelCapacity=84;
 	};
 
@@ -7076,7 +7076,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={};
-		fuel="Diesel";
+		fuel="SP95";
 		fuelCapacity=84;
 	};
 
@@ -7088,7 +7088,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={};
-		fuel="Diesel";
+		fuel="SP98";
 		fuelCapacity=84;
 	};
 
@@ -7100,7 +7100,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={};
-		fuel="Diesel";
+		fuel="SP95";
 		fuelCapacity=84;
 	};
 
@@ -7148,7 +7148,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={};
-		fuel="Diesel";
+		fuel="SP98";
 		fuelCapacity=84;
 	};
 
@@ -7160,7 +7160,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={};
-		fuel="Diesel";
+		fuel="SP95";
 		fuelCapacity=84;
 	};
 
@@ -7196,7 +7196,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={};
-		fuel="Diesel";
+		fuel="SP98";
 		fuelCapacity=84;
 	};
 
@@ -7208,7 +7208,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={};
-		fuel="Diesel";
+		fuel="SP95";
 		fuelCapacity=84;
 	};
 
@@ -7244,7 +7244,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={};
-		fuel="Diesel";
+		fuel="SP98";
 		fuelCapacity=84;
 	};
 
@@ -7256,7 +7256,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={};
-		fuel="Diesel";
+		fuel="SP95";
 		fuelCapacity=84;
 	};
 
@@ -7280,7 +7280,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={};
-		fuel="Diesel";
+		fuel="SP98";
 		fuelCapacity=84;
 	};
 
@@ -7304,7 +7304,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={};
-		fuel="Diesel";
+		fuel="SP95";
 		fuelCapacity=84;
 	};
 
@@ -7340,7 +7340,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={};
-		fuel="Diesel";
+		fuel="SP98";
 		fuelCapacity=84;
 	};
 
@@ -7352,7 +7352,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={};
-		fuel="Diesel";
+		fuel="SP95";
 		fuelCapacity=84;
 	};
 
@@ -7364,7 +7364,7 @@ class ADENIS_VEHICLES
 		side="CIV";
 		insurance=1;
 		licenses[]={};
-		fuel="Diesel";
+		fuel="SP98";
 		fuelCapacity=84;
 	};
 

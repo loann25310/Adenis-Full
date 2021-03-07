@@ -139,23 +139,15 @@ class ADENIS_SHOPS_VIRTUAL
 			"chantilly",
 			"firework",
 			"peinture",
-			"champagne",
-			"rhum",
-			"sake",
-			"tequila",
-			"gin",
-			"absinthe",
-			"ricard",
-			"Jagermeister",
-			"malibu",
-			"banana_liqueur",
-			"bourbon",
-			"beer",
-			"Whisky",
-			"wine_red",
-			"wine_white",
-			"wine_pinked",
-			"villagoise"
+			"shotalcool",
+			"riz_seed",
+			"patate_seed",
+			"gentiane_seed",
+			"anis_seed",
+			"tomato_seed",
+			"pumpkin_seed",
+			"zucchini_seed",
+			"sunflower_seed"
 		};
 		sell[]=
 		{
@@ -216,18 +208,108 @@ class ADENIS_SHOPS_VIRTUAL
 			"cone",
 			"barriere",
 			"horn_guer",
-			"alcool_test",
-			"adn",
-			"stethoscope",
-			"scalpel",
 			"brancard",
 			"medoc_rhume",
 			"medoc_toux_1",
 			"medoc_toux_2",
 			"medoc_depression"
+			};
+		sell[]=
+		{
+			"smecta",
+			"doliprane"
 		};
 	};
-
+	//////////////////////////////////Moderation/////////////////////////////
+	class adminshop
+	{
+		name="Shop Modération";
+		side="CIV";
+		buy[]=
+		{
+			"oilu",
+			"barriere",
+			"barriere3",
+			"cone",
+			"coneflash",
+			"tmpgauche",
+			"tmpdroite",
+			"p50temp",
+			"p30temp",
+			"raisin_black_seed",
+			"raisin_white_seed",
+			"olive_seed",
+			"houblon_seed",
+			"orge_seed",
+			"yeast",
+			"egg",
+			"butter",
+			"salt",
+			"milk",
+			"pork",
+			"beef",
+			"pouletcook",
+			"frite",
+			"caviar",
+			"fraise",
+			"burger",
+			"kebab",
+			"lasagne",
+			"macaron",
+			"carbo",
+			"purer",
+			"saucisson",
+			"bolo",
+			"homar",
+			"langouste",
+			"chantilly",
+			"firework",
+			"peinture",
+			"shotalcool",
+			"marijuana",
+			"methp",
+			"heroinps",
+			"cocainepc",
+			"mushroom_bocal",
+			"cacaop",
+			"tabchoco",
+			"cassoulet",
+			"coffeec",
+			"sugar",
+			"rare_earth",
+			"champagne",
+			"rhum",
+			"beer",
+			"glass"
+			"ironp",
+			"soufre",
+			"steelp",
+			"cigarette",
+			"furniture",
+			"cottonp",
+			"wood",
+			"woodp",
+			"amethyste",
+			"saphir",
+			"topaze",
+			"volcano",
+			"artefact_R",
+			"artefact",
+			"objvaleur",
+			"turtle",
+			"cigare",
+			"corail",
+			"handcuffs",
+			"handcuffkeys",
+			"nitro",
+			"cannabis_seed",
+			"lab_marijuana",
+			"heroin_seed",
+			"cocaine_seed",
+			"meth_seed",
+			"mushroom_seed"
+		};
+	};
 	/* RESSOURCES */
 	class dealer
 	{
@@ -265,7 +347,8 @@ class ADENIS_SHOPS_VIRTUAL
 		name="Commerçant d'alcool";
 		sell[]={
 			"champagne",
-			"rhum"
+			"rhum",
+			"beer"
 		};
 	};
 	class glass: dealer

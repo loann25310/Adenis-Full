@@ -205,6 +205,15 @@ if (hasInterface) then
 	    };
 	};
 
+	[
+		["UpdateDetails","Le RP peut revivre"],
+		["UpdateState","Joue sur AdenisRP"],
+		["UpdateLargeImageKey","logo_adenis"],
+		["UpdateLargeImageText","ts.adenisrp.fr"],
+		["UpdateSmallImageKey",""],
+		["UpdateSmallImageText",""]
+	] call DiscordRichPresence_fnc_update;
+
 	diag_log "---------------------------------------------------------------------------------------------------------";
 	diag_log format["              End of Client Init :: Total Execution Time %1 seconds ", (diag_tickTime - _timeStamp)];
 	diag_log "---------------------------------------------------------------------------------------------------------";

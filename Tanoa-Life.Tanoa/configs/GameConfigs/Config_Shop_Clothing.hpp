@@ -926,7 +926,9 @@ class ADENIS_SHOPS_CLOTHING
 			"Skyline_Uniforme_Securite_01_F",
 			"Skyline_Uniforme_Securite_02_F",
 			"Skyline_Uniforme_Securite_03_F",
-			"TRYK_U_B_BLK3CD"
+			"TRYK_U_B_BLK3CD",
+			"B_Wh_BLK_ROLLUP_soldier_F"
+
 		};
 		goggles[]={
 			"G_Balaclava_TI_blk_F"
@@ -934,7 +936,9 @@ class ADENIS_SHOPS_CLOTHING
 		headgear[]=
 		{
 			"casquette_glr",
-		    "H_Cap_marshal"
+		    "H_Cap_marshal",
+		    "casquettecc",
+			"TRYK_UA_CAP"
 		};
 		vests[]=
 		{
@@ -942,13 +946,16 @@ class ADENIS_SHOPS_CLOTHING
 			"Skyline_Veste_Securite_01_F",
 			"Press_vest",
 			"V_Press_F",
-			"AET_vest"
+			"AET_vest",
+			"TAC_Sheriff_BA_OD"
 		};
 		backpacks[]=
 		{
 			"glr_multi",
+			"tf_rt1523g_black",
 			"Skyline_Sac_Depanneur_01_F",
-			"Alysia_Backpack_FastRepair"
+			"Alysia_Backpack_FastRepair",
+			"EF_BLT_M1"
 		};
 	};
 
@@ -1199,16 +1206,18 @@ class ADENIS_SHOPS_CLOTHING
 		{
 			"Alysia_Casque_East_01",
 			"H_PilotHelmetHeli_O",
-			"Alysia_Beret_East",
+			"JB_ANT_Beret",
+			"JB_ANT_Beret_UJA",
+			"JB_ANT_Beret_GCM",
+			"JB_ANT_Beret_GCP",
+			"JB_ANT_Beret_URTANT",
 			"Alysia_Booniehat_East_01",
-			"Alysia_Calot_East_Recrue",
-			"Alysia_Beret_East_1",
-			"Alysia_Beret_East_2",
-			"H_Beret_CSAT_01_F"
+			"Alysia_Calot_East_Recrue"
 		};
 		vests[]=
 		{
-			"LR_Vest"
+			"LR_Vest",
+			"V_RebreatherB"
 		};
 		backpacks[]=
 		{
@@ -1216,7 +1225,9 @@ class ADENIS_SHOPS_CLOTHING
 		};
 		goggles[]=
 		{
-			"G_O_Diving"
+			"G_O_Diving",
+			"JB_ANT_Brasard_UJA",
+			"JB_ANT_Brasard_Samuel_Invert"
 		};
 	};
 

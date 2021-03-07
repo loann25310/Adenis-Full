@@ -489,8 +489,8 @@ class ADENIS_ITEMS
         entrepriseItem = 1;
         class market
         {
-            max=1000;
-            min=600;
+            max=2500;
+            min=1000;
         };
         class remove {};
     };
@@ -502,8 +502,22 @@ class ADENIS_ITEMS
         entrepriseItem = 1;
         class market
         {
-            max=22000;
+            max=24000;
             min=14000;
+        };
+        class remove {};
+    };
+
+    class cassouletemba
+    {
+        name="Cassoulet Emballé";
+        weight=28;
+        image="Adenis_Textures\carton.paa";
+        entrepriseItem = 1;
+        class market
+        {
+            max=55000;
+            min=45000;
         };
         class remove {};
     };
@@ -1495,7 +1509,10 @@ class ADENIS_ITEMS
 			"B777_ch_emirates",
 			"do228_ch_ac",
 			"Loann_Do228_Lufthansa",
-			"Cocazou_Do228_Swiss"
+			"Cocazou_Do228_Swiss",
+            "Skyline_Vehicule_APEX_RHIB_01_F",
+            "Skyline_Vehicule_APEX_RHIB_02_F",
+            "ANT_RHIB"
         };
         class remove {};
     };
@@ -1983,6 +2000,34 @@ class ADENIS_ITEMS
         class remove {};
     };
 
+    class smecta
+    {
+        name="Boite de Smecta";
+        weight=2;
+        image="Alysia_Client\Textures\Items_virtual\smecta.paa";
+        entrepriseItem = 1;
+        class market
+        {
+            max=2450;
+            min=1000;
+        };
+        class remove {};
+    };
+
+    class doliprane
+    {
+        name="Boite de Doliprane";
+        weight=2;
+        image="Alysia_Client\Textures\Items_virtual\doliprane.paa";
+        entrepriseItem = 1;
+        class market
+        {
+            max=2450;
+            min=1000;
+        };
+        class remove {};
+    };
+
     class millettia
     {
         name="Fleur de Millettia";
@@ -2203,7 +2248,7 @@ class ADENIS_ITEMS
     {
         name="Bouteille de champagne";
         weight=1;
-        image="Alysia_Client\Textures\Items_virtual\champagne.paa";
+        image="Adenis_Textures\champagne.paa";
         entrepriseItem = 1;
         class remove {};
         class food
@@ -2304,7 +2349,7 @@ class ADENIS_ITEMS
         weight=1;
         image="Alysia_Client\Textures\Items_virtual\levure.paa";
         price_buy=10;
-        buy_license_CIV="company_farming";
+        buy_license_CIV="company_rhum";
         class remove {};
     };
     class Malte
@@ -2385,6 +2430,11 @@ class ADENIS_ITEMS
             thirst=30;
             sound="drink_wine";
             alcool=0.09;
+        };
+        class market
+        {
+            max=3344;
+            min=2290;
         };
     };
     //////////////// OLIVE ////////////////
@@ -2911,11 +2961,6 @@ class ADENIS_ITEMS
             sound="drink_wine";
             alcool=0.6;
         };
-        /*class market
-        {
-            max=2917;
-            min=1354;
-        };*/
         class remove {};
     };
     class vodka
@@ -2932,11 +2977,6 @@ class ADENIS_ITEMS
             sound="drink_wine";
             alcool=0.6;
         };
-        /*class market
-        {
-            max=5001;
-            min=2161;
-        };*/
         class remove {};
     };
     class banana_liqueur
@@ -2953,11 +2993,6 @@ class ADENIS_ITEMS
             sound="drink_wine";
             alcool=0.6;
         };
-        /*class market
-        {
-            max=3720;
-            min=2119;
-        };*/
         class remove {};
     };
     class malibu
@@ -2974,11 +3009,6 @@ class ADENIS_ITEMS
             sound="drink_wine";
             alcool=0.6;
         };
-        /*class market
-        {
-            max=4283;
-            min=2332;
-        };*/
         class remove {};
     };
 	class frite
@@ -3032,12 +3062,13 @@ class ADENIS_ITEMS
         weight=1;
         image="Adenis_Textures\shot_alcool.paa";
         price_buy=100;
+        buy_license_CIV="company_cook";
         class food
         {
             hunger=5;
             thirst=5;
             sound="drink_wine";
-            alcool=0.03;
+            alcool=0.13;
         };
         class remove {};
     };
@@ -3221,115 +3252,148 @@ class ADENIS_ITEMS
         };
     };
 
-    class sake
+    class riz_seed
     {
-        name="Bouteille de saké";
-        weight=2;
-        price_buy=80;
-        buy_license_CIV="compagny_cook";
-        price_sell=1097;
-        image="Adenis_Textures\sake.paa";
-        class food
-        {
-            hunger=-5;
-            thirst=25;
-            sound="drink_wine";
-            alcool=0.6;
-        };
+        name="Graine (riz)";
+        weight=1;
+        price_buy=90;
+        image="Adenis_Textures\riz_seed.paa";
+        buy_license_CIV="company_farming";
         class remove {};
     };
 
-    class tequila
+    class riz
     {
-        name="Bouteille de tequila";
-        weight=2;
-        price_buy=80;
-        buy_license_CIV="compagny_cook";
-        price_sell=1097;
-        image="Adenis_Textures\tequila.paa";
-        class food
-        {
-            hunger=-5;
-            thirst=25;
-            sound="drink_wine";
-            alcool=0.6;
-        };
+        name="riz";
+        weight=1;
+        image="Adenis_Textures\riz.paa";
         class remove {};
     };
 
-     class gin
+    class patate_seed : riz_seed
+    {
+        name="Graine (patate)";
+        image="Adenis_Textures\patate_seed.paa";
+    };
+
+    class tomato_seed : riz_seed
+    {
+        name="Graine (tomate)";
+        image="Alysia_Client\Textures\Items_virtual\master_seed.paa";
+    };
+
+    class pumpkin_seed : riz_seed
+    {
+        name="Graine (citrouille)";
+        image="Alysia_Client\Textures\Items_virtual\master_seed.paa";
+    };
+
+    class zucchini_seed : riz_seed
+    {
+        name="Graine (courgette)";
+        image="Alysia_Client\Textures\Items_virtual\master_seed.paa";
+    };
+
+    class sunflower_seed : riz_seed
+    {
+        name="Graine (tournesol)";
+        image="Alysia_Client\Textures\Items_virtual\master_seed.paa";
+    };
+
+    class patate : riz
+    {
+        name="patate";
+        image="Adenis_Textures\patate.paa";
+    };
+
+    class gentiane_seed : riz_seed
+    {
+        name="Graine (gentiane)";
+        image="Adenis_Textures\gentiane_seed.paa";
+    };
+
+    class gentiane : riz
+    {
+        name="gentiane";
+        image="Adenis_Textures\gentiane.paa";
+    };
+
+    class anis_seed : riz_seed
+    {
+        name="Graine (anis)";
+        image="Adenis_Textures\anis_seed.paa";
+    };
+
+    class anis : riz
+    {
+        name="anis";
+        image="Adenis_Textures\anis.paa";
+    };
+
+
+
+    ///// Distillerie //////
+    class Tonneau_gin
+    {
+        name="Tonneau de gin";
+        weight=1;
+        image="Adenis_Textures\tonneau.paa";
+        class remove {};
+    };
+
+    class gin
     {
         name="Bouteille de gin";
-        weight=2;
-        price_buy=80;
-        buy_license_CIV="compagny_cook";
-        price_sell=1097;
+        weight=1;
         image="Adenis_Textures\gin.paa";
+        entrepriseItem = 1;
+        class remove {};
         class food
         {
-            hunger=-5;
-            thirst=25;
+            hunger=0;
+            thirst=35;
             sound="drink_wine";
             alcool=0.6;
         };
-        class remove {};
     };
 
-     class absinthe
+    class Tonneau_sake : Tonneau_gin
     {
-        name="Bouteille de absinthe";
-        weight=2;
-        price_buy=80;
-        buy_license_CIV="compagny_cook";
-        price_sell=1097;
-        image="Adenis_Textures\absinthe.paa";
-        class food
-        {
-            hunger=-5;
-            thirst=25;
-            sound="drink_wine";
-            alcool=0.6;
-        };
-        class remove {};
+        name="Tonneau de sake";
     };
 
-    class ricard
+    class sake : gin
+    {
+        name="Bouteille de saké";
+        image="Adenis_Textures\sake.paa";
+    };
+
+    class Tonneau_ricard : Tonneau_gin
+    {
+        name="Tonneau de ricard";
+    };
+
+    class ricard : gin
     {
         name="Bouteille de ricard";
-        weight=2;
-        price_buy=80;
-        buy_license_CIV="compagny_cook";
-        price_sell=1097;
         image="Adenis_Textures\ricard.paa";
-        class food
-        {
-            hunger=-5;
-            thirst=25;
-            sound="drink_wine";
-            alcool=0.6;
-        };
-        class remove {};
     };
 
-    class Jagermeister
+    class Tonneau_vodka : Tonneau_gin
     {
-        name="Bouteille de Jägermeister";
-        weight=2;
-        price_buy=80;
-        buy_license_CIV="compagny_cook";
-        price_sell=1097;
-        image="Adenis_Textures\jaeger.paa";
-        class food
-        {
-            hunger=-5;
-            thirst=25;
-            sound="drink_wine";
-            alcool=0.6;
-        };
-        class remove {};
+        name="Tonneau de vodka";
     };
 
-        
+    class Tonneau_suze : Tonneau_gin
+    {
+        name="Tonneau de suze";
+    };
+
+    class suze : gin
+    {
+        name="Bouteille de suze";
+        image="Adenis_Textures\suze.paa";
+    };
 
     ///// weapons //////
     class shoulderp

@@ -185,10 +185,10 @@ _sent = 0;
 			_comagnies = [];
 			{
 				_info = _x getVariable ['company_info',['','','']];
-				if ((_info select 2) isEqualTo "cook") then {
+				if ((_info select 2) isEqualTo "garagist") then {
 					_comagnies pushBack _x;
 				};
-			} forEach gServer_companies;
+			} forEach (missionNamespace getVariable ["companies", []]);
 
 			if (count _x == 0) exitWith {};
 
@@ -200,6 +200,7 @@ _sent = 0;
 					};
 				} forEach allPlayers;
 			} forEach _comagnies;
+			_sent = _sent + 1;
 		};
 
 		default

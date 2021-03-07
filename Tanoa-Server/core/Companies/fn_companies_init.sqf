@@ -66,3 +66,5 @@ gServer_companies = [];
 diag_log format["%1 companie(s) loaded", count(gServer_companies)];
 
 diag_log "[COMPANIES] Ready";
+
+missionNamespace setVariable ["companies", gServer_companies, true];

@@ -807,28 +807,6 @@ class ADENIS_LICENSES
 		};
 	};
 
-	class east_tank
-	{
-		name="Formation d'équipage de blindé";
-		class factions
-		{
-			class EAST
-			{
-				search_shown[]={"WEST","EAST"};
-			};
-		};
-	};
-	class east_tank_resp
-	{
-		name="Responsable formation d'équipage de blindé";
-		class factions
-		{
-			class EAST
-			{
-				search_shown[]={"WEST","EAST"};
-			};
-		};
-	};
 	class east_medic
 	{
 		name="Formation d'infirmier de terrain";
@@ -843,28 +821,6 @@ class ADENIS_LICENSES
 	class east_medic_resp
 	{
 		name="Responsable formation d'infirmier de terrain";
-		class factions
-		{
-			class EAST
-			{
-				search_shown[]={"WEST","EAST"};
-			};
-		};
-	};
-	class east_fm
-	{
-		name="Formation de fusilier mitrailleur";
-		class factions
-		{
-			class EAST
-			{
-				search_shown[]={"WEST","EAST"};
-			};
-		};
-	};
-	class east_fm_resp
-	{
-		name="Responsable formation de fusilier mitrailleur";
 		class factions
 		{
 			class EAST
@@ -979,6 +935,116 @@ class ADENIS_LICENSES
 	class east_ope_radio_resp
 	{
 		name="Responsable de formation opérateur radio";
+		class factions
+		{
+			class EAST
+			{
+				search_shown[]={"WEST","EAST"};
+			};
+		};
+	};
+	class east_gcp
+	{
+		name="Formation GCP";
+		class factions
+		{
+			class EAST
+			{
+				search_shown[]={"WEST","EAST"};
+			};
+		};
+	};
+	class east_gcp_resp
+	{
+		name="Responsable de formation GCP";
+		class factions
+		{
+			class EAST
+			{
+				search_shown[]={"WEST","EAST"};
+			};
+		};
+	};
+	class east_gcm
+	{
+		name="Formation GCM";
+		class factions
+		{
+			class EAST
+			{
+				search_shown[]={"WEST","EAST"};
+			};
+		};
+	};
+	class east_gcm_resp
+	{
+		name="Responsable de formation GCM";
+		class factions
+		{
+			class EAST
+			{
+				search_shown[]={"WEST","EAST"};
+			};
+		};
+	};
+	class east_urtant
+	{
+		name="Formation URTANT";
+		class factions
+		{
+			class EAST
+			{
+				search_shown[]={"WEST","EAST"};
+			};
+		};
+	};
+	class east_urtant_resp
+	{
+		name="Responsable de formation URTANT";
+		class factions
+		{
+			class EAST
+			{
+				search_shown[]={"WEST","EAST"};
+			};
+		};
+	};
+	class east_uja
+	{
+		name="Formation UJA";
+		class factions
+		{
+			class EAST
+			{
+				search_shown[]={"WEST","EAST"};
+			};
+		};
+	};
+	class east_uja_resp
+	{
+		name="Responsable de formation UJA";
+		class factions
+		{
+			class EAST
+			{
+				search_shown[]={"WEST","EAST"};
+			};
+		};
+	};
+	class east_upg
+	{
+		name="Formation UPG";
+		class factions
+		{
+			class EAST
+			{
+				search_shown[]={"WEST","EAST"};
+			};
+		};
+	};
+	class east_upg_resp
+	{
+		name="Responsable de formation UPG";
 		class factions
 		{
 			class EAST
