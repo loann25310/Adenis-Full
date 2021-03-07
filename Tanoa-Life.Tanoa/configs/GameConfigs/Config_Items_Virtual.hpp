@@ -402,6 +402,36 @@ class ADENIS_ITEMS
         };
         class remove {};
     };
+    class Coffin_01_F
+    {
+        name="Cercueil bois et or";
+        weight=6;
+        class use
+        {
+            action="['Coffin_01_F'] spawn AlysiaClient_fnc_dynamicObject_deploy;";
+        };
+        class remove {};
+    };
+    class Coffin_02_F
+    {
+        name="Cercueil fer";
+        weight=6;
+        class use
+        {
+            action="['Coffin_02_F'] spawn AlysiaClient_fnc_dynamicObject_deploy;";
+        };
+        class remove {};
+    };
+    class Coffin_02_Flag_F
+    {
+        name="Cercueil bois avec drapeau";
+        weight=6;
+        class use
+        {
+            action="['Coffin_02_Flag_F'] spawn AlysiaClient_fnc_dynamicObject_deploy;";
+        };
+        class remove {};
+    };
     class hedgehog
     {
         name="Hérisson Tchèque";

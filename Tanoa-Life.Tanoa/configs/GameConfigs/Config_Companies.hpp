@@ -451,6 +451,37 @@ class ADENIS_COMPANIES_TYPES
 		};
 	};
 
+	class morgue
+	{
+		name="Service Mortuaire";
+		price=415000;
+		building="Land_Entreprise01_F";
+		license="company_morgue";
+		image="Alysia_Client_Texture\Data\companies\types\location_sea.paa";
+		members_max=15;
+		salary=158;
+		ticket=1;
+		class process
+		{
+			posDistance=2.5;
+			modelPos[]={6.28711,0.510254,0.528652};
+			list[]=
+			{
+				"cercueilpboisp",
+				"cercueilpferp",
+				"cercueilpboisdrapp"
+			};
+		};
+		class storage
+		{
+			type="Diablo_Coffre_Extra";
+		};
+		class garage
+		{
+			types[]={"Car"};
+		};
+	};
+
 	class compagnie_airienne
 	{
 		name="Compagnie Aérienne";

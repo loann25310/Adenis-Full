@@ -88,6 +88,21 @@ class ADENIS_DYN_OBJECTS
 		item="hedgehog";
 		attachTo[]={0,3.5,0};
 	};
+	class Coffin_01_F
+	{
+		item="Coffin_01_F";
+		attachTo[]={0,3.5,0};
+	};
+	class Coffin_02_F
+	{
+		item="Coffin_02_F";
+		attachTo[]={0,3.5,0};
+	};
+	class Coffin_02_Flag_F
+	{
+		item="Coffin_02_Flag_F";
+		attachTo[]={0,3.5,0};
+	};
 	class Wooden_Watchtower_F
 	{
 		item="watchtower_wood";

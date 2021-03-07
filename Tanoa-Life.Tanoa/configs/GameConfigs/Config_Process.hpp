@@ -485,6 +485,81 @@ class ADENIS_PROCESS
 			class GUER {};
 		};
 	};
+	class cercueilpboisp
+	{
+		name="Construction d'un cercueil en bois et or";
+		sound="salt_process";
+		time_per_item=2;
+		time_default=5;
+		class require
+		{
+			items_virtual[]={{"woodp",10}};
+		};
+		class receive
+		{
+			items_virtual[]={{"Coffin_01_F",1}};
+		};
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_morgue"};
+			};
+			class WEST {};
+			class EAST {};
+			class GUER {};
+		};
+	};
+	class cercueilpferp
+	{
+		name="Construction d'un cercueil en fer";
+		sound="salt_process";
+		time_per_item=2;
+		time_default=5;
+		class require
+		{
+			items_virtual[]={{"ironp",10}};
+		};
+		class receive
+		{
+			items_virtual[]={{"Coffin_02_F",1}};
+		};
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_morgue"};
+			};
+			class WEST {};
+			class EAST {};
+			class GUER {};
+		};
+	};
+	class cercueilpboisdrapp
+	{
+		name="Construction d'un cercueil en bois avec un drapeau";
+		sound="salt_process";
+		time_per_item=2;
+		time_default=5;
+		class require
+		{
+			items_virtual[]={{"ironp",10},{"cottonp",10}};
+		};
+		class receive
+		{
+			items_virtual[]={{"Coffin_02_Flag_F",1}};
+		};
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_morgue"};
+			};
+			class WEST {};
+			class EAST {};
+			class GUER {};
+		};
+	};
 	class bouteille
 	{
 		name="Fonte du verre en Bouteille";
