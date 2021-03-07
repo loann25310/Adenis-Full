@@ -488,6 +488,7 @@ class ADENIS_ITEMS
         name="Graine (tabac)";
         weight=1;
         price_buy=80;
+        canUseByTractor = 1;
         image="Alysia_Client\Textures\Items_virtual\master_seed.paa";
         class remove {};
     };
@@ -1006,6 +1007,7 @@ class ADENIS_ITEMS
         name="Graine (haricot)";
         weight=1;
         price_buy=18;
+        canUseByTractor = 1;
         image="Alysia_Client\Textures\Items_virtual\master_seed.paa";
         class remove {};
     };
@@ -1052,6 +1054,7 @@ class ADENIS_ITEMS
         name="Graine (maïs)";
         weight=1;
         price_buy=17;
+        canUseByTractor = 1;
         image="Alysia_Client\Textures\Items_virtual\master_seed.paa";
         class remove {};
     };
@@ -1078,6 +1081,7 @@ class ADENIS_ITEMS
         name="Graine (blé)";
         weight=1;
         price_buy=8;
+        canUseByTractor = 1;
         image="Alysia_Client\Textures\Items_virtual\master_seed.paa";
         class remove {};
     };
@@ -1112,6 +1116,7 @@ class ADENIS_ITEMS
         name="Graine (coton)";
         weight=1;
         price_buy=50;
+        canUseByTractor = 1;
         image="Alysia_Client\Textures\Items_virtual\master_seed.paa";
         class remove {};
     };
@@ -1896,6 +1901,7 @@ class ADENIS_ITEMS
         name="Graine (Café)";
         weight=1;
         price_buy=15;
+        canUseByTractor = 1;
         image="Alysia_Client\Textures\Items_virtual\master_seed.paa";
         class remove {};
     };
@@ -2167,6 +2173,7 @@ class ADENIS_ITEMS
         name="Graine (raisin noir)";
         weight=1;
         price_buy=90;
+        canUseByTractor = 1;
         image="Alysia_Client\Textures\Items_virtual\Master_seed.paa";
         buy_license_CIV="company_farming";
         class remove {};
@@ -2223,6 +2230,7 @@ class ADENIS_ITEMS
         name="Graine (raisin blanc)";
         weight=1;
         price_buy=90;
+        canUseByTractor = 1;
         image="Alysia_Client\Textures\Items_virtual\Master_seed.paa";
         buy_license_CIV="company_farming";
         class remove {};
@@ -2362,6 +2370,7 @@ class ADENIS_ITEMS
         name="Graine (orge)";
         weight=1;
         price_buy=90;
+        canUseByTractor = 1;
         image="Alysia_Client\Textures\Items_virtual\Master_seed.paa";
         buy_license_CIV="company_farming";
         class remove {};
@@ -2423,6 +2432,7 @@ class ADENIS_ITEMS
         name="Graine (houblon)";
         weight=1;
         price_buy=90;
+        canUseByTractor = 1;
         image="Alysia_Client\Textures\Items_virtual\Master_seed.paa";
         buy_license_CIV="company_farming";
         class remove {};
@@ -2473,6 +2483,7 @@ class ADENIS_ITEMS
         name="Graine (olivier)";
         weight=1;
         price_buy=90;
+        canUseByTractor = 1;
         image="Alysia_Client\Textures\Items_virtual\Master_seed.paa";
         buy_license_CIV="company_farming";
         class remove {};
@@ -3287,6 +3298,7 @@ class ADENIS_ITEMS
         name="Graine (riz)";
         weight=1;
         price_buy=90;
+        canUseByTractor = 1;
         image="Adenis_Textures\riz_seed.paa";
         buy_license_CIV="company_farming";
         class remove {};
