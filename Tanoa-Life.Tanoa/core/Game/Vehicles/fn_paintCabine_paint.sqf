@@ -23,7 +23,7 @@ if (!isNull (_config >> "require" >> "items_virtual")) then {
 	{
 		_item = _x # 0;
 		if (!([false, _item, _x # 1] call AlysiaClient_fnc_handleInv)) exitWith {
-			["Vous n'avez pas tout les items nécéssaire !"] call AlysiaClient_fnc_error;
+			["Vous n'avez pas tous les items nécessaires !"] call AlysiaClient_fnc_error;
 		};
 	} forEach _require;
 };

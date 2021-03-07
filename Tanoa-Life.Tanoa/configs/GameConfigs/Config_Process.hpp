@@ -127,7 +127,7 @@ class ADENIS_PROCESS
 			class GUER {};
 		};
 	};
-	
+
 	class heroin
 	{
 		name="Traitement de l'héroine";
@@ -236,7 +236,7 @@ class ADENIS_PROCESS
 			class GUER {};
 		};
 	};
-	
+
 	class marijuana
 	{
 		name="Traitement du cannabis";
@@ -260,7 +260,7 @@ class ADENIS_PROCESS
 			class GUER {};
 		};
 	};
-	class 
+	class
 	{
 		name="Traitement du join de cannabis";
 		sound="smelting";
@@ -476,7 +476,7 @@ class ADENIS_PROCESS
 		};
 		class factions
 		{
-			class CIV 
+			class CIV
 			{
 				licenses[]={"company_glass"};
 			};
@@ -501,7 +501,7 @@ class ADENIS_PROCESS
 		};
 		class factions
 		{
-			class CIV 
+			class CIV
 			{
 				licenses[]={"company_glass"};
 			};
@@ -655,8 +655,8 @@ class ADENIS_PROCESS
 		{
 			items_arma[]={"Alysia_repair_rotor"};
 		};
-	 	time_per_item=15;	
-	};	
+	 	time_per_item=15;
+	};
 	class repair_fuel: iron
 	{
 		name="Fabrication : Reservoir fuel";
@@ -816,7 +816,7 @@ class ADENIS_PROCESS
 		time_default=3;
 	};
 	/* ====================================== company_textile ====================================== */
-	
+
 	class cotton
 	{
 		name="Traitement du cotton";
@@ -873,9 +873,9 @@ class ADENIS_PROCESS
 			class EAST {};
 			class GUER {};
 		};
-	};	
+	};
 
-	class corpo_uniform 
+	class corpo_uniform
 	{
 		name="Uniforme EIT";
 		sound="smelting";
@@ -930,7 +930,7 @@ class ADENIS_PROCESS
 				class EAST {};
 				class GUER {};
 			};
-		};	
+		};
 
 		class corpo_booniehat : corpo_helmet
 		{
@@ -939,7 +939,7 @@ class ADENIS_PROCESS
 			{
 				items_arma[]={"corpo_booniehat"};
 			};
-		};	
+		};
 
 		class corpo_beret_1 : corpo_helmet
 		{
@@ -2116,7 +2116,7 @@ class ADENIS_PROCESS
 	};
 	class rationmilpouletp
 	{
-		name="Préparation des rations militaire au poulet";
+		name="Préparation des rations militaires au poulet";
 		sound="drug_process";
 		class require
 		{
@@ -2138,7 +2138,7 @@ class ADENIS_PROCESS
 	};
 	class rationmilboeufp
 	{
-		name="Préparation des rations militaire au boeuf";
+		name="Préparation des rations militaires au boeuf";
 		sound="drug_process";
 		class require
 		{
@@ -2160,7 +2160,7 @@ class ADENIS_PROCESS
 	};
 	class rationmilporcp
 	{
-		name="Préparation des rations militaire au porc";
+		name="Préparation des rations militaires au porc";
 		sound="drug_process";
 		class require
 		{
@@ -2866,7 +2866,7 @@ class ADENIS_PROCESS
 		};
 		time_per_item=2;
 		time_default=1;
-	}; 
+	};
 
 	class intermediary_barrel: shoulder
 
@@ -2922,7 +2922,7 @@ class ADENIS_PROCESS
 		};
 		time_per_item=3;
 		time_default=1;
-	}; 
+	};
 
 	class military_receiver: shoulder
 	{
@@ -2965,7 +2965,7 @@ class ADENIS_PROCESS
 		time_per_item=3;
 
 		time_default=1;
-	}; 
+	};
 
 	class military_grip: shoulder
 	{
@@ -3007,7 +3007,7 @@ class ADENIS_PROCESS
 		};
 		time_per_item=3;
 		time_default=1;
-	}; 
+	};
 
 	class military_slapper: shoulder
 
@@ -3050,7 +3050,7 @@ class ADENIS_PROCESS
 		};
 		time_per_item=3;
 		time_default=1;
-	}; 
+	};
 
 	class military_frame: shoulder
 	{
@@ -3160,7 +3160,7 @@ class ADENIS_PROCESS
 		};
 		time_per_item=2;
 	};
-	
+
 	/* ====================================== guns ====================================== */
 	class tec9
 	{
@@ -3404,7 +3404,7 @@ class ADENIS_PROCESS
 				licenses[]={"company_gun"};
 			};
 		};
-	};	
+	};
 	class RH_g17: tec9
 	{
 		name="Fabrication : Glock 17";
@@ -3702,7 +3702,7 @@ class ADENIS_PROCESS
 			class GUER {};
 		};
 	};
-	
+
 	class aug_a1
 	{
 		name="Fabrication : AUG A1";
@@ -3725,7 +3725,7 @@ class ADENIS_PROCESS
 			class GUER {};
 		};
 	};
-	
+
 	class mp44: AKM
 	{
 		name="Fabrication : MP 44";
@@ -3833,7 +3833,7 @@ class ADENIS_PROCESS
 		{
 			items_arma[]={"Skyline_Mosin9130_Bayonette_02_F"};
 		};
-	};	
+	};
 	class AK12: AKM
 	{
 		name="Fabrication : AK12";
@@ -4889,7 +4889,7 @@ class ADENIS_PROCESS
 		time_per_item=2;
 	};
 	//Traitements civils
-	
+
 	class conserve: iron
 	{
 		name="Fonte du fer en conserve";

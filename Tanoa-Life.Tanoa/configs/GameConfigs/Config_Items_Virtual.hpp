@@ -961,7 +961,7 @@ class ADENIS_ITEMS
         };
         class remove {};
     };
-    
+
     class fishingpoles
     {
         name="Filet de pêche";
@@ -1296,7 +1296,7 @@ class ADENIS_ITEMS
             min=2000;
         };
     };
-    
+
     class water
     {
         name="Bouteille d'eau";
@@ -1555,7 +1555,7 @@ class ADENIS_ITEMS
         image="Alysia_Client\Textures\Items_virtual\sp95.paa";
         class remove {};
     };
-    
+
     class turtle
     {
         name="Viande de tortue";
@@ -1809,7 +1809,7 @@ class ADENIS_ITEMS
         };
         class remove {};
     };
-    
+
     class tabchoco
     {
         name="Tablette de Chocolat";
@@ -2684,7 +2684,7 @@ class ADENIS_ITEMS
 
     class cuissedepouletcook
     {
-        name="Cuise de poulet";
+        name="Cuisse de poulet";
         weight=2;
         price_buy=200;
         image="";
@@ -3714,7 +3714,7 @@ class ADENIS_ITEMS
         name="Blueprint de Desert Eagle";
         image="Adenis_Textures\patron.paa";
         illegal=1;
-    };    
+    };
     class blueprint_vermin_smg: blueprint_gsh18
     {
         name="Blueprint de Vermin SMG";
@@ -3724,18 +3724,18 @@ class ADENIS_ITEMS
     {
         name="Blueprint de CAR 95";
         image="Adenis_Textures\patron.paa";
-    };    
+    };
     class blueprint_spar_16: blueprint_gsh18
     {
         name="Blueprint de SPAR 16";
         image="Adenis_Textures\patron.paa";
     };
-    class blueprint_hk416: blueprint_gsh18   
-    {        
+    class blueprint_hk416: blueprint_gsh18
+    {
         name="Blueprint de HK416";
         image="Adenis_Textures\patron.paa";
-    };      
-    class blueprint_hk417: blueprint_gsh18      
+    };
+    class blueprint_hk417: blueprint_gsh18
     {
        name="Blueprint de HK417";
        image="Adenis_Textures\patron.paa";
