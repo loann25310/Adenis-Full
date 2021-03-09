@@ -147,7 +147,8 @@ class ADENIS_SHOPS_VIRTUAL
 			"tomato_seed",
 			"pumpkin_seed",
 			"zucchini_seed",
-			"sunflower_seed"
+			"sunflower_seed",
+			"cassouletemba"
 		};
 		sell[]=
 		{

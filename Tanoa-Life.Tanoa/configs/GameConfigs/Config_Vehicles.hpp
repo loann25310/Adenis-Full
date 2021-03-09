@@ -7535,6 +7535,98 @@ class ADENIS_VEHICLES
 		fuel="Kerosene";
 		fuelCapacity=850;
 	};
+
+		class an12bkv3
+	{
+		realname="an12";
+		buyPrice=4000000;
+		inventory=800;
+		side="CIV";
+		insurance=1;
+		licenses[]={"pilot","company_compagnie_airienne"};
+		fuel="Kerosene";
+		fuelCapacity=850;
+	};
+
+	class il18d
+	{
+		realname="il18d";
+		buyPrice=4000000;
+		inventory=800;
+		side="CIV";
+		insurance=1;
+		licenses[]={"pilot","company_compagnie_airienne"};
+		fuel="Kerosene";
+		fuelCapacity=850;
+	};
+
+	class il62m
+	{
+		realname="il62m";
+		buyPrice=4000000;
+		inventory=800;
+		side="CIV";
+		insurance=1;
+		licenses[]={"pilot","company_compagnie_airienne"};
+		fuel="Kerosene";
+		fuelCapacity=850;
+	};
+		class il76td
+	{
+		realname="il76d";
+		buyPrice=4000000;
+		inventory=800;
+		side="CIV";
+		insurance=1;
+		licenses[]={"pilot","company_compagnie_airienne"};
+		fuel="Kerosene";
+		fuelCapacity=850;
+	};
+		class il86
+	{
+		realname="il86";
+		buyPrice=4000000;
+		inventory=800;
+		side="CIV";
+		insurance=1;
+		licenses[]={"pilot","company_compagnie_airienne"};
+		fuel="Kerosene";
+		fuelCapacity=850;
+	};
+		class tu114
+	{
+		realname="tu114";
+		buyPrice=4000000;
+		inventory=800;
+		side="CIV";
+		insurance=1;
+		licenses[]={"pilot","company_compagnie_airienne"};
+		fuel="Kerosene";
+		fuelCapacity=850;
+	};
+		class TU134
+	{
+		realname="tu134";
+		buyPrice=4000000;
+		inventory=800;
+		side="CIV";
+		insurance=1;
+		licenses[]={"pilot","company_compagnie_airienne"};
+		fuel="Kerosene";
+		fuelCapacity=850;
+	};
+	class tu154
+	{
+		realname="tu154";
+		buyPrice=4000000;
+		inventory=800;
+		side="CIV";
+		insurance=1;
+		licenses[]={"pilot","company_compagnie_airienne"};
+		fuel="Kerosene";
+		fuelCapacity=850;
+	};
+
 	class A320_ch_AZ
 	{
 		realname="A320";
