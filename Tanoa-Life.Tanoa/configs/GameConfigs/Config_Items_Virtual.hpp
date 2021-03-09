@@ -1328,7 +1328,7 @@ class ADENIS_ITEMS
         class market
         {
             max=4000;
-            min=2000;
+            min=2500;
         };
     };
 
