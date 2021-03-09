@@ -237,7 +237,7 @@ class ADENIS_DYN_MARKERS
 		linked="launder_stand_1";
 		destroy[]={"WEST","EAST"};
 		destroy_item="destroy_stand";
-		positions="rebels";
+		positions="launder";
 		distance=5;
 	};
 };

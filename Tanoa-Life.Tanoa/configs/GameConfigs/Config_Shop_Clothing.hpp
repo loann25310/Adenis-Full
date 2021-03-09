@@ -926,8 +926,7 @@ class ADENIS_SHOPS_CLOTHING
 			"Skyline_Uniforme_Securite_01_F",
 			"Skyline_Uniforme_Securite_02_F",
 			"Skyline_Uniforme_Securite_03_F",
-			"TRYK_U_B_BLK3CD",
-			"B_Wh_BLK_ROLLUP_soldier_F"
+			"TRYK_U_B_BLK3CD"
 
 		};
 		goggles[]={
@@ -937,8 +936,7 @@ class ADENIS_SHOPS_CLOTHING
 		{
 			"casquette_glr",
 		    "H_Cap_marshal",
-		    "casquettecc",
-			"TRYK_UA_CAP"
+		    "casquettecc"
 		};
 		vests[]=
 		{
@@ -946,16 +944,14 @@ class ADENIS_SHOPS_CLOTHING
 			"Skyline_Veste_Securite_01_F",
 			"Press_vest",
 			"V_Press_F",
-			"AET_vest",
-			"TAC_Sheriff_BA_OD"
+			"AET_vest"
 		};
 		backpacks[]=
 		{
 			"glr_multi",
 			"tf_rt1523g_black",
 			"Skyline_Sac_Depanneur_01_F",
-			"Alysia_Backpack_FastRepair",
-			"EF_BLT_M1"
+			"Alysia_Backpack_FastRepair"
 		};
 	};
 

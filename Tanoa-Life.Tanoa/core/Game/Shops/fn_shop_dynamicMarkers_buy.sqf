@@ -15,9 +15,11 @@ _marker = lbData[21001, _sel];
 if (_marker isEqualTo "") exitWith {};
 
 _price = lbValue[21001, _sel];
-if ([false, "illegal_money", _price] call AlysiaClient_fnc_handleInv) exitWith {
+if ((["illegal_money"] call AlysiaClient_fnc_itemCount) < _price) exitWith {
 	["Vous n'avez pas assez d'argent sale"] call AlysiaClient_fnc_error;
 };
+
+[false, "illegal_money", _price] call AlysiaClient_fnc_handleInv;
 
 // [false, _price] call AlysiaClient_fnc_handleCash;
 [format["Vous avez acheté les coordonnées de <t color='#74DF00'>%1</t> pour <t color='#8cff9b'>%2</t>$", (markerText _marker), ([_price] call AlysiaClient_fnc_numberText)], "buy"] call AlysiaClient_fnc_info;

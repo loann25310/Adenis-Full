@@ -284,10 +284,15 @@ class ADENIS_FARMING_PLANT_OBJETCS
 	};
 
 	//Anis
-	class Plant_anis : c_GrassDryCarduus_f
+	class c_Grass_nettle
 	{
 		receive[]={{"anis",6,1}};
 		seed="anis_seed";
+		distance=3;
+		growingTime=120;
+		groundLevel=0.3;
+		upLevel=0.3;
+		extraGrow=50;
 	};
 };
 

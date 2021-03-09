@@ -3324,10 +3324,22 @@ class ADENIS_ITEMS
         image="Alysia_Client\Textures\Items_virtual\master_seed.paa";
     };
 
+    class tomato : riz
+    {
+        name="tomate";
+        image="Alysia_Client\Textures\Items_virtual\tomate.paa";
+    };
+
     class pumpkin_seed : riz_seed
     {
         name="Graine (citrouille)";
         image="Alysia_Client\Textures\Items_virtual\master_seed.paa";
+    };
+
+    class pumpkin : riz
+    {
+        name="citrouille";
+        image="Alysia_Client\Textures\Items_virtual\citrouille.paa";
     };
 
     class zucchini_seed : riz_seed
@@ -3340,6 +3352,12 @@ class ADENIS_ITEMS
     {
         name="Graine (tournesol)";
         image="Alysia_Client\Textures\Items_virtual\master_seed.paa";
+    };
+
+    class sunflower : riz
+    {
+        name="tournesol";
+        image="Alysia_Client\Textures\Items_virtual\tournesol.paa";
     };
 
     class patate : riz

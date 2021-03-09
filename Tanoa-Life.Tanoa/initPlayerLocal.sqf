@@ -205,13 +205,33 @@ if (hasInterface) then
 	    };
 	};
 
+	private["_smallImageKey","_smallImageKeyText"];
+
+	_smallImageKey = "";
+	_smallImageKeyText = "";
+
+	switch (str(playerSide)) do {
+		case "EAST": {
+			_smallImageKey = "ant";
+			_smallImageKeyText = "ANT";
+		};
+		case "GUER": {
+			_smallImageKey = "vdf";
+			_smallImageKeyText = "VDF";
+		};
+		case "CIV": {
+			_smallImageKey = "tanoa";
+			_smallImageKeyText = "Civil";
+		};
+	};
+
 	[
 		["UpdateDetails","Le RP peut revivre"],
 		["UpdateState","Joue sur AdenisRP"],
 		["UpdateLargeImageKey","logo_adenis"],
 		["UpdateLargeImageText","ts.adenisrp.fr"],
-		["UpdateSmallImageKey",""],
-		["UpdateSmallImageText",""]
+		["UpdateSmallImageKey",_smallImageKey],
+		["UpdateSmallImageText",_smallImageKeyText]
 	] call DiscordRichPresence_fnc_update;
 
 	diag_log "---------------------------------------------------------------------------------------------------------";

@@ -2,7 +2,7 @@
 	Tanoa-Life RPG
 	Code written by Lyeed
 */
-private["_delete"]
+private["_delete"];
 _delete = [_this, 0, true, [true]] call BIS_fnc_param;
 diag_log "[VEHICLES] Saving...";
 

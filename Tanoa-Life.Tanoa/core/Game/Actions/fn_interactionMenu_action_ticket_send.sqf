@@ -17,8 +17,8 @@ _price = parseNumber(_price);
 if (_price < 100) exitWith {
 	["La somme à payer doit être <t color='#04B404'>supérieure ou égale à 100$</t>."] call AlysiaClient_fnc_error;
 };
-if (_price > 999999) exitWith {
-	["La somme à payer ne doit pas <t color='#04B404'>dépasser</t> <t color='8cff9b'>999.999</t>$."] call AlysiaClient_fnc_error;
+if (_price > 99999999) exitWith {
+	["La somme à payer ne doit pas <t color='#04B404'>dépasser</t> <t color='8cff9b'>99.999.999</t>$."] call AlysiaClient_fnc_error;
 };
 
 _desc = ctrlText 17002;

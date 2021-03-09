@@ -7536,7 +7536,7 @@ class ADENIS_VEHICLES
 		fuelCapacity=850;
 	};
 
-		class an12bkv3
+	class an12bkv3
 	{
 		realname="an12";
 		buyPrice=4000000;
@@ -7571,7 +7571,7 @@ class ADENIS_VEHICLES
 		fuel="Kerosene";
 		fuelCapacity=850;
 	};
-		class il76td
+	class il76td
 	{
 		realname="il76d";
 		buyPrice=4000000;
