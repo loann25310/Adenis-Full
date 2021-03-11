@@ -14,4 +14,4 @@ if (!isClass(_config_station)) exitWith {0};
 _config_fuel = missionConfigFile >> "ADENIS_FUEL" >> _fuel;
 if (!isClass(_config_fuel)) exitWith {0};
 
-(_station getVariable [_fuel, getNumber(_config_station >> "stock" >>_fuel >> "max")]);
+(_station getVariable [_fuel, getNumber(_config_station >> "stock" >>_fuel >> "300")]);
