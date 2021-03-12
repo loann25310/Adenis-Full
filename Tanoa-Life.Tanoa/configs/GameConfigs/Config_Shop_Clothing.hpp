@@ -402,7 +402,56 @@ class ADENIS_SHOPS_CLOTHING
 		};
 		backpacks[]={};
 	};
-
+	class bronze_clothing
+	{
+		name="Friperie Bronze";
+		uniforms[]=
+		{};
+		vests[]={};
+		goggles[]={};
+		headgear[]=
+		{
+		};
+		backpacks[]={};
+	};
+	class silver_clothing
+	{
+		name="Friperie Silver";
+		uniforms[]=
+		{
+			"EF_suit_Y1",
+			"EF_suit_Y4",
+			"EF_suit_Y2"
+		};
+		vests[]={};
+		goggles[]=
+		{};
+		headgear[]=
+		{};
+		backpacks[]={};
+	};
+	class gold_clothing
+	{
+		name="Friperie Gold";
+		uniforms[]=
+		{
+			"EF_suit_Y1",
+			"EF_suit_Y4",
+			"EF_suit_Y2"
+		};
+		vests[]={};
+		goggles[]=
+		{
+			"V12_LUNETTE_VERSACE",
+			"V12_HUBLOT"
+		};
+		headgear[]=
+		{
+			"V12_BONNET_GUCCI2",
+			"V12_BONNET_LV4"
+		};
+		backpacks[]={};
+	};
 	class tbo_clothing
 	{
 		name="Shop TBO";

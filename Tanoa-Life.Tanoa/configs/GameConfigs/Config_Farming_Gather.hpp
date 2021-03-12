@@ -111,7 +111,7 @@ class ADENIS_FARMING_GATHER
 	};
 	class coco_field_marker_1: ginger_field_1
 	{
-		receive[]={{"coconut",1,0}};
+		receive[]={{"coconut",4,1}};
 	};
 	class coco_field_marker_2: coco_field_marker_1 {};
 	

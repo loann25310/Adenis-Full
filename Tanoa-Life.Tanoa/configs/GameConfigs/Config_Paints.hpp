@@ -123,7 +123,7 @@ class ADENIS_PAINTS
 			displayName = "Violet";
 			price = 50000;
 			color[] = {37, 0, 37};
-			time = 13;
+			time = 900;
 			saveDB = 1;
 			donorLevel = 0;
 			class require

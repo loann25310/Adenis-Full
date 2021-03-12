@@ -597,7 +597,7 @@ class ADENIS_ITEMS
     class wood
     {
         name="Buche de bois";
-        weight=4;
+        weight=3;
         image="Alysia_Client\Textures\Items_virtual\tas_bois.paa";
         class market
         {
@@ -698,8 +698,8 @@ class ADENIS_ITEMS
         entrepriseItem = 1;
         class market
         {
-            max=3000;
-            min=774;
+            max=4500;
+            min=2500;
         };
         class remove {};
     };
