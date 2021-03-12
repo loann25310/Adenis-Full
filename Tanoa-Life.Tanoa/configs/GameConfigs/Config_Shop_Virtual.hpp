@@ -148,7 +148,6 @@ class ADENIS_SHOPS_VIRTUAL
 			"pumpkin_seed",
 			"zucchini_seed",
 			"sunflower_seed",
-			"cassouletemba"
 		};
 		sell[]=
 		{
@@ -158,7 +157,8 @@ class ADENIS_SHOPS_VIRTUAL
 			"glassemba",
 			"tabchocoemba",
 			"steelppa",
-			"planchefruitdemer"
+			"planchefruitdemer",
+			"cassouletemba"
 		};
 	};
 

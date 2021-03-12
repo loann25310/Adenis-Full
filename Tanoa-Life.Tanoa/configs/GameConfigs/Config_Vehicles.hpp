@@ -6,7 +6,7 @@ class ADENIS_VEHICLES_INFO
 	steal_percentage=0.4;
 	sell_percentage=0.4;
 	transfert_percentage=0.15;
-	impound_percentage=0.80;
+	impound_percentage=0.2;
 	// based on vehicle's buyPrice
 };
 
@@ -3150,6 +3150,31 @@ class ADENIS_VEHICLES
 		rank=2;
 	};
 
+	class AdenisUMH : Alysia_GUER_base
+	{
+		buyPrice=1000;
+		inventory=100;
+		fuelCapacity=210;
+		rank=2;
+	};
+
+	class AdenisVSAV_Sprinter_G3 : Alysia_GUER_base
+	{
+		buyPrice=1000;
+		fuelCapacity=210;
+		inventory=100;
+		rank=2;
+	};
+
+	class AdenisVSAV_Master_3 : Alysia_GUER_base
+	{
+		buyPrice=1000;
+		fuelCapacity=210;
+		inventory=100;
+		rank=2;
+	};
+
+
 	class RealMan_Trafic3VBECL: Alysia_GUER_base
 	{
 		realname="Vbecl";
@@ -4763,7 +4788,7 @@ class ADENIS_VEHICLES
 		insurance=1;
 		licenses[]={"boat","company_location_sea"};
 		fuel="Diesel";
-		fuelCapacity=600;
+		fuelCapacity=800;
 		colors[]=
 		{
 			"Burnes_mk10_1"
@@ -7176,6 +7201,32 @@ class ADENIS_VEHICLES
 		fuelCapacity=84;
 	};
 
+	class V12_RS7_BLANC
+	{
+		realname="Audi RS7";
+		buyPrice=1000000;
+		inventory=40;
+		donorLevel=3;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=84;
+	};
+
+	class V12_RS7BW_BLANC
+	{
+		realname="Audi RS7 BW";
+		buyPrice=1500000;
+		inventory=40;
+		donorLevel=3;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="Diesel";
+		fuelCapacity=84;
+	};
+
 	class V12_RS6AV_BLANCM
 	{
 		realname="Audi RS6";
@@ -7528,65 +7579,65 @@ class ADENIS_VEHICLES
 	{
 		realname="C17 Transport";
 		buyPrice=2500000;
-		inventory=1000;
+		inventory=800;
 		side="CIV";
 		insurance=1;
 		licenses[]={"pilot","company_compagnie_airienne"};
 		fuel="Kerosene";
-		fuelCapacity=850;
+		fuelCapacity=650;
 	};
 
 	class an12bkv3
 	{
 		realname="an12";
 		buyPrice=4000000;
-		inventory=800;
+		inventory=600;
 		side="CIV";
 		insurance=1;
 		licenses[]={"pilot","company_compagnie_airienne"};
 		fuel="Kerosene";
-		fuelCapacity=850;
+		fuelCapacity=650;
 	};
 
 	class il18d
 	{
 		realname="il18d";
 		buyPrice=4000000;
-		inventory=800;
+		inventory=600;
 		side="CIV";
 		insurance=1;
 		licenses[]={"pilot","company_compagnie_airienne"};
 		fuel="Kerosene";
-		fuelCapacity=850;
+		fuelCapacity=650;
 	};
 
 	class il62m
 	{
 		realname="il62m";
 		buyPrice=4000000;
-		inventory=800;
+		inventory=600;
 		side="CIV";
 		insurance=1;
 		licenses[]={"pilot","company_compagnie_airienne"};
 		fuel="Kerosene";
-		fuelCapacity=850;
+		fuelCapacity=650;
 	};
 	class il76td
 	{
 		realname="il76d";
 		buyPrice=4000000;
-		inventory=800;
+		inventory=600;
 		side="CIV";
 		insurance=1;
 		licenses[]={"pilot","company_compagnie_airienne"};
 		fuel="Kerosene";
-		fuelCapacity=850;
+		fuelCapacity=650;
 	};
 		class il86
 	{
 		realname="il86";
 		buyPrice=4000000;
-		inventory=800;
+		inventory=600;
 		side="CIV";
 		insurance=1;
 		licenses[]={"pilot","company_compagnie_airienne"};
@@ -7597,7 +7648,7 @@ class ADENIS_VEHICLES
 	{
 		realname="tu114";
 		buyPrice=4000000;
-		inventory=800;
+		inventory=600;
 		side="CIV";
 		insurance=1;
 		licenses[]={"pilot","company_compagnie_airienne"};
@@ -7608,7 +7659,7 @@ class ADENIS_VEHICLES
 	{
 		realname="tu134";
 		buyPrice=4000000;
-		inventory=800;
+		inventory=600;
 		side="CIV";
 		insurance=1;
 		licenses[]={"pilot","company_compagnie_airienne"};
@@ -7619,7 +7670,7 @@ class ADENIS_VEHICLES
 	{
 		realname="tu154";
 		buyPrice=4000000;
-		inventory=800;
+		inventory=600;
 		side="CIV";
 		insurance=1;
 		licenses[]={"pilot","company_compagnie_airienne"};
@@ -7631,7 +7682,7 @@ class ADENIS_VEHICLES
 	{
 		realname="A320";
 		buyPrice=2000000;
-		inventory=800;
+		inventory=600;
 		side="CIV";
 		insurance=1;
 		licenses[]={"pilot","company_compagnie_airienne"};
@@ -7655,7 +7706,7 @@ class ADENIS_VEHICLES
 	{
 		realname="B777 ALITALIA";
 		buyPrice=3000000;
-		inventory=1200;
+		inventory=1000;
 		side="CIV";
 		insurance=1;
 		licenses[]={"pilot","company_compagnie_airienne"};
@@ -7667,7 +7718,7 @@ class ADENIS_VEHICLES
 	{
 		realname="B777 SINGAPORE AIRLINES";
 		buyPrice=3000000;
-		inventory=1200;
+		inventory=1000;
 		side="CIV";
 		insurance=1;
 		licenses[]={"pilot","company_compagnie_airienne"};
@@ -7678,7 +7729,7 @@ class ADENIS_VEHICLES
 	{
 		realname="B777 Emirates";
 		buyPrice=3000000;
-		inventory=1200;
+		inventory=1000;
 		side="CIV";
 		insurance=1;
 		licenses[]={"pilot","company_compagnie_airienne"};

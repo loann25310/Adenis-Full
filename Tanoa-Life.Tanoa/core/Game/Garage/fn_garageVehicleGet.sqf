@@ -19,6 +19,15 @@ _data = g_garage_vehicles select _index;
 _vehicleClassname = _data select 0;
 _vehicleGaragePosition = [_data select 6, _data select 7, _data select 8];
 
+if (getNumber(missionConfigFile >> "ADENIS_VEHICLES" >> _vehicleClassname >> "donorLevel") > (call g_donator)) exitWith {
+	[
+		format[
+			"Le vehicule sélectionné est un véhicule donateur. Vous ne pouvez pas le sortir sans un niveau donateur : %1",
+			getNumber(missionConfigFile >> "ADENIS_VEHICLES" >> _vehicleClassname >> "donorLevel")
+		]
+	] call AlysiaClient_fnc_error;
+};
+
 if ((g_garage_info select 3) isEqualTo 0) then
 {
 	_price = 0;
@@ -108,7 +117,11 @@ if ((isNil "_spawnPos") || (isNil "_spawnDir")) exitWith {
 _vehicle = createVehicle [_vehicleClassname, _spawnPos, [], 0, "NONE"];
 
 _vehicle setPos _spawnPos;
-_vehicle setPlateNumber str(_data select 1);
+if (getNumber(missionConfigFile >> "ADENIS_VEHICLES" >> _vehicleClassname >> "disableOwnerInfos") isEqualTo 0) then {
+	_vehicle setPlateNumber str(_data select 1);
+}else{
+	_vehicle setPlateNumber "  -   -  ";
+};
 _vehicle setDir _spawnDir;
 _vehicle lock 2;
 _vehicle setVariable ["tf_side", "west", true];

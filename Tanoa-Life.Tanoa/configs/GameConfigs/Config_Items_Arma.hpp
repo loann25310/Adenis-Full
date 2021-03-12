@@ -979,38 +979,45 @@ class ADENIS_ITEMS_ARMA
 	///////////////////////////////////////////////  bronze   ///////////////////////////////////////////////////
 	class EF_suit_Y1
 	{
-		buy_price=80000;
+		buy_price=380000;
+		donatorlevel=2;
 		buy_license_CIV[]={""};
 	};
 	class EF_suit_Y4
 	{
-		buy_price=80000;
+		buy_price=380000;
+		donatorlevel=2;
 		buy_license_CIV[]={""};
 	};
 	///////////////////////////////////////////////  silver / gold  ///////////////////////////////////////////////////
 	class EF_suit_Y2
 	{
-		buy_price=95000;
+		buy_price=395000;
+		donatorlevel=2;
 		buy_license_CIV[]={""};
 	};
 	class V12_HUBLOT
 	{
-		buy_price=450000;
+		buy_price=950000;
+		donatorlevel=3;
 		buy_license_CIV[]={""};
 	};
 	class V12_LUNETTE_VERSACE
 	{
 		buy_price=25000;
+		donatorlevel=3;
 		buy_license_CIV[]={""};
 	};
 	class V12_BONNET_GUCCI2
 	{
 		buy_price=25000;
+		donatorlevel=3;
 		buy_license_CIV[]={""};
 	};
 	class V12_BONNET_LV4
 	{
 		buy_price=25000;
+		donatorlevel=3;
 		buy_license_CIV[]={""};
 	};
 
