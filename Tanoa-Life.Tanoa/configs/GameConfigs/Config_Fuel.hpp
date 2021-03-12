@@ -134,10 +134,10 @@ class ADENIS_FUEL
 	{
 		name="Biocarburant";
 		picture="Alysia_Client_Texture\Data\fuel\bio.paa";
-		conso=0.8;
+		conso=0.6;
 		item_jerrycan="Alysia_jerrycan_bio";
 		item_refuel="bio";
-		liter_price=17;
+		liter_price=30;
 		liter_price_multiplier=5;
 	};
 };
