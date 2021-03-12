@@ -2394,6 +2394,81 @@ class ADENIS_PROCESS
 			items_virtual[]={{"rib_beef_steak",10}};
 		};
 	};
+	class paq_frite: sea_foodp
+	{
+		name="Préparation de paquets de frites";
+		sound="salt_process";
+		class require
+		{
+			items_virtual[]={{"potato",1}};
+		};
+		class receive
+		{
+			items_virtual[]={{"frite",1}};
+		};
+		time_per_item=2;
+		time_default=3;
+	};
+	class purer: sea_foodp
+	{
+		name="Préparation de purée";
+		sound="salt_process";
+		class require
+		{
+			items_virtual[]={{"potato",1}};
+		};
+		class receive
+		{
+			items_virtual[]={{"purer",1}};
+		};
+		time_per_item=2;
+		time_default=3;
+	};
+	class burger: sea_foodp
+	{
+		name="Préparation d'hamburger";
+		sound="salt_process";
+		class require
+		{
+			items_virtual[]={{"ground_beef",1}};
+		};
+		class receive
+		{
+			items_virtual[]={{"burger",1}};
+		};
+		time_per_item=2;
+		time_default=3;
+	};
+	class khebab: sea_foodp
+	{
+		name="Préparation de Kebab";
+		sound="salt_process";
+		class require
+		{
+			items_virtual[]={{"ground_beef",1}};
+		};
+		class receive
+		{
+			items_virtual[]={{"kebab",1}};
+		};
+		time_per_item=2;
+		time_default=3;
+	};
+	class sauciflare: sea_foodp
+	{
+		name="Préparation de saucisson";
+		sound="salt_process";
+		class require
+		{
+			items_virtual[]={{"ground_beef",1}};
+		};
+		class receive
+		{
+			items_virtual[]={{"saucisson",4}};
+		};
+		time_per_item=2;
+		time_default=3;
+	};
 	/* ====================================== company_cacao ====================================== */
 	/* ====================================== company_rhum ====================================== */
 	class rhum
