@@ -7,7 +7,7 @@ class RscDisplayComa: RscDisplayDefault
 	{
 		class BACKGROUND: RscText
 		{
-			colorBackground[]={0,0,0,1};
+			colorBackground[]={0,0,0,0.95};
 			
 			x=0 * safezoneW + safezoneX;
 			y=0 * safezoneH + safezoneY;
