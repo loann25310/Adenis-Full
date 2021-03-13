@@ -36,8 +36,8 @@ _info ctrlSetStructuredText parseText format
 	+	"<t align='center' color='#086A87'>- Informations - </t><br/>"
 	+	"<t align='left'>Prix des pigments</t><t align='right'>%1 $</t><br/>"
 	+	"<t align='left'>Durée</t><t align='right'>%2</t><br/>"
-	+	"<t align='left'>Matériel nécéssaire</t><br/>%5<br/>"
-	+	"<t align='left'>Permanant</t><t align='right'>%3</t><br/>"
+	+	"<t align='left'>Matériel nécessaire</t><br/>%5<br/>"
+	+	"<t align='left'>Permanent</t><t align='right'>%3</t><br/>"
 	+	"<t align='left'>Donnateur</t><t align='right'>%4</t><br/>"
 	+	"</t>",
 	[getNumber(_config >> "price")] call AlysiaClient_fnc_numberText,

@@ -18,7 +18,7 @@ if (_item isEqualTo "") exitWith {
 };
 
 if (!(g_interaction_target getVariable ['restrained',false]) && !(g_interaction_target getVariable ['surrender',false])) exitWith {
-	["La cible doit avoir être menottés ou avoir les mains sur la tête pour être force-feed."] call AlysiaClient_fnc_error;
+	["La cible doit être menottée ou avoir les mains sur la tête pour être force-feed."] call AlysiaClient_fnc_error;
 };
 
 closeDialog 0;

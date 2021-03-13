@@ -32,13 +32,13 @@ if (["Mise en fourrière", 8, _target] call AlysiaClient_fnc_showProgress) then
 			if ((_cfg select 11) != str(playerSide)) then
 			{
 				if ([true, _price] call AlysiaClient_fnc_atmFactionHandle) then {
-					[format["Votre faction à reçu <t color='#8cff9b'>%1</t>$ pour la mise en fourrière du véhicule.", ([_price] call AlysiaClient_fnc_numberText)], "buy"] call AlysiaClient_fnc_info;
+					[format["Votre faction a reçu <t color='#8cff9b'>%1</t>$ pour la mise en fourrière du véhicule.", ([_price] call AlysiaClient_fnc_numberText)], "buy"] call AlysiaClient_fnc_info;
 				};
 			} else {
 				["Vous n'avez pas reçu d'argent pour la mise en fourrière car ce véhicule appartient à votre faction."] call AlysiaClient_fnc_info;
 			};
 		} else {
-			[format["Votre entreprise à reçu <t color='#8cff9b'>%1</t>$ pour la mise en fourrière du véhicule.", ([_price] call AlysiaClient_fnc_numberText)], "buy"] call AlysiaClient_fnc_info;
+			[format["Votre entreprise a reçu <t color='#8cff9b'>%1</t>$ pour la mise en fourrière du véhicule.", ([_price] call AlysiaClient_fnc_numberText)], "buy"] call AlysiaClient_fnc_info;
 			[g_company, true, _price, (player getVariable "realname"), "Activité professionnelle"] remoteExec ["AlysiaServer_fnc_company_bank_handle", 2];
 		};
 	} else {

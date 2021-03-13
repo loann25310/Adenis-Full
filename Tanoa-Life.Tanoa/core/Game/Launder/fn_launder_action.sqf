@@ -19,7 +19,7 @@ if (_amount < _min) exitWith {
 	[format["Vous devez blanchir au minimum <t color='#8cff9b'>%1</t>$.", _min]] call AlysiaClient_fnc_error;
 };
 if (!(isNil "gServer_soonReboot")) exitWith {
-	["Vous ne pouvez pas interagir blanchir de l'argent juste avant le <t color='#B40404'>redémarrage</t> du serveur."] call AlysiaClient_fnc_error;
+	["Vous ne pouvez pas blanchir de l'argent juste avant le <t color='#B40404'>redémarrage</t> du serveur."] call AlysiaClient_fnc_error;
 };
 if ((["illegal_money"] call AlysiaClient_fnc_itemCount) < _amount) exitWith {
 	["Vous n'avez pas autant d'argent sale sur vous."] call AlysiaClient_fnc_error;

@@ -10,7 +10,7 @@ if (_license isEqualTo "") exitWith {
 };
 
 if (!isClass(missionConfigFile >> "ADENIS_LICENSES" >> _license >> "factions" >> str(playerSide))) exitWith {
-	["Votre faction n'est pas autorisé à acheter cette licence"] call AlysiaClient_fnc_error;
+	["Votre faction n'est pas autorisée à acheter cette licence"] call AlysiaClient_fnc_error;
 };
 
 _price = getNumber(missionConfigFile >> "ADENIS_LICENSES" >> _license >> "factions" >> str(playerSide) >> "price");

@@ -73,7 +73,7 @@ if (_action) then
 	camDestroy _camera;
 
 	playMusic "";
-	("initLayer" call BIS_fnc_rscLayer) cutText ["Envoie de vos données au serveur", "BLACK FADED", 999999, true];
+	("initLayer" call BIS_fnc_rscLayer) cutText ["Envoi de vos données au serveur", "BLACK FADED", 999999, true];
 	0 fadeSound 0;
 } else {
 	["Annulation de la création de profil."] spawn AlysiaClient_fnc_errorExit;
