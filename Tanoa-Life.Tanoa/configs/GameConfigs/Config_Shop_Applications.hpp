@@ -33,7 +33,7 @@ class ADENIS_SHOP_APPLICATIONS
 		name="Annonces";
 		description="Que vous cherchiez un compagnon, du travail ou des employés, cette application est faite pour vous !";
 		price=700;
-		sides[]={"CIV","GUER"};
+		sides[]={"CIV","WEST","EAST","GUER"};
 	};
 	class DAB
 	{

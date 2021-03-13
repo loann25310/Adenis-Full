@@ -533,7 +533,7 @@ class ADENIS_ITEMS
         entrepriseItem = 1;
         class market
         {
-            max=24000;
+            max=34000;
             min=14000;
         };
         class remove {};

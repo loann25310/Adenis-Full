@@ -1134,6 +1134,7 @@ class ADENIS_COMPANIES_TYPES
 				"acier",
 				"serrurep",
 				"conserve",
+				"clousp",
 				"light_double",
 				"bombe_vide"
 			};

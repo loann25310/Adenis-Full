@@ -233,7 +233,11 @@ class ADENIS_GARAGES
 		name="Garage Nora Automobiles";
 		spawns[]={"land_28_spawn_1"};
 	};
-
+	class land_29: land_1
+	{
+		name="Garage Casino";
+		spawns[]={"land_10_spawn_3"};
+	};
 	class fourriere_1
 	{
 		name="Fourrière de terrestre de Georgetown";

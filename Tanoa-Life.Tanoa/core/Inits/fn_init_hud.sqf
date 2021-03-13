@@ -48,11 +48,11 @@ if (isNull (uiNameSpace getVariable ["RscTitlePlayer", displayNull])) then
 		_ctrl_vehicle_fuel ctrlShow false;
 		_ctrl_vehicle_active = false;
 
-		/*createMarkerLocal ["myGPS", (getPos player)];
+		createMarkerLocal ["myGPS", (getPos player)];
 		"myGPS" setMarkerShapeLocal "ICON";
 		"myGPS" setMarkerTypeLocal "Lyeed_GPS";
 		"myGPS" setMarkerColorLocal "ColorBlue";
-		"myGPS" setMarkerSizeLocal [0.7, 0.7];*/
+		"myGPS" setMarkerSizeLocal [0.7, 0.7];
 
 		while {!(isNull _hud)} do
 		{
@@ -67,7 +67,7 @@ if (isNull (uiNameSpace getVariable ["RscTitlePlayer", displayNull])) then
 				"<t align='right' font='RobotoRegular' size='2'>%1</t><t size='1.3' align='right'>%2</t><img size='1.4' align='right' image='Alysia_Client_Texture\Data\player_hud\fatigue.paa'/>",
 				round((1 - (getFatigue player)) * 100), "%"
 			];
-/*
+
 			_ctrl_hunger ctrlSetStructuredText parseText format
 			[
 				"<t align='right' font='RobotoRegular' size='2'>%1</t><t size='1.3' align='right'>%2</t><img size='1.4' align='right' image='Alysia_Client_Texture\Data\player_hud\hunger.paa'/>",
@@ -79,15 +79,15 @@ if (isNull (uiNameSpace getVariable ["RscTitlePlayer", displayNull])) then
 				"<t align='right' font='RobotoRegular' size='2'>%1</t><t size='1.3' align='right'>%2</t><img size='1.4' align='right' image='Alysia_Client_Texture\Data\player_hud\thirst.paa'/>",
 				g_thirst, "%"
 			];
-*/
+
 			_ctrl_volume ctrlSetStructuredText parseText format
 			[
 				"<t align='right' font='RobotoRegular' size='2'>%1</t><t size='1.3' align='right'>%2</t><img size='1.4' align='right' image='Alysia_Client_Texture\Data\player_hud\speak.paa'/>",
 				switch (TF_speak_volume_level) do
 				{
-					case "whispering": {"Chuchoter"};
-					case "normal": {"Parler"};
-					case "yelling": {"Crier"};
+					case "whispering": {50};
+					case "normal": {100};
+					case "yelling": {200};
 				},
 				"%"
 			];
@@ -102,8 +102,6 @@ if (isNull (uiNameSpace getVariable ["RscTitlePlayer", displayNull])) then
 				};
 			} forEach
 			([
-				["Apolia_Client_Textures\Data\player_hud\hunger.paa", "(g_hunger < 35)"],
-				["Apolia_Client_Textures\Data\player_hud\thirst.paa", "(g_thirst < 35)"],
 				["Alysia_Client_Texture\Data\player_hud\bleed.paa", "(g_bleed > 0)"],
 				["Alysia_Client_Texture\Data\player_hud\regen.paa", "(g_regen_active && (g_bleed isEqualTo 0) && (g_hunger > 0) && (g_thirst > 0))"],
 				["Alysia_Client_Texture\Data\player_hud\handcuffs.paa", "(player getVariable [""restrained"",false])"],
