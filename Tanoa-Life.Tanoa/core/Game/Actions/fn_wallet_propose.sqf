@@ -56,7 +56,7 @@ if (_action) then
 			"Vous n'avez pas l'objet nécessaire pour prouver <t color='#FF8000'>votre identité</t>.<br/><br/>Requis : %1<br/><br/>La demande a été <t color='#DF0101'>refusée</t>.",
 			(([_item] call AlysiaClient_fnc_fetchCfgDetails) select 1)
 		]] call AlysiaClient_fnc_error;
-		["Votre demande a été <t color='#DF0101'>refusée</t>."] remoteExecCall ["AlysiaClient_fnc_info", _from];
+		["La personne ne possède pas son <t color='#DF0101'>passeport</t>."] remoteExecCall ["AlysiaClient_fnc_info", _from];
 	};
 } else {
 	["Votre demande a été <t color='#DF0101'>refusée</t>."] remoteExecCall ["AlysiaClient_fnc_info", _from];
