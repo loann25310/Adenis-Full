@@ -3904,7 +3904,7 @@ class ADENIS_ITEMS
     };
     class blueprint_ruger_mk2: blueprint_gsh18
     {
-        name="Blueprint de Tec9";
+        name="Blueprint de Ruger MK2";
         image="Adenis_Textures\patron.paa";
         illegal=1;
     };
@@ -3916,7 +3916,7 @@ class ADENIS_ITEMS
     };
     class blueprint_watchpost_tall: blueprint_gsh18
     {
-        name="Poste de garde (grand)";
+        name="Blueprint de Poste de garde (grand)";
         image="Adenis_Textures\patron.paa";
         illegal=1;
     };
@@ -3928,7 +3928,7 @@ class ADENIS_ITEMS
     };
     class blueprint_watchtower_wood: blueprint_gsh18
     {
-        name="Blueprint de our de guet en bois";
+        name="Blueprint de Tour de guet en bois";
         image="Adenis_Textures\patron.paa";
         illegal=1;
     };

@@ -119,7 +119,7 @@ if (hasInterface) then
 	diag_log "<INIT> Initialisation des environnements de jeu...";
 	("initLayer" call BIS_fnc_rscLayer) cutText ["Initialisation des environnements de jeu", "BLACK FADED", 999999, true];
 	[] call AlysiaClient_fnc_init_loops;
-	diag_log "<INIT> Environements initialisés";
+	diag_log "<INIT> Environnements initialisés";
 
 	diag_log "<INIT> Ajouts des actions au joueur...";
 	("initLayer" call BIS_fnc_rscLayer) cutText ["Ajouts des actions joueur", "BLACK FADED", 999999, true];
@@ -158,7 +158,7 @@ if (hasInterface) then
 	    	setObjectViewDistance 3000;
 	    };
 	}];
-	
+
 	player addEventHandler ["GetOutMan", {
 		params ["_unit", "_role", "_vehicle", "_turret"];
 		if(viewDistance > 1500) then {

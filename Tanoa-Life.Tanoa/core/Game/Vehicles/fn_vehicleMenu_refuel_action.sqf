@@ -28,7 +28,7 @@ if (dialog) then
 if (!(["Jerrycan", 5, g_interaction_target, "", "AinvPknlMstpsnonWnonDnon_medic_1"] call AlysiaClient_fnc_showProgress)) exitWith {};
 
 if (!(_item in (magazines player))) exitWith {
-	["Vous devez garder le jerrycan sur vous durant toute l'action."] call AlysiaClient_fnc_error;
+	["Vous devez garder le jerrican sur vous durant toute l'action."] call AlysiaClient_fnc_error;
 };
 
 _config = (format["getText(_x >> 'item_jerrycan') isEqualTo '%1'", _item] configClasses (missionConfigFile >> "ADENIS_FUEL")) select 0;
