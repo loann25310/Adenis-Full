@@ -190,6 +190,7 @@ class ADENIS_SHOPS_VEHICLES
 			"Lemon_Dac_Farm_Occasion"
 		};
 	};
+
 	class CIV_land_Luxe: CIV_air
 	{
 		name="Concessionnaire de Luxe";
@@ -383,6 +384,18 @@ class ADENIS_SHOPS_VEHICLES
 			"B_Truck_01_covered_F",
 			"Alysia_Hellcat_East_01",
 			"ANT_RHIB"
+		};
+	};
+
+	class CIV_casino
+	{
+		name="Concessionnaire casino";
+		createVehicle=1;
+		stock[]=
+		{
+
+			"V12_RS7_BLANC",
+			"V12_RS7BW_BLANC"
 		};
 	};
 
