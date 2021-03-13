@@ -9,7 +9,7 @@ class ADENIS_PHONE
 	class SMS
 	{
 		characters_allowed="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789ô-*éè?!,.ù_à ";
-		characters_max=200;
+		characters_max=400;
 		send_max=5;
 		class sounds
 		{

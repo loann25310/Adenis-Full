@@ -805,6 +805,10 @@ class ADENIS_ITEMS
         class food
         {
             sound="snif";
+            hunger=-30;
+            thirst=-35;
+            alcool=0.1;
+            unlimitedRun=120;
         };
         class remove {};
     };
@@ -823,6 +827,10 @@ class ADENIS_ITEMS
         class food
         {
             sound="snif";
+            hunger=-10;
+            thirst=-15;
+            alcool=0.2;
+            unlimitedRun=68;
         };
         class remove {};
     };
@@ -868,6 +876,9 @@ class ADENIS_ITEMS
         class food
         {
             sound="heroin";
+            thirst=-15;
+            alcool=0.1;
+            unlimitedRun=150;
         };
     };
 
@@ -903,6 +914,10 @@ class ADENIS_ITEMS
         class food
         {
             sound="eat_biscuit";
+            hunger=-10;
+            thirst=-15;
+            alcool=0.6;
+            unlimitedRun=120;
         };
         class remove {};
     };
@@ -939,6 +954,9 @@ class ADENIS_ITEMS
         class food
         {
             sound="briquet";
+            hunger=-5;
+            thirst=-25;
+            alcool=0.05;
         };
         class remove {};
     };
@@ -976,6 +994,13 @@ class ADENIS_ITEMS
         weight=1;
         illegal=1;
         image="Alysia_Client\Textures\Items_virtual\mushroom_dry.paa";
+        class food
+        {
+            sound="eat_biscuit";
+            hunger=5;
+            thirst=-5;
+            alcool=0.1;
+        };
         class remove {};
     };
     class mushroom_bocal
@@ -989,6 +1014,13 @@ class ADENIS_ITEMS
         {
             max=3370;
             min=800;
+        };
+        class food
+        {
+            sound="eat_biscuit";
+            hunger=5;
+            thirst=-5;
+            alcool=0.1;
         };
         class remove {};
     };

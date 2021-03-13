@@ -9,7 +9,7 @@ if (isNil "_config") exitWith {};
 if (g_firstCombatActive) exitWith {};
 
 g_staff_esp = true;
-
+g_staff_markers = true;
 while {g_staff_esp && !g_firstCombatActive} do
 {
 	_eventHandler = addMissionEventHandler ["Draw3D",
@@ -43,5 +43,10 @@ while {g_staff_esp && !g_firstCombatActive} do
 
 	uiSleep 1;
 };
-
 g_staff_markers = false;
+g_staff_god = false;
+[player, false] remoteExecCall ["hideObjectGlobal", 2];
+onMapSingleClick "";
+if ((player getVariable ["tf_voiceVolume", 0]) isEqualTo 0) then {
+    player setVariable ["tf_voiceVolume", 1, true];
+};

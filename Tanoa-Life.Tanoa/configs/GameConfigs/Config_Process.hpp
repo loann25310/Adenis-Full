@@ -260,7 +260,7 @@ class ADENIS_PROCESS
 			class GUER {};
 		};
 	};
-	class
+	class join
 	{
 		name="Traitement du join de cannabis";
 		sound="smelting";

@@ -4570,33 +4570,71 @@ class ADENIS_VEHICLES
 	class Skyline_Vehicule_A3_Offroad_20_F: Skyline_Vehicule_A3_Offroad_Rebelle {};
 
 
-	class Peck_MercedesBenz_G65_Rebelle
+class Peck_MercedesBenz_G65_Rebelle_1
 	{
-		realname="G65 Rebelle";
-		buyPrice=1350000;
-		inventory=30;
+		realname="Mercedes G65 Rebelle";
+  		buyPrice=1350000;
+		inventory=60;
 		side="CIV";
 		insurance=0;
-  		rank=0;
-  		licenses[]={"rebelle_1"};
+		licenses[]={"rebelle_1"};
 		fuel="Diesel";
-		fuelCapacity=100;
+		fuelCapacity=70;
 		disableOwnerInfos=1;
-	};
+		rank=1;
+		colors[]=
+		{
+			"Peck_MercedesBenz_G65_Rebelle_1",
+			"Peck_MercedesBenz_G65_Rebelle_2",
+			"Peck_MercedesBenz_G65_Rebelle_3",
+			"Peck_MercedesBenz_G65_Rebelle_4",
+			"Peck_MercedesBenz_G65_Rebelle_5",
+			"Peck_MercedesBenz_G65_Rebelle_6",
+			"Peck_MercedesBenz_G65_Rebelle_7",
+			"Peck_MercedesBenz_G65_Rebelle_8"
+		};
+  	};
+  	class Peck_MercedesBenz_G65_Rebelle_2: Peck_MercedesBenz_G65_Rebelle_1 {};
+  	class Peck_MercedesBenz_G65_Rebelle_3: Peck_MercedesBenz_G65_Rebelle_1 {};
+  	class Peck_MercedesBenz_G65_Rebelle_4: Peck_MercedesBenz_G65_Rebelle_1 {};
+  	class Peck_MercedesBenz_G65_Rebelle_5: Peck_MercedesBenz_G65_Rebelle_1 {};
+  	class Peck_MercedesBenz_G65_Rebelle_6: Peck_MercedesBenz_G65_Rebelle_1 {};
+  	class Peck_MercedesBenz_G65_Rebelle_7: Peck_MercedesBenz_G65_Rebelle_1 {};
+  	class Peck_MercedesBenz_G65_Rebelle_8: Peck_MercedesBenz_G65_Rebelle_1 {};
 
-	class Peck_MercedezBenz_ML63_Rebelle_9
-	{
-		realname="ML63 Rebelle";
+  	class Peck_MercedezBenz_ML63_Rebelle_1
+  	{
+		realname="Mercedes ML63 Rebelle";
 		buyPrice=800000;
-		inventory=10;
+		inventory=60;
 		side="CIV";
+		rank=1;
 		insurance=0;
-  		rank=0;
-  		licenses[]={"rebelle_1"};
+		licenses[]={"rebelle_1"};
 		fuel="Diesel";
-		fuelCapacity=100;
+		fuelCapacity=80;
 		disableOwnerInfos=1;
+		colors[]=
+		{
+			"Peck_MercedezBenz_ML63_Rebelle_1",
+			"Peck_MercedezBenz_ML63_Rebelle_2",
+			"Peck_MercedezBenz_ML63_Rebelle_3",
+			"Peck_MercedezBenz_ML63_Rebelle_4",
+			"Peck_MercedezBenz_ML63_Rebelle_5",
+			"Peck_MercedezBenz_ML63_Rebelle_6",
+			"Peck_MercedezBenz_ML63_Rebelle_7",
+			"Peck_MercedezBenz_ML63_Rebelle_8",
+			"Peck_MercedezBenz_ML63_Rebelle_9"
+		};
 	};
+	class Peck_MercedezBenz_ML63_Rebelle_2: Peck_MercedezBenz_ML63_Rebelle_1 {};
+	class Peck_MercedezBenz_ML63_Rebelle_3: Peck_MercedezBenz_ML63_Rebelle_1 {};
+	class Peck_MercedezBenz_ML63_Rebelle_4: Peck_MercedezBenz_ML63_Rebelle_1 {};
+	class Peck_MercedezBenz_ML63_Rebelle_5: Peck_MercedezBenz_ML63_Rebelle_1 {};
+	class Peck_MercedezBenz_ML63_Rebelle_6: Peck_MercedezBenz_ML63_Rebelle_1 {};
+	class Peck_MercedezBenz_ML63_Rebelle_7: Peck_MercedezBenz_ML63_Rebelle_1 {};
+	class Peck_MercedezBenz_ML63_Rebelle_8: Peck_MercedezBenz_ML63_Rebelle_1 {};
+	class Peck_MercedezBenz_ML63_Rebelle_9: Peck_MercedezBenz_ML63_Rebelle_1 {};
 	
 	class Skyline_Vehicule_APEX_RHIB_01_F
 	{

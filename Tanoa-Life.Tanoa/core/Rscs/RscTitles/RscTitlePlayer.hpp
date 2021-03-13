@@ -16,45 +16,45 @@ class RscTitlePlayer
 		{
 			idc=23500;
 
-			x=0.922813 * safezoneW + safezoneX;
-			y=0.511 * safezoneH + safezoneY;
-			w=0.0773437 * safezoneW;
+			x=0.402813 * safezoneW + safezoneX;
+			y=0.939 * safezoneH + safezoneY;
+			w=0.128906 * safezoneW;
 			h=0.044 * safezoneH;
 		};
 		class PERCENT_FATIGUE: RscStructuredText
 		{
 			idc=23501;
 
-			x=0.922813 * safezoneW + safezoneX;
-			y=0.566 * safezoneH + safezoneY;
-			w=0.0773437 * safezoneW;
+			x=0.482813 * safezoneW + safezoneX;
+			y=0.939 * safezoneH + safezoneY;
+			w=0.128906 * safezoneW;
 			h=0.044 * safezoneH;
 		};
 		class PERCENT_HUNGER: RscStructuredText
 		{
 			idc=23502;
 
-			x=0.922813 * safezoneW + safezoneX;
-			y=0.621 * safezoneH + safezoneY;
-			w=0.0773437 * safezoneW;
+			x=0.442813 * safezoneW + safezoneX;
+			y=0.939 * safezoneH + safezoneY;
+			w=0.128906 * safezoneW;
 			h=0.044 * safezoneH;
 		};
 		class PERCENT_THIRST: RscStructuredText
 		{
 			idc=23503;
 
-			x=0.922813 * safezoneW + safezoneX;
-			y=0.676 * safezoneH + safezoneY;
-			w=0.0773437 * safezoneW;
+			x=0.502813 * safezoneW + safezoneX;
+			y=0.939 * safezoneH + safezoneY;
+			w=0.128906 * safezoneW;
 			h=0.044 * safezoneH;
 		};
 		class PERCENT_VOLUME: RscStructuredText
 		{
 			idc=23504;
 
-			x=0.922813 * safezoneW + safezoneX;
-			y=0.731 * safezoneH + safezoneY;
-			w=0.0773437 * safezoneW;
+			x=0.322813 * safezoneW + safezoneX;
+			y=0.939 * safezoneH + safezoneY;
+			w=0.128906 * safezoneW;
 			h=0.044 * safezoneH;
 		};
 		/*===========================
@@ -64,8 +64,8 @@ class RscTitlePlayer
 		{
 			idc=23510;
 
-			x=0.974375 * safezoneW + safezoneX;
-			y=0.192 * safezoneH + safezoneY;
+			x=0.025625 * safezoneW + safezoneX;
+			y=0.28 * safezoneH + safezoneY;
 			w=0.020625 * safezoneW;
 			h=0.033 * safezoneH;
 		};
@@ -73,8 +73,8 @@ class RscTitlePlayer
 		{
 			idc=23511;
 
-			x=0.974375 * safezoneW + safezoneX;
-			y=0.236 * safezoneH + safezoneY;
+			x=0.025625 * safezoneW + safezoneX;
+			y=0.324 * safezoneH + safezoneY;
 			w=0.020625 * safezoneW;
 			h=0.033 * safezoneH;
 		};
@@ -82,8 +82,8 @@ class RscTitlePlayer
 		{
 			idc=23512;
 
-			x=0.974375 * safezoneW + safezoneX;
-			y=0.28 * safezoneH + safezoneY;
+			x=0.025625 * safezoneW + safezoneX;
+			y=0.368 * safezoneH + safezoneY;
 			w=0.020625 * safezoneW;
 			h=0.033 * safezoneH;
 		};
@@ -91,8 +91,8 @@ class RscTitlePlayer
 		{
 			idc=23513;
 
-			x=0.974375 * safezoneW + safezoneX;
-			y=0.324 * safezoneH + safezoneY;
+			x=0.025625 * safezoneW + safezoneX;
+			y=0.412 * safezoneH + safezoneY;
 			w=0.020625 * safezoneW;
 			h=0.033 * safezoneH;
 		};
@@ -100,8 +100,8 @@ class RscTitlePlayer
 		{
 			idc=23514;
 
-			x=0.974375 * safezoneW + safezoneX;
-			y=0.368 * safezoneH + safezoneY;
+			x=0.025625 * safezoneW + safezoneX;
+			y=0.456 * safezoneH + safezoneY;
 			w=0.020625 * safezoneW;
 			h=0.033 * safezoneH;
 		};
@@ -109,8 +109,8 @@ class RscTitlePlayer
 		{
 			idc=23515;
 
-			x=0.974375 * safezoneW + safezoneX;
-			y=0.412 * safezoneH + safezoneY;
+			x=0.025625 * safezoneW + safezoneX;
+			y=0.500 * safezoneH + safezoneY;
 			w=0.020625 * safezoneW;
 			h=0.033 * safezoneH;
 		};
@@ -118,8 +118,8 @@ class RscTitlePlayer
 		{
 			idc=23516;
 
-			x=0.974375 * safezoneW + safezoneX;
-			y=0.456 * safezoneH + safezoneY;
+			x=0.025625 * safezoneW + safezoneX;
+			y=0.544 * safezoneH + safezoneY;
 			w=0.020625 * safezoneW;
 			h=0.033 * safezoneH;
 		};

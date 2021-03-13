@@ -3,7 +3,7 @@ class ADENIS_LABORATORIES
 	class lab_marijuana
 	{
 		object="Diablo_TB_Marijuana_01_F";
-		process[]={"marijuana"};
+		process[]={"marijuana","join"};
 		destroy[]={"WEST","EAST"};
 		class marker
 		{
