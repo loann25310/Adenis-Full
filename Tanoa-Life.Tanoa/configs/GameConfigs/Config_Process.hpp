@@ -5007,7 +5007,26 @@ class ADENIS_PROCESS
 		time_per_item=2;
 	};
 	//Traitements civils
-
+class clousp: iron
+	{
+		name="Fabrication de clous";
+		class require
+		{
+			items_virtual[]={{"ironp",1}};
+		};
+		class receive
+		{
+			items_virtual[]={{"clous",2}};
+		};
+		time_per_item=2;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_steel"};
+			};
+		};
+	};
 	class conserve: iron
 	{
 		name="Fonte du fer en conserve";

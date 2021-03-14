@@ -1270,9 +1270,17 @@ class ADENIS_ITEMS
         entrepriseItem = 1;
         class market
         {
-            max=1200;
-            min=461;
+            max=2400;
+            min=1000;
         };
+        class remove {};
+    };
+    class clous
+    {
+        name="Boite de clous";
+        weight=1;
+        image="Alysia_Client\Textures\Items_virtual\steel.paa";
+        entrepriseItem = 1;
         class remove {};
     };
     class chips
