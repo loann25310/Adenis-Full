@@ -4581,7 +4581,6 @@ class Peck_MercedesBenz_G65_Rebelle_1
 		fuel="Diesel";
 		fuelCapacity=70;
 		disableOwnerInfos=1;
-		rank=1;
 		colors[]=
 		{
 			"Peck_MercedesBenz_G65_Rebelle_1",
@@ -4608,7 +4607,6 @@ class Peck_MercedesBenz_G65_Rebelle_1
 		buyPrice=800000;
 		inventory=60;
 		side="CIV";
-		rank=1;
 		insurance=0;
 		licenses[]={"rebelle_1"};
 		fuel="Diesel";
@@ -4875,8 +4873,8 @@ class Peck_MercedesBenz_G65_Rebelle_1
 	class DAR_4X4
 	{
 		realname="MTVR 4X4";
-		buyPrice=120900;
-		inventory=350;
+		buyPrice=1000000;
+		inventory=450;
 		fuelCapacity=200;
 		side="CIV";
 		insurance=0;
@@ -4887,31 +4885,31 @@ class Peck_MercedesBenz_G65_Rebelle_1
 	class DAR_MK23: DAR_4X4
 	{
 		realname="MTVR cargo";
-		buyPrice=255050;
-		inventory=415;
+		buyPrice=1450000;
+		inventory=515;
 		fuelCapacity=200;
   		licenses[]={"rebelle_1"};
 	};
 	class DAR_MK27T: DAR_4X4
 	{
 		realname="MTVR cargo couvert";
-		buyPrice=415270;
-		inventory=500;
+		buyPrice=2000000;
+		inventory=600;
 		fuelCapacity=200;
   		licenses[]={"rebelle_1"};
 	};
 	class DAR_MK27: DAR_MK27T
 	{
 		realname="MTVR Extension non couvert";
-		buyPrice=595900;
-		inventory=500;
+		buyPrice=2000000;
+		inventory=600;
   		licenses[]={"rebelle_1"};
 	};
 	class DAR_LHS_16: DAR_4X4
 	{
 		realname="MTVR LHS";
-		buyPrice=757200;
-		inventory=670;
+		buyPrice=2500000;
+		inventory=770;
 		fuelCapacity=200;
   		rank=2;
   		licenses[]={"rebelle_1"};
@@ -4919,8 +4917,8 @@ class Peck_MercedesBenz_G65_Rebelle_1
 	class Skyline_MTVR_4X4
 	{
 		realname="MTVR 4X4";
-		buyPrice=120900;
-		inventory=350;
+		buyPrice=1000000;
+		inventory=450;
 		fuelCapacity=200;
 		side="CIV";
 		insurance=0;
@@ -4932,8 +4930,8 @@ class Peck_MercedesBenz_G65_Rebelle_1
 	class Skyline_MTVR_MK23: Skyline_MTVR_4X4
 	{
 		realname="MTVR cargo";
-		buyPrice=255050;
-		inventory=415;
+		buyPrice=1450000;
+		inventory=515;
 		fuelCapacity=200;
   		rank=0;
   		licenses[]={"rebelle_1"};
@@ -4941,8 +4939,8 @@ class Peck_MercedesBenz_G65_Rebelle_1
 	class Skyline_MTVR_MK27T: Skyline_MTVR_4X4
 	{
 		realname="MTVR cargo couvert";
-		buyPrice=475270;
-		inventory=500;
+		buyPrice=2000000;
+		inventory=600;
 		fuelCapacity=200;
   		rank=0;
   		licenses[]={"rebelle_1"};
@@ -4950,15 +4948,15 @@ class Peck_MercedesBenz_G65_Rebelle_1
 	class Skyline_MTVR_MK27: Skyline_MTVR_MK27T
 	{
 		realname="MTVR Extension non couvert";
-		buyPrice=695900;
-		inventory=200;
+		buyPrice=750000;
+		inventory=300;
   		licenses[]={"rebelle_1"};
 	};
 	class Skyline_MTVR_LHS_16: Skyline_MTVR_4X4
 	{
 		realname="MTVR LHS";
-		buyPrice=857200;
-		inventory=670;
+		buyPrice=2500000;
+		inventory=770;
 		fuelCapacity=200;
   		licenses[]={"rebelle_1"};
 	};

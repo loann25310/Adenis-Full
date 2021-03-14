@@ -216,11 +216,11 @@ class ADENIS_PROCESS
 		sound="cooking";
 		class require
 		{
-			items_virtual[]={{"meth",1},{"hsoufre",1}};
+			items_virtual[]={{"meth",1},{"hsoufre",2}};
 		};
 		class receive
 		{
-			items_virtual[]={{"methp",1}};
+			items_virtual[]={{"methp",2}};
 		};
 		time_per_item=4;
 		time_default=15;
@@ -2265,14 +2265,14 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_virtual[]={{"cake_batter",1}};
+			items_virtual[]={{"cake_batter",3}};
 		};
 		time_per_item=2;
 		time_default=3;
 	};
 	class cake_smeltp: sea_foodp
 	{
-		name="Cuisson";
+		name="Cuisson du gâteau";
 		sound="smelting";
 		class require
 		{
@@ -2295,14 +2295,14 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_virtual[]={{"cake_chocolate_batter",1}};
+			items_virtual[]={{"cake_chocolate_batter",3}};
 		};
 		time_per_item=2;
 		time_default=3;
 	};
 	class cake_chocolate_smeltp: sea_foodp
 	{
-		name="Cuisson";
+		name="Cuisson gâteau au chocolat";
 		sound="smelting";
 		class require
 		{
@@ -2317,7 +2317,7 @@ class ADENIS_PROCESS
 	};
 	class roast_porkp: sea_foodp
 	{
-		name="Découpe et Cuisson";
+		name="Découpe et Cuisson du rôti de porc";
 		sound="smelting";
 		class require
 		{
@@ -2325,28 +2325,40 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_virtual[]={{"roast_pork",5}};
+			items_virtual[]={{"roast_pork",10}};
 		};
 		time_per_item=2;
 		time_default=3;
 	};
 	class chop_porkp: roast_porkp
 	{
+		name="Découpe et Cuisson des côtes de porc";
+		sound="smelting";
+		class require
+		{
+			items_virtual[]={{"pork",1}};
+		};
 		class receive
 		{
-			items_virtual[]={{"chop_pork",10}};
+			items_virtual[]={{"chop_pork",15}};
 		};
 	};
 	class filet_mignonp: roast_porkp
 	{
+		name="Découpe et Cuisson du filet mignon";
+		sound="smelting";
+		class require
+		{
+			items_virtual[]={{"pork",1}};
+		};
 		class receive
 		{
-			items_virtual[]={{"filet_mignon",2}};
+			items_virtual[]={{"filet_mignon",10}};
 		};
 	};
 	class beefp: sea_foodp
 	{
-		name="Découpe et Cuisson";
+		name="Découpe et Cuisson des rumsteaks";
 		sound="smelting";
 		class require
 		{
@@ -2361,6 +2373,12 @@ class ADENIS_PROCESS
 	};
 	class beef_steak_beef: beefp
 	{
+		name="Découpe et Cuisson des beefsteaks";
+		sound="smelting";
+		class require
+		{
+			items_virtual[]={{"beef",1}};
+		};	
 		class receive
 		{
 			items_virtual[]={{"beefsteak_beef",25}};
@@ -2368,6 +2386,12 @@ class ADENIS_PROCESS
 	};
 	class ground_beef: beefp
 	{
+		name="Découpe et Cuisson des steaks hachés";
+		sound="smelting";
+		class require
+		{
+			items_virtual[]={{"beef",1}};
+		};
 		class receive
 		{
 			items_virtual[]={{"ground_beef",10}};
@@ -2375,6 +2399,12 @@ class ADENIS_PROCESS
 	};
 	class rib_coast_beef: beefp
 	{
+		name="Découpe et Cuisson des côtes de boeuf";
+		sound="smelting";
+		class require
+		{
+			items_virtual[]={{"beef",1}};
+		};
 		class receive
 		{
 			items_virtual[]={{"rib_coast_beef",10}};
@@ -2382,92 +2412,29 @@ class ADENIS_PROCESS
 	};
 	class beef_tenderloin_beef: beefp
 	{
+		name="Découpe et Cuisson des filets de boeuf";
+		sound="smelting";
+		class require
+		{
+			items_virtual[]={{"beef",1}};
+		};
 		class receive
 		{
-			items_virtual[]={{"beef_tenderloin_beef",2}};
+			items_virtual[]={{"beef_tenderloin_beef",5}};
 		};
 	};
 	class rib_steak_beef: beefp
 	{
+		name="Découpe et Cuisson des entrecôtes";
+		sound="smelting";
+		class require
+		{
+			items_virtual[]={{"beef",1}};
+		};
 		class receive
 		{
 			items_virtual[]={{"rib_beef_steak",10}};
 		};
-	};
-	class paq_frite: sea_foodp
-	{
-		name="Préparation de paquets de frites";
-		sound="salt_process";
-		class require
-		{
-			items_virtual[]={{"potato",1}};
-		};
-		class receive
-		{
-			items_virtual[]={{"frite",1}};
-		};
-		time_per_item=2;
-		time_default=3;
-	};
-	class purer: sea_foodp
-	{
-		name="Préparation de purée";
-		sound="salt_process";
-		class require
-		{
-			items_virtual[]={{"potato",1}};
-		};
-		class receive
-		{
-			items_virtual[]={{"purer",1}};
-		};
-		time_per_item=2;
-		time_default=3;
-	};
-	class burger: sea_foodp
-	{
-		name="Préparation d'hamburger";
-		sound="salt_process";
-		class require
-		{
-			items_virtual[]={{"ground_beef",1}};
-		};
-		class receive
-		{
-			items_virtual[]={{"burger",1}};
-		};
-		time_per_item=2;
-		time_default=3;
-	};
-	class khebab: sea_foodp
-	{
-		name="Préparation de Kebab";
-		sound="salt_process";
-		class require
-		{
-			items_virtual[]={{"ground_beef",1}};
-		};
-		class receive
-		{
-			items_virtual[]={{"kebab",1}};
-		};
-		time_per_item=2;
-		time_default=3;
-	};
-	class sauciflare: sea_foodp
-	{
-		name="Préparation de saucisson";
-		sound="salt_process";
-		class require
-		{
-			items_virtual[]={{"ground_beef",1}};
-		};
-		class receive
-		{
-			items_virtual[]={{"saucisson",4}};
-		};
-		time_per_item=2;
-		time_default=3;
 	};
 	/* ====================================== company_cacao ====================================== */
 	/* ====================================== company_rhum ====================================== */
@@ -2779,7 +2746,8 @@ class ADENIS_PROCESS
 				licenses[]={"company_laboratoiremedical"};
 			};
 		};
-	};	/* ====================================== company_coffee ====================================== */
+	};	
+	/* ====================================== company_coffee ====================================== */
 	class coffeep
 	{
 		name="Moudre du café";

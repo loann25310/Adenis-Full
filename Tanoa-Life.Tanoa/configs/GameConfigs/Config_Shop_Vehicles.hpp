@@ -322,8 +322,8 @@ class ADENIS_SHOPS_VEHICLES
 			"AlessioRS5GoFastMat",
 			"AlessioM5GofastMat",
 			"AlessioC63Black_mat",
-			"Peck_MercedesBenz_G65_Rebelle",
-			"Peck_MercedezBenz_ML63_Rebelle_9"
+			"Peck_MercedesBenz_G65_Rebelle_1",
+			"Peck_MercedezBenz_ML63_Rebelle_1"
 		};
 	};
 
