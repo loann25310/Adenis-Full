@@ -5205,7 +5205,7 @@ class ADENIS_PROCESS
 		sound="salt_process";
 		class require
 		{
-			items_virtual[]={{"woodp",1},{"crevette",2},{"star",2},{"crabe",2},{"oursin",2}};
+			items_virtual[]={{"woodp",1},{"crevette",2},{"star",3},{"crabe",2},{"oursin",1}};
 		};
 		class receive
 		{
