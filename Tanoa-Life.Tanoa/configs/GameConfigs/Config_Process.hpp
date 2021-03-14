@@ -2758,7 +2758,7 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_virtual[]={{"coffeem",1}};
+			items_virtual[]={{"coffeem",2}};
 		};
 		time_per_item=1;
 		time_default=2;
