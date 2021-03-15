@@ -47,7 +47,7 @@ _diff = _price - _sync;
 	if (_diff >= 0) then {"+"} else {"-"},
 	if (_diff >= 0) then {"#3ADF00"} else {"#DF0101"},
 	[abs _diff] call AlysiaClient_fnc_numberText,
-	if (getNumber(_config >> "market" >> "min") isEqualTo 1) then {"<t color='#00a329'>Oui</t>"} else {"<t color='#a30000'>Non</t>"}
+	if (getNumber(_config >> "market" >> "entrepriseItem") isEqualTo 1) then {"<t color='#00a329'>Oui</t>"} else {"<t color='#a30000'>Non</t>"}
 ];
 
 missionNamespace setVariable ["market_sync_id", _sel];

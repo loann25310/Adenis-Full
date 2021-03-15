@@ -16,7 +16,7 @@ class ADENIS_SHOP_APPLICATIONS
 	};
 	class MARKET_ENTREPRISE
 	{
-		name="Bourse Entreprise";
+		name="BoursePro";
 		description="Application mettant à votre disposition diverses informations économiques";
 		price=30800;
 		sides[]={"CIV"};
