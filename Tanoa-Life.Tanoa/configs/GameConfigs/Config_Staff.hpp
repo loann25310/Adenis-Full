@@ -38,9 +38,9 @@ class ADENIS_STAFF
 		{
 			uid="76561198084504163";
 		};
-		class Loann: admin
+		class Mateja: admin
 		{
-			uid="76561198171075495";
+			uid="76561198053858627";
 		};
 
 		// - Modo
@@ -51,9 +51,9 @@ class ADENIS_STAFF
 			slot=1;
 			skip_checks=1;
 		};
-		class Mateja: modo
+		class Loann: modo
 		{
-			uid="76561198053858627";
+			uid="76561198171075495";
 		};
 		class ChuckWillis: modo
 		{
@@ -126,7 +126,12 @@ class ADENIS_STAFF
 				name="Arsenal";
 				statement="closedialog 0; ['Open', [ true ]] call BIS_fnc_arsenal;";
 				condition="(true)";
-				allow[]=ADMIN_AND_MODO;
+				allow[]={
+					"76561198146571164",
+					"76561198237617140",
+					"76561198084504163",
+					"76561198053858627"
+				};
 			};
 
 			class vehicle_getKey

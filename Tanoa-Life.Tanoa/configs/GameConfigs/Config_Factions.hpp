@@ -99,6 +99,7 @@ class ADENIS_FACTIONS
 			class east_gcp_resp: east_form_resp {};
 			class east_gcm_resp: east_form_resp {};
 			class east_urtant_resp: east_form_resp {};
+			class east_ua_resp: east_form_resp {};
 			class east_uja_resp: east_form_resp {};
 			class east_upg_resp: east_form_resp {};
 
@@ -141,6 +142,10 @@ class ADENIS_FACTIONS
 			class east_urtant: east_form
 			{
 				license="east_urtant_resp";
+			};
+			class east_ua: east_form
+			{
+				license="east_ua_resp";
 			};
 			class east_uja: east_form
 			{

@@ -1009,6 +1009,28 @@ class ADENIS_LICENSES
 			};
 		};
 	};
+	class east_ua
+	{
+		name="Formation UA";
+		class factions
+		{
+			class EAST
+			{
+				search_shown[]={"WEST","EAST"};
+			};
+		};
+	};
+	class east_ua_resp
+	{
+		name="Responsable de formation UA";
+		class factions
+		{
+			class EAST
+			{
+				search_shown[]={"WEST","EAST"};
+			};
+		};
+	};
 	class east_uja
 	{
 		name="Formation UJA";

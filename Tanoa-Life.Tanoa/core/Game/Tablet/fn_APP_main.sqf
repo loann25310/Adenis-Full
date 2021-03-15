@@ -101,21 +101,13 @@ _global_apps =
 		"Alysia_Client_Texture\Data\tablet\applications\app_market_select.paa",
 		"['MARKET'] spawn AlysiaClient_fnc_tabletApp;",
 		"Bourse",
-		"
-			('MARKET' in g_apps) ||
-			((player distance (getMarkerPos 'HV_1') < 20) ||
-			(player distance (getMarkerPos 'HV_2') < 20))
-		"
+		"'MARKET' in g_apps"
 	],[
 		"Alysia_Client_Texture\Data\tablet\applications\app_market.paa",
 		"Alysia_Client_Texture\Data\tablet\applications\app_market_select.paa",
 		"['MARKET_ENTREPRISE'] spawn AlysiaClient_fnc_tabletApp;",
 		"Bourse Entreprise",
-		"
-			('MARKET_ENTREPRISE' in g_apps) ||
-			((player distance (getMarkerPos 'HV_1') < 20) ||
-			(player distance (getMarkerPos 'HV_2') < 20))
-		"
+		"'MARKET_ENTREPRISE' in g_apps"
 	],[
 		"Alysia_Client_Texture\Data\tablet\applications\app_fuel.paa",
 		"Alysia_Client_Texture\Data\tablet\applications\app_fuel_select.paa",

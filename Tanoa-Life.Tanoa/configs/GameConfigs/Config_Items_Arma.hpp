@@ -2390,6 +2390,10 @@ class ADENIS_ITEMS_ARMA
 	class Alysia_Beret_East_2 : Alysia_Beret_East_1 {};
 	class H_Beret_CSAT_01_F : Alysia_Beret_East_1 {};
 	class JB_ANT_Beret : Alysia_Beret_East_1 {};
+	class JB_ANT_Beret_UA : Alysia_Beret_East_1
+	{
+		buy_license_EAST[]={"east_ua"};
+	};
 	class JB_ANT_Beret_UJA : Alysia_Beret_East_1
 	{
 		buy_license_EAST[]={"east_uja"};

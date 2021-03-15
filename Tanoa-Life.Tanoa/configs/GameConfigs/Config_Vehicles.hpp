@@ -2755,7 +2755,7 @@ class ADENIS_VEHICLES
 	};
 	class Alysia_R71_East_01: Alysia_R71_East_Base {};
 
-	class B_T_LSV_01_unarmed_F: Alysia_WEST_base
+	class B_T_LSV_01_unarmed_F: Alysia_EAST_base
 	{
 		realname="Prowler";
 		buyPrice=22500;
@@ -2840,13 +2840,13 @@ class ADENIS_VEHICLES
 		licenses[]={"truck"};
 		fuel="Diesel";
 		fuelCapacity=550;
-		rank=7;
+		rank=2;
 	};
 	
 	class B_Heli_Light_01_F: Alysia_EAST_base
 	{
 		realname="Humming Bird";
-		buyPrice=45000;
+		buyPrice=450000;
 		inventory=30;
 		fuel="Kerosene";
 		fuelCapacity=120;
@@ -2919,7 +2919,7 @@ class ADENIS_VEHICLES
 	class EC135Unarmedlu: Alysia_EAST_base
 	{
 		realname="E135 ANT";
-		buyPrice=45000;
+		buyPrice=450000;
 		inventory=45;
 		insurance=1;
 		licenses[]={};
@@ -2965,12 +2965,12 @@ class ADENIS_VEHICLES
 		rank=5;
 	};
 
-	class ANT_RHIB: Alysia_EAST_base
+	class JB_mkvsoc: Alysia_EAST_base
     {
-        realname="RHIB ANT Camo";
+        realname="Mk.V SOC";
         buyprice=85000;
         inventory=170;
-        licenses[]={"boat"};
+        licenses[]={"boat","east_gcm"};
         fuel="diesel";
         fuelCapacity=160;
         rank=2;
@@ -2984,7 +2984,7 @@ class ADENIS_VEHICLES
         licenses[]={"east_pilot","pilot"};
         fuel="Kerosene";
         fuelCapacity=295;
-        rank=5;
+        rank=15;
     };
 
 	/*

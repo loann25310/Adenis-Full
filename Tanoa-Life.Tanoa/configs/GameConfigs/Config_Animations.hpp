@@ -65,32 +65,32 @@ class ADENIS_ANIMATIONS
 		name="Mains à la taille";
 	};
 
-	class actionAnimPushup
+	class AmovPercMstpSnonWnonDnon_exercisePushup
 	{
 		name="Pompe";
 	};
 
-	class actionAnimKata
+	class AmovPercMstpSnonWnonDnon_exerciseKata
 	{
 		name="Kata";
 	};
 
-	class actionAnimKneeBend
+	class AmovPercMstpSnonWnonDnon_exercisekneeBendA
 	{
 		name="Flexion";
 	};
 
-	class actionAnimSplit
+	class Acts_EpicSplit
 	{
 		name="Grand écart";
 	};
 
-	class actionAnimSitTired
+	class Acts_CivilShocked_2
 	{
 		name="Assis";
 	};
 
-	class actionAnimPissing
+	class Acts_AidlPercMstpSlowWrflDnon_pissing
 	{
 		name="Uriner";
 	};

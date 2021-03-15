@@ -1252,6 +1252,7 @@ class ADENIS_SHOPS_CLOTHING
 			"Alysia_Casque_East_01",
 			"H_PilotHelmetHeli_O",
 			"JB_ANT_Beret",
+			"JB_ANT_Beret_UA",
 			"JB_ANT_Beret_UJA",
 			"JB_ANT_Beret_GCM",
 			"JB_ANT_Beret_GCP",

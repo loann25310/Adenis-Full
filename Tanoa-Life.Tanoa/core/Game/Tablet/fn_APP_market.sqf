@@ -12,19 +12,28 @@ if (isNull _display) exitWith {};
 _list = _display displayCtrl 8803;
 lbClear _list;
 
-{
-	_item = configName _x;
-	_index = _list lbAdd ([_item] call AlysiaClient_fnc_itemGetName);
-	_list lbSetData [_index, _item];
-	_list lbSetPicture [_index, ([_item] call AlysiaClient_fnc_itemGetImage)];
-} foreach ("isClass(_x >> 'market')" configClasses (missionConfigFile >> "ADENIS_ITEMS"));
+if (_onlyEntreprise) then {
+	{
+		_item = configName _x;
+		_index = _list lbAdd ([_item] call AlysiaClient_fnc_itemGetName);
+		_list lbSetData [_index, _item];
+		_list lbSetPicture [_index, ([_item] call AlysiaClient_fnc_itemGetImage)];
+	} foreach ("isClass(_x >> 'market') && (getNumber(_x >> 'entrepriseItem') isEqualTo 1)" configClasses (missionConfigFile >> "ADENIS_ITEMS"));
+} else {
+	{
+		_item = configName _x;
+		_index = _list lbAdd ([_item] call AlysiaClient_fnc_itemGetName);
+		_list lbSetData [_index, _item];
+		_list lbSetPicture [_index, ([_item] call AlysiaClient_fnc_itemGetImage)];
+	} foreach ("isClass(_x >> 'market') && (getNumber(_x >> 'entrepriseItem') isEqualTo 0)" configClasses (missionConfigFile >> "ADENIS_ITEMS"));
+};
 lbSort [_list, "ASC"];
 
 _list lbSetCurSel (missionNamespace getVariable ["market_sync_id", 0]);
 
 _event_ctrl = _display displayCtrl 8810;
 
-while {(g_app isEqualTo "MARKET")} do
+while {(g_app isEqualTo "MARKET") || (g_app isEqualTo "MARKET_ENTREPRISE")} do
 {
 	_res = gServer_market_event_next - serverTime;
 	if (_res <= 0) then {_res = 0};

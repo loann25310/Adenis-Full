@@ -2,7 +2,7 @@
 	Tanoa-Life RPG
 	Code written by Lyeed
 */
-private["_name", "_owner", "_type", "_plate", "_owner_name", "_position", "_direction", "_members", "_cash", "_object", "_inventory_virtual", "_inventory_arma", "_bank_history", "_link_percentage"];
+private["_name", "_owner", "_type", "_plate", "_perms", "_owner_name", "_position", "_direction", "_members", "_cash", "_object", "_inventory_virtual", "_inventory_arma", "_bank_history", "_link_percentage"];
 _name = [_this, 0, "", [""]] call BIS_fnc_param;
 _owner = [_this, 1, "", [""]] call BIS_fnc_param;
 _type = [_this, 2, "", [""]] call BIS_fnc_param;
@@ -32,6 +32,14 @@ if (count(_inventory_virtual) > 0) then {
 	_object setVariable ["company_inv_virtual", _inventory_virtual, true];
 };
 _object setVariable ["company_inv_arma", _inventory_arma, true];
+
+if ((count _members) isEqualTo 2) then {
+	_perms = [];
+	{
+		_perms pushBack 0;
+	} forEach (_members select 0);
+	_members pushBack _perms;
+};
 
 _object setVariable ["company_members", _members, true];
 _object setVariable ["company_info", [_name, _owner, _type, _plate, _owner_name], true];

@@ -54,6 +54,14 @@
 				)
 			"
 		],[
+			"lock",
+			"Jeter les clefs",
+			"g_houses deleteAt (g_houses findIf {_x isEqualTo g_interaction_target});",
+			"
+				(g_interaction_target in g_houses) && 
+				!(((g_interaction_target getVariable ['house_owner', ['', '']]) select 0) isEqualTo (getPlayerUID player))
+			"
+		],[
 			"garage",
 			"Garage",
 			"[g_interaction_target] call AlysiaClient_fnc_house_menu_action_garage;",

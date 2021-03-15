@@ -143,6 +143,8 @@ diag_log "----------------------------------------------------------------------
 diag_log format["Total Execution Time %1 seconds", (diag_tickTime - _timeStamp)];
 diag_log "---------------------------------------------------------------------------------------------------------";
 
+/* Server backups each 10 minutes */
+/*
 [] spawn {
 	// Save Loop
 	while {true} do {
@@ -154,7 +156,7 @@ diag_log "----------------------------------------------------------------------
 		diag_log "[SAVE] Starting backup";
 		systemChat "Début de la sauvegarde.";
 		[] call AlysiaServer_fnc_cleanup_houseStorages;
-		[] spawn AlysiaServer_fnc_cleanup_companyStorages;
+		[[],false] spawn AlysiaServer_fnc_cleanup_companyStorages;
 		sleep 10;
 		// Sauvegarde
 		[] call AlysiaServer_fnc_cleanup_deadVehicles;
@@ -173,6 +175,7 @@ diag_log "----------------------------------------------------------------------
 		systemChat "Sauvegarde terminé.";
 	};
 };
+*/
 
 _nextAnnounceTime = (random(10) + 1) * 60;
 while {true} do

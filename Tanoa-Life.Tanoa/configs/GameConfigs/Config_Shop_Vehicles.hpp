@@ -383,7 +383,8 @@ class ADENIS_SHOPS_VEHICLES
 			"B_Heli_Light_01_F",
 			"B_Truck_01_covered_F",
 			"Alysia_Hellcat_East_01",
-			"ANT_RHIB"
+			"B_Boat_Transport_01_F",
+			"JB_mkvsoc"
 		};
 	};
 
