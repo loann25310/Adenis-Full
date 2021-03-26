@@ -606,6 +606,15 @@ class ADENIS_ITEMS
         };
         class remove {};
     };
+
+    class ecorce
+    {
+        name="Ecorce de bois";
+        weight=2;
+        image="Adenis_Textures\ecorce.paa";
+        class remove {};
+    };
+
     class woodp
     {
         name="Planche";
@@ -2837,8 +2846,8 @@ class ADENIS_ITEMS
         class remove {};
         class food
         {
-            hunger=40;
-            thirst=20;
+            hunger=60;
+            thirst=60;
             sound="eat_biscuit";
         };
     };
@@ -2853,8 +2862,8 @@ class ADENIS_ITEMS
         class remove {};
         class food
         {
-            hunger=40;
-            thirst=20;
+            hunger=70;
+            thirst=70;
             sound="eat_biscuit";
         };
     };
@@ -2869,8 +2878,8 @@ class ADENIS_ITEMS
         class remove {};
         class food
         {
-            hunger=40;
-            thirst=20;
+            hunger=55;
+            thirst=55;
             sound="eat_biscuit";
         };
     };

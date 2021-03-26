@@ -238,6 +238,11 @@ class ADENIS_GARAGES
 		name="Garage Casino";
 		spawns[]={"land_10_spawn_3"};
 	};
+	class land_30: land_1
+	{
+		name="Garage Lijnhaven";
+		spawns[]={"land_30_spawn_1"};
+	};
 	class fourriere_1
 	{
 		name="Fourrière de terrestre de Georgetown";

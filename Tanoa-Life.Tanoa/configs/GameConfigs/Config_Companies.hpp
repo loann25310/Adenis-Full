@@ -101,7 +101,7 @@ class ADENIS_COMPANIES_BUILDINGS
 		bedrock="Land_Bricks_V3_F";
 		construction[]={{"woodp",20},{"ciment",75},{"furniture",25},{"ironp",45},{"glass",45}};
 		taxe=130;
-	};	
+	};
 	class Gek_Entreprise_Cacao
 	{
 		bedrock="Land_Bricks_V3_F";
@@ -1046,11 +1046,11 @@ class ADENIS_COMPANIES_TYPES
 
 	class laboratoiremedical
 	{
-		name="Laboratoire Médicale";
+		name="Laboratoire Médical";
 		price=800000;
 		building="GeK_Entreprise_Distillerie";
 		image="Alysia_Client_Texture\Data\companies\types\rhum.paa";
-		license="company_labomedical";
+		license="company_laboratoiremedical";
 		ressources_link[]={"smecta"};
 		members_max=15;
 		salary=180;

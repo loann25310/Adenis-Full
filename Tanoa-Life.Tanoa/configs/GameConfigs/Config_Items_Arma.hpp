@@ -1288,6 +1288,10 @@ class ADENIS_ITEMS_ARMA
 	class TRYK_U_B_BLK3CD: Skyline_Uniforme_Securite_01_F {
 		buy_license_CIV[]={"company_money_tranfer"};
 	};
+	class CCS_CombatUniform : TRYK_U_B_BLK3CD {};
+	class CCS_Vest : TRYK_U_B_BLK3CD {
+		buy_price=95000;
+	};
 
 	class Skyline_Veste_Securite_01_F : Skyline_Uniforme_Securite_01_F
 	{

@@ -216,7 +216,7 @@ class ADENIS_PROCESS
 		sound="cooking";
 		class require
 		{
-			items_virtual[]={{"meth",1},{"hsoufre",2}};
+			items_virtual[]={{"meth",1},{"hsoufre",1}};
 		};
 		class receive
 		{
@@ -2177,7 +2177,7 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_virtual[]={{"pouletroticook",1}};
+			items_virtual[]={{"pouletroticook",5}};
 		};
 		time_per_item=2;
 		time_default=10;
@@ -2199,7 +2199,7 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_virtual[]={{"rationmilpoulet",1}};
+			items_virtual[]={{"rationmilpoulet",5}};
 		};
 		time_per_item=2;
 		time_default=10;
@@ -2221,7 +2221,7 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_virtual[]={{"rationmilboeuf",1}};
+			items_virtual[]={{"rationmilboeuf",5}};
 		};
 		time_per_item=2;
 		time_default=10;
@@ -2378,7 +2378,7 @@ class ADENIS_PROCESS
 		class require
 		{
 			items_virtual[]={{"beef",1}};
-		};	
+		};
 		class receive
 		{
 			items_virtual[]={{"beefsteak_beef",25}};
@@ -2490,11 +2490,11 @@ class ADENIS_PROCESS
 		sound="salt_process";
 		class require
 		{
-			items_virtual[]={{"Tonneau_gin",1},{"bouteillevide",1}};
+			items_virtual[]={{"Tonneau_gin",1},{"bouteillevide",5}};
 		};
 		class receive
 		{
-			items_virtual[]={{"gin",1}};
+			items_virtual[]={{"gin",5}};
 		};
 		time_per_item=2;
 		time_default=2;
@@ -2512,7 +2512,7 @@ class ADENIS_PROCESS
 		name="Assemblage (sake)";
 		class require
 		{
-			items_virtual[]={{"corn",1}};
+			items_virtual[]={{"riz",10}};
 		};
 		class receive
 		{
@@ -2525,11 +2525,11 @@ class ADENIS_PROCESS
 		name="Mise en bouteille du sake";
 		class require
 		{
-			items_virtual[]={{"Tonneau_sake",1},{"bouteillevide",1}};
+			items_virtual[]={{"Tonneau_sake",1},{"bouteillevide",5}};
 		};
 		class receive
 		{
-			items_virtual[]={{"sake",1}};
+			items_virtual[]={{"sake",5}};
 		};
 	};
 
@@ -2538,7 +2538,7 @@ class ADENIS_PROCESS
 		name="Assemblage (ricard)";
 		class require
 		{
-			items_virtual[]={{"anis",1}};
+			items_virtual[]={{"anis",10}};
 		};
 		class receive
 		{
@@ -2551,11 +2551,11 @@ class ADENIS_PROCESS
 		name="Mise en bouteille du ricard";
 		class require
 		{
-			items_virtual[]={{"Tonneau_ricard",1},{"bouteillevide",1}};
+			items_virtual[]={{"Tonneau_ricard",1},{"bouteillevide",5}};
 		};
 		class receive
 		{
-			items_virtual[]={{"ricard",1}};
+			items_virtual[]={{"ricard",5}};
 		};
 	};
 
@@ -2564,7 +2564,7 @@ class ADENIS_PROCESS
 		name="Assemblage (vodka)";
 		class require
 		{
-			items_virtual[]={{"corn",1},{"orge",2},{"patate",1}};
+			items_virtual[]={{"corn",2},{"orge",2},{"patate",6}};
 		};
 		class receive
 		{
@@ -2577,11 +2577,11 @@ class ADENIS_PROCESS
 		name="Mise en bouteille de la vodka";
 		class require
 		{
-			items_virtual[]={{"Tonneau_vodka",1},{"bouteillevide",1}};
+			items_virtual[]={{"Tonneau_vodka",1},{"bouteillevide",5}};
 		};
 		class receive
 		{
-			items_virtual[]={{"vodka",1}};
+			items_virtual[]={{"vodka",5}};
 		};
 	};
 
@@ -2590,7 +2590,7 @@ class ADENIS_PROCESS
 		name="Assemblage (suze)";
 		class require
 		{
-			items_virtual[]={{"gentiane",2}};
+			items_virtual[]={{"gentiane",10}};
 		};
 		class receive
 		{
@@ -2603,11 +2603,11 @@ class ADENIS_PROCESS
 		name="Mise en bouteille de la suze";
 		class require
 		{
-			items_virtual[]={{"Tonneau_suze",1},{"bouteillevide",1}};
+			items_virtual[]={{"Tonneau_suze",1},{"bouteillevide",5}};
 		};
 		class receive
 		{
-			items_virtual[]={{"suze",1}};
+			items_virtual[]={{"suze",5}};
 		};
 	};
 
@@ -2713,7 +2713,7 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_virtual[]={{"adscalpel",4}};
+			items_virtual[]={{"scalpel",4}};
 		};
 		time_per_item=2;
 		time_default=2;
@@ -2746,7 +2746,7 @@ class ADENIS_PROCESS
 				licenses[]={"company_laboratoiremedical"};
 			};
 		};
-	};	
+	};
 	/* ====================================== company_coffee ====================================== */
 	class coffeep
 	{
@@ -4436,7 +4436,7 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_arma[]={"RH_19Rnd_9x19_g17"};
+			items_arma[]={"RH_17Rnd_9x19_g17"};
 		};
 	};
 	class magazine_tec9: magazine_akm
@@ -5226,7 +5226,7 @@ class clousp: iron
 		};
 		class receive
 		{
-			items_virtual[]={{"woodp",2}};
+			items_virtual[]={{"woodp",2},{"ecorce",1}};
 		};
 		time_per_item=1;
 		time_default=5;
@@ -5252,7 +5252,7 @@ class clousp: iron
 		sound="smelting";
 		class require
 		{
-			items_virtual[]={{"woodp",4}};
+			items_virtual[]={{"woodp",4},{"ecorce",2}};
 		};
 		class receive
 		{
