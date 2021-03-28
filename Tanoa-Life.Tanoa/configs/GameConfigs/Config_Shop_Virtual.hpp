@@ -281,7 +281,7 @@ class ADENIS_SHOPS_VIRTUAL
 			"champagne",
 			"rhum",
 			"beer",
-			"glass"
+			"glass",
 			"ironp",
 			"soufre",
 			"steelp",

@@ -697,6 +697,19 @@ class ADENIS_LICENSES
 			};
 		};
 	};
+	class company_laboratoiremedical
+	{
+		name="Laboratoire";
+		class factions
+		{
+			class CIV
+			{
+				price=10500;
+				condition="!(isNull g_company) && {(((g_company getVariable ['company_info',['','','']]) select 2) isEqualTo 'laboratoiremedical')}";
+				search_shown[]={"WEST","EAST","GUER","CIV"};
+			};
+		};
+	};
 
 	class membre_pnt
 	{

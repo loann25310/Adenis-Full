@@ -1050,7 +1050,7 @@ class ADENIS_COMPANIES_TYPES
 		price=800000;
 		building="GeK_Entreprise_Distillerie";
 		image="Alysia_Client_Texture\Data\companies\types\rhum.paa";
-		license="company_labomedical";
+		license="company_laboratoiremedical";
 		ressources_link[]={"smecta"};
 		members_max=15;
 		salary=180;

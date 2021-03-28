@@ -41,6 +41,14 @@ if ((count _members) isEqualTo 2) then {
 	_members pushBack _perms;
 };
 
+if((count (_members select 0)) != (count (_members select 2))) then {
+	_perms = [];
+	{
+		_perms pushBack 0;
+	} forEach (_members select 0);
+	_members set [2, _perms];
+};
+
 _object setVariable ["company_members", _members, true];
 _object setVariable ["company_info", [_name, _owner, _type, _plate, _owner_name], true];
 /*

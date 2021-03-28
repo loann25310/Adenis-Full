@@ -2,7 +2,7 @@
 	Tanoa-Life RPG
 	Code written by Lyeed
 */
-private["_action", "_target", "_display", "_title", "_balance", "_btnL1", "_btnL2", "_btnL3", "_btnL4", "_btnR1", "_btnR2", "_btnR3", "_btnR4", "_txtL1", "_txtL2", "_txtL3", "_txtL4", "_txtR1", "_txtR2", "_txtR3", "_txtR4", "_edit"];
+private["_action", "_target", "_display", "_title", "_balance", "_btnL1", "_btnL2", "_btnL3", "_btnL4", "_btnR1", "_btnR2", "_btnR3", "_btnR4", "_txtL1", "_txtL2", "_txtL3", "_txtL4", "_txtR1", "_txtR2", "_txtR3", "_txtR4", "_edit", "_members", "_hasPerm"];
 _action = [_this, 0, "", [""]] call BIS_fnc_param;
 _target = [_this, 1, objNull, [objNull]] call BIS_fnc_param;
 
@@ -70,9 +70,17 @@ switch (_action) do
 			if (!(isNull g_company)) then
 			{
 				_info = g_company getVariable ["company_info", []];
+				_members = g_company getVariable ["company_members", []];
+				_hasPerm = false;
+
+				if ((getPlayerUID player) in (_members select 0)) then
+				{
+					_hasPerm = ((_members select 2) select ((_members select 0) find (getPlayerUID player))) isEqualTo 1;
+				};
+
 				if (!(g_company getVariable ['construction', false])) then
 				{
-					if ((_info select 1) isEqualTo (getPlayerUID player)) then
+					if (((_info select 1) isEqualTo (getPlayerUID player)) || _hasPerm) then
 					{
 						_txtL2 ctrlSetStructuredText parseText "<t align='left'>Entreprise</t>";
 						_btnL2 buttonSetAction "[""home_company"", g_interaction_target] call AlysiaClient_fnc_atmScreen";

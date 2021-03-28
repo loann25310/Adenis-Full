@@ -975,8 +975,8 @@ class ADENIS_SHOPS_CLOTHING
 			"Skyline_Uniforme_Securite_01_F",
 			"Skyline_Uniforme_Securite_02_F",
 			"Skyline_Uniforme_Securite_03_F",
-			"TRYK_U_B_BLK3CD"
-
+			"TRYK_U_B_BLK3CD",
+			"CCS_CombatUniform"
 		};
 		goggles[]={
 			"G_Balaclava_TI_blk_F"
@@ -993,7 +993,9 @@ class ADENIS_SHOPS_CLOTHING
 			"Skyline_Veste_Securite_01_F",
 			"Press_vest",
 			"V_Press_F",
-			"AET_vest"
+			"AET_vest",
+			"CCS_Vest",
+			"EF_BLT_M1"
 		};
 		backpacks[]=
 		{

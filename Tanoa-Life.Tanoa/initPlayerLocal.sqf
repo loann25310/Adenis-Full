@@ -153,7 +153,7 @@ if (hasInterface) then
 
 	player addEventHandler ["GetInMan", {
 		params ["_unit", "_role", "_vehicle", "_turret"];
-		if (_vehicle isKindOf "Air") then {
+		if (_vehicle isKindOf "Plane") then {
 	    	setViewDistance 3000;
 	    	setObjectViewDistance 3000;
 	    };

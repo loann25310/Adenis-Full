@@ -8,6 +8,7 @@ class ADENIS_WHITELIST
 
 	donator_slots[] =
 	{
+		/*
 		"CIV_111",
 		"CIV_112",
 		"CIV_113",
@@ -23,5 +24,6 @@ class ADENIS_WHITELIST
 		"CIV_123",
 		"CIV_124",
 		"CIV_125"
+		*/
 	};
 };
