@@ -600,8 +600,8 @@ class ADENIS_FACTIONS
 	class WEST
 	{
 		/*** GLOBAL ***/
-		name="FRC";
-		name_full="Fuerzas revolucionarias cubanas";
+		name="RAC";
+		name_full="Régime Autocratique Communiste";
 		icon="";
 		identity_item="Alysia_Identity_Civ";
 
@@ -729,30 +729,32 @@ class ADENIS_FACTIONS
 		{
 			ranks_complet[]=
 			{
-				"Civil",
-				"Cabo",
-				"Sargente",
-				"Suboficial",
-				"Teniente",
-				"Capitan",
-				"Mayor",
-				"Comandante en jefe",
-				"Vice Presidente",
-				"Presidente"
+				"Recrue",
+				"Première Classe",
+				"Sergent",
+				"Adjudant",
+				"Major",
+				"Lieutenant",
+				"Capitaine",
+				"Commandant",
+				"Colonel",
+				"Général",
+				"Leader Suprème"
 			};
 
 			ranks_short[]=
 			{
-				"Civ",
-				"Ca",
+				"Rcr",
+				"Pre",
 				"Sgt",
-				"Sub",
-				"Ten",
-				"Cpt",
-				"May",
+				"Adj",
+				"Maj",
+				"Ltn",
+				"Cap",
 				"Com",
-				"VP",
-				"Pr"
+				"Col",
+				"Gnr",
+				"Lds"
 			};
 		};
 	};

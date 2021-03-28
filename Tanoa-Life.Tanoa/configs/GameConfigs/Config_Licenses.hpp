@@ -699,7 +699,7 @@ class ADENIS_LICENSES
 	};
 	class company_laboratoiremedical
 	{
-		name="Laboratoire";
+		name="Laborantin";
 		class factions
 		{
 			class CIV
@@ -1152,7 +1152,7 @@ class ADENIS_LICENSES
 			class GUER: CIV {};
 			class WEST: CIV {};
 		};
-	};	
+	};
 	class traitement_fer
 	{
 		name="Traitement du fer";

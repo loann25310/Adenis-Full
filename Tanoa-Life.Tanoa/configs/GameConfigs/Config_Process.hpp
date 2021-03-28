@@ -2378,7 +2378,7 @@ class ADENIS_PROCESS
 		class require
 		{
 			items_virtual[]={{"beef",1}};
-		};	
+		};
 		class receive
 		{
 			items_virtual[]={{"beefsteak_beef",25}};
@@ -2713,7 +2713,7 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_virtual[]={{"adscalpel",4}};
+			items_virtual[]={{"scalpel",4}};
 		};
 		time_per_item=2;
 		time_default=2;
@@ -2746,7 +2746,7 @@ class ADENIS_PROCESS
 				licenses[]={"company_laboratoiremedical"};
 			};
 		};
-	};	
+	};
 	/* ====================================== company_coffee ====================================== */
 	class coffeep
 	{
@@ -4436,7 +4436,7 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_arma[]={"RH_19Rnd_9x19_g17"};
+			items_arma[]={"RH_17Rnd_9x19_g17"};
 		};
 	};
 	class magazine_tec9: magazine_akm
@@ -5226,7 +5226,7 @@ class clousp: iron
 		};
 		class receive
 		{
-			items_virtual[]={{"woodp",2}};
+			items_virtual[]={{"woodp",2},{"ecorce",1}};
 		};
 		time_per_item=1;
 		time_default=5;
