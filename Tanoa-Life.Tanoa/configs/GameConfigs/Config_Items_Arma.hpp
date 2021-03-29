@@ -1133,6 +1133,8 @@ class ADENIS_ITEMS_ARMA
 		buy_license_CIV[]={"conexus_rebelle"};
 	};
 	class Conexus_LS : Conexus_Uniforme {};
+	class Conexus_Costume_1 : Conexus_Uniforme {};
+	class Conexus_Costume_2 : Conexus_Uniforme {};
 
 	// Pare-balle
 	class ceinture_hc : Conexus_Uniforme
@@ -1173,6 +1175,10 @@ class ADENIS_ITEMS_ARMA
 	class Conexus_casquette_02_F : Conexus_Masque_F {};
 	class Conexus_booniehat_01_F : Conexus_Masque_F {};
 	class Casquette_HC : Conexus_Masque_F {};
+	class Conexus_Beret_01_F : Conexus_Masque_F {};
+	class Conexus_Beret_02_F : Conexus_Masque_F {};
+	class Conexus_Beret_03_F : Conexus_Masque_F {};
+	class Conexus_Beret_04_F : Conexus_Masque_F {};
 
 
 	////////////////////////////////////////////  PREFECTURE   ///////////////////////////////////////////////////
