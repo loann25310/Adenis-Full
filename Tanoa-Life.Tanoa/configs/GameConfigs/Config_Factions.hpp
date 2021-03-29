@@ -3,8 +3,8 @@ class ADENIS_FACTIONS
 	class EAST
 	{
 		/*** GLOBAL ***/
-		name="ANT";
-		name_full="Armée Nationale Tanocienne";
+		name="RAC";
+		name_full="Régime Autocratique Communiste";
 		icon="Alysia_Client_Texture\Data\faction\CIV_logo.paa";
 		identity_item="Alysia_Identity_Civ";
 
@@ -24,7 +24,7 @@ class ADENIS_FACTIONS
 			receive_fuel_alert=1;
 			class send_global_message
 			{
-				rank=13;
+				rank=9;
 			};
 			class central_plate {};
 		};
@@ -37,15 +37,15 @@ class ADENIS_FACTIONS
 			employee=0;
 			class history
 			{
-				rank=15;
+				rank=11;
 				class clean
 				{
-					rank=15;
+					rank=11;
 				};
 			};
 			class destroy
 			{
-				rank=15;
+				rank=11;
 			};
 		};
 
@@ -57,12 +57,12 @@ class ADENIS_FACTIONS
 
 		class bank_faction
 		{
-			rank=10;
+			rank=8;
 			payFuel=1;
 		};
 		class taxes_app
 		{
-			rank=15;
+			rank=9;
 		};
 
 		/*** Licenses ***/
@@ -74,19 +74,19 @@ class ADENIS_FACTIONS
 		{
 			class membre_pnt
 			{
-				rank=15;
+				rank=10;
 				same_side_only=0;
 			};
 
 			class east_form
 			{
-				rank=14;
+				rank=8;
 				same_side_only=1;
 			};
 
 			class east_form_resp
 			{
-				rank=14;
+				rank=9;
 				same_side_only=1;
 			};
 			class east_medic_resp: east_form_resp {};
@@ -217,42 +217,33 @@ class ADENIS_FACTIONS
         {
             ranks_complet[]=
             {
-                "Civil",
-                "Soldat",
-                "Première Classe",
-                "Caporal",
-                "Caporal-Chef",
-                "Sergent",
-                "Sergent-Chef",
-                "Adjudant",
-                "Adjudant-Chef",
-                "Major",
-                "Lieutenant",
-                "Capitaine",
-                "Commandant",
-                "Lieutenant Colonel",
-                "Colonel",
-                "Président Général"
+		"Civil",
+		"Recrue",
+		"Première Classe",
+		"Sergent",
+		"Adjudant",
+		"Major",
+		"Lieutenant",
+		"Capitaine",
+		"Commandant",
+		"Colonel",
+		"Général",
+		"Leader Suprème"
             };
 
             ranks_short[]=
             {
-                "Civ",
-                "Sdt",
-                "1cl",
-                "Cpl",
-                "Cpc",
-                "Sgt",
-                "SgC",
-                "Adj",
-                "Adc",
-                "Maj",
-                "Ltn",
-                "Cne",
-                "Cmd",
-                "Lcl",
-                "Col",
-                "PG"
+		"Rcr",
+		"Pre",
+		"Sgt",
+		"Adj",
+		"Maj",
+		"Ltn",
+		"Cap",
+		"Com",
+		"Col",
+		"Gnr",
+		"Lds"
             };
         };
     };
@@ -600,8 +591,8 @@ class ADENIS_FACTIONS
 	class WEST
 	{
 		/*** GLOBAL ***/
-		name="RAC";
-		name_full="Régime Autocratique Communiste";
+		name="CSC";
+		name_full="Compagnie de Sécurité Communiste";
 		icon="";
 		identity_item="Alysia_Identity_Civ";
 
@@ -621,7 +612,7 @@ class ADENIS_FACTIONS
 			receive_fuel_alert=1;
 			class send_global_message
 			{
-				rank=7;
+				rank=5;
 			};
 			class central_plate {};
 		};
@@ -637,22 +628,22 @@ class ADENIS_FACTIONS
 				rank=1;
 				class clean
 				{
-					rank=7;
+					rank=5;
 				};
 			};
 			class destroy
 			{
-				rank=7;
+				rank=5;
 			};
 			class create
 			{
-				rank=7;
+				rank=5;
 			};
 		};
 
 		class bank_faction
 		{
-			rank=7;
+			rank=5;
 			payFuel=1;
 		};
 
@@ -710,7 +701,7 @@ class ADENIS_FACTIONS
 			};
 			class leader_board
 			{
-				access_rank=7;
+				access_rank=5;
 			};
 		};
 
@@ -729,32 +720,22 @@ class ADENIS_FACTIONS
 		{
 			ranks_complet[]=
 			{
-				"Recrue",
-				"Première Classe",
-				"Sergent",
-				"Adjudant",
-				"Major",
-				"Lieutenant",
-				"Capitaine",
-				"Commandant",
-				"Colonel",
-				"Général",
-				"Leader Suprème"
+				"Civil",
+				"Un",
+				"Deux",
+				"Trois",
+				"Quatre",
+				"Cinq"
 			};
 
 			ranks_short[]=
 			{
-				"Rcr",
-				"Pre",
-				"Sgt",
-				"Adj",
-				"Maj",
-				"Ltn",
-				"Cap",
-				"Com",
-				"Col",
-				"Gnr",
-				"Lds"
+				"Civ",
+				"Un",
+				"Deu",
+				"Tro",
+				"Qua",
+				"Cin"
 			};
 		};
 	};
