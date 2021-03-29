@@ -1903,7 +1903,7 @@ class ADENIS_ITEMS
         class market
         {
             max=2200;
-            min=800;
+            min=1200;
         };
         class food
         {
