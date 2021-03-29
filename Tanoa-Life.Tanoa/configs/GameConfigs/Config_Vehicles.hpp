@@ -2933,16 +2933,6 @@ class ADENIS_VEHICLES
 		rank=1;
 	};
 
-	class I_plane_Fighter_03_dynamicLoadout_F: Alysia_EAST_base
-	{
-		realname="Planer";
-		buyPrice=450000;
-		inventory=30;
-		fuel="Kerosene";
-		fuelCapacity=120;
-		rank=1;
-	};
-
 	class B_Boat_Armed_01_minigun_F: Alysia_EAST_base
 	{
 		realname="Bateau à moteur armé";

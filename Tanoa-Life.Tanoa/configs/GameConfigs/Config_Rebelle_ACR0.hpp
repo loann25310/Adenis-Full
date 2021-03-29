@@ -114,10 +114,6 @@ class G_Balaclava_blk: Default_Item_Accred0
 {
 	buy_price=590;
 };
-class G_Balaclava_oli: Default_Item_Accred0
-{
-	buy_price=590;
-};
 class G_Balaclava_combat: Default_Item_Accred0
 {
 	buy_price=590;
@@ -273,10 +269,6 @@ class TRYK_V_Bulletproof_BL: V_TacVest_blk {};
 class TRYK_V_Bulletproof_BLK: V_TacVest_blk {};
 class TRYK_V_Bulletproof: V_TacVest_blk {};
 ////////////////////////////////////////
-class V_RebreatherIA: Default_Item_Accred0
-{
-	buy_price=17500;
-};
 
 ///////////////////////
 //     Uniforme     //
@@ -360,7 +352,6 @@ class TRYK_U_B_PCUGHs: TRYK_U_B_OD_OD_R_CombatUniform {};
 class U_BG_leader: TRYK_U_B_OD_OD_R_CombatUniform {};
 class U_BG_Guerilla1_1: TRYK_U_B_OD_OD_R_CombatUniform {};
 class U_BG_Guerrilla_6_1: TRYK_U_B_OD_OD_R_CombatUniform {};
-class U_I_Wetsuit: TRYK_U_B_OD_OD_R_CombatUniform {};
 class hgun_ACPC2_F: TRYK_U_B_OD_OD_R_CombatUniform {};
 class TRYK_U_B_BLKBLK_CombatUniform: TRYK_U_B_OD_OD_R_CombatUniform {};
 class TRYK_U_B_ARO2_CombatUniform: TRYK_U_B_OD_OD_R_CombatUniform {};

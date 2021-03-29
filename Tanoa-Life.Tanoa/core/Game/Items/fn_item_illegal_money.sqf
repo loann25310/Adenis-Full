@@ -29,7 +29,7 @@ if (g_action_inUse) exitWith {
 	closeDialog 0;
 };
 
-[false, 'illegal_money', _toRemove] call AlysiaClient_fnc_handleInv
+[false, 'illegal_money', _toRemove] call AlysiaClient_fnc_handleInv;
 
 _suit = (nearestObjects [player, ["Skyline_Alysia_Boite_01_F"], 3.2]) select 0;
 if (isNil "_suit") then

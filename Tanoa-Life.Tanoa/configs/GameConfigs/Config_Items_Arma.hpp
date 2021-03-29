@@ -2170,11 +2170,6 @@ class ADENIS_ITEMS_ARMA
 		buy_price=1200;
 		buy_condition_EAST=1;
 	};
-	class V_Rangemaster_belt
-	{
-		buy_price=1200;
-		buy_condition_EAST=1;
-	};
 	class V_PlateCarrierlA1_dgtl
 	{
 		buy_price=1200;
@@ -2235,22 +2230,12 @@ class ADENIS_ITEMS_ARMA
 		buy_price=1200;
 		buy_condition_EAST=1;
 	};
-	class LR_Shemagh_ESS_HEAR_NOPLETOR_OD
-	{
-		buy_price=1200;
-		buy_condition_EAST=1;
-	};
 	class G_balaclava_oli
 	{
 		buy_price=1200;
 		buy_condition_EAST=1;
 	};
 	class mgsr_eyepatch_goggles
-	{
-		buy_price=1200;
-		buy_condition_EAST=1;
-	};
-	class Mask_M40_OD
 	{
 		buy_price=1200;
 		buy_condition_EAST=1;
