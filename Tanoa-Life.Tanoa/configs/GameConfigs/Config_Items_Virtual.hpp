@@ -2034,6 +2034,18 @@ class ADENIS_ITEMS
         class remove {};
     };
 
+    class cartonp
+    {
+        name="Carton";
+        weight=1;
+        image="Adenis_Textures\carton.paa";
+        class market
+        {
+            max=1800;
+            min=800;
+        };
+        class remove {};
+    };
     class sugar_cane
     {
         name="Canne à sucre";
