@@ -5252,7 +5252,7 @@ class clousp: iron
 		sound="smelting";
 		class require
 		{
-			items_virtual[]={{"woodp",4},{"ecorce",2}};
+			items_virtual[]={{"woodp",4}};
 		};
 		class receive
 		{
@@ -5276,7 +5276,36 @@ class clousp: iron
 			};
 		};
 	};
-
+	class cartonp
+	{
+		name="Fabrication de carton";
+		sound="smelting";
+		class require
+		{
+			items_virtual[]={{"ecorce",2}};
+		};
+		class receive
+		{
+			items_virtual[]={{"carton",1}};
+		};
+		time_per_item=1;
+		time_default=5;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_wood"};
+			};
+			class WEST
+			{
+				licenses[]={"company_wood"};
+			};
+			class GUER
+			{
+				licenses[]={"company_wood"};
+			};
+		};
+	};
 	class bounty
 	{
 		name="Fabrication des Bountys";

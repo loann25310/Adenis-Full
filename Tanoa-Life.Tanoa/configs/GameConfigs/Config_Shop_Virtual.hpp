@@ -385,7 +385,7 @@ class ADENIS_SHOPS_VIRTUAL
 	class woodp: dealer
 	{
 		name="Commerçant de planche";
-		sell[]={"woodp"};
+		sell[]={"woodp", "cartonp"};
 	};
 	class volcano: dealer
 	{

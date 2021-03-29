@@ -769,7 +769,7 @@ class ADENIS_COMPANIES_TYPES
 	{
 		name="Restaurant";
 		price=430000;
-		building="Land_kiosk_redburger_f";
+		building="Adnis_Diablo_Resto";
 		license="company_cook";
 		image="Alysia_Client_Texture\Data\companies\types\cook.paa";
 		members_max=15;

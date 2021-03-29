@@ -259,6 +259,23 @@ class ADENIS_HOUSES
 			};
 		};
 	};
+	class Diablo_church
+	{
+		price=5000000;
+		class storage
+		{
+			type="Diablo_Coffre_Large";
+		};
+		class factions
+		{
+			class CIV {
+				license="home";
+			};
+			class WEST {
+				rank=1;
+			};
+		};
+	};
 	class Land_House_Big_02_F
 	{
 		price=750000;

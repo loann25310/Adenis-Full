@@ -508,7 +508,9 @@ class ADENIS_SHOPS_CLOTHING
 		uniforms[]=
 		{
 			"Conexus_Uniforme",
-			"Conexus_LS"
+			"Conexus_LS",
+			"Conexus_Costume_1",
+			"Conexus_Costume_2"
 		};
 		vests[]=
 		{
@@ -541,7 +543,11 @@ class ADENIS_SHOPS_CLOTHING
 			"Conexus_casquette_01_F",
 			"Conexus_casquette_02_F",
 			"Conexus_booniehat_01_F",
-			"Casquette_HC"
+			"Casquette_HC",
+			"Conexus_Beret_01_F",
+			"Conexus_Beret_02_F",
+			"Conexus_Beret_03_F",
+			"Conexus_Beret_04_F"
 		};
 		backpacks[]=
 		{
