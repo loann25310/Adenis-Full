@@ -2097,7 +2097,7 @@ class ADENIS_VEHICLES
 	class Skyline_Scania_G420_Depanneuse
 	{
 		realname="Scania G420 (Dépanneuse)";
-		buyPrice=229500;
+		buyPrice=22500;
 		inventory=120;
 		side="CIV";
 		insurance=1;
