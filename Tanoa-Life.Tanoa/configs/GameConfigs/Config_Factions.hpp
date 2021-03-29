@@ -37,15 +37,15 @@ class ADENIS_FACTIONS
 			employee=0;
 			class history
 			{
-				rank=11;
+				rank=12;
 				class clean
 				{
-					rank=11;
+					rank=12;
 				};
 			};
 			class destroy
 			{
-				rank=11;
+				rank=12;
 			};
 		};
 
@@ -220,6 +220,7 @@ class ADENIS_FACTIONS
 		"Civil",
 		"Recrue",
 		"Première Classe",
+		"Seconde Classe",
 		"Sergent",
 		"Adjudant",
 		"Major",
@@ -235,6 +236,7 @@ class ADENIS_FACTIONS
             {
 		"Rcr",
 		"Pre",
+		"Sec",
 		"Sgt",
 		"Adj",
 		"Maj",
@@ -721,21 +723,21 @@ class ADENIS_FACTIONS
 			ranks_complet[]=
 			{
 				"Civil",
-				"Un",
-				"Deux",
-				"Trois",
-				"Quatre",
-				"Cinq"
+				"Conscrit",
+				"Agent",
+				"Sergent",
+				"Divisionnaire",
+				"Commissaire"
 			};
 
 			ranks_short[]=
 			{
 				"Civ",
-				"Un",
-				"Deu",
-				"Tro",
-				"Qua",
-				"Cin"
+				"Csc",
+				"Agt",
+				"Sgt",
+				"Div",
+				"Com"
 			};
 		};
 	};
