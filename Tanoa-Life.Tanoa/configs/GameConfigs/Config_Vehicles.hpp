@@ -2853,6 +2853,96 @@ class ADENIS_VEHICLES
 		rank=3;
 	};
 
+	class SRB_JEEP_MP: Alysia_EAST_base
+	{
+		realname="SRB Jeep";
+		buyPrice=450000;
+		inventory=30;
+		fuel="Diesel";
+		fuelCapacity=120;
+		rank=1;
+	};
+
+	class SRB_Prowler_Multicam: Alysia_EAST_base
+	{
+		realname="SRB Prowler";
+		buyPrice=450000;
+		inventory=30;
+		fuel="Diesel";
+		fuelCapacity=120;
+		rank=1;
+	};
+
+	class SRB_KAMAZ_AMMO: Alysia_EAST_base
+	{
+		realname="SRB KAMAZ Ammo";
+		buyPrice=450000;
+		inventory=30;
+		fuel="Diesel";
+		fuelCapacity=120;
+		rank=1;
+	};
+
+	class SRB_KAMAZ_COVERED: Alysia_EAST_base
+	{
+		realname="SRB KAMAZ Couvert";
+		buyPrice=450000;
+		inventory=30;
+		fuel="Diesel";
+		fuelCapacity=120;
+		rank=1;
+	};
+
+	class I_MRAP_03_F: Alysia_EAST_base
+	{
+		realname="MRAP";
+		buyPrice=450000;
+		inventory=30;
+		fuel="Diesel";
+		fuelCapacity=120;
+		rank=1;
+	};
+
+	class SRB_Heli_Light_01_F: Alysia_EAST_base
+	{
+		realname="Hélicoptère SRB";
+		buyPrice=450000;
+		inventory=30;
+		fuel="Kerosene";
+		fuelCapacity=120;
+		rank=1;
+	};
+	
+	class I_Heli_light_03_unarmed_F: Alysia_EAST_base
+	{
+		realname="Hélicoptère";
+		buyPrice=450000;
+		inventory=30;
+		fuel="Kerosene";
+		fuelCapacity=120;
+		rank=1;
+	};
+
+	class I_Heli_Transport_02_F: Alysia_EAST_base
+	{
+		realname="Hélicoptère de transport";
+		buyPrice=450000;
+		inventory=30;
+		fuel="Kerosene";
+		fuelCapacity=120;
+		rank=1;
+	};
+
+	class I_plane_Fighter_03_dynamicLoadout_F: Alysia_EAST_base
+	{
+		realname="Planer";
+		buyPrice=450000;
+		inventory=30;
+		fuel="Kerosene";
+		fuelCapacity=120;
+		rank=1;
+	};
+
 	class B_Boat_Armed_01_minigun_F: Alysia_EAST_base
 	{
 		realname="Bateau à moteur armé";

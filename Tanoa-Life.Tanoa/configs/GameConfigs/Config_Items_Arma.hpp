@@ -2155,6 +2155,201 @@ class ADENIS_ITEMS_ARMA
 		buy_price=1200;
 		buy_condition_EAST=1;
 	};
+	class ACM_V_C_AAFMV1
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class ACM_V_C_AAFMV2
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class ACM_V_C_AAFMV3
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class V_Rangemaster_belt
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class V_PlateCarrierlA1_dgtl
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class ACM_C_H_AAFHelmet1
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class ACM_C_H_AAFHelmet2
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class SRB_Booniehat_Maskirni
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class SRB_Milcap_Beretka_Crna
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class SRB_Milcap_Beretka_Braon
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class SRB_Milcap_Beretka
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class SRB_Milcap_Beretka_Crvena
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class SRB_Milcap_Maskirni
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class mgrs_headbag
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class rds_Woodlander_cap3
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class H_ParadeDressCap_01_AFF_F
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class LR_Shemagh_ESS_HEAR_NOPLETOR_OD
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class G_balaclava_oli
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class mgsr_eyepatch_goggles
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class Mask_M40_OD
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class Tact_Hood_AOR2
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class U_I_Wetsuit
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class V_RebreatherIA
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class G_I_Diving
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class SRB_Crew_Slem
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class SRB_Pilot_Slem
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class H_PilotHelmetFighter_O
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class U_I_HeliPilotCoverails
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class SRB_Pilotcoveralls
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class mgsr_robe_olive_muddy
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class TAC_PMC_ID_W2
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class TAC_PMC_ID_B2
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class TAC_PMC_ID_H2
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class rds_Villager_cap1
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class tf_mr3000_bwmod
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class SRB_Kitbag_mcamo
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class SRB_JTAC_Pack
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class SRB_Carryall_Maskirni
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+	class TRYK_B_Belt_AOR2
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
 	class H_HelmetCrew_I
 	{
 		buy_price=4100;
@@ -2297,6 +2492,30 @@ class ADENIS_ITEMS_ARMA
 	};
 
 	class Alysia_Uniform_East_recrue_Camo2: Alysia_Uniform_East_colonel_Camo2
+	{
+		buy_condition_EAST=1;
+	};
+	class SRB_CombatUniform_Maskirni_para: Alysia_Uniform_East_colonel_Camo2
+	{
+		buy_condition_EAST=1;
+	};
+	class SRB_CombatUniform_Maskirni2: Alysia_Uniform_East_colonel_Camo2
+	{
+		buy_condition_EAST=1;
+	};
+	class U_I_OfficerUniform: Alysia_Uniform_East_colonel_Camo2
+	{
+		buy_condition_EAST=1;
+	};
+	class U_I_CombatUniform_shortsleeve: Alysia_Uniform_East_colonel_Camo2
+	{
+		buy_condition_EAST=1;
+	};
+	class U_I_ParadeUniform_01_AFF_decorated_F: Alysia_Uniform_East_colonel_Camo2
+	{
+		buy_condition_EAST=1;
+	};
+	class U_I_ParadeUniform_01_AFF_F: Alysia_Uniform_East_colonel_Camo2
 	{
 		buy_condition_EAST=1;
 	};

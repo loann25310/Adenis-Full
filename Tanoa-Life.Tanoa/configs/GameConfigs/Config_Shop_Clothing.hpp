@@ -1241,47 +1241,73 @@ class ADENIS_SHOPS_CLOTHING
 		side="EAST";
 		uniforms[]=
 		{
-			"Alysia_Uniform_East_recrue_Camo2",
-			"Alysia_Uniform_East_soldier_Camo2",
-			"Alysia_Uniform_East_soldier1st_Camo2",
-			"Alysia_Uniform_East_capochief_Camo2",
-			"Alysia_Uniform_East_capo_Camo2",
-			"Alysia_Uniform_East_sergent_Camo2",
-			"Alysia_Uniform_East_adjudant_Camo2",
-			"Alysia_Uniform_East_major_Camo2",
-			"Alysia_Uniform_East_lieutenant_Camo2",
-			"Alysia_Uniform_East_capitaine_Camo2",
-			"Alysia_Uniform_East_LtColonel_Camo2",
-			"Alysia_Uniform_East_colonel_Camo2",
-			"U_O_Wetsuit"
+			"SRB_CombatUniform_Maskirni_para",
+			"SRB_CombatUniform_Maskirni2",
+			"U_I_OfficerUniform",
+			"U_I_CombatUniform_shortsleeve",
+			"U_I_ParadeUniform_01_AFF_decorated_F",
+			"U_I_ParadeUniform_01_AFF_F",
+			"U_I_Wetsuit",
+			"V_RebreatherIA",
+			"G_I_Diving",
+			"U_I_HeliPilotCoverails",
+			"SRB_Pilotcoveralls",
+			"mgsr_robe_olive_muddy"
+
+
 		};
 		headgear[]=
 		{
-			"Alysia_Casque_East_01",
-			"H_PilotHelmetHeli_O",
-			"JB_ANT_Beret",
-			"JB_ANT_Beret_UA",
-			"JB_ANT_Beret_UJA",
-			"JB_ANT_Beret_GCM",
-			"JB_ANT_Beret_GCP",
-			"JB_ANT_Beret_URTANT",
-			"Alysia_Booniehat_East_01",
-			"Alysia_Calot_East_Recrue"
+			"ACM_C_H_AAFHelmet1",
+			"ACM_C_H_AAFHelmet2",
+			"SRB_Booniehat_Maskirni",
+			"SRB_Milcap_Beretka_Crna",
+			"SRB_Milcap_Beretka_Braon",
+			"SRB_Milcap_Beretka",
+			"SRB_Milcap_Beretka_Crvena",
+			"SRB_Milcap_Maskirni",
+			"mgrs_headbag",
+			"rds_Woodlander_cap3",
+			"H_ParadeDressCap_01_AFF_F",
+			"SRB_Crew_Slem",
+			"SRB_Pilot_Slem",
+			"H_PilotHelmetFighter_O",
+			"rds_Villager_cap1"
+
+
 		};
 		vests[]=
 		{
-			"LR_Vest",
-			"V_RebreatherB"
+			"ACM_V_C_AAFMV1",
+			"ACM_V_C_AAFMV2",
+			"ACM_V_C_AAFMV3",
+			"V_Rangemaster_belt",
+			"V_PlateCarrierlA1_dgtl"
+
 		};
 		backpacks[]=
 		{
-			"Alysia_Radio_LR_East"
+			"Alysia_Radio_LR_East",
+			"tf_mr3000_bwmod",
+			"SRB_Kitbag_mcamo",
+			"SRB_JTAC_Pack ",
+			"SRB_Carryall_Maskirni",
+			"TRYK_B_Belt_AOR2"
+
 		};
 		goggles[]=
 		{
 			"G_O_Diving",
-			"JB_ANT_Brasard_UJA",
-			"JB_ANT_Brasard_Samuel_Invert"
+			"LR_Shemagh_ESS_HEAR_NOPLETOR_OD",
+			"G_balaclava_oli",
+			"mgsr_eyepatch_goggles",
+			"Mask_M40_OD",
+			"Tact_Hood_AOR2",
+			"TAC_PMC_ID_W2",
+			"TAC_PMC_ID_B2",
+			"TAC_PMC_ID_H2"
+
+
 		};
 	};
 

@@ -385,7 +385,17 @@ class ADENIS_SHOPS_VEHICLES
 			"B_Truck_01_covered_F",
 			"Alysia_Hellcat_East_01",
 			"B_Boat_Transport_01_F",
-			"JB_mkvsoc"
+			"JB_mkvsoc",
+			"O_Boat_Transport_01_F",
+			"SRB_JEEP_MP",
+			"SRB_Prowler_Multicam",
+			"SRB_KAMAZ_AMMO",
+			"SRB_KAMAZ_COVERED",
+			"I_MRAP_03_F",
+			"SRB_Heli_Light_01_F",
+			"I_Heli_light_03_unarmed_F",
+			"I_Heli_Transport_02_F",
+			"I_plane_Fighter_03_dynamicLoadout_F"
 		};
 	};
 
