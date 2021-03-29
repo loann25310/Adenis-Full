@@ -2916,6 +2916,18 @@ class ADENIS_VEHICLES
 		rank=1;
 	};
 
+	class Diablo_Ford_F150_SMP: Alysia_EAST_base
+	{
+		realname="Ford F150";
+		buyPrice=45000;
+		inventory=45;
+		insurance=1;
+		licenses[]={};
+		fuel="SP98";
+		fuelCapacity=89;
+		rank=1;
+	};
+
 	class EC135Unarmedlu: Alysia_EAST_base
 	{
 		realname="E135 ANT";
