@@ -205,7 +205,7 @@ class ADENIS_FACTIONS
 		/*** LOADOUT ***/
 		class Loadout
 		{
-			uniform="Alysia_Uniform_East_recrue_Parade";
+			uniform="SRB_CombatUniform_Maskirni_para";
 			headgear="";
 			vest="";
 			backpack="";
