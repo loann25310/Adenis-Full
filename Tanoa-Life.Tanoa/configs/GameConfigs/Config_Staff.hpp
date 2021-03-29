@@ -101,6 +101,11 @@ class ADENIS_STAFF
 		{
 			uid="76561198225138140";
 		};
+
+		class Arthur: support
+		{
+			uid="76561198115809507";
+		};
 	};
 
 	class commands

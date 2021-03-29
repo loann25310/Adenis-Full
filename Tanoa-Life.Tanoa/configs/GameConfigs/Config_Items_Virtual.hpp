@@ -1823,7 +1823,6 @@ class ADENIS_ITEMS
         name="Serrure neuve";
         weight=2;
         image="Alysia_Client\Textures\Items_virtual\serrure.paa";
-        buy_license_CIV="company_construction";
         class use
         {
             action="[] spawn AlysiaClient_fnc_item_serrure;";
