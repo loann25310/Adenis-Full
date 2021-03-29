@@ -234,6 +234,7 @@ class ADENIS_FACTIONS
 
             ranks_short[]=
             {
+		"Civ",
 		"Rcr",
 		"Pre",
 		"Sec",
