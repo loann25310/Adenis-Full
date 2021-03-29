@@ -212,6 +212,7 @@ class CfgFunctions
 			class item_fauxPapiers {};
 			class item_compresse_apply {};
 			class item_compresse_use {};
+			class item_illegal_money {};
 		};
 
 		class ChangeKey

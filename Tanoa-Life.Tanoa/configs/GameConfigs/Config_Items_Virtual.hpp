@@ -59,6 +59,10 @@ class ADENIS_ITEMS
         weight=0;
         illegal=1;
         image="Alysia_Client\Textures\Items_virtual\money.paa";
+        class use
+        {
+            action="closeDialog 0; createDialog 'RscDivideIllegalMoney';";
+        };
         class remove
         {
             all=1;

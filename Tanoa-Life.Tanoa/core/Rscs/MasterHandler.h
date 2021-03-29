@@ -41,6 +41,7 @@
 #include "RscDisplays\RscDisplayChangeKey.hpp"
 #include "RscDisplays\RscDisplayAnimations.hpp"
 #include "RscDisplays\RscDisplayCabinPeinture.hpp"
+#include "RscDisplays\RscDivideIllegalMoney.hpp"
 
 class RscTitles
 {
