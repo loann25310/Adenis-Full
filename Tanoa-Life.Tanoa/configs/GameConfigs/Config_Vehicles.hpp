@@ -2850,7 +2850,7 @@ class ADENIS_VEHICLES
 		inventory=30;
 		fuel="Kerosene";
 		fuelCapacity=120;
-		rank=3;
+		rank=5;
 	};
 
 	class SRB_JEEP_MP: Alysia_EAST_base
@@ -2900,7 +2900,7 @@ class ADENIS_VEHICLES
 		inventory=30;
 		fuel="Diesel";
 		fuelCapacity=120;
-		rank=1;
+		rank=12;
 	};
 
 	class SRB_Heli_Light_01_F: Alysia_EAST_base
@@ -2910,7 +2910,7 @@ class ADENIS_VEHICLES
 		inventory=30;
 		fuel="Kerosene";
 		fuelCapacity=120;
-		rank=1;
+		rank=5;
 	};
 	
 	class I_Heli_light_03_unarmed_F: Alysia_EAST_base
@@ -2920,7 +2920,7 @@ class ADENIS_VEHICLES
 		inventory=30;
 		fuel="Kerosene";
 		fuelCapacity=120;
-		rank=1;
+		rank=5;
 	};
 
 	class I_Heli_Transport_02_F: Alysia_EAST_base
@@ -2930,7 +2930,7 @@ class ADENIS_VEHICLES
 		inventory=30;
 		fuel="Kerosene";
 		fuelCapacity=120;
-		rank=1;
+		rank=5;
 	};
 
 	class B_Boat_Armed_01_minigun_F: Alysia_EAST_base
@@ -3065,7 +3065,7 @@ class ADENIS_VEHICLES
         licenses[]={"boat","east_gcm"};
         fuel="diesel";
         fuelCapacity=160;
-        rank=2;
+        rank=7;
     };
       
     class Alysia_Hellcat_East_01: Alysia_EAST_base
@@ -3076,7 +3076,7 @@ class ADENIS_VEHICLES
         licenses[]={"east_pilot","pilot"};
         fuel="Kerosene";
         fuelCapacity=295;
-        rank=15;
+        rank=12;
     };
 
 	/*

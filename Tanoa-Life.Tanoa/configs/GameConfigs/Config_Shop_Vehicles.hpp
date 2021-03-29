@@ -372,7 +372,7 @@ class ADENIS_SHOPS_VEHICLES
 
 	class EAST
 	{
-		name="Concessionnaire ANT";
+		name="Concessionnaire RAC";
 		createVehicle=0;
 		side="EAST";
 		stock[]=
@@ -394,8 +394,7 @@ class ADENIS_SHOPS_VEHICLES
 			"I_MRAP_03_F",
 			"SRB_Heli_Light_01_F",
 			"I_Heli_light_03_unarmed_F",
-			"I_Heli_Transport_02_F",
-			"I_plane_Fighter_03_dynamicLoadout_F"
+			"I_Heli_Transport_02_F"
 		};
 	};
 
@@ -413,7 +412,7 @@ class ADENIS_SHOPS_VEHICLES
 
 	class WEST
 	{
-		name="Concessionnaire Cuba";
+		name="Concessionnaire CSC";
 		createVehicle=0;
 		side="WEST";
 		stock[]=
