@@ -708,7 +708,7 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_virtual[]={{"serrurep",1}};
+			items_virtual[]={{"serrure",1}};
 		};
 		time_per_item=2;
 		class factions
