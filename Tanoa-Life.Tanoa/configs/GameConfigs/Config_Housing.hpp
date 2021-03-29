@@ -261,7 +261,7 @@ class ADENIS_HOUSES
 	};
 	class Diablo_church
 	{
-		price=5000000;
+		price=40000000;
 		class storage
 		{
 			type="Diablo_Coffre_Large";
