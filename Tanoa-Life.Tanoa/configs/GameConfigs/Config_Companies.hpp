@@ -90,7 +90,7 @@ class ADENIS_COMPANIES_BUILDINGS
 		construction[]={{"woodp",25},{"ciment",80},{"furniture",35},{"ironp",55},{"glass",85}};
 		taxe=400;
 	};
-	class Land_kiosk_redburger_f
+	class Adnis_Diablo_Resto
 	{
 		bedrock="Land_Bricks_V3_F";
 		construction[]={{"woodp",10},{"ciment",65},{"furniture",15},{"ironp",45},{"glass",45}};
