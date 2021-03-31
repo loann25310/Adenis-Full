@@ -2915,12 +2915,12 @@ class ADENIS_VEHICLES
 	
 	class I_Heli_light_03_unarmed_F: Alysia_EAST_base
 	{
-		realname="Hellcat";
+		realname="Hélicoptère";
 		buyPrice=450000;
 		inventory=30;
 		fuel="Kerosene";
 		fuelCapacity=120;
-		rank=9;
+		rank=5;
 	};
 
 	class I_Heli_Transport_02_F: Alysia_EAST_base

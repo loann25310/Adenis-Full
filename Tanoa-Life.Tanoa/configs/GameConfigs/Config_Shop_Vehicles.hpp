@@ -378,10 +378,15 @@ class ADENIS_SHOPS_VEHICLES
 		stock[]=
 		{
 			"B_T_LSV_01_unarmed_F",
+			"XsG_Amarok_Base_F",
 			"Diablo_Ford_F150_SMP",
+			"EC135Unarmedlu",
 			"B_Heli_Light_01_F",
+			"B_Truck_01_covered_F",
+			"Alysia_Hellcat_East_01",
 			"B_Boat_Transport_01_F",
 			"JB_mkvsoc",
+			"O_Boat_Transport_01_F",
 			"SRB_JEEP_MP",
 			"SRB_Prowler_Multicam",
 			"SRB_KAMAZ_AMMO",
