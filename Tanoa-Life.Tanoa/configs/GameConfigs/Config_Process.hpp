@@ -2255,6 +2255,138 @@ class ADENIS_PROCESS
 			};
 		};
 	};
+	class nukaorangep
+	{
+		name="Confection du Nuka Orange";
+		sound="salt_process";
+		class require
+		{
+			items_virtual[]={{"sparklingwater",4},{"coconut",2}};
+		};
+		class receive
+		{
+			items_virtual[]={{"nukaorange",4}};
+		};
+		time_per_item=2;
+		time_default=10;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_cook"};
+			};
+		};
+	};
+	class nukavictoryp
+	{
+		name="Confection du Nuka Victory";
+		sound="salt_process";
+		class require
+		{
+			items_virtual[]={{"sparklingwater",4},{"marijuana",2},{"rhum",2}};
+		};
+		class receive
+		{
+			items_virtual[]={{"nukavictory",4}};
+		};
+		time_per_item=2;
+		time_default=10;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_cook"};
+			};
+		};
+	};
+	class nukaquartzp
+	{
+		name="Confection du Nuka Quartz";
+		sound="salt_process";
+		class require
+		{
+			items_virtual[]={{"sparklingwater",4},{"banana",2},{"volcano",1}};
+		};
+		class receive
+		{
+			items_virtual[]={{"nukaquartz",4}};
+		};
+		time_per_item=2;
+		time_default=10;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_cook"};
+			};
+		};
+	};
+	class nukadarkp
+	{
+		name="Confection du Nuka Dark";
+		sound="salt_process";
+		class require
+		{
+			items_virtual[]={{"rhum",2,{"Whisky",2},{"crevette",2}};
+		};
+		class receive
+		{
+			items_virtual[]={{"nukadark",4}};
+		};
+		time_per_item=2;
+		time_default=10;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_cook"};
+			};
+		};
+	};
+	class nukaquantump
+	{
+		name="Confection du Nuka Quantum";
+		sound="salt_process";
+		class require
+		{
+			items_virtual[]={{"sparklingwater",4},{"crabe",2},{"cacaop",2}};
+		};
+		class receive
+		{
+			items_virtual[]={{"nukaquantum",4}};
+		};
+		time_per_item=2;
+		time_default=10;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_cook"};
+			};
+		};
+	};
+	class nukagrappep
+	{
+		name="Confection du Nuka Grappe";
+		sound="salt_process";
+		class require
+		{
+			items_virtual[]={{"sparklingwater",4},{"red_grape_juice",2}};
+		};
+		class receive
+		{
+			items_virtual[]={{"nukagrappe",4}};
+		};
+		time_per_item=2;
+		time_default=10;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_cook"};
+			};
+		};
+	};
 	class cake_batterp: sea_foodp
 	{
 		name="Préparation de la pâte à gâteau";

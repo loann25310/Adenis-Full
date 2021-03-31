@@ -801,7 +801,13 @@ class ADENIS_COMPANIES_TYPES
 				"cuissedepouletcookpouletroti",
 				"rationmilpouletp",
 				"rationmilboeufp",
-				"rationmilporcp"
+				"rationmilporcp",
+				"nukaorangep",
+				"nukavictoryp",
+				"nukaquartzp",
+				"nukadarkp",
+				"nukaquantump",
+				"nukagrappep"
 			};
 		};
 		class storage

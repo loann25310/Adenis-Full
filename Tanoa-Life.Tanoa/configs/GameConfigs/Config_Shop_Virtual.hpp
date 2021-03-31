@@ -349,7 +349,8 @@ class ADENIS_SHOPS_VIRTUAL
 		sell[]={
 			"champagne",
 			"rhum",
-			"beer"
+			"beer",
+			"nukaquartz"
 		};
 	};
 	class glass: dealer

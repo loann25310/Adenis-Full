@@ -2751,6 +2751,7 @@ class ADENIS_ITEMS
             sound="eat_biscuit";
         };
     };
+
     class milk
     {
         name="Bouteille de lait";
@@ -2763,6 +2764,110 @@ class ADENIS_ITEMS
         {
             hunger=0;
             thirst=20;
+            sound="drink_water";
+        };
+    };
+
+    class nukaorange
+    {
+        name="Nuka Orange";
+        weight=1;
+        image="Alysia_Client\Textures\Items_virtual\nukaorange.paa";
+        price_buy=22;
+        buy_license_CIV[]={"company_cook"};
+        class remove {};
+        class food
+        {
+            hunger=0;
+            thirst=20;
+            sound="drink_water";
+        };
+    };
+
+    class nukavictory
+    {
+        name="Nuka Victory";
+        weight=1;
+        image="Alysia_Client\Textures\Items_virtual\nujavictory.paa";
+        price_buy=22;
+        buy_license_CIV[]={"company_cook"};
+        class remove {};
+        class food
+        {
+            hunger=0;
+            thirst=-30;
+            sound="drink_water";
+            unlimitedRun=300;
+        };
+    };
+
+    class nukaquartz
+    {
+        name="Nuka Quartz";
+        weight=1;
+        image="Alysia_Client\Textures\Items_virtual\nukaquartz.paa";
+        price_buy=22;
+        buy_license_CIV[]={"company_cook"};
+        class remove {};
+        class food
+        {
+            hunger=0;
+            thirst=-10;
+            sound="drink_water";
+            unlimitedRun=60;
+        };
+        class market
+        {
+            max=4000;
+            min=2500;
+        };
+    };
+
+    class nukadark
+    {
+        name="Nuka Dark";
+        weight=1;
+        image="Alysia_Client\Textures\Items_virtual\nukadark.paa";
+        price_buy=22;
+        buy_license_CIV[]={"company_cook"};
+        class remove {};
+        class food
+        {
+            hunger=0;
+            thirst=-15;
+            sound="drink_water";
+            alcool=0.8;
+        };
+    };
+
+    class nukaquantum
+    {
+        name="Nuka Quantum";
+        weight=1;
+        image="Alysia_Client\Textures\Items_virtual\nukaquantum.paa";
+        price_buy=22;
+        buy_license_CIV[]={"company_cook"};
+        class remove {};
+        class food
+        {
+            hunger=40;
+            thirst=10;
+            sound="drink_water";
+        };
+    };
+
+    class nukagrappe
+    {
+        name="Nuka Grappe";
+        weight=1;
+        image="Alysia_Client\Textures\Items_virtual\nukagrappe.paa";
+        price_buy=22;
+        buy_license_CIV[]={"company_cook"};
+        class remove {};
+        class food
+        {
+            hunger=0;
+            thirst=80;
             sound="drink_water";
         };
     };
