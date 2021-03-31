@@ -160,7 +160,7 @@ class ADENIS_MISSIONS
 
 	class east_1
     {
-        name="Convoi Armée Nationale Tanocienne";
+        name="Convoi Régime Autocratique Communiste";
         sides[]={"EAST"};
         condition="((player getVariable ['rank',0]) >= 9)";
         price=1000000;
@@ -174,11 +174,18 @@ class ADENIS_MISSIONS
         {
             weapons[]=
             {
-                "hlc_rifle_M27IAR"
+                "hlc_rifle_M27IAR",
+                "hlc_rifle_ak74m_MTK",
+                "hlc_rifle_aks74u",
+                "hlc_rifle_aks74_MTK",
+                "hlc_rifle_ak12",
+                "hlc_rifle_ak74_MTK",
+                "hlc_rifle_aek971_MTK"
             };
             magazines[]=
             {
-                "hlc_30rnd_556x45_EPR"
+                "hlc_30rnd_556x45_EPR",
+                "hlc_30Rnd_545x39_B_AK"
             };
             items[]=
             {

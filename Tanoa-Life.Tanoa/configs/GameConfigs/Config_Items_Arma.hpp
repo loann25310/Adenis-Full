@@ -2670,6 +2670,54 @@ class ADENIS_ITEMS_ARMA
         buy_license_EAST[]={"east_ope_radio"};
     };
 
+    class TRYK_B_Kitbag_blk
+    {
+        buy_price=1100;
+        buy_condition_EAST=1;
+    };
+
+    class hlc_rifle_ak74m_MTK
+    {
+        buy_price=1100;
+        buy_condition_EAST=1;
+    };
+
+    class hlc_30Rnd_545x39_B_AK
+    {
+        buy_price=1100;
+        buy_condition_EAST=1;
+    };
+
+    class hlc_rifle_aks74u
+    {
+        buy_price=1100;
+        buy_condition_EAST=1;
+    };
+
+    class hlc_rifle_aks74_MTK
+    {
+        buy_price=1100;
+        buy_condition_EAST=1;
+    };
+
+    class hlc_rifle_ak12 
+    {
+        buy_price=1100;
+        buy_condition_EAST=1;
+    };
+
+    class hlc_rifle_ak74_MTK
+    {
+        buy_price=1100;
+        buy_condition_EAST=1;
+    };
+
+    class hlc_rifle_aek971_MTK
+    {
+        buy_price=1100;
+        buy_condition_EAST=1;
+    };
+    
     class TAC_EI_RRVCVH_B
     {
         buy_price=5620;
