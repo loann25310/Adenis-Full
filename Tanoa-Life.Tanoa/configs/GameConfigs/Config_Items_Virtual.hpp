@@ -616,7 +616,11 @@ class ADENIS_ITEMS
         name="Ecorce de bois";
         weight=2;
         image="Adenis_Textures\ecorce.paa";
-        class remove {};
+        class remove
+        {
+            disableSuitcase=1;
+            all=1;
+        };
     };
 
     class woodp
