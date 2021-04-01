@@ -245,7 +245,7 @@ class ADENIS_MISSIONS
 
 	class west_1
 	{
-		name="Convoi Cuba";
+		name="Convoi CSC";
 		sides[]={"WEST"};
 		condition="((player getVariable ['rank',0]) >= 4)";
 		price=0;

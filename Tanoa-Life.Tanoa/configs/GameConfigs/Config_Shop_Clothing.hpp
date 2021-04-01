@@ -1237,7 +1237,7 @@ class ADENIS_SHOPS_CLOTHING
 
 	class EAST_clothing
 	{
-		name="Friperie de l'ANT";
+		name="Friperie du RAC";
 		side="EAST";
 		uniforms[]=
 		{
@@ -1313,7 +1313,7 @@ class ADENIS_SHOPS_CLOTHING
 
 	class WEST_clothing
 	{
-		name="Friperie Cuba";
+		name="Friperie CSC";
 		side="WEST";
 		uniforms[]=
 		{
