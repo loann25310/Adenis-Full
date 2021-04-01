@@ -695,6 +695,10 @@ class ADENIS_COMPANIES_TYPES
 		{
 			type="Diablo_Coffre_Extra";
 		};
+		class garage
+		{
+			types[]={"Car"};
+		};
 	};
 
 	class music_label
