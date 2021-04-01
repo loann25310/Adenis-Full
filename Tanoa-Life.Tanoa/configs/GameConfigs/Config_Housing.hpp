@@ -261,7 +261,7 @@ class ADENIS_HOUSES
 	};
 	class Diablo_church
 	{
-		price=40000000;
+		price=5000000;
 		class storage
 		{
 			type="Diablo_Coffre_Large";
@@ -270,9 +270,6 @@ class ADENIS_HOUSES
 		{
 			class CIV {
 				license="home";
-			};
-			class WEST {
-				rank=1;
 			};
 		};
 	};

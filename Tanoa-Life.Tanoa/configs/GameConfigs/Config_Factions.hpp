@@ -21,7 +21,7 @@ class ADENIS_FACTIONS
 		class phone
 		{
 			change_number_price=5000;
-			receive_fuel_alert=1;
+			receive_fuel_alert=0;
 			class send_global_message
 			{
 				rank=9;
@@ -160,7 +160,7 @@ class ADENIS_FACTIONS
 		/*** MAP ***/
 		class map_factions_markers
 		{
-			shown[]={"EAST","WEST"};
+			shown[]={"EAST"};
 		};
 
 		/*** SPAWN/RESPAWN ***/
@@ -660,7 +660,7 @@ class ADENIS_FACTIONS
 		/*** MAP ***/
 		class map_factions_markers
 		{
-			shown[]={"EAST","WEST"};
+			shown[]={"WEST"};
 		};
 
 		/*** SPAWN/RESPAWN ***/
