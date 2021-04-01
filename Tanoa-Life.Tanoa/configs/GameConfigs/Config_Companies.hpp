@@ -805,6 +805,51 @@ class ADENIS_COMPANIES_TYPES
 				"cuissedepouletcookpouletroti",
 				"rationmilpouletp",
 				"rationmilboeufp",
+				"rationmilporcp"
+			};
+		};
+		class storage
+		{
+			type="Diablo_Coffre_Extra";
+		};
+	};
+
+	class cook_nuka
+	{
+		name="Nuka-Restaurant";
+		price=430000;
+		building="Adnis_Diablo_Resto";
+		license="company_cook";
+		image="Alysia_Client_Texture\Data\companies\types\cook.paa";
+		members_max=15;
+		salary=110;
+		ticket=1;
+		class process
+		{
+			posDistance=1.3;
+			modelPos[]={0.0467529,-0.264099,-2.87032};
+			list[]=
+			{
+		    	"sea_foodp",
+				"cake_batterp",
+				"cake_smeltp",
+				"cake_chocolate_batterp",
+				"cake_chocolate_smeltp",
+				"roast_porkp",
+				"chop_porkp",
+				"filet_mignonp",
+				"beefp",
+				"beef_steak_beef",
+				"ground_beef",
+				"rib_coast_beef",
+				"beef_tenderloin_beef",
+				"rib_steak_beef",
+				"cuissedepouletcookesca",
+				"cuissedepouletcookpcuissep",
+				"cuissedepouletcookpnuggets",
+				"cuissedepouletcookpouletroti",
+				"rationmilpouletp",
+				"rationmilboeufp",
 				"rationmilporcp",
 				"nukaorangep",
 				"nukavictoryp",
