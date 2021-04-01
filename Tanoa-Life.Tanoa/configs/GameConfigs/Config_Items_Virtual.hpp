@@ -111,7 +111,7 @@ class ADENIS_ITEMS
     class medoc_rhume
     {
         name="Comprimé de Nurofex";
-        buy_license_CIV="admin";
+        buy_license_CIV[]={"admin","company_garagist"};
         weight=1;
         image="Alysia_Client\Textures\Items_virtual\medoc_rhume.paa";
         price_buy=200;
@@ -124,7 +124,7 @@ class ADENIS_ITEMS
     class medoc_toux_1
     {
         name="Bouteille de Sirop de Tussidax";
-        buy_license_CIV="admin";
+        buy_license_CIV="admin","company_garagist";
         weight=1;
         image="Alysia_Client\Textures\Items_virtual\medoc_toux_1.paa";
         price_buy=520;
