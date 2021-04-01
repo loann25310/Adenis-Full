@@ -2,7 +2,7 @@ class ADENIS_SHOPS_ARMA
 {
 	class WEST_gun
 	{
-		name="Armurerie de Cuba";
+		name="Armurerie de la CSC";
 		side="WEST";
 		stocks[]=
 		{
@@ -26,19 +26,7 @@ class ADENIS_SHOPS_ARMA
 			"Chemlight_yellow",
 			"Chemlight_green",
 			"Chemlight_blue",
-			"RH_m9a",
-			"RH_15Rnd_9x19_M9",
-			"hlc_rifle_416D10",
-			"hlc_30rnd_556x45_EPR",
-			"hlc_wp_m16a2",
-			"hlc_rifle_g3a3ris",
-			"hlc_20rnd_762x51_b_G3",
-			"optic_hamr",
-			"optic_LRPS",
-			"optic_Holosight_blk_F",
-			"acc_flashlight",
-			"optic_MRCO",
-			"bipod_02_F_blk"
+			"Skyline_Pancarte_communisme"
 		};
 	};
 
@@ -70,7 +58,8 @@ class ADENIS_SHOPS_ARMA
 			"Chemlight_yellow",
 			"Chemlight_green",
 			"Chemlight_blue",
-			"SkylineItems_Couteau"
+			"SkylineItems_Couteau",
+			"Skyline_Pancarte_communisme"
 		};
 	};
 

@@ -1302,10 +1302,7 @@ class ADENIS_SHOPS_CLOTHING
 			"G_balaclava_oli",
 			"mgsr_eyepatch_goggles",
 			"Mask_M40_OD",
-			"Tact_Hood_AOR2",
-			"TAC_PMC_ID_W2",
-			"TAC_PMC_ID_B2",
-			"TAC_PMC_ID_H2"
+			"Tact_Hood_AOR2"
 
 
 		};
@@ -1317,35 +1314,26 @@ class ADENIS_SHOPS_CLOTHING
 		side="WEST";
 		uniforms[]=
 		{
-			"U_I_C_Soldier_Para_1_F",
-			"U_I_C_Soldier_Para_4_F"
+			"CCS_CombatUniform"
 		};
 		headgear[]=
 		{
-		"H_MilCap_wdl",
-		"H_Bandanna_camo",
-		"H_Bandanna_khk"
+			"H_MilCap_wdl",
+			"H_Bandanna_camo",
+			"H_Bandanna_khk",
+			"CCS_Cap"
 		};
 		vests[]=
 		{
-			"TAC_EI_RRV1_OD"
+			"CCS_Vest"
 		};
 		backpacks[]=
 		{
-			"TRYK_B_Coyotebackpack_BLK",
-			"B_ViperLightHarness_blk_F",
-			"B_ViperLightHarness_khk_F",
-			"B_Kitbag_sgg",
-			"tf_rt1523g_bwmod",
-			"Alysia_Radio_LR_West",
-			"Alysia_Radio_LR_East"
+			"Alysia_Radio_LR_West"
 		};
 		goggles[]=
 		{
-			"G_B_Diving",
-			"G_Balaclava_blk",
-			"G_Balaclava_oli",
-			"TRYK_kio_balaclava_BLK"
+			"G_B_Diving"
 		};
 	};
 
