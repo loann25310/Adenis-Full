@@ -2327,7 +2327,7 @@ class ADENIS_PROCESS
 		sound="salt_process";
 		class require
 		{
-			items_virtual[]={{"rhum",2,{"Whisky",2},{"crevette",2}};
+			items_virtual[]={{"rhum",2},{"Whisky",2},{"crevette",2}};
 		};
 		class receive
 		{
