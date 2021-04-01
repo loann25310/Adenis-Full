@@ -711,7 +711,7 @@ class ADENIS_FACTIONS
 		/*** LOADOUT ***/
 		class Loadout
 		{
-			uniform="U_I_C_Soldier_Para_1_F";
+			uniform="CCS_CombatUniform";
 			headgear="";
 			vest="";
 			backpack="";
