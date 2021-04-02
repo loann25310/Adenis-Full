@@ -2856,7 +2856,7 @@ class ADENIS_VEHICLES
 	class SRB_JEEP_MP: Alysia_EAST_base
 	{
 		realname="SRB Jeep";
-		buyPrice=450000;
+		buyPrice=75000;
 		inventory=30;
 		fuel="Diesel";
 		fuelCapacity=120;
@@ -2866,7 +2866,7 @@ class ADENIS_VEHICLES
 	class SRB_Prowler_Multicam: Alysia_EAST_base
 	{
 		realname="SRB Prowler";
-		buyPrice=450000;
+		buyPrice=150000;
 		inventory=30;
 		fuel="Diesel";
 		fuelCapacity=120;
@@ -2876,8 +2876,8 @@ class ADENIS_VEHICLES
 	class SRB_KAMAZ_AMMO: Alysia_EAST_base
 	{
 		realname="SRB KAMAZ Ammo";
-		buyPrice=450000;
-		inventory=30;
+		buyPrice=250000;
+		inventory=500;
 		fuel="Diesel";
 		fuelCapacity=120;
 		rank=1;
@@ -2886,8 +2886,8 @@ class ADENIS_VEHICLES
 	class SRB_KAMAZ_COVERED: Alysia_EAST_base
 	{
 		realname="SRB KAMAZ Couvert";
-		buyPrice=450000;
-		inventory=30;
+		buyPrice=175000;
+		inventory=180;
 		fuel="Diesel";
 		fuelCapacity=120;
 		rank=1;
@@ -2896,7 +2896,7 @@ class ADENIS_VEHICLES
 	class I_MRAP_03_F: Alysia_EAST_base
 	{
 		realname="MRAP";
-		buyPrice=450000;
+		buyPrice=1200000;
 		inventory=30;
 		fuel="Diesel";
 		fuelCapacity=120;
@@ -2927,7 +2927,7 @@ class ADENIS_VEHICLES
 	{
 		realname="Hélicoptère de transport";
 		buyPrice=450000;
-		inventory=30;
+		inventory=180;
 		fuel="Kerosene";
 		fuelCapacity=120;
 		rank=5;
