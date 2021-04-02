@@ -178,9 +178,7 @@ class ADENIS_SHOPS_VIRTUAL
 			"spikeStrip",
 			"horn_west",
 			"perqui",
-			"destroy_labo",
-			"blueprint_glock",
-			"blueprint_g17"
+			"destroy_labo"
 		};
 	};
 	class east
