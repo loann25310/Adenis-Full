@@ -13,7 +13,7 @@ class ADENIS_FACTIONS
 		{
 			name="Salaire";
 			amount=950;
-			apply_rank=1;
+			apply_rank=3;
 			timer=15;
 		};
 
@@ -24,7 +24,7 @@ class ADENIS_FACTIONS
 			receive_fuel_alert=0;
 			class send_global_message
 			{
-				rank=9;
+				rank=14;
 			};
 			class central_plate {};
 		};
@@ -37,15 +37,15 @@ class ADENIS_FACTIONS
 			employee=0;
 			class history
 			{
-				rank=12;
+				rank=15;
 				class clean
 				{
-					rank=12;
+					rank=15;
 				};
 			};
 			class destroy
 			{
-				rank=12;
+				rank=15;
 			};
 		};
 
@@ -57,7 +57,7 @@ class ADENIS_FACTIONS
 
 		class bank_faction
 		{
-			rank=8;
+			rank=14;
 			payFuel=1;
 		};
 		class taxes_app
@@ -74,7 +74,7 @@ class ADENIS_FACTIONS
 		{
 			class membre_pnt
 			{
-				rank=10;
+				rank=14;
 				same_side_only=0;
 			};
 
@@ -198,7 +198,7 @@ class ADENIS_FACTIONS
 			};
 			class leader_board
 			{
-				access_rank=9;
+				access_rank=12;
 			};
 		};
 
@@ -218,16 +218,19 @@ class ADENIS_FACTIONS
             ranks_complet[]=
             {
 		"Civil",
-		"Recrue",
-		"Première Classe",
-		"Seconde Classe",
+		"Soldat",
+		"Caporal",
 		"Sergent",
+		"Sergent-Chef",
 		"Adjudant",
-		"Major",
 		"Lieutenant",
 		"Capitaine",
-		"Commandant",
+		"Major",
+		"Lieutenant-Colonel",
 		"Colonel",
+		"Brigadier Général",
+		"Major-Général",
+		"Lieutenant Général",
 		"Général",
 		"Leader Suprème"
             };
@@ -235,17 +238,20 @@ class ADENIS_FACTIONS
             ranks_short[]=
             {
 		"Civ",
-		"Rcr",
-		"Pre",
-		"Sec",
+		"Sld",
+		"Cpr",
 		"Sgt",
+		"SgC",
 		"Adj",
-		"Maj",
 		"Ltn",
 		"Cap",
-		"Com",
+		"Maj",
+		"LtC",
 		"Col",
-		"Gnr",
+		"BrG",
+		"MaG",
+		"LtG",
+		"Gnl",
 		"Lds"
             };
         };
