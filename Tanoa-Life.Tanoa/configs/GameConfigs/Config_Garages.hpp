@@ -200,13 +200,8 @@ class ADENIS_GARAGES
 	};
 	class land_22: land_1
 	{
-		name="Garage du QG ANT";
+		name="Garage du QG RAC";
 		spawns[]={"land_22_spawn_1","land_22_spawn_2"};
-	};
-	class land_23: land_1
-	{
-		name="Garage PépitoBTP";
-		spawns[]={"land_23_spawn_1","land_23_spawn_2"};
 	};
 	class land_24: land_1
 	{
@@ -215,7 +210,7 @@ class ADENIS_GARAGES
 	};
 	class land_25: land_1
 	{
-		name="Garage Servizio di denaro";
+		name="Garage Banque du Peuple";
 		spawns[]={"land_25_spawn_1"};
 	};
 	class land_26: land_1
@@ -245,26 +240,26 @@ class ADENIS_GARAGES
 	};
 	class fourriere_1
 	{
-		name="Fourrière de terrestre de Georgetown";
+		name="Fourrière terrestre de Georgetown";
 		types[]={"Car","Tank"};
 		spawns[]={"fourriere_1_spawn_1","fourriere_1_spawn_2"};
 		pay=1;
 	};
 	class fourriere_2
 	{
-		name="Fourrière de aérienne de Lifi";
+		name="Fourrière aérienne de Lifou";
 		types[]={"Air"};
 		spawns[]={"fourriere_2_spawn_1"};
 	};
 	class fourriere_3
 	{
-		name="Fourrière de maritime de Georgetown";
+		name="Fourrière maritime de Georgetown";
 		types[]={"Ship"};
 		spawns[]={"fourriere_3_spawn_1","fourriere_3_spawn_2"};
 	};
 	class fourriere_4
 	{
-		name="Fourrière de terrestre de Blue-Pearl";
+		name="Fourrière terrestre de Blue-Pearl";
 		types[]={"Car","Tank"};
 		spawns[]={"fourriere_4_spawn_1"};
 		pay=1;
