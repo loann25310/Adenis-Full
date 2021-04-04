@@ -465,7 +465,7 @@ class ADENIS_PROCESS
 		name="Transformation du sable en verre";
 		sound="salt_process";
 		time_per_item=2;
-		time_default=5;
+		time_default=2;
 		class require
 		{
 			items_virtual[]={{"sand",1}};
@@ -564,8 +564,8 @@ class ADENIS_PROCESS
 	{
 		name="Fonte du verre en Bouteille";
 		sound="smelting";
-		time_per_item=2;
-		time_default=2;
+		time_per_item=1;
+		time_default=1;
 		class require
 		{
 			items_virtual[]={{"glass",1}};
