@@ -9,7 +9,7 @@ class ADENIS_BLUEPRINTS
 	class blueprint_helmetMIT: blueprint_uniformeMIT
 	{
 		process[]={"corpo_booniehat", "corpo_helmet", "corpo_beret_1"};
-	};	
+	};
 	class blueprint_giletMIT: blueprint_uniformeMIT
 	{
 		process[]={"gilet_MIT1", "gilet_MIT2"};
@@ -127,7 +127,7 @@ class ADENIS_BLUEPRINTS
 	};
 	class blueprint_taurus_tracker_455: blueprint_gsh18
 	{
-		process[]={"taurus_tracker_455","taurus_tracker_455_gold","magazine_taurus_tracker_455"}; 
+		process[]={"taurus_tracker_455","taurus_tracker_455_gold","magazine_taurus_tracker_455"};
 	};
 	class blueprint_desert_eagle: blueprint_gsh18
 	{
@@ -180,12 +180,12 @@ class ADENIS_BLUEPRINTS
 	class blueprint_hk416: blueprint_gsh18
 	{
 		process[]={"hk416","magazine_hk416"};
-	};	
+	};
 	class blueprint_hk417: blueprint_gsh18
 	{
 		process[]={"hk417","magazine_hk417"};
-	};	
-	
+	};
+
 	class blueprint_guardia
 	{
 		process[]={
@@ -203,10 +203,9 @@ class ADENIS_BLUEPRINTS
 	{
 		process[]={
 			"lab_methp",
-			"lab_cocainep";
+			"lab_cocainep",
 			"lab_heroinp",
-			"lab_cigarep",
-
+			"lab_cigarep"
 		};
 		labos[]={"lab_gun"};
 	};
@@ -225,7 +224,7 @@ class ADENIS_BLUEPRINTS
 	{
 		process[]={"watchpost_small"};
 	};
-	
+
 	class blueprint_watchtower_wood
 	{
 		process[]={"watchtower_wood"};

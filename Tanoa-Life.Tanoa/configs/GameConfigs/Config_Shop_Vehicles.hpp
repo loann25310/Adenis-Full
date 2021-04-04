@@ -1,6 +1,6 @@
 class ADENIS_SHOPS_VEHICLES
 {
-	
+
 	class CIV_air
 	{
 		name="Concessionnaire aérien";
@@ -38,7 +38,7 @@ class ADENIS_SHOPS_VEHICLES
 			"B777_ch_emirates"
 		};
 	};
-	
+
 	class CIV_ship: CIV_air
 	{
 		name="Concessionnaire maritime";
@@ -413,7 +413,7 @@ class ADENIS_SHOPS_VEHICLES
 		stock[]=
 		{
 			"RDS_JAWA353_Civ_01",
-			"RDS_tt650_Civ_01"
+			"RDS_tt650_Civ_01",
 			"V12_MEGANERS18BANA"
 		};
 	};
