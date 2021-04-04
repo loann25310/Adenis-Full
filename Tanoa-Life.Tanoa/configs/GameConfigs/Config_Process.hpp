@@ -374,6 +374,54 @@ class ADENIS_PROCESS
 			items_virtual[]={{"watchtower_wood",1}};
 		};
 	};
+	class lab_methp: bag_01
+	{
+		name="Fabrication : Tour de guet en bois";
+		class require
+		{
+			items_virtual[]={{"woodp",15},{"ironp",15},{"wood",15},{"glass",15}};
+		};
+		class receive
+		{
+			items_virtual[]={{"lab_meth",1}};
+		};
+	};
+	class lab_cocainep: bag_01
+	{
+		name="Fabrication : Tour de guet en bois";
+		class require
+		{
+			items_virtual[]={{"woodp",15},{"ironp",15},{"wood",15},{"glass",15}};
+		};
+		class receive
+		{
+			items_virtual[]={{"lab_cocaine",1}};
+		};
+	};
+	class lab_heroinp: bag_01
+	{
+		name="Fabrication : Tour de guet en bois";
+		class require
+		{
+			items_virtual[]={{"woodp",15},{"ironp",15},{"wood",15},{"glass",15}};
+		};
+		class receive
+		{
+			items_virtual[]={{"lab_heroin",1}};
+		};
+	};
+	class lab_cigarep: bag_01
+	{
+		name="Fabrication : Tour de guet en bois";
+		class require
+		{
+			items_virtual[]={{"woodp",15},{"ironp",15},{"pierre",15},{"glass",15}};
+		};
+		class receive
+		{
+			items_virtual[]={{"lab_cigare",1}};
+		};
+	};
 	class watchpost_tall: bag_01
 	{
 		name="Fabrication : Poste de garde (grand)";

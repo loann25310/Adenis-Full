@@ -199,6 +199,18 @@ class ADENIS_BLUEPRINTS
 		compagnies[]={"gun"};
 	};
 
+	class blueprint_CONEXUS
+	{
+		process[]={
+			"lab_methp",
+			"lab_cocainep";
+			"lab_heroinp",
+			"lab_cigarep",
+
+		};
+		labos[]={"lab_gun"};
+	};
+
 	class blueprint_hedgehog
 	{
 		process[]={"hedgehog"};

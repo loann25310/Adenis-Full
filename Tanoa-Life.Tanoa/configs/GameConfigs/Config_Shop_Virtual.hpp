@@ -400,10 +400,6 @@ class ADENIS_SHOPS_VIRTUAL
 			"handcuffkeys",
 			"lab_marijuana",
 			"lab_mushroom",
-			"lab_meth",
-			"lab_cocaine",
-			"lab_heroin",
-			"lab_cigare",
 			"lab_heal",
 			"lab_gun",
 			"lab_construction"
