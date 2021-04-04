@@ -1318,23 +1318,20 @@ class ADENIS_SHOPS_CLOTHING
 		};
 		headgear[]=
 		{
-			"H_MilCap_wdl",
-			"H_Bandanna_camo",
-			"H_Bandanna_khk",
 			"CCS_Cap"
 		};
 		vests[]=
 		{
-			"CCS_Vest"
+			"CCS_Vest",
+			"EF_BLT_M1"
 		};
 		backpacks[]=
 		{
-			"Alysia_Radio_LR_West"
+			"Alysia_Radio_LR_West",
+			"TAC_BP_Butt_B"
 		};
 		goggles[]=
-		{
-			"G_B_Diving"
-		};
+		{};
 	};
 
 	class parachute

@@ -2477,7 +2477,16 @@ class ADENIS_VEHICLES
 		buyPrice=2000;
 		inventory=30;
 		fuel="SP98";
-		fuelCapacity=400;
+		fuelCapacity=60;
+		rank=1;
+	};
+	class V12_MEGANERS18BANA: Alysia_WEST_base
+	{
+		realname="Megane RS Banalisé";
+		buyPrice=2000;
+		inventory=30;
+		fuel="SP98";
+		fuelCapacity=60;
 		rank=1;
 	};
 	class RDS_tt650_Civ_01: Alysia_WEST_base
@@ -2486,7 +2495,7 @@ class ADENIS_VEHICLES
 		buyPrice=2000;
 		inventory=30;
 		fuel="SP98";
-		fuelCapacity=40;
+		fuelCapacity=60;
 		rank=3;
 	};
 	class d3s_tahoe_UNM : Alysia_WEST_base

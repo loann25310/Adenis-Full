@@ -412,18 +412,9 @@ class ADENIS_SHOPS_VEHICLES
 		side="WEST";
 		stock[]=
 		{
-			/* Véhicules Terrestres non armés */
 			"RDS_JAWA353_Civ_01",
-			"Lemon_Jeep_kaki",
-			"Skyline_Vehicule_APEX_MB_4WD_05_F",
-			"RDS_tt650_Civ_01",
-			"GeK_Cadillac_Fleetwood_Brougham_85_09",
-			"B_T_LSV_01_unarmed_F",
-			/* Véhicules Terrestres armés */
-			/* Véhicules Navals */
-			/* Véhicules Aériens */
-			"B_Heli_Light_01_F",
-			"I_E_Heli_light_03_unarmed_F"
+			"RDS_tt650_Civ_01"
+			"V12_MEGANERS18BANA"
 		};
 	};
 };

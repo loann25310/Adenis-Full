@@ -14,6 +14,8 @@ class ADENIS_SHOPS_ARMA
 			"ItemWatch",
 			"ItemCompass",
 			"Binocular",
+			"hgun_FlashBall_F",
+			"1Rnd_FlashBall_Mag",
 			"SAN_Headlamp_v2",
 			"XsG_Item_Nikon",
 			"Skyline_tl122_blanche",

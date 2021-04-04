@@ -176,9 +176,7 @@ class ADENIS_SHOPS_VIRTUAL
 			"barriere",
 			"bargate",
 			"spikeStrip",
-			"horn_west",
-			"perqui",
-			"destroy_labo"
+			"horn_west"
 		};
 	};
 	class east

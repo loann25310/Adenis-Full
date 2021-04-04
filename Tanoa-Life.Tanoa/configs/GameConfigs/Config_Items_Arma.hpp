@@ -1870,6 +1870,16 @@ class ADENIS_ITEMS_ARMA
 		buy_price=100;
 		buy_condition_WEST=1;
 	};
+	class TAC_BP_Butt_B
+	{
+		buy_price=100;
+		buy_condition_WEST=1;
+	};
+	class CCS_Cap
+	{
+		buy_price=100;
+		buy_condition_WEST=1;
+	};	
 	class U_I_C_Soldier_Para_4_F
 	{
 		buy_price=100;
