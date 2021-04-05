@@ -7074,6 +7074,114 @@ class Peck_MercedesBenz_G65_Rebelle_1
 		fuelCapacity=84;
 	};
 
+	class AlessioAgera
+	{
+		realname="Agera";
+		buyPrice=12000000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="SP98";
+		fuelCapacity=84;
+	};
+
+	class V12_GHOST_BLANC
+	{
+		realname="Rolls Ghost";
+		buyPrice=8500000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="SP98";
+		fuelCapacity=84;
+	};
+
+	class V12_ROYAL_BLANC
+	{
+		realname="Limousine";
+		buyPrice=8500000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="SP98";
+		fuelCapacity=84;
+	};
+
+	class V12_DIVORB
+	{
+		realname="Buggati Divo";
+		buyPrice=22000000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="SP98";
+		fuelCapacity=84;
+	};
+
+	class V12_GT2RS_ROUGE
+	{
+		realname="Porsche GT2";
+		buyPrice=18000000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="SP98";
+		fuelCapacity=84;
+	};
+
+	class AlessioHuayra
+	{
+		realname="Huayra";
+		buyPrice=20000000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="SP98";
+		fuelCapacity=84;
+	};
+
+	class V12_EMPEROR
+	{
+		realname="Emperor";
+		buyPrice=19000000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="SP98";
+		fuelCapacity=84;
+	};
+
+	class AlessioPanamera
+	{
+		realname="Panamera";
+		buyPrice=10000000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="SP98";
+		fuelCapacity=84;
+	};
+
+	class AlessioGallardoMat
+	{
+		realname="Gallardo";
+		buyPrice=14000000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="SP98";
+		fuelCapacity=84;
+	};
+
 	class Alessio918
 	{
 		realname="Porsche 918 Spyder";
@@ -7086,6 +7194,17 @@ class Peck_MercedesBenz_G65_Rebelle_1
 		fuelCapacity=84;
 	};
 
+	class V12_URUS19
+	{
+		realname="Urus";
+		buyPrice=19000000;
+		inventory=40;
+		side="CIV";
+		insurance=1;
+		licenses[]={};
+		fuel="SP95";
+		fuelCapacity=84;
+	};
 	class V12_M600
 	{
 		realname="M600";
