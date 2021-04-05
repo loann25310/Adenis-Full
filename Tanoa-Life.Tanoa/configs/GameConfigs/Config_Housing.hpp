@@ -62,6 +62,39 @@ class ADENIS_HOUSES
 			};
 		};
 	};
+
+	class Diablo_HP
+	{
+		price=1500000;
+		class house {};
+		class storage
+		{
+			type="Diablo_Coffre_Extra";
+		};
+		class factions
+		{
+			class GUER {
+				rank=8;
+			};
+		};
+	};
+
+	class Caserne_Smith
+	{
+		price=1500000;
+		class house {};
+		class storage
+		{
+			type="Diablo_Coffre_Extra";
+		};
+		class factions
+		{
+			class GUER {
+				rank=8;
+			};
+		};
+	};
+
 	class Skyline_Chambre_Forte_01_F
 	{
 		price=1750000;

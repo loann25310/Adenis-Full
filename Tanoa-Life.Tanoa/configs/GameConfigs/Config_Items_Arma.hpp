@@ -2330,6 +2330,19 @@ class ADENIS_ITEMS_ARMA
 		buy_price=1200;
 		buy_condition_EAST=1;
 	};
+
+	class B_Bergen_tna_F
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+
+	class B_Patrol_Respawn_bag_F
+	{
+		buy_price=1200;
+		buy_condition_EAST=1;
+	};
+
 	class SRB_JTAC_Pack
 	{
 		buy_price=1200;

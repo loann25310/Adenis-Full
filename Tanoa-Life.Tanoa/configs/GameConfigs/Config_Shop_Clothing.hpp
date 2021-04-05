@@ -1282,7 +1282,8 @@ class ADENIS_SHOPS_CLOTHING
 			"ACM_V_C_AAFMV2",
 			"ACM_V_C_AAFMV3",
 			"V_Rangemaster_belt",
-			"V_PlateCarrierlA1_dgtl"
+			"V_PlateCarrierlA1_dgtl",
+			"V_RebreatherIA"
 
 		};
 		backpacks[]=
@@ -1292,7 +1293,9 @@ class ADENIS_SHOPS_CLOTHING
 			"SRB_Kitbag_mcamo",
 			"SRB_JTAC_Pack ",
 			"SRB_Carryall_Maskirni",
-			"TRYK_B_Belt_AOR2"
+			"TRYK_B_Belt_AOR2",
+			"B_Bergen_tna_F",
+			"B_Patrol_Respawn_bag_F"
 
 		};
 		goggles[]=
