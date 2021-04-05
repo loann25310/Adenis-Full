@@ -376,7 +376,7 @@ class ADENIS_PROCESS
 	};
 	class lab_methp: bag_01
 	{
-		name="Fabrication : Tour de guet en bois";
+		name="Fabrication : Labortoire de Meth";
 		class require
 		{
 			items_virtual[]={{"woodp",15},{"ironp",15},{"wood",15},{"glass",15}};
@@ -388,7 +388,7 @@ class ADENIS_PROCESS
 	};
 	class lab_cocainep: bag_01
 	{
-		name="Fabrication : Tour de guet en bois";
+		name="Fabrication : Laboratoire de Cocaine";
 		class require
 		{
 			items_virtual[]={{"woodp",15},{"ironp",15},{"wood",15},{"glass",15}};
@@ -400,7 +400,7 @@ class ADENIS_PROCESS
 	};
 	class lab_heroinp: bag_01
 	{
-		name="Fabrication : Tour de guet en bois";
+		name="Fabrication : Laboratoire d'héroine";
 		class require
 		{
 			items_virtual[]={{"woodp",15},{"ironp",15},{"wood",15},{"glass",15}};
@@ -412,7 +412,7 @@ class ADENIS_PROCESS
 	};
 	class lab_cigarep: bag_01
 	{
-		name="Fabrication : Tour de guet en bois";
+		name="Fabrication : Laboratoire de Cigare";
 		class require
 		{
 			items_virtual[]={{"woodp",15},{"ironp",15},{"pierre",15},{"glass",15}};
