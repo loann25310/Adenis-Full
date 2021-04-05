@@ -248,7 +248,7 @@ class ADENIS_MISSIONS
 		name="Convoi CSC";
 		sides[]={"WEST"};
 		condition="((player getVariable ['rank',0]) >= 4)";
-		price=0;
+		price=100000000;
 		vehicle="Alysia_GMC_West_01";
 		count_per_reboot=1;
 		max_delivery_time=30;
