@@ -76,16 +76,7 @@ class ADENIS_SHOPS_VEHICLES
 			"AlessioGTR",
 			"V12_M600",
 			"AlessioCayman",
-			"Alessio918",
-			"AlessioAgera",
-			"V12_GHOST_BLANC",
-			"V12_ROYAL_BLANC",
-			"V12_DIVORB",
-			"V12_GT2RS_ROUGE",
-			"AlessioHuayra",
-			"V12_EMPEROR",
-			"AlessioPanamera",
-			"AlessioGallardoMat"
+			"Alessio918"
 		};
 	};
 	class CIV_concess_2: CIV_air
