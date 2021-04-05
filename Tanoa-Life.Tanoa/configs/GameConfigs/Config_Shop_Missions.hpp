@@ -243,50 +243,50 @@ class ADENIS_MISSIONS
 		};
 	};
 
-	//class west_1
-	//{
-		//name="Convoi CSC";
-		//sides[]={"WEST"};
-		//condition="((player getVariable ['rank',0]) >= 4)";
-		//price=0;
-		//vehicle="Alysia_GMC_West_01";
-		//count_per_reboot=1;
-		//max_delivery_time=30;
-		//min_delivery_time=10;
-		//loop_count_random=35;
-		//loop_count_min=5;
-		//class stock
-		//{
-		//	weapons[]=
-		//	{
-		//		"arifle_ARX_blk_F",
-		//		"Alysia_MG42"
-		//	};
-		//	magazines[]=
-		//	{
-		//		"30Rnd_65x39_caseless_green_mag_Tracer",
-		//		"Alysia_MG42_magazine"
-		//	};
-		//	items[]=
-		//	{
-		//		"bipod_01_F_blk",
-		//		"DemoCharge_Remote_Mag",
-		//		"SmokeShellWhite",
-		//		"Rangefinder",
-		//		"O_NVGoggles_urb_F",
-		//		"O_NVGoggles_ghex_F",
-		//		"O_NVGoggles_hex_F",
-		//		"optic_DMS",
-		//		"optic_ACO_grn_smg",
-		//		"optic_Hamr",
-		//		"optic_MRCO",
-		//		"Mask_M40",
-		//		"NVGoggles"
-		//	};
-	//	};
-	//	class prevent
-	//	{
-	//		needed_markers[]={"blackMarket_marker_1","blackMarket_marker_2"};
-	//	};
-	//};
-//};
+	class west_1
+	{
+		name="Convoi CSC";
+		sides[]={"WEST"};
+		condition="((player getVariable ['rank',0]) >= 4)";
+		price=0;
+		vehicle="Alysia_GMC_West_01";
+		count_per_reboot=1;
+		max_delivery_time=30;
+		min_delivery_time=10;
+		loop_count_random=35;
+		loop_count_min=5;
+		class stock
+		{
+			weapons[]=
+			{
+				"arifle_ARX_blk_F",
+				"Alysia_MG42"
+			};
+			magazines[]=
+			{
+				"30Rnd_65x39_caseless_green_mag_Tracer",
+				"Alysia_MG42_magazine"
+			};
+			items[]=
+			{
+				"bipod_01_F_blk",
+				"DemoCharge_Remote_Mag",
+				"SmokeShellWhite",
+				"Rangefinder",
+				"O_NVGoggles_urb_F",
+				"O_NVGoggles_ghex_F",
+				"O_NVGoggles_hex_F",
+				"optic_DMS",
+				"optic_ACO_grn_smg",
+				"optic_Hamr",
+				"optic_MRCO",
+				"Mask_M40",
+				"NVGoggles"
+			};
+		};
+		class prevent
+		{
+			needed_markers[]={"blackMarket_marker_1","blackMarket_marker_2"};
+		};
+	};
+};
