@@ -2,52 +2,52 @@ class ADENIS_ANIMATIONS
 {
 	class HG_Crazy_Dance
 	{
-		name="Dance folle";
+		name="Danse folle";
 	};
 
 	class HG_crazydrunkdance
 	{
-		name="Dance alcolisé";
+		name="Danse alcolisée";
 	};
 
 	class HG_Dance
 	{
-		name="Dance de soirée";
+		name="Danse de soirée";
 	};
 
 	class HG_robotdance
 	{
-		name="Dance Robot";
+		name="Danse Robot";
 	};
 
 	class HG_dubstepdance
 	{
-		name="Dance Robot 2";
+		name="Danse Robot 2";
 	};
 
 	class HG_dubstepPop
 	{
-		name="Dance Robot 3";
+		name="Danse Robot 3";
 	};
 
 	class HG_DuoIvan
 	{
-		name="Dance en duo";
+		name="Danse en duo";
 	};
 
 	class HG_hiphopdance
 	{
-		name="Dance Hip-hop";
+		name="Danse Hip-hop";
 	};
 
 	class HG_nightclubdance
 	{
-		name="Dance de Night Club";
+		name="Danse de Night Club";
 	};
 
 	class HG_russiandance
 	{
-		name="Dance Russe";
+		name="Danse Russe";
 	};
 
 	class HubWoundedProne_idle1
