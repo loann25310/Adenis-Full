@@ -632,6 +632,19 @@ class ADENIS_LICENSES
 			};
 		};
 	};
+	class company_brasserie
+	{
+		name="Ouvrier de brasserie";
+		class factions
+		{
+			class CIV
+			{
+				price=11025;
+				condition="!(isNull g_company) && {(((g_company getVariable ['company_info',['','','']]) select 2) isEqualTo 'brasserie')}";
+				search_shown[]={"WEST","EAST","GUER","CIV"};
+			};
+		};
+	};
 	class company_coffee
 	{
 		name="Ouvrier de torréfaction du café";
