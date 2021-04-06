@@ -819,7 +819,7 @@ class ADENIS_COMPANIES_TYPES
 		name="Nuka-Restaurant";
 		price=430000;
 		building="Adnis_Diablo_Resto";
-		license="company_cook";
+		license="company_cook_nuka";
 		image="Alysia_Client_Texture\Data\companies\types\cook.paa";
 		members_max=15;
 		salary=110;
