@@ -489,6 +489,19 @@ class ADENIS_LICENSES
 			};
 		};
 	};
+	class cook_nuka
+	{
+		name="Restaurateur";
+		class factions
+		{
+			class CIV
+			{
+				price=10150;
+				condition="!(isNull g_company) && {(((g_company getVariable ['company_info',['','','']]) select 2) isEqualTo 'cook')}";
+				search_shown[]={"WEST","EAST","GUER","CIV"};
+			};
+		};
+	};
 	class company_music_label
 	{
 		name="Label de musique";
