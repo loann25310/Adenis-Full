@@ -7077,7 +7077,7 @@ class Peck_MercedesBenz_G65_Rebelle_1
 	class AlessioAgera
 	{
 		realname="Agera";
-		buyPrice=12000000;
+		buyPrice=8000000;
 		inventory=40;
 		side="CIV";
 		insurance=1;
@@ -7089,7 +7089,7 @@ class Peck_MercedesBenz_G65_Rebelle_1
 	class V12_GHOST_BLANC
 	{
 		realname="Rolls Ghost";
-		buyPrice=8500000;
+		buyPrice=6000000;
 		inventory=40;
 		side="CIV";
 		insurance=1;
@@ -7101,7 +7101,7 @@ class Peck_MercedesBenz_G65_Rebelle_1
 	class V12_ROYAL_BLANC
 	{
 		realname="Limousine";
-		buyPrice=8500000;
+		buyPrice=5000000;
 		inventory=40;
 		side="CIV";
 		insurance=1;
@@ -7113,7 +7113,7 @@ class Peck_MercedesBenz_G65_Rebelle_1
 	class V12_DIVORB
 	{
 		realname="Buggati Divo";
-		buyPrice=22000000;
+		buyPrice=16000000;
 		inventory=40;
 		side="CIV";
 		insurance=1;
@@ -7125,7 +7125,7 @@ class Peck_MercedesBenz_G65_Rebelle_1
 	class V12_GT2RS_ROUGE
 	{
 		realname="Porsche GT2";
-		buyPrice=18000000;
+		buyPrice=13000000;
 		inventory=40;
 		side="CIV";
 		insurance=1;
@@ -7137,7 +7137,7 @@ class Peck_MercedesBenz_G65_Rebelle_1
 	class AlessioHuayra
 	{
 		realname="Huayra";
-		buyPrice=20000000;
+		buyPrice=14000000;
 		inventory=40;
 		side="CIV";
 		insurance=1;
@@ -7149,7 +7149,7 @@ class Peck_MercedesBenz_G65_Rebelle_1
 	class V12_EMPEROR
 	{
 		realname="Emperor";
-		buyPrice=19000000;
+		buyPrice=14000000;
 		inventory=40;
 		side="CIV";
 		insurance=1;
@@ -7161,7 +7161,7 @@ class Peck_MercedesBenz_G65_Rebelle_1
 	class AlessioPanamera
 	{
 		realname="Panamera";
-		buyPrice=10000000;
+		buyPrice=7000000;
 		inventory=40;
 		side="CIV";
 		insurance=1;
@@ -7173,7 +7173,7 @@ class Peck_MercedesBenz_G65_Rebelle_1
 	class AlessioGallardoMat
 	{
 		realname="Gallardo";
-		buyPrice=14000000;
+		buyPrice=10000000;
 		inventory=40;
 		side="CIV";
 		insurance=1;
@@ -7197,7 +7197,7 @@ class Peck_MercedesBenz_G65_Rebelle_1
 	class V12_URUS19
 	{
 		realname="Urus";
-		buyPrice=19000000;
+		buyPrice=15000000;
 		inventory=40;
 		side="CIV";
 		insurance=1;

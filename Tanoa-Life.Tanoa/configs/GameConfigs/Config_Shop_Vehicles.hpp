@@ -85,7 +85,8 @@ class ADENIS_SHOPS_VEHICLES
 			"AlessioHuayra",
 			"V12_EMPEROR",
 			"AlessioPanamera",
-			"AlessioGallardoMat"
+			"AlessioGallardoMat",
+			"V12_URUS19"
 		};
 	};
 	class CIV_concess_2: CIV_air
