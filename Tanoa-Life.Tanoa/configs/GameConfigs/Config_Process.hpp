@@ -1798,7 +1798,7 @@ class ADENIS_PROCESS
 			};
 		};
 	};
-	class Maltagep: cassoulet
+	class Maltagep
 	{
 		name="Maltage de l'orge";
 		sound="smelting";
@@ -1812,8 +1812,16 @@ class ADENIS_PROCESS
 		};
 		time_per_item=2;
 		time_default=3;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_brasserie"};
+			};
+		};
 	};
-	class Brassagep: cassoulet
+	
+	class Brassagep
 	{
 		name="Brassage du Malte";
 		sound="smelting";
@@ -1827,7 +1835,15 @@ class ADENIS_PROCESS
 		};
 		time_per_item=2;
 		time_default=3;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_brasserie"};
+			};
+		};
 	};
+
 	class Fermentp
 	{
 		name="Fermentation du moût";
@@ -1846,10 +1862,11 @@ class ADENIS_PROCESS
 		{
 			class CIV
 			{
-				licenses[]={"company_rhum"};
+				licenses[]={"company_brasserie"};
 			};
 		};
 	};
+
 	class Whiskyp
 	{
 		name="Mise en bouteille du Whisky";
@@ -1872,7 +1889,7 @@ class ADENIS_PROCESS
 			};
 		};
 	};
-	class brewingp: cassoulet
+	class brewingp
 	{
 		name="Houblonnage du houblon";
 		sound="smelting";
@@ -1886,7 +1903,15 @@ class ADENIS_PROCESS
 		};
 		time_per_item=2;
 		time_default=3;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_brasserie"};
+			};
+		};
 	};
+
 	class Ferment_beerp
 	{
 		name="Fermentation du Houblon";
@@ -1905,7 +1930,7 @@ class ADENIS_PROCESS
 		{
 			class CIV
 			{
-				licenses[]={"company_rhum"};
+				licenses[]={"company_brasserie"};
 			};
 		};
 	};
@@ -1927,7 +1952,7 @@ class ADENIS_PROCESS
 		{
 			class CIV
 			{
-				licenses[]={"company_rhum"};
+				licenses[]={"company_brasserie"};
 			};
 		};
 	};

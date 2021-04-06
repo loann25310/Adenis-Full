@@ -484,6 +484,19 @@ class ADENIS_LICENSES
 			class CIV
 			{
 				price=10150;
+				condition="!(isNull g_company) && {(((g_company getVariable ['company_info',['','','']]) select 2) isEqualTo 'cook') or (licence isEqualTo 'admin')}";
+				search_shown[]={"WEST","EAST","GUER","CIV"};
+			};
+		};
+	};
+	class cook_nuka
+	{
+		name="Restaurateur";
+		class factions
+		{
+			class CIV
+			{
+				price=10150;
 				condition="!(isNull g_company) && {(((g_company getVariable ['company_info',['','','']]) select 2) isEqualTo 'cook')}";
 				search_shown[]={"WEST","EAST","GUER","CIV"};
 			};
@@ -628,6 +641,19 @@ class ADENIS_LICENSES
 			{
 				price=11025;
 				condition="!(isNull g_company) && {(((g_company getVariable ['company_info',['','','']]) select 2) isEqualTo 'rhum')}";
+				search_shown[]={"WEST","EAST","GUER","CIV"};
+			};
+		};
+	};
+	class company_brasserie
+	{
+		name="Ouvrier de brasserie";
+		class factions
+		{
+			class CIV
+			{
+				price=11025;
+				condition="!(isNull g_company) && {(((g_company getVariable ['company_info',['','','']]) select 2) isEqualTo 'brasserie')}";
 				search_shown[]={"WEST","EAST","GUER","CIV"};
 			};
 		};

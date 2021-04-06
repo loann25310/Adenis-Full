@@ -1078,8 +1078,6 @@ class ADENIS_COMPANIES_TYPES
 				"champagnep",
 				"Fermentp",
 				"Whiskyp",
-				"Ferment_beerp",
-				"Beerp",
 				"assembling_gin",
 				"ginp",
 				"assembling_sake",
@@ -1090,6 +1088,42 @@ class ADENIS_COMPANIES_TYPES
 				"vodkap",
 				"assembling_suze",
 				"suzep"
+
+			};
+		};
+		class garage
+		{
+			types[]={"Car"};
+		};
+	};
+
+	class brasserie
+	{
+		name="Brasserie";
+		price=721000;
+		building="GeK_Entreprise_Distillerie";
+		image="Alysia_Client_Texture\Data\companies\types\rhum.paa";
+		license="company_brasserie";
+		ressources_link[]={"beer"};
+		members_max=15;
+		salary=180;
+		ticket=1;
+		class storage
+		{
+			type="Diablo_Coffre_Extra";
+		};
+		class process
+		{
+			posDistance=2.5;
+			modelPos[]={6.28711,0.510254,0.528652};
+			list[]=
+			{
+				"Ferment_beerp",
+				"Beerp",
+				"brewingp",
+				"Fermentp",
+				"Brassagep",
+				"Maltagep"
 
 			};
 		};
