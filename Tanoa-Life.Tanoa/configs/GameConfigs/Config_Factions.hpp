@@ -602,7 +602,7 @@ class ADENIS_FACTIONS
 		/*** GLOBAL ***/
 		name="CSC";
 		name_full="Compagnie de Sécurité Communiste";
-		icon="";
+		icon="Alysia_Client_Texture\Data\faction\CIV_logo.paa";
 		identity_item="Alysia_Identity_Civ";
 
 		/*** SALARY ***/
