@@ -1808,7 +1808,7 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_virtual[]={{"Malte",1}};
+			items_virtual[]={{"Malte",2}};
 		};
 		time_per_item=2;
 		time_default=3;
@@ -1899,7 +1899,7 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_virtual[]={{"brewing",1}};
+			items_virtual[]={{"brewing",3}};
 		};
 		time_per_item=2;
 		time_default=3;
