@@ -426,8 +426,8 @@ class ADENIS_FACTIONS
 	class GUER
 	{
 		/*** GLOBAL ***/
-		name="SAMU";
-		name_full="Service d'aide médicale urgente";
+		name="Pompiers";
+		name_full="Bataillon des Marins-Pompiers de Tanoa";
 		icon="Alysia_Client_Texture\Data\faction\GUER_logo.paa";
 		identity_item="Alysia_Identity_Guer";
 
