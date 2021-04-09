@@ -65,7 +65,7 @@ if (g_shop_receive_illegal > 0) then
 	 		[true, "illegal_money", g_shop_receive_illegal] call AlysiaClient_fnc_handleInv;
 	 	};
 	};
-	 [true, "illegal_money", g_shop_receive_illegal] call AlysiaClient_fnc_handleInv;
+//	 [true, "illegal_money", g_shop_receive_illegal] call AlysiaClient_fnc_handleInv;
 	g_shop_receive_illegal = 0;
 };
 
