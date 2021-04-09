@@ -3829,6 +3829,14 @@ class ADENIS_ITEMS
         image="Adenis_Textures\patron.paa";
         class remove {};
     };
+    class blueprint_CONEXUS
+    {
+        name="Blueprint de la Conexus";
+        weight=0;
+        price_buy=10000;
+        image="Adenis_Textures\patron.paa";
+        class remove {};
+    };
     class blueprint_sig: blueprint_gsh18
     {
         name="Blueprint de SIG P226";
