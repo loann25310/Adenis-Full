@@ -5692,6 +5692,38 @@ class clousp: iron
 			};
 		};
 	};
+
+class emballageressources_cafeemba
+	{
+		name="Usine d'emballage du café";
+		sound="smelting";
+		class require
+		{
+			items_virtual[]={{"coffeec",10},{"palette",2}};
+		};
+		class receive
+		{
+			items_virtual[]={{"cafeemballe",1}};
+		};
+		time_per_item=1;
+		time_default=5;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"emballageressources"};
+			};
+			class WEST
+			{
+				licenses[]={"emballageressources"};
+			};
+			class GUER
+			{
+				licenses[]={"emballageressources"};
+			};
+		};
+	};
+
 	class emballageressources_tabchocoemba
 	{
 		name="Usine d'emballage du chocolat";

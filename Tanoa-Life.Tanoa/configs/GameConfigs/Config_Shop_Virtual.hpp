@@ -158,7 +158,8 @@ class ADENIS_SHOPS_VIRTUAL
 			"tabchocoemba",
 			"steelppa",
 			"planchefruitdemer",
-			"cassouletemba"
+			"cassouletemba",
+			"cafeemballe"
 		};
 	};
 

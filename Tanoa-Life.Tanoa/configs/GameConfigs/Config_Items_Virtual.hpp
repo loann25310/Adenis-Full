@@ -557,6 +557,20 @@ class ADENIS_ITEMS
         class remove {};
     };
 
+    class cafeemballe
+    {
+        name="Café Emballé";
+        weight=30;
+        image="Adenis_Textures\carton.paa";
+        entrepriseItem = 1;
+        class market
+        {
+            max=85000;
+            min=70000;
+        };
+        class remove {};
+    };
+
     class objvaleur
     {
         name="Objet de valeur";
