@@ -83,7 +83,7 @@ class ADENIS_SHOPS_VIRTUAL
 			"ciment"
 		};
 	};
-	
+
 	class hopital
 	{
 		name="Hopital";
@@ -94,7 +94,7 @@ class ADENIS_SHOPS_VIRTUAL
 			"sandwich"
 		};
 	};
-	
+
 	class companies
 	{
 		name="Réserve d'entreprises";
@@ -203,8 +203,6 @@ class ADENIS_SHOPS_VIRTUAL
 		side="GUER";
 		buy[]=
 		{
-			"cone",
-			"barriere",
 			"horn_guer",
 			"brancard",
 			"medoc_rhume",
