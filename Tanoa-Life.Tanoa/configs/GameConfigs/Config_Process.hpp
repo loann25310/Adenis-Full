@@ -1567,7 +1567,7 @@ class ADENIS_PROCESS
 		{
 			items_virtual[]={{"red_grape_juice",1}};
 		};
-		time_per_item=3;
+		time_per_item=2;
 		time_default=2;
 	};
 	class assembling_wine_redp
@@ -1582,7 +1582,7 @@ class ADENIS_PROCESS
 		{
 			items_virtual[]={{"assembling_wine_red",1}};
 		};
-		time_per_item=3;
+		time_per_item=2;
 		time_default=2;
 		class factions
 		{
@@ -1626,7 +1626,7 @@ class ADENIS_PROCESS
 		{
 			items_virtual[]={{"malibu",1}};
 		};
-		time_per_item=3;
+		time_per_item=2;
 		time_default=2;
 		class factions
 		{
@@ -1648,7 +1648,7 @@ class ADENIS_PROCESS
 		{
 			items_virtual[]={{"white_grape_juice",1}};
 		};
-		time_per_item=3;
+		time_per_item=2;
 		time_default=2;
 	};
 	class assembling_wine_whitep
@@ -1811,7 +1811,7 @@ class ADENIS_PROCESS
 			items_virtual[]={{"Malte",2}};
 		};
 		time_per_item=2;
-		time_default=3;
+		time_default=2;
 		class factions
 		{
 			class CIV
@@ -1831,10 +1831,10 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_virtual[]={{"Brassage",1}};
+			items_virtual[]={{"Brassage",2}};
 		};
 		time_per_item=2;
-		time_default=3;
+		time_default=2;
 		class factions
 		{
 			class CIV
@@ -1854,10 +1854,10 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_virtual[]={{"Ferment_whisky",1}};
+			items_virtual[]={{"Ferment_whisky",2}};
 		};
 		time_per_item=2;
-		time_default=3;
+		time_default=2;
 		class factions
 		{
 			class CIV
@@ -1880,7 +1880,7 @@ class ADENIS_PROCESS
 			items_virtual[]={{"Whisky",1}};
 		};
 		time_per_item=2;
-		time_default=3;
+		time_default=2;
 		class factions
 		{
 			class CIV
@@ -1902,7 +1902,7 @@ class ADENIS_PROCESS
 			items_virtual[]={{"brewing",3}};
 		};
 		time_per_item=2;
-		time_default=3;
+		time_default=2;
 		class factions
 		{
 			class CIV
@@ -1922,10 +1922,10 @@ class ADENIS_PROCESS
 		};
 		class receive
 		{
-			items_virtual[]={{"ferment_beer",2}};
+			items_virtual[]={{"ferment_beer",3}};
 		};
 		time_per_item=2;
-		time_default=3;
+		time_default=2;
 		class factions
 		{
 			class CIV
@@ -1947,7 +1947,7 @@ class ADENIS_PROCESS
 			items_virtual[]={{"beer",1}};
 		};
 		time_per_item=2;
-		time_default=3;
+		time_default=2;
 		class factions
 		{
 			class CIV
@@ -1969,7 +1969,7 @@ class ADENIS_PROCESS
 			items_virtual[]={{"olive_oil",1}};
 		};
 		time_per_item=2;
-		time_default=3;
+		time_default=2;
 	};
 	class Olive_oilp: cassoulet
 	{
@@ -1984,7 +1984,7 @@ class ADENIS_PROCESS
 			items_virtual[]={{"olive_oil_bottle",1}};
 		};
 		time_per_item=2;
-		time_default=3;
+		time_default=2;
 	};
 	class Mixer_olivep: cassoulet
 	{
@@ -1999,7 +1999,7 @@ class ADENIS_PROCESS
 			items_virtual[]={{"olive_paste",1}};
 		};
 		time_per_item=2;
-		time_default=3;
+		time_default=2;
 	};
 	class Tapenadep: cassoulet
 	{
@@ -2014,7 +2014,7 @@ class ADENIS_PROCESS
 			items_virtual[]={{"tapenade",1}};
 		};
 		time_per_item=2;
-		time_default=3;
+		time_default=2;
 	};
 	class Olive_cocktail: cassoulet
 	{
@@ -2029,7 +2029,7 @@ class ADENIS_PROCESS
 			items_virtual[]={{"Olive_cocktail",1}};
 		};
 		time_per_item=2;
-		time_default=3;
+		time_default=2;
 	};
 	class Grinding_flourp: cassoulet
 	{
@@ -2044,7 +2044,7 @@ class ADENIS_PROCESS
 			items_virtual[]={{"flour",1}};
 		};
 		time_per_item=2;
-		time_default=3;
+		time_default=2;
 	};
 	class doughp: cassoulet
 	{
@@ -2059,7 +2059,7 @@ class ADENIS_PROCESS
 			items_virtual[]={{"dough",1}};
 		};
 		time_per_item=2;
-		time_default=3;
+		time_default=2;
 	};
 	class baguettep: cassoulet
 	{
@@ -2074,7 +2074,7 @@ class ADENIS_PROCESS
 			items_virtual[]={{"baguette",2}};
 		};
 		time_per_item=2;
-		time_default=3;
+		time_default=2;
 	};
 	class puff_pastryp: cassoulet
 	{
@@ -2089,7 +2089,7 @@ class ADENIS_PROCESS
 			items_virtual[]={{"puff_pastry",1}};
 		};
 		time_per_item=2;
-		time_default=3;
+		time_default=2;
 	};
 	class cutting_puff_pastryp: cassoulet
 	{
@@ -2104,7 +2104,7 @@ class ADENIS_PROCESS
 			items_virtual[]={{"uncooked_croissant",5}};
 		};
 		time_per_item=2;
-		time_default=3;
+		time_default=2;
 	};
 	class baking_croissantp: cassoulet
 	{
@@ -2119,7 +2119,7 @@ class ADENIS_PROCESS
 			items_virtual[]={{"cooked_croissant",1}};
 		};
 		time_per_item=2;
-		time_default=3;
+		time_default=2;
 	};
 	class cutting_puff_chocolatep: cassoulet
 	{

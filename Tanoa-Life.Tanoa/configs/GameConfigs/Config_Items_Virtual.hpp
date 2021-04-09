@@ -2455,8 +2455,7 @@ class ADENIS_ITEMS
         name="Levure";
         weight=1;
         image="Alysia_Client\Textures\Items_virtual\levure.paa";
-        price_buy=10;
-        buy_license_CIV="company_rhum";
+        price_buy=10;      
         class remove {};
     };
     class Malte
@@ -2541,8 +2540,8 @@ class ADENIS_ITEMS
         };
         class market
         {
-            max=3344;
-            min=2290;
+            max=4944;
+            min=2790;
         };
     };
     //////////////// OLIVE ////////////////
