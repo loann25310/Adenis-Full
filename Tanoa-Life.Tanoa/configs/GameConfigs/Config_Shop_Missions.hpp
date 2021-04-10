@@ -191,11 +191,15 @@ class ADENIS_MISSIONS
             {
                 "bipod_01_F_blk",
                 "optic_Hamr",
-                "optic_MRCO"
+                "optic_MRCO",
+                "optic_SOS"
             };
             virtuals[]=
             {
-                "destroy_labo"
+                "destroy_labo",
+                "destroy_archeo",
+                "destroy_stand",
+                "destroy_field"
             };
         };
 	};
