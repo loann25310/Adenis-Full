@@ -399,7 +399,8 @@ class ADENIS_SHOPS_VEHICLES
 			"I_MRAP_03_F",
 			"SRB_Heli_Light_01_F",
 			"I_Heli_light_03_unarmed_F",
-			"I_Heli_Transport_02_F"
+			"I_Heli_Transport_02_F",
+			"an12bkv3_USSR_11833"
 		};
 	};
 
