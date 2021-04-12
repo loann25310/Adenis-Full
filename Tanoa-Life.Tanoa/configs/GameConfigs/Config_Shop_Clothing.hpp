@@ -1313,7 +1313,7 @@ class ADENIS_SHOPS_CLOTHING
 
 	class WEST_clothing
 	{
-		name="Friperie PR";
+		name="Friperie PC";
 		side="WEST";
 		uniforms[]=
 		{
@@ -1322,7 +1322,9 @@ class ADENIS_SHOPS_CLOTHING
 			"Alysia_Uniform_East_soldier_Parade"
 		};
 		headgear[]=
-		{};
+		{
+			"H_ParadeDressCap_01_US_F"
+		};
 		vests[]=
 		{
 			"EF_BLT_M1"

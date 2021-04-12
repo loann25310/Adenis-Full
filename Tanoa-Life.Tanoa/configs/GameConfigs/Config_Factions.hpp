@@ -600,8 +600,8 @@ class ADENIS_FACTIONS
 	class WEST
 	{
 		/*** GLOBAL ***/
-		name="PR";
-		name_full="Police Rouge";
+		name="PC";
+		name_full="Police Communiste";
 		icon="Alysia_Client_Texture\Data\faction\CIV_logo.paa";
 		identity_item="Alysia_Identity_Civ";
 
