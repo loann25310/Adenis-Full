@@ -1875,7 +1875,7 @@ class ADENIS_ITEMS
         name="Mandat de perquisition";
         weight=1;
         price_buy=5000;
-        buy_rank_EAST=15;
+        buy_rank_EAST=14;
         image="Alysia_Client\Textures\Items_virtual\perqui_north.paa";
         class remove {};
     };
