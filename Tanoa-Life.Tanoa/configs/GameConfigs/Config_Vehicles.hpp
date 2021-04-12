@@ -3088,6 +3088,20 @@ class ADENIS_VEHICLES
         rank=12;
     };
 
+	class an12bkv3_USSR_11833
+	{
+		realname="an12 (RAC)";
+		buyPrice=2000000;
+		inventory=600;
+		side="EAST";
+		insurance=1;
+		licenses[]={"east_pilot","pilot"};
+		fuel="Kerosene";
+		fuelCapacity=650;
+		colors[]={};
+		rank=12;
+	};
+
 	/*
 	*      _______  __    __   _______ .______      
 	*     /  _____||  |  |  | |   ____||   _  \     

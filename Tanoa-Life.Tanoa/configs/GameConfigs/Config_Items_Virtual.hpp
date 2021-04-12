@@ -1681,6 +1681,8 @@ class ADENIS_ITEMS
         name="Kit (Archélogie)";
         weight=6;
         image="Alysia_Client\Textures\Items_virtual\boite1.paa";
+	buy_rank_EAST=12;
+	price_buy=1000;
         class remove {};
     };
     class destroy_stand: destroy_archeo
@@ -1698,10 +1700,7 @@ class ADENIS_ITEMS
     class destroy_labo: destroy_archeo
     {
         name="Kit (Laboratoire)";
-        price_buy=1000;
-        weight=10;
         image="Alysia_Client\Textures\Items_virtual\boite2.paa";
-        buy_rank_WEST=8;
         class remove {};
     };
 
@@ -1876,8 +1875,7 @@ class ADENIS_ITEMS
         name="Mandat de perquisition";
         weight=1;
         price_buy=5000;
-        buy_rank_EAST=14;
-        buy_rank_WEST=8;
+        buy_rank_EAST=15;
         image="Alysia_Client\Textures\Items_virtual\perqui_north.paa";
         class remove {};
     };
