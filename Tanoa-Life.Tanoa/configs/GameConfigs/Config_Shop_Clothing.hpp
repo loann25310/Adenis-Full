@@ -1313,25 +1313,24 @@ class ADENIS_SHOPS_CLOTHING
 
 	class WEST_clothing
 	{
-		name="Friperie CSC";
+		name="Friperie PR";
 		side="WEST";
 		uniforms[]=
 		{
-			"CCS_CombatUniform"
+			"Alysia_Uniform_East_colonel_Parade",
+			"Alysia_Uniform_East_lieutenant_Parade",
+			"Alysia_Uniform_East_soldier_Parade"
 		};
 		headgear[]=
-		{
-			"CCS_Cap"
-		};
+		{};
 		vests[]=
 		{
-			"CCS_Vest",
 			"EF_BLT_M1"
 		};
 		backpacks[]=
 		{
-			"Alysia_Radio_LR_West",
-			"TAC_BP_Butt_B"
+			"tf_rt1523g_big_bwmod",
+			"B_FieldPack_oli"
 		};
 		goggles[]=
 		{};

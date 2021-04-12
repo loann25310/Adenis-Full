@@ -600,8 +600,8 @@ class ADENIS_FACTIONS
 	class WEST
 	{
 		/*** GLOBAL ***/
-		name="CSC";
-		name_full="Compagnie de Sécurité Communiste";
+		name="PR";
+		name_full="Police Rouge";
 		icon="Alysia_Client_Texture\Data\faction\CIV_logo.paa";
 		identity_item="Alysia_Identity_Civ";
 
@@ -717,10 +717,10 @@ class ADENIS_FACTIONS
 		/*** LOADOUT ***/
 		class Loadout
 		{
-			uniform="CCS_CombatUniform";
+			uniform="Alysia_Uniform_East_soldier_Parade";
 			headgear="";
-			vest="";
-			backpack="";
+			vest="EF_BLT_M1";
+			backpack="B_FieldPack_oli";
 			items[]={};
 		};
 
@@ -730,21 +730,21 @@ class ADENIS_FACTIONS
 			ranks_complet[]=
 			{
 				"Civil",
-				"Conscrit",
-				"Agent",
-				"Sergent",
-				"Divisionnaire",
-				"Commissaire"
+				"Recrue",
+				"Policier",
+				"Lieutenant",
+				"Major Général",
+				"Général de Police"
 			};
 
 			ranks_short[]=
 			{
 				"Civ",
-				"Csc",
-				"Agt",
-				"Sgt",
-				"Div",
-				"Com"
+				"Rce",
+				"Pol",
+				"Lieut",
+				"MG",
+				"GDP"
 			};
 		};
 	};

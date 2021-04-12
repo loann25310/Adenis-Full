@@ -1493,12 +1493,6 @@ class ADENIS_ITEMS_ARMA
 		buy_license_CIV="company_money_tranfer";
 	};
 
-	class EF_BLT_M1
-	{
-		name="Ceinture CCS";
-		buyprice=100;
-		buy_license_CIV="company_money_tranfer";
-	};
 
 
 
@@ -1879,7 +1873,37 @@ class ADENIS_ITEMS_ARMA
 	{
 		buy_price=100;
 		buy_condition_WEST=1;
-	};	
+	};
+	class Alysia_Uniform_East_lieutenant_Parade
+	{
+		buy_price=100;
+		buy_condition_WEST=1;
+	};
+	class Alysia_Uniform_East_colonel_Parade
+	{
+		buy_price=100;
+		buy_condition_WEST=1;
+	};
+	class Alysia_Vest_Utility_East_04
+	{
+		buy_price=100;
+		buy_condition_WEST=1;
+	};
+	class Alysia_Uniform_East_soldier_Parade
+	{
+		buy_price=100;
+		buy_condition_WEST=1;
+	};
+	class tf_rt1523g_big_bwmod
+	{
+		buy_price=100;
+		buy_condition_WEST=1;
+	};
+	class EF_BLT_M1
+	{
+		buy_price=100;
+		buy_condition_WEST=1;
+	};
 	class U_I_C_Soldier_Para_4_F
 	{
 		buy_price=100;
@@ -2425,7 +2449,7 @@ class ADENIS_ITEMS_ARMA
 	};
 	class Alysia_Vest_Utility_East_02: Alysia_Vest_Utility_East_01 {};
 	class Alysia_Vest_Utility_East_03: Alysia_Vest_Utility_East_01 {};
-	class Alysia_Vest_Utility_East_04: Alysia_Vest_Utility_East_01 {};
+	//class Alysia_Vest_Utility_East_04: Alysia_Vest_Utility_East_01 {};
 
 	class Alysia_Vest_Officer_East_01
 	{
