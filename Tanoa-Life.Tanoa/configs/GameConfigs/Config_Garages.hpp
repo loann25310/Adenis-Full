@@ -90,6 +90,12 @@ class ADENIS_GARAGES
 		name="Port 2";
 		spawns[]={"harbor_11_spawn_1","harbor_11_spawn_2"};
 	};
+	class harbor_12: harbor_1
+	{
+		name="Port de Nicolet";
+		spawns[]={"harbor_12_spawn_1"};
+	};
+
 
 	class land_1
 	{
