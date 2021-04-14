@@ -808,6 +808,10 @@ class ADENIS_COMPANIES_TYPES
 				"rationmilporcp"
 			};
 		};
+		class garage
+		{
+			types[]={"Car"};
+		};
 		class storage
 		{
 			type="Diablo_Coffre_Extra";
