@@ -238,7 +238,6 @@ class ADENIS_SHOPS_VIRTUAL
 			"burger",
 			"butter",
 			"cacaop",
-			"cannabis_seed",
 			"carbo",
 			"cassoulet",
 			"caviar",
@@ -246,8 +245,6 @@ class ADENIS_SHOPS_VIRTUAL
 			"chantilly",
 			"cigarette",
 			"cigare",
-			"cocainepc",
-			"cocaine_seed",
 			"coffeec",
 			"cone",
 			"coneflash",
@@ -258,27 +255,19 @@ class ADENIS_SHOPS_VIRTUAL
 			"fraise",
 			"frite",
 			"furniture",
-			"heroinps",
 			"glass",
 			"handcuffs",
 			"handcuffkeys",
-			"heroin_seed",
 			"homar",
 			"houblon_seed",
 			"ironp",
 			"kebab",
-			"lab_marijuana",
 			"langouste",
 			"lasagne",
 			"macaron",
-			"marijuana",
 			"medoc_rhume",
 			"medoc_toux_1",
-			"methp",
-			"meth_seed",
 			"milk",
-			"mushroom_bocal",
-			"mushroom_seed",
 			"nitro",
 			"objvaleur",
 			"oilu",
@@ -309,7 +298,16 @@ class ADENIS_SHOPS_VIRTUAL
 			"volcano",
 			"wood",
 			"woodp",
-			"yeast",
+			"yeast"
+		};
+	};
+
+	class adminshopBP
+	{
+		name="Shop Modération BP";
+		side="CIV";
+		buy[]=
+		{
 			"blueprint_uniformeMIT",
 			"blueprint_helmetMIT",
 			"blueprint_giletMIT",
@@ -361,6 +359,26 @@ class ADENIS_SHOPS_VIRTUAL
 			"blueprint_watchpost_tall",
 			"blueprint_watchpost_small",
 			"blueprint_watchtower_wood"
+		};
+	};
+
+	class adminshopDrg
+	{
+		name="Shop Modération Drogues";
+		side="CIV";
+		buy[]=
+		{
+			"cannabis_seed",
+			"cocainepc",
+			"cocaine_seed",
+			"heroinps",
+			"heroin_seed",
+			"lab_marijuana",
+			"marijuana",
+			"methp",
+			"meth_seed",
+			"mushroom_bocal",
+			"mushroom_seed"
 		};
 	};
 	/* RESSOURCES */

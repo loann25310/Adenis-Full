@@ -1,5 +1,23 @@
 class ADENIS_HOUSES
 {
+	//Modération
+	class Land_Grave_soldier_F
+	{
+		price=1000;
+		class house {};
+		class storage
+		{
+			type="Diablo_Coffre_Extra";
+		};
+		class factions
+		{
+			class CIV {
+				license="admin";
+			};
+		};
+	};	
+
+	// Batiments normaux
 	class Land_Offices_01_V1_F
 	{
 		price=526000;
