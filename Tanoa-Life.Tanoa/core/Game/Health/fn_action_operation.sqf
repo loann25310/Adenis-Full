@@ -16,9 +16,9 @@ _bed = attachedTo _unit;
 if (isNull _bed) exitWith {
 	["La cible doit être installée sur une table d'opération."] call AlysiaClient_fnc_error;
 };
-if ((typeOf(_bed) isEqualTo "HospitalTable_F") && (playerSide != independent) && ((side _unit) != independent) && ((independent countSide allPlayers) > 0)) exitWith {
-	["Des membres du SAMU sont présents. Veuillez les contacter pour qu'il performe l'opération."] call AlysiaClient_fnc_error;
-};
+//if ((typeOf(_bed) isEqualTo "HospitalTable_F") && (playerSide != independent) && ((side _unit) != independent) && ((independent countSide allPlayers) > 0)) exitWith {
+//	["Des membres du SAMU sont présents. Veuillez les contacter pour qu'il performe l'opération."] call AlysiaClient_fnc_error;
+//};
 if ((typeOf(_bed) isEqualTo "HealTable_F") && ((_bed getVariable ["sabotage", 0]) > serverTime)) exitWith {
 	[format["Cette table d'opération clandestine a récemment été sabotée et ne peut être utilisée que dans %1 minutes", [((_bed getVariable ["sabotage", 0]) - time), "M:SS"] call CBA_fnc_formatElapsedTime]] call AlysiaClient_fnc_error;
 };
