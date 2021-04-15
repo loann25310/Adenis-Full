@@ -1936,7 +1936,7 @@ class ADENIS_PROCESS
 	};
 	class Beerp
 	{
-		name="Mise en bouteille de la Bierre";
+		name="Mise en bouteille de la Bière";
 		sound="salt_process";
 		class require
 		{
@@ -1945,6 +1945,28 @@ class ADENIS_PROCESS
 		class receive
 		{
 			items_virtual[]={{"beer",1}};
+		};
+		time_per_item=2;
+		time_default=2;
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"company_brasserie"};
+			};
+		};
+	};
+	class BeerCanettep
+	{
+		name="Mise en canette de la Bière";
+		sound="salt_process";
+		class require
+		{
+			items_virtual[]={{"Ferment_beer",1},{"canette",1}};
+		};
+		class receive
+		{
+			items_virtual[]={{"beer_canette",1}};
 		};
 		time_per_item=2;
 		time_default=2;
@@ -5242,6 +5264,25 @@ class clousp: iron
 		class receive
 		{
 			items_virtual[]={{"conserve",3}};
+		};
+		class factions
+		{
+			class CIV
+			{
+				licenses[]={"traitement_fer"};
+			};
+		};
+	};
+	class canette: iron
+	{
+		name="Fonte du fer en canette";
+		class require
+		{
+			items_virtual[]={{"ironp",2}};
+		};
+		class receive
+		{
+			items_virtual[]={{"canette",3}};
 		};
 		class factions
 		{

@@ -809,6 +809,13 @@ class ADENIS_ITEMS
         image="Alysia_Client\Textures\Items_virtual\conserve.paa";
         class remove {};
     };
+    class canette
+    {
+        name="Canette vide";
+        weight=1;
+        image="Alysia_Client\Textures\Items_virtual\conserve.paa";
+        class remove {};
+    };
 
     class cocaine_seed
     {
@@ -2532,14 +2539,33 @@ class ADENIS_ITEMS
     };
     class ferment_beer
     {
-        name="Bierre fermenté";
+        name="Bière fermenté";
         weight=1;
         image="Alysia_Client\Textures\Items_virtual\fermenter.paa";
         class remove {};
     };
     class beer
     {
-        name="Bierre";
+        name="Bière (Bouteille)";
+        weight=1;
+        image="Alysia_Client\Textures\Items_virtual\beer.paa";
+        class remove {};
+        class food
+        {
+            hunger=0;
+            thirst=30;
+            sound="drink_wine";
+            alcool=0.09;
+        };
+        class market
+        {
+            max=4944;
+            min=2790;
+        };
+    };
+    class beer_canette
+    {
+        name="Bière (Canette)";
         weight=1;
         image="Alysia_Client\Textures\Items_virtual\beer.paa";
         class remove {};

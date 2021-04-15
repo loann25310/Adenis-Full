@@ -1124,6 +1124,7 @@ class ADENIS_COMPANIES_TYPES
 			{
 				"Ferment_beerp",
 				"Beerp",
+				"BeerCanettep",
 				"brewingp",
 				"Fermentp",
 				"Brassagep",
@@ -1227,6 +1228,7 @@ class ADENIS_COMPANIES_TYPES
 				"acier",
 				"serrurep",
 				"conserve",
+				"canette",
 				"clousp",
 				"light_double",
 				"bombe_vide"
