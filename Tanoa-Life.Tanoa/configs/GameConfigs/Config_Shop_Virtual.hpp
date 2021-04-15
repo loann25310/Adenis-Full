@@ -420,6 +420,7 @@ class ADENIS_SHOPS_VIRTUAL
 			"champagne",
 			"rhum",
 			"beer",
+			"beer_canette",
 			"nukaquartz"
 		};
 	};
